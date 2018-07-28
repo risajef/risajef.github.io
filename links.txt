@@ -1,0 +1,12 @@
+index > ethik_der_stabilität
+  ethik_der_stabilität > kritik_am_konsequentialismus
+    kritik_am_konsequentialismus > kritik_an_der_logik
+  ethik_der_stabilität > teleologie
+    teleologie > evolutions_beispiel
+      evolutions_beispiel > ethik_stabilität
+      evolutions_beispiel > religion_als_dns_einer_gesellschaft
+        religion_als_dns_einer_gesellschaft > christentum für atheisten
+          christentum_für_atheisten > evolutions_beispiel
+    teleologie > kritik_an_der_logik
+
+
