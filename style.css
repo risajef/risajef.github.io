@@ -39,3 +39,7 @@ a:hover {
   text-decoration: none;
   font-style: normal;
 }
+
+img {
+  width: 100%;
+}
