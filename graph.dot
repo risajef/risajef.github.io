@@ -1,18 +1,18 @@
 digraph Dependencies {
-	"exkurs_moral" -> "ethik_stabilität";
+	"christentum_für_atheisten" -> "religion_als_dns_einer_gesellschaft";
 	"evolutions_beispiel" -> "christentum_für_atheisten";
 	"evolutions_beispiel" -> "teleologie";
 	"exkurs_gut" -> "exkurs_moral";
-	"gott_der_zwangsarbeiter" -> "ethik_stabilität";
-	"prinzip_der_ununterscheidbarkeit" -> "christentum_für_atheisten";
-	"christentum_für_atheisten" -> "religion_als_dns_einer_gesellschaft";
+	"exkurs_moral" -> "ethik_stabilität";
 	"einleitung";
+	"ethik_stabilität" -> "kritik_am_konsequentialismus";
+	"kritik_an_der_logik" -> "kritik_am_konsequentialismus";
+	"kritik_an_der_logik" -> "teleologie";
+	"prinzip_der_ununterscheidbarkeit" -> "christentum_für_atheisten";
 	"evolutions_beispiel" -> "religion_als_dns_einer_gesellschaft";
 	"ethik_stabilität" -> "teleologie";
 	"ethik_stabilität" -> "evolutions_beispiel";
 	"exkurs_moral" -> "ethik_stabilität";
 	"einleitung" -> "ethik_stabilität";
-	"ethik_stabilität" -> "kritik_am_konsequentialismus";
-	"kritik_an_der_logik" -> "teleologie";
-	"kritik_an_der_logik" -> "kritik_am_konsequentialismus";
+	"gott_der_zwangsarbeiter" -> "ethik_stabilität";
 }

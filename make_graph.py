@@ -6,6 +6,7 @@ htmlfiles = [f for f in ls if f.endswith(".html") and f != "404.html"]
 filenames = [f[:-5] for f in htmlfiles]
 
 out_text = "digraph Dependencies {\n"
+structure_text = out_text
 
 for htmlfile in htmlfiles:
     filename = htmlfile[:-5]
@@ -26,14 +27,27 @@ for htmlfile in htmlfiles:
 
     for dependency in dependencies:
         out_text += "\t\"" + filename + "\" -> \"" + dependency[:-5] + "\";\n"
+        structure_text += "\t\"" + filename + "\" -> \"" + dependency[:-5] + "\";\n"
 
     for cont in continues:
         out_text += "\t\"" + cont[:-5] + "\" -> \"" + filename + "\";\n"
+        structure_text += "\t\"" + filename + "\" -> \"" + cont[:-5] + "\";\n"
 
 out_text += "}"
+structure_text += "}"
 
 graph = open("graph.dot", 'w')
 graph.write(out_text)
 graph.close()
 
 sub.run(["dot", "-Tpng", "-O", "graph.dot"])
+
+graph = open("structure.dot", 'w')
+graph.write(structure_text)
+graph.close()
+
+sub.run(["dot", "-Tpng", "-O", "structure.dot"])
+
+
+
+
