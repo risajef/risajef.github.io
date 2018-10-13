@@ -5,9 +5,9 @@ In diesem Projekt möchte ich erkunden, ob einen verlinkten Text zu schreiben ei
 
 Sinnvolle Reihenfolge:
 - index
-- prinzip der ununterscheidbarkeit
 - exkurs gut
 - exkurs moral
+- prinzip der ununterscheidbarkeit
 - muster
 - gott der zwangsarbeiter
 - christentum für atheisten
