@@ -9,6 +9,7 @@ body {
   padding: 2em;
   background-color: #111;
   border: solid #666 0.2em;
+  line-height: 2em;
 }
 
 h1, h2, h3, h4, h5, h6, h7, h8, h9{
