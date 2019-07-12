@@ -1,0 +1,209 @@
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head> 
+
+<body>
+
+<h1>Obere Schranke des Menschen</h1>
+
+<p>
+Hier möchte ich einige fundamental limitierende Schranken für den Menschen aufzeigen.
+Und es sollen nicht pseudo-intelligente Dinge sein.
+So etwas wie:
+Gott ist ausserhalb von Raum und Zeit und wir innerhalb und können uns Gott daher unmöglich vorstellen.
+Von solchen Argumenten halte ich nichts.
+Denn ich bin mit den meisten nicht einverstanden
+und selbst wenn sie wahr wären,
+werden sie meist einfach als Fakt gesagt, ohne Begründung.
+Wie der obige.
+Ich bin mit fast jeder Facette dieser Aussage nicht einverstanden.
+Eigentlich bin ich mit nichts einverstanden, das hier gesagt wird.
+Ich werde hier echte Argumente bringen.
+</p>
+<h2>Komplexitätstheorie</h2>
+<p>
+Wenn du von Theorie abgeschreckt bis, dann ist Komplexitätstheorie sicher nicht das erste das du zu verstehen versuchst.
+Die Theorie beschäftigt sich jedoch genau mit diesem Problem.
+Also welche Probleme sind lösbar,
+und wenn sie Lösbar sind: Wie schnell kann man sie lösen.
+Mit 'man' meint die Theorie eine Computerprogram.
+Z.b. wie schnell kann das perfekte Program ein Sudoku lösen.
+Oder ein Kreuzworträtsel.
+Oder die Strecke von A nach B finden.
+Es gibt für all das was ich gesagt habe Ergebnisse.
+Wärend die schnellste Strecke finden einfach ist.
+So ist ein Sudoku oder Kreuzworträtsel zu finden extrem schwierig.
+Und wenn ein Theoretiker von schwierig spricht, dann meint er nicht zu Lebzeiten optimal lösbar.
+Also man geht von (richtig) schwierigen Sudokus und Kreuzworträtsel aus.
+Kreuzworträtsel bei denen in jede Lücke viele verschiedene Wörter reinpassen könnten.
+Oder Sudokus bei denen man einfach raten muss und ausprobieren um weiterzukommen.
+Und diese Ergebnisse stehen fest.
+Man kann sich da nicht rausreden.
+Es gibt Dinge die beinahe unmöglich sind.
+Es geht aber noch schlimmer.
+Einige Probleme sind unlösbar.
+Ich möchte das bekannteste dieser Probleme kurz erklären.
+Du kannst es überfliegen, wenn es dich nicht interessiert:
+</p>
+<h3>Halteproblem</h3>
+<p>
+Zuerst müssen wir klären was ein Program ist.
+Ein Program ist eine Abfolge von Befehlen.
+Jeder dieser Befehle geht sagen wir jetzt mal 1ms.
+Beispiele für Befehle sind: 'mach nichts', 'springe zum 5. Befehl und fahre von dort fort.' usw..
+Dies Befehle werden dann etwas kompakter geschrieben in einer sogenannten Programmiersprache: 'continue', 'goto 5'
+Dann darf ein Program noch sich Dinge merken.
+Diesen Dingen gibt das Program einen Namen damit es die Information wieder findet.
+Das sind dann Befehle wie: "merke die die Zahl 5 unter dem Namen 'x'".
+oder "addiere 1 zu der Zahl 'x'".
+In einer Programmiersprache könnte das wiefolgt aussehen:
+'x = 5' oder 'x + 1'
+Den letzten wichtigen Befehl, den Programme haben ist die Bedingung:
+"wenn die Zahl 'x' grösser ist als 3 dann geh zum 12. Befehl sonst gehe zum 27. Befehl"
+Man nennt sie oft: "Wenn, dann, sonst" Befehle oder auf Englisch "if, else".
+Und wieder in einer Programmiersprache könnte das wiefolgt aussehen:
+'if(x>3) goto 12 else goto 27'
+</p>
+<p>
+Hier zwei kurze Beispiel für Programme:
+
+1: continue
+2: goto 2
+
+1: x = 1'000000'000000'000000
+2: x = x-1
+3: if(0 > x) continue else goto 2
+
+Analysieren wie kurz diese zwei.
+Das erste macht im ersten Schritt nichts und im zweiten Springt sie wieder zum ersten Befehl.
+Diese Programm geht für immer im Kreis und hält nie.
+Das Zweite hingegen setzt im ersten Schritt den Wert von 'x' auf eine riesige Zahl.
+Danach setzt es x eines runter. Ist also dann auf 999999'999999'999999.
+Im dritten Schritt fragt es ob 0 grösser ist als x.
+Falls das der Fall ist, geht es weiter und das Programm ist fertig.
+Falls nicht, springt es zum Befehl 2 und verringert die Zahl wieder um 1.
+Diese macht es jetzt solange bis x wirklich kleiner ist als 0.
+Dieses zweite Program hält irgendwann.
+Auch wenn das theoretisch erst nach dem Untergang der Welt sein wird.
+Jetzt gibt es aber andere nicht viel kompliziertere Programme vondenen man nicht weiss ob sie jemals halten.
+Und einer hat gezeigt, dass es nie ein Program geben wird, dass für alle Programme sagen kann ob sie halten.
+Also es wird nie ein Programm geben, dem man ein anderes Programm füttern kann und dann ausspuckt: "Ja das wird irgendwann halten" oder "Das wird für immer laufen."
+Jetzt kann man sagen: Ja gut das ist mir ja egal.
+
+Aber hier möchte ich diese wieder abholen die nicht an Programmen interessiert sind.
+Es gibt also Probleme die von einem Computer nicht gelöst werden können.
+Ich möchte hier zwei Überlegungen anstellen warum dieses Ergebniss wahrscheinlich auch für Menschen stimmt.
+Das eine ist: Glaubst du es wäre theoretisch möglich einen Computer zu machen, der ununterscheidbar vom Menschen ist.
+Sagen wir du kannst mit dem Computer mittels Whatsapp kommunizieren und wüsstest nicht ob es ein Mensch ist oder Computer.
+Ist es möglich einen Chatbot zu machen den man nicht von einem Menschen unterscheiden kann.
+Ich als Informatiker glaube: Ja. Das wird in der Zukunft möglich sein.
+Dann glaubst du weiter, dass es möglich ist einen Chatbot zu machen der nicht unterscheidbar von Einstein ist?
+Mit dem man chatten kann und er imitiert Einstein so gut, dass du nicht weisst ob er es nicht wirklich ist?
+Auch das würde ich mit 'Ja' beantworten.
+Nun kommt der Twist: Nehmen wir an, es gibt einen Menschen der ein Programm analysieren kann und korrekt entscheiden kann ob es hält oder nicht.
+Kann ein Chatbot auch diesen unverwechselbar imitieren?
+Wenn ja, kann es somit auch das Halteproblem lösen.
+Aber wir wissen ja bereits, dass Programme das nicht können.
+Daraus folgt, dass entweder der Mensch dieses Problem ebenfalls nicht lösen kann und unsere Annahem, dass es diesen Menschen geben kann falsch ist,
+oder dass es nie einen Computer geben wird, der solch einen Menschen imitieren kann.
+Können jedoch Computer Menschen präzise imitieren,
+dann heisst das, dass es Fragen gibt im Universum die zwar einen Wahrheitsgrad haben.
+Jedes Programm hält nämlich oder es hält nicht.
+Aber wir Menschen können es niemals herausfinden.
+Es wäre eine fundamentale Limitierung des Menschen.
+Unabhängig vom technologischen Stand.
+Die andere Überlegung braucht folgende Annahmen:
+</p>
+<ol>
+<li>Du hast endliche Informationen in deinem Bewusst und Unterbewusstsein.</li>
+<li>Deine Sinne nehmen endlich Information auf.</li>
+<li>Dein Verhalten ist einzig vom Zufall und diesen Informationen abhängig.</li>
+</ol>
+<p>
+Ich bin mir bewusst, dass die letzte Annahme nicht unumstritten ist.
+Aber würde das letzte stimmen, somit könnte man den Menschen mit einem Computer imitieren.
+Denn diese drei Annahmen stimmen auch für einen Computer.
+Zusätzlich kommt, wenn wir an einem Menschen interessiert sind, der das Halteproblem zuverlässig lösen kann, dann sollte er unabhängig vom Zufall sein und könnte somit noch einfacher von einem Computer imitiert werden.
+</p>
+<h3>Gödelscher Unvollständigkeitssatz</h3>
+<p>
+Ein weiteres wichtiges Ergebnis des 20. Jahrhunderts.
+Und zwar sagt es vereinfacht:
+Egal was für Annahmen ich habe:
+Ich kann mit diesen Annahmen entweder nicht alles ableiten
+oder meine Annahmen sind widersprüchlich.
+Also man wird nie eine Sammlung von Annahmen haben und dann aus diesen alles herleiten können.
+Also es wird immer Aussagen geben die zwar wahr oder falsch sind,
+die wir aber nicht beweisen können.
+Und dies nicht aufgrund von fehlender Information,
+sondern weil es einfach nicht geht.
+</p>
+<h3>Exponentielle Programme</h3>
+<p>
+Es gibt Programme die sind so langsam,
+dass sie untragbar lange brauchen um fertig zu werden.
+Sie halten zwar, aber viel zu spät.
+Wir sprechen hier von exponentiellen Programmen.
+Die Meinung sind solche Programm die ein Faktor mehr Zeit brauchen wenn das Problem einwenig komplizierter wird.
+Nehmen wir an du möchtest den schnellsten Weg wissen um 10 Städte zu besuchen: Vielleicht gibt es mal ein ein Programm das dies in einer Minute lösen kann.
+Jetzt ist aber diese Aufgabe exponentiell (ich vereinfach hier) schwierig ist,
+Braucht die Berechnung für 11 Städte einen Faktor länger Zeit. Sagen wir 1.5 mal so viel Zeit.
+Dann braucht es aber für 12 schon 2:15.
+Für 20 Städte 57:40
+Für 100 Städte 773 Mia Jahre.
+Und jetzt sieht man es ist auch egal, wenn man dieses Programm 1000 mal schneller macht.
+Dann bräuchte man nämlich noch immer 773 Mio. Jahre.
+Also es wird nie ein schnelles Verfahren geben für solche Probleme die exponentiell sind.
+Und kann man erstmal beweisen, dass ein Probelm exponentiell schwierig ist, dann ist es das gewesen.
+Wir können dann noch so Faustregeln erfinden, die oft das richtige Ergebniss geben.
+Oder solche die nahe am korrekten Ergebniss sind.
+Aber auch für das gibt es Schranken.
+Es gibt Probleme die wir nicht zu Lebzeiten unseres Universums lösen können.
+</p>
+<h2>Chaos Theorie</h2>
+<p>
+Die Chaos Theorie schlägt nochmals in eine solche Problematik.
+Es gibt System bei denen eine kleine Änderung eine riesige Auswrikung haben kann.
+Wir kennen diese Dinge.
+Wir nennen sie oft Zufall.
+Z.B. das werfen von Würfeln.
+Auch wenn wir versuchen den Würfel jedesmal genau gleich zu werfen,
+so zittern wir ein bischen.
+Die Luftfeuchtigkeit oder der Schweiss auf unseren Händen ist anders.
+Jedenfalls wird das Resultat jedes mal anders.
+Man kann nicht sagen was passiert es sei denn man probiert es einfach aus.
+Es gibt also Dinge die sind so chaotisch, dass wir sie nur ausprobieren, aber nicht im zuvor abschätzen können.
+</p>
+<h2>Abschliessende Bemerkungen</h2>
+<p>
+Natürlich waren das jetzt nur ganz ausgewählte Limitierungen.
+Aber wichtige und solche die ich zuwenig besprochen sehe.
+Wenn irgendwelche Technokraten sagen:
+Wir müssen einfach weiter forschen, dann können wir das lösen.
+Wir brauchen mehr Daten, mehr Informationen.
+Wir müssen ein Framework erstellen, das nicht alleine auf Logik und Wissen aufbaut.
+Sondern auf Tradition, wir müssen bewahren was uns bis in die Gegenwart gebracht hat
+und nachdenken wie wir es aktualisieren können um weiterhin bestehen zu können.
+</p>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
