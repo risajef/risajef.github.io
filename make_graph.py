@@ -15,11 +15,11 @@ for htmlfile in htmlfiles:
     print(dependencies)
     dependencies = [f for f in dependencies if f.endswith(".html") and not f.startswith(".") and not f == "404.html" and not f == "total.html"]
     print(dependencies)
-    dependencies = ["einleitung.html" if f == "index.html" else f for f in dependencies]
+    dependencies = ["einleitung.html" if f == "index_raw" else f for f in dependencies]
     print(dependencies)
     continues = sub.run(["grep", "-rl", "class=\\\"continue\\\".*" + filename], stdout=sub.PIPE).stdout.decode('utf_8').split("\n")
     continues = [f for f in continues if f.endswith(".html") and not f.startswith(".") and not f == "404.html"]
-    continues = ["einleitung.html" if f == "index.html" else f for f in continues]
+    continues = ["einleitung.html" if f == "index_raw" else f for f in continues]
 
     if filename == "index":
         filename = "einleitung"
