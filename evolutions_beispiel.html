@@ -4,8 +4,7 @@
 
 <meta charset="UTF-8">
 
-<link rel="stylesheet" type="text/css" href="style.
-css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 </head> 
 
@@ -25,7 +24,7 @@ css">
  Ein Psychologe muss auch nicht genau wissen muss wie ein Kind entsteht.
  Es macht auch Sinn etwas zu betrachten, ohne dessen Ursprung genaustens zu klären.
  Wir müssen also nicht die Entstehung der Evolution berücksichtigen um etwas über die Evolution sagen zu können.
- So wie man nicht Embryologie verstehen muss um Psychologie zu erforschen.
+ So wie man nicht Embryologie verstehen muss, um Psychologie zu erforschen.
  Hier aber die Voraussetzungen für Evolution.
 </p>
 
@@ -41,30 +40,30 @@ css">
 
 <li>Mutation: Information sollte über die Zeit verändert werden können.
  Bei der DNS passiert das, durch Fehler beim Kopieren der DNS, bei radioaktiver Strahlung und sonstigen mir unbekannten Effekten.
- Das vermischen von Genen (so auch der Crossing-Over Effekt) durch die geschlechtliche Fortplanzung ist streng genommen nicht nötig für die Evolution aber scheint "vorteilhaft" zu sein (was "vorteilhaft" bedeutet werden wir noch betrachten.
-).
+ Das Vermischen von Genen (so auch der Crossing-Over Effekt) durch die geschlechtliche Fortpflanzung ist streng genommen nicht nötig für die Evolution aber scheint "vorteilhaft" zu sein
+ (was "vorteilhaft" bedeutet werden wir noch betrachten.).
  Ob die Gene nur einmal beim Erzeugen eines Nachkommen oder über das ganze Leben verändert wird, ist auch irrelevant.
 </li>
 
-<li>Selektionsmechanismus: Damit sich etwas durchsetzt, muss es noch ein Kriterium geben, womit es den einen Organismen verwehrt zu überleben.
+<li>Selektionsmechanismus: Damit sich etwas durchsetzt, muss es noch ein Kriterium geben, womit es den einen Organismus verwehrt zu überleben.
  Dadurch werden diese Organismen bestehen, deren Information gut genug ist.
  Hier zeigt sich auch was 'gut' oder 'vorteilhaft' bedeutet.
- Was immer den Selektionsmechanismus übersteht ist 'gut' und 'vorteilhaft'.
+ Was immer den Selektionsmechanismus übersteht, ist 'gut' und 'vorteilhaft'.
 </li>
 
 </ol>
 
 <h2>Aufbau der Simulation</h2>
 
-<p>Ich habe eine kleine simulierte Welt erstellt, in der die obigen Voraussetzungen gebeben sind.
+<p>Ich habe eine kleine simulierte Welt erstellt, in der die obigen Voraussetzungen gegeben sind.
  Die Welt ist flach und rechteckig, wie in einem alten Computer-Strategiespiel.
- Also die Sicht aus welcher ich das Experiment betrachte ist von Oben, so dass alles was unten passiert aussieht wie kleine Punkte die auf dem Rechteck herumschwirren.
+ Also die Sicht, aus welcher ich das Experiment betrachte ist von Oben, sodass alles, was unten passiert aussieht, wie kleine Punkte die auf dem Rechteck herumschwirren.
  Wenn Dinge über die Kante von dem Rechteck gehen, kommen sie auf der anderen Seite wieder raus.
  Also geht etwas über die nördliche Kante der Welt raus, so erscheint es wieder an der südlichen Kante und umgekehrt.
 </p>
 
 <p>Nun zu den Objekten auf der Welt.
- Als erstes gibt es kleine Kreaturen.
+ Als Erstes gibt es kleine Kreaturen.
  Diese sind blaue Punkte auf meiner Welt.
  Sie haben eine gewisse Lebensdauer.
  Wenn sie nichts machen für diese Dauer, werden sie, wenn die Zeit abgelaufen ist, verschwinden.
@@ -76,31 +75,31 @@ css">
  Wenn die Kreaturen über die Kante der Welt gehen verhalten Sie sich wie oben beschrieben.
  Das Verhalten der Kreaturen ist in wenigen Zahlen definiert.
  Die eine Zahl (wir nennen sie Richtungszahl) ist zwischen -1 und 1 wobei -1 für schnell nach links drehen steht und 1 für schnell nach rechts drehen.
- Wie vielleicht schon erahnt heisst 0 geradeaus gehen.
+ Wie vielleicht schon erahnt heist 0 geradeaus gehen.
  Dann gibt es eine zweite Zahl (wir nennen sie Geschwindigkeitszahl) die ist zwischen 0 und 1 wobei 0 für stehen bleiben steht und 1 für so schnell gehen wie es kann.
- Wie es diese Zahlen setzt ist in einem kleinen Programm gespeichert.
- Und zwar hat es etwas das sagt: Wenn ich im linken Sichtbereich etwas rotes sehe, dann addiere ich "x" zur Geschwindigkeitszahl und "y" zur Winkelzahl.
+ Wie es diese Zahlen setzt, ist in einem kleinen Programm gespeichert.
+ Und zwar hat es etwas das sagt: Wenn ich im linken Sichtbereich etwas Rotes sehe, dann addiere ich "x" zur Geschwindigkeitszahl und "y" zur Winkelzahl.
  Und analog für alle anderen Farben und die anderen Sichtbereichen.
- Nun kann man mit einigen Zahlen das Verhalten steuern abhängig davon was die Kreatur sieht.
+ Nun kann man mit einigen Zahlen das Verhalten steuern abhängig davon, was die Kreatur sieht.
  Die Zahl wird gespeichert.
- Da es sich um einem Computer-Simulation handelt, ist sie einfach auf dem Computer gespeichert auf welchem die Simulation läuft.
+ Da es sich um einem Computer-Simulation handelt, ist sie einfach auf dem Computer gespeichert, auf welchem die Simulation läuft.
 </p>
 
 <p>Nun haben wir den Informationsspeicher.
  Jetzt zur Mutation.
  Und zwar vermehren sich meine Kreaturen asexuell.
  Also sie klonen sich.
- Beim klonen verändere ich jedoch die Zahlen, die das Verhalten steuern ein wenig (+- 0.
+ Beim Klonen verändere ich jedoch die Zahlen, die das Verhalten steuern ein wenig (+- 0.
 05).
  Dadurch ist das Verhalten der Nachkommen dem des Elter ähnlich aber nicht gleich.
 </p>
 
 <p>Jetzt müssen wir aber noch selektionieren.
- Was ist sinnvolles Verhalten.
+ Was ist sinnvolles Verhalten?
  Dafür habe ich Äpfel eingefügt in meine Welt.
- Äpfel sind kleine grüne Punkt.
+ Äpfel sind kleine grüne Punkte.
  Das sind aber Superäpfel.
- Wann immer eine Kreatur einen Apfel berührt verschwindet der Apfel und die Kreatur verlängert ihre Lebensdauer einwenig.
+ Wann immer eine Kreatur einen Apfel berührt verschwindet der Apfel und die Kreatur verlängert ihre Lebensdauer ein wenig.
  Dazu klont sich die Kreatur wie oben beschrieben.
  Ich kreiere immer wieder neue Äpfel damit die Simulation nicht endet.
 </p>
@@ -110,7 +109,7 @@ css">
  Also ob sie auf grüne Punkte (Äpfel) zulaufen oder weg-, mache ich zufällig.
  Zu Beginn laufen viele sinnlos im Kreis, oder wenden sich von den Äpfeln ab.
  Wenn sie dann verhungern kreiere ich neue Kreaturen.
- Doch das ist kaum nötig, denn schon nach kurzer Zeit gibt es Kreaturen die rein zufällig eher zu als weg von den Äpfeln laufen.
+ Doch das ist kaum nötig, denn schon nach kurzer Zeit gibt es Kreaturen, die rein zufällig eher zu als weg von den Äpfeln laufen.
  Diese vermehren (klonen) sich dann und einige der Nachkommen werden sich schlechter, andere besser verhalten.
  Und schon bald existieren nur noch solche die sich explizit auf die Äpfel ausrichten und diese "essen".
  Ich habe das aber nicht direkt programmiert.
@@ -137,9 +136,8 @@ css">
  Theisten sagen, wenn jeder nur für sein Überleben schaut, ist das asozial und nicht gut.
  Dadurch widersprechen sie meiner Aussage, dass die Selektion definiert was gut ist.
  Aber dort ist ein Verständnissfehler.
- Wie bei meiner <a class="dependency" href="ethik_stabilität.
-html">Ethik der Stabilität</a> beschrieben, geht es darum etwas Stabiles zu erreichen.
- Oder in evolutionären Worten: Selektion betrifft nicht nur Lebewesen sondern auch Familien, Stämme, Clans, Völker, Reiche und die Spezies an sich.
+ Wie bei meiner <a class="dependency" href="ethik_stabilität.html">Ethik der Stabilität</a> beschrieben, geht es darum etwas Stabiles zu erreichen.
+ Oder in evolutionären Worten: Selektion betrifft nicht nur Lebewesen, sondern auch Familien, Stämme, Clans, Völker, Reiche und die Spezies an sich.
  Auch die DNS an sich.
  Wenn ein anderer Informationsspeicher kommt, der besser Überlebt als DNS, dann wird DNS verdrängt.
  Aber betrachten wir Stämme.
@@ -148,22 +146,22 @@ html">Ethik der Stabilität</a> beschrieben, geht es darum etwas Stabiles zu err
  Diese schauen immer, dass ihre persönliche Stabilität am höchsten ist und missachten die Stabilität des Stammes.
  Der andere Stamm besteht aus Alturisten.
  Also solche die sich für andere aufopfern.
- Ziehen diese Stämme in den Krieg so werden die Egoisten mit an sicherheitgrenzende Wahrscheinlichkeit verlieren, oder besser gesagt: Warum soll ein Egoist sein Leben aufs Spiel setzten für andere? Der Egoist wird flieht.
+ Ziehen diese Stämme in den Krieg so werden die Egoisten mit an Sicherheit grenzender Wahrscheinlichkeit verlieren, oder besser gesagt:
+ Warum soll ein Egoist sein Leben aufs Spiel setzten für andere? Der Egoist wird fliehen.
  Dieser Stamm ist nicht sehr stabil und wird untergehen gegen die Aufopferungsvollen.
- Egoismus scheint auf den ersten Blick sinnvoll, aber die natürliche Selektion wird dieses Verhalten nie tolereiern für grössere Gruppen.
+ Egoismus scheint auf den ersten Blick sinnvoll, aber die natürliche Selektion wird dieses Verhalten nie tolerieren für grössere Gruppen.
 </p>
 
 <p>Die Selektion betrifft also nicht nur Individuen sondern alles.
  Religionen, Gesellschaften.
  Wenn Religionen behaupten am Ende gewinnt der gute Gott, dann kann man das aus der heutigen säkularen Sicht durchaus als soziologische Hoffnung, Prophetie oder sogar Wissen bezeichnen.
  Denn am Ende wird sich dieses System durchsetzen, dass am stabilsten ist.
- Was man sich durchaus vorstellen kann als eine Gesellschaft in der jeder für jeden schaut.
+ Was man sich durchaus vorstellen kann als eine Gesellschaft, in der jeder für jeden schaut.
 </p>
 
 <p>Dieses Beispiel kann man weiterspinnen in unterschiedlichen Szenarien.
  Hier habe ich es in Bezug auf Religion erörtert.
- <a class="continue" href="religion_als_dns_einer_gesellschaft.
-html">Religion als DNS einer Gesellschaft</a></p>
+ <a class="continue" href="religion_als_dns_einer_gesellschaft.html">Religion als DNS einer Gesellschaft</a></p>
 
 </body>
 
