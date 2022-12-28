@@ -1,111 +1,112 @@
- <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body {
-    background-color: #333;
-    color: white;
-    font-size: 10vw;
-    margin-top: 40px;
-}
-table {
-    width: 100%;
-}
-button {
-    font-size: 11vw;
-    background: #ccc;
-    width: calc(30vw - 40px);
-    height: calc(20vh - 40px);
-    margin: 20px;
-    border: 0px;
-    border-radius: 1vw;
-    box-shadow: 10px 10px black;
-}
-button:hover {
-    background: #fff;
-}
-button:active {
-    background: #ff5555;
-    box-shadow: 0px 0px black;
-    transform: translate(10px, 10px);
-}
-#display {
-    background: white;
-    color: orange;
-    text-align: right;
-    padding: 10px;
-    padding-right: 5vh;
-    height: 10vh;
-    border-radius: 20vh;
-}
-</style>
-<script>
-let code = window.location.search;
-code = code.substring(1);
-let enterCode = "";
-const successMessage = "Bombe entschärft!"; 
 
-function addNumber(n) {
-    enterCode = enterCode + n;
-    document.getElementById("display").innerHTML = enterCode;
-}
+<meta charset="UTF-8">
 
-function clearNumber() {
-    enterCode = "";
-    document.getElementById("display").innerHTML = enterCode;
-    document.getElementById("display").style.backgroundColor = "white";
-}
+<link rel="stylesheet" type="text/css" href="style.css">
 
-function success() {
-    enterCode = successMessage;
-    document.body.style.backgroundColor = "white";
-    document.getElementById("display").innerHTML = enterCode;
-    document.getElementById("display").style.backgroundColor = "#0f0";
-}
+</head> 
 
-function fail() {
-    enterCode = "FALSCHER CODE!!!";
-    document.body.style.backgroundColor = "#333";
-    document.getElementById("display").innerHTML = enterCode;
-    document.getElementById("display").style.backgroundColor = "#f00";
-}
-function check() {
-    console.log(enterCode, code, successMessage);
-    if((enterCode === code) || (enterCode === successMessage)){
-        success()
-    } else {
-        fail()
-    }
-}
-
-
-</script>
-</head>
 <body>
-<table>
-<tr>
-<td colspan="3" id="display"></td>
-</tr>
-<tr>
-<td><button onClick="addNumber('1')">1</button></td>
-<td><button onClick="addNumber('2')">2</button></td>
-<td><button onClick="addNumber('3')">3</button></td>
-</tr>
-<tr>
-<td><button onClick="addNumber('4')">4</button></td>
-<td><button onClick="addNumber('5')">5</button></td>
-<td><button onClick="addNumber('6')">6</button></td>
-</tr>
-<tr>
-<td><button onClick="addNumber('7')">7</button></td>
-<td><button onClick="addNumber('8')">8</button></td>
-<td><button onClick="addNumber('9')">9</button></td>
-</tr>
-<tr>
-<td><button style="background:#ff0000; font-size:8vw" onClick="clearNumber()">Clear</button></td>
-<td><button onClick="addNumber('0')">0</button></td>
-<td><button onClick="check()" style="background:#00ff00">OK</button></td>
-</tr>
-</table>
-<body>
+
+<h1>Idee</h1>
+
+<p>Da es mir schwierig erschein im Vornherein zu wissen, welchen Ablauf ein Buch hat, schreibe ich dieses in Form einer Webseite.
+ Der Sinn darin ist, dass ich einfach einen Link zu einem neuen Gedanken beginnen kann, wenn es zu einem Thema passt.
+ Ich kann dann im Nachhinein eine zum Lesen möglichst angenehme Reihenfolge wählen.
+ Einige Themen hängen voneinander ab, also muss man zuerst das eine Thema gelesen haben, um das nächste völlig zu verstehen.
+ Die Abhängigkeit habe ich in dem folgenden Graphen gezeigt.
+</p>
+
+<img src="graph.dot.png">
+
+<h2>Einleitung (Sein und Sollen)</h2>
+
+<p>Ich höre gerne philosophische und theologische Diskussionen und Podcasts.
+ Eine Frage, die dort immer wieder aufgetaucht ist, ist die des Seins und Sollens.
+ Wie kann man aus Sein Sollen herleiten?
+ Also wie kann ich entscheiden aus all dem was ist, was in Zukunft sein soll.
+ Wie kann ich aus Materie Sinn herleiten?
+
+An dieser Frage scheiterten meist die Atheisten und es ist der kleine Triumph der Theologen.
+ Und natürlich bauen diese dann ihre Argumentationen oft genau darauf auf.
+</p>
+
+<p>Sam Harris, einer der bekanntesten Atheisten, begründet die Grundlage seiner Ethik: Stell dir das grösst mögliche Leid für so viele Menschen wie möglich vor.
+ Wir können uns doch einigen, dass dies schlecht ist.
+ Das Ziel ist es also, so weit wie möglich von dieser Position weg zu geraten.
+ Doch woher nimmt er, dass dieses grösst mögliche Leid so schlecht ist? Wie weiss er das? Vor allem hat der einfach das Wort: Böse oder Schlecht mit Leid ersetzt.
+ Das gibt keine zusätzliche Schlagkraft.
+ Er sagt nur, dass schlechte Dinge schlecht sind.
+ Warum aber etwas als schlecht zählt, geht aber nicht daraus hervor.
+ Also aus meiner Sicht scheitert er genau daran.
+ Aus der physikalischen Welt gut und böse extrahieren zu können.
+ Er gibt das auch selbst zu.
+ Ja er könne nicht aus Sein Sollen herleiten, aber aus einem Soll kann er ganz viele andere Solls herleiten.
+ Wenn wir uns einigen, dass Leid so schlecht ist, dann können wir den ganzen Rest daraus herleiten ohne Religion.
+</p>
+
+<p>Ich starte hier den Versuch, Gut und Böse aus der physikalischen Welt herzuleiten.
+ Dadurch ergibt sich somit auch ein Sollen.
+ Doch, obwohl ich aus Sein Sollen herleiten werde ist meine Absicht nicht gegen Religion.
+ Im Gegenteil.
+ Diese Gedankengänge sind mein Versuch meinen wachsenden Zweifel an meinem Glauben und an Gott zu begegnen.
+ Ich hielt, eine mir lange erscheinende Zeit, mehrere Sichtpunkte gleichzeitig die Widersprüchlich waren.
+ (atheistische und religiöse) Ich hielt sie bewusst und mir graute davon eine der beiden abzulegen, denn sie beide bedeuteten mir die Welt.
+ Die atheistische Ansicht war kurz gefasst: All diese Geschichten konnten so nicht passiert sein wie in der Bibel beschrieben und es gibt andere Erklärungen für die Entstehung der Bibel und auch für die beschriebenen Wunder.
+ Andere Religionen haben die genau gleichen Erlebnisse und diese können alle psychologisch erklärt werden.
+ Dabei war mir wichtig, dass sich Dinge nicht widersprechen durften.
+ Innerhalb meiner religiösen Gruppe wurden Widersprüche oft mich billigen Floskeln abgetan.
+</p>
+
+<p>Mein Glaube und die Diskussionen in meinem Umfeld gaben mir auf intellektueller Eben nicht viel.
+ Sie ware platt und nicht auf dem Niveau wie meine atheistischen Gedanken.
+ Aber meine religiöse Sicht  gab mir Wert, Halt und eine innere Sicherheit.
+ Und die Texte der Bibel <i>"sprachen"</i> oft zu mir.
+ Ich hatte so zusagen eine persönliche Beziehung mit Gott und zur Schrift die von diesem Gott handelt.
+</p>
+
+<p>Ich war nicht bereit eine der beiden Ansichten aufzugeben.
+ Was füllt die Leere, die Gott jetzt füllt, wenn ich ihn verlasse? Und was verlässt mich überhaupt, wenn es doch Gott nicht gibt? Zu wem habe ich eine Beziehung, wenn es Gott nicht gibt?</p>
+
+<p>Was mich also rumtreibt sind die grossen Fragen der Philosophie.
+ Ich glaube meine Ansicht, im Speziellen meine Ethik, schafft eine Basis wie man innerhalb einer Weltanschauung (Christentum, Atheismus) diskutieren kann.
+ Und auch wie man Gut und Böse unterscheiden könnte.
+ Aber ich glaube auch, dass meine Ethik den Dialog zwischen Weltanschauungen fördern kann.
+ Den Dialog, den ich in meinem Kopf habe: Zwischen meinem inneren Atheisten und dem inneren Theisten, kann auch interpersonal gemacht werden.
+</p>
+
+<p>Der ungefähre Ablauf wird wie folgt sein: Erste werde ich ein paar Konzepte einführen, dann werde ich aus einem neuen Blickwinkel auf Religion werfen, dann kommen wir auf meine Ethik, diese werde ich mit einigen Beispielen veranschaulichen.
+ Auf dieser Grundlage werde ich dann, Religion, Gesellschaft aber auch den Konsequentialismus und die Logik betrachten.
+ In wie vielen Episoden dies geschieht, ist mir zu diesem Zeitpunkt noch nicht klar.
+ Aber wir starten jetzt mit einem Gedanken was gut ist?</p>
+
+<p>Da ich vielleicht mit der Zeit die Struktur nicht aufrechterhalten kann habe ich ein Script geschrieben, dass einfach alle Texte auflistet, die ich habe.
+ Hier ist diese Liste. Momentan ist dies wirklich ein Gedanken-Dump, also ich habe 0 Wert auf Rechtschreibung, Grammatik oder Lesbarkeit gelegt. Wenn dies dennoch interessant ist, freut mich das natürlich.</p>
+
+<ul><li><a href="404.html">404</a></li>
+<li><a href="christentum_für_atheisten.html">Christentum Für Atheisten</a></li>
+<li><a href="ethik_stabilität.html">Ethik Stabilität</a></li>
+<li><a href="evolutions_beispiel.html">Evolutions Beispiel</a></li>
+<li><a href="exkurs_gut.html">Exkurs Gut</a></li>
+<li><a href="exkurs_moral.html">Exkurs Moral</a></li>
+<li><a href="glauben.html">Glauben</a></li>
+<li><a href="gott_der_zwangsarbeiter.html">Gott Der Zwangsarbeiter</a></li>
+<li><a href="index.html">Index</a></li>
+<li><a href="kritik_am_konsequentialismus.html">Kritik Am Konsequentialismus</a></li>
+<li><a href="kritik_an_der_logik.html">Kritik An Der Logik</a></li>
+<li><a href="muster.html">Muster</a></li>
+<li><a href="obere_schranke_an_den_menschen.html">Obere Schranke An Den Menschen</a></li>
+<li><a href="prinzip_der_ununterscheidbarkeit.html">Prinzip Der Ununterscheidbarkeit</a></li>
+<li><a href="religion_als_dns_einer_gesellschaft.html">Religion Als Dns Einer Gesellschaft</a></li>
+<li><a href="schlusswort.html">Schlusswort</a></li>
+<li><a href="teleologie.html">Teleologie</a></li>
+<li><a href="total.html">Total</a></li>
+<li><a href="untere_schranke_an_gott.html">Untere Schranke An Gott</a></li>
+<li><a href="warum_gibt_gott_nicht_alle_infos.html">Warum Gibt Gott Nicht Alle Infos</a></li>
+<li><a href="was_ist_glaube.html">Was Ist Glaube</a></li>
+<li><a href="zugänge_zu_gott.html">Zugänge Zu Gott</a></li>
+<li><a href="zukunft_der_demokratie.html">Zukunft Der Demokratie</a></li></ul></body>
+
 </html>
