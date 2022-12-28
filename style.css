@@ -14,7 +14,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, h7, h8, h9{
-  color: #fff;
+  color: #000;
 }
 
 h1, h2, h3, h4, h5, h6, h7, h8, h9, p, li {
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, h7, h8, h9, p, li {
 
 p, li {
   line-height: 1.5;
-  color: #ddd;
+  color: #111;
 }
 
 p {
@@ -34,7 +34,7 @@ p {
 a, a:visited, a:active {
   text-decoration: underline;
   font-style: italic;
-  color: #fff;
+  color: #000;
 }
 
 a:hover {
