@@ -2,7 +2,9 @@ import os
 import subprocess as sub
 
 ls = os.listdir(os.getcwd())
-htmlfiles = [f for f in ls if f.endswith(".html") and f != "404.html" and f != "total.html"]
+is_relevant_html = lambda f: f.endswith(".html") and f != "404.html" and f != "total.html" and not f.startswith(".")
+htmlfiles = [f for f in ls if is_relevant_html(f)]
+print(htmlfiles)
 filenames = [f[:-5] for f in htmlfiles]
 
 out_text = "digraph Dependencies {\n"
@@ -10,22 +12,22 @@ structure_text = out_text
 
 for htmlfile in htmlfiles:
     filename = htmlfile[:-5]
-    print(filename, htmlfile)
+    #print(filename, htmlfile)
     dependencies = sub.run(["grep", "-rl", "class=\\\"dependency\\\".*" + filename], stdout=sub.PIPE).stdout.decode('utf_8').split("\n")
-    print(dependencies)
-    dependencies = [f for f in dependencies if f.endswith(".html") and not f.startswith(".") and not f == "404.html" and not f == "total.html"]
-    print(dependencies)
+    #print(dependencies)
+    dependencies = [f for f in dependencies if is_relevant_html(f)]
+    #print(dependencies)
     dependencies = ["einleitung.html" if f == "index_raw" else f for f in dependencies]
-    print(dependencies)
+    #print(dependencies)
     continues = sub.run(["grep", "-rl", "class=\\\"continue\\\".*" + filename], stdout=sub.PIPE).stdout.decode('utf_8').split("\n")
-    continues = [f for f in continues if f.endswith(".html") and not f.startswith(".") and not f == "404.html"]
+    continues = [f for f in continues if is_relevant_html(f)]
     continues = ["einleitung.html" if f == "index_raw" else f for f in continues]
 
     if filename == "index":
         filename = "einleitung"
 
     if len(continues) == 0 and len(dependencies) == 0:
-        print(filename)
+        #print(filename)
         out_text += "\t\"" + filename + "\";\n"
 
     for dependency in dependencies:
