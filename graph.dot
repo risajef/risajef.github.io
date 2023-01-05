@@ -30,4 +30,6 @@ digraph Dependencies {
 	"exkurs_moral" -> "ethik_stabilität";
 	"ethik_stabilität" -> "teleologie";
 	"untere_schranke_an_gott" -> "universalsprache";
+	"obere_schranke_an_den_menschen" -> "untere_schranke_an_gott";
+	"zugänge_zu_gott" -> "untere_schranke_an_gott";
 }
