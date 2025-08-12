@@ -1,0 +1,10 @@
+# robots.txt for Reto Weber's personal/academic website
+User-agent: *
+Disallow:
+
+# Allow all crawlers to index the site. Adjust as needed for privacy.
+# To block specific folders, add lines like:
+# Disallow: /private/
+# Disallow: /drafts/
+
+Sitemap: /sitemap.xml

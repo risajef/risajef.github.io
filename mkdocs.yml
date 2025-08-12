@@ -1,0 +1,25 @@
+site_name: Reto Weber
+base_url: /
+site_author: Reto Weber
+theme:
+  name: null
+  custom_dir: theme
+nav:
+  # - Home: index.md
+  - Programming: programming.md
+  - Research: research.md
+  - Politics: politics.md
+  - Blog:
+    - Opinions: blog/opinions.md
+    - Philosophy: blog/philosophy.md
+    - Science: blog/science.md
+
+plugins:
+  - search
+  - mermaid2
+  - bibtex:
+      bib_file: references.bib
+      bib_by_default: false
+      # csl_file: cite_style.csl
+markdown_extensions:
+  - footnotes
