@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Politics - Reto Weber</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-title">
+            <h1><a href="/index.html">Reto Weber</a></h1>
+        </div>
+        
+        <ul class="main-nav">
+            
+            
+            <li class="">
+                <a href="../programming/">Programming</a>
+            </li>
+            
+            
+            
+            <li class="">
+                <a href="../research/">Research</a>
+            </li>
+            
+            
+            
+            <li class="current">
+                <a href="./">Politics</a>
+            </li>
+            
+            
+            
+            <li class="nav-parent">
+                <a href="/Blog/">Blog</a>
+                <ul class="nav-dropdown">
+                    
+                    <li class="">
+                        <a href="../blog/opinions/">Opinions</a>
+                    </li>
+                    
+                    <li class="">
+                        <a href="../blog/philosophy/">Philosophy</a>
+                    </li>
+                    
+                    <li class="">
+                        <a href="../blog/science/">Science</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+        </ul>
+        
+        <form class="search-form" role="search">
+            <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
+        </form>
+    </header>
+
+    <div id="main-container">
+        <div class="toc-container">
+            <ul class="toc-list empty">
+                
+            </ul>
+        </div>
+        <div class="content">
+            <h1 id="einwohnerrat">Einwohnerrat</h1>
+<p>Since the beginning of 2025, I have been a member of the <a href="https://www.beringen.ch/de/mitglieder">Beringen Einwohnerrat</a>, representing the interests of the population on behalf of the <a href="https://evp-sh.ch">EVP</a>.</p>
+<p>In addition to this I am a member of the <a href="https://www.beringen.ch/de/tiefbau">Tiefbaukomission</a>, the <a href="https://www.beringen.ch/de/schwimmbad">Schwimmbadkomission</a>, and a <a href="https://www.evp-sh-2024.ch/parteivorstand">member of the board</a> of our party.</p>
+<p>At September 4th 2025 I gave a public lecture about the E-ID.</p>
+        </div>
+    </div>
+    <div id="mkdocs-search-popup">
+        <button id="close-search-popup">&times;</button>
+        <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+    </div>
+    <script>
+        function updateTocCollapse() {
+            var toc = document.querySelector('.toc-list');
+            if (!toc) return;
+            if (window.innerWidth <= 900) {
+                toc.classList.add('collapsed');
+            } else {
+                toc.classList.remove('collapsed');
+            }
+        }
+        window.addEventListener('resize', updateTocCollapse);
+        document.addEventListener('DOMContentLoaded', updateTocCollapse);
+    </script>
+    <script>
+        var base_url = "..";
+    </script>
+    <script>
+        // Show popup when search input is focused or typed in
+        const searchInput = document.getElementById('mkdocs-search-query');
+        const popup = document.getElementById('mkdocs-search-popup');
+        const closeBtn = document.getElementById('close-search-popup');
+        if (searchInput && popup && closeBtn) {
+            searchInput.addEventListener('focus', () => { popup.style.display = 'block'; });
+            searchInput.addEventListener('input', () => { popup.style.display = 'block'; });
+            closeBtn.addEventListener('click', () => { popup.style.display = 'none'; });
+            // Optional: hide popup when clicking outside
+            document.addEventListener('mousedown', function (event) {
+                if (popup.style.display === 'block' && !popup.contains(event.target) && event.target !== searchInput) {
+                    popup.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script src="../search/main.js"></script>
+</body>
+
+</html>
