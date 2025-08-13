@@ -1,12 +1,10 @@
-# Opinions
-
-## Balance Between Creation and Consumption
+# Balance Between Creation and Consumption
 
 When I have an intense discussion with a friend, the only thing I often say to them is: "Do something." We exchange our obsessions with certain content creators, share books and movies. We discuss what is right or wrong in the world. But if that's all you do—reading Reddit and writing comments without producing anything—you become a superfluous and worthless critic. The magic of life lies in contributing. Exposing yourself to the world and eagerly awaiting its response. Are they interested? Do they understand it? Is it useful?
 
 ---
 
-## Be Content, but Not Complacent
+# Be Content, but Not Complacent
 
 This statement is deeply rooted in me, and I have carried it with me for many years. It is the foundation for everything I have achieved and am proud of. There are people who feed on anger, which serves as a source of creativity for them. For me, calmness and balance are fundamental. Serenity allows me to take a step back, to break out of my limited perspective. This serenity sharpens my perception. Instead of being a cornered cat, I am a shaman. I see value in places I previously ignored. This vision then drives me. I am eager to discover the world, but even more so, I am eager to discover myself. I uncover the urge to write, to speak, to pray, to read, to create.
 
@@ -14,19 +12,7 @@ A shaman still sees what needs to be done. He explores the depths of his soul an
 
 ---
 
-## Beliefs are Relevant
-
-Faith and science are at odds. At least, that is the common opinion. One seems forced in one direction. Science claims there is no free will, no God, no human rights, no soul, or whatever. Whether it really claims this should be discussed elsewhere. But let's assume it really does. What would be the consequence?
-
-Every person with some life experience, and by that, I mean 20 years or more, realizes that there are different life melodies. There are optimists and pessimists. Those who believe in miracles and those who do not. Stable and not-so-stable people. The difference lies in the mind. In the thoughts of people. These thoughts shape life decisions and attitudes toward life. These thoughts thus shape reality. However, these thoughts are not scientific but rather religious in nature. Perhaps religious is too strong a word, but still far from objectivity.
-
-The hypothesis is, therefore, that religious beliefs are central to the mind. They promote placebo or nocebo, zest for life or suicidality, meaning or meaninglessness. And now science can take hold again. With it, we can (provided we have defined a goal) shape our beliefs. Because the next stumbling block is the belief that we can freely define our beliefs. Much of it lies in our genes, in our life history, or in other elements of our lives that we cannot influence. Some people, for example, are more prone to depression than others. The other side is to believe that one cannot influence anything. That is also wrong. Science can help us find a path to a healthy psyche.
-
-A small postscript: Here the story really becomes interesting. Because we are now talking about how we should shape our beliefs to achieve a goal. But these thoughts we create are not real and objective but rather mantras. They are often not true. If I say: "I believe in miracles!" that may be scientifically false, but it helps not to lose hope in difficult situations. So it may be that science in the future says it is better to believe in unscientific claims.
-
----
-
-## Cleanliness is Inhuman
+# Cleanliness is Inhuman
 
 There are general signs that something is wrong when you look at a person. But there is one thing people, I believe, are not aware of. How clean an apartment is says a lot about the residents' tolerance for imperfection.
 
@@ -48,7 +34,7 @@ Are you such a person yourself? It's great that you noticed. That is a strong ac
 
 ---
 
-## Intercession is for You
+# Intercession is for You
 
 "I pray for everyone in Turkey!" Something like this was read on social media after the earthquakes in Turkey and Syria. Believers and non-believers alike commented that they should help instead of praying. Do something that makes a difference. And as correct as this objection is, it is also naive. Yes, it is true, but one forgets what happens to the person who prays. It brings it to consciousness. One consciously engages in compassion and suffers with it. One lets emotions arise and becomes sad or angry about a situation. To believe that this action is not fundamental to help shows a lack of knowledge about how humans function.
 
@@ -56,7 +42,7 @@ If instead of "prayers," one would say: "Go to your room and put yourself in the
 
 ---
 
-## Learn from Hypocrites
+# Learn from Hypocrites
 
 The hypocrites of this world fill our televisions, admonish us on the radio, pass laws, and unjustly lecture us. Or so it seems. And yet, the one who finds truth in the testimony of a hypocrite is a true gold digger. If there is a place in your life where gold can be found, it is in the lies and hypocrisies of your fellow humans. They justify why they deserve higher pay even though they do nothing. They dictate how society should behave while believing they can make exceptions for themselves. But do not think an argument becomes false just because a liar utters it. The truth remains untouched and waits to be discovered and used. If you can dig in these mines, you have a treasure all to yourself. Others claim there is nothing to find while you haul nugget after nugget past them.
 
@@ -64,7 +50,7 @@ They say we should use fewer fossil fuels while flying intercontinentally themse
 
 ---
 
-## Life is a Game
+# Life is a Game
 
 This view is usually held by cynical people to justify their inhumane behavior. Yet, although their motivation is questionable, their statement has a kernel of truth. Life has its rules. Its consequences. It is a game that keeps going. Those who recognize the rules and do not want to be paralyzed by injustice do well. Life is a brutal game, and one must believe in forgiveness because life does not forgive easily.
 
@@ -74,7 +60,7 @@ Those who understand the rules better have an easier life. Those who are willing
 
 ---
 
-## Love Your Culture
+# Love Your Culture
 
 Our modern mind is plagued by hubris. It believes it knows a lot and can assess the consequences of political actions. But assessing the consequences is usually more like reading tea leaves than science. Because we can hardly assess our ignorance.
 
@@ -84,7 +70,7 @@ Therefore, I advocate befriending your culture and system and considering it par
 
 ---
 
-## Meaning is Perceivable
+# Meaning is Perceivable
 
 The perhaps greatest question of philosophy, at least the most famous one, is: "What is the meaning of life?" And although modern philosophy tries to answer this question, and religions have answers that may alienate outsiders, it remains one of the most important questions. Why am I doing all this? What is the meaning? And although I might have approaches to answer this question philosophically or religiously, my hypothesis here is psychological.
 
@@ -94,15 +80,7 @@ From this hypothesis back to philosophy: What is the meaning of life? I don't kn
 
 ---
 
-## Metaphysics is Psychology
-
-First: What is metaphysics? It has nothing to do with physics in the modern sense. Metaphysics stands outside of physics. Natural scientists often ridicule it because it speaks of a world they do not know. I try here to break precisely this view.
-
-Metaphysics speaks of the fundamental things. What is the origin of the universe? What are the properties of this origin? What is the basis of our consciousness? What is truth, and can we recognize it? These questions are generally considered unscientific and therefore unimportant. And yet the questions about meaning, God, and consciousness are formative. Our life is directed and points toward our goal. This goal is not scientific but metaphysical. We strive for the true, the good, and the beautiful. We are searching for meaning. These things are not found in matter but in the interpretation of matter. They are psychological states, and I claim that these are the most important questions in your life. Your life is determined more by your sense of meaning than by a more precise knowledge of the fundamental physical laws.
-
----
-
-## People Who Dislike Children Are Creepy
+# People Who Dislike Children Are Creepy
 
 The internet is a place with many niches. It fragments society. One of them is the cat or dog people. Dog people don't understand why one can love a creature that doesn't reciprocate affection. It's comparable to children. Children bring chaos into your life. They lie, scream, and stink. But they are also very curious and easy to motivate. They believe a lot and have hope for the future. They are the extreme form of life itself. If you don't like them, it shows a lack of tolerance for life. You cannot accept that life occasionally stinks.
 
@@ -110,7 +88,7 @@ The wonder of life often lies precisely in the stinky diaper. The refusal to dea
 
 ---
 
-## Produce Instead of Consume
+# Produce Instead of Consume
 
 If one message has challenged me the most and still challenges me, it is the call: "Do something!" You complain that you are not rich, that the world is unjust. You watch one video after another about how unjust the world is, or even books that "help" you find your way. But the only thing that changes the world is actions. Consuming is good for the mind and soul. To experience new thoughts. But if you do nothing, you become a useless Wikipedia copy. I can google myself which exercises are optimal, which diet is good, how to become more productive. Or also, what the theories about meaning and God are. If you have learned that, you are an interesting conversation partner, but not more interesting than YouTube.
 
@@ -124,15 +102,7 @@ But as a final message: When you start producing, please create something that e
 
 ---
 
-## Project: Wisdom
-
-The last years I wrote a book which turned out to be not consumer ready. I learned a lot, but it might turn out to have been a project mostly for myself. However, it changed my view on the world and sharpened my understanding. In addition, I was able to produce sentences which were deemed to be wise by my peers. Where wisdom is less formally defined as science and philosophy. I sometimes say: wisdom is philosophy that works. It is condensed knowledge reduced to its applicable form. Where philosophers fill books with their theories, the wise people might only write a few sentences which inspire to think and act differently.
-
-I will log here my thoughts publicly, so they might be read by you.
-
----
-
-## Soft Skills in Hard-Skill Jobs
+# Soft Skills in Hard-Skill Jobs
 
 Since I've been with my wife, I've gained insight into a world previously unknown to me. Before, I was preoccupied with skills and knowledge. But if I want to maintain a successful relationship, I need more skills. So-called soft skills. This is the reading between the lines of life.
 
@@ -146,23 +116,23 @@ Moreover, I claim that hard skills also make a difference. If my wife's boss wan
 
 ---
 
-## The Ladder of Angels
+# The Ladder of Engel
 
 This concept definitely does not originate from me but from modern Christian thought. However, I have expanded on this idea.
 
-The original concept: The Ladder of Angels describes the model that every person is on a step in their development. The scale starts at minus 5 or so and goes up to 5. At 0 are the people who have accepted the Christian God as their savior and trust him. The model is not only meant to encourage people to convert to Christianity but also to improve from a -5 to a -4. That is, from being hostile to God to rejecting God.
+The original concept: The Ladder of Engel describes the model that every person is on a step in their development. The scale starts at minus 5 or so and goes up to 5. At 0 are the people who have accepted the Christian God as their savior and trust him. The model is not only meant to encourage people to convert to Christianity but also to improve from a -5 to a -4. That is, from being hostile to God to rejecting God.
 
 I hope I don't lose everyone who is not a Christian. Because the concept is unconsciously applied in other areas as well. This also applies to environmental thinking. In this case, 0 might be more like: I am willing to make personal sacrifices for the good of the planet. And even here, progress is already made when someone moves from "Environmental protection is just political propaganda to raise taxes" to "Environmental protection would be important, but we can't do it."
 
-Therefore, this concept is much more general than it seems at first glance. I suggest not representing your own point of view in discussions or debates but exploring the boundaries of others. Wonderful things happen at the boundaries of knowledge. In this way, you can help the other person develop their own perspective further. You also learn yourself because you already know your own perspective too well, but when you discover the thoughts of others, worlds open up to you. Ideally, your counterpart does the same with you, and you advance your own perspective. You both help each other climb the next rung of the Ladder of Angels. So don't discuss the core points of your differences but the boundaries of what you know.
+Therefore, this concept is much more general than it seems at first glance. I suggest not representing your own point of view in discussions or debates but exploring the boundaries of others. Wonderful things happen at the boundaries of knowledge. In this way, you can help the other person develop their own perspective further. You also learn yourself because you already know your own perspective too well, but when you discover the thoughts of others, worlds open up to you. Ideally, your counterpart does the same with you, and you advance your own perspective. You both help each other climb the next rung of the Ladder of Engel. So don't discuss the core points of your differences but the boundaries of what you know.
 
 Moreover, this perspective also helps to avoid unnecessary quarrels. If I ask about the views of the other person, an unreflective cliché answer comes, so I can decide to leave it at that and move on to small talk or dig deeper.
 
 ---
 
-## Tolerance for Foolishness
+# Tolerance for Foolishness
 
-The quality of a society is shown by how much foolishness it can tolerate.
+> The quality of a society is shown by how much foolishness it can tolerate.
 
 It is a new side of tolerance and a counterpoint to the messages of reason. The usual tolerance conveys the message that all life designs and values are justified. That may often be the case, but I do not see the value in many life designs. I consider them inhumane, short-sighted, naive, and foolish.
 
@@ -176,7 +146,7 @@ Besides explaining the self-destruction of knowledge from above, there are other
 
 ---
 
-## True Forgotten Ideas Are Worthless
+# True Forgotten Ideas Are Worthless
 
 While science and the media are focused on the truth, next door conspiracy theories are spreading that could not withstand the scrutiny of a 10-year-old. Many see it as the disintegration of the media when it no longer reports the truth, or when science projects get cool-name funding rather than those that advance humanity's knowledge.
 
@@ -186,7 +156,7 @@ Instead of orienting our world towards truth, it would be more fruitful to striv
 
 ---
 
-## Truly Understand
+# Truly Understand
 
 I am a person with various weaknesses. One of the weaknesses that bothers me the most is my slow reading speed. I read aloud just as fast as I do silently. I have tried various speed-reading techniques, but my reading comprehension always plummets. But at least I enjoy reading. Because I am a slow reader, inefficient books are my nemesis. The worst is when books actually have something to say to me, but their length makes them impenetrable for me. I have struggled through several long books.
 
@@ -200,23 +170,7 @@ Hence my somewhat biased hypothesis: "Only when a book has deeply penetrated you
 
 ---
 
-## Truth Is Not Everything
-
-I constantly reflect on myself to see if nonsense has crept into my thoughts. I try to be rigorous and commit myself to the axioms of logic. A statement cannot be both true and not true at the same time. If it is, the statement is not precise. However, sometimes contradictions arise. For example, I believe in an all-good and all-powerful God. This contradicts the existence of suffering in this world. I am aware of this contradiction and know that either the all-goodness, the omnipotence, or the reality of suffering in the world must be false. I am just not ready to decide which assumption is false, though I tend to let go of omnipotence.
-
-In my everyday and practical life, however, it is different. In reality, there are phenomena like "positive psychology" or "placebo" in a non-religious context, or "proclamation" in a religious one. These are statements that demonstrably have an effect but must be considered logically false because they contradict the current reality. These speeches are described as performative in speech act theory. They are judged based on their effect. Yet this happens in the same German language.
-
-Suppose we have two people: the performer and the logician. The performer says, "If you really believe in it, then you can do it." The logician disagrees, saying this is not correct. If the logician has no humor or understanding of performance, he will say, "Try to firmly believe that you want to be both alive and dead at the same time. You can't do it." And of course, the performer's statement is logically false. But the performer also has something to criticize about the logician. If the logician says, "The universe is almost unimaginably larger than I am, and my existence has a negligible impact on the entire universe," the performer would criticize that these statements have negative effects on the person. And both are right. Logically, we have no problem here.
-
-We just have to judge from our values which statements we can hold simultaneously. Personally, I try to classify statements as either performative or logical and therefore accept contradictions because their claim is different. Thus, the aforementioned all-goodness and omnipotence are not only purely logical statements (although they are that too) but also performative. Believing that God has these attributes influences my worldview and optimism. That is why I do not want to give up either term because their performance is important to me.
-
-So why not simply outsource the entire realm of religion to performative language? Because reality has the strongest performance. True statements have power. No matter which government or force fights against them, the truth remains. If a performative statement is also true, it becomes practically unshakable and reliable. I believe religion is not a collection of performative statements but an attempt to unite the two worlds of language. Thus, statements in the Bible about God remain vague and mysterious, while statements about the consequences of wrong behavior are very vivid.
-
-The only value of truth is that it makes the statement more performative. Correct predictions of events are only relevant if we can adapt our behavior to the prediction (adapting our behavior means having an effect). By this, I mean that if we as humanity have no performance, we will go extinct. If we have no truth, we may lose some performance.
-
----
-
-## Willpower Is a Limited Resource
+# Willpower Is a Limited Resource
 
 Our online world is dominated by people with great willpower. They initiate projects and implement them. At least it seems so because you only see the projects where they had enough willpower to carry them through. This creates the impression that they have strong willpower. However, this is a fallacy.
 
@@ -228,14 +182,14 @@ But it is not about abolishing willpower. No, you should strengthen and train it
 
 ---
 
-## Wisdom Is Philosophy That Works
+# Wisdom Is Philosophy That Works
 
 The meaning of philosophy is (philia) love of (sophia) wisdom. But it has developed in a different direction. Today, philosophy deals with the fundamental ideas and concepts of our world. What are the axioms of our universe, and what does it mean to have them? What is God, and if so, how many?
 
-But wisdom has a different character. Wisdom is applied. It is interested in how to navigate life wisely. It is not interested in fundamental truths. It claims that the search for truth is chasing the wind. Ancient Greek philosophies were mostly true philosophies. Thus, Stoicism is hardly a topic in philosophy today but very much in coaching. Dealing with feelings and things beyond our control is of utmost interest to a wise person but impure to a modern philosopher. It mixes ideas with feelings. Our world today is unfortunately undernourished in wisdom. There is hardly an influencer known for wisdom. Scientists, motivational speakers, and idols are known.
+But wisdom has a different character. Wisdom is applied. It is interested in how to navigate life wisely. It is not interested in fundamental truths. It claims that the search for truth is chasing the wind. Ancient Greek philosophies were mostly true philosophies. Thus, Stoicism is hardly a topic in philosophy today but very much in coaching. Dealing with feelings and things beyond our control is of utmost interest to a wise person but impure to a modern philosopher. It mixes ideas with feelings. Our world today is unfortunately undernourished in wisdom. There is hardly an influencer known for wisdom. **Scientists**, **motivational speakers**, and **idols** are known.
 
-Scientists spread facts. Occasionally, they dip their toes into the waters of wisdom but feel committed to their craft and therefore only give tips supported by studies.
+*Scientists* spread facts. Occasionally, they dip their toes into the waters of wisdom but feel committed to their craft and therefore only give tips supported by studies.
 
-Motivational speakers lean towards wisdom, but they have an unmistakable tendency towards action. They want to get people to do things, which is a subset of wisdom but inappropriate in certain life stages. Wisdom must also teach how to deal with given limits. Where to break them and where to accept them because the limits may even be good. But such things do not fit into the mind of a motivational speaker.
+**Motivational speakers** lean towards wisdom, but they have an unmistakable tendency towards action. They want to get people to do things, which is a subset of wisdom but inappropriate in certain life stages. Wisdom must also teach how to deal with given limits. Where to break them and where to accept them because the limits may even be good. But such things do not fit into the mind of a motivational speaker.
 
-Idols are people who are particularly beautiful or have achieved a lot. A wise person can study and use them. They are like the North Star. They indicate a direction. An idol shows an extreme in terms of certain qualities. A wise person can study the idol for this quality. And thus, an idol carries wisdom within it, but only as the sky carries a beautiful painting. It takes an art to make a masterpiece out of it. They themselves are not the bearers of wisdom but an object to study or imitate, depending on the evaluation.
+**Idols** are people who are particularly beautiful or have achieved a lot. A wise person can study and use them. They are like the North Star. They indicate a direction. An idol shows an extreme in terms of certain qualities. A wise person can study the idol for this quality. And thus, an idol carries wisdom within it, but only as the sky carries a beautiful painting. It takes an art to make a masterpiece out of it. They themselves are not the bearers of wisdom but an object to study or imitate, depending on the evaluation.

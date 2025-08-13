@@ -1,3 +1,15 @@
-# A continuous language
+# Categories
 
-Imagine a society where language is not discrete but coninuous. We humans differentiate letters or silables. An `e` is not the same sound as an `i`. We act as if there is a difference. But when you pay attention you notice that actually there is no such thing as a distinct vowel. It is a continuum all sound in between exist. And and also for consonants such mechanics exists. Namely `m` `b` and `p`.
+I ordered my ideas into three categories
+
+## [Thoughts](thoughts)
+
+The main body of content. It contains short informal practical ideas. 
+
+## [Philosophy](philosophy)
+
+Similar to thoughts but commention on the big questions of life.
+
+## [Science](science)
+
+These are even more formal. Some are real research ideas that I did not follow up to write it down or publish it. Some are more vague. Like life lessons learned from science.

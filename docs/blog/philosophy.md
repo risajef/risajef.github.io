@@ -1,6 +1,4 @@
-# Philosophy
-
-## A Comment on the Kalam Cosmological Argument
+# A Comment on the Kalam Cosmological Argument
 
 Let's look at some philosophical arguments for the existence of God. There are several, but today we will consider the "Kalam Cosmological Argument." First, we will examine the argument. Then I will critique it. And finally, I will highlight some insights we have gained.
 
@@ -19,7 +17,7 @@ Now let's critique this. First, we must clear up an ontological confusion. What 
 
 It remains to be shown whether an instance of one ontological category can cause an instance of another. Of course, a combination of atoms can form composites. But can composites then cause something entirely different, like numbers, gods, psyche, or even atoms? Or perhaps they must have a common cause. I don't know. But let's note this: The claim that everything that begins to exist has a cause is not obvious when we talk about anything other than composite objects.
 
-## What is God?
+# What is God?
 
 A discussion about God often leads to the question: "Why do you believe in God?" or "Why don't you believe in God?" But when you dig deeper, you find that there is no agreement on what "God" is. Non-believers often tune out at this point. After all, why should they bother discussing the existence of something that is not clearly defined? And that is legitimate. But when discussing things that do not belong to the ontological category of "physical object," it is always difficult to define them. (By the way, it is also difficult to define physical objects. However, we are more willing to accept a definition there.)
 
@@ -39,3 +37,39 @@ I complete the following sentence: "God is at least ..." Where others try to say
 The list could go on, but I will stop here. One could argue that certain, if not all, of the above statements can be explained by psychology or sociology. But I found it helpful to have the concept that there is indeed a unifying force or concept that cares about my life. If one accepts thinking in this category, one can explore the properties of such a God. One can build a relationship with him and find out whether he is loving or not.
 
 If you go down either of the two rabbit holes, you might feel the urge to merge the uncaused cause with the God estimated by the sentences I just mentioned. But that is an adventure you must embark on yourself.
+
+---
+
+# Metaphysics is Psychology
+
+First: What is metaphysics? It has nothing to do with physics in the modern sense. Metaphysics stands outside of physics. Natural scientists often ridicule it because it speaks of a world they do not know. I try here to break precisely this view.
+
+Metaphysics speaks of the fundamental things. What is the origin of the universe? What are the properties of this origin? What is the basis of our consciousness? What is truth, and can we recognize it? These questions are generally considered unscientific and therefore unimportant. And yet the questions about meaning, God, and consciousness are formative. Our life is directed and points toward our goal. This goal is not scientific but metaphysical. We strive for the true, the good, and the beautiful. We are searching for meaning. These things are not found in matter but in the interpretation of matter. They are psychological states, and I claim that these are the most important questions in your life. Your life is determined more by your sense of meaning than by a more precise knowledge of the fundamental physical laws.
+
+---
+
+# Beliefs are Relevant
+
+Faith and science are at odds. At least, that is the common opinion. One seems forced in one direction. Science claims there is no free will, no God, no human rights, no soul, or whatever. Whether it really claims this should be discussed elsewhere. But let's assume it really does. What would be the consequence?
+
+Every person with some life experience, and by that, I mean 20 years or more, realizes that there are different life melodies. There are optimists and pessimists. Those who believe in miracles and those who do not. Stable and not-so-stable people. The difference lies in the mind. In the thoughts of people. These thoughts shape life decisions and attitudes toward life. These thoughts thus shape reality. However, these thoughts are not scientific but rather religious in nature. Perhaps religious is too strong a word, but still far from objectivity.
+
+The hypothesis is, therefore, that religious beliefs are central to the mind. They promote placebo or nocebo, zest for life or suicidality, meaning or meaninglessness. And now science can take hold again. With it, we can (provided we have defined a goal) shape our beliefs. Because the next stumbling block is the belief that we can freely define our beliefs. Much of it lies in our genes, in our life history, or in other elements of our lives that we cannot influence. Some people, for example, are more prone to depression than others. The other side is to believe that one cannot influence anything. That is also wrong. Science can help us find a path to a healthy psyche.
+
+A small postscript: Here the story really becomes interesting. Because we are now talking about how we should shape our beliefs to achieve a goal. But these thoughts we create are not real and objective but rather mantras. They are often not true. If I say: "I believe in miracles!" that may be scientifically false, but it helps not to lose hope in difficult situations. So it may be that science in the future says it is better to believe in unscientific claims.
+
+---
+
+# Truth Is Not Everything
+
+I constantly reflect on myself to see if nonsense has crept into my thoughts. I try to be rigorous and commit myself to the axioms of logic. A statement cannot be both true and not true at the same time. If it is, the statement is not precise. However, sometimes contradictions arise. For example, I believe in an all-good and all-powerful God. This contradicts the existence of suffering in this world. I am aware of this contradiction and know that either the all-goodness, the omnipotence, or the reality of suffering in the world must be false. I am just not ready to decide which assumption is false, though I tend to let go of omnipotence.
+
+In my everyday and practical life, however, it is different. In reality, there are phenomena like "positive psychology" or "placebo" in a non-religious context, or "proclamation" in a religious one. These are statements that demonstrably have an effect but must be considered logically false because they contradict the current reality. These speeches are described as performative in speech act theory. They are judged based on their effect. Yet this happens in the same German language.
+
+Suppose we have two people: the performer and the logician. The performer says, "If you really believe in it, then you can do it." The logician disagrees, saying this is not correct. If the logician has no humor or understanding of performance, he will say, "Try to firmly believe that you want to be both alive and dead at the same time. You can't do it." And of course, the performer's statement is logically false. But the performer also has something to criticize about the logician. If the logician says, "The universe is almost unimaginably larger than I am, and my existence has a negligible impact on the entire universe," the performer would criticize that these statements have negative effects on the person. And both are right. Logically, we have no problem here.
+
+We just have to judge from our values which statements we can hold simultaneously. Personally, I try to classify statements as either performative or logical and therefore accept contradictions because their claim is different. Thus, the aforementioned all-goodness and omnipotence are not only purely logical statements (although they are that too) but also performative. Believing that God has these attributes influences my worldview and optimism. That is why I do not want to give up either term because their performance is important to me.
+
+So why not simply outsource the entire realm of religion to performative language? Because reality has the strongest performance. True statements have power. No matter which government or force fights against them, the truth remains. If a performative statement is also true, it becomes practically unshakable and reliable. I believe religion is not a collection of performative statements but an attempt to unite the two worlds of language. Thus, statements in the Bible about God remain vague and mysterious, while statements about the consequences of wrong behavior are very vivid.
+
+The only value of truth is that it makes the statement more performative. Correct predictions of events are only relevant if we can adapt our behavior to the prediction (adapting our behavior means having an effect). By this, I mean that if we as humanity have no performance, we will go extinct. If we have no truth, we may lose some performance.

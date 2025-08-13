@@ -5,14 +5,17 @@ theme:
   name: null
   custom_dir: theme
 nav:
-  # - Home: index.md
   - Programming: programming.md
   - Research: research.md
   - Politics: politics.md
   - Blog:
-    - Opinions: blog/opinions.md
+    - Opinions: blog/thoughts.md
     - Philosophy: blog/philosophy.md
     - Science: blog/science.md
+  - Book:
+    - The Book: book/the-book.md
+    - Influential Books: book/influential-books.md
+    - Lessons from My Book: book/lessons-from-my-book.md
 
 plugins:
   - search

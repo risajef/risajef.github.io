@@ -1,9 +1,7 @@
 # Das Evolutionäre Prinzip
+_**Eine neue Philosophie**_
 
-Eine neue Philosophie
-
-von  
-Reto Andrin Weber
+von Reto Andrin Weber
 
 ## Exposee
 
@@ -32,11 +30,11 @@ Nebst dieser Denkweise, die, wie gesagt, Weisheit und nicht Wahrheit optimiert, 
 Damit du weisst, wohin unsere Reise geht und du nicht vergisst, warum wir das jetzt machen, präsentiere ich hier den Inhalt des Buches.
 
 - Wir entwickeln eine Theorie, die generell auf alles angewendet werden kann, das existiert. Also eine Art Naturgesetz, nach dem sich die ganze Welt richtet. Unabhängig davon, ob es sich um Lebewesen, Naturgesetze, Planeten oder gar Gott handelt. Alles richtet sich nach diesem Gesetz. ([Ein ontologisches Gesetz](#ein-ontologisches-gesetz))
-- Danach sieht man die Welt mit neuen Augen. Und wir können ganz neu über alte Fragen nachzudenken. ([Eine neue Brille](#eine-neue-Brille))
+- Danach sieht man die Welt mit neuen Augen. Und wir können ganz neu über alte Fragen nachzudenken. ([Eine neue Brille](#eine-neue-brille))
 - Anschliessend betrachten wir das Konzept der ‹Wahrheit›. Denn unsere neue Brille wirft die Grundsteine des vernünftigen Denkens um. Darum müssen wir erst wieder erschliessen, was es für eine Aussage bedeutet, ‹wahr› zu sein. ([Wert der Wahrheit](#wert-der-wahrheit))
-- Nach der Wahrheit wagen wir uns an die Ethik; also was gut und schlecht ist. Aus unserer Sichtweise wird sich ein Pfad für bestehende Ethiken ergeben, wohin sie sich entwickeln sollen. Also eine Meta-Ethik wird sich herauskristallisieren. ([Eine Ethik der Stabilität](#eine-ethik-der-stabilität))
-- Wir werden sehen, dass Rationalismus zu naiv ist und wir Faustregeln und andere Vereinfachungen benötigen, um in dieser Welt klarzukommen. ([Die Komplexitätsreduktion als notwendige ethische Handlung](#die-komplexitätsreduktion-als-notwendige-ethische-handlung))
-- Wir werden Wege entwickeln, um andere Denkweisen in die eigene zu integrieren, ohne die eigene mit Füssen treten zu müssen. ([Die Validität unterschiedlicher Komplexitätsreduktionen](#die-validität-unterschiedlicher-komplexitätsreduktionen))
+- Nach der Wahrheit wagen wir uns an die Ethik; also was gut und schlecht ist. Aus unserer Sichtweise wird sich ein Pfad für bestehende Ethiken ergeben, wohin sie sich entwickeln sollen. Also eine Meta-Ethik wird sich herauskristallisieren. ([Eine Ethik der Stabilität](#eine-ethik-der-stabilitat))
+- Wir werden sehen, dass Rationalismus zu naiv ist und wir Faustregeln und andere Vereinfachungen benötigen, um in dieser Welt klarzukommen. ([Die Komplexitätsreduktion als notwendige ethische Handlung](#die-komplexitatsreduktion-als-notwendige-ethische-handlung))
+- Wir werden Wege entwickeln, um andere Denkweisen in die eigene zu integrieren, ohne die eigene mit Füssen treten zu müssen. ([Die Validität unterschiedlicher Komplexitätsreduktionen](#die-validitat-unterschiedlicher-komplexitatsreduktionen))
 - Nach all diesen Überlegungen werden wir neue Zugänge zu Andersdenkenden entdecken und dies an der Gottesfrage veranschaulichen. Dies ist dann unabhängig von den momentanen Glaubensüberzeugungen. ([Die Gottesfrage](#die-gottesfrage))
 - Und zum Abschluss nutzen wir die erlernten Konzepte, um alte Fragen auf eine neue Art zu beantworten. ([Musterhafte Lektionen](#musterhafte-lektionen))
 
