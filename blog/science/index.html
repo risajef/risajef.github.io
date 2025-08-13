@@ -37,7 +37,7 @@
             
             
             <li class="nav-parent">
-                <a href="/Blog/">Blog</a>
+                <a href="/blog/">Blog</a>
                 <ul class="nav-dropdown">
                     
                     <li class="">
@@ -65,37 +65,13 @@
 
     <div id="main-container">
         <div class="toc-container">
-            <ul class="toc-list ">
-                
-                
-                <li>
-                    <a href="#compressing-neural-networks">Compressing Neural Networks</a>
-                    
-                </li>
-                
-                <li>
-                    <a href="#practical-lessons-from-mathematical-insights">Practical Lessons from Mathematical Insights</a>
-                    
-                    <ul>
-                        
-                        <li class="toc-sub">
-                            <a href="#godels-incompleteness-theorem">Gödel's Incompleteness Theorem</a>
-                        </li>
-                        
-                    </ul>
-                    
-                </li>
-                
-                <li>
-                    <a href="#simulating-evolution">Simulating Evolution</a>
-                    
-                </li>
-                
+            <ul class="toc-list empty">
                 
             </ul>
         </div>
         <div class="content">
-            <h1 id="compressing-neural-networks">Compressing Neural Networks</h1>
+            <h1 id="science">Science</h1>
+<h2 id="compressing-neural-networks">Compressing Neural Networks</h2>
 <p>When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.</p>
 <p>My hypothesis was to compress the weight matrix using a common algorithm like JPEG. I took MNIST and trained a small CNN:</p>
 <pre><code class="language-python">hidden_layer_size = 512
@@ -111,8 +87,8 @@ model = torch.nn.Sequential(linear1, relu, linear2)
 <p>I took each matrix and compressed it with JPEG to a quality of only 20%, losing a lot of information, as seen here:</p>
 <p>Uncompressed</p>
 <p>JPEG compressed 20% quality</p>
-<h1 id="practical-lessons-from-mathematical-insights">Practical Lessons from Mathematical Insights</h1>
-<h2 id="godels-incompleteness-theorem">Gödel's Incompleteness Theorem</h2>
+<h2 id="practical-lessons-from-mathematical-insights">Practical Lessons from Mathematical Insights</h2>
+<h3 id="godels-incompleteness-theorem">Gödel's Incompleteness Theorem</h3>
 <p>Gödel is one of the great mathematicians of the last century. Among other things, he worked on the foundations of mathematics. He was interested in the question of whether mathematics is complete. To understand this statement, I must briefly explain the concept of an axiom.</p>
 <p>An axiom is an assumption in a mathematical system that is not proved. Mathematics cannot exist without these assumptions. One possible axiom that is popularly known is 1 + 1 = 2. It seems impossible to prove that. However, you may be tempted to claim, “That doesn't require proof,” and when they say that, they have understood the idea behind axioms. As an axiom, you always want to choose a statement that everyone can agree with. That is so obvious that it can hardly be disputed. But in the science of mathematics, you are very aware of what assumptions you are making. You don't just say, “Anything that's obvious, we'll assume to be true.” Because what is considered obvious to you may not be to someone else. That's why mathematicians write down their axioms and say, “I do mathematics under the following assumptions.” Then a colleague can go and check if his work is correct under the assumptions.</p>
 <p>An example of such assumptions:</p>
@@ -126,7 +102,7 @@ model = torch.nn.Sequential(linear1, relu, linear2)
 <p>Mathematicians would say this is not formally correct, but for my purposes, it is sufficient. Here you can see how banal such statements are. With these statements, we can already prove the statement, “There is no greatest number.” A proof, which is a mind-blowing realization for children. And we should not simply downplay this fascination.</p>
 <p>We prove it here with a proof of contradiction:</p>
 <p>Suppose there is a largest number. Let us call it y. If it is a number, it follows from 'D' that y + 1 is also a number. Let's call it z. And from 'E' it follows that z is greater than y. Which refutes our assumption that y is the largest number. It follows that there is no largest number.</p>
-<h1 id="simulating-evolution">Simulating Evolution</h1>
+<h2 id="simulating-evolution">Simulating Evolution</h2>
 <p>Many people claim that evolution is impossible because nothing can arise from randomness. But is randomness the only factor in evolution? What if other forces are at play that guide the diversity and complexity of life? To explore this question, I developed an algorithm that simulates evolution and reveals some surprising results.</p>
 <p>The code is available on GitHub.</p>
 <p>Imagine an empty world. Void of meaning and possibilities. In this world, a robot pops into existence. It cannot see anything. Its visual input is as empty as the universe in which it was created. The robot has no will. It simply does something random. What it doesn't know is that there are 50 other robots created at the same time. They all behave differently. Some wander around, some stand still, and some spin in circles. Then suddenly, a change occurs in one robot. Its input changes. It sees something red. The others in the same location see it too. They behave randomly. Some move toward it, some don't. What is this red thing? The closer a robot gets, the clearer it sees it until it can touch it. From nothing you came, and to nothing you shall return. The robot disappears. Every robot that touches the red thing disappears. It dies. Over time, only the robots that either don't move or avoid touching the red thing remain. This happens automatically, simply by the laws of this universe. As robots disappear, new ones are randomly created and thrown into the world to keep the population from dying out. And there was evening and morning. The first day.</p>
