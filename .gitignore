@@ -1,3 +1,5 @@
 .venv
 .git
 node_modules
+.gitignore
+site

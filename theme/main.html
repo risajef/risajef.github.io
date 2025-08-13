@@ -22,7 +22,7 @@
             {% for nav_item in nav %}
             {% if nav_item.children %}
             <li class="nav-parent">
-                <a href="/{{ nav_item.title }}/">{{ nav_item.title }}</a>
+                <a href="/{{ nav_item.title | lower | replace(' ', '-') }}/">{{ nav_item.title }}</a>
                 <ul class="nav-dropdown">
                     {% for nav_item in nav_item.children %}
                     <li class="{% if nav_item.active %}current{% endif %}">
