@@ -1,4 +1,6 @@
-# A Comment on the Kalam Cosmological Argument
+# Philosophy
+
+## A Comment on the Kalam Cosmological Argument
 
 Let's look at some philosophical arguments for the existence of God. There are several, but today we will consider the "Kalam Cosmological Argument." First, we will examine the argument. Then I will critique it. And finally, I will highlight some insights we have gained.
 
@@ -16,7 +18,8 @@ From these two premises, it follows that the universe has a cause. The Big Bang 
 Now let's critique this. First, we must clear up an ontological confusion. What kind of existence are we talking about? There are physical, composite things like tables, chairs, and so on. For these, the premise holds. Then there are non-composite things—atoms. These are particles that cannot be further divided. I'm not a physicist, but I believe fundamental particles are not created but only transformed. But I don't know. Another view is that the universe is just one big wave function. The cause of this function is actually itself. It simply continues to evolve. Perhaps there was no beginning to the wave function. We've never seen a wave function come into being. Then the wave function could be such a causeless cause. But perhaps the wave function has a beginning and a cause. It must belong to another ontological category. It cannot be an atom or a chair. It must be something else. Now we can only speculate. What is the causing thing of the physical sphere? This is interesting, but the first premise seemed so obvious, yet there are different kinds of causes that are not equivalent, and for some of them, the premise might not hold.
 
 It remains to be shown whether an instance of one ontological category can cause an instance of another. Of course, a combination of atoms can form composites. But can composites then cause something entirely different, like numbers, gods, psyche, or even atoms? Or perhaps they must have a common cause. I don't know. But let's note this: The claim that everything that begins to exist has a cause is not obvious when we talk about anything other than composite objects.
-# What is God?
+
+## What is God?
 
 A discussion about God often leads to the question: "Why do you believe in God?" or "Why don't you believe in God?" But when you dig deeper, you find that there is no agreement on what "God" is. Non-believers often tune out at this point. After all, why should they bother discussing the existence of something that is not clearly defined? And that is legitimate. But when discussing things that do not belong to the ontological category of "physical object," it is always difficult to define them. (By the way, it is also difficult to define physical objects. However, we are more willing to accept a definition there.)
 

@@ -1,17 +1,20 @@
-# Balance Between Creation and Consumption
+# Opinions
+
+## Balance Between Creation and Consumption
 
 When I have an intense discussion with a friend, the only thing I often say to them is: "Do something." We exchange our obsessions with certain content creators, share books and movies. We discuss what is right or wrong in the world. But if that's all you do—reading Reddit and writing comments without producing anything—you become a superfluous and worthless critic. The magic of life lies in contributing. Exposing yourself to the world and eagerly awaiting its response. Are they interested? Do they understand it? Is it useful?
 
 ---
 
-# Be Content, but Not Complacent
+## Be Content, but Not Complacent
 
 This statement is deeply rooted in me, and I have carried it with me for many years. It is the foundation for everything I have achieved and am proud of. There are people who feed on anger, which serves as a source of creativity for them. For me, calmness and balance are fundamental. Serenity allows me to take a step back, to break out of my limited perspective. This serenity sharpens my perception. Instead of being a cornered cat, I am a shaman. I see value in places I previously ignored. This vision then drives me. I am eager to discover the world, but even more so, I am eager to discover myself. I uncover the urge to write, to speak, to pray, to read, to create.
 
 A shaman still sees what needs to be done. He explores the depths of his soul and brings the treasure to the surface. A shaman knows no end to work, no retirement. So, do not be satisfied with your output. But be a content person.
 
 ---
-# Beliefs are Relevant
+
+## Beliefs are Relevant
 
 Faith and science are at odds. At least, that is the common opinion. One seems forced in one direction. Science claims there is no free will, no God, no human rights, no soul, or whatever. Whether it really claims this should be discussed elsewhere. But let's assume it really does. What would be the consequence?
 
@@ -23,7 +26,7 @@ A small postscript: Here the story really becomes interesting. Because we are no
 
 ---
 
-# Cleanliness is Inhuman
+## Cleanliness is Inhuman
 
 There are general signs that something is wrong when you look at a person. But there is one thing people, I believe, are not aware of. How clean an apartment is says a lot about the residents' tolerance for imperfection.
 
@@ -45,7 +48,7 @@ Are you such a person yourself? It's great that you noticed. That is a strong ac
 
 ---
 
-# Intercession is for You
+## Intercession is for You
 
 "I pray for everyone in Turkey!" Something like this was read on social media after the earthquakes in Turkey and Syria. Believers and non-believers alike commented that they should help instead of praying. Do something that makes a difference. And as correct as this objection is, it is also naive. Yes, it is true, but one forgets what happens to the person who prays. It brings it to consciousness. One consciously engages in compassion and suffers with it. One lets emotions arise and becomes sad or angry about a situation. To believe that this action is not fundamental to help shows a lack of knowledge about how humans function.
 
@@ -53,7 +56,7 @@ If instead of "prayers," one would say: "Go to your room and put yourself in the
 
 ---
 
-# Learn from Hypocrites
+## Learn from Hypocrites
 
 The hypocrites of this world fill our televisions, admonish us on the radio, pass laws, and unjustly lecture us. Or so it seems. And yet, the one who finds truth in the testimony of a hypocrite is a true gold digger. If there is a place in your life where gold can be found, it is in the lies and hypocrisies of your fellow humans. They justify why they deserve higher pay even though they do nothing. They dictate how society should behave while believing they can make exceptions for themselves. But do not think an argument becomes false just because a liar utters it. The truth remains untouched and waits to be discovered and used. If you can dig in these mines, you have a treasure all to yourself. Others claim there is nothing to find while you haul nugget after nugget past them.
 
@@ -61,7 +64,7 @@ They say we should use fewer fossil fuels while flying intercontinentally themse
 
 ---
 
-# Life is a Game
+## Life is a Game
 
 This view is usually held by cynical people to justify their inhumane behavior. Yet, although their motivation is questionable, their statement has a kernel of truth. Life has its rules. Its consequences. It is a game that keeps going. Those who recognize the rules and do not want to be paralyzed by injustice do well. Life is a brutal game, and one must believe in forgiveness because life does not forgive easily.
 
@@ -71,7 +74,7 @@ Those who understand the rules better have an easier life. Those who are willing
 
 ---
 
-# Love Your Culture
+## Love Your Culture
 
 Our modern mind is plagued by hubris. It believes it knows a lot and can assess the consequences of political actions. But assessing the consequences is usually more like reading tea leaves than science. Because we can hardly assess our ignorance.
 
@@ -81,7 +84,7 @@ Therefore, I advocate befriending your culture and system and considering it par
 
 ---
 
-# Meaning is Perceivable
+## Meaning is Perceivable
 
 The perhaps greatest question of philosophy, at least the most famous one, is: "What is the meaning of life?" And although modern philosophy tries to answer this question, and religions have answers that may alienate outsiders, it remains one of the most important questions. Why am I doing all this? What is the meaning? And although I might have approaches to answer this question philosophically or religiously, my hypothesis here is psychological.
 
@@ -91,7 +94,7 @@ From this hypothesis back to philosophy: What is the meaning of life? I don't kn
 
 ---
 
-# Metaphysics is Psychology
+## Metaphysics is Psychology
 
 First: What is metaphysics? It has nothing to do with physics in the modern sense. Metaphysics stands outside of physics. Natural scientists often ridicule it because it speaks of a world they do not know. I try here to break precisely this view.
 
@@ -99,7 +102,7 @@ Metaphysics speaks of the fundamental things. What is the origin of the universe
 
 ---
 
-# People Who Dislike Children Are Creepy
+## People Who Dislike Children Are Creepy
 
 The internet is a place with many niches. It fragments society. One of them is the cat or dog people. Dog people don't understand why one can love a creature that doesn't reciprocate affection. It's comparable to children. Children bring chaos into your life. They lie, scream, and stink. But they are also very curious and easy to motivate. They believe a lot and have hope for the future. They are the extreme form of life itself. If you don't like them, it shows a lack of tolerance for life. You cannot accept that life occasionally stinks.
 
@@ -107,7 +110,7 @@ The wonder of life often lies precisely in the stinky diaper. The refusal to dea
 
 ---
 
-# Produce Instead of Consume
+## Produce Instead of Consume
 
 If one message has challenged me the most and still challenges me, it is the call: "Do something!" You complain that you are not rich, that the world is unjust. You watch one video after another about how unjust the world is, or even books that "help" you find your way. But the only thing that changes the world is actions. Consuming is good for the mind and soul. To experience new thoughts. But if you do nothing, you become a useless Wikipedia copy. I can google myself which exercises are optimal, which diet is good, how to become more productive. Or also, what the theories about meaning and God are. If you have learned that, you are an interesting conversation partner, but not more interesting than YouTube.
 
@@ -121,7 +124,7 @@ But as a final message: When you start producing, please create something that e
 
 ---
 
-# Project: Wisdom
+## Project: Wisdom
 
 The last years I wrote a book which turned out to be not consumer ready. I learned a lot, but it might turn out to have been a project mostly for myself. However, it changed my view on the world and sharpened my understanding. In addition, I was able to produce sentences which were deemed to be wise by my peers. Where wisdom is less formally defined as science and philosophy. I sometimes say: wisdom is philosophy that works. It is condensed knowledge reduced to its applicable form. Where philosophers fill books with their theories, the wise people might only write a few sentences which inspire to think and act differently.
 
@@ -129,7 +132,7 @@ I will log here my thoughts publicly, so they might be read by you.
 
 ---
 
-# Soft Skills in Hard-Skill Jobs
+## Soft Skills in Hard-Skill Jobs
 
 Since I've been with my wife, I've gained insight into a world previously unknown to me. Before, I was preoccupied with skills and knowledge. But if I want to maintain a successful relationship, I need more skills. So-called soft skills. This is the reading between the lines of life.
 
@@ -142,7 +145,8 @@ My hypothesis is that one can stand out from others through both soft skills and
 Moreover, I claim that hard skills also make a difference. If my wife's boss wants to please everyone, she can exploit that and push her concerns through. But she can also stand out from her colleagues through better performance.
 
 ---
-# The Ladder of Angels
+
+## The Ladder of Angels
 
 This concept definitely does not originate from me but from modern Christian thought. However, I have expanded on this idea.
 
@@ -156,7 +160,7 @@ Moreover, this perspective also helps to avoid unnecessary quarrels. If I ask ab
 
 ---
 
-# Tolerance for Foolishness
+## Tolerance for Foolishness
 
 The quality of a society is shown by how much foolishness it can tolerate.
 
@@ -172,7 +176,7 @@ Besides explaining the self-destruction of knowledge from above, there are other
 
 ---
 
-# True Forgotten Ideas Are Worthless
+## True Forgotten Ideas Are Worthless
 
 While science and the media are focused on the truth, next door conspiracy theories are spreading that could not withstand the scrutiny of a 10-year-old. Many see it as the disintegration of the media when it no longer reports the truth, or when science projects get cool-name funding rather than those that advance humanity's knowledge.
 
@@ -182,7 +186,7 @@ Instead of orienting our world towards truth, it would be more fruitful to striv
 
 ---
 
-# Truly Understand
+## Truly Understand
 
 I am a person with various weaknesses. One of the weaknesses that bothers me the most is my slow reading speed. I read aloud just as fast as I do silently. I have tried various speed-reading techniques, but my reading comprehension always plummets. But at least I enjoy reading. Because I am a slow reader, inefficient books are my nemesis. The worst is when books actually have something to say to me, but their length makes them impenetrable for me. I have struggled through several long books.
 
@@ -196,7 +200,7 @@ Hence my somewhat biased hypothesis: "Only when a book has deeply penetrated you
 
 ---
 
-# Truth Is Not Everything
+## Truth Is Not Everything
 
 I constantly reflect on myself to see if nonsense has crept into my thoughts. I try to be rigorous and commit myself to the axioms of logic. A statement cannot be both true and not true at the same time. If it is, the statement is not precise. However, sometimes contradictions arise. For example, I believe in an all-good and all-powerful God. This contradicts the existence of suffering in this world. I am aware of this contradiction and know that either the all-goodness, the omnipotence, or the reality of suffering in the world must be false. I am just not ready to decide which assumption is false, though I tend to let go of omnipotence.
 
@@ -212,7 +216,7 @@ The only value of truth is that it makes the statement more performative. Correc
 
 ---
 
-# Willpower Is a Limited Resource
+## Willpower Is a Limited Resource
 
 Our online world is dominated by people with great willpower. They initiate projects and implement them. At least it seems so because you only see the projects where they had enough willpower to carry them through. This creates the impression that they have strong willpower. However, this is a fallacy.
 
@@ -224,7 +228,7 @@ But it is not about abolishing willpower. No, you should strengthen and train it
 
 ---
 
-# Wisdom Is Philosophy That Works
+## Wisdom Is Philosophy That Works
 
 The meaning of philosophy is (philia) love of (sophia) wisdom. But it has developed in a different direction. Today, philosophy deals with the fundamental ideas and concepts of our world. What are the axioms of our universe, and what does it mean to have them? What is God, and if so, how many?
 

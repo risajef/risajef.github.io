@@ -1,4 +1,6 @@
-# Compressing Neural Networks
+# Science
+
+## Compressing Neural Networks
 
 When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.
 
@@ -24,9 +26,10 @@ I took each matrix and compressed it with JPEG to a quality of only 20%, losing 
 Uncompressed
 
 JPEG compressed 20% quality
-# Practical Lessons from Mathematical Insights
 
-## Gödel's Incompleteness Theorem
+## Practical Lessons from Mathematical Insights
+
+### Gödel's Incompleteness Theorem
 
 Gödel is one of the great mathematicians of the last century. Among other things, he worked on the foundations of mathematics. He was interested in the question of whether mathematics is complete. To understand this statement, I must briefly explain the concept of an axiom.
 
@@ -45,7 +48,8 @@ Mathematicians would say this is not formally correct, but for my purposes, it i
 We prove it here with a proof of contradiction:
 
 Suppose there is a largest number. Let us call it y. If it is a number, it follows from 'D' that y + 1 is also a number. Let's call it z. And from 'E' it follows that z is greater than y. Which refutes our assumption that y is the largest number. It follows that there is no largest number.
-# Simulating Evolution
+
+## Simulating Evolution
 
 Many people claim that evolution is impossible because nothing can arise from randomness. But is randomness the only factor in evolution? What if other forces are at play that guide the diversity and complexity of life? To explore this question, I developed an algorithm that simulates evolution and reveals some surprising results.
 
@@ -63,7 +67,6 @@ The final stage. Now, without human intervention, the robots have developed usef
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ietVz2V5iDI?si=oZbGKo8A3-BdxUVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 Non-optimized robots
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w4fR5Zr0aZo?si=oZbGKo8A3-BdxUVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 Optimized robots
