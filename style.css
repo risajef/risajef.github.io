@@ -66,8 +66,15 @@ h6 {
 p,
 ul {
     margin-block-start: 0;
-    margin-block-end: 0;
     /* padding-inline-start: 0; */
+}
+
+p {
+    margin-block-end: 0.5em;
+}
+
+ul {
+    margin-block-end: 0;
 }
 
 .main-nav {
@@ -369,10 +376,24 @@ a code {
     margin: 0 auto;
 }
 
-img {
+.float-right+img,
+.float-right+p img {
     max-width: 30%;
     float: right;
     height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 300px;
+}
+
+img+em {
+    display: block;
+    text-align: center;
 }
 
 @media (max-width: 700px) {
@@ -387,4 +408,14 @@ img {
     .search-form input {
         width: 100%;
     }
+}
+
+blockquote {
+    font-style: italic;
+    color: var(--text-secondary);
+    border-left: 4px solid var(--primary);
+    padding: 0.5em 1em;
+    background: var(--bg-secondary);
+    margin: 1em 0;
+    border-radius: 2px;
 }
