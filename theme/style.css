@@ -16,7 +16,7 @@
     /* Main Background */
     --bg-secondary: #F7F7F7;
     /* Secondary Background */
-    --divider: #E0E0E0;
+    --divider: #888;
     /* Divider/Border */
 
     /* Text Colors */
@@ -418,4 +418,12 @@ blockquote {
     background: var(--bg-secondary);
     margin: 1em 0;
     border-radius: 2px;
+}
+
+hr {
+    width: 273px;
+    height: 2px;
+    background-color: var(--divider);
+    border: none;
+    margin-left: 0;
 }

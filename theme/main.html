@@ -21,11 +21,13 @@
         <ul class="main-nav">
             {% for nav_item in nav %}
             {% if nav_item.children %}
-            <li class="nav-parent">
+            <li
+                class="nav-parent {% if page.abs_url | url | trim('/') == nav_item.title | lower | replace(' ', '-') %}current{% endif %}">
                 <a href="/{{ nav_item.title | lower | replace(' ', '-') }}/">{{ nav_item.title }}</a>
                 <ul class="nav-dropdown">
                     {% for nav_item in nav_item.children %}
-                    <li class="{% if nav_item.active %}current{% endif %}">
+                    <li
+                        class="{% if nav_item.active %}current{% endif %} {% if page.abs_url | url == nav_item.url|url %}current{% endif %}">
                         <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
                     </li>
                     {% endfor %}

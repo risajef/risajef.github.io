@@ -1,5 +1,4 @@
 site_name: Reto Weber
-base_url: /
 site_author: Reto Weber
 theme:
   name: null
@@ -24,5 +23,9 @@ plugins:
       bib_file: references.bib
       bib_by_default: false
       # csl_file: cite_style.csl
+  - exclude:
+      glob:
+        - "private/*"
+        - "private/**/*"
 markdown_extensions:
   - footnotes
