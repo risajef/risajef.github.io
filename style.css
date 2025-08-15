@@ -11,7 +11,7 @@
     --primary-light: #FDFDFD;
     /* Light Tint */
 
-    /* 🖤 Neutrals & Backgrounds */
+    /* Neutrals & Backgrounds */
     --bg-main: #FFFFFF;
     /* Main Background */
     --bg-secondary: #F7F7F7;
@@ -259,7 +259,8 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus,
+a.hover {
     color: var(--primary);
     background: var(--primary-light);
     text-decoration: none;
