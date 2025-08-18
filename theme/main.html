@@ -15,8 +15,9 @@
 <body>
     <header class="site-header">
         <div class="site-title">
-            <h1 class="{% if page.abs_url | url == '/' %}current{% endif %}"><a href="/index.html">Reto
-                    Weber</a></h1>
+            <h1 class="{% if page.abs_url | url == '/' %}current{% endif %}">
+                <a href="/index.html">Reto Weber</a>
+            </h1>
         </div>
         {% if nav|length > 1 %}
         <ul class="main-nav">
