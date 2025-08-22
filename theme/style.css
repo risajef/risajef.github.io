@@ -428,3 +428,28 @@ hr {
     border: none;
     margin-left: 0;
 }
+
+th {
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding-right: 0.6em;
+    vertical-align: top;
+}
+
+/* If a table appears after the H1 with this id, make its first two columns bold and centered */
+
+h1#abstimmungen-und-wahlen-im-einwohnerrat~table th:first-child,
+h1#abstimmungen-und-wahlen-im-einwohnerrat~table td:first-child,
+
+h1#abstimmungen-und-wahlen-im-einwohnerrat~table th:nth-child(2),
+h1#abstimmungen-und-wahlen-im-einwohnerrat~table td:nth-child(2) {
+    font-weight: 700;
+    text-align: center;
+}
