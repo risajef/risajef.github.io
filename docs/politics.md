@@ -10,7 +10,7 @@ Zusätzlich bin ich Mitglied der [Tiefbaukomission](https://www.beringen.ch/de/t
 ![E-ID Whatsapp Status Werbung](images/eid_vortrag.jpg)
 Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand für Fragen zur Verfügung.
 
-# Abstimmungen und Wahlen im Einwohnerrat
+# Abstimmungen und Wahlen im Einwohnerrat {: .vote}
 
 Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Einwohnerrat. Die Vorlagen können auf der [Webseite](https://www.beringen.ch/de/einwohnerrat-vorlagen) der Gemeinde Beringen gefunden werden.
 
@@ -57,6 +57,7 @@ Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats u
 | ✓ | ✓ | Vorlage zur Anpassung des Schulleitungspensums als Folge der Vorgaben zur flächendeckenden Einführung von geleiteten Schulen im Kanton Schaffhausen |
 | ✓ | ✓ | Abrechnung über die Neugestaltung der Kreuzung Trasadingerstrasse H13 – Haardaublick (Bömmliacker Ost) Beringen über brutto CHF 295'472.95 |
 | ✓ | ✓ | Abrechnung für die Beschaffung eines neuen Gemeindefahrzeuges für den Gebäudeunterhaltüber brutto CHF 114‘393.80 |
+
 
 > In dieser ersten Sitzung war ich nervös. Auch wenn Stimmen zählen nicht schwierig ist, war es mit der Nervosität eine kleine Herausforderung. Bei der Abrechnung bezüglich "Beschaffung eines neuen Gemeindefahrzeugs" fragte ich nach, warum das alte so günstig verkauft wurde. Hugo Bosshart (Tiefbaureferent) beantwortete die Frage im Moment zufriedenstellend. Im Nachhinein hätte ich mehr nachhacken sollen, der Preis war wirklich zu tief.
 

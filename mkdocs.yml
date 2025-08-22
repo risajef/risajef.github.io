@@ -9,7 +9,7 @@ nav:
   - Research: research.md
   - Politics: politics.md
   - Blog:
-    - Opinions: blog/thoughts.md
+    - Thoughts: blog/thoughts.md
     - Philosophy: blog/philosophy.md
     - Science: blog/science.md
   - Book:
@@ -31,5 +31,6 @@ plugins:
 markdown_extensions:
   - footnotes
   - mdx_math
+  - attr_list
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
