@@ -4,6 +4,10 @@ Seit Anfangs 2025 bin ich gewähltes Mitglied des [Einwohnerrats](https://www.be
 
 Zusätzlich bin ich Mitglied der [Tiefbaukomission](https://www.beringen.ch/de/tiefbau), der [Schwimmbadkomission](https://www.beringen.ch/de/schwimmbad) und im [Parteivorstand](https://www.evp-sh-2024.ch/parteivorstand) unserer kantonalen Partei.
 
+# E-ID Vortrag
+
+<div class="float-right"></div>
+![E-ID Whatsapp Status Werbung](images/eid_vortrag.jpg)
 Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand für Fragen zur Verfügung.
 
 # Abstimmungen und Wahlen im Einwohnerrat
@@ -12,9 +16,12 @@ Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Ein
 
 ## Referendum wegen Teilrevision der Nutzungsplanung
 
+*28. September 2025*
+
 Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats und lehne das Referendum ab. Ich stellte mich zur Verfügung, auf Flyer abgedruckt zu werden. Diese Haltung stimmt mit meiner Stimme am [6. Mai 2025](#6-mai-2025) überein.
 
 ## 1. Juli 2025
+
 [Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%203.%20Sitzung%20vom%201.%20Juli%202025.pdf)
 
 | Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
@@ -27,6 +34,7 @@ Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats u
 ---
 
 ## 6. Mai 2025
+
 [Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%202.%20Sitzung%20vom%206.%20Mai%202025.pdf)
 
 | Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
@@ -39,6 +47,7 @@ Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats u
 ---
 
 ## 14. Januar 2025
+
 [Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%201.%20Sitzung%20vom%2014.%20Januar%202025.pdf)
 
 | Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
