@@ -53,7 +53,7 @@ Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats u
 | Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
 |---|---|---|
 | - | ✓ | Gewählt als Stimmenzähler. |
-| ✓ | ✓ | In unterschiedlichen Wahlen wählte ich die vorgeschlagenen Kandidatinnen und Kandidaten |
+| ✓ | ✓ | In unterschiedlichen Wahlen wählte ich die vorgeschlagenen Kandidatinnen und Kandidaten. |
 | ✓ | ✓ | Vorlage zur Anpassung des Schulleitungspensums als Folge der Vorgaben zur flächendeckenden Einführung von geleiteten Schulen im Kanton Schaffhausen |
 | ✓ | ✓ | Abrechnung über die Neugestaltung der Kreuzung Trasadingerstrasse H13 – Haardaublick (Bömmliacker Ost) Beringen über brutto CHF 295'472.95 |
 | ✓ | ✓ | Abrechnung für die Beschaffung eines neuen Gemeindefahrzeuges für den Gebäudeunterhaltüber brutto CHF 114‘393.80 |
