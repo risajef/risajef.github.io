@@ -252,11 +252,24 @@ a.hover {
     box-shadow: 0 1px 0 0;
 }
 
+.site-header a:hover,
+.site-header a:focus {
+    color: var(--color-on-dark);
+}
+
+.site-header .nav-dropdown a {
+    color: var(--primary);
+}
+
 a code {
     color: var(--accent-gold);
     background: var(--bg-secondary);
     border-radius: 2px;
     padding: 0 2px;
+}
+
+.toc-list li a {
+    font-weight: bold;
 }
 
 #main-container {
@@ -442,4 +455,11 @@ h1.vote~table td:nth-child(2) {
     vertical-align: super;
     font-size: small;
     line-height: 0;
+}
+
+a[href^="http"]::after {
+    content: '↗';
+    vertical-align: super;
+    font-size: small;
+    color: var(--text-muted);
 }

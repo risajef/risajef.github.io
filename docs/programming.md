@@ -52,7 +52,7 @@ Apr 2018 – Jun 2019
 # Projects
 ## CodeForge
 [**CodeForge on GitHub**](https://github.com/reto-weber/CodeForge)  
-CodeForge is a platform designed to compile, run, and verify code across multiple programming languages. Using Docker containers to ensure that code execution is both secure. The platform is useful for educational environments, coding demos. Its containerized architecture allows for easy integration of new languages and verification tools. It was completely vibe coded.
+CodeForge is a platform designed to compile, run, and verify code across multiple programming languages. Using Docker containers to ensure that code execution is both secure. The platform is useful for educational environments, coding demos. Its containerized architecture allows for easy integration of new languages and verification tools. It was completely vibe coded. It is sometimes online at [eiffel.org](https://autoproof.eiffel.org/).
 
 ## PDF Scan
 [**PDF Scan Automation on GitHub**](https://github.com/risajef/pdf_scan_automation)  
@@ -68,4 +68,8 @@ Evolution Showcase is a small Python game that visually demonstrates the princip
 
 ## OpenSCAD Phone Stand
 [**OpenSCAD Phone Stand on GitHub**](https://github.com/risajef/openscad_files)  
-This project features a customizable 3D model of a phone stand, created using OpenSCAD. The design is fully parameterized, allowing users to adjust dimensions to fit any mobile phone model. It is ideal for 3D printing enthusiasts.
+This project features a customizable 3D model of a phone stand, created using [OpenSCAD](https://openscad.org/). The design is fully parameterized, allowing users to adjust dimensions to fit any mobile phone model. It is ideal for 3D printing enthusiasts.
+
+## This website
+[**This website on GitHub**](https://github.com/risajef/risajef.github.io)
+This website was done using [mkdocs](https://www.mkdocs.org/) with a custom template and styling. It is automatically deployed to [retoweber.info](https://retoweber.info).
