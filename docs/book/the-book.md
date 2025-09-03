@@ -830,113 +830,113 @@ Ich hoffe, die erwähnten Punkte sind klar erläutert und haben sich trotz all d
 7. Diese ist weder 100 % korrekt noch 100 % aktuell. Es ist einfach aus meinem Verständnis heraus. Es geht, wie schon die ganze Zeit, darum, die richtigen Gedanken im Kopf des Lesers auszulösen und nicht korrekt zu sein. [↑](#footnote-ref-7)
 {:#footnote-7}
 
-9. Zumindest zeitlich lokal relativ zum Richter. Da sich jedoch der Richter verändern kann, verändert sich die Information in eine unerwartete Richtung. Ob eine Information besser oder schlechter ist definiert sich über die Fähigkeit dem Richter zu entsprechen, daher gibt es per Definition nur Fortschritt [↑](#footnote-ref-8)
+8. Zumindest zeitlich lokal relativ zum Richter. Da sich jedoch der Richter verändern kann, verändert sich die Information in eine unerwartete Richtung. Ob eine Information besser oder schlechter ist definiert sich über die Fähigkeit dem Richter zu entsprechen, daher gibt es per Definition nur Fortschritt [↑](#footnote-ref-8)
 {:#footnote-8}
 
-10. In einer theoretischen Arbeit könnten diese 5 Punkte mathematisch präzise formuliert werden und die Konsequenzen daraus abgeleitet werden. In einer mathematischen Version wären Schleifen in der Entwicklung gut möglich. Daher wäre es interessant zu analysieren unter welchen Bedingungen diese entstehen können/werden. [↑](#footnote-ref-9)
+9. In einer theoretischen Arbeit könnten diese 5 Punkte mathematisch präzise formuliert werden und die Konsequenzen daraus abgeleitet werden. In einer mathematischen Version wären Schleifen in der Entwicklung gut möglich. Daher wäre es interessant zu analysieren unter welchen Bedingungen diese entstehen können/werden. [↑](#footnote-ref-9)
 {:#footnote-9}
 
-11. Chaos ist hier mathematisch genannt und beschreibt ontologische Grenzen des Menschen (aber auch von sonstigen Intelligenzen) [↑](#footnote-ref-10)
+10. Chaos ist hier mathematisch genannt und beschreibt ontologische Grenzen des Menschen (aber auch von sonstigen Intelligenzen) [↑](#footnote-ref-10)
 {:#footnote-10}
 
-12. Aber auch viel Theorien in der Physik wären falsch. [↑](#footnote-ref-11)
+11. Aber auch viel Theorien in der Physik wären falsch. [↑](#footnote-ref-11)
 {:#footnote-11}
 
-13. Dies ist zumindest die populärste Deutung dieser Geschichte, obwohl ich sie anders deute. Für die Veranschaulichung in diesem Beispiel akzeptiere ich diese Deutung hier. [↑](#footnote-ref-12)
+12. Dies ist zumindest die populärste Deutung dieser Geschichte, obwohl ich sie anders deute. Für die Veranschaulichung in diesem Beispiel akzeptiere ich diese Deutung hier. [↑](#footnote-ref-12)
 {:#footnote-12}
 
-14. Zitat aus «The Fault in Our Stars» von John Green [↑](#footnote-ref-13)
+13. Zitat aus «The Fault in Our Stars» von John Green [↑](#footnote-ref-13)
 {:#footnote-13}
 
-15. Ich bin mir bewusst, dass jede erdenkliche Zwischenform auch existiert. Es gibt Nuancen. Beispielsweise die Überzeugung, dass absolute Wahrheit existiert aber nicht erkannt werden kann. [↑](#footnote-ref-14)
+14. Ich bin mir bewusst, dass jede erdenkliche Zwischenform auch existiert. Es gibt Nuancen. Beispielsweise die Überzeugung, dass absolute Wahrheit existiert aber nicht erkannt werden kann. [↑](#footnote-ref-14)
 {:#footnote-14}
 
-16. Wir werden das bei der Gottesfrage ähnlich machen. [↑](#footnote-ref-15)
+15. Wir werden das bei der Gottesfrage ähnlich machen. [↑](#footnote-ref-15)
 {:#footnote-15}
 
-17. Plädieren Personen also gegen den Relativismus und für die Wahrheit so plädieren sie einzig für die Idee der Wahrheit. Real existierende Mächte brauchen keinen Advokaten. [↑](#footnote-ref-16)
+16. Plädieren Personen also gegen den Relativismus und für die Wahrheit so plädieren sie einzig für die Idee der Wahrheit. Real existierende Mächte brauchen keinen Advokaten. [↑](#footnote-ref-16)
 {:#footnote-16}
 
-18. Dazu kommt, dass ein allmächtiger Gott die Menschheit auch ohne dieses Leid retten kann. [↑](#footnote-ref-17)
+17. Dazu kommt, dass ein allmächtiger Gott die Menschheit auch ohne dieses Leid retten kann. [↑](#footnote-ref-17)
 {:#footnote-17}
 
-19. Absolute moralische Werte sind ein grosses Thema in der Philosophie, werden hier jedoch ignoriert. [↑](#footnote-ref-18)
+18. Absolute moralische Werte sind ein grosses Thema in der Philosophie, werden hier jedoch ignoriert. [↑](#footnote-ref-18)
 {:#footnote-18}
 
-20. ‹Praktisch, absolut› soll meinen, wenn alle Ethiken diesen Wert haben müssen, dann sind sie rein pragmatisch gesehen ‹absolut›. Denn wenn eine Ethik diese nicht hätte, könnte sie nicht bestehen. [↑](#footnote-ref-19)
+19. ‹Praktisch, absolut› soll meinen, wenn alle Ethiken diesen Wert haben müssen, dann sind sie rein pragmatisch gesehen ‹absolut›. Denn wenn eine Ethik diese nicht hätte, könnte sie nicht bestehen. [↑](#footnote-ref-19)
 {:#footnote-19}
 
-21. Sie ist nur fast nicht dogmatisch: Die Annahme ist nämlich: «Sein ist besser als nicht sein.» Aber mehr auch nicht. Diese Annahme bedürfte in einer theoretischen Arbeit einer Rechtfertigung, die aber mit der Brille der Muster einfach gegeben werden könnte. [↑](#footnote-ref-20)
+20. Sie ist nur fast nicht dogmatisch: Die Annahme ist nämlich: «Sein ist besser als nicht sein.» Aber mehr auch nicht. Diese Annahme bedürfte in einer theoretischen Arbeit einer Rechtfertigung, die aber mit der Brille der Muster einfach gegeben werden könnte. [↑](#footnote-ref-20)
 {:#footnote-20}
 
-22. Ich vertrete hier nicht eine materialistische Sicht. Das Gewissen kann auch etwas Geistliches sein. Es muss aber geistlich persistiert werden und das geistliche beeinflusst dann das Gehirn. Die genaue Wirkungsweise ist mir gleichgültig, solange es die 5 Punkte erfüllt. [↑](#footnote-ref-21)
+21. Ich vertrete hier nicht eine materialistische Sicht. Das Gewissen kann auch etwas Geistliches sein. Es muss aber geistlich persistiert werden und das geistliche beeinflusst dann das Gehirn. Die genaue Wirkungsweise ist mir gleichgültig, solange es die 5 Punkte erfüllt. [↑](#footnote-ref-21)
 {:#footnote-21}
 
-23. In einer klischeehaften Dorfethik wird nicht gegendert. [↑](#footnote-ref-22)
+22. In einer klischeehaften Dorfethik wird nicht gegendert. [↑](#footnote-ref-22)
 {:#footnote-22}
 
-24. Mir ist auch klar, dass dies eine sexistische Ethik ist. Es ist aber genau wichtig, dass wir bei dieser Analyse keinen Filter vorschieben und ein möglichst genereller Blick haben. [↑](#footnote-ref-23)
+23. Mir ist auch klar, dass dies eine sexistische Ethik ist. Es ist aber genau wichtig, dass wir bei dieser Analyse keinen Filter vorschieben und ein möglichst genereller Blick haben. [↑](#footnote-ref-23)
 {:#footnote-23}
 
-25. Dies wirkt ausländerfeindlich. Dies ist jedoch ungerechtfertigt. Ich befürworte nicht, dass unsere Kultur der anderen überlegen ist, sondern nur, dass sie hier wichtiger ist und nicht zu schnelle Veränderungen überleben kann. [↑](#footnote-ref-24)
+24. Dies wirkt ausländerfeindlich. Dies ist jedoch ungerechtfertigt. Ich befürworte nicht, dass unsere Kultur der anderen überlegen ist, sondern nur, dass sie hier wichtiger ist und nicht zu schnelle Veränderungen überleben kann. [↑](#footnote-ref-24)
 {:#footnote-24}
 
-26. Bibel: Matthäus 12,25 [↑](#footnote-ref-25)
+25. Bibel: Matthäus 12,25 [↑](#footnote-ref-25)
 {:#footnote-25}
 
-27. ”Man kann nicht nicht beeinflussen.“ In Anlehnung an Paul Watzlawick. [↑](#footnote-ref-26)
+26. ”Man kann nicht nicht beeinflussen.“ In Anlehnung an Paul Watzlawick. [↑](#footnote-ref-26)
 {:#footnote-26}
 
-28. Somit ist meine Sicht offensichtlich im Konflikt mit Kants Kategorischem-Imperativ. [↑](#footnote-ref-27)
+27. Somit ist meine Sicht offensichtlich im Konflikt mit Kants Kategorischem-Imperativ. [↑](#footnote-ref-27)
 {:#footnote-27}
 
-29. Es ist mir klar, dass dies bestenfalls NP-vollständige Probleme sind. Für den Laien ist das aber gut genug. Und es gibt auch exponentielle Probleme. [↑](#footnote-ref-28)
+28. Es ist mir klar, dass dies bestenfalls NP-vollständige Probleme sind. Für den Laien ist das aber gut genug. Und es gibt auch exponentielle Probleme. [↑](#footnote-ref-28)
 {:#footnote-28}
 
-30. Dies ist die mathematische Form des Kindergartenspiels: «Immer einmal mehr als du!» [↑](#footnote-ref-29)
+29. Dies ist die mathematische Form des Kindergartenspiels: «Immer einmal mehr als du!» [↑](#footnote-ref-29)
 {:#footnote-29}
 
-31. Annahme: P ≠ NP [↑](#footnote-ref-30)
+30. Annahme: P ≠ NP [↑](#footnote-ref-30)
 {:#footnote-30}
 
-32. Gemeint sind NP-Vollständige-, PSpace-Vollständige-, ExpTime-, ExpSpace-Probleme. [↑](#footnote-ref-31)
+31. Gemeint sind NP-Vollständige-, PSpace-Vollständige-, ExpTime-, ExpSpace-Probleme. [↑](#footnote-ref-31)
 {:#footnote-31}
 
-33. Leider sind manchmal auch Approximationen und probabilistische Vorgänge NP-Vollständig (3-SAT z. B.) [↑](#footnote-ref-32)
+32. Leider sind manchmal auch Approximationen und probabilistische Vorgänge NP-Vollständig (3-SAT z. B.) [↑](#footnote-ref-32)
 {:#footnote-32}
 
-34. Der Satz: «Gott existiert» ist sowieso problematisch. Wir müssten erst Gott definieren und auch, was es bedeuten würde für so ein Ding zu existieren. [↑](#footnote-ref-33)
+33. Der Satz: «Gott existiert» ist sowieso problematisch. Wir müssten erst Gott definieren und auch, was es bedeuten würde für so ein Ding zu existieren. [↑](#footnote-ref-33)
 {:#footnote-33}
 
-35. Es gab auch historische Gründe gegen die Religion. Doch das kann ich nicht als religionsspezifische Kritik ansehen. Es müsste erst bewiesen werden, dass eine andere realistische Weltanschauung signifikant weniger Leid auf die Welt bringt. [↑](#footnote-ref-34)
+34. Es gab auch historische Gründe gegen die Religion. Doch das kann ich nicht als religionsspezifische Kritik ansehen. Es müsste erst bewiesen werden, dass eine andere realistische Weltanschauung signifikant weniger Leid auf die Welt bringt. [↑](#footnote-ref-34)
 {:#footnote-34}
 
-36. Dies ist kein Argument für den Idealismus, sondern eine sachliche Feststellung, dass egal was grundlegend ist, wir nur über psychische Zustände mit der Welt und uns selbst interagieren können. [↑](#footnote-ref-35)
+35. Dies ist kein Argument für den Idealismus, sondern eine sachliche Feststellung, dass egal was grundlegend ist, wir nur über psychische Zustände mit der Welt und uns selbst interagieren können. [↑](#footnote-ref-35)
 {:#footnote-35}
 
-37. Man bemerke hier die Parallelen zum Neo-Imperialismus. Auch dieser sagt: «Du kannst deine Kultur und Religion haben, aber wenn du dich nicht kapitalistisch verhältst, gehst du unter.» [↑](#footnote-ref-36)
+36. Man bemerke hier die Parallelen zum Neo-Imperialismus. Auch dieser sagt: «Du kannst deine Kultur und Religion haben, aber wenn du dich nicht kapitalistisch verhältst, gehst du unter.» [↑](#footnote-ref-36)
 {:#footnote-36}
 
-38. Stichwort ‹Täuscher-Gott› von Descartes [↑](#footnote-ref-37)
+37. Stichwort ‹Täuscher-Gott› von Descartes [↑](#footnote-ref-37)
 {:#footnote-37}
 
-39. Den Sprung vom Stammesgott zum Gott des Volkes überspringe ich hier. [↑](#footnote-ref-38)
+38. Den Sprung vom Stammesgott zum Gott des Volkes überspringe ich hier. [↑](#footnote-ref-38)
 {:#footnote-38}
 
-40. Dieser Gedankengang ist von mir erfunden und dies wurde nicht so gemacht und gedacht in der Antike. Es bietet jedoch ein einfaches Bild, warum man einen Polytheismus nicht einfach vom Tisch wischen kann. [↑](#footnote-ref-39)
+39. Dieser Gedankengang ist von mir erfunden und dies wurde nicht so gemacht und gedacht in der Antike. Es bietet jedoch ein einfaches Bild, warum man einen Polytheismus nicht einfach vom Tisch wischen kann. [↑](#footnote-ref-39)
 {:#footnote-39}
 
-41. Homer gilt als Autor der wichtigsten Texte der griechischen Mythologie und setzte den Standard für religiöse Geschichten in der Antike. [↑](#footnote-ref-40)
+40. Homer gilt als Autor der wichtigsten Texte der griechischen Mythologie und setzte den Standard für religiöse Geschichten in der Antike. [↑](#footnote-ref-40)
 {:#footnote-40}
 
-42. Die Diskussion über diese Bedeutung wäre noch etwas länger, aber sei hier mal auf das runtergekürzt. [↑](#footnote-ref-41)
+41. Die Diskussion über diese Bedeutung wäre noch etwas länger, aber sei hier mal auf das runtergekürzt. [↑](#footnote-ref-41)
 {:#footnote-41}
 
-43. Regression ist das zurückfallen in ein primitiveres Verhalten. Man kann es auch als kindlich beschreiben. Regression ist nicht wertendes zu verstehen. [↑](#footnote-ref-42)
+42. Regression ist das zurückfallen in ein primitiveres Verhalten. Man kann es auch als kindlich beschreiben. Regression ist nicht wertendes zu verstehen. [↑](#footnote-ref-42)
 {:#footnote-42}
 
-44. Ich hoffe jedoch hierzu meinen Beitrag, mit diesem Buch zu leisten. [↑](#footnote-ref-43)
+43. Ich hoffe jedoch hierzu meinen Beitrag, mit diesem Buch zu leisten. [↑](#footnote-ref-43)
 {:#footnote-43}
 
-45. Eine kreative Wortschöpfung. Moralin ist die Substanz, aus der Moral besteht. Zu viel von ihr verdirbt das Leben. [↑](#footnote-ref-44)
+44. Eine kreative Wortschöpfung. Moralin ist die Substanz, aus der Moral besteht. Zu viel von ihr verdirbt das Leben. [↑](#footnote-ref-44)
 {:#footnote-44}
