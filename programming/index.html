@@ -55,15 +55,12 @@
 
     <title>Programming - Reto Weber</title>
 
-    <!-- Load main stylesheet without blocking render: preload then switch rel onload; include noscript fallback -->
-    <link rel="preload" href="../style.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="../style.css">
     </noscript>
 
-    <link rel="preload" href="/fonts/gidole.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="preload" href="/fonts/gidole.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
     <style type="text/css">
         @font-face {
             font-family: 'Gidole';
@@ -89,6 +86,7 @@
             font-display: swap;
         }
     </style>
+
 
     <link rel="icon" type="image/svg+xml" href="../favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -233,6 +231,10 @@
                             <a href="#openscad-phone-stand">OpenSCAD Phone Stand</a>
                         </li>
                         
+                        <li class="toc-sub">
+                            <a href="#this-website">This website</a>
+                        </li>
+                        
                     </ul>
                     
                 </li>
@@ -290,7 +292,7 @@ Apr 2018 – Jun 2019<br />
 <h1 id="projects">Projects</h1>
 <h2 id="codeforge">CodeForge</h2>
 <p><a href="https://github.com/reto-weber/CodeForge"><strong>CodeForge on GitHub</strong></a><br />
-CodeForge is a platform designed to compile, run, and verify code across multiple programming languages. Using Docker containers to ensure that code execution is both secure. The platform is useful for educational environments, coding demos. Its containerized architecture allows for easy integration of new languages and verification tools. It was completely vibe coded.</p>
+CodeForge is a platform designed to compile, run, and verify code across multiple programming languages. Using Docker containers to ensure that code execution is both secure. The platform is useful for educational environments, coding demos. Its containerized architecture allows for easy integration of new languages and verification tools. It was completely vibe coded. It is sometimes online at <a href="https://autoproof.eiffel.org/">eiffel.org</a>.</p>
 <h2 id="pdf-scan">PDF Scan</h2>
 <p><a href="https://github.com/risajef/pdf_scan_automation"><strong>PDF Scan Automation on GitHub</strong></a><br />
 PDF Scan is a project that streamlines the organization of physical mail and documents. It processes batches of scanned documents, automatically detecting where to split them into individual files, straightening pages, and performing OCR to extract text. This tool reduces manual effort in digitizing and archiving paperwork. It is especially helpful for personal and small office use. It was partially vibe coded.</p>
@@ -302,13 +304,17 @@ This project provides a <a href="https://hub.docker.com/repository/docker/risaje
 Evolution Showcase is a small Python game that visually demonstrates the principles of evolution and natural selection. In the game, agents exhibit random behaviors, but over time, those best suited to the environment are selected, resulting in non-random strategies. The project serves as an educational tool for illustrating evolutionary algorithms and emergent behavior.</p>
 <h2 id="openscad-phone-stand">OpenSCAD Phone Stand</h2>
 <p><a href="https://github.com/risajef/openscad_files"><strong>OpenSCAD Phone Stand on GitHub</strong></a><br />
-This project features a customizable 3D model of a phone stand, created using OpenSCAD. The design is fully parameterized, allowing users to adjust dimensions to fit any mobile phone model. It is ideal for 3D printing enthusiasts.</p>
+This project features a customizable 3D model of a phone stand, created using <a href="https://openscad.org/">OpenSCAD</a>. The design is fully parameterized, allowing users to adjust dimensions to fit any mobile phone model. It is ideal for 3D printing enthusiasts.</p>
+<h2 id="this-website">This website</h2>
+<p><a href="https://github.com/risajef/risajef.github.io"><strong>This website on GitHub</strong></a>
+This website was done using <a href="https://www.mkdocs.org/">mkdocs</a> with a custom template and styling. It is automatically deployed to <a href="https://retoweber.info">retoweber.info</a>.</p>
         </div>
     </div>
     <div id="mkdocs-search-popup">
         <button id="close-search-popup">&times;</button>
         <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
     </div>
+
     <script>
         function updateTocCollapse() {
             var toc = document.querySelector('.toc-list');
@@ -341,6 +347,37 @@ This project features a customizable 3D model of a phone stand, created using Op
                 }
             });
         }
+    </script>
+    <script>
+    (function() {
+        function isExternalLink(anchor) {
+            try {
+                var url = new URL(anchor.href, location.href);
+                return url.protocol.indexOf('http') === 0 && url.hostname !== location.hostname;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var anchors = document.querySelectorAll('a[href]');
+            anchors.forEach(function(a) {
+                // ignore anchors, mailto, tel, javascript:, and already-handled targets
+                var href = a.getAttribute('href') || '';
+                if (!href || href.indexOf('#') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('javascript:') === 0) return;
+                if (isExternalLink(a)) {
+                    a.setAttribute('target', '_blank');
+                    // ensure security
+                    var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+                    if (rel.indexOf('noopener') === -1) rel.push('noopener');
+                    if (rel.indexOf('noreferrer') === -1) rel.push('noreferrer');
+                    a.setAttribute('rel', rel.join(' '));
+                    // add class for styling
+                    a.classList.add('external-link');
+                }
+            });
+        });
+    })();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../search/main.js"></script>
