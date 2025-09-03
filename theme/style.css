@@ -1,5 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Gidole';
+    src: url('/fonts/gidole.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/inter.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/inter.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 
 
 :root {
@@ -159,7 +177,7 @@ ul {
     list-style: none;
     /* border-right: 2px solid var(--divider); */
     background: var(--bg-secondary);
-    border-radius: 2px;
+    border-radius: 0px;
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.08);
     max-height: max-content;
     overflow-y: auto;
@@ -173,7 +191,6 @@ ul {
 .toc-list li {
     margin: 0.2em 0;
     padding: 0.2em 0.5em;
-    border-radius: 2px;
     transition: background 0.2s;
 }
 
@@ -182,13 +199,6 @@ ul {
     font-weight: 500;
     text-decoration: none;
     transition: color 0.2s;
-}
-
-.toc-list li a:hover,
-.toc-list li a:focus {
-    color: var(--accent-gold);
-    background: var(--primary-light);
-    border-radius: 2px;
 }
 
 .toc-list li ul {
@@ -225,7 +235,6 @@ ul {
 .toc-toggle {
     display: none;
     margin-bottom: 1em;
-    background: var(--primary-hover);
     color: #fff;
     border: none;
     border-radius: 2px;
@@ -254,17 +263,15 @@ code {
 
 a {
     color: var(--error);
-    text-decoration: none;
-    border-radius: 2px;
+    text-decoration: underline;
 }
 
 a:hover,
 a:focus,
 a.hover {
     color: var(--primary);
-    background: var(--primary-light);
     text-decoration: none;
-    box-shadow: 0 1px 0 0 var(--accent-gold);
+    box-shadow: 0 1px 0 0;
 }
 
 a code {
@@ -377,8 +384,7 @@ a code {
     margin: 0 auto;
 }
 
-.float-right+img,
-.float-right+p img {
+.float-right {
     max-width: 30%;
     float: right;
     height: auto;
@@ -452,4 +458,10 @@ h1.vote~table th:nth-child(2),
 h1.vote~table td:nth-child(2) {
     font-weight: 700;
     text-align: center;
+}
+
+[id^="footnote-ref"] {
+    vertical-align: super;
+    font-size: small;
+    line-height: 0;
 }

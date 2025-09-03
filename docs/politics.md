@@ -6,8 +6,7 @@ Zusätzlich bin ich Mitglied der [Tiefbaukomission](https://www.beringen.ch/de/t
 
 # E-ID Vortrag
 
-<div class="float-right"></div>
-![E-ID Whatsapp Status Werbung](images/eid_vortrag.jpg)
+![E-ID Whatsapp Status Werbung](images/eid_vortrag.jpg){:.float-right}
 Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand für Fragen zur Verfügung.
 
 # Abstimmungen und Wahlen im Einwohnerrat {: .vote}

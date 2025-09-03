@@ -1,8 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
+    <meta name="author" content="Reto Weber">
+    <meta name="keywords"
+        content="Reto Weber, programming, research, politics, blog, books, religion, philosophy, science">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (for rich previews on social platforms) -->
+    <meta property="og:title" content="{{ page.title | default(config.site_name) | e }}">
+    <meta property="og:description"
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
+    <meta property="og:type"
+        content="{% if page.file and page.file.src_path and page.file.src_path.startswith('blog/') %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.abs_url | url }}">
+    <meta property="og:site_name" content="{{ config.site_name }}">
+    <meta property="og:image" content="{{ (page.meta.image | default(config.theme_dir ~ '/output.png')) | url }}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default(config.site_name) | e }}">
+    <meta name="twitter:description"
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
+    <meta name="twitter:image" content="{{ (page.meta.image | default(config.theme_dir ~ '/output.png')) | url }}">
+
+    <!-- JSON-LD Structured Data for rich results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "{% if page.file and page.file.src_path and page.file.src_path.startswith('blog/') %}Article{% else %}WebPage{% endif %}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.abs_url | url }}"
+      },
+      "headline": "{{ page.title | default(config.site_name) | e }}",
+      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science.",
+      "author": {
+        "@type": "Person",
+        "name": "Reto Weber"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Reto Weber",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ config.theme_dir | url }}/favicon.ico"
+        }
+      }{% if page.meta and page.meta.date %},
+      "datePublished": "{{ page.meta.date }}"
+      {% endif %}
+    }
+    </script>
+
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     {%- for path in config.extra_css %}
     <link href="{{ path | url }}" rel="stylesheet">

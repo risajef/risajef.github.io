@@ -1,4 +1,4 @@
-# robots.txt for Reto Weber's personal/academic website
+# robots.txt for Reto Weber's personal, professional, and academic website
 User-agent: *
 Disallow:
 
@@ -7,4 +7,4 @@ Disallow:
 # Disallow: /private/
 # Disallow: /drafts/
 
-Sitemap: /sitemap.xml
+Sitemap: https://retoweber.info/sitemap.xml
