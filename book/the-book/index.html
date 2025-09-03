@@ -55,15 +55,12 @@
 
     <title>The Book - Reto Weber</title>
 
-    <!-- Load main stylesheet without blocking render: preload then switch rel onload; include noscript fallback -->
-    <link rel="preload" href="../../style.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="../../style.css">
     </noscript>
 
-    <link rel="preload" href="/fonts/gidole.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="preload" href="/fonts/gidole.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
     <style type="text/css">
         @font-face {
             font-family: 'Gidole';
@@ -89,6 +86,7 @@
             font-display: swap;
         }
     </style>
+
 
     <link rel="icon" type="image/svg+xml" href="../../favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -813,6 +811,7 @@
         <button id="close-search-popup">&times;</button>
         <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
     </div>
+
     <script>
         function updateTocCollapse() {
             var toc = document.querySelector('.toc-list');
@@ -845,6 +844,37 @@
                 }
             });
         }
+    </script>
+    <script>
+    (function() {
+        function isExternalLink(anchor) {
+            try {
+                var url = new URL(anchor.href, location.href);
+                return url.protocol.indexOf('http') === 0 && url.hostname !== location.hostname;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var anchors = document.querySelectorAll('a[href]');
+            anchors.forEach(function(a) {
+                // ignore anchors, mailto, tel, javascript:, and already-handled targets
+                var href = a.getAttribute('href') || '';
+                if (!href || href.indexOf('#') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('javascript:') === 0) return;
+                if (isExternalLink(a)) {
+                    a.setAttribute('target', '_blank');
+                    // ensure security
+                    var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+                    if (rel.indexOf('noopener') === -1) rel.push('noopener');
+                    if (rel.indexOf('noreferrer') === -1) rel.push('noreferrer');
+                    a.setAttribute('rel', rel.join(' '));
+                    // add class for styling
+                    a.classList.add('external-link');
+                }
+            });
+        });
+    })();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../search/main.js"></script>
