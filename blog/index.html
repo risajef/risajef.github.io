@@ -115,8 +115,17 @@
             
             
             
-            <li class="">
-                <a href="../politics/">Politics</a>
+            <li
+                class="nav-parent ">
+                <a href="/politics/">Politics</a>
+                <ul class="nav-dropdown">
+                    
+                    <li
+                        class=" ">
+                        <a href="../politics/finanzen-beringen/">Finanzen Beringen</a>
+                    </li>
+                    
+                </ul>
             </li>
             
             
@@ -247,35 +256,35 @@
         }
     </script>
     <script>
-    (function() {
-        function isExternalLink(anchor) {
-            try {
-                var url = new URL(anchor.href, location.href);
-                return url.protocol.indexOf('http') === 0 && url.hostname !== location.hostname;
-            } catch (e) {
-                return false;
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var anchors = document.querySelectorAll('a[href]');
-            anchors.forEach(function(a) {
-                // ignore anchors, mailto, tel, javascript:, and already-handled targets
-                var href = a.getAttribute('href') || '';
-                if (!href || href.indexOf('#') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('javascript:') === 0) return;
-                if (isExternalLink(a)) {
-                    a.setAttribute('target', '_blank');
-                    // ensure security
-                    var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
-                    if (rel.indexOf('noopener') === -1) rel.push('noopener');
-                    if (rel.indexOf('noreferrer') === -1) rel.push('noreferrer');
-                    a.setAttribute('rel', rel.join(' '));
-                    // add class for styling
-                    a.classList.add('external-link');
+        (function () {
+            function isExternalLink(anchor) {
+                try {
+                    var url = new URL(anchor.href, location.href);
+                    return url.protocol.indexOf('http') === 0 && url.hostname !== location.hostname;
+                } catch (e) {
+                    return false;
                 }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var anchors = document.querySelectorAll('a[href]');
+                anchors.forEach(function (a) {
+                    // ignore anchors, mailto, tel, javascript:, and already-handled targets
+                    var href = a.getAttribute('href') || '';
+                    if (!href || href.indexOf('#') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('javascript:') === 0) return;
+                    if (isExternalLink(a)) {
+                        a.setAttribute('target', '_blank');
+                        // ensure security
+                        var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+                        if (rel.indexOf('noopener') === -1) rel.push('noopener');
+                        if (rel.indexOf('noreferrer') === -1) rel.push('noreferrer');
+                        a.setAttribute('rel', rel.join(' '));
+                        // add class for styling
+                        a.classList.add('external-link');
+                    }
+                });
             });
-        });
-    })();
+        })();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../search/main.js"></script>
