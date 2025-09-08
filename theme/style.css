@@ -40,10 +40,13 @@
     --color-on-dark: #fff;
     --light-bg: var(--primary-light);
     --toc-border: var(--divider);
+
+    --main-font: 'Inter', Arial, Helvetica, sans-serif;
+    --header-font: 'Gidole', Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-family: var(--main-font);
     background: var(--bg-main);
     color: var(--text-main);
 }
@@ -54,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Gidole', Arial, Helvetica, sans-serif;
+    font-family: var(--header-font);
     color: var(--primary);
     margin-block-end: 0;
 }
@@ -462,4 +465,61 @@ a[href^="http"]::after {
     vertical-align: super;
     font-size: small;
     color: var(--text-muted);
+}
+
+#mermaid+div svg {
+    font-family: inherit;
+    inline-size: calc-size(max-content, size + 200px);
+}
+
+#mermaid+div svg .radarAxisLabel,
+#mermaid+div svg .legend text,
+#mermaid+div svg .slice {
+    font-family: var(--main-font);
+}
+
+#mermaid+div svg .radarTitle,
+#mermaid+div svg .label,
+#mermaid+div svg .chart-title text,
+#mermaid+div svg .title text {
+    font-size: 1.6rem;
+    font-family: var(--header-font);
+    font-weight: bold;
+}
+
+#mermaid+div svg .radarCurve-0 {
+    stroke: var(--primary);
+    fill: var(--primary);
+    fill-opacity: 0.3;
+}
+
+#mermaid+div svg g:has(> .radarLegendText) {
+    visibility: hidden;
+}
+
+#mermaid+div svg .quadrant rect {
+    fill: rgba(0, 0, 0, 0);
+}
+
+#mermaid+div svg .border line {
+    stroke: var(--primary) !important;
+}
+
+#mermaid+div svg {
+    margin: 0 auto;
+    display: block;
+}
+
+#mermaid+div svg[aria-roledescription="xychart"] .plot path {
+    stroke: var(--primary);
+}
+
+#budget+table th:first-child,
+#budget+table td:first-child {
+    font-weight: 700;
+    text-align: center;
+}
+
+#budget+table td {
+    text-align: right;
 }

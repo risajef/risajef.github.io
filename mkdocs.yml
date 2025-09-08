@@ -7,7 +7,8 @@ theme:
 nav:
   - Programming: programming.md
   - Research: research.md
-  - Politics: politics.md
+  - Politics:
+    - Finanzen Beringen: politics/finanzen-beringen.md
   - Blog:
     - Thoughts: blog/thoughts.md
     - Philosophy: blog/philosophy.md
@@ -19,7 +20,8 @@ nav:
 
 plugins:
   - search
-  - mermaid2
+  - mermaid2:
+      version: "11.11.0"
   - bibtex:
       bib_file: references.bib
       bib_by_default: false
