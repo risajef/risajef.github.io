@@ -55,7 +55,7 @@ Ebenso ist die Entwicklung dieser Zahlen wichtig. Sind die Zahlen ansteigend ode
 xychart
 title "Fremdkapital"
 x-axis [2020, 2021, 2022, 2023, 2024]
-y-axis "tausend CHF" 34000 --> 40000
+y-axis "tausend CHF" 0 --> 40000
 line [38010, 38342, 35781, 34232, 37158]
 ```
 
@@ -70,7 +70,7 @@ Einige nennenswerte Entwicklungen sind die Ausgaben pro Person, bezogen auf die 
 xychart
 title "Verwaltungskosten pro Person"
 x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
-y-axis "CHF pro Person" 300 --> 600
+y-axis "CHF pro Person" 0 --> 600
 line [398, 377, 412, 517, 438, 361, 411, 371, 547, 498, 494, 539, 522]
 ```
 
@@ -92,7 +92,7 @@ line [2, 36, 33, 7, 16, 21, 63, 49, 21, 29, 55, 44, 72]
 xychart
 title "Gesundheitskosten pro Person"
 x-axis [2020, 2021, 2022, 2023, 2024]
-y-axis "CHF pro Person" 150 --> 250
+y-axis "CHF pro Person" 0 --> 250
 line [165, 178, 158, 174, 237]
 ```
 Ich wählte hier den Start bei 2020, weil es dort einen Systemwechsel gab und die Kosten darum nicht vergleichbar sind.
@@ -108,7 +108,7 @@ Auf der anderen Seite gibt es Trends, die erfreulich sind.
 xychart
 title "Verkehrskosten pro Person"
 x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
-y-axis "CHF pro Person" 60 --> 550
+y-axis "CHF pro Person" 0 --> 550
 line [180, 183, 218, 534, 325, 292, 393, 158, 98, 145, 70, 68, 82]
 ```
 
@@ -119,7 +119,7 @@ line [180, 183, 218, 534, 325, 292, 393, 158, 98, 145, 70, 68, 82]
 xychart
 title "Umwelt & Raumplanungskosten pro Person"
 x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
-y-axis "CHF pro Person" 30 --> 100
+y-axis "CHF pro Person" 0 --> 100
 line [76, 90, 95, 92, 92, 93, 80, 98, 70, 55, 54, 53, 47]
 ```
 

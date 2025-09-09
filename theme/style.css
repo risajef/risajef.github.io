@@ -469,7 +469,7 @@ a[href^="http"]::after {
 
 #mermaid+div svg {
     font-family: inherit;
-    inline-size: calc-size(max-content, size + 200px);
+    inline-size: calc-size(max-content, size + 100px);
 }
 
 #mermaid+div svg .radarAxisLabel,
@@ -522,4 +522,40 @@ a[href^="http"]::after {
 
 #budget+table td {
     text-align: right;
+}
+
+#mermaid+div svg {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 701px) {
+    .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: var(--primary);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .toc-container {
+        position: fixed;
+    }
+
+    .content {
+        margin-left: 260px;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+    #mermaid+div svg {
+        font-family: inherit;
+        inline-size: inherit;
+    }
 }

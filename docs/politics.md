@@ -42,12 +42,12 @@ radar-beta
     max 192
     min 0
 ```
-Sie haben den Antrag mit 5 zu 4 bei 1 Enthaltung abgelehnt.
+
 
 # E-ID Vortrag
 
 ![E-ID Whatsapp Status Werbung](images/eid_vortrag.jpg){:.float-right}
-Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand für Fragen zur Verfügung.
+Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand für Fragen zur Verfügung. ([mehr Infos](/politics/e-id))
 
 # Abstimmungen und Wahlen im Einwohnerrat {: .vote}
 
@@ -86,7 +86,7 @@ Ich bin vom Abstimmungskampf etwas enttäuscht von beiden Seiten.
 | ✓ | ✗ | Antrag von [Michael Bizic](https://www.garbatec.ch/garbatec/team) zur Vorlage über Teilrevision der der Nutzungsplanung: Die Vorlage an den Gemeinderat zurückzuweisen, mit der Begründung, Punkt 5 neu zu verhandeln. Hierbei geht es um die Entschädigungen an die Gemeinde Beringen. Der neue Vorschlag oder Vorgabe wäre 40 Rappen pro Kubikmeter Kies, welcher die Grube verlässt, und 30 Rappen pro Kubikmeter Füllmaterial, welches wieder hineinkommt. |
 | ✓ | ✓ | Vorlage über die Teilrevision der Nutzungsplanung bezüglich der Zonenplanänderung im Gebiet Hooloo/Hinderi Laufferstaag und die Änderung der Bau- und Nutzungsordnung. |
 
-> Der Antrag von [Michael Bizic](https://www.garbatec.ch/garbatec/team) fand ich unterstützenswert und hätte ihn der Vorlage vorgezogen. Er wurde jedoch abgelehnt. Ich war aber eher für die Vorlage als gar nichts.
+> Der Antrag von [Michael Bizic](https://www.garbatec.ch/garbatec/team) fand ich unterstützenswert und hätte ihn der Vorlage vorgezogen. Er wurde aber mit 5 zu 4 bei 1 Enthaltung abgelehnt. Ich war aber eher für die originale Vorlage als gar nichts.
 
 ---
 
