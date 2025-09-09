@@ -9,16 +9,15 @@ Ich erstellte einige Graphen aus den Rechnungen und den Budgets der Gemeinde Ber
 
 ```mermaid
 pie showData
-    "Verwaltung": 524
-    "Öff. Sicherheit": 72
     "Bildung":1424
-    "Kultur&Freizeit":146
-    "Gesundheit":238
     "Soziale Wohlfart": 582
+    "Verwaltung": 524
+    "Gesundheit":238
+    "Kultur&Freizeit":146
     "Verkehr":82
+    "Öff. Sicherheit": 72
     "Umwelt & Raumplanung":47
     "Volkswirtschaft":17
-    "Finanzen":3010
 ```
 
 Beringen nimmt pro Einwohner:in CHF 3010 pro Jahr ein und gibt etwa genau so viel aus (CHF 3133). Diese Daten sind wenig aussagekräftig. Wir können das aber mit einer Nachbargemeinde vergleichen:
@@ -30,19 +29,17 @@ Beringen nimmt pro Einwohner:in CHF 3010 pro Jahr ein und gibt etwa genau so vie
 
 ```mermaid
 pie showData
-    "Verwaltung": 473
-    "Öff. Sicherheit": 164
     "Bildung": 1356
-    "Kultur&Freizeit": 138
-    "Gesundheit": 97
     "Soziale Wohlfart": 659
+    "Verwaltung": 473
+    "Gesundheit": 97
+    "Kultur&Freizeit": 138
     "Verkehr": 273
+    "Öff. Sicherheit": 164
     "Umwelt & Raumplanung": 99
     "Volkswirtschaft": 36
-    "Finanzen": 3213
 ```
-
-Solche Vergleiche erlauben (beispielsweise als Geschäftsprüfungskomissionsmitglied) zu beurteilen, wo genauer nachgeforscht werden sollte.
+Neunkirch nimmt mit CHF 3213 sogar etwas mehr ein pro Person. Es zeigt sich, dass in Neunkirch mehr als dreimal mehr Geld für Verkehr ausgegeben wird. Gesundheit sind sie jedoch viel günstiger unterwegs. Für die Öffentliche Sicherheit, Umwelt & Raumplanung und die Volkswirtschaft gibt Neunkrich doppelt so viel aus wie Beringen. Solche Vergleiche erlauben (beispielsweise als Geschäftsprüfungskomissionsmitglied) zu beurteilen, wo genauer nachgeforscht werden sollte.
 
 # Entwicklung
 
@@ -55,8 +52,8 @@ Ebenso ist die Entwicklung dieser Zahlen wichtig. Sind die Zahlen ansteigend ode
 xychart
 title "Fremdkapital"
 x-axis [2020, 2021, 2022, 2023, 2024]
-y-axis "tausend CHF" 0 --> 40000
-line [38010, 38342, 35781, 34232, 37158]
+y-axis "Millionen CHF" 0 --> 40
+line [38.010, 38.342, 35.781, 34.232, 37.158]
 ```
 
 ## Negative Entwicklungen
@@ -138,4 +135,4 @@ Ich konnte die Budgets und Rechnungen bis ins Jahr 2020 vergleichen. Für die fr
 | 2023 | 151,917        | -197,471     | -349,388        |
 | 2024 | -647,740       | -784,180     | -136,440        |
 
-Das Budget war noch nie schlechter als die Rechnung. Im Durchschnitt ist es CHF 409'000 zu pessimistisch und im Median CHF 193'000. Diese Abweichung scheint systematisch zu sein. So wird pessimistisch budgetiert, um Sparmassnahmen zu rechtfertigen oder zumindest Argumente gegen neue Ausgaben zu haben. Auch kann sich der Gemeinderat selbst immer wieder ein Kränzchen binden, da er ja besser abgeschlossen hat als budgetiert. Gerade letztes Jahr (2024) wäre noch viel positiver ausgefallen, wäre diese unerwartete Steuerrückzahlung nicht geschehen. Ich möchte mich ja nicht über eine gute Rechnung beklagen, aber das ist aus meiner Sicht etwas Augenwischerei und ein Missbrauch dieses Instruments. Ich verurteile es nur bedingt, da Budgets überall zu den genannten Zwecken missbraucht werden. Aber dennoch möchte ich es hier festhalten.
+Die Rechnung war noch nie schlechter als das Budget. Im Durchschnitt ist das Budget CHF 409'000 zu pessimistisch und im Median CHF 193'000. Diese Abweichung scheint systematisch zu sein. So wird pessimistisch budgetiert, um Sparmassnahmen zu rechtfertigen oder zumindest Argumente gegen neue Ausgaben zu haben. Auch kann sich der Gemeinderat selbst immer wieder ein Kränzchen binden, da er ja besser abgeschlossen hat als budgetiert. Gerade letztes Jahr (2024) wäre noch viel positiver ausgefallen, wäre diese unerwartete Steuerrückzahlung nicht geschehen. Ich möchte mich ja nicht über eine gute Rechnung beklagen, aber das ist aus meiner Sicht etwas Augenwischerei und ein Missbrauch dieses Instruments. Ich verurteile es nur bedingt, da Budgets überall zu den genannten Zwecken missbraucht werden. Aber dennoch möchte ich es hier festhalten.
