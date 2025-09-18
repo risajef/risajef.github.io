@@ -7,9 +7,20 @@ Die grundlegenden Informationen sind der
 zu entnehmen.
 {:.header-column}
 
-| | Für Zonenplanänderung (JA) | Gegen Zonenplanänderung (NEIN) | Bemerkungen |
-|---|---|---|---|
-|Einwohnerratsentscheid| 6 Stimmen dafür | 1 Stimme dagegen | 3 Enthaltungen und 2 Einwohnerräte waren wegen Befangenheit im Ausstand. |
-|Abstimmungsempfehlung der Parteien| [EVP](https://evp-sh.ch/), [FDP](https://www.fdp-sh.ch), [GLP](https://sh.grunliberale.ch/), [SVP](https://www.svp-sh.ch/) | [SP](https://spsh.ch/) | Die FDP enthielt sich während der Einwohnerratssitzung, unterstützt jetzt jedoch die Vorlage. Die SP Einwohnerräte waren geteilter Meinung an der Sitzung, entschieden sich danach als Partei, das Referendum zu unterstützen. |
-|Offizielle Webseite| [ja-zum-zonenplan.ch](https://ja-zum-zonenplan.ch/) | [nein-zum-ausverkauf](https://beringen.spsh.ch/blog/2025/09/05/nein-zum-ausverkauf/) | Die Ja Kampagne wird signifikant von der zukünftigen Kiesgrubenbetreiberin unterstützt. |
-|Werbematerial| [Flyer](https://ja-zum-zonenplan.ch/documents/Abstimmungsflyer-Zonenplanaenderung.pdf) | [Flyer](https://beringen.spsh.ch/wp-content/uploads/sites/7/2025/09/250827_Beringen_Nein_Kiesgrube_Flyer_A5.pdf#page=1.00&gsr=0) | |
+| | Für Zonenplanänderung (JA) | Gegen Zonenplanänderung (NEIN) | 
+|---|---|---|
+| Einwohnerratsentscheid[(1)](#footnote-1){:#footnote-ref-1} | 6 Stimmen dafür | 1 Stimme dagegen |
+|Abstimmungsempfehlung der Parteien[(2)](#footnote-2){:#footnote-ref-2}| [EVP](https://evp-sh.ch/), [FDP](https://www.fdp-sh.ch), [GLP](https://sh.grunliberale.ch/), [SVP](https://www.svp-sh.ch/) | [SP](https://spsh.ch/) |
+|Offizielle Webseite[(3)](#footnote-3){:#footnote-ref-3}| [ja-zum-zonenplan.ch](https://ja-zum-zonenplan.ch/) | [nein-zum-ausverkauf](https://beringen.spsh.ch/blog/2025/09/05/nein-zum-ausverkauf/) |
+|Werbematerial| [Flyer](https://ja-zum-zonenplan.ch/documents/Abstimmungsflyer-Zonenplanaenderung.pdf) | [Flyer](https://beringen.spsh.ch/wp-content/uploads/sites/7/2025/09/250827_Beringen_Nein_Kiesgrube_Flyer_A5.pdf#page=1.00&gsr=0) |
+
+## Fussnoten
+
+1. 3 Enthaltungen und 2 Einwohnerräte waren wegen Befangenheit im Ausstand.
+{:#footnote-1}
+
+1. Die FDP enthielt sich während der Einwohnerratssitzung, unterstützt jetzt jedoch die Vorlage. Die SP Einwohnerräte waren geteilter Meinung an der Sitzung, entschieden sich danach als Partei, das Referendum zu unterstützen.
+{:#footnote-2}
+
+1. Die Ja Kampagne wird signifikant von der zukünftigen Kiesgrubenbetreiberin unterstützt.
+{:#footnote-3}
