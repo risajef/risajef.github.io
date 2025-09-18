@@ -433,6 +433,12 @@ th {
     text-align: left;
 }
 
+.header-column~table td:first-child,
+.header-column~table th:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -440,7 +446,7 @@ table {
 table th,
 table td {
     padding-right: 0.6em;
-    vertical-align: top;
+    border-bottom: 1px solid var(--divider);
 }
 
 /* If a table appears after the H1 with this id, make its first two columns bold and centered */
