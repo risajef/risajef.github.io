@@ -9,6 +9,9 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## September 18th 2025
+Füge Seite hinzu: [Zonenplanänderung](/politics/zonenplanaenderung/)
+
 ## September 9th 2025
 
 Füge Seite hinzu: [E-ID](/politics/e-id/)
