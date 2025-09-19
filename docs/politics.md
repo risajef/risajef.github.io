@@ -24,6 +24,7 @@ quadrantChart
     Corinne Maag: [0.3609589005211844, 0.6715499461081732]
     Reto Weber: [0.46269562242327017, 0.6992911299287804]
 ```
+
 Die [Daten](https://www.smartvote.ch/de/group/540/election/24_sh_leg/smartmap) der anderen Teilnehmer. Die nicht aufgeführten Einwohnerräte und Gemeinderäte fand ich nicht online.
 
 &nbsp;

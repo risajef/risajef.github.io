@@ -22,6 +22,7 @@ nav:
 
 plugins:
   - search
+  - inline-select-svg
   - mermaid-to-svg:
       mmdc_path: "mmdc"
       cleanup_generated_images: false
