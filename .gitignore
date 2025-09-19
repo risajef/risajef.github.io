@@ -4,3 +4,4 @@ node_modules
 .gitignore
 site
 docs/private
+package-lock.json

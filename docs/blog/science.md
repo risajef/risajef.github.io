@@ -21,10 +21,10 @@ The hidden layer is thus a list of 512 different 28 × 28 matrices.
 
 I took each matrix and compressed it with JPEG to a quality of only 20%, losing a lot of information, as seen here:
 
-![Uncompressed](/images/weight_uncompressed.png)
+![Uncompressed](/assets/images/weight_uncompressed.png)
 *Random uncompressed weight layer*
 
-![JPEG compressed 20% quality](/images/weight_compressed.png)
+![JPEG compressed 20% quality](/assets/images/weight_compressed.png)
 *Same weight layer but with jpeg compressed*
 
 The test accuracy dropped only from 97% to 96%, which is remarkable given the lower resolution in the latent space.

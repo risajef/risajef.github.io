@@ -1,5 +1,28 @@
 {
+  "name": "paged",
+  "version": "1.0.0",
+  "description": "- Activate virtual environment - `mkdocs serve`",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risajef/risajef.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/risajef/risajef.github.io/issues"
+  },
+  "homepage": "https://github.com/risajef/risajef.github.io#readme",
   "dependencies": {
-    "pagedjs-cli": "^0.4.3"
+    "@mermaid-js/mermaid-cli": "^11.10.1",
+    "puppeteer": "^24.22.0"
   }
 }

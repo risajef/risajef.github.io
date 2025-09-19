@@ -1,6 +1,6 @@
 # Welcome
 
-![Protrait](images/Portrait_bg.jpg){:.float-right}
+![Protrait](assets/images/Portrait_bg.jpg){:.float-right}
 I am grateful to have such a wide diversity of roles. For public interest are probably my two professional careers as a [programmer](programming.md) and [researcher](research.md) as well as my [political career](politics.md). And maybe at last my [personal content](blog.md) about philosophy, science, literature and religion.
 
 > Ich entschied mich, die Seite auf Englisch zu gestalten. Gewisse Inhalte sind jedoch deutsch, da die Interessenten ausschliesslich deutschsprechend sind ([Politik](/politics/)), oder ich nicht die Zeit hatte, sie zu übersetzen ([Buch](/book/the-book/)). Wenn du nicht des Englischen nicht mächtig bist, nutze getrost [Google Translate](https://retoweber-info.translate.goog/?_x_tr_sl=en&_x_tr_tl=de&_x_tr_hl=de&_x_tr_pto=wapp).

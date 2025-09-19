@@ -22,8 +22,10 @@ nav:
 
 plugins:
   - search
-  - mermaid2:
-      version: "11.11.0"
+  - mermaid-to-svg:
+      mmdc_path: "mmdc"
+  # - mermaid2:
+  #     version: "11.11.0"
   - bibtex:
       bib_file: references.bib
       bib_by_default: false
