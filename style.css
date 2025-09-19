@@ -473,50 +473,50 @@ a[href^="http"]::after {
     color: var(--text-muted);
 }
 
-#mermaid+div svg {
+#mermaid+p svg {
     font-family: inherit;
     inline-size: calc-size(max-content, size + 100px);
 }
 
-#mermaid+div svg .radarAxisLabel,
-#mermaid+div svg .legend text,
-#mermaid+div svg .slice {
+#mermaid+p svg .radarAxisLabel,
+#mermaid+p svg .legend text,
+#mermaid+p svg .slice {
     font-family: var(--main-font);
 }
 
-#mermaid+div svg .radarTitle,
-#mermaid+div svg .label,
-#mermaid+div svg .chart-title text,
-#mermaid+div svg .title text {
+#mermaid+p svg .radarTitle,
+#mermaid+p svg .label,
+#mermaid+p svg .chart-title text,
+#mermaid+p svg .title text {
     font-size: 1.6rem;
     font-family: var(--header-font);
     font-weight: bold;
 }
 
-#mermaid+div svg .radarCurve-0 {
+#mermaid+p svg .radarCurve-0 {
     stroke: var(--primary);
     fill: var(--primary);
     fill-opacity: 0.3;
 }
 
-#mermaid+div svg g:has(> .radarLegendText) {
+#mermaid+p svg g:has(> .radarLegendText) {
     visibility: hidden;
 }
 
-#mermaid+div svg .quadrant rect {
+#mermaid+p svg .quadrant rect {
     fill: rgba(0, 0, 0, 0);
 }
 
-#mermaid+div svg .border line {
+#mermaid+p svg .border line {
     stroke: var(--primary) !important;
 }
 
-#mermaid+div svg {
+#mermaid+p svg {
     margin: 0 auto;
     display: block;
 }
 
-#mermaid+div svg[aria-roledescription="xychart"] .plot path {
+#mermaid+p svg[aria-roledescription="xychart"] .plot path {
     stroke: var(--primary);
 }
 
@@ -530,7 +530,7 @@ a[href^="http"]::after {
     text-align: right;
 }
 
-#mermaid+div svg {
+#mermaid+p svg {
     max-width: 90%;
     height: auto;
     display: block;
@@ -560,7 +560,7 @@ a[href^="http"]::after {
         padding-top: 80px;
     }
 
-    #mermaid+div svg {
+    #mermaid+p svg {
         font-family: inherit;
         inline-size: inherit;
     }
