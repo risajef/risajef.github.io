@@ -261,9 +261,9 @@ model = torch.nn.Sequential(linear1, relu, linear2)
 <p>The 784 comes from the input size, which is 28 × 28.</p>
 <p>The hidden layer is thus a list of 512 different 28 × 28 matrices.</p>
 <p>I took each matrix and compressed it with JPEG to a quality of only 20%, losing a lot of information, as seen here:</p>
-<p><img alt="Uncompressed" src="/images/weight_uncompressed.png" />
+<p><img alt="Uncompressed" src="/assets/images/weight_uncompressed.png" />
 <em>Random uncompressed weight layer</em></p>
-<p><img alt="JPEG compressed 20% quality" src="/images/weight_compressed.png" />
+<p><img alt="JPEG compressed 20% quality" src="/assets/images/weight_compressed.png" />
 <em>Same weight layer but with jpeg compressed</em></p>
 <p>The test accuracy dropped only from 97% to 96%, which is remarkable given the lower resolution in the latent space.</p>
 <p>The weights in a CNN are highly redundant. We can significantly reduce dimensionality using a naive algorithm like JPEG. However, for forward propagation in the network, I need the matrix version of JPEG, which does not save memory. The compressed weights could be used to transmit them over a low-bandwidth network like the Internet. However, we can make some informed assumptions:</p>
