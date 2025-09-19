@@ -1,5 +1,7 @@
 # Zonenplanänderung im Gebiet Hooloo/Hinderi Laufferstaag und Änderung der Bau- und Nutzungsordnung (Kiesabbau)
 
+> Diese Informationen sind möglichst neutral gestaltet. Ich selbst unterstütze die Vorlage, aber ich hoffe meine Meinung beeinflusste die Gestaltung dieser Seite nicht. Der Transparenz wegen sei es aber hier erwähnt.
+
 Dies ist eine Sammlung von offiziellen Beiträgen zur kommunalen Abstimmung am 28. September 2025 in Beringen. Ich enhalte mich meiner persönlichen Meinung der Objektivität wegen.
 
 Die grundlegenden Informationen sind der
