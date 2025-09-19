@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDSP09RGJJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-PDSP09RGJJ');
-    </script>
     <meta charset="UTF-8">
     <meta name="description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
@@ -239,6 +230,10 @@
     {%- for script in config.extra_javascript %}
     {{ script | script_tag }}
     {%- endfor %}
+    <!-- 100% privacy-first analytics -->
+    <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt=""
+            referrerpolicy="no-referrer-when-downgrade" /></noscript>
 </body>
 
 </html>
