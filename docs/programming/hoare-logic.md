@@ -4,7 +4,7 @@ extra_css:
 extra_javascript:
 - assets/hoare/script.js
 ---
-# Hoar logic proof verifier
+# Hoare logic proof verifier
 
 > This was vibe coded and uses React.
 
@@ -12,7 +12,7 @@ extra_javascript:
 2. Click `Create Root`
 3. Add the appropriate rules until it says `Valid Proof: Yes`
 
-## Hoar inference rules
+## Hoare inference rules
 
 $$\frac{}{\{p[e/x]\} \; x := e \; \{p\}}\text{[ass]}$$
 
