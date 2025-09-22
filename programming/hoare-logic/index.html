@@ -214,7 +214,7 @@
             </ul>
         </div>
         <div class="content">
-            <h1 id="hoar-logic-proof-verifier">Hoar logic proof verifier</h1>
+            <h1 id="hoare-logic-proof-verifier">Hoare logic proof verifier</h1>
 <blockquote>
 <p>This was vibe coded and uses React.</p>
 </blockquote>
@@ -223,7 +223,7 @@
 <li>Click <code>Create Root</code></li>
 <li>Add the appropriate rules until it says <code>Valid Proof: Yes</code></li>
 </ol>
-<h2 id="hoar-inference-rules">Hoar inference rules</h2>
+<h2 id="hoare-inference-rules">Hoare inference rules</h2>
 <p>
 <script type="math/tex; mode=display">\frac{}{\{p[e/x]\} \; x := e \; \{p\}}\text{[ass]}</script>
 </p>
@@ -231,16 +231,16 @@
 <script type="math/tex; mode=display">\frac{}{\{p\} \; \text{skip} \; \{p\}}\text{[skip]}</script>
 </p>
 <p>
-<script type="math/tex; mode=display">\frac{ \{p\} \; P \; \{r\} \;  \{r\} \; Q \; \{q\}}{ \{p\} \; P; Q \; \{q\}}\text{[comp]}</script>
+<script type="math/tex; mode=display">\frac{ \{p\} \; P \; \{r\} \; \; \;  \{r\} \; Q \; \{q\}}{ \{p\} \; P; Q \; \{q\}}\text{[comp]}</script>
 </p>
 <p>
 <script type="math/tex; mode=display">\frac{\{p \land b\} \; P \; \{p\}}{\{p\} \; \text{while } b \; \text{ do } P \; \{\neg b \land p\}}\text{[while]}</script>
 </p>
 <p>
-<script type="math/tex; mode=display">\frac{\{p \land b\} \; P \; \{q\} \; \{q \land b\} \; \text{if } b \; \text{ then } P \; \{q\}}{\{p\} \; \text{if } b \; \text{ then } P \; \{q\}}\text{[if]}</script>
+<script type="math/tex; mode=display">\frac{\{p \land b\} \; P \; \{q\} \; \; \; \{p \land \lnot b\} \; Q \; \{q\}}{\{p\} \; \text{if } b \; \text{ then } P \; \text{else } Q \text { end }\{q\}}\text{[if]}</script>
 </p>
 <p>
-<script type="math/tex; mode=display">\frac{\{p\} \; P \; \{q\} \; p' \implies p \; q \implies q'}{\{p'\} \; P \; \{q'\}}\text{[cons]}</script>
+<script type="math/tex; mode=display">\frac{p' \implies p \; \; \; \{p\} \; P \; \{q\} \; \; \; q \implies q'}{\{p'\} \; P \; \{q'\}}\text{[cons]}</script>
 </p>
 <p>This tool is not suffisticated but only doing string replacement and string comparison.</p>
 <h2 id="hoare-logic-prover">Hoare logic prover</h2>
