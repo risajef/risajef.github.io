@@ -5,7 +5,8 @@ theme:
   name: null
   custom_dir: theme
 nav:
-  - Programming: programming.md
+  - Programming:
+    - Hoare Logic: programming/hoare-logic.md
   - Research: research.md
   - Politics:
     - Zonenplanänderung: politics/zonenplanaenderung.md

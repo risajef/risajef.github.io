@@ -56,6 +56,9 @@
     </script>
 
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    {% for path in (page.meta and page.meta.extra_css) or [] %}
+    <link href="{{ path | url }}" rel="stylesheet">
+    {% endfor %}
     {%- for path in config.extra_css %}
     <link href="{{ path | url }}" rel="stylesheet">
     {%- endfor %}
@@ -236,7 +239,9 @@
             });
         })();
     </script>
-
+    {% for path in (page.meta and page.meta.extra_javascript) or [] %}
+    <script src="{{ path | url }}"></script>
+    {% endfor %}
     {%- for script in config.extra_javascript %}
     {{ script | script_tag }}
     {%- endfor %}
