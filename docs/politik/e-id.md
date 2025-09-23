@@ -1,7 +1,7 @@
 # E-ID
 
 ![E-ID Whatsapp Status Werbung](/assets/images/eid_vortrag.jpg){:.float-right}
-Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand für Fragen zur Verfügung. ([mehr Infos](/politics/e-id))
+Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand für Fragen zur Verfügung. ([mehr Infos](/politik/e-id))
 
 Zusätzlich schrieb ich folgenden Artikel im Klettgauer Bote
 

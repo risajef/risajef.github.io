@@ -5,13 +5,13 @@ theme:
   name: null
   custom_dir: theme
 nav:
-  - Programming:
-    - Hoare Logic: programming/hoare-logic.md
-  - Research: research.md
-  - Politics:
-    - Zonenplanänderung: politics/zonenplanaenderung.md
-    - Finanzen Beringen: politics/finanzen-beringen.md
-    - E-ID: politics/e-id.md
+  - Programming: programming.md
+  - Research:
+    - Hoare Logic: research/hoare-logic.md
+  - Politik:
+    - Zonenplanänderung: politik/zonenplanaenderung.md
+    - Finanzen Beringen: politik/finanzen-beringen.md
+    - E-ID: politik/e-id.md
   - Blog:
     - Thoughts: blog/thoughts.md
     - Philosophy: blog/philosophy.md

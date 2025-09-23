@@ -11,7 +11,7 @@ This is two in one. It is my personal website but also my custom theme. The them
 nav:
   - Programming: programming.md
   - Research: research.md
-  - Politics: politics.md
+  - Politik: politik.md
   - Blog:
     - Opinions: blog/thoughts.md
     - Philosophy: blog/philosophy.md

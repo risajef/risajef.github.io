@@ -3,6 +3,12 @@ extra_css:
 - assets/hoare/style.css
 extra_javascript:
 - assets/hoare/script.js
+tags:
+- hoare
+- logic
+- verifier
+- axiomatic
+- semantics
 ---
 # Hoare logic proof verifier
 
