@@ -11,20 +11,20 @@
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph (for rich previews on social platforms) -->
-    <meta property="og:title" content="Hoare Logic">
+    <meta property="og:title" content="E-ID">
     <meta property="og:description"
-        content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
     <meta property="og:type"
         content="website">
-    <meta property="og:url" content="/programming/hoare-logic/">
+    <meta property="og:url" content="/politik/e-id/">
     <meta property="og:site_name" content="Reto Weber">
     <meta property="og:image" content="/output.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hoare Logic">
+    <meta name="twitter:title" content="E-ID">
     <meta name="twitter:description"
-        content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
     <meta name="twitter:image" content="/output.png">
 
     <!-- JSON-LD Structured Data for rich results -->
@@ -34,10 +34,10 @@
       "@type": "WebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/programming/hoare-logic/"
+        "@id": "/politik/e-id/"
       },
-      "headline": "Hoare Logic",
-      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science.",
+      "headline": "E-ID",
+      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. []",
       "author": {
         "@type": "Person",
         "name": "Reto Weber"
@@ -53,9 +53,7 @@
     }
     </script>
 
-    <title>Hoare Logic - Reto Weber</title>
-    
-    <link href="../../assets/hoare/style.css" rel="stylesheet">
+    <title>E-ID - Reto Weber</title>
     
 
     </noscript>
@@ -106,14 +104,20 @@
         <ul class="main-nav">
             
             
+            <li class="">
+                <a href="../../programming/">Programming</a>
+            </li>
+            
+            
+            
             <li
                 class="nav-parent ">
-                <a href="/programming/">Programming</a>
+                <a href="/research/">Research</a>
                 <ul class="nav-dropdown">
                     
                     <li
-                        class="current ">
-                        <a href="./">Hoare Logic</a>
+                        class=" ">
+                        <a href="../../research/hoare-logic/">Hoare Logic</a>
                     </li>
                     
                 </ul>
@@ -121,30 +125,24 @@
             
             
             
-            <li class="">
-                <a href="../../research/">Research</a>
-            </li>
-            
-            
-            
             <li
                 class="nav-parent ">
-                <a href="/politics/">Politics</a>
+                <a href="/politik/">Politik</a>
                 <ul class="nav-dropdown">
                     
                     <li
                         class=" ">
-                        <a href="../../politics/zonenplanaenderung/">Zonenplanänderung</a>
+                        <a href="../zonenplanaenderung/">Zonenplanänderung</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../politics/finanzen-beringen/">Finanzen Beringen</a>
+                        <a href="../finanzen-beringen/">Finanzen Beringen</a>
                     </li>
                     
                     <li
-                        class=" ">
-                        <a href="../../politics/e-id/">E-ID</a>
+                        class="current ">
+                        <a href="./">E-ID</a>
                     </li>
                     
                 </ul>
@@ -214,37 +212,48 @@
             </ul>
         </div>
         <div class="content">
-            <h1 id="hoare-logic-proof-verifier">Hoare logic proof verifier</h1>
-<blockquote>
-<p>This was vibe coded and uses React.</p>
-</blockquote>
-<ol>
-<li>Create a program using drag and drop with the given elements.</li>
-<li>Click <code>Create Root</code></li>
-<li>Add the appropriate rules until it says <code>Valid Proof: Yes</code></li>
-</ol>
-<h2 id="hoare-inference-rules">Hoare inference rules</h2>
-<p>
-<script type="math/tex; mode=display">\frac{}{\{p[e/x]\} \; x := e \; \{p\}}\text{[ass]}</script>
-</p>
-<p>
-<script type="math/tex; mode=display">\frac{}{\{p\} \; \text{skip} \; \{p\}}\text{[skip]}</script>
-</p>
-<p>
-<script type="math/tex; mode=display">\frac{ \{p\} \; P \; \{r\} \; \; \;  \{r\} \; Q \; \{q\}}{ \{p\} \; P; Q \; \{q\}}\text{[comp]}</script>
-</p>
-<p>
-<script type="math/tex; mode=display">\frac{\{p \land b\} \; P \; \{p\}}{\{p\} \; \text{while } b \; \text{ do } P \; \{\neg b \land p\}}\text{[while]}</script>
-</p>
-<p>
-<script type="math/tex; mode=display">\frac{\{p \land b\} \; P \; \{q\} \; \; \; \{p \land \lnot b\} \; Q \; \{q\}}{\{p\} \; \text{if } b \; \text{ then } P \; \text{else } Q \text { end }\{q\}}\text{[if]}</script>
-</p>
-<p>
-<script type="math/tex; mode=display">\frac{p' \implies p \; \; \; \{p\} \; P \; \{q\} \; \; \; q \implies q'}{\{p'\} \; P \; \{q'\}}\text{[cons]}</script>
-</p>
-<p>This tool is not suffisticated but only doing string replacement and string comparison.</p>
-<h2 id="hoare-logic-prover">Hoare logic prover</h2>
-<div id="root"></div>
+            <h1 id="e-id">E-ID</h1>
+<p><img alt="E-ID Whatsapp Status Werbung" class="float-right" src="/assets/images/eid_vortrag.jpg" />
+Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand für Fragen zur Verfügung. (<a href="/politik/e-id">mehr Infos</a>)</p>
+<p>Zusätzlich schrieb ich folgenden Artikel im Klettgauer Bote</p>
+<h2 id="e-id-innovation-oder-uberwachung">E-ID: Innovation oder Überwachung?</h2>
+<p><strong>Abstimmung 28. September</strong></p>
+<p>Im Hinblick auf die eidgenössische Abstimmung vom 28. Sepember über die E-ID organisiert
+die EVP Schaffhausen einen Fachvortrag mit dem Thema «Innovation oder Überwachung».
+Reto Weber aus Beringen hat sich bereits intensiv mit der E-ID auseinandergesetzt.</p>
+<p><strong>Schaffhausen</strong> Etwas mehr als ein Jahr lang durfte ich als Softwareentwickler an der neuen E-
+ID mitarbeiten. Schon damals war uns bewusst, dass dieses Projekt mutig war. Kann man es
+rechtfertigen, so viele Entwickler einzustellen, ohne dass eine gesetzliche Grundlage existiert?
+Vielleicht war es hoch gepokert - oder weise Voraussicht. Wie dem auch sei: Inzwischen
+wurde die gesetzliche Grundlage erarbeitet, vom Schweizer Parlament verabschiedet und liegt
+nun via Referendum in unseren Briefkästen. Wir sollen entscheiden, ob wir sie gutheissen
+oder nicht.</p>
+<p>Die Gegner der E-ID bringen zahlreiche Argumente vor. Leider sind viele davon faktisch
+falsch oder haben gar nichts mit der E-ID zu tun. So wird beispielsweise behauptet, der
+Quellcode sei intransparent und nicht einsehbar - dabei ist er offen zugänglich. Oder es wird
+gesagt, die E-ID könne nicht ohne private Firmen herausgegeben werden - auch das stimmt
+nicht. Alle systemrelevanten Teile der Infrastruktur werden vom Bund betrieben. Ich könnte
+hier noch viele weitere Fehlinformationen aufzählen, doch es soll nicht um falsche, sondern
+um stichhaltige Argumente gehen.</p>
+<p>Technologisch hat man sich für eine einfache und sichere Lösung entschieden, die sich bereits
+seit Jahren bei den grossen Tech-Unternehmen bewährt. Sie ist etabliert, gut verstanden und
+ihre Funktionsweise ist erprobt. Aber die entscheidende Frage lautet: Wozu brauchen wir
+überhaupt eine E-ID? Für mich als Informatiker ist Digitalisierung spannend und sichert
+meinen Lebensunterhalt, aber ich möchte nur Projekte umsetzen, die echten Mehrwert
+bringen. Digital ist nicht automatisch besser - und auch nicht automatisch schlechter.</p>
+<p>Der grosse Vorteil der digitalen Welt liegt in ihrer Skalierbarkeit und Dezentralität. Wenn ein
+Prozess vollständig digitalisiert werden kann, lässt er sich unabhängig von Öffnungszeiten, oft
+gebührenfrei und an jedem beliebigen Ort durchführen. Eine digitale ID schafft so die
+Grundlage, um Altersnachweise zu erbringen, Bankkonten zu eröffnen, elektronische
+Signaturen zu beziehen, sich ins Organ- und Gewebespenderegister einzutragen oder
+Mobilfunkverträge abzuschliessen - alles online und unkompliziert.</p>
+<p>Darüber hinaus baut der Bund nicht nur die E-ID, sondern eine ganze Vertrauensinfrastruktur.
+Damit sollen Schweizer Vereine und Unternehmen eigene digitale Ausweise ausstellen und
+ihre Prozesse digitalisieren können. Das im Detail zu erklären, würde hier den Rahmen
+sprengen. Wer mehr erfahren möchte, ist herzlich eingeladen: Am 4. September, um 19 Uhr
+im Hotel Promenade werde ich über die technische Seite der E-ID sprechen und stehe offen
+für Fragen zur Verfügung.</p>
+<p>Reto Weber, Beringen</p>
         </div>
     </div>
     <div id="mkdocs-search-popup">
@@ -326,8 +335,6 @@
             });
         })();
     </script>
-    
-    <script src="../../assets/hoare/script.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../search/main.js"></script>
