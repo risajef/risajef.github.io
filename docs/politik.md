@@ -44,7 +44,6 @@ radar-beta
     min 0
 ```
 
-
 # E-ID Vortrag
 
 ![E-ID Whatsapp Status Werbung](assets/images/eid_vortrag.jpg){:.float-right}
@@ -64,6 +63,19 @@ Ich bin vom Abstimmungskampf etwas enttäuscht von beiden Seiten.
 
 - Auf der **"Pro"-Seite** zu welcher ich gehöre, wurde mein Gesicht und mein Argument abgedruckt. Ich bin jedoch der am wenigsten einflussreiche Politiker in ganz Beringen. Ich hatte gerade mal 212 Stimmen nur Thomas Widmer hatte auch nur 237 Stimmen und alle anderen hatten über doppelt so viele Stimmen; doch keiner hat sich bereit dazu erklärt, sich öffentlich für die Vorlage auszusprechen. Vielleicht wegen allfäliger Befangenheit? Doch warum sind sie dann nicht in der Einwohnerratssitzung in den Ausstand getreten?
 - Auf der **"Contra"-Seite** wird jetzt damit geworben, dass das Land zu günstig umgezont wird. Aber es stand ein Vorschlag der auf dem Tisch, der mehr Geld für die Gemeinde herausholen wollte, aber dieser wurde von den jetzigen Gegnern nicht gutgeheissen.
+
+## 23. September 2025
+
+Link zu den Beschlüssen ist noch nicht publiziert (24.9.25 9:00)
+
+| Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
+|---|---|---|
+| ✓ | ✓ | Baukredit Neubau Werkhof an der Werkstrasse |
+| ✓ | ✓ | Gesamtkredit für Umsetzung Beleuchtungskonzept (öffentliche Beleuchtung) |
+| ✗ | ✗ | Verschidenes: Antrag die Einwohnerratssitzung von 20:00 auf 19:30 zu verschieben |
+
+> Der Neubau des Werkhofs verursachte lange Diskussionen. Es wurde vorallem bemängelt, dass der Bau zu teuer sei und viele Fahrzeuge drausen stehen bleiben könnten. Meine Haltung war von Beginn, dass dies zu spät sei. Wir sind nicht in der Planungsphase. Es wurde gesagt es werde 5.3 Mio kosten (± 30%). Jetzt kostet es 4.9Mio (± 10%). Aus meiner Sicht hat der Gemeinderat alles genauso umgesetzt wie angekündigt und aufgetragen. Zusätzlich hat das Volk "Ja" zum Planungskredit gesagt und ich fände es bevormundend zu einen Projekt "Nein" zu sagen, dass genau den Spezifikationen entspricht. Die Vorlage unterliegt dem obligatorischen Referendum weil sie zu teuer ist.
+
 
 ## 1. Juli 2025
 
