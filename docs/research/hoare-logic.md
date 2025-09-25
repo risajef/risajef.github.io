@@ -32,7 +32,7 @@ $$\frac{\{p \land b\} \; P \; \{q\} \; \; \; \{p \land \lnot b\} \; Q \; \{q\}}{
 
 $$\frac{p' \implies p \; \; \; \{p\} \; P \; \{q\} \; \; \; q \implies q'}{\{p'\} \; P \; \{q'\}}\text{[cons]}$$
 
-This tool is not suffisticated but only doing string replacement and string comparison.
+This tool is not sophisticated but only doing string replacement and string comparison.
 
 ## Hoare logic prover
 

@@ -23,6 +23,12 @@ nav:
 
 plugins:
   - search
+  - redirects:
+      use_directory_urls: true
+      redirect_maps:
+        '/politics/zonenplanaenderung.md': '/politik/zonenplanaenderung.md'
+        '/politics/finanzen-beringen.md': '/politik/finanzen-beringen.md'
+        '/politics/e-id.md': '/politik/e-id.md'
   - inline-select-svg
   - mermaid-to-svg:
       mmdc_path: "mmdc"
