@@ -1,0 +1,2 @@
+/docs/z3/z3.wasm/z3smt2w.wasm filter=lfs diff=lfs merge=lfs -text
+/docs/z3/z3.wasm/z3w.wasm filter=lfs diff=lfs merge=lfs -text
