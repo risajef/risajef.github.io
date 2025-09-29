@@ -43,26 +43,34 @@ radar-beta
     max 192
     min 0
 ```
+# Volksentscheide
 
-# E-ID Vortrag
+## 28. September 2025
+
+### E-ID Vortrag
 
 ![E-ID Whatsapp Status Werbung](assets/images/eid_vortrag.jpg){:.float-right}
 Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand für Fragen zur Verfügung. ([mehr Infos](/politik/e-id))
+
+> Das Volk nahm die Vorlage sehr knapp an [Link](https://www.bk.admin.ch/ch/d/pore/va/20250928/index.html). In Schaffhausen war die Zustimmung signifikant kleiner [Link](https://sh.ch/CMS/get/file/f821997c-7d41-43d0-b24c-89d342385f0d).
+
+### Referendum wegen Teilrevision der Nutzungsplanung
+
+Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats und lehne das Referendum ab. Ich stellte mich zur Verfügung, auf Flyer abgedruckt zu werden. Diese Haltung stimmt mit meiner Stimme am [6. Mai 2025](#6-mai-2025) überein.
+
+Ich bin vom Abstimmungskampf etwas enttäuscht von beiden Seiten.
+
+- Auf der **"Pro"-Seite** zu welcher ich gehöre, wurde mein Gesicht und mein Argument abgedruckt. Ich bin jedoch der am wenigsten einflussreiche Politiker in ganz Beringen. Ich hatte gerade mal 212 Stimmen nur Thomas Widmer hatte auch nur 237 Stimmen und alle anderen hatten über doppelt so viele Stimmen; doch keiner hat sich bereit dazu erklärt, sich öffentlich für die Vorlage auszusprechen. Vielleicht wegen allfäliger Befangenheit? Doch warum sind sie dann nicht in der Einwohnerratssitzung in den Ausstand getreten?
+- Auf der **"Contra"-Seite** wird jetzt damit geworben, dass das Land zu günstig umgezont wird. Aber es stand ein Vorschlag der auf dem Tisch, der mehr Geld für die Gemeinde herausholen wollte, aber dieser wurde von den jetzigen Gegnern nicht gutgeheissen.
+
+Ich erstellte eine [Seite](/politik/zonenplanaenderung/) mit neutralen Fakten zur Abstimmung. Mehr fehlten diese Informationen in der Vergangenheit für kommunale Geschäfte. Ich versuche das auch in Zukunft zu erstellen.
+
+> Das Volk lehnte die Zonenplanänderung ab ([Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/2025/2025%2009%2028%20Bund%20und%20Gemeinde.pdf)), was ich schade finde. Es ist auch ein Realitätscheck für uns im Einwohnerrat. Fast alle Parteien waren dafür. Sehr viele Einwohnerräte waren dafür. Das Volk aber dagegen.
 
 # Abstimmungen und Wahlen im Einwohnerrat {: .vote}
 
 Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Einwohnerrat. Die Vorlagen können auf der [Webseite](https://www.beringen.ch/de/einwohnerrat-vorlagen) der Gemeinde Beringen gefunden werden.
 
-## Referendum wegen Teilrevision der Nutzungsplanung
-
-*28. September 2025*
-
-Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats und lehne das Referendum ab. Ich stellte mich zur Verfügung, auf Flyer abgedruckt zu werden. Diese Haltung stimmt mit meiner Stimme am [6. Mai 2025](#6-mai-2025) überein.
-
-Ich bin vom Abstimmungskampf etwas enttäuscht von beiden Seiten. 
-
-- Auf der **"Pro"-Seite** zu welcher ich gehöre, wurde mein Gesicht und mein Argument abgedruckt. Ich bin jedoch der am wenigsten einflussreiche Politiker in ganz Beringen. Ich hatte gerade mal 212 Stimmen nur Thomas Widmer hatte auch nur 237 Stimmen und alle anderen hatten über doppelt so viele Stimmen; doch keiner hat sich bereit dazu erklärt, sich öffentlich für die Vorlage auszusprechen. Vielleicht wegen allfäliger Befangenheit? Doch warum sind sie dann nicht in der Einwohnerratssitzung in den Ausstand getreten?
-- Auf der **"Contra"-Seite** wird jetzt damit geworben, dass das Land zu günstig umgezont wird. Aber es stand ein Vorschlag der auf dem Tisch, der mehr Geld für die Gemeinde herausholen wollte, aber dieser wurde von den jetzigen Gegnern nicht gutgeheissen.
 
 ## 23. September 2025
 
