@@ -9,9 +9,9 @@ nav:
   - Research:
     - Hoare Logic: research/hoare-logic.md
   - Politik:
-    - Zonenplanänderung: politik/zonenplanaenderung.md
+    # - Zonenplanänderung: politik/zonenplanaenderung.md
     - Finanzen Beringen: politik/finanzen-beringen.md
-    - E-ID: politik/e-id.md
+    # - E-ID: politik/e-id.md
   - Blog:
     - Thoughts: blog/thoughts.md
     - Philosophy: blog/philosophy.md
