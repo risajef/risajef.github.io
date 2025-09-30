@@ -9,6 +9,8 @@ tags:
 - verifier
 - axiomatic
 - semantics
+- SMT
+- Z3
 ---
 # Hoare logic proof verifier
 
