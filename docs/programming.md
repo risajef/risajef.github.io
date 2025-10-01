@@ -59,7 +59,7 @@ Apr 2018 – Jun 2019
 
 # Projects
 ## Hoare-Logic proof verifier
-[**GitHub**](https://github.com/risajef/hoare-logic), [**Web Demo**](https://retoweber.info/research/hoare-logic/)
+[**GitHub**](https://github.com/risajef/hoare-logic), [**Web Demo**](https://retoweber.info/research/hoare-logic/)  
 This is a web technology based hoare logic verifier. The user can create programs and their proofs using drag and drop. The proofs of the hoare logic have to be explicit to the end. The logical and arithmetical proof obligations are fed to the SMT solver [Z3](https://github.com/Z3Prover/z3). The tool is fully frontend based. No server is needed. That is why the application also works on this static website.
 
 ## CodeForge
