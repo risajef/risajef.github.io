@@ -23,6 +23,6 @@
   "homepage": "https://github.com/risajef/risajef.github.io#readme",
   "dependencies": {
     "@mermaid-js/mermaid-cli": "^11.10.1",
-    "puppeteer": "^24.22.0"
+    "puppeteer": "^23.11.1"
   }
 }

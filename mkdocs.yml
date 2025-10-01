@@ -30,10 +30,10 @@ plugins:
         'politics/finanzen-beringen.md': 'politik/finanzen-beringen.md'
         'politics/e-id.md': 'politik/e-id.md'
         'programming/hoare-logic.md': 'research/hoare-logic.md'
-  - inline-select-svg
   - mermaid-to-svg:
       mmdc_path: "mmdc"
       cleanup_generated_images: false
+  - inline-select-svg
   # - mermaid2:
   #     version: "11.11.0"
   - bibtex:
