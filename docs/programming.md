@@ -1,9 +1,17 @@
 # Experience
 
+## Machine Learning Engineer
+**[Brütsch Technology](https://brel.ch)**
+Beringen, Switzerland
+Okt 2025 – present
+*Deep learning, Computer Vision*
+
+> I just started. Therefore I cannot say much about the projects yet.
+
 ## PhD Student  
 **[Constructor Institute of Technology (Academia)](https://se.constructor.ch/)**  
 Schaffhausen, Switzerland  
-Dec 2023 – Present  
+Dec 2023 – Sep 2025
 *Formal Verification, Eiffel, Automated Proofs (Isabelle HOL), LLMs, AI*
 
 - **Mathematical Proof Engine:** Developing an engine for validating mathematical proofs in an object-oriented programming language. Developed a first proof of concept for a simple proof.
@@ -50,6 +58,10 @@ Apr 2018 – Jun 2019
 ---
 
 # Projects
+## Hoare-Logic proof verifier
+[**GitHub**](https://github.com/risajef/hoare-logic), [**Web Demo**](https://retoweber.info/research/hoare-logic/)
+This is a web technology based hoare logic verifier. The user can create programs and their proofs using drag and drop. The proofs of the hoare logic have to be explicit to the end. The logical and arithmetical proof obligations are fed to the SMT solver [Z3](https://github.com/Z3Prover/z3). The tool is fully frontend based. No server is needed. That is why the application also works on this static website.
+
 ## CodeForge
 [**CodeForge on GitHub**](https://github.com/reto-weber/CodeForge)  
 CodeForge is a platform designed to compile, run, and verify code across multiple programming languages. Using Docker containers to ensure that code execution is both secure. The platform is useful for educational environments, coding demos. Its containerized architecture allows for easy integration of new languages and verification tools. It was completely vibe coded. It is sometimes online at [eiffel.org](https://autoproof.eiffel.org/).
