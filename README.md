@@ -1,6 +1,10 @@
 # Usage
 
-- Activate virtual environment
+- `npm install`
+- `apt-get install libasound2`
+- `python3 -m venv .venv`
+- `source .venv/bin/activate`
+- `pip install -r requirements.txt`
 - `mkdocs serve`
 
 # Components
