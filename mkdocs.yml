@@ -34,12 +34,9 @@ plugins:
       mmdc_path: "mmdc"
       cleanup_generated_images: false
   - inline-select-svg
-  # - mermaid2:
-  #     version: "11.11.0"
   - bibtex:
       bib_file: references.bib
       bib_by_default: false
-      # csl_file: cite_style.csl
   - exclude:
       glob:
         - "private/*"
