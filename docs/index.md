@@ -9,6 +9,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## October 3rd 2025
+
+Füge einen [Beitrag](/politik/e-id/#eine-odyssee-durch-die-gewasser-von-ssi) über die E-ID hinzu.
+
 ## October 1st 2025
 
 Add new job to my [CV](/programming/).
