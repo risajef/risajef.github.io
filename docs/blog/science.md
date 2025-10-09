@@ -1,3 +1,22 @@
+# PyTorch is slow and fast on Windows
+
+For a project at work I had to train a neural network. I have a Windows laptop with a nice GPU. When using Windows my first approach is developping inside the [WSL](https://learn.microsoft.com/de-de/windows/wsl/) (Windows subsystem for Linux). And it also worked. I noticed however, that my GPU usage was not optimal. Therefore I also ran it on native Windows.
+
+| Metric | Nativ Windows | WSL |
+|---|---|---|
+| Training | 2.2 it/s | 1.3 it/s  |
+| Eval | ~5 it/s | 1.5it/s |
+| Thread creation | 46s | ~5s |
+| Thread creation | 54s | ~5s |
+| GPU usage train | ![image](https://hackmd.io/_uploads/rkNRxqQalx.png) | ![image](https://hackmd.io/_uploads/SkJke5mpge.png) |
+| GPU usage val | ![image](https://hackmd.io/_uploads/S1PVb5Q6el.png) | ![image](https://hackmd.io/_uploads/S1LEecX6ex.png )|
+
+I used this knowledge by now running on native Windows but with persistent workers such that the threads don't need to be recreated in each epoch.
+
+Of course this is only one example. Using a different pytorch version might changes this. Maybe with a different GPU it behaves differently.
+
+The slow thread creation is a known issue when looking at forums but the significant performance increase in using native windows was unexpected.
+
 # Compressing Neural Networks
 
 When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.
