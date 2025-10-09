@@ -285,19 +285,23 @@
 </tr>
 <tr>
 <td>GPU usage train</td>
-<td><img alt="image" src="https://hackmd.io/_uploads/rkNRxqQalx.png" /></td>
-<td><img alt="image" src="https://hackmd.io/_uploads/SkJke5mpge.png" /></td>
+<td><img alt="image" src="/assets/images/GPU_1_1.png" /></td>
+<td><img alt="image" src="/assets/images/GPU_2_1.png" /></td>
 </tr>
 <tr>
 <td>GPU usage val</td>
-<td><img alt="image" src="https://hackmd.io/_uploads/S1PVb5Q6el.png" /></td>
-<td><img alt="image" src="https://hackmd.io/_uploads/S1LEecX6ex.png" /></td>
+<td><img alt="image" src="/assets/images/GPU_1_2.png" /></td>
+<td><img alt="image" src="/assets/images/GPU_2_2.png" /></td>
 </tr>
 </tbody>
 </table>
 <p>I used this knowledge by now running on native Windows but with persistent workers such that the threads don't need to be recreated in each epoch.</p>
 <p>Of course this is only one example. Using a different pytorch version might changes this. Maybe with a different GPU it behaves differently.</p>
 <p>The slow thread creation is a known issue when looking at forums but the significant performance increase in using native windows was unexpected.</p>
+<blockquote>
+<p><a href="https://podman.io">Podman</a> is as fast as native WSL.</p>
+<p><a href="https://anaconda.com">Anaconda</a> is also not faster then normal python in this setup.</p>
+</blockquote>
 <h1 id="compressing-neural-networks">Compressing Neural Networks</h1>
 <p>When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.</p>
 <p>My hypothesis was to compress the weight matrix using a common algorithm like JPEG. I took MNIST and trained a small CNN:</p>
