@@ -9,6 +9,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## October 9th 2025
+
+Add [observation](/blog/science/#pytorch-is-slow-and-fast-on-windows) about pytorch.
+
 ## October 3rd 2025
 
 Füge einen [Beitrag](/politik/e-id/#eine-odyssee-durch-die-gewasser-von-ssi) über die E-ID hinzu.
