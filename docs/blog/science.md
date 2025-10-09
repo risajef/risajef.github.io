@@ -8,14 +8,18 @@ For a project at work I had to train a neural network. I have a Windows laptop w
 | Eval | ~5 it/s | 1.5it/s |
 | Thread creation | 46s | ~5s |
 | Thread creation | 54s | ~5s |
-| GPU usage train | ![image](https://hackmd.io/_uploads/rkNRxqQalx.png) | ![image](https://hackmd.io/_uploads/SkJke5mpge.png) |
-| GPU usage val | ![image](https://hackmd.io/_uploads/S1PVb5Q6el.png) | ![image](https://hackmd.io/_uploads/S1LEecX6ex.png )|
+| GPU usage train | ![image](/assets/images/GPU_1_1.png) | ![image](/assets/images/GPU_2_1.png) |
+| GPU usage val | ![image](/assets/images/GPU_1_2.png) | ![image](/assets/images/GPU_2_2.png)|
 
 I used this knowledge by now running on native Windows but with persistent workers such that the threads don't need to be recreated in each epoch.
 
 Of course this is only one example. Using a different pytorch version might changes this. Maybe with a different GPU it behaves differently.
 
 The slow thread creation is a known issue when looking at forums but the significant performance increase in using native windows was unexpected.
+
+> [Podman](https://podman.io) is as fast as native WSL.
+
+> [Anaconda](https://anaconda.com) is also not faster then normal python in this setup.
 
 # Compressing Neural Networks
 
