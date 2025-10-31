@@ -201,6 +201,11 @@
                 
                 
                 <li>
+                    <a href="#a-failed-experiment-of-compressing-weights-inside-a-neural-network">A failed experiment of compressing weights inside a neural network</a>
+                    
+                </li>
+                
+                <li>
                     <a href="#pytorch-is-slow-and-fast-on-windows">PyTorch is slow and fast on Windows</a>
                     
                 </li>
@@ -252,7 +257,37 @@
             </ul>
         </div>
         <div class="content">
-            <h1 id="pytorch-is-slow-and-fast-on-windows">PyTorch is slow and fast on Windows</h1>
+            <h1 id="a-failed-experiment-of-compressing-weights-inside-a-neural-network">A failed experiment of compressing weights inside a neural network</h1>
+<p>In neural networks there seem to be a lot of weights to express what we want. So I thought of implementing the most basic feature, namely matrix multiplication, in a compressed version. So instead of just multiply two matrixes we compress the weight matrix and multiply this. I used wavelet decomposition with a threshold. My approach was successful in making the weight matrix 75% zeros during training.</p>
+<p>I used something like:</p>
+<pre><code class="language-python">coeffs = ptwt.wavedec(w_flat, &quot;haar&quot;, mode=&quot;zero&quot;)
+coeffs_thresh = tuple(
+                torch.where(torch.abs(c) &lt; threshold, torch.zeros_like(c), c)
+                for c in coeffs
+            )
+w_compressed = ptwt.waverec(coeffs_thresh, &quot;haar&quot;)
+</code></pre>
+<p>While the network was the following:</p>
+<pre><code class="language-python">class NetFC(nn.Module):
+    def __init__(self):
+        super(NetFC2, self).__init__()
+        self.fc1 = CompressedLinear(784, 128, zero_fraction=0.75)
+        self.fc2 = CompressedLinear(128, 64, zero_fraction=0.75)
+        self.fc3 = CompressedLinear(64, 10, zero_fraction=0.75)
+
+    def forward(self, x):
+        x = x.view(-1, 784)
+        x = self.fc1(x)
+        x = F.relu(x)
+        x = self.fc2(x)
+        x = F.relu(x)
+        x = self.fc3(x)
+        return x
+</code></pre>
+<p>This network has around 100k parameters from which 75k will be zero.</p>
+<p>But the performance drop was too high. I could only get my MNIST loss to 0.55 whilst a network using no compression but just less (25k) parameters easily reached 0.15.</p>
+<p>So it was an interesting approach, but not successful.</p>
+<h1 id="pytorch-is-slow-and-fast-on-windows">PyTorch is slow and fast on Windows</h1>
 <p>For a project at work I had to train a neural network. I have a Windows laptop with a nice GPU. When using Windows my first approach is developping inside the <a href="https://learn.microsoft.com/de-de/windows/wsl/">WSL</a> (Windows subsystem for Linux). And it also worked. I noticed however, that my GPU usage was not optimal. Therefore I also ran it on native Windows.</p>
 <table>
 <thead>
