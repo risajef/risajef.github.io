@@ -26,6 +26,7 @@ plugins:
   - redirects:
       use_directory_urls: true
       redirect_maps:
+        'politics.md': 'politik.md'
         'politics/zonenplanaenderung.md': 'politik/zonenplanaenderung.md'
         'politics/finanzen-beringen.md': 'politik/finanzen-beringen.md'
         'politics/e-id.md': 'politik/e-id.md'
