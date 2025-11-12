@@ -9,6 +9,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## November 12th 2025
+
+Füge meine [persönliche Meinung](/politik/#baukredit-zum-neubau-des-werkhofs-beringen-an-der-werkstrasse) zur kommunalen Abstimmung über den Baukredit für den Werkhof hinzu. Sowie eine [Neutrale Sammelstelle für Informationen](/politik/werkhof-baukredit) zu demselben Thema.
+
 ## October 31st 2025
 
 Add [failed experiment](/blog/science/#a-failed-experiment-of-compressing-weights-inside-a-neural-network) to compress weights in a neural network.

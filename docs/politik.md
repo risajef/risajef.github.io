@@ -43,7 +43,17 @@ radar-beta
     max 192
     min 0
 ```
-# Volksentscheide
+# Volksabstimmungen
+
+Ich behandle hier nur Geschäfte, zu denen ich einen Bezug habe. Das sind vor allem kommunale Abstimmungen und Wahlen, aber auch kantonale oder eidgenössischee, wenn ich mich als fachkompetent dazu sehe.
+
+## 30. November 2025
+
+### Baukredit zum Neubau des Werkhofs Beringen an der Werkstrasse
+
+Dies steht zur Abstimmung, weil das Bauprojekt mehr als CHF 600'000 kostet (Siehe: [Verfassung Beringen](https://www.beringen.ch/uploads/files/pdf/Beringen%20Online/Rechtsbuch/100.000%20Verfassung%20der%20Einwohnergemeinde%20Beringen.pdf) Art. 16d). Ich heisse den Neubau gut. Es entsprach dem Volkswillen, denn dieses hat dem Planungskredit zugestimmt und der geplante Werkhof entspricht dem, was damals definiert wurde. Es wird viele geben, die sagen: "Das ist ein gutes Projekt für die Beringer Bevölkerung." oder andere die sagen werden: "Das ist zu teuer." Doch für mich ist das beides irrelevant. Das Werkhofpersonal braucht dringend eine neue Bleibe. Ein alternativer Bau wird nicht günstiger, da es eine erneute Planung verursacht und der Werkhof eine Zwischenlösung braucht, die auch nicht kostenlos sein wird. Das Projekt entspricht auch dem, was beim Planungskredit bereits beschrieben wurde und dieser wurde vom Volk gutgeheissen. Obwohl wir hier das politische Mittel haben, diesen Neubau zu verhindern, sehe ich keinen Grund das zu tun. Ein Nein würde wahrscheinlich teurer kommen als ein Ja. Und ein Ja gibt dem Werkhof ein gutes neues Gebäude.
+
+Ich erstellte wieder eine [Seite](/politik/werkhof-baukredit/) mit neutralen Fakten zur Abstimmung.
 
 ## 28. September 2025
 
