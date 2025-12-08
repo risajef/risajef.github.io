@@ -2,70 +2,182 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://retoweber.info/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/blog/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/book/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/politik/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/programming/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/research/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/blog/philosophy/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/blog/science/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/blog/thoughts/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/philosophy/beliefs-are-relevant/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/philosophy/metaphysics-is-psychology/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/philosophy/truth-is-not-everything/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/philosophy/what-is-god/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/science/compressing-neural-networks/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/science/pytorch-is-slow-and-fast-on-windows/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/science/simulating-evolution/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/science/what-have-we-learned-and-some-educated-guesses/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/balance-between-creation-and-consumption/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/be-content-but-not-complacent/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/cleanliness-is-inhuman/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/good-equivalent-truth/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/intercession-is-for-you/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/learn-from-hypocrites/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/life-is-a-game/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/love-your-culture/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/meaning-is-perceivable/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/people-who-dislike-children-are-creepy/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/produce-instead-of-consume/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/soft-skills-in-hard-skill-jobs/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/the-ladder-of-engel/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/tolerance-for-foolishness/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/true-forgotten-ideas-are-worthless/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/truly-understand/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/willpower-is-a-limited-resource/</loc>
+         <lastmod>2025-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://retoweber.info/blog/thoughts/wisdom-is-philosophy-that-works/</loc>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/book/influential-books/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/book/lessons-from-my-book/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/book/the-book/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/politik/e-id/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/politik/finanzen-beringen/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/politik/werkhof-baukredit/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/politik/zonenplanaenderung/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
     <url>
          <loc>https://retoweber.info/research/hoare-logic/</loc>
-         <lastmod>2025-11-12</lastmod>
+         <lastmod>2025-12-08</lastmod>
     </url>
 </urlset>

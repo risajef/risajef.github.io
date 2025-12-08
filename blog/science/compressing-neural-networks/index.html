@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
+    <meta name="author" content="Reto Weber">
+    <meta name="keywords"
+        content="Reto Weber, programming, research, politics, blog, books, religion, philosophy, science">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (for rich previews on social platforms) -->
+    <meta property="og:title" content="Compressing Neural Networks">
+    <meta property="og:description"
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
+    <meta property="og:type"
+        content="article">
+    <meta property="og:url" content="/blog/science/compressing-neural-networks/">
+    <meta property="og:site_name" content="Reto Weber">
+    <meta property="og:image" content="/output.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compressing Neural Networks">
+    <meta name="twitter:description"
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
+    <meta name="twitter:image" content="/output.png">
+
+    <!-- JSON-LD Structured Data for rich results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/blog/science/compressing-neural-networks/"
+      },
+      "headline": "Compressing Neural Networks",
+      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. []",
+      "author": {
+        "@type": "Person",
+        "name": "Reto Weber"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Reto Weber",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "../../../favicon.ico"
+        }
+      }
+    }
+    </script>
+
+    <title>Compressing Neural Networks - Reto Weber</title>
+    
+    <link href="../../../assets/rss-feed.css" rel="stylesheet">
+
+    </noscript>
+
+
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="preload" href="/fonts/gidole.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <style type="text/css">
+        @font-face {
+            font-family: 'Gidole';
+            src: url('/fonts/gidole.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fonts/inter.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fonts/inter.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+
+
+    <link rel="icon" type="image/svg+xml" href="../../../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-title">
+            <h1 class="">
+                <a href="/index.html">Reto Weber</a>
+            </h1>
+        </div>
+        
+        <ul class="main-nav">
+            
+            
+            <li class="">
+                <a href="../../../programming/">Programming</a>
+            </li>
+            
+            
+            
+            <li
+                class="nav-parent ">
+                <a href="/research/">Research</a>
+                <ul class="nav-dropdown">
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../research/hoare-logic/">Hoare Logic</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li
+                class="nav-parent ">
+                <a href="/politik/">Politik</a>
+                <ul class="nav-dropdown">
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../politik/finanzen-beringen/">Finanzen Beringen</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li
+                class="nav-parent ">
+                <a href="/blog/">Blog</a>
+                <ul class="nav-dropdown">
+                    
+                    <li
+                        class=" ">
+                        <a href="../../thoughts/">Thoughts</a>
+                    </li>
+                    
+                    <li
+                        class=" ">
+                        <a href="../../philosophy/">Philosophy</a>
+                    </li>
+                    
+                    <li
+                        class=" ">
+                        <a href="../">Science</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li
+                class="nav-parent ">
+                <a href="/book/">Book</a>
+                <ul class="nav-dropdown">
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../book/the-book/">The Book</a>
+                    </li>
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../book/influential-books/">Influential Books</a>
+                    </li>
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../book/lessons-from-my-book/">Lessons from My Book</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+        </ul>
+        
+        <form class="search-form" role="search">
+            <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
+        </form>
+    </header>
+    <div id="main-container">
+        <div class="toc-container">
+            <ul class="toc-list empty">
+                
+            </ul>
+        </div>
+        <div class="content">
+            <h1 id="compressing-neural-networks"><a href="./">Compressing Neural Networks</a></h1>
+<p>When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.</p>
+<p>My hypothesis was to compress the weight matrix using a common algorithm like JPEG. I took MNIST and trained a small CNN:</p>
+<pre><code class="language-python">hidden_layer_size = 512
+linear1 = torch.nn.Linear(784, hidden_layer_size, bias=True)
+linear2 = torch.nn.Linear(hidden_layer_size, 10, bias=True)
+relu = torch.nn.ReLU()
+
+model = torch.nn.Sequential(linear1, relu, linear2)
+</code></pre>
+<p>The size of 512 for the hidden layers was the first power of two that yielded good results.</p>
+<p>The 784 comes from the input size, which is 28 × 28.</p>
+<p>The hidden layer is thus a list of 512 different 28 × 28 matrices.</p>
+<p>I took each matrix and compressed it with JPEG to a quality of only 20%, losing a lot of information, as seen here:</p>
+<p><img alt="Uncompressed" src="/assets/images/weight_uncompressed.png" />
+<em>Random uncompressed weight layer</em></p>
+<p><img alt="JPEG compressed 20% quality" src="/assets/images/weight_compressed.png" />
+<em>Same weight layer but with jpeg compressed</em></p>
+<p>The test accuracy dropped only from 97% to 96%, which is remarkable given the lower resolution in the latent space.</p>
+<p>The weights in a CNN are highly redundant. We can significantly reduce dimensionality using a naive algorithm like JPEG. However, for forward propagation in the network, I need the matrix version of JPEG, which does not save memory. The compressed weights could be used to transmit them over a low-bandwidth network like the Internet. However, we can make some informed assumptions:</p>
+<ul>
+<li>Choosing a different basis for the weights, such as the Fourier basis, instead of having an independent weight at each position, could enable the creation of large networks with a limited number of weights.</li>
+<li>This method could also work in deep neural networks.</li>
+<li>Developing a differentiable method that generates significant complexity with few parameters could enhance the computational capabilities of existing hardware.</li>
+</ul>
+        </div>
+    </div>
+    <div id="mkdocs-search-popup">
+        <button id="close-search-popup">&times;</button>
+        <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+    </div>
+    <a id="simple-analytics-badge"
+        href="https://dashboard.simpleanalytics.com/retoweber.info?utm_source=retoweber.info&utm_content=badge&affiliate=woruk-rob"
+        referrerpolicy="origin" target="_blank">
+        <picture>
+            <source srcset="https://simpleanalyticsbadges.com/retoweber.info?mode=dark"
+                media="(prefers-color-scheme: dark)" /><img
+                src="https://simpleanalyticsbadges.com/retoweber.info?mode=light" loading="lazy"
+                referrerpolicy="no-referrer" crossorigin="anonymous" />
+        </picture>
+    </a>
+
+    <script>
+        function updateTocCollapse() {
+            var toc = document.querySelector('.toc-list');
+            if (!toc) return;
+            if (window.innerWidth <= 900) {
+                toc.classList.add('collapsed');
+            } else {
+                toc.classList.remove('collapsed');
+            }
+        }
+        window.addEventListener('resize', updateTocCollapse);
+        document.addEventListener('DOMContentLoaded', updateTocCollapse);
+    </script>
+    <script>
+        var base_url = "../../..";
+    </script>
+    <script>
+        // Show popup when search input is focused or typed in
+        const searchInput = document.getElementById('mkdocs-search-query');
+        const popup = document.getElementById('mkdocs-search-popup');
+        const closeBtn = document.getElementById('close-search-popup');
+        if (searchInput && popup && closeBtn) {
+            searchInput.addEventListener('focus', () => { popup.style.display = 'block'; });
+            searchInput.addEventListener('input', () => { popup.style.display = 'block'; });
+            closeBtn.addEventListener('click', () => { popup.style.display = 'none'; });
+            // Optional: hide popup when clicking outside
+            document.addEventListener('mousedown', function (event) {
+                if (popup.style.display === 'block' && !popup.contains(event.target) && event.target !== searchInput) {
+                    popup.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script>
+        (function () {
+            function isExternalLink(anchor) {
+                try {
+                    var url = new URL(anchor.href, location.href);
+                    return url.protocol.indexOf('http') === 0 && url.hostname !== location.hostname;
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var anchors = document.querySelectorAll('a[href]');
+                anchors.forEach(function (a) {
+                    // ignore anchors, mailto, tel, javascript:, and already-handled targets
+                    var href = a.getAttribute('href') || '';
+                    if (!href || href.indexOf('#') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('javascript:') === 0) return;
+                    if (isExternalLink(a)) {
+                        a.setAttribute('target', '_blank');
+                        // ensure security
+                        var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+                        if (rel.indexOf('noopener') === -1) rel.push('noopener');
+                        if (rel.indexOf('noreferrer') === -1) rel.push('noreferrer');
+                        a.setAttribute('rel', rel.join(' '));
+                        // add class for styling
+                        a.classList.add('external-link');
+                    }
+                });
+            });
+        })();
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../../assets/rss-feed.js"></script>
+    <script src="../../../search/main.js"></script>
+    <!-- 100% privacy-first analytics -->
+    <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt=""
+            referrerpolicy="no-referrer-when-downgrade" /></noscript>
+</body>
+
+</html>

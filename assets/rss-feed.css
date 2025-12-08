@@ -1,0 +1,28 @@
+.rss-feed {
+  border: 1px solid #8882;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.02);
+}
+.rss-feed__list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.rss-feed__item + .rss-feed__item {
+  margin-top: 0.75rem;
+}
+.rss-feed__item a {
+  font-weight: 600;
+  text-decoration: none;
+}
+.rss-feed__item a:hover,
+.rss-feed__item a:focus {
+  text-decoration: underline;
+}
+.rss-feed__meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+.rss-feed__summary {
+  margin: 0.25rem 0 0;
+}
