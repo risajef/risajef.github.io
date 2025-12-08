@@ -203,7 +203,7 @@
             </ul>
         </div>
         <div class="content">
-            <h1 id="a-failed-experiment-of-compressing-weights-inside-a-neural-network"><a href="./">A failed experiment of compressing weights inside a neural network</a></h1>
+            <h1 id="a-failed-experiment-of-compressing-weights-inside-a-neural-network"><a href="/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/">A failed experiment of compressing weights inside a neural network</a></h1>
 <p>In neural networks there seem to be a lot of weights to express what we want. So I thought of implementing the most basic feature, namely matrix multiplication, in a compressed version. So instead of just multiply two matrixes we compress the weight matrix and multiply this. I used wavelet decomposition with a threshold. My approach was successful in making the weight matrix 75% zeros during training.</p>
 <p>I used something like:</p>
 <pre><code class="language-python">coeffs = ptwt.wavedec(w_flat, &quot;haar&quot;, mode=&quot;zero&quot;)
