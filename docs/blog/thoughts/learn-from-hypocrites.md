@@ -1,4 +1,4 @@
-# [Learn from Hypocrites](learn-from-hypocrites.md)
+# [Learn from Hypocrites](/blog/thoughts/learn-from-hypocrites/)
 
 The hypocrites of this world fill our televisions, admonish us on the radio, pass laws, and unjustly lecture us. Or so it seems. And yet, the one who finds truth in the testimony of a hypocrite is a true gold digger. If there is a place in your life where gold can be found, it is in the lies and hypocrisies of your fellow humans. They justify why they deserve higher pay even though they do nothing. They dictate how society should behave while believing they can make exceptions for themselves. But do not think an argument becomes false just because a liar utters it. The truth remains untouched and waits to be discovered and used. If you can dig in these mines, you have a treasure all to yourself. Others claim there is nothing to find while you haul nugget after nugget past them.
 

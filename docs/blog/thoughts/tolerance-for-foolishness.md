@@ -1,4 +1,4 @@
-# [Tolerance for Foolishness](tolerance-for-foolishness.md)
+# [Tolerance for Foolishness](/blog/thoughts/tolerance-for-foolishness/)
 
 > The quality of a society is shown by how much foolishness it can tolerate.
 

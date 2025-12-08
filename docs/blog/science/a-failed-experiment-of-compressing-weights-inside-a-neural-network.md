@@ -1,4 +1,4 @@
-# [A failed experiment of compressing weights inside a neural network](a-failed-experiment-of-compressing-weights-inside-a-neural-network.md)
+# [A failed experiment of compressing weights inside a neural network](/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/)
 
 In neural networks there seem to be a lot of weights to express what we want. So I thought of implementing the most basic feature, namely matrix multiplication, in a compressed version. So instead of just multiply two matrixes we compress the weight matrix and multiply this. I used wavelet decomposition with a threshold. My approach was successful in making the weight matrix 75% zeros during training.
 

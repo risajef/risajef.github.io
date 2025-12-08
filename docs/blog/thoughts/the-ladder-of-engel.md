@@ -1,4 +1,4 @@
-# [The Ladder of Engel](the-ladder-of-engel.md)
+# [The Ladder of Engel](/blog/thoughts/the-ladder-of-engel/)
 
 This concept definitely does not originate from me but from modern Christian thought. However, I have expanded on this idea.
 

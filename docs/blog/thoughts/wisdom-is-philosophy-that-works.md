@@ -1,4 +1,4 @@
-# [Wisdom Is Philosophy That Works](wisdom-is-philosophy-that-works.md)
+# [Wisdom Is Philosophy That Works](/blog/thoughts/wisdom-is-philosophy-that-works/)
 
 The meaning of philosophy is (philia) love of (sophia) wisdom. But it has developed in a different direction. Today, philosophy deals with the fundamental ideas and concepts of our world. What are the axioms of our universe, and what does it mean to have them? What is God, and if so, how many?
 

@@ -1,4 +1,4 @@
-# [Metaphysics is Psychology](metaphysics-is-psychology.md)
+# [Metaphysics is Psychology](/blog/philosophy/metaphysics-is-psychology/)
 
 First: What is metaphysics? It has nothing to do with physics in the modern sense. Metaphysics stands outside of physics. Natural scientists often ridicule it because it speaks of a world they do not know. I try here to break precisely this view.
 
