@@ -1,0 +1,10 @@
+# [Beliefs are Relevant](beliefs-are-relevant.md)
+
+Faith and science are at odds. At least, that is the common opinion. One seems forced in one direction. Science claims there is no free will, no God, no human rights, no soul, or whatever. Whether it really claims this should be discussed elsewhere. But let's assume it really does. What would be the consequence?
+
+Every person with some life experience, and by that, I mean 20 years or more, realizes that there are different life melodies. There are optimists and pessimists. Those who believe in miracles and those who do not. Stable and not-so-stable people. The difference lies in the mind. In the thoughts of people. These thoughts shape life decisions and attitudes toward life. These thoughts thus shape reality. However, these thoughts are not scientific but rather religious in nature. Perhaps religious is too strong a word, but still far from objectivity.
+
+The hypothesis is, therefore, that religious beliefs are central to the mind. They promote placebo or nocebo, zest for life or suicidality, meaning or meaninglessness. And now science can take hold again. With it, we can (provided we have defined a goal) shape our beliefs. Because the next stumbling block is the belief that we can freely define our beliefs. Much of it lies in our genes, in our life history, or in other elements of our lives that we cannot influence. Some people, for example, are more prone to depression than others. The other side is to believe that one cannot influence anything. That is also wrong. Science can help us find a path to a healthy psyche.
+
+A small postscript: Here the story really becomes interesting. Because we are now talking about how we should shape our beliefs to achieve a goal. But these thoughts we create are not real and objective but rather mantras. They are often not true. If I say: "I believe in miracles!" that may be scientifically false, but it helps not to lose hope in difficult situations. So it may be that science in the future says it is better to believe in unscientific claims.
+

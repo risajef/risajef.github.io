@@ -1,0 +1,81 @@
+# [What Have We Learned? And Some Educated Guesses](what-have-we-learned-and-some-educated-guesses.md)
+
+## Gödel’s incompleteness theorem
+Gödel is one of the great mathematicians of the last century. Among other things, he worked on the foundations of mathematics. He was interested in the question whether mathematics is complete. To understand this statement, I must briefly explain the concept of axiom.
+
+An axiom is an assumption in a mathematical system that is not proved. Mathematics cannot exist without these assumptions. One possible axiom that is popularly known is 1 + 1 = 2. It seems impossible to prove that. However, you may be tempted to claim, “That doesn’t require proof,” and when they say that, they have understood the idea behind axioms. As an axiom, you always want to choose a statement that everyone can agree with. That is so obvious that it can hardly be disputed. But in the science of mathematics, you are very aware of what assumptions you are making. You don’t just say, “Anything that’s obvious, we’ll assume to be true.” Because what is considered obvious to you may not be to someone else. That’s why mathematicians write down their axioms and say, “I do mathematics under the following assumptions.” Then a colleague can go and check if his work is correct under the assumptions.
+
+An example of such assumptions:
+
+- A: 0 is a number
+- B: 1 is a number
+- C: If x is a number, then: x + 0 = x
+- D: If x is a number, then x + 1 is also a number
+- E: x+1 > x
+
+Mathematicians would say this is not formally correct, but for my purposes it is sufficient. Here you can see how banal such statements are. With these statements, we can already prove the statement, “There is no greatest number.” A proof, which is a mind-blowing realization for children. And we should not simply downplay this fascination.
+
+We prove it here with a proof of contradiction:
+
+Suppose there is a largest number. Let us call it y. If it is a number, it follows from ‘D’ that y+1 is also a number. Let’s call it z. And from ‘E’ it follows that z is greater than y. Which refutes our assumption that y is the largest number. It follows that there is no largest number.
+
+This all sounds like useless worrying that mathematicians do to solve a problem that doesn’t exist. And that’s precisely how the majority of mathematicians thought at the beginning of the 20th century. And this is where Gödel’s Incompleteness Theorem comes in. The proof idea is not difficult, but it is still beyond the scope of this article. If it is nevertheless desired, just leave a comment. The statement is the following: No matter how many assumptions you make, there will always be true statements that you cannot prove with your assumptions. It follows that mathematics is incomplete. It can never describe itself completely. No matter how many assumptions you make, be it five billion, you will never be able to prove all correct mathematical statements.
+
+### What does it mean?
+The hope used to be that we just need to research enough and get smarter to explore everything. But the incompleteness theorem shows that we are limited. We cannot prove everything. To me, it follows that regardless of what our formal thinking system is, there will always be things that remain inaccessible to us. In very practical terms, we may need a way of dealing with unprovable statements. But we also must not get carried away with saying everything is unprovable. The statement that something is unprovable, is again perhaps a provable mathematical statement.
+
+What I did not say: This does not mean that nothing can be proven. Mathematically proven things are of a certainty and stability of which we hardly know anything in practical everyday life. I am more certain that there is no largest prime number than that I have a father and a mother. The probability that I am artificially produced in a secret laboratory is tiny, but still merely zero point zero whatever. But the certainty of a mathematical statement is 100%. There is nothing to shake about that. (I will ignore psychological aspects here).
+
+## Complexity theory
+As a studied computer scientist, I continuously encountered analyzes about the complexity of algorithms. Algorithm is a high-sounding word for something simple. An algorithm is simply a process. For example, there is a process for finding the shortest path from A to B. One can then evaluate how much time this process takes on average or in the worst case or best case. Complexity theory is all about such analyzes. Which process is faster? Can it be optimized? Before I started studying computer science, I presumed that one should simply write the code correctly, then everything would be faster. Unfortunately, this was too naive and there are processes that are not fast, even if they are implemented optimally. There are processes like finding the fastest path or sorting a list that are fast. Others, however, are very difficult. For example, route planning is much more complex. If you want to plan a route across the country where you pass by different places, but the order doesn’t matter, that’s exponentially slow. We don’t have a process for that. And there are people who do just that as a profession. So-called dispatchers. But even they do it only approximately. They don’t care if the route is 10% or 20% slower. With other problems, however, it is more difficult. Chess, for example. We have a procedure to play perfect chess, unfortunately it is so inefficient that it never finishes. And by never I mean so long the universe will disappear before it finishes. This optimal algorithm would take quadrillions of years, even on the world’s largest supercomputers (which is still a huge understatement).
+
+### What does it mean?
+After the incompleteness theorem now comes this. These are problems that are solvable. They have a solution. We know how to find it. We even know that this way is the optimal one and that there is no better one. And yet, they are so slow that they must be considered unsolvable from a purely practical perspective.
+
+If the consequence of the incompleteness theorem was still rather abstract, it is less so here. There is a whole list of such practically unsolvable problems. (Keyword: NP-Complete, EXP-Time). If these problems were solvable, our modern world would look different, and we would have found new drugs, simplified traffic, but also hacked every encryption. And it’s not like these problems are solvable for a human. If a human had a process, it would be just such an algorithm. These problems are unsolvable for humans and also for artificial intelligence.
+
+## Halting problem
+At the latest now it is clear that I am a computer scientist. This is a problem that no one has ever heard of who hasn’t studied it or looked at it as a hobby. But the world would look completely different if the problem were solvable. But it isn’t. Artificial intelligence would be much easier to build. We would hardly need engineers to calculate things. Our schooling would have to adapt. And with a truly intelligent machine, that would probably be the smallest problem.
+
+So, what is the halting problem? Described in simple terms: It is again about processes or algorithms. Namely, now when we see an algorithm, we ask ourselves: Does it stop? Or does it go on forever? The first intuition of many people, including myself, is: “You just have to investigate what exactly happens during the process. Whether it has a loop, and then you’ll see.” But unfortunately, there are many algorithms for which it is not clear whether they hold.
+
+### What does it mean?
+
+Before, we had practically unsolvable problems, and now we have a crazy phenomenon. Because an algorithm is unambiguous. Either it stops or it doesn’t. There is no in-between. So mathematically, the question has an unambiguous answer, but there is no process to find it.
+
+## Chaos theory
+
+Another and last limitation of our possibilities. Besides problems that take too much time to solve and unsolvable problems, there is another uninvited guest in the meeting of inconveniences. Chaos. And while the term has its meaning in various contexts, here I mean only one, the mathematical one. Chaos in this context is the property of a system to evolve in different directions, depending on the initial state.
+
+
+Chaos visualized by means of double pendulum
+It is impossible to predict where the pendulum will be after 100 seconds, although it is clearly defined by the laws of nature. Many extremely relevant systems in our world behave chaotically in this sense. We cannot tell what the weather will be like in two weeks, where asteroids will be in a few years, where billiard balls will stop if too many are hit at the same time, and much more. In medicine, there are also many chaotic systems. If we could solve them, we would have treatments for a plethora of diseases.
+
+### What does it mean?
+
+Another unsolvable problem. But this one is practically relevant that it not only changes our abstract foundations of our understanding of the universe, but is also quite practically problematic. Some people (mostly not scientists) claim that the world consists only of four laws of nature. Everything else derives from it. And there are some things wrong with this often repeated lie. First, our current physics cannot describe the world. There are things which contradict our models or the models are so vague they should not be allowed to be called theories. They frequently try to explain it away, but the issues remain. The laws of nature of big things are incompatible with those of small things. (The explanation, I leave out here). But there is something else: Even if we have a theory which is consistent with observation, the problem of chaos would remain. To infer from small systems to large ones, we have to control the chaos. And that might work if we have all the parameters in our hand, but in the real relevant world this is not possible. So, as macroscopic beings, we are in a world where we have to develop theories that are good enough, but actually not correct.
+
+Chaos requires us to develop abstractions that have no direct connection to the laws of physics. Physics will never replace chemistry. And if it does, then certainly not microbiology. There, the processes are already so complex, that chaos takes over. And the subjects of biology, psychology, sociology, history, religion and so on are anyway unreachable for us from the perspective of the fundamental laws.
+
+Consequently, we have to resign ourselves to developing statistical and also flawed theories that practically help us to understand things. Even if they abstract too much away. And the disappointing thing is: There would be a correct precise and correct solution for the questions we ask ourselves, but they are unattainable for reasons of chaos theory and also complexity theory. Science has set limits for itself. This does not mean, however, that statistical theories are invalid, but only that there would be better ones, which are and remain inaccessible to us.
+
+## Gradient optimization
+These were all big restrictions now. What else can be done? Are we not fundamentally limited and our attempts to understand the world doomed to failure from the start? Not quite. Instead of having a universal theory, we can develop a universal method. Instead of describing the world, we can squeeze it into our scheme and adjust it as needed.
+
+These adaptations have been studied in detail in the field of machine learning. One develops a robot that hardly understands anything. It only perceives the environment, but does not know about the laws of nature around it. And certainly not about the larger laws, like material science and so on. But we give the robot an input that says how well it’s doing right now. And the robot is not trying to understand: How can I do it best, but just how can I do it better? Instead of wanting to understand everything, it takes everything it learned earlier as a given truth and tries to make small adjustments to bring its understanding inline with reality.
+
+In a picture, the robot is climbing a mountain, but it can only see a meter away. And instead of sitting down and saying, “I can’t see the top, so I can’t plan a route.” It simply takes one step up. And then again. Later, he’s at a point where all the steps are downward, and then he says, “I’m there.” And maybe he didn’t go up Mount Everest, he just went up the mountain around the corner, but he went up quite nevertheless.
+
+### What does it mean?
+This approach revives the paralyzed person and we can continue our journey. And this method is not only applicable to the future of science, but also useful in everyday life. Instead of trying to fix the problem you face, you can take a step. Instead of trying to save the marriage, compliment her. Instead of remodeling the company, give a friendly greeting to a customer. Instead of beating cancer, swallow that one pill. It frees us from the responsibility of having a plan for everything. Because there doesn’t exist a plan anyway. The only plan is, “Do something small and good that you know will help.”
+
+## Game Theory
+Ah yes, game theory. The abandoned stepchild of sociology. It is criticized for being unscientific. They put together models that have nothing to do with reality. As if they were the only ones. But that may be true, but still, the insights are interesting. Game theory tries to represent human interactions as a game. And then analyzes what the optimal rational behavior is.
+
+As always, an example is more illustrative than any introduction. Let’s discuss the problem of the commons. A common is a meadow on which the farmers of the village can let their cows graze. It belongs to the village and to no farmer alone. The problem is that the farmers have more and more cows, but the common is not getting any bigger. Now the community is wondering how many cows they should allow. They discuss back and forth and agree on nothing. They say everyone does what he wants. The farmers will surely not send so many cows that the pasture will be destroyed, then they themselves would have nothing. But this assumption was too optimistic. Because, from a certain number of cows on, an interesting phenomenon occurred: the total amount of nutrition for the cows decreased because the allotment was eaten up. But a new farmer comes, he has only one cow. And even though the land is being destroyed, his cow still has more of it to go on the almost destroyed land than not. So if the farmers think for themselves, then it is always economically rational to send another cow because they profit more than if they didn’t, but that’s why the commons is destroyed.
+
+This thought experiment is an impressive illustration of game theory. It presents a situation and gives the rules. Then different things are analyzed: What behavior is appropriate for a rational economic actor? What rules could be put in place to benefit as a rational economic community? And so on. Game theory is often ridiculed because its analysis does not match reality and people do not act rationally. But this criticism is superficial. We can enrich our model with other ideas. Ideas like reciprocity or so. And also, if we have a system in which selfish actors move a system forward without the threat of violence, then that’s a statement. If a political system were game theoretically stable, it would most likely be really stable.
+
+### What does it mean?
+Besides the obvious, i.e., the direct result of different analyzes, game theory brings a healthy way of thinking to the table. Namely, that of egoism. It is typically considered unethical, but game theory is delightfully neutral about it. Good is what benefits me. It says. And it was very healthy for me to realize that the world of egoists has to be taken seriously to understand reality. Furthermore, game theory somewhat relativizes the value of morality and ethics. After all, what is the value of acting good if we are only ever the weaker actor? Our actions must be powerful and strong enough to prevail. And similar to the gradient optimization, game theory also shrinks the horizon. Instead of saving the world, it is about making the right decision in a locally and temporally constrained environment.
+

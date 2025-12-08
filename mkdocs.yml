@@ -1,6 +1,7 @@
 site_name: Reto Weber
 site_url: https://retoweber.info
 site_author: Reto Weber
+site_description: Essays, research notes, and blog entries by Reto Weber.
 theme:
   name: null
   custom_dir: theme
@@ -10,7 +11,7 @@ nav:
     - Hoare Logic: research/hoare-logic.md
   - Politik:
     # - Zonenplanänderung: politik/zonenplanaenderung.md
-    - Werkhof Baukredit: politik/werkhof-baukredit.md
+    # - Werkhof Baukredit: politik/werkhof-baukredit.md
     - Finanzen Beringen: politik/finanzen-beringen.md
     # - E-ID: politik/e-id.md
   - Blog:
@@ -43,9 +44,25 @@ plugins:
       glob:
         - "private/*"
         - "private/**/*"
+  - rss:
+      match_path: '^blog/(thoughts|philosophy|science)/'
+      length: 20
+      abstract_chars_count: 240
+      use_git: true
+      feeds_filenames:
+        rss_created: rss.xml
+        rss_updated: rss-updated.xml
+        json_created: feed.json
+        json_updated: feed-updated.json
 markdown_extensions:
   - footnotes
   - mdx_math
   - attr_list
+  - pymdownx.snippets:
+      base_path: docs
+      check_paths: true
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - assets/rss-feed.js
+extra_css:
+  - assets/rss-feed.css

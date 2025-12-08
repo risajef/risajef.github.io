@@ -55,6 +55,8 @@ Dies steht zur Abstimmung, weil das Bauprojekt mehr als CHF 600'000 kostet (Sieh
 
 Ich erstellte wieder eine [Seite](/politik/werkhof-baukredit/) mit neutralen Fakten zur Abstimmung.
 
+> Das Volk bewilligte den Baukredit ([Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/2025/2025%2011%2030%20Gemeinde.pdf)). Es erstaunt mich wenig, denn der Werkhof ist einer der sichtbarsten Leistungen der Gemeinde und hat eine breite Unterstützung in derGemeinde.
+
 ## 28. September 2025
 
 ### E-ID Vortrag

@@ -1,231 +1,43 @@
-# Good ⟺ Truth
+<!-- _Browse every thought piece in one scroll, or jump to a standalone permalink via the list below._
 
-The human mind is an interesting object. It has fascinated humanity ever since we learned how to write—and probably long before. Again and again, people say that humans are especially smart (or moral, or creative) and thus distinct from animals. The very same rhetoric is now being used for artificial intelligences. Humans are said to be truly intelligent, while machines merely “imitate.” Whatever that means. I am certain that such claims about artificial intelligence will age just as poorly as those that once tried to set us apart from animals.
+## Recent Thoughts -->
 
-We are different from animals, and we are different from machines. But ants, or anything else, are just as different in their own way. Of course, the discussion about what sets us apart is immensely important, because only through it can we come to the conclusion that we are not so different after all.
+<!-- <div class="rss-feed" data-rss-feed data-rss-prefix="/blog/thoughts/" data-rss-limit="15">
+	<p><em>Loading recent thoughts...</em></p>
+</div> -->
 
-I find the modern argument especially tedious that AIs make “mistakes,” and that this shows they don’t “understand” a subject. But we humans also make mistakes, even when we do understand something. We developed mechanisms to deal with those mistakes:
+--8<-- "blog/thoughts/good-equivalent-truth.md"
 
-- There are hierarchies that eliminate contradictions (the one with more power is right). That’s a very robust mechanism.
-- A more modern approach is: whoever convinces the other is right (rhetoric, arguments, bribery, etc.). That’s already progress, though still not entirely reliable.
-- Modern scientists even live in the illusion that truth is the decisive criterion. But of course, that’s wishful thinking. Social reputation, persuasive wording, or skillful concealment of errors are naturally more important than truth when it comes to scientific publication.
+--8<-- "blog/thoughts/balance-between-creation-and-consumption.md"
 
-But let’s assume there were such a selection based on the criterion of “truth.” Do AI critics really believe that AIs cannot take advantage of such a selection process? I think people demand perfection from AIs. Yet all we really need is to build in a protocol for error correction—perhaps inspired by the human world. But this is nothing new. In software, the quality benchmark is the absence of bugs. And AIs today can already write tests and fix errors. In mathematics, there are proof verifications, and AIs can simply make use of those. For fuzzier subjects, the process might be more dialogical: multiple AIs could debate and come to a consensus.
+--8<-- "blog/thoughts/be-content-but-not-complacent.md"
 
-All of this is only a prelude to another thought. AIs are accused of not really “understanding” things and merely producing letters. But what does “understanding” even mean? What happens inside me when I understand something? I have some causal intuitions about what must or cannot happen—but those intuitions are faulty, even in areas where I’m an expert.
+--8<-- "blog/thoughts/cleanliness-is-inhuman.md"
 
-My thesis is this:
+--8<-- "blog/thoughts/intercession-is-for-you.md"
 
->In the search for truth, there is nothing but heuristics.
+--8<-- "blog/thoughts/learn-from-hypocrites.md"
 
-Because the true selection criterion in the universe is existence, not truth. We need intuitions, or mechanisms to generate thoughts, that help us survive. Truth only matters insofar as it helps us survive.
+--8<-- "blog/thoughts/life-is-a-game.md"
 
-But let’s not forget: we do not possess truth either. We establish it through processes or protocols—maybe an SMT solver, a court, or whatever. No individual has “the truth.” It is always an external process.
+--8<-- "blog/thoughts/love-your-culture.md"
 
-It seems that for evolution—or for God—truth is secondary. This analysis goes deeper. We do not have truth and should embrace that fact. We should realize that this is something good. Sometimes, true things are not the ones that help us. I believe it can even be good to believe things that are false. False, but good. Good in the sense of helpful.
+--8<-- "blog/thoughts/meaning-is-perceivable.md"
 
-False but useful things include such domains as “faith” and “hope.” Faith is the conviction in something unseen (something not measurable). Hope is the same, projected into the future. Faith and hope are deeply religious concepts and perhaps one of religion’s great achievements.
+--8<-- "blog/thoughts/people-who-dislike-children-are-creepy.md"
 
-I believe we once again need similar processes that can say what is true in “faith” and “hope.” Religion once provided this, but today we have neither faith nor hope. I believe this is a personal, societal, and evolutionary deficiency—and it urgently needs to be addressed.
+--8<-- "blog/thoughts/produce-instead-of-consume.md"
 
-However, this would mean deliberately replacing truth with pragmatism. So where does reason still have its place? And I believe that is precisely where the decision lies: deciding which untrue things we should believe. That decision should be made reasonably.
+--8<-- "blog/thoughts/soft-skills-in-hard-skill-jobs.md"
 
+--8<-- "blog/thoughts/the-ladder-of-engel.md"
 
----
+--8<-- "blog/thoughts/tolerance-for-foolishness.md"
 
+--8<-- "blog/thoughts/true-forgotten-ideas-are-worthless.md"
 
-# Balance Between Creation and Consumption
+--8<-- "blog/thoughts/truly-understand.md"
 
-When I have an intense discussion with a friend, the only thing I often say to them is: "Do something." We exchange our obsessions with certain content creators, share books and movies. We discuss what is right or wrong in the world. But if that's all you do—reading Reddit and writing comments without producing anything—you become a superfluous and worthless critic. The magic of life lies in contributing. Exposing yourself to the world and eagerly awaiting its response. Are they interested? Do they understand it? Is it useful?
+--8<-- "blog/thoughts/willpower-is-a-limited-resource.md"
 
----
-
-# Be Content, but Not Complacent
-
-This statement is deeply rooted in me, and I have carried it with me for many years. It is the foundation for everything I have achieved and am proud of. There are people who feed on anger, which serves as a source of creativity for them. For me, calmness and balance are fundamental. Serenity allows me to take a step back, to break out of my limited perspective. This serenity sharpens my perception. Instead of being a cornered cat, I am a shaman. I see value in places I previously ignored. This vision then drives me. I am eager to discover the world, but even more so, I am eager to discover myself. I uncover the urge to write, to speak, to pray, to read, to create.
-
-A shaman still sees what needs to be done. He explores the depths of his soul and brings the treasure to the surface. A shaman knows no end to work, no retirement. So, do not be satisfied with your output. But be a content person.
-
----
-
-# Cleanliness is Inhuman
-
-There are general signs that something is wrong when you look at a person. But there is one thing people, I believe, are not aware of. How clean an apartment is says a lot about the residents' tolerance for imperfection.
-
-## Situation 1: I don't want unannounced guests because my apartment is not tidy or clean
-
-This could mean that there has simply been too much going on, and you have deliberately neglected to keep your apartment clean and tidy. That is the best-case scenario. But it could also be that you are just telling yourself that, and frankly, your apartment has only met your cleanliness and tidiness standards for a maximum of four weeks in the past year. You need to realize that there is a problem. I see several possible reasons for this:
-
-- Either you are overwhelmed and need to slow down immediately.
-- You are a wreck and don't want to admit it to yourself.
-- Or your standards for cleanliness and tidiness are unrealistic.
-
-I want to address the last point because the others seem self-evident to me. Cleanliness and order serve us and are not an end in themselves. Depending on the person, they help us concentrate, find things, organize thoughts, and be spontaneous because you are always ready. Life is full of such surprises. Order is just a means to an end. Therefore, it is important to have a realistic and purposeful definition of order.
-
-## Situation 2: You spontaneously visit someone. Everything is tidy and clean. You are impressed. You need to use the bathroom, and while washing your hands, you notice there are no water spots
-
-This, in my opinion, is much worse than the first situation. Because it means that the person is constantly cleaning. They tolerate no dirt. There is no room for stress or spontaneity. There is no room for life. Beware of such people. If these people cannot endure life with its consequences, then soon there will be no room for you either, as soon as something "dirty" about you comes to light. These people are against life and suffocate their surroundings. I don't know anyone like this who has many friends or often socializes because life is too uncontrollable, hurtful, and repulsive.
-
-Are you such a person yourself? It's great that you noticed. That is a strong achievement. However, your life could be so much richer if you could tolerate a little chaos in your life. You are only creating a prison for yourself, and the security you feel is not real. True life is a dance of joy and pain, with dirt and soap. You probably won't get out of your prison on your own. Find someone you trust, if you still have someone, and ask them to bring you just a little chaos. Get a pet or invite a child over. Cook or bake together with others. If you have no one, it would probably be appropriate to seek professional help. That is no shame.
-
----
-
-# Intercession is for You
-
-"I pray for everyone in Turkey!" Something like this was read on social media after the earthquakes in Turkey and Syria. Believers and non-believers alike commented that they should help instead of praying. Do something that makes a difference. And as correct as this objection is, it is also naive. Yes, it is true, but one forgets what happens to the person who prays. It brings it to consciousness. One consciously engages in compassion and suffers with it. One lets emotions arise and becomes sad or angry about a situation. To believe that this action is not fundamental to help shows a lack of knowledge about how humans function.
-
-If instead of "prayers," one would say: "Go to your room and put yourself in the shoes of these people and be affected by their fate." No one would think of criticizing this and saying: "Better do something that makes a difference." In my opinion, prayer does not help directly, but it changes the one who prays. A praying person is more likely to act. So let us pray for the victims and perpetrators of the next catastrophe. Both for our own good and for that of the victims.
-
----
-
-# Learn from Hypocrites
-
-The hypocrites of this world fill our televisions, admonish us on the radio, pass laws, and unjustly lecture us. Or so it seems. And yet, the one who finds truth in the testimony of a hypocrite is a true gold digger. If there is a place in your life where gold can be found, it is in the lies and hypocrisies of your fellow humans. They justify why they deserve higher pay even though they do nothing. They dictate how society should behave while believing they can make exceptions for themselves. But do not think an argument becomes false just because a liar utters it. The truth remains untouched and waits to be discovered and used. If you can dig in these mines, you have a treasure all to yourself. Others claim there is nothing to find while you haul nugget after nugget past them.
-
-They say we should use fewer fossil fuels while flying intercontinentally themselves. They claim they went through a tough education and therefore deserve the $120,000 a year, plus they work hard. Their arguments may be flawed or at least contradictory. But they are always an indicator of how life works. Perhaps we do need to use fewer fossil fuels. Perhaps they do work hard, or perhaps not. But the underlying hypothesis is true: hard work is more likely to be rewarded than laziness. And if not, you can recognize from the hypocrite which other qualities are rewarded: confidence, for example. Hypocrites provide an honest insight into life, and the game of life is just waiting to be played.
-
----
-
-# Life is a Game
-
-This view is usually held by cynical people to justify their inhumane behavior. Yet, although their motivation is questionable, their statement has a kernel of truth. Life has its rules. Its consequences. It is a game that keeps going. Those who recognize the rules and do not want to be paralyzed by injustice do well. Life is a brutal game, and one must believe in forgiveness because life does not forgive easily.
-
-But when we see the game, we recognize the rules of the game. They are not arbitrary. They are understandable. But they are not the rules of society, no laws from the law book, or social norms. No, the rules are more deeply rooted in us. The rules of the game have caused the law books of this world and the social norms. Some suspect it is a game of power. Who is more powerful? That may be true, depending on how you look at it, but power is of a different nature than we think. Power is the force that makes something lasting. This power can be charity and self-sacrifice, not just political power. Whatever the exact rules of the game of life are, it is worth exploring them.
-
-Those who understand the rules better have an easier life. Those who are willing to rethink the rules over and over again will gain true power and effectively change their lives and thus the world. Complaining is useless because the game will be played in any case.
-
----
-
-# Love Your Culture
-
-Our modern mind is plagued by hubris. It believes it knows a lot and can assess the consequences of political actions. But assessing the consequences is usually more like reading tea leaves than science. Because we can hardly assess our ignorance.
-
-Thus, some argue for or against CO₂ taxes. For or against religion. For or against universal basic income. And all these things are a massive intervention in the structure of our society. And to believe one can assess the consequences is naive.
-
-Therefore, I advocate befriending your culture and system and considering it part of your own being. Just as you are part of the system. Try to change things gradually and locally. With a horizon where you believe you can assess the consequences. But even that you cannot. Your life will be fundamentally improved if you see yourself as part of your neighborhood, your city, your country. Because we predominantly evaluate objective things. We think if we help our neighbor, their life will improve. But one underestimates the psychological effect on oneself. Because there is enough toxic behavior that only fights to destroy one's own system, more precisely, to introduce things that have the potential to do so.
-
----
-
-# Meaning is Perceivable
-
-The perhaps greatest question of philosophy, at least the most famous one, is: "What is the meaning of life?" And although modern philosophy tries to answer this question, and religions have answers that may alienate outsiders, it remains one of the most important questions. Why am I doing all this? What is the meaning? And although I might have approaches to answer this question philosophically or religiously, my hypothesis here is psychological.
-
-Namely, that meaning can be perceived. Without exactly knowing what meaning is, we notice when we have it. I asked a friend when he experiences meaning: He said, when he helped his grandmother, it was meaningful. For me, it is writing. Or when I change my plans to be there for someone in need. And I hope everyone knows the moments when they feel connected to the universe/God or whatever and realize that there is a meaning that cannot be easily explained.
-
-From this hypothesis back to philosophy: What is the meaning of life? I don't know, but with the insight gained now, I get measurement points and observations and can explore them. I can recognize what gives me meaning, but also generally, by asking others. The question transforms from an unanswerable fog bomb into an adventure. Be open to the world being different than you think.
-
----
-
-# People Who Dislike Children Are Creepy
-
-The internet is a place with many niches. It fragments society. One of them is the cat or dog people. Dog people don't understand why one can love a creature that doesn't reciprocate affection. It's comparable to children. Children bring chaos into your life. They lie, scream, and stink. But they are also very curious and easy to motivate. They believe a lot and have hope for the future. They are the extreme form of life itself. If you don't like them, it shows a lack of tolerance for life. You cannot accept that life occasionally stinks.
-
-The wonder of life often lies precisely in the stinky diaper. The refusal to deal with unpleasantness robs one of the most fundamental experiences of life, namely finding gold where one least expects it. If you don't embark on this path, you only find what you already know. And if that's the case, what's the point of lifelong self-absorption?
-
----
-
-# Produce Instead of Consume
-
-If one message has challenged me the most and still challenges me, it is the call: "Do something!" You complain that you are not rich, that the world is unjust. You watch one video after another about how unjust the world is, or even books that "help" you find your way. But the only thing that changes the world is actions. Consuming is good for the mind and soul. To experience new thoughts. But if you do nothing, you become a useless Wikipedia copy. I can google myself which exercises are optimal, which diet is good, how to become more productive. Or also, what the theories about meaning and God are. If you have learned that, you are an interesting conversation partner, but not more interesting than YouTube.
-
-Let me tell you one thing: If you consume something for longer than a year, it proves your laziness. No person has enough message for that long. Life must be lived and not understood. The irony of it all is that all media creators are on the other side of the fence. They try to create content that inspires and advances people. As long as you are lazy, you will never feel understood by the media creators because they are producers, not consumers.
-
-And when you start doing something. You start a podcast, write a book, found a film club, or start exercising. Then the journey begins. You will experience firsthand how the world reacts to what you have to offer. It will ignore your book because no one cares. You will be defeated in martial arts and receive negative comments. But at least you are part of the game being played. However, if you are a consumer, then you are a resource that wants to be exploited. Companies want your money. Social media wants your attention. But when you produce, the relationship changes.
-
-That is the moment when the blessing begins. You will do things that really help others. You will be a support in dark times. You will change the world. How much depends not only on you, but the world must also bless you. Anyway, believe and you will see. The blessing lies in places you would never have searched.
-
-But as a final message: When you start producing, please create something that empowers people and does not numb them. Give them a voice and the opportunity to change something. My attitude is: If you read my book and want to buy another one from me, I did something wrong. Because you should be able to think for yourself and write the content of my other book yourself or better yet, write your own.
-
----
-
-# Soft Skills in Hard-Skill Jobs
-
-Since I've been with my wife, I've gained insight into a world previously unknown to me. Before, I was preoccupied with skills and knowledge. But if I want to maintain a successful relationship, I need more skills. So-called soft skills. This is the reading between the lines of life.
-
-At my wife's employer, a hospital, these skills are a given. Most employees can assess the feelings and conditions of others. They ask questions and try to accommodate them. More or less successfully.
-
-At my employer, a software service provider, it's different. Soft skills are rare, and the world is one of hard skills, one of measurable performance, or so it seems. A nearly clichéd example occurred on my first day at work. A man came in who was on a committee for enforcing corporate values. He mentioned the four levels of Schulz von Thun. This model describes that we communicate on different levels: the factual level, the appeal side, the relationship side, or self-revelation. This values manager then said, "We communicate on the factual level in this company." This example is cute. He knew the levels but didn't understand that we have limited influence over which level we communicate on. I had to visibly smirk when he said that.
-
-My hypothesis is that one can stand out from others through both soft skills and hard skills. With an understanding of communication, I can show more initiative and actively influence conversations and project progress. Especially when my counterpart is weaker on this level.
-
-Moreover, I claim that hard skills also make a difference. If my wife's boss wants to please everyone, she can exploit that and push her concerns through. But she can also stand out from her colleagues through better performance.
-
----
-
-# The Ladder of Engel
-
-This concept definitely does not originate from me but from modern Christian thought. However, I have expanded on this idea.
-
-The original concept: The Ladder of Engel describes the model that every person is on a step in their development. The scale starts at minus 5 or so and goes up to 5. At 0 are the people who have accepted the Christian God as their savior and trust him. The model is not only meant to encourage people to convert to Christianity but also to improve from a -5 to a -4. That is, from being hostile to God to rejecting God.
-
-I hope I don't lose everyone who is not a Christian. Because the concept is unconsciously applied in other areas as well. This also applies to environmental thinking. In this case, 0 might be more like: I am willing to make personal sacrifices for the good of the planet. And even here, progress is already made when someone moves from "Environmental protection is just political propaganda to raise taxes" to "Environmental protection would be important, but we can't do it."
-
-Therefore, this concept is much more general than it seems at first glance. I suggest not representing your own point of view in discussions or debates but exploring the boundaries of others. Wonderful things happen at the boundaries of knowledge. In this way, you can help the other person develop their own perspective further. You also learn yourself because you already know your own perspective too well, but when you discover the thoughts of others, worlds open up to you. Ideally, your counterpart does the same with you, and you advance your own perspective. You both help each other climb the next rung of the Ladder of Engel. So don't discuss the core points of your differences but the boundaries of what you know.
-
-Moreover, this perspective also helps to avoid unnecessary quarrels. If I ask about the views of the other person, an unreflective cliché answer comes, so I can decide to leave it at that and move on to small talk or dig deeper.
-
----
-
-# Tolerance for Foolishness
-
-> The quality of a society is shown by how much foolishness it can tolerate.
-
-It is a new side of tolerance and a counterpoint to the messages of reason. The usual tolerance conveys the message that all life designs and values are justified. That may often be the case, but I do not see the value in many life designs. I consider them inhumane, short-sighted, naive, and foolish.
-
-But what is to be done? Must I oppose these attitudes? Perhaps on an individual level. But a look at the COVID crisis and other countries has shown: The more foolishness is tolerated, the better off people are. Actually, that is the message of freedom.
-
-What about the truth? This is a double-edged sword. We as humanity can poorly assess our ignorance. A look at the COVID crisis makes this clear again. Science paired with politics does not result in wisdom but an intolerant, absolutist, unscientific doctrine. After all, the measures only work if everyone participates. Resistance is therefore something hostile. Consequently, the measures cannot be questioned. This bypasses scientificity and democracy. This is not meant to be a critique of the handling of the COVID crisis. It is just a hint of the consequences of believing one knows the truth. This pseudo-knowledge blocks the path to further knowledge.
-
-Therefore, we must practice being tolerant of those who seem foolish to us. Are you religious? The more religions and unbelievers you can tolerate, the better. Are you an atheist? The more religiosity you can endure, the better. Are you left-wing? The more right-wing ideas you can tolerate, the better (and vice versa). Are you a communist? The more capitalism you can tolerate, the better.
-
-Besides explaining the self-destruction of knowledge from above, there are other arguments for tolerance for foolishness. And that is adaptability. The more different people we allow, the more likely it is that we will host the saving heroes in a future crisis. If we only have like-minded people, we are not flexible enough to respond to new things.
-
----
-
-# True Forgotten Ideas Are Worthless
-
-While science and the media are focused on the truth, next door conspiracy theories are spreading that could not withstand the scrutiny of a 10-year-old. Many see it as the disintegration of the media when it no longer reports the truth, or when science projects get cool-name funding rather than those that advance humanity's knowledge.
-
-And although this criticism addresses a real problem, it is not the departure from the pure truth. Because, although not everyone believes it, truth is just a tool and nothing with inherent value. Knowing the truth allows us to make better decisions, to predict the future. But that is its only value. And yes, that is a value not to be underestimated. Those who truly understand how atoms work can build atomic bombs, which then again impact the entire earth. So, truth is crucial, but more important is survival.
-
-Instead of orienting our world towards truth, it would be more fruitful to strive for survivability. If we had a science of the survivability of ideas, humanity would benefit more than from even more specific models of how the quantum world works. If we knew how ideas spread from one person to another. Why anyone should care. If you tell me, "You have to breathe like this and like that, you'll live 10 years longer," and I try it for a week or two and then forget it. Even though the statement may have been true, it was forgotten because I didn't care.
-
----
-
-# Truly Understand
-
-I am a person with various weaknesses. One of the weaknesses that bothers me the most is my slow reading speed. I read aloud just as fast as I do silently. I have tried various speed-reading techniques, but my reading comprehension always plummets. But at least I enjoy reading. Because I am a slow reader, inefficient books are my nemesis. The worst is when books actually have something to say to me, but their length makes them impenetrable for me. I have struggled through several long books.
-
-When I read a long book with valuable content like "Maps of Meaning," it is interesting, but I feel anger rising within me about the author's inefficiency with my time. This feeling is, of course, amplified by my reading speed. But a strength I have developed through my weakness is summarizing. I can summarize any text, booklet, or book in one sentence. I love compact, inspiring statements, especially when they are new to me and not a repetition of what I already know. This ability to reduce a 1,000-page book to one sentence comes naturally to me. I am aware that I leave out a lot, but I retain the spark of inspiration I found in the work.
-
-Another weakness of mine is memorization or even retaining information. My memory apparently works differently from that of my acquaintances. I read a lot and forget almost everything. My fellow students would ask me about specific knowledge in subjects, but I never knew it. I could neither recite a theorem nor memorize a proof. But I could make a guess. Say, "It must behave this way or that. At least I think so." These are feelings of mine, but they are usually true. I absorb information as something that goes deeper into my personal substance and bring it out when I have a problem. But because it is so deep within me, I can no longer say where I know it from.
-
-These two weaknesses now allow me to connect ideas in new and creative ways. I can quickly form and test hypotheses. I can reduce complex statements to one sentence. I can draw from an unconscious ocean of associative knowledge and connect topics. For me, all information is much closer together than for others. And when I compare this with my fellow humans, I hardly understand how one can think differently. There are people who read books and can reproduce the content but have not incorporated it into their lives. I cannot understand that. That is foreign to me. Either a book changes me as a person, or I know nothing about it anymore.
-
-Hence my somewhat biased hypothesis: "Only when a book has deeply penetrated your soul and changed you as a person, and you live your life differently from then on, have you understood its content." Everything else can be done by Google for you.
-
----
-
-# Willpower Is a Limited Resource
-
-Our online world is dominated by people with great willpower. They initiate projects and implement them. At least it seems so because you only see the projects where they had enough willpower to carry them through. This creates the impression that they have strong willpower. However, this is a fallacy.
-
-On the other hand, there are philosophers who claim that we have free will. They claim that we can choose to do this or that. This claim may be correct (I will not go into it here), but it is practically irrelevant. That is fine because they are philosophers and deal with fundamental things. But the message that we can do everything theoretically within our power is optimistic or perhaps even false.
-
-Free will, or I prefer to simply say willpower, is limited. Using willpower requires energy. We can only focus on what we want to decide and lose sight of the rest. Willpower is clearly a resource to be managed. If you recognize this, you can understand your life on a deeper level. Instead of appealing to yourself to pull yourself together tomorrow, you will realize that this is not sustainable behavior. You will look for ways to remove decision-making from your willpower as often as possible. You achieve this with habits. If you do five push-ups every morning, it does not require much willpower. Later it becomes a habit, and you can increase the push-ups. You use the resource of willpower wisely.
-
-But it is not about abolishing willpower. No, you should strengthen and train it. But you do not do this with constant strain but with selected challenges in life. Cold showers, for example. This is an activity that requires willpower but is also quickly done. This way, you train your willpower. Once cold showers become too easy, you need a new challenge.
-
----
-
-# Wisdom Is Philosophy That Works
-
-The meaning of philosophy is (philia) love of (sophia) wisdom. But it has developed in a different direction. Today, philosophy deals with the fundamental ideas and concepts of our world. What are the axioms of our universe, and what does it mean to have them? What is God, and if so, how many?
-
-But wisdom has a different character. Wisdom is applied. It is interested in how to navigate life wisely. It is not interested in fundamental truths. It claims that the search for truth is chasing the wind. Ancient Greek philosophies were mostly true philosophies. Thus, Stoicism is hardly a topic in philosophy today but very much in coaching. Dealing with feelings and things beyond our control is of utmost interest to a wise person but impure to a modern philosopher. It mixes ideas with feelings. Our world today is unfortunately undernourished in wisdom. There is hardly an influencer known for wisdom. **Scientists**, **motivational speakers**, and **idols** are known.
-
-*Scientists* spread facts. Occasionally, they dip their toes into the waters of wisdom but feel committed to their craft and therefore only give tips supported by studies.
-
-**Motivational speakers** lean towards wisdom, but they have an unmistakable tendency towards action. They want to get people to do things, which is a subset of wisdom but inappropriate in certain life stages. Wisdom must also teach how to deal with given limits. Where to break them and where to accept them because the limits may even be good. But such things do not fit into the mind of a motivational speaker.
-
-**Idols** are people who are particularly beautiful or have achieved a lot. A wise person can study and use them. They are like the North Star. They indicate a direction. An idol shows an extreme in terms of certain qualities. A wise person can study the idol for this quality. And thus, an idol carries wisdom within it, but only as the sky carries a beautiful painting. It takes an art to make a masterpiece out of it. They themselves are not the bearers of wisdom but an object to study or imitate, depending on the evaluation.
+--8<-- "blog/thoughts/wisdom-is-philosophy-that-works.md"
