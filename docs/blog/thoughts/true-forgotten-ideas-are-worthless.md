@@ -1,4 +1,4 @@
-# [True Forgotten Ideas Are Worthless](true-forgotten-ideas-are-worthless.md)
+# [True Forgotten Ideas Are Worthless](/blog/thoughts/true-forgotten-ideas-are-worthless/)
 
 While science and the media are focused on the truth, next door conspiracy theories are spreading that could not withstand the scrutiny of a 10-year-old. Many see it as the disintegration of the media when it no longer reports the truth, or when science projects get cool-name funding rather than those that advance humanity's knowledge.
 

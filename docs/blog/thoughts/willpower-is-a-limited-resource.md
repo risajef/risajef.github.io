@@ -1,4 +1,4 @@
-# [Willpower Is a Limited Resource](willpower-is-a-limited-resource.md)
+# [Willpower Is a Limited Resource](/blog/thoughts/willpower-is-a-limited-resource/)
 
 Our online world is dominated by people with great willpower. They initiate projects and implement them. At least it seems so because you only see the projects where they had enough willpower to carry them through. This creates the impression that they have strong willpower. However, this is a fallacy.
 

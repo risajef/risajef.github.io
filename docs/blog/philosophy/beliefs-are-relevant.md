@@ -1,4 +1,4 @@
-# [Beliefs are Relevant](beliefs-are-relevant.md)
+# [Beliefs are Relevant](/blog/philosophy/beliefs-are-relevant/)
 
 Faith and science are at odds. At least, that is the common opinion. One seems forced in one direction. Science claims there is no free will, no God, no human rights, no soul, or whatever. Whether it really claims this should be discussed elsewhere. But let's assume it really does. What would be the consequence?
 

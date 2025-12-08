@@ -72,7 +72,7 @@ Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats u
 
 Ich bin vom Abstimmungskampf etwas enttäuscht von beiden Seiten.
 
-- Auf der **"Pro"-Seite** zu welcher ich gehöre, wurde mein Gesicht und mein Argument abgedruckt. Ich bin jedoch der am wenigsten einflussreiche Politiker in ganz Beringen. Ich hatte gerade mal 212 Stimmen nur Thomas Widmer hatte auch nur 237 Stimmen und alle anderen hatten über doppelt so viele Stimmen; doch keiner hat sich bereit dazu erklärt, sich öffentlich für die Vorlage auszusprechen. Vielleicht wegen allfäliger Befangenheit? Doch warum sind sie dann nicht in der Einwohnerratssitzung in den Ausstand getreten?
+- Auf der **"Pro"-Seite** zu welcher ich gehöre, wurde mein Gesicht und mein Argument abgedruckt. Ich bin jedoch der am wenigsten einflussreiche Politiker in ganz Beringen. Ich hatte gerade mal 212 Stimmen nur Thomas Widmer hatte auch nur 237 Stimmen und alle anderen hatten über doppelt so viele Stimmen; doch keiner hat sich bereit dazu erklärt, sich öffentlich für die Vorlage auszusprechen. Vielleicht wegen allfälliger Befangenheit? Doch warum sind sie dann nicht in der Einwohnerratssitzung in den Ausstand getreten?
 - Auf der **"Contra"-Seite** wird jetzt damit geworben, dass das Land zu günstig umgezont wird. Aber es stand ein Vorschlag der auf dem Tisch, der mehr Geld für die Gemeinde herausholen wollte, aber dieser wurde von den jetzigen Gegnern nicht gutgeheissen.
 
 Ich erstellte eine [Seite](/politik/zonenplanaenderung/) mit neutralen Fakten zur Abstimmung. Mehr fehlten diese Informationen in der Vergangenheit für kommunale Geschäfte. Ich versuche das auch in Zukunft zu erstellen.
@@ -94,7 +94,7 @@ Link zu den Beschlüssen ist noch nicht publiziert (24.9.25 9:00)
 | ✓ | ✓ | Gesamtkredit für Umsetzung Beleuchtungskonzept (öffentliche Beleuchtung) |
 | ✗ | ✗ | Verschidenes: Antrag die Einwohnerratssitzung von 20:00 auf 19:30 zu verschieben |
 
-> Der Neubau des Werkhofs verursachte lange Diskussionen. Es wurde vorallem bemängelt, dass der Bau zu teuer sei und viele Fahrzeuge drausen stehen bleiben könnten. Meine Haltung war von Beginn, dass dies zu spät sei. Wir sind nicht in der Planungsphase. Es wurde gesagt es werde 5.3 Mio kosten (± 30%). Jetzt kostet es 4.9Mio (± 10%). Aus meiner Sicht hat der Gemeinderat alles genauso umgesetzt wie angekündigt und aufgetragen. Zusätzlich hat das Volk "Ja" zum Planungskredit gesagt und ich fände es bevormundend zu einen Projekt "Nein" zu sagen, dass genau den Spezifikationen entspricht. Die Vorlage unterliegt dem obligatorischen Referendum weil sie zu teuer ist.
+> Der Neubau des Werkhofs verursachte lange Diskussionen. Es wurde vor allem bemängelt, dass der Bau zu teuer sei und viele Fahrzeuge draussen stehen bleiben könnten. Meine Haltung war von Beginn, dass dies zu spät sei. Wir sind nicht in der Planungsphase. Es wurde gesagt, es werde 5.3 Mio kosten (± 30%). Jetzt kostet es 4.9 Mio (± 10%). Aus meiner Sicht hat der Gemeinderat alles genauso umgesetzt wie angekündigt und aufgetragen. Zusätzlich hat das Volk "Ja" zum Planungskredit gesagt und ich fände es bevormundend zu einem Projekt "Nein" zu sagen, das genau den Spezifikationen entspricht. Die Vorlage unterliegt dem obligatorischen Referendum, weil sie zu teuer ist.
 
 
 ## 1. Juli 2025
@@ -133,9 +133,9 @@ Link zu den Beschlüssen ist noch nicht publiziert (24.9.25 9:00)
 | ✓ | ✓ | In unterschiedlichen Wahlen wählte ich die vorgeschlagenen Kandidatinnen und Kandidaten. |
 | ✓ | ✓ | Vorlage zur Anpassung des Schulleitungspensums als Folge der Vorgaben zur flächendeckenden Einführung von geleiteten Schulen im Kanton Schaffhausen |
 | ✓ | ✓ | Abrechnung über die Neugestaltung der Kreuzung Trasadingerstrasse H13 – Haardaublick (Bömmliacker Ost) Beringen über brutto CHF 295'472.95 |
-| ✓ | ✓ | Abrechnung für die Beschaffung eines neuen Gemeindefahrzeuges für den Gebäudeunterhaltüber brutto CHF 114‘393.80 |
+| ✓ | ✓ | Abrechnung für die Beschaffung eines neuen Gemeindefahrzeuges für den Gebäudeunterhalt über brutto CHF 114‘393.80 |
 
 
-> In dieser ersten Sitzung war ich nervös. Auch wenn Stimmen zählen nicht schwierig ist, war es mit der Nervosität eine kleine Herausforderung. Bei der Abrechnung bezüglich "Beschaffung eines neuen Gemeindefahrzeugs" fragte ich nach, warum das alte so günstig verkauft wurde. Hugo Bosshart (Tiefbaureferent) beantwortete die Frage im Moment zufriedenstellend. Im Nachhinein hätte ich mehr nachhacken sollen, der Preis war wirklich zu tief.
+> In dieser ersten Sitzung war ich nervös. Auch wenn Stimmen zählen nicht schwierig ist, war es mit der Nervosität eine kleine Herausforderung. Bei der Abrechnung bezüglich "Beschaffung eines neuen Gemeindefahrzeugs" fragte ich nach, warum das alte so günstig verkauft wurde. Hugo Bosshart (Tiefbaureferent) beantwortete die Frage im Moment zufriedenstellend. Im Nachhinein hätte ich mehr nachhaken sollen, der Preis war wirklich zu tief.
 
 ---

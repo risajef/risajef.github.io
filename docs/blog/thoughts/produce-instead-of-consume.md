@@ -1,4 +1,4 @@
-# [Produce Instead of Consume](produce-instead-of-consume.md)
+# [Produce Instead of Consume](/blog/thoughts/produce-instead-of-consume/)
 
 If one message has challenged me the most and still challenges me, it is the call: "Do something!" You complain that you are not rich, that the world is unjust. You watch one video after another about how unjust the world is, or even books that "help" you find your way. But the only thing that changes the world is actions. Consuming is good for the mind and soul. To experience new thoughts. But if you do nothing, you become a useless Wikipedia copy. I can google myself which exercises are optimal, which diet is good, how to become more productive. Or also, what the theories about meaning and God are. If you have learned that, you are an interesting conversation partner, but not more interesting than YouTube.
 

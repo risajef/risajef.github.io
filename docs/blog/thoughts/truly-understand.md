@@ -1,4 +1,4 @@
-# [Truly Understand](truly-understand.md)
+# [Truly Understand](/blog/thoughts/truly-understand/)
 
 I am a person with various weaknesses. One of the weaknesses that bothers me the most is my slow reading speed. I read aloud just as fast as I do silently. I have tried various speed-reading techniques, but my reading comprehension always plummets. But at least I enjoy reading. Because I am a slow reader, inefficient books are my nemesis. The worst is when books actually have something to say to me, but their length makes them impenetrable for me. I have struggled through several long books.
 
