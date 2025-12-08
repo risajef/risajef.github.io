@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
+    <meta name="author" content="Reto Weber">
+    <meta name="keywords"
+        content="Reto Weber, programming, research, politics, blog, books, religion, philosophy, science">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (for rich previews on social platforms) -->
+    <meta property="og:title" content="Simulating Evolution">
+    <meta property="og:description"
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
+    <meta property="og:type"
+        content="article">
+    <meta property="og:url" content="/blog/science/simulating-evolution/">
+    <meta property="og:site_name" content="Reto Weber">
+    <meta property="og:image" content="/output.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simulating Evolution">
+    <meta name="twitter:description"
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
+    <meta name="twitter:image" content="/output.png">
+
+    <!-- JSON-LD Structured Data for rich results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/blog/science/simulating-evolution/"
+      },
+      "headline": "Simulating Evolution",
+      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. []",
+      "author": {
+        "@type": "Person",
+        "name": "Reto Weber"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Reto Weber",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "../../../favicon.ico"
+        }
+      }
+    }
+    </script>
+
+    <title>Simulating Evolution - Reto Weber</title>
+    
+    <link href="../../../assets/rss-feed.css" rel="stylesheet">
+
+    </noscript>
+
+
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="preload" href="/fonts/gidole.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <style type="text/css">
+        @font-face {
+            font-family: 'Gidole';
+            src: url('/fonts/gidole.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fonts/inter.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fonts/inter.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+
+
+    <link rel="icon" type="image/svg+xml" href="../../../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-title">
+            <h1 class="">
+                <a href="/index.html">Reto Weber</a>
+            </h1>
+        </div>
+        
+        <ul class="main-nav">
+            
+            
+            <li class="">
+                <a href="../../../programming/">Programming</a>
+            </li>
+            
+            
+            
+            <li
+                class="nav-parent ">
+                <a href="/research/">Research</a>
+                <ul class="nav-dropdown">
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../research/hoare-logic/">Hoare Logic</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li
+                class="nav-parent ">
+                <a href="/politik/">Politik</a>
+                <ul class="nav-dropdown">
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../politik/finanzen-beringen/">Finanzen Beringen</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li
+                class="nav-parent ">
+                <a href="/blog/">Blog</a>
+                <ul class="nav-dropdown">
+                    
+                    <li
+                        class=" ">
+                        <a href="../../thoughts/">Thoughts</a>
+                    </li>
+                    
+                    <li
+                        class=" ">
+                        <a href="../../philosophy/">Philosophy</a>
+                    </li>
+                    
+                    <li
+                        class=" ">
+                        <a href="../">Science</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li
+                class="nav-parent ">
+                <a href="/book/">Book</a>
+                <ul class="nav-dropdown">
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../book/the-book/">The Book</a>
+                    </li>
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../book/influential-books/">Influential Books</a>
+                    </li>
+                    
+                    <li
+                        class=" ">
+                        <a href="../../../book/lessons-from-my-book/">Lessons from My Book</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            
+        </ul>
+        
+        <form class="search-form" role="search">
+            <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
+        </form>
+    </header>
+    <div id="main-container">
+        <div class="toc-container">
+            <ul class="toc-list empty">
+                
+            </ul>
+        </div>
+        <div class="content">
+            <h1 id="simulating-evolution"><a href="./">Simulating Evolution</a></h1>
+<p>Many people claim that evolution is impossible because nothing can arise from randomness. But is randomness the only factor in evolution? What if other forces are at play that guide the diversity and complexity of life? To explore this question, I developed an algorithm that simulates evolution and reveals some surprising results.</p>
+<p>The code is available on <a href="https://github.com/risajef/pygame">GitHub</a>.</p>
+<p>Imagine an empty world. Void of meaning and possibilities. In this world, a robot pops into existence. It cannot see anything. Its visual input is as empty as the universe in which it was created. The robot has no will. It simply does something random. What it doesn't know is that there are 50 other robots created at the same time. They all behave differently. Some wander around, some stand still, and some spin in circles. Then suddenly, a change occurs in one robot. Its input changes. It sees something red. The others in the same location see it too. They behave randomly. Some move toward it, some don't. What is this red thing? The closer a robot gets, the clearer it sees it until it can touch it. From nothing you came, and to nothing you shall return. The robot disappears. Every robot that touches the red thing disappears. It dies. Over time, only the robots that either don't move or avoid touching the red thing remain. This happens automatically, simply by the laws of this universe. As robots disappear, new ones are randomly created and thrown into the world to keep the population from dying out. And there was evening and morning. The first day.</p>
+<p>On the second day, they faced a new problem. There were rumors about a green thing. Most robots behaved the same toward the green things since evolution favored cautious individuals. But some robots simply disappeared without touching the red ones. Their lifespan expired, and they hadn't figured out the secret to survival. Well, most hadn't. Some had the random behavior of approaching the green things. And when they touched them, something magical happened. First, they unknowingly extended their lifespan, and second, they reproduced. They created a copy of themselves, very similar but slightly different, with a random variation in behavior. This changes everything. Instead of not dying, reproduction became the new goal of the game. Soon, all robots avoided the red stuff and sought the green stuff.</p>
+<p>Now comes the next stage. Before, caution was key. Move slowly to reduce the risk of accidentally touching the red mines. But after some time, some robots randomly became faster, and they were always the first to the green magic fruit. The cautious robots starved because the faster ones got there first. Speed is now the key. But they must now take more risks. Many robots now die because of the mines, but as long as they reproduce faster, they dominate this world.</p>
+<p>The final stage. Now, without human intervention, the robots have developed useful behavior simply because they were exposed to this very specific environment. Now, only one last optimization remains. They must slowly but surely avoid the mines and maximize their base speed. After this development, a balance is reached, and from pure randomness without programming, intelligent behavior regarding this environment has emerged.</p>
+<hr />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ietVz2V5iDI?si=oZbGKo8A3-BdxUVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Non-optimized robots</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w4fR5Zr0aZo?si=oZbGKo8A3-BdxUVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Optimized robots</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D7IjajvfVnw?si=oZbGKo8A3-BdxUVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Robot's field of view visualized</p>
+        </div>
+    </div>
+    <div id="mkdocs-search-popup">
+        <button id="close-search-popup">&times;</button>
+        <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+    </div>
+    <a id="simple-analytics-badge"
+        href="https://dashboard.simpleanalytics.com/retoweber.info?utm_source=retoweber.info&utm_content=badge&affiliate=woruk-rob"
+        referrerpolicy="origin" target="_blank">
+        <picture>
+            <source srcset="https://simpleanalyticsbadges.com/retoweber.info?mode=dark"
+                media="(prefers-color-scheme: dark)" /><img
+                src="https://simpleanalyticsbadges.com/retoweber.info?mode=light" loading="lazy"
+                referrerpolicy="no-referrer" crossorigin="anonymous" />
+        </picture>
+    </a>
+
+    <script>
+        function updateTocCollapse() {
+            var toc = document.querySelector('.toc-list');
+            if (!toc) return;
+            if (window.innerWidth <= 900) {
+                toc.classList.add('collapsed');
+            } else {
+                toc.classList.remove('collapsed');
+            }
+        }
+        window.addEventListener('resize', updateTocCollapse);
+        document.addEventListener('DOMContentLoaded', updateTocCollapse);
+    </script>
+    <script>
+        var base_url = "../../..";
+    </script>
+    <script>
+        // Show popup when search input is focused or typed in
+        const searchInput = document.getElementById('mkdocs-search-query');
+        const popup = document.getElementById('mkdocs-search-popup');
+        const closeBtn = document.getElementById('close-search-popup');
+        if (searchInput && popup && closeBtn) {
+            searchInput.addEventListener('focus', () => { popup.style.display = 'block'; });
+            searchInput.addEventListener('input', () => { popup.style.display = 'block'; });
+            closeBtn.addEventListener('click', () => { popup.style.display = 'none'; });
+            // Optional: hide popup when clicking outside
+            document.addEventListener('mousedown', function (event) {
+                if (popup.style.display === 'block' && !popup.contains(event.target) && event.target !== searchInput) {
+                    popup.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script>
+        (function () {
+            function isExternalLink(anchor) {
+                try {
+                    var url = new URL(anchor.href, location.href);
+                    return url.protocol.indexOf('http') === 0 && url.hostname !== location.hostname;
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var anchors = document.querySelectorAll('a[href]');
+                anchors.forEach(function (a) {
+                    // ignore anchors, mailto, tel, javascript:, and already-handled targets
+                    var href = a.getAttribute('href') || '';
+                    if (!href || href.indexOf('#') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('javascript:') === 0) return;
+                    if (isExternalLink(a)) {
+                        a.setAttribute('target', '_blank');
+                        // ensure security
+                        var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+                        if (rel.indexOf('noopener') === -1) rel.push('noopener');
+                        if (rel.indexOf('noreferrer') === -1) rel.push('noreferrer');
+                        a.setAttribute('rel', rel.join(' '));
+                        // add class for styling
+                        a.classList.add('external-link');
+                    }
+                });
+            });
+        })();
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../../assets/rss-feed.js"></script>
+    <script src="../../../search/main.js"></script>
+    <!-- 100% privacy-first analytics -->
+    <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt=""
+            referrerpolicy="no-referrer-when-downgrade" /></noscript>
+</body>
+
+</html>

@@ -55,6 +55,7 @@
 
     <title>Science - Reto Weber</title>
     
+    <link href="../../assets/rss-feed.css" rel="stylesheet">
 
     </noscript>
 
@@ -129,11 +130,6 @@
                 class="nav-parent ">
                 <a href="/politik/">Politik</a>
                 <ul class="nav-dropdown">
-                    
-                    <li
-                        class=" ">
-                        <a href="../../politik/werkhof-baukredit/">Werkhof Baukredit</a>
-                    </li>
                     
                     <li
                         class=" ">
@@ -262,7 +258,15 @@
             </ul>
         </div>
         <div class="content">
-            <h1 id="a-failed-experiment-of-compressing-weights-inside-a-neural-network">A failed experiment of compressing weights inside a neural network</h1>
+            <!-- _Each science note now has its own permalink; this page keeps the long-form reading experience intact._
+
+## Recent Science Posts -->
+
+<!-- <div class="rss-feed" data-rss-feed data-rss-prefix="/blog/science/" data-rss-limit="10">
+    <p><em>Loading science feed...</em></p>
+</div> -->
+
+<h1 id="a-failed-experiment-of-compressing-weights-inside-a-neural-network"><a href="a-failed-experiment-of-compressing-weights-inside-a-neural-network.md">A failed experiment of compressing weights inside a neural network</a></h1>
 <p>In neural networks there seem to be a lot of weights to express what we want. So I thought of implementing the most basic feature, namely matrix multiplication, in a compressed version. So instead of just multiply two matrixes we compress the weight matrix and multiply this. I used wavelet decomposition with a threshold. My approach was successful in making the weight matrix 75% zeros during training.</p>
 <p>I used something like:</p>
 <pre><code class="language-python">coeffs = ptwt.wavedec(w_flat, &quot;haar&quot;, mode=&quot;zero&quot;)
@@ -292,7 +296,7 @@ w_compressed = ptwt.waverec(coeffs_thresh, &quot;haar&quot;)
 <p>This network has around 100k parameters from which 75k will be zero.</p>
 <p>But the performance drop was too high. I could only get my MNIST loss to 0.55 whilst a network using no compression but just less (25k) parameters easily reached 0.15.</p>
 <p>So it was an interesting approach, but not successful.</p>
-<h1 id="pytorch-is-slow-and-fast-on-windows">PyTorch is slow and fast on Windows</h1>
+<h1 id="pytorch-is-slow-and-fast-on-windows"><a href="pytorch-is-slow-and-fast-on-windows.md">PyTorch is slow and fast on Windows</a></h1>
 <p>For a project at work I had to train a neural network. I have a Windows laptop with a nice GPU. When using Windows my first approach is developping inside the <a href="https://learn.microsoft.com/de-de/windows/wsl/">WSL</a> (Windows subsystem for Linux). And it also worked. I noticed however, that my GPU usage was not optimal. Therefore I also ran it on native Windows.</p>
 <table>
 <thead>
@@ -342,7 +346,7 @@ w_compressed = ptwt.waverec(coeffs_thresh, &quot;haar&quot;)
 <p><a href="https://podman.io">Podman</a> is as fast as native WSL.</p>
 <p><a href="https://anaconda.com">Anaconda</a> is also not faster then normal python in this setup.</p>
 </blockquote>
-<h1 id="compressing-neural-networks">Compressing Neural Networks</h1>
+<h1 id="compressing-neural-networks"><a href="compressing-neural-networks.md">Compressing Neural Networks</a></h1>
 <p>When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.</p>
 <p>My hypothesis was to compress the weight matrix using a common algorithm like JPEG. I took MNIST and trained a small CNN:</p>
 <pre><code class="language-python">hidden_layer_size = 512
@@ -367,7 +371,7 @@ model = torch.nn.Sequential(linear1, relu, linear2)
 <li>This method could also work in deep neural networks.</li>
 <li>Developing a differentiable method that generates significant complexity with few parameters could enhance the computational capabilities of existing hardware.</li>
 </ul>
-<h1 id="what-have-we-learned-and-some-educated-guesses">What Have We Learned? And Some Educated Guesses</h1>
+<h1 id="what-have-we-learned-and-some-educated-guesses"><a href="what-have-we-learned-and-some-educated-guesses.md">What Have We Learned? And Some Educated Guesses</a></h1>
 <h2 id="godels-incompleteness-theorem">Gödel’s incompleteness theorem</h2>
 <p>Gödel is one of the great mathematicians of the last century. Among other things, he worked on the foundations of mathematics. He was interested in the question whether mathematics is complete. To understand this statement, I must briefly explain the concept of axiom.</p>
 <p>An axiom is an assumption in a mathematical system that is not proved. Mathematics cannot exist without these assumptions. One possible axiom that is popularly known is 1 + 1 = 2. It seems impossible to prove that. However, you may be tempted to claim, “That doesn’t require proof,” and when they say that, they have understood the idea behind axioms. As an axiom, you always want to choose a statement that everyone can agree with. That is so obvious that it can hardly be disputed. But in the science of mathematics, you are very aware of what assumptions you are making. You don’t just say, “Anything that’s obvious, we’ll assume to be true.” Because what is considered obvious to you may not be to someone else. That’s why mathematicians write down their axioms and say, “I do mathematics under the following assumptions.” Then a colleague can go and check if his work is correct under the assumptions.</p>
@@ -416,7 +420,7 @@ It is impossible to predict where the pendulum will be after 100 seconds, althou
 <p>This thought experiment is an impressive illustration of game theory. It presents a situation and gives the rules. Then different things are analyzed: What behavior is appropriate for a rational economic actor? What rules could be put in place to benefit as a rational economic community? And so on. Game theory is often ridiculed because its analysis does not match reality and people do not act rationally. But this criticism is superficial. We can enrich our model with other ideas. Ideas like reciprocity or so. And also, if we have a system in which selfish actors move a system forward without the threat of violence, then that’s a statement. If a political system were game theoretically stable, it would most likely be really stable.</p>
 <h3 id="what-does-it-mean_5">What does it mean?</h3>
 <p>Besides the obvious, i.e., the direct result of different analyzes, game theory brings a healthy way of thinking to the table. Namely, that of egoism. It is typically considered unethical, but game theory is delightfully neutral about it. Good is what benefits me. It says. And it was very healthy for me to realize that the world of egoists has to be taken seriously to understand reality. Furthermore, game theory somewhat relativizes the value of morality and ethics. After all, what is the value of acting good if we are only ever the weaker actor? Our actions must be powerful and strong enough to prevail. And similar to the gradient optimization, game theory also shrinks the horizon. Instead of saving the world, it is about making the right decision in a locally and temporally constrained environment.</p>
-<h1 id="simulating-evolution">Simulating Evolution</h1>
+<h1 id="simulating-evolution"><a href="simulating-evolution.md">Simulating Evolution</a></h1>
 <p>Many people claim that evolution is impossible because nothing can arise from randomness. But is randomness the only factor in evolution? What if other forces are at play that guide the diversity and complexity of life? To explore this question, I developed an algorithm that simulates evolution and reveals some surprising results.</p>
 <p>The code is available on <a href="https://github.com/risajef/pygame">GitHub</a>.</p>
 <p>Imagine an empty world. Void of meaning and possibilities. In this world, a robot pops into existence. It cannot see anything. Its visual input is as empty as the universe in which it was created. The robot has no will. It simply does something random. What it doesn't know is that there are 50 other robots created at the same time. They all behave differently. Some wander around, some stand still, and some spin in circles. Then suddenly, a change occurs in one robot. Its input changes. It sees something red. The others in the same location see it too. They behave randomly. Some move toward it, some don't. What is this red thing? The closer a robot gets, the clearer it sees it until it can touch it. From nothing you came, and to nothing you shall return. The robot disappears. Every robot that touches the red thing disappears. It dies. Over time, only the robots that either don't move or avoid touching the red thing remain. This happens automatically, simply by the laws of this universe. As robots disappear, new ones are randomly created and thrown into the world to keep the population from dying out. And there was evening and morning. The first day.</p>
@@ -513,6 +517,7 @@ It is impossible to predict where the pendulum will be after 100 seconds, althou
     </script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../assets/rss-feed.js"></script>
     <script src="../../search/main.js"></script>
     <!-- 100% privacy-first analytics -->
     <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
