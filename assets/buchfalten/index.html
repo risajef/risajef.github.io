@@ -13,26 +13,27 @@
       <div>
         <p class="eyebrow">Präzise Faltplanung</p>
         <h1>Buchfaltstudio</h1>
-        <p class="lede">Lade eine schwarz-weiße SVG hoch, wähle, wie viele Scheiben du möchtest, und erhalte sofort Buchfaltkoordinaten für jeden eingefärbten Streifen.</p>
-      </div>
-      <div class="hero-card">
-        <p>Erstelle klare typografische Buchfalt-Stücke ohne Tabellenkalkulationen. Die App analysiert jede Spalte, findet die Bereiche und wandelt sie in millimetergenau perfekte Falzmarkierungen um.</p>
+        <p class="lede">Lade eine schwarz-weiße SVG hoch, wähle, wie viel du scheiben möchtest, und erhalte sofort Buchfaltaleitung.</p>
       </div>
     </header>
 
     <main class="workspace">
       <section class="panel controls">
-        <h2>Artwork + Settings</h2>
+        <h2>Einstellungen</h2>
+        <div class="mode-switch">
+          <button type="button" id="textModeBtn" class="mode-btn active">Text</button>
+          <button type="button" id="imageModeBtn" class="mode-btn">Bild</button>
+        </div>
         <form id="plannerForm">
-          <div class="text-composer">
-            <h3>Build from Text</h3>
+          <div class="text-composer" id="textMode">
+            <h3>Texteingabe</h3>
             <div class="text-grid">
               <label>
-                <span>Text to fold</span>
-                <input id="textInput" type="text" maxlength="24" placeholder="Type a word or initials" />
-              </label>
+                <span>Text den du falten möchtest.</span>
+                <input id="textInput" type="text" maxlength="32" placeholder="Text hier eingeben" />
+              </label><br/>
               <label>
-                <span>Google font</span>
+                <span>Schriftart von <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer">Google Fonts</a></span>
                 <input
                   id="fontInput"
                   type="text"
@@ -51,11 +52,11 @@
                 <option value="Caveat Brush"></option>
                 <option value="Caveat"></option>
               </datalist>
-              <label style="visibility: hidden;">
+              <label style="visibility: hidden; position: absolute;">
                 <span>Font size (px)</span>
                 <input id="fontSizeInput" type="number" min="60" max="240" value="160" />
               </label>
-              <label style="visibility: hidden;">
+              <label style="visibility: hidden; position: absolute;">
                 <span>Padding (%)</span>
                 <input id="paddingInput" type="number" min="5" max="40" value="18" />
               </label>
@@ -64,36 +65,38 @@
               <p class="micro-copy" id="textStatus">Tippe Text ein, um automatisch ein faltbares Wortzeichen zu erstellen.</p>
             </div>
           </div>
-          <label class="file-drop" for="svgInput">
-            <span class="hint">SVG ablegen oder zum Durchsuchen klicken</span>
-            <input id="svgInput" type="file" accept="image/svg+xml" />
-            <p id="fileName">Noch keine Datei ausgewählt</p>
-          </label>
+          <div class="image-composer" id="imageMode" style="display: none;">
+            <h3>Bild hochladen</h3>
+            <label class="file-drop" for="svgInput">
+              <span class="hint">Bild ablegen oder zum Durchsuchen klicken</span>
+              <input id="svgInput" type="file" accept="image/svg+xml,image/png,image/jpeg,image/jpg,image/gif,image/webp" />
+              <p id="fileName">Noch keine Datei ausgewählt</p>
+            </label>
+          </div>
 
           <div class="field-grid">
             <label>
               <span>Anzahl der Seiten</span>
-              <input id="columnInput" type="number" min="10" max="800" value="250" />
+              <input id="columnInput" type="number" min="10" max="1200" value="250" />
             </label>
 
             <label>
               <span>Buchhöhe (mm)</span>
-              <input id="heightInput" type="number" min="100" max="400" value="210" />
+              <input id="heightInput" type="number" min="80" max="400" value="210" />
             </label>
 
-            <label style="visibility: hidden;">
+            <label style="visibility: hidden; position: absolute;">
               <span>Rauschschwelle</span>
               <input id="thresholdInput" type="number" min="0" max="255" value="235" />
             </label>
 
-            <label style="visibility: hidden;">
+            <label style="visibility: hidden; position: absolute;">
               <span>Alpha-Schwelle</span>
               <input id="alphaInput" type="number" min="0" max="255" value="40" />
             </label>
           </div>
 
-          <button type="submit" class="primary">Falten generieren</button>
-          <p class="micro-copy">Tipp: Halte SVGs rein schwarz-weiß für die saubersten Falzbänder.</p>
+          <button type="submit" class="primary" style="display: none;">Falten generieren</button>
         </form>
 
         <div class="preview">
@@ -108,7 +111,6 @@
             <h2>Faltanweisungen</h2>
             <p class="micro-copy" id="summaryLine">Warte auf eine SVG...</p>
           </div>
-          <button id="downloadPdf" class="ghost" disabled>PDF-Anleitung erstellen</button>
         </div>
         <div id="foldList" class="fold-list"></div>
         <div class="book-preview">
@@ -133,7 +135,8 @@
   </div>
 
   <canvas id="analysisCanvas" class="hidden" aria-hidden="true"></canvas>
-  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
-  <script src="main.js" defer></script>
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
