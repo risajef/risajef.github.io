@@ -1,10 +1,10 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- creativity
-	- action
-	- consumption
+  - thoughts
+  - creativity
+  - action
+  - consumption
 ---
 
 # [Balance Between Creation and Consumption](/blog/thoughts/balance-between-creation-and-consumption/)

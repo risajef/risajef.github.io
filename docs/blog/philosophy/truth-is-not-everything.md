@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- philosophy
-	- truth
-	- logic
-	- religion
-	- language
+  - philosophy
+  - truth
+  - logic
+  - religion
+  - language
 ---
 
 # [Truth Is Not Everything](/blog/philosophy/truth-is-not-everything/)

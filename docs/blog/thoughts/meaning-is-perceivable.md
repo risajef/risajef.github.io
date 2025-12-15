@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- meaning
-	- psychology
-	- spirituality
-	- philosophy
+  - thoughts
+  - meaning
+  - psychology
+  - spirituality
+  - philosophy
 ---
 
 # [Meaning is Perceivable](/blog/thoughts/meaning-is-perceivable/)

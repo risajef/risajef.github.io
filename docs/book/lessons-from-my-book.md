@@ -1,14 +1,14 @@
 ---
 lang: en
 tags:
-	- writing
-	- book
-	- creativity
-	- wisdom
-	- philosophy
-	- religion
-	- politics
-	- ai
+  - writing
+  - book
+  - creativity
+  - wisdom
+  - philosophy
+  - religion
+  - politics
+  - ai
 ---
 
 # Lessons from My Book

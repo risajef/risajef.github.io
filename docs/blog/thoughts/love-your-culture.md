@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- culture
-	- politics
-	- humility
-	- society
+  - thoughts
+  - culture
+  - politics
+  - humility
+  - society
 ---
 
 # [Love Your Culture](/blog/thoughts/love-your-culture/)

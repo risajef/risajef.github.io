@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- children
-	- culture
-	- psychology
-	- society
+  - thoughts
+  - children
+  - culture
+  - psychology
+  - society
 ---
 
 # [People Who Dislike Children Are Creepy](/blog/thoughts/people-who-dislike-children-are-creepy/)

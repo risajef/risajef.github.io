@@ -1,13 +1,13 @@
 ---
 lang: en
 tags:
-	- books
-	- reading
-	- classics
-	- literature
-	- philosophy
-	- religion
-	- psychology
+  - books
+  - reading
+  - classics
+  - literature
+  - philosophy
+  - religion
+  - psychology
 ---
 
 # Influential Books

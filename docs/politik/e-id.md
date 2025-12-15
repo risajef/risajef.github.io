@@ -1,13 +1,13 @@
 ---
 lang: de
 tags:
-	- politik
-	- e-id
-	- digitalisierung
-	- schweiz
-	- ssi
-	- privacy
-	- security
+  - politik
+  - e-id
+  - digitalisierung
+  - schweiz
+  - ssi
+  - privacy
+  - security
 ---
 
 # E-ID

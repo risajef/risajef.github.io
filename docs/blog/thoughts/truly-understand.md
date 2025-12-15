@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- learning
-	- reading
-	- understanding
-	- metacognition
+  - thoughts
+  - learning
+  - reading
+  - understanding
+  - metacognition
 ---
 
 # [Truly Understand](/blog/thoughts/truly-understand/)

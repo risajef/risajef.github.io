@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- creativity
-	- action
-	- productivity
-	- media
+  - thoughts
+  - creativity
+  - action
+  - productivity
+  - media
 ---
 
 # [Produce Instead of Consume](/blog/thoughts/produce-instead-of-consume/)

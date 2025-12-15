@@ -1,12 +1,12 @@
 ---
 lang: de
 tags:
-	- politik
-	- werkhof
-	- baukredit
-	- beringen
-	- abstimmung
-	- gemeinde
+  - politik
+  - werkhof
+  - baukredit
+  - beringen
+  - abstimmung
+  - gemeinde
 ---
 
 # Baukredit zum Neubau des Werkhofs Beringen an der Werkstrasse

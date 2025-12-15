@@ -1,10 +1,10 @@
 ---
 lang: en
 tags:
-	- book
-	- writing
-	- philosophy
-	- reading
+  - book
+  - writing
+  - philosophy
+  - reading
 ---
 
 # My book and other books

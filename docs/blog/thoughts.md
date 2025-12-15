@@ -1,10 +1,10 @@
 ---
 lang: en
 tags:
-	- blog
-	- thoughts
-	- wisdom
-	- essays
+  - blog
+  - thoughts
+  - wisdom
+  - essays
 ---
 
 <!-- _Browse every thought piece in one scroll, or jump to a standalone permalink via the list below._
@@ -14,6 +14,8 @@ tags:
 <!-- <div class="rss-feed" data-rss-feed data-rss-prefix="/blog/thoughts/" data-rss-limit="15">
 	<p><em>Loading recent thoughts...</em></p>
 </div> -->
+
+--8<-- "blog/thoughts/nichts-zu-verbergen.md"
 
 --8<-- "blog/thoughts/good-equivalent-truth.md"
 

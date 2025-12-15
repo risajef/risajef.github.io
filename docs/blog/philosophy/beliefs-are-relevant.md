@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- philosophy
-	- beliefs
-	- psychology
-	- religion
-	- science
+  - philosophy
+  - beliefs
+  - psychology
+  - religion
+  - science
 ---
 
 # [Beliefs are Relevant](/blog/philosophy/beliefs-are-relevant/)

@@ -1,12 +1,12 @@
 ---
 lang: en
 tags:
-	- science
-	- pytorch
-	- performance
-	- windows
-	- wsl
-	- gpu
+  - science
+  - pytorch
+  - performance
+  - windows
+  - wsl
+  - gpu
 ---
 
 # [PyTorch is slow and fast on Windows](/blog/science/pytorch-is-slow-and-fast-on-windows/)

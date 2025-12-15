@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- psychology
-	- perfectionism
-	- relationships
-	- home
+  - thoughts
+  - psychology
+  - perfectionism
+  - relationships
+  - home
 ---
 
 # [Cleanliness is Inhuman](/blog/thoughts/cleanliness-is-inhuman/)

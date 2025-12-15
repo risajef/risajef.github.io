@@ -1,14 +1,14 @@
 ---
 lang: en
 tags:
-	- science
-	- computer-science
-	- godel
-	- complexity
-	- halting-problem
-	- chaos
-	- game-theory
-	- optimization
+  - science
+  - computer-science
+  - godel
+  - complexity
+  - halting-problem
+  - chaos
+  - game-theory
+  - optimization
 ---
 
 # [What Have We Learned? And Some Educated Guesses](/blog/science/what-have-we-learned-and-some-educated-guesses/)
