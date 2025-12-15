@@ -9,13 +9,13 @@
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
     <meta name="author" content="Reto Weber">
     <meta name="keywords"
-        content="Reto Weber, programming, research, politics, blog, books, religion, philosophy, science">
+        content="Reto Weber, programming, research, politics, blog, books, religion, philosophy, science, science, machine-learning, neural-networks, compression, pytorch, mnist">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph (for rich previews on social platforms) -->
-    <meta property="og:title" content="Compressing neural networks">
+    <meta property="og:title" content="Compressing Neural Networks">
     <meta property="og:description"
-        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [sciencemachine-learningneural-networkscompressionpytorchmnist]">
     <meta property="og:type"
         content="article">
     <meta property="og:url" content="/blog/science/compressing-neural-networks/">
@@ -24,9 +24,9 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Compressing neural networks">
+    <meta name="twitter:title" content="Compressing Neural Networks">
     <meta name="twitter:description"
-        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [sciencemachine-learningneural-networkscompressionpytorchmnist]">
     <meta name="twitter:image" content="/output.png">
 
     <!-- JSON-LD Structured Data for rich results -->
@@ -38,8 +38,8 @@
         "@type": "WebPage",
         "@id": "/blog/science/compressing-neural-networks/"
       },
-      "headline": "Compressing neural networks",
-      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. []",
+      "headline": "Compressing Neural Networks",
+      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. [sciencemachine-learningneural-networkscompressionpytorchmnist]",
       "author": {
         "@type": "Person",
         "name": "Reto Weber"
@@ -55,7 +55,7 @@
     }
     </script>
 
-    <title>Compressing neural networks - Reto Weber</title>
+    <title>Compressing Neural Networks - Reto Weber</title>
     
     <link href="../../../assets/rss-feed.css" rel="stylesheet">
 
@@ -210,17 +210,7 @@
             </ul>
         </div>
         <div class="content">
-            <hr />
-<p>lang: en
-tags:
-    - science
-    - machine-learning
-    - neural-networks
-    - compression
-    - pytorch
-    - mnist</p>
-<hr />
-<h1 id="compressing-neural-networks"><a href="/blog/science/compressing-neural-networks/">Compressing Neural Networks</a></h1>
+            <h1 id="compressing-neural-networks"><a href="/blog/science/compressing-neural-networks/">Compressing Neural Networks</a></h1>
 <p>When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.</p>
 <p>My hypothesis was to compress the weight matrix using a common algorithm like JPEG. I took MNIST and trained a small CNN:</p>
 <pre><code class="language-python">hidden_layer_size = 512
