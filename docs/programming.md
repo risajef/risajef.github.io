@@ -1,3 +1,13 @@
+---
+lang: en
+tags:
+	- programming
+	- cv
+	- projects
+	- machine-learning
+	- formal-verification
+---
+
 # Experience
 
 ## Machine Learning Engineer

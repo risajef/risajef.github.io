@@ -1,3 +1,14 @@
+---
+lang: de
+tags:
+	- politik
+	- werkhof
+	- baukredit
+	- beringen
+	- abstimmung
+	- gemeinde
+---
+
 # Baukredit zum Neubau des Werkhofs Beringen an der Werkstrasse
 
 > Diese Informationen sind möglichst neutral gestaltet. Ich selbst unterstütze die Vorlage, aber ich hoffe, meine Meinung beeinflusste die Gestaltung dieser Seite nicht. Der Transparenz wegen sei es aber hier erwähnt.

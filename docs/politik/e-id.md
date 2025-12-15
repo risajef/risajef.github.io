@@ -1,3 +1,15 @@
+---
+lang: de
+tags:
+	- politik
+	- e-id
+	- digitalisierung
+	- schweiz
+	- ssi
+	- privacy
+	- security
+---
+
 # E-ID
 
 ![E-ID Whatsapp Status Werbung](/assets/images/eid_vortrag.jpg){:.float-right}

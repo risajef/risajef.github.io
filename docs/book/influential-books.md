@@ -1,3 +1,15 @@
+---
+lang: en
+tags:
+	- books
+	- reading
+	- classics
+	- literature
+	- philosophy
+	- religion
+	- psychology
+---
+
 # Influential Books
 
 ## Iliad and Odyssey by Homer

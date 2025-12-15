@@ -1,3 +1,12 @@
+---
+lang: en
+tags:
+    - private
+    - paper
+    - draft
+    - research
+---
+
 # Making verification simple through lemmas
 
 Reto Weber<sup>1</sup>

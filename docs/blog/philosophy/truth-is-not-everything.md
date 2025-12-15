@@ -1,3 +1,13 @@
+---
+lang: en
+tags:
+	- philosophy
+	- truth
+	- logic
+	- religion
+	- language
+---
+
 # [Truth Is Not Everything](/blog/philosophy/truth-is-not-everything/)
 
 I constantly reflect on myself to see if nonsense has crept into my thoughts. I try to be rigorous and commit myself to the axioms of logic. A statement cannot be both true and not true at the same time. If it is, the statement is not precise. However, sometimes contradictions arise. For example, I believe in an all-good and all-powerful God. This contradicts the existence of suffering in this world. I am aware of this contradiction and know that either the all-goodness, the omnipotence, or the reality of suffering in the world must be false. I am just not ready to decide which assumption is false, though I tend to let go of omnipotence.

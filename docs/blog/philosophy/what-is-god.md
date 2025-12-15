@@ -1,3 +1,13 @@
+---
+lang: en
+tags:
+	- philosophy
+	- religion
+	- god
+	- ontology
+	- metaphysics
+---
+
 # [What is God?](/blog/philosophy/what-is-god/)
 
 A discussion about God often leads to the question: "Why do you believe in God?" or "Why don't you believe in God?" But when you dig deeper, you find that there is no agreement on what "God" is. Non-believers often tune out at this point. After all, why should they bother discussing the existence of something that is not clearly defined? And that is legitimate. But when discussing things that do not belong to the ontological category of "physical object," it is always difficult to define them. (By the way, it is also difficult to define physical objects. However, we are more willing to accept a definition there.)

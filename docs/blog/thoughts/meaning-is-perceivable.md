@@ -1,3 +1,13 @@
+---
+lang: en
+tags:
+	- thoughts
+	- meaning
+	- psychology
+	- spirituality
+	- philosophy
+---
+
 # [Meaning is Perceivable](/blog/thoughts/meaning-is-perceivable/)
 
 The perhaps greatest question of philosophy, at least the most famous one, is: "What is the meaning of life?" And although modern philosophy tries to answer this question, and religions have answers that may alienate outsiders, it remains one of the most important questions. Why am I doing all this? What is the meaning? And although I might have approaches to answer this question philosophically or religiously, my hypothesis here is psychological.

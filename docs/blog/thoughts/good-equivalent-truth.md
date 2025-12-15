@@ -1,3 +1,14 @@
+---
+lang: en
+tags:
+	- thoughts
+	- truth
+	- pragmatism
+	- ai
+	- philosophy
+	- religion
+---
+
 # [Good ⟺ Truth](/blog/thoughts/good-equivalent-truth/)
 
 The human mind is an interesting object. It has fascinated humanity ever since we learned how to write—and probably long before. Again and again, people say that humans are especially smart (or moral, or creative) and thus distinct from animals. The very same rhetoric is now being used for artificial intelligences. Humans are said to be truly intelligent, while machines merely “imitate.” Whatever that means. I am certain that such claims about artificial intelligence will age just as poorly as those that once tried to set us apart from animals.

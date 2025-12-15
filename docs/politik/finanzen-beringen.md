@@ -1,3 +1,15 @@
+---
+lang: de
+tags:
+    - politik
+    - finanzen
+    - beringen
+    - gemeinde
+    - budget
+    - daten
+    - mermaid
+---
+
 # Finanzen der Gemeinde Beringen
 
 Ich erstellte einige Graphen aus den Rechnungen und den Budgets der Gemeinde Beringen. Eventuell machte ich ein paar Fehler. Wenn dir einer auffällt, lass es mich wissen.

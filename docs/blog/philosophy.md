@@ -1,3 +1,11 @@
+---
+lang: en
+tags:
+	- blog
+	- philosophy
+	- metaphysics
+	- religion
+---
 <!-- _All philosophy pieces remain collected here while every heading links to its standalone article for easy sharing._
 
 ## Recent Philosophy Posts -->

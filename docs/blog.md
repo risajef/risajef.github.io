@@ -1,5 +1,12 @@
-
-
+---
+lang: en
+tags:
+  - blog
+  - thoughts
+  - philosophy
+  - science
+  - rss
+---
 
 # [Thoughts](thoughts)
 

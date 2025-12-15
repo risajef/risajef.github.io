@@ -1,3 +1,16 @@
+---
+lang: en
+tags:
+	- writing
+	- book
+	- creativity
+	- wisdom
+	- philosophy
+	- religion
+	- politics
+	- ai
+---
+
 # Lessons from My Book
 
 Writing a book is challenging, and writing it in an engaging way is even more so. But one lesson I've learned over the years is that most insights you think are for others are usually for yourself. My books were mainly created for myself. They organized my thinking. My mind believed something was clear. But when I wrote it down, I realized my mind was wrong. I was forced to articulate my ideas, giving my inner critic a target. But I realized that only by allowing it to criticize intensely does true thinking emerge. I try to convince others to read my book and provide feedback. But the only person fascinated by my book so far has been myself. Nevertheless, I learned a lot and sharpened my arguments. Here are the most important lessons from this process.

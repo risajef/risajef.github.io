@@ -1,3 +1,12 @@
+---
+lang: en
+tags:
+	- blog
+	- thoughts
+	- wisdom
+	- essays
+---
+
 <!-- _Browse every thought piece in one scroll, or jump to a standalone permalink via the list below._
 
 ## Recent Thoughts -->
