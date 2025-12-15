@@ -1,0 +1,3 @@
+[submodule "docs/assets/buchfalten"]
+	path = docs/assets/buchfalten
+	url = https://github.com/risajef/buchfalten.git

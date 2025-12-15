@@ -9,6 +9,7 @@ nav:
   - Programming: programming.md
   - Research:
     - Hoare Logic: research/hoare-logic.md
+    - Buchfaltstudio: research/buchfaltstudio.md
   - Politik:
     # - Zonenplanänderung: politik/zonenplanaenderung.md
     # - Werkhof Baukredit: politik/werkhof-baukredit.md
