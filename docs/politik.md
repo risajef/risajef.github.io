@@ -88,6 +88,7 @@ Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Ein
 [Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%205.%20Sitzung%20vom%209.%20Dezember%202025.pdf)
 
 | Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
+| --- | --- | --- |
 | ✓ | ✓ | Lukas Rüedlinger (SP Liste) wird zum neuen Einwohnerratspräsidenten gewählt. Beatrix Delafontainer (FDP) wird zur neuen Vizepräsidentin des Einwohnerrats gewählt und Thomas Widmer (SVP) wird zur Stellvertretung der Aktuarin gewählt. |
 | ✓ | ✓ | Budget wurde angenommen und der Steuerfuss auf 91 % belassen. |
 | - | ✗ | Antrag zur Steuererhöhung um 3 % wurde knapp abgelehnt. |
