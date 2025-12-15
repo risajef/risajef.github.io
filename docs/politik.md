@@ -83,10 +83,20 @@ Ich erstellte eine [Seite](/politik/zonenplanaenderung/) mit neutralen Fakten zu
 
 Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Einwohnerrat. Die Vorlagen können auf der [Webseite](https://www.beringen.ch/de/einwohnerrat-vorlagen) der Gemeinde Beringen gefunden werden.
 
+## 9. Dezember 2025
+
+[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%205.%20Sitzung%20vom%209.%20Dezember%202025.pdf)
+
+| Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
+| ✓ | ✓ | Lukas Rüedlinger (SP Liste) wird zum neuen Einwohnerratspräsidenten gewählt. Beatrix Delafontainer (FDP) wird zur neuen Vizepräsidentin des Einwohnerrats gewählt und Thomas Widmer (SVP) wird zur Stellvertretung der Aktuarin gewählt. |
+| ✓ | ✓ | Budget wurde angenommen und der Steuerfuss auf 91 % belassen. |
+| - | ✗ | Antrag zur Steuererhöhung um 3 % wurde knapp abgelehnt. |
+
+> Das Budget gab viel zu besprechen. Die Verschuldung wird höher und so wurde beispielsweise von Roman Schlatter ein Sparkurs vom Gemeinderat verlangt, beziehungsweise eine mangelnde Sparbereitschaft kritisiert. Von Lukas Rüedlinger wurde beantragt, dass der Steuerfuss erhöht wird, um den Schulden entgegenzuwirken. Argumente dafür waren: Der Kanton senkte die Steuern um 3 % somit wäre der Steuerfuss netto gleichbleibend; wir haben die Verantwortung für die Gemeinde und sollten Massnahmen ergreifen. Gegenargumente sind: Die Schulden seien nicht soo schlimm. Und Steuernerhöhen ohne Sparwille sei auch der falsche Weg. Ich konnte mich nicht zu einer klaren Meinung durchringen und enthielt mich.
 
 ## 23. September 2025
 
-Link zu den Beschlüssen ist noch nicht publiziert (24.9.25 9:00)
+[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%204.%20Sitzung%20vom%2023.%20September%202025.pdf)
 
 | Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
 |---|---|---|
