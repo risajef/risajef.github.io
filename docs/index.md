@@ -1,3 +1,16 @@
+---
+lang: en
+tags:
+	- home
+	- about
+	- portfolio
+	- programming
+	- research
+	- politics
+	- blog
+	- book
+---
+
 # Welcome
 
 ![Protrait](assets/images/Portrait_bg.jpg){:.float-right}

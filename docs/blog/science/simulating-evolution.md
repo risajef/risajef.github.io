@@ -1,3 +1,14 @@
+---
+lang: en
+tags:
+	- science
+	- evolution
+	- simulation
+	- algorithms
+	- python
+	- pygame
+---
+
 # [Simulating Evolution](/blog/science/simulating-evolution/)
 
 Many people claim that evolution is impossible because nothing can arise from randomness. But is randomness the only factor in evolution? What if other forces are at play that guide the diversity and complexity of life? To explore this question, I developed an algorithm that simulates evolution and reveals some surprising results.

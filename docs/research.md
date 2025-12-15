@@ -1,3 +1,13 @@
+---
+lang: en
+tags:
+	- research
+	- publications
+	- ai
+	- formal-verification
+	- education
+---
+
 # Publications
 
 ## Do AI models help produce verified bug fixes?

@@ -1,3 +1,13 @@
+---
+lang: en
+tags:
+	- thoughts
+	- tolerance
+	- freedom
+	- politics
+	- society
+---
+
 # [Tolerance for Foolishness](/blog/thoughts/tolerance-for-foolishness/)
 
 > The quality of a society is shown by how much foolishness it can tolerate.

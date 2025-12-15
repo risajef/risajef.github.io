@@ -5,4 +5,5 @@ node_modules
 site
 docs/private
 package-lock.json
+__pycache__/
 *mermaid_[0-9]*_*.svg

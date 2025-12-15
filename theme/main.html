@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
+    <meta name="language" content="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
     <meta name="description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
     <meta name="author" content="Reto Weber">

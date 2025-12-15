@@ -1,3 +1,14 @@
+---
+lang: en
+tags:
+	- science
+	- machine-learning
+	- neural-networks
+	- compression
+	- pytorch
+	- mnist
+---
+
 # [Compressing Neural Networks](/blog/science/compressing-neural-networks/)
 
 When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.

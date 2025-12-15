@@ -1,3 +1,14 @@
+---
+lang: en
+tags:
+	- science
+	- pytorch
+	- performance
+	- windows
+	- wsl
+	- gpu
+---
+
 # [PyTorch is slow and fast on Windows](/blog/science/pytorch-is-slow-and-fast-on-windows/)
 
 For a project at work I had to train a neural network. I have a Windows laptop with a nice GPU. When using Windows my first approach is developping inside the [WSL](https://learn.microsoft.com/de-de/windows/wsl/) (Windows subsystem for Linux). And it also worked. I noticed however, that my GPU usage was not optimal. Therefore I also ran it on native Windows.

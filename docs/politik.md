@@ -1,3 +1,15 @@
+---
+lang: de
+tags:
+    - politik
+    - einwohnerrat
+    - abstimmungen
+    - beringen
+    - schweiz
+    - evp
+    - smartvote
+---
+
 # Einwohnerrat
 
 Seit Anfangs 2025 bin ich gewähltes Mitglied des [Einwohnerrats](https://www.beringen.ch/de/mitglieder) in Beringen. Ich vertrete die Interessen der Bevölkerung im Namen der [EVP](https://evp-sh.ch).
