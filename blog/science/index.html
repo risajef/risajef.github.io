@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <meta name="language" content="en">
     <meta name="description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
     <meta name="author" content="Reto Weber">
@@ -263,7 +265,15 @@
             </ul>
         </div>
         <div class="content">
-            <!-- _Each science note now has its own permalink; this page keeps the long-form reading experience intact._
+            <hr />
+<p>lang: en
+tags:
+    - blog
+    - science
+    - computer-science
+    - machine-learning</p>
+<hr />
+<!-- _Each science note now has its own permalink; this page keeps the long-form reading experience intact.
 
 ## Recent Science Posts -->
 
@@ -271,6 +281,16 @@
     <p><em>Loading science feed...</em></p>
 </div> -->
 
+<hr />
+<p>lang: en
+tags:
+    - science
+    - machine-learning
+    - neural-networks
+    - compression
+    - wavelets
+    - pytorch</p>
+<hr />
 <h1 id="a-failed-experiment-of-compressing-weights-inside-a-neural-network"><a href="/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/">A failed experiment of compressing weights inside a neural network</a></h1>
 <p>In neural networks there seem to be a lot of weights to express what we want. So I thought of implementing the most basic feature, namely matrix multiplication, in a compressed version. So instead of just multiply two matrixes we compress the weight matrix and multiply this. I used wavelet decomposition with a threshold. My approach was successful in making the weight matrix 75% zeros during training.</p>
 <p>I used something like:</p>
@@ -301,6 +321,16 @@ w_compressed = ptwt.waverec(coeffs_thresh, &quot;haar&quot;)
 <p>This network has around 100k parameters from which 75k will be zero.</p>
 <p>But the performance drop was too high. I could only get my MNIST loss to 0.55 whilst a network using no compression but just less (25k) parameters easily reached 0.15.</p>
 <p>So it was an interesting approach, but not successful.</p>
+<hr />
+<p>lang: en
+tags:
+    - science
+    - pytorch
+    - performance
+    - windows
+    - wsl
+    - gpu</p>
+<hr />
 <h1 id="pytorch-is-slow-and-fast-on-windows"><a href="/blog/science/pytorch-is-slow-and-fast-on-windows/">PyTorch is slow and fast on Windows</a></h1>
 <p>For a project at work I had to train a neural network. I have a Windows laptop with a nice GPU. When using Windows my first approach is developping inside the <a href="https://learn.microsoft.com/de-de/windows/wsl/">WSL</a> (Windows subsystem for Linux). And it also worked. I noticed however, that my GPU usage was not optimal. Therefore I also ran it on native Windows.</p>
 <table>
@@ -351,6 +381,16 @@ w_compressed = ptwt.waverec(coeffs_thresh, &quot;haar&quot;)
 <p><a href="https://podman.io">Podman</a> is as fast as native WSL.</p>
 <p><a href="https://anaconda.com">Anaconda</a> is also not faster then normal python in this setup.</p>
 </blockquote>
+<hr />
+<p>lang: en
+tags:
+    - science
+    - machine-learning
+    - neural-networks
+    - compression
+    - pytorch
+    - mnist</p>
+<hr />
 <h1 id="compressing-neural-networks"><a href="/blog/science/compressing-neural-networks/">Compressing Neural Networks</a></h1>
 <p>When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.</p>
 <p>My hypothesis was to compress the weight matrix using a common algorithm like JPEG. I took MNIST and trained a small CNN:</p>
@@ -376,6 +416,18 @@ model = torch.nn.Sequential(linear1, relu, linear2)
 <li>This method could also work in deep neural networks.</li>
 <li>Developing a differentiable method that generates significant complexity with few parameters could enhance the computational capabilities of existing hardware.</li>
 </ul>
+<hr />
+<p>lang: en
+tags:
+    - science
+    - computer-science
+    - godel
+    - complexity
+    - halting-problem
+    - chaos
+    - game-theory
+    - optimization</p>
+<hr />
 <h1 id="what-have-we-learned-and-some-educated-guesses"><a href="/blog/science/what-have-we-learned-and-some-educated-guesses/">What Have We Learned? And Some Educated Guesses</a></h1>
 <h2 id="godels-incompleteness-theorem">Gödel’s incompleteness theorem</h2>
 <p>Gödel is one of the great mathematicians of the last century. Among other things, he worked on the foundations of mathematics. He was interested in the question whether mathematics is complete. To understand this statement, I must briefly explain the concept of axiom.</p>
@@ -425,6 +477,16 @@ It is impossible to predict where the pendulum will be after 100 seconds, althou
 <p>This thought experiment is an impressive illustration of game theory. It presents a situation and gives the rules. Then different things are analyzed: What behavior is appropriate for a rational economic actor? What rules could be put in place to benefit as a rational economic community? And so on. Game theory is often ridiculed because its analysis does not match reality and people do not act rationally. But this criticism is superficial. We can enrich our model with other ideas. Ideas like reciprocity or so. And also, if we have a system in which selfish actors move a system forward without the threat of violence, then that’s a statement. If a political system were game theoretically stable, it would most likely be really stable.</p>
 <h3 id="what-does-it-mean_5">What does it mean?</h3>
 <p>Besides the obvious, i.e., the direct result of different analyzes, game theory brings a healthy way of thinking to the table. Namely, that of egoism. It is typically considered unethical, but game theory is delightfully neutral about it. Good is what benefits me. It says. And it was very healthy for me to realize that the world of egoists has to be taken seriously to understand reality. Furthermore, game theory somewhat relativizes the value of morality and ethics. After all, what is the value of acting good if we are only ever the weaker actor? Our actions must be powerful and strong enough to prevail. And similar to the gradient optimization, game theory also shrinks the horizon. Instead of saving the world, it is about making the right decision in a locally and temporally constrained environment.</p>
+<hr />
+<p>lang: en
+tags:
+    - science
+    - evolution
+    - simulation
+    - algorithms
+    - python
+    - pygame</p>
+<hr />
 <h1 id="simulating-evolution"><a href="/blog/science/simulating-evolution/">Simulating Evolution</a></h1>
 <p>Many people claim that evolution is impossible because nothing can arise from randomness. But is randomness the only factor in evolution? What if other forces are at play that guide the diversity and complexity of life? To explore this question, I developed an algorithm that simulates evolution and reveals some surprising results.</p>
 <p>The code is available on <a href="https://github.com/risajef/pygame">GitHub</a>.</p>
