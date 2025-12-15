@@ -1,12 +1,12 @@
 ---
 lang: de
 tags:
-	- politik
-	- zonenplan
-	- nutzungsplanung
-	- kiesabbau
-	- beringen
-	- abstimmung
+  - politik
+  - zonenplan
+  - nutzungsplanung
+  - kiesabbau
+  - beringen
+  - abstimmung
 ---
 
 # Zonenplanänderung im Gebiet Hooloo/Hinderi Laufferstaag und Änderung der Bau- und Nutzungsordnung (Kiesabbau)

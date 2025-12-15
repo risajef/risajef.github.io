@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- tolerance
-	- freedom
-	- politics
-	- society
+  - thoughts
+  - tolerance
+  - freedom
+  - politics
+  - society
 ---
 
 # [Tolerance for Foolishness](/blog/thoughts/tolerance-for-foolishness/)

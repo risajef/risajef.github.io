@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- research
-	- publications
-	- ai
-	- formal-verification
-	- education
+  - research
+  - publications
+  - ai
+  - formal-verification
+  - education
 ---
 
 # Publications

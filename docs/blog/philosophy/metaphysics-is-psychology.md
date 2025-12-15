@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- philosophy
-	- metaphysics
-	- psychology
-	- meaning
-	- consciousness
+  - philosophy
+  - metaphysics
+  - psychology
+  - meaning
+  - consciousness
 ---
 
 # [Metaphysics is Psychology](/blog/philosophy/metaphysics-is-psychology/)

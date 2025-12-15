@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- philosophy
-	- religion
-	- god
-	- ontology
-	- metaphysics
+  - philosophy
+  - religion
+  - god
+  - ontology
+  - metaphysics
 ---
 
 # [What is God?](/blog/philosophy/what-is-god/)

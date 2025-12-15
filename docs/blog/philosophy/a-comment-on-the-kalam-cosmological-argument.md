@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- philosophy
-	- religion
-	- god
-	- cosmology
-	- argumentation
+  - philosophy
+  - religion
+  - god
+  - cosmology
+  - argumentation
 ---
 
 # [A Comment on the Kalam Cosmological Argument](/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/)

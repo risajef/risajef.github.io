@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- communication
-	- soft-skills
-	- work
-	- relationships
+  - thoughts
+  - communication
+  - soft-skills
+  - work
+  - relationships
 ---
 
 # [Soft Skills in Hard-Skill Jobs](/blog/thoughts/soft-skills-in-hard-skill-jobs/)

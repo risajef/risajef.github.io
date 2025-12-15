@@ -1,14 +1,14 @@
 ---
 lang: en
 tags:
-	- home
-	- about
-	- portfolio
-	- programming
-	- research
-	- politics
-	- blog
-	- book
+  - home
+  - about
+  - portfolio
+  - programming
+  - research
+  - politics
+  - blog
+  - book
 ---
 
 # Welcome
@@ -23,6 +23,8 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 You see there what I changed most recently on the website.
 
 ## Dezember 15th 2025
+
+Neuer Blog-Artikel: [Nichts zu verbergen](/blog/toughts/nichts-zu-verbergen.md)
 
 Füge [Generator für Buchfaltkunst](/research/buchfaltstudio) hinzu. Das [original repo](https://github.com/risajef/buchfalten) habe ich ausgelagert und wird hier nur synchronisiert.
 

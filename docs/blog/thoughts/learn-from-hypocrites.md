@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- hypocrisy
-	- truth
-	- psychology
-	- society
+  - thoughts
+  - hypocrisy
+  - truth
+  - psychology
+  - society
 ---
 
 # [Learn from Hypocrites](/blog/thoughts/learn-from-hypocrites/)

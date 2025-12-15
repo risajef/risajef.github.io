@@ -1,12 +1,12 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- truth
-	- pragmatism
-	- ai
-	- philosophy
-	- religion
+  - thoughts
+  - truth
+  - pragmatism
+  - ai
+  - philosophy
+  - religion
 ---
 
 # [Good ⟺ Truth](/blog/thoughts/good-equivalent-truth/)

@@ -1,12 +1,12 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- truth
-	- ideas
-	- memetics
-	- media
-	- science
+  - thoughts
+  - truth
+  - ideas
+  - memetics
+  - media
+  - science
 ---
 
 # [True Forgotten Ideas Are Worthless](/blog/thoughts/true-forgotten-ideas-are-worthless/)

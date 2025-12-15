@@ -1,12 +1,12 @@
 ---
 lang: en
 tags:
-	- science
-	- machine-learning
-	- neural-networks
-	- compression
-	- pytorch
-	- mnist
+  - science
+  - machine-learning
+  - neural-networks
+  - compression
+  - pytorch
+  - mnist
 ---
 
 # [Compressing Neural Networks](/blog/science/compressing-neural-networks/)

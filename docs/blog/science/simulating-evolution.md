@@ -1,12 +1,12 @@
 ---
 lang: en
 tags:
-	- science
-	- evolution
-	- simulation
-	- algorithms
-	- python
-	- pygame
+  - science
+  - evolution
+  - simulation
+  - algorithms
+  - python
+  - pygame
 ---
 
 # [Simulating Evolution](/blog/science/simulating-evolution/)

@@ -1,15 +1,15 @@
 ---
 lang: de
 tags:
-	- buch
-	- philosophie
-	- muster
-	- evolution
-	- erkenntnistheorie
-	- wahrheit
-	- ethik
-	- religion
-	- machiavelli
+  - buch
+  - philosophie
+  - muster
+  - evolution
+  - erkenntnistheorie
+  - wahrheit
+  - ethik
+  - religion
+  - machiavelli
 ---
 
 # Das Evolutionäre Prinzip

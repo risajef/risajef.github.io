@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- wisdom
-	- philosophy
-	- stoicism
-	- self-improvement
+  - thoughts
+  - wisdom
+  - philosophy
+  - stoicism
+  - self-improvement
 ---
 
 # [Wisdom Is Philosophy That Works](/blog/thoughts/wisdom-is-philosophy-that-works/)

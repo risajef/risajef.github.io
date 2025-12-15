@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- prayer
-	- compassion
-	- religion
-	- psychology
+  - thoughts
+  - prayer
+  - compassion
+  - religion
+  - psychology
 ---
 
 # [Intercession is for You](/blog/thoughts/intercession-is-for-you/)

@@ -1,10 +1,10 @@
 ---
 lang: en
 tags:
-	- blog
-	- science
-	- computer-science
-	- machine-learning
+  - blog
+  - science
+  - computer-science
+  - machine-learning
 ---
 
 <!-- _Each science note now has its own permalink; this page keeps the long-form reading experience intact.

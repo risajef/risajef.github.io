@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- mindset
-	- ambition
-	- serenity
-	- creativity
+  - thoughts
+  - mindset
+  - ambition
+  - serenity
+  - creativity
 ---
 
 # [Be Content, but Not Complacent](/blog/thoughts/be-content-but-not-complacent/)

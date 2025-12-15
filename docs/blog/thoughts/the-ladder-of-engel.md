@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- christianity
-	- dialogue
-	- personal-growth
-	- psychology
+  - thoughts
+  - christianity
+  - dialogue
+  - personal-growth
+  - psychology
 ---
 
 # [The Ladder of Engel](/blog/thoughts/the-ladder-of-engel/)

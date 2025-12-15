@@ -1,11 +1,12 @@
 ---
 lang: en
 tags:
-	- programming
-	- cv
-	- projects
-	- machine-learning
-	- formal-verification
+
+  - programming
+  - cv
+  - projects
+  - machine-learning
+  - formal-verification
 ---
 
 # Experience

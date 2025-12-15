@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- power
-	- philosophy
-	- society
-	- realism
+  - thoughts
+  - power
+  - philosophy
+  - society
+  - realism
 ---
 
 # [Life is a Game](/blog/thoughts/life-is-a-game/)

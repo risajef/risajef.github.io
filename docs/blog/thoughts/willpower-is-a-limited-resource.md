@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-	- thoughts
-	- willpower
-	- habits
-	- productivity
-	- psychology
+  - thoughts
+  - willpower
+  - habits
+  - productivity
+  - psychology
 ---
 
 # [Willpower Is a Limited Resource](/blog/thoughts/willpower-is-a-limited-resource/)
