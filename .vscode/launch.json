@@ -8,6 +8,7 @@
       "module": "mkdocs",
       "args": ["serve"],
       "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
       "console": "integratedTerminal",
       "justMyCode": true
     }
