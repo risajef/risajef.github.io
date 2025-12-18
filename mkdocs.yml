@@ -6,10 +6,10 @@ theme:
   name: null
   custom_dir: theme
 nav:
-  - Programming: programming.md
+  - Programming:
+    - Buchfaltstudio: research/buchfaltstudio.md
   - Research:
     - Hoare Logic: research/hoare-logic.md
-    - Buchfaltstudio: research/buchfaltstudio.md
   - Politik:
     # - Zonenplanänderung: politik/zonenplanaenderung.md
     # - Werkhof Baukredit: politik/werkhof-baukredit.md
@@ -34,6 +34,7 @@ plugins:
         'politics/finanzen-beringen.md': 'politik/finanzen-beringen.md'
         'politics/e-id.md': 'politik/e-id.md'
         'programming/hoare-logic.md': 'research/hoare-logic.md'
+        'research/buchfaltstudio.md': 'programming/buchfaltstudio.md'
   - mermaid-to-svg:
       mmdc_path: "mmdc"
       cleanup_generated_images: false
