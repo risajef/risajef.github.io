@@ -144,6 +144,58 @@ ul {
     border-bottom: 1px solid;
 }
 
+/* GitHub Badge (floating bottom left) */
+#github-badge {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10000;
+    background-color: #24292e;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+#github-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    background-color: #2f363d;
+}
+
+#github-badge svg {
+    flex-shrink: 0;
+}
+
+#github-badge span {
+    color: white;
+}
+
+/* Feedback Button */
+.feedback-button {
+    background-color: var(--bg-main);
+    color: var(--primary) !important;
+    padding: 0em 0.4em 0.2em 0.4em !important;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap;
+    margin: 0 1em;
+}
+
+.feedback-button:hover {
+    color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
 /* TOC Sidebar Layout */
 .toc-container {
     display: flex;
@@ -347,6 +399,10 @@ a code {
 
 #mkdocs-search-results {
     padding: 2em 1.5em 1em 1.5em;
+}
+
+#mkdocs-search-query {
+    border-radius: 4px;
 }
 
 .search-form {
