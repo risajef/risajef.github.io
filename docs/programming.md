@@ -11,13 +11,13 @@ tags:
 
 # Experience
 
-## Machine Learning Engineer
+## 3d Vision Engineer
 **[Brütsch Technology](https://brel.ch)**
 Beringen, Switzerland
 Okt 2025 – present
-*Deep learning, Computer Vision*
+*Deep learning, Python, Computer Vision*
 
-> I just started. Therefore I cannot say much about the projects yet.
+> I work on an intraoral scanner (IOS) to scan teeth to get a 3d model. I am developping and improving deep learning models. Evaluate which problems might be solvable by deep learning and develop strategies how to realize this. I also improve coding guidelines.
 
 ## PhD Student  
 **[Constructor Institute of Technology (Academia)](https://se.constructor.ch/)**  

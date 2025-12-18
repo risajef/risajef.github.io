@@ -11,6 +11,7 @@ tags:
 - semantics
 - SMT
 - Z3
+github: https://github.com/risajef/hoare-logic
 ---
 # Hoare logic proof verifier
 

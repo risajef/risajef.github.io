@@ -11,6 +11,8 @@ tags:
   - svg
   - tool
   - research
+  - orimoto
+github: https://github.com/risajef/buchfalten
 ---
 
 <div id="buchfaltstudio-root" class="buchfaltstudio-root">
