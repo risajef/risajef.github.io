@@ -15,12 +15,12 @@ tags:
 	<p><em>Loading science feed...</em></p>
 </div> -->
 
---8<-- "blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network.md"
+--8<-- "blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network.md:12:"
 
---8<-- "blog/science/pytorch-is-slow-and-fast-on-windows.md"
+--8<-- "blog/science/pytorch-is-slow-and-fast-on-windows.md:12:"
 
---8<-- "blog/science/compressing-neural-networks.md"
+--8<-- "blog/science/compressing-neural-networks.md:12:"
 
---8<-- "blog/science/what-have-we-learned-and-some-educated-guesses.md"
+--8<-- "blog/science/what-have-we-learned-and-some-educated-guesses.md:14:"
 
---8<-- "blog/science/simulating-evolution.md"
+--8<-- "blog/science/simulating-evolution.md:12:"

@@ -14,12 +14,12 @@ tags:
 	<p><em>Loading philosophy feed...</em></p>
 </div> -->
 
---8<-- "blog/philosophy/a-comment-on-the-kalam-cosmological-argument.md"
+--8<-- "blog/philosophy/a-comment-on-the-kalam-cosmological-argument.md:11:"
 
---8<-- "blog/philosophy/what-is-god.md"
+--8<-- "blog/philosophy/what-is-god.md:11:"
 
---8<-- "blog/philosophy/metaphysics-is-psychology.md"
+--8<-- "blog/philosophy/metaphysics-is-psychology.md:11:"
 
---8<-- "blog/philosophy/beliefs-are-relevant.md"
+--8<-- "blog/philosophy/beliefs-are-relevant.md:11:"
 
---8<-- "blog/philosophy/truth-is-not-everything.md"
+--8<-- "blog/philosophy/truth-is-not-everything.md:11:"

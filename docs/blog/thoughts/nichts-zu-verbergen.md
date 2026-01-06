@@ -10,7 +10,7 @@ tags:
 ---
 
 
-# Du hast doch nichts zu verstecken
+# [Du hast doch nichts zu verstecken](/blog/thoughts/nichts-zu-verbergen/)
 
 > **Wenn du nicht abschliessen musst, bist du in einem sicheren Land. Wenn du nicht abschliessen darfst oder kannst, bist du in einem Überwachungsstaat.**
 

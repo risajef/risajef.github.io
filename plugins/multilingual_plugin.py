@@ -95,7 +95,7 @@ class MultilingualPlugin(BasePlugin):
                     # Extract the base name without language suffix
                     base_name = file.src_path[:lang_match.start()].rstrip('.')
                     
-                    if base_name:
+                    if base_name and base_name != 'index':
                         # blog.de.md -> de/blog/index.html
                         # politik/e-id.de.md -> de/politik/e-id/index.html
                         file.dest_path = f'{lang}/{base_name}/index.html'
@@ -112,6 +112,10 @@ class MultilingualPlugin(BasePlugin):
                     base_files[file.src_path] = {}
                 # Store unspecified language; will be resolved when front matter is read
                 base_files[file.src_path]['__unspecified__'] = file.src_path
+                
+                # Mark this file for language-based path adjustment later
+                if not hasattr(file, '_needs_lang_path'):
+                    file._needs_lang_path = True
         
         # Now build the available_translations map
         for base_path, lang_files in base_files.items():
@@ -172,7 +176,7 @@ class MultilingualPlugin(BasePlugin):
                     base_name = rel_path_str[:lang_match_vf.start()].rstrip('.')
                     
                     if config.get('use_directory_urls', True):
-                        if base_name:
+                        if base_name and base_name != 'index':
                             # blog.de.md -> de/blog/index.html
                             virtual_file.dest_path = f'{lang}/{base_name}/index.html'
                             virtual_file.abs_dest_path = str(Path(config['site_dir']) / virtual_file.dest_path)
@@ -227,6 +231,31 @@ class MultilingualPlugin(BasePlugin):
         page.meta['available_languages'] = {}
         # Make sure templates can rely on a lang field even when it was missing
         page.meta['lang'] = source_lang
+        
+        # Adjust destination path for base files with non-default language
+        # If this is a base file (no language suffix) with a non-English lang in frontmatter,
+        # prefix the path with the language code
+        # English pages stay at root, non-English pages get language prefix
+        if hasattr(page.file, '_needs_lang_path') and page.file._needs_lang_path:
+            if config.get('use_directory_urls', True):
+                # Get the base name without .md
+                src_without_ext = page.file.src_path[:-3] if page.file.src_path.endswith('.md') else page.file.src_path
+                
+                if source_lang != 'en':
+                    # Non-English pages get language prefix
+                    if src_without_ext and src_without_ext != 'index':
+                        # blog/thoughts/nichts-zu-verbergen.md (lang: de) -> de/blog/thoughts/nichts-zu-verbergen/index.html
+                        page.file.dest_path = f'{source_lang}/{src_without_ext}/index.html'
+                        page.file.abs_dest_path = str(Path(config['site_dir']) / page.file.dest_path)
+                        page.file.url = f'{source_lang}/{src_without_ext}/'
+                    else:
+                        # index.md (lang: de) -> de/index.html
+                        page.file.dest_path = f'{source_lang}/index.html'
+                        page.file.abs_dest_path = str(Path(config['site_dir']) / page.file.dest_path)
+                        page.file.url = f'{source_lang}/'
+                # else: English pages keep their default paths (no prefix needed)
+            # Clear the flag
+            page.file._needs_lang_path = False
         
         # Update the available_translations map if the front matter specifies a different language
         # than what the filename suggests
@@ -572,7 +601,30 @@ class MultilingualPlugin(BasePlugin):
         return context
     
     def on_post_build(self, config, **kwargs):
-        """Show translation summary after build."""
+        """Show translation summary and create redirects after build."""
+        # Create redirects for non-English base files
+        site_dir = Path(config['site_dir'])
+        
+        # Create /politik/ -> /de/politik/ redirect
+        politik_dir = site_dir / 'politik'
+        politik_dir.mkdir(parents=True, exist_ok=True)
+        
+        redirect_html = """<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=/de/politik/">
+    <link rel="canonical" href="/de/politik/">
+</head>
+<body>
+    <p>Redirecting to <a href="/de/politik/">/de/politik/</a>...</p>
+    <script>window.location.replace("/de/politik/");</script>
+</body>
+</html>"""
+        
+        (politik_dir / 'index.html').write_text(redirect_html, encoding='utf-8')
+        
         # Print translation summary
         print("\n" + "="*60)
         print("📊 MULTILINGUAL BUILD SUMMARY")
@@ -680,6 +732,7 @@ class MultilingualPlugin(BasePlugin):
         
         # State machine for parsing
         in_code_block = False
+        in_html_comment = False
         in_frontmatter = False
         code_fence = None
         frontmatter_processed = False  # Track if we've already seen frontmatter
@@ -691,6 +744,43 @@ class MultilingualPlugin(BasePlugin):
         i = 0
         while i < len(lines):
             line = lines[i]
+            
+            # Check for HTML comment start/end
+            if '<!--' in line and not in_code_block:
+                # HTML comment starts
+                if current_chunk and current_translatable:
+                    text = '\n'.join(current_chunk)
+                    if text.strip():
+                        processed = self._preserve_inline_elements(text)
+                        chunks.extend(processed)
+                    current_chunk = []
+                
+                in_html_comment = True
+                current_translatable = False
+                current_chunk.append(line)
+                
+                # Check if comment also ends on same line
+                if '-->' in line:
+                    text = '\n'.join(current_chunk) + '\n'
+                    chunks.append({'text': text, 'translatable': False})
+                    current_chunk = []
+                    in_html_comment = False
+                    current_translatable = True
+                
+                i += 1
+                continue
+            
+            if in_html_comment:
+                current_chunk.append(line)
+                if '-->' in line:
+                    # End of HTML comment
+                    text = '\n'.join(current_chunk) + '\n'
+                    chunks.append({'text': text, 'translatable': False})
+                    current_chunk = []
+                    in_html_comment = False
+                    current_translatable = True
+                i += 1
+                continue
             
             # Check for frontmatter start/end (only at beginning of document)
             if line.strip() == '---' and not frontmatter_processed:
@@ -745,8 +835,8 @@ class MultilingualPlugin(BasePlugin):
                 i += 1
                 continue
             
-            # Inside code block or frontmatter
-            if in_code_block or in_frontmatter:
+            # Inside code block, frontmatter, or HTML comment
+            if in_code_block or in_frontmatter or in_html_comment:
                 current_chunk.append(line)
                 i += 1
                 continue
@@ -758,7 +848,7 @@ class MultilingualPlugin(BasePlugin):
         # Process remaining chunk
         if current_chunk:
             text = '\n'.join(current_chunk)
-            if in_code_block or in_frontmatter:
+            if in_code_block or in_frontmatter or in_html_comment:
                 if text.strip():
                     chunks.append({'text': text, 'translatable': False})
             else:
@@ -859,6 +949,7 @@ class MultilingualPlugin(BasePlugin):
         # Order matters: try more specific patterns first
         pattern = re.compile(
             r'('
+            r'<!--.*?-->|'  # HTML comments (greedy across line)
             r'--8<--\s*"[^"]+"|'  # Snippet includes --8<-- "path"
             r'\[([^\]]+)\]\(([^)]+)\)|'  # Markdown links [text](url) - groups 2 and 3
             r'<[^>]+>|'  # HTML tags
@@ -882,8 +973,11 @@ class MultilingualPlugin(BasePlugin):
                 if before_text.strip():
                     chunks.append({'text': before_text, 'translatable': True})
             
+            # Check if this is an HTML comment - preserve completely
+            if match.group(0).startswith('<!--'):
+                chunks.append({'text': match.group(0), 'translatable': False})
             # Check if this is a snippet include - preserve completely
-            if match.group(0).startswith('--8<--'):
+            elif match.group(0).startswith('--8<--'):
                 chunks.append({'text': match.group(0), 'translatable': False})
             # Handle markdown links specially - translate the text but keep the structure
             elif match.group(2) and match.group(3):  # This is a [text](url) link

@@ -92,15 +92,26 @@
             return;
         }
         
-        // Build the target URL by replacing the language prefix
+        // Build the target URL
+        // English (en) = root path, other languages = prefixed path
         let targetPath;
         
-        if (pathLang && LANGUAGES[pathLang]) {
-            // Replace existing language prefix: /de/blog/ -> /en/blog/
-            targetPath = currentPath.replace(/^\/[a-z]{2}\//, `/${requestedLang}/`);
+        if (requestedLang === 'en') {
+            // English goes to root (remove language prefix)
+            if (pathLang && LANGUAGES[pathLang]) {
+                targetPath = currentPath.replace(/^\/[a-z]{2}\//, '/');
+            } else {
+                targetPath = currentPath;
+            }
         } else {
-            // No language prefix yet, add one: /blog/ -> /en/blog/
-            targetPath = `/${requestedLang}${currentPath}`;
+            // Other languages get prefixed
+            if (pathLang && LANGUAGES[pathLang]) {
+                // Replace existing language prefix: /de/blog/ -> /fr/blog/
+                targetPath = currentPath.replace(/^\/[a-z]{2}\//, `/${requestedLang}/`);
+            } else {
+                // No language prefix yet, add one: /blog/ -> /de/blog/
+                targetPath = `/${requestedLang}${currentPath}`;
+            }
         }
         
         // Perform the redirect without query parameters
@@ -119,21 +130,28 @@
         // Store preference
         localStorage.setItem(STORAGE_KEY, lang);
         
-        // Redirect to the language-prefixed URL
+        // Redirect to the appropriate URL
+        // English (en) = root path, other languages = prefixed path
         const currentPath = window.location.pathname;
-        const pathLangMatch = currentPath.match(/^\/([a-z]{2})\//);
+        const pathLangMatch = currentPath.match(/^\/([a-z]{2})\//); 
         let targetPath;
         
-        if (pathLangMatch) {
-            // Replace existing language prefix
-            targetPath = currentPath.replace(/^\/[a-z]{2}\//, `/${lang}/`);
+        if (lang === 'en') {
+            // English goes to root (remove language prefix)
+            if (pathLangMatch) {
+                targetPath = currentPath.replace(/^\/[a-z]{2}\//, '/');
+            } else {
+                targetPath = currentPath;
+            }
         } else {
-            // Add language prefix
-            targetPath = `/${lang}${currentPath}`;
-        }
-        
-        window.location.href = targetPath;
-    }
+            // Other languages get prefixed
+            if (pathLangMatch) {
+                // Replace existing language prefix
+                targetPath = currentPath.replace(/^\/[a-z]{2}\//, `/${lang}/`);
+            } else {
+                // Add language prefix
+                targetPath = `/${lang}${currentPath}`;
+            }
     
     /**
      * Create language switcher UI
