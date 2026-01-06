@@ -11,6 +11,34 @@
       "python": "${workspaceFolder}/.venv/bin/python",
       "console": "integratedTerminal",
       "justMyCode": true
+    },
+    {
+      "name": "MkDocs: Build (Debug)",
+      "type": "python",
+      "request": "launch",
+      "module": "mkdocs",
+      "args": ["build"],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    },
+    {
+      "name": "MkDocs: Build Clean (Debug)",
+      "type": "python",
+      "request": "launch",
+      "module": "mkdocs",
+      "args": ["build", "--clean"],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
     }
   ]
 }

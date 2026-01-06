@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
+<html lang="{{ current_language | default('en') }}">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="content-language" content="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
-    <meta name="language" content="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
+    <meta http-equiv="content-language" content="{{ current_language | default('en') }}">
+    <meta name="language" content="{{ current_language | default('en') }}">
     <meta name="description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
     <meta name="author" content="Reto Weber">
@@ -102,7 +102,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body data-auto-translated="{{ 'true' if is_auto_translated else 'false' }}" data-page-lang="{{ current_language | default('en') }}">
     <header class="site-header">
         <div class="site-title">
             <h1 class="{% if page.abs_url | url == '/' %}current{% endif %}">

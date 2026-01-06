@@ -1,4 +1,5 @@
 ---
+lang: de
 extra_css:
   - assets/buchfalten/styles.css
 extra_javascript:

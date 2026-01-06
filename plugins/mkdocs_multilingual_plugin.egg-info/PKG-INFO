@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: mkdocs-multilingual-plugin
+Version: 0.1.0
+Summary: MkDocs plugin for multilingual support with auto-translation
+Author: Reto Weber
+Requires-Dist: mkdocs>=1.0
+Requires-Dist: argostranslate>=1.9.0
+Requires-Dist: PyYAML>=6.0
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary

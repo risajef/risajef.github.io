@@ -1,4 +1,5 @@
 ---
+lang: en
 extra_css:
 - assets/hoare/style.css
 extra_javascript:

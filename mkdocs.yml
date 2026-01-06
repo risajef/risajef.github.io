@@ -26,6 +26,11 @@ nav:
 
 plugins:
   - search
+  - multilingual:
+      languages: ['en', 'de']
+      translation_api: 'argos'
+      cache_dir: '.translation_cache'
+      enable_auto_translate: true
   - redirects:
       use_directory_urls: true
       redirect_maps:
@@ -66,5 +71,13 @@ markdown_extensions:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
   - assets/rss-feed.js
+  - assets/language-switcher.js
 extra_css:
   - assets/rss-feed.css
+  - assets/language-switcher.css
+
+# Exclude translation cache from watch to prevent rebuild loops
+watch:
+  - docs
+  - theme
+  - mkdocs.yml
