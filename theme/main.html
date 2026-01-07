@@ -103,6 +103,21 @@
 </head>
 
 <body>
+    {% set current_locale = 'en' %}
+    {% if i18n_current_language is defined and i18n_current_language %}
+    {% set current_locale = i18n_current_language %}
+    {% endif %}
+    {% if page.meta and page.meta.lang %}
+    {% set current_locale = page.meta.lang %}
+    {% elif page.file and page.file.locale %}
+    {% set current_locale = page.file.locale %}
+    {% endif %}
+    {% set translations = {} %}
+    {% if config.extra is defined and config.extra.translations is defined %}
+    {% set translations = config.extra.translations %}
+    {% endif %}
+    {% set translation_strings = translations.get(current_locale, {}) %}
+    {% set nav_labels = translation_strings.get('nav', {}) %}
     <header class="site-header">
         <div class="site-title">
             <h1 class="{% if page.abs_url | url == '/' %}current{% endif %}">
@@ -111,35 +126,29 @@
         </div>
         {% if nav|length > 1 %}
         <ul class="main-nav">
-            {% for nav_item in nav %}
-            {% if nav_item.children %}
-            <li
-                class="nav-parent {% if page.abs_url | url | trim('/') == nav_item.title | lower | replace(' ', '-') %}current{% endif %}">
-                <a href="/{{ nav_item.title | lower | replace(' ', '-') }}/">{{ nav_item.title }}</a>
+            {% for item in nav %}
+            {% if item.children %}
+            {% set first_child = item.children | first %}
+            {% set parent_url = first_child.url if first_child and first_child.url else '#' %}
+            <li class="nav-parent {% if item.active %}current{% endif %}">
+                <a href="{{ parent_url | url }}">{{ nav_labels.get(item.title, item.title) }}</a>
                 <ul class="nav-dropdown">
-                    {% for nav_item in nav_item.children %}
-                    <li
-                        class="{% if nav_item.active %}current{% endif %} {% if page.abs_url | url == nav_item.url|url %}current{% endif %}">
-                        <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+                    {% for child in item.children %}
+                    <li class="{% if child.active %}current{% endif %}">
+                        <a href="{{ child.url|url }}">{{ nav_labels.get(child.title, child.title) }}</a>
                     </li>
                     {% endfor %}
                 </ul>
             </li>
             {% else %}
-            <li class="{% if nav_item.active %}current{% endif %}">
-                <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+            <li class="{% if item.active %}current{% endif %}">
+                <a href="{{ item.url|url }}">{{ nav_labels.get(item.title, item.title) }}</a>
             </li>
             {% endif %}
             {% endfor %}
         </ul>
         {% endif %}
         {% if i18n_config is defined and i18n_config.languages %}
-        {% set current_locale = i18n_current_language %}
-        {% if page.meta and page.meta.lang %}
-        {% set current_locale = page.meta.lang %}
-        {% elif page.file and page.file.locale %}
-        {% set current_locale = page.file.locale %}
-        {% endif %}
         <nav class="language-switcher" aria-label="Language selector">
             {% for lang in i18n_config.languages %}
             {% if lang.build %}
@@ -187,11 +196,12 @@
         <div class="content">
             {% if page.meta and page.meta.auto_translated %}
             <div class="auto-translation-banner" role="status">
-                <strong>Automated translation.</strong>
+                <strong>{{ translation_strings.get('auto_translation_title', 'Automated translation.') }}</strong>
                 {% if page.meta.source_lang %}
-                This page was machine translated from {{ page.meta.source_lang | upper }} and may contain mistakes.
+                {% set detected_lang = page.meta.source_lang | upper %}
+                {{ translation_strings.get('auto_translation_from_lang', 'This page was machine translated from {lang} and may contain mistakes.') | replace('{lang}', detected_lang) }}
                 {% else %}
-                This page was machine translated and may contain mistakes.
+                {{ translation_strings.get('auto_translation_generic', 'This page was machine translated and may contain mistakes.') }}
                 {% endif %}
             </div>
             {% endif %}
