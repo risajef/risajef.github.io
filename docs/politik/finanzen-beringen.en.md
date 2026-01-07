@@ -18,8 +18,9 @@ I created some graphs from the bills and the budgets of the municipality of Beri
 
 ## Expenditure per inhabitant:in Beringen
 
-&nbsp
+&nbsp;
 {:#mermaid}
+
 ```mermaid
 pie showData
     "Bildung":1424
@@ -37,8 +38,9 @@ Per inhabitant:in CHF 3010 per year and spends about as much (CHF 3133). These d
 
 ## Comparison with Neunkirch
 
-&nbsp
+&nbsp;
 {:#mermaid}
+
 ```mermaid
 pie showData
     "Bildung": 1356
@@ -57,8 +59,9 @@ With CHF 3213, Neunkirch even takes a little more one per person. It shows that 
 
 The development of these figures is also important. Are the numbers rising or falling? For example, it is claimed again and again that the debt of perpetrators is too high, but the figures do not prove that. Debts are stable between 34 and 39 million or approx. CHF 7000 per inhabitant:in.
 
-&nbsp
+&nbsp;
 {:#mermaid}
+
 ```mermaid
 xychart
 title "Fremdkapital"
@@ -71,8 +74,9 @@ line [38.010, 38.342, 35.781, 34.232, 37.158]
 
 Some significant developments are expenditure per person, based on the categories. The following are increasing and it may be useful to keep an eye on them.
 
-&nbsp
+&nbsp;
 {:#mermaid}
+
 ```mermaid
 xychart
 title "Verwaltungskosten pro Person"
@@ -81,8 +85,9 @@ y-axis "CHF pro Person" 0 --> 600
 line [398, 377, 412, 517, 438, 361, 411, 371, 547, 498, 494, 539, 522]
 ```
 
-&nbsp
+&nbsp;
 {:#mermaid}
+
 ```mermaid
 xychart
 title "Öffentliche Sicherheitskosten pro Person"
@@ -91,8 +96,9 @@ y-axis  "CHF pro Person" 0 --> 80
 line [2, 36, 33, 7, 16, 21, 63, 49, 21, 29, 55, 44, 72]
 ```
 
-&nbsp
+&nbsp;
 {:#mermaid}
+
 ```mermaid
 xychart
 title "Gesundheitskosten pro Person"
@@ -106,8 +112,9 @@ I chose the start here at 2020 because there was a system change and the costs a
 
 On the other hand, there are trends that are pleasing.
 
-&nbsp
+&nbsp;
 {:#mermaid}
+
 ```mermaid
 xychart
 title "Verkehrskosten pro Person"
@@ -116,8 +123,9 @@ y-axis "CHF pro Person" 0 --> 550
 line [180, 183, 218, 534, 325, 292, 393, 158, 98, 145, 70, 68, 82]
 ```
 
-&nbsp
+&nbsp;
 {:#mermaid}
+
 ```mermaid
 xychart
 title "Umwelt & Raumplanungskosten pro Person"
@@ -134,11 +142,11 @@ I was able to compare the budgets and invoices by 2020. The budget was not avail
 {:#budget}
 
 | Year | Account (CHF) | Budget (CHF) | Difference (CHF) |
-|------------------------------
-2020 | -230,101 | -328,630 | -98,529 |
-| 2021 | 1,066,430 | -205,694 | -1,272,124 |
-| 2022 | 124,426 | -68,785 | -193,211 |
-| 2023 | 151,917 | -197,471 | -349,388 |
-| 2024 | -647,740 | -784,180 | -136,440 |
+|------|----------------|--------------|-----------------|
+| 2020 | -230,101       | -328,630     | -98,529         |
+| 2021 | 1,066,430      | -205,694     | -1,272,124      |
+| 2022 | 124,426        | -68,785      | -193,211        |
+| 2023 | 151,917        | -197,471     | -349,388        |
+| 2024 | -647,740       | -784,180     | -136,440        |
 
 The bill has never been worse than the budget. On average, the budget is CHF 409'000 too pessimistic and in the Median CHF 193'000. This deviation seems to be systematic. This is a pessimistic budget to justify austerity measures or at least to have arguments against new expenditure. The municipal council itself can also bind a wreath again and again, as it has better concluded than budgeted. Just last year (2024) would have been much more positive, this unexpected tax repayment would not have happened. I don't want to complain about a good bill, but I think it's something eyewitness and abuse of this instrument. I just condemn it because budgets are abused everywhere for the purposes mentioned. But I still want to hold it here.

@@ -12,7 +12,7 @@ source_lang: en
 
 # [Gedanken](thoughts)
 
-Der Hauptkörper des Inhalts. Es enthält kurze informelle praktische Ideen.
+Der Hauptkörper des Inhalts. Es enthält kurze informelle praktische Ideen. 
 
 # [Philosophie](philosophy)
 
@@ -24,8 +24,8 @@ Diese sind noch formeller. Einige sind wirkliche Forschungsideen, die ich nicht 
 
 # Neueste Blog-Einträge
 
-Werden Sie informiert, wenn ich neue Artikel veröffentlichen. Abonnieren[RSS](/rss.xml).
+Werden Sie informiert, wenn ich neue Artikel veröffentlichen. Abonnieren Sie per [RSS](/rss.xml).
 
 <div class="rss-feed" data-rss-feed data-rss-limit="10">
-<p><em>Die neuesten Einträge laden...</em></p>
+  <p><em>Loading the latest entries...</em></p>
 </div>

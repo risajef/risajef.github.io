@@ -11,7 +11,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Good ⟺ Truth](/blog/thoughts/good-equivalent-truth/)
+# [Gut ⟺ Wahrheit](/blog/thoughts/good-equivalent-truth/)
 
 Der menschliche Geist ist ein interessantes Objekt. Es hat die Menschheit fasziniert, seit wir gelernt haben, wie man schreibt – und wahrscheinlich schon lange. Immer wieder sagen die Menschen, dass Menschen besonders intelligent (oder moralisch oder kreativ) sind und sich somit von Tieren unterscheiden. Die gleiche Rhetorik wird jetzt für künstliche Intelligenz verwendet. Menschen sollen wirklich intelligent sein, während Maschinen nur „imitaten“. Was auch immer das bedeutet. Ich bin mir sicher, dass solche Behauptungen über künstliche Intelligenz genauso schlecht altern werden, wie jene, die uns einmal von Tieren abgesehen wollten.
 
@@ -20,7 +20,7 @@ Wir unterscheiden uns von Tieren, und wir unterscheiden uns von Maschinen. Aber 
 Ich finde das moderne Argument besonders mühsam, dass KIs “Missionen” machen, und dass dies zeigt, dass sie nicht “verstehen” ein Thema. Aber wir Menschen machen auch Fehler, auch wenn wir etwas verstehen. Wir entwickelten Mechanismen, um mit diesen Fehlern umzugehen:
 
 - Es gibt Hierarchien, die Widersprüche beseitigen (die mit mehr Macht ist richtig). Das ist ein sehr robuster Mechanismus.
-- Eine modernere Herangehensweise ist: wer den anderen überzeugt, ist richtig (Rhetorik, Argumente, Bestechung usw.). Das ist schon ein Fortschritt, obwohl noch nicht ganz zuverlässig.
+- Eine modernere Herangehensweise ist: Wer den anderen überzeugt, ist richtig (Rhetorik, Argumente, Bestechung usw.). Das ist schon ein Fortschritt, obwohl noch nicht ganz zuverlässig.
 - Moderne Wissenschaftler leben sogar in der Illusion, dass die Wahrheit das entscheidende Kriterium ist. Aber natürlich ist das ein Wunschdenken. Der soziale Ruf, die überzeugende Formulierung oder die geschickte Verdeckung von Fehlern sind natürlich wichtiger als die Wahrheit, wenn es um die wissenschaftliche Veröffentlichung geht.
 
 Aber nehmen wir an, dass es eine solche Auswahl gab, die auf dem Kriterium der „Wahrheit“ basiert. Glauben KI-Kritiker wirklich, dass KI keinen solchen Auswahlprozess nutzen können? Ich glaube, die Menschen verlangen Vollkommenheit von AIs. Doch alles, was wir wirklich brauchen, ist, in einem Protokoll zur Fehlerkorrektur zu bauen – von der menschlichen Welt inspiriert. Aber das ist nichts Neues. In der Software ist der Qualitäts-Benchwert das Fehlen von Fehlern. Und AIs heute können bereits Tests schreiben und Fehler beheben. In der Mathematik gibt es Beweise Verifikationen, und KIs können einfach von denen verwenden. Für Fuzzier-Themen könnte der Prozess mehr dialogisch sein: Mehrere KIs könnten diskutieren und zu einem Konsens kommen.
@@ -29,7 +29,7 @@ All dies ist nur ein Vorspiel zu einem anderen Gedanken. KIs werden beschuldigt,
 
 Meine These ist:
 
-> Auf der Suche nach Wahrheit gibt es nichts anderes als Heuristik.
+>Auf der Suche nach Wahrheit gibt es nichts als Heuristiken.
 
 Weil das wahre Auswahlkriterium im Universum die Existenz ist, nicht die Wahrheit. Wir brauchen Intuitionen oder Mechanismen, um Gedanken zu erzeugen, die uns helfen, zu überleben. Die Wahrheit ist nur insofern wichtig, als sie uns hilft zu überleben.
 
@@ -42,4 +42,3 @@ Falsche aber nützliche Dinge umfassen solche Domänen wie “Glaube” und “h
 Ich glaube, wir brauchen wieder ähnliche Prozesse, die sagen können, was in „Glaube“ und „Hoffe“ wahr ist. Die Religion hat dies einmal gegeben, aber heute haben wir weder Glauben noch Hoffnung. Ich glaube, das ist ein persönlicher, gesellschaftlicher und evolutionärer Mangel – und es muss dringend behandelt werden.
 
 Dies würde jedoch bedeuten, die Wahrheit bewusst durch den Pragmatismus zu ersetzen. Also, wo hat der Grund noch seinen Platz? Und ich glaube, genau dort liegt die Entscheidung: Entscheiden, welche unwahren Dinge wir glauben sollten. Diese Entscheidung sollte vernünftig getroffen werden.
-
