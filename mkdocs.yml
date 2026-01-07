@@ -25,16 +25,25 @@ nav:
     - Lessons from My Book: book/lessons-from-my-book.md
 
 plugins:
+  - i18n:
+      default_language: de
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: English
+        - locale: de
+          name: Deutsch
   - search
   - redirects:
       use_directory_urls: true
       redirect_maps:
-        'politics.md': 'politik.md'
-        'politics/zonenplanaenderung.md': 'politik/zonenplanaenderung.md'
-        'politics/finanzen-beringen.md': 'politik/finanzen-beringen.md'
-        'politics/e-id.md': 'politik/e-id.md'
-        'programming/hoare-logic.md': 'research/hoare-logic.md'
-        'research/buchfaltstudio.md': 'programming/buchfaltstudio.md'
+        'politics.md': 'politik.de.md'
+        'politics/zonenplanaenderung.md': 'politik/zonenplanaenderung.de.md'
+        'politics/finanzen-beringen.md': 'politik/finanzen-beringen.de.md'
+        'politics/e-id.md': 'politik/e-id.de.md'
+        'programming/hoare-logic.md': 'research/hoare-logic.de.md'
+        'research/buchfaltstudio.md': 'research/buchfaltstudio.de.md'
   - mermaid-to-svg:
       mmdc_path: "mmdc"
       cleanup_generated_images: false
