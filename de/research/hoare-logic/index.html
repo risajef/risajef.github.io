@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" data-page-lang="de">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph (for rich previews on social platforms) -->
-    <meta property="og:title" content="Hoare Logikprüfer">
+    <meta property="og:title" content="Hoare Logic">
     <meta property="og:description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [hoarelogicverifieraxiomaticsemanticsSMTZ3]">
     <meta property="og:type"
@@ -24,7 +24,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hoare Logikprüfer">
+    <meta name="twitter:title" content="Hoare Logic">
     <meta name="twitter:description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [hoarelogicverifieraxiomaticsemanticsSMTZ3]">
     <meta name="twitter:image" content="/output.png">
@@ -38,7 +38,7 @@
         "@type": "WebPage",
         "@id": "/de/research/hoare-logic/"
       },
-      "headline": "Hoare Logikprüfer",
+      "headline": "Hoare Logic",
       "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. [hoarelogicverifieraxiomaticsemanticsSMTZ3]",
       "author": {
         "@type": "Person",
@@ -55,12 +55,11 @@
     }
     </script>
 
-    <title>Hoare Logikprüfer - Reto Weber</title>
+    <title>Hoare Logic - Reto Weber</title>
     
     <link href="../../../assets/hoare/style.css" rel="stylesheet">
     
     <link href="../../../assets/rss-feed.css" rel="stylesheet">
-    <link href="../../../assets/language-switcher.css" rel="stylesheet">
 
     </noscript>
 
@@ -99,7 +98,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body data-page-lang="de">
+<body>
     <header class="site-header">
         <div class="site-title">
             <h1 class="">
@@ -117,7 +116,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../research/buchfaltstudio.md">Buchfaltstudio</a>
+                        <a href="../buchfaltstudio/">Buchfaltstudio</a>
                     </li>
                     
                 </ul>
@@ -131,8 +130,8 @@
                 <ul class="nav-dropdown">
                     
                     <li
-                        class=" ">
-                        <a href="../../../research/hoare-logic/">Hoare Logic</a>
+                        class="current ">
+                        <a href="./">Hoare Logic</a>
                     </li>
                     
                 </ul>
@@ -147,7 +146,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../politik/finanzen-beringen/">Finanzen Beringen</a>
+                        <a href="../../politik/finanzen-beringen/">Finanzen Beringen</a>
                     </li>
                     
                 </ul>
@@ -162,17 +161,17 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../blog/thoughts/">Thoughts</a>
+                        <a href="../../blog/thoughts/">Thoughts</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../blog/philosophy/">Philosophy</a>
+                        <a href="../../blog/philosophy/">Philosophy</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../blog/science/">Science</a>
+                        <a href="../../blog/science/">Science</a>
                     </li>
                     
                 </ul>
@@ -187,17 +186,17 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../book/the-book/">The Book</a>
+                        <a href="../../book/the-book/">The Book</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../book/influential-books/">Influential Books</a>
+                        <a href="../../book/influential-books/">Influential Books</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../book/lessons-from-my-book/">Lessons from My Book</a>
+                        <a href="../../book/lessons-from-my-book/">Lessons from My Book</a>
                     </li>
                     
                 </ul>
@@ -205,6 +204,31 @@
             
             
         </ul>
+        
+        
+        
+        
+        
+        
+        <nav class="language-switcher" aria-label="Language selector">
+            
+            
+            
+            
+            
+            
+            <a href="../../../research/hoare-logic/" class="">English</a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="./" class="active">Deutsch</a>
+            
+            
+        </nav>
         
         <form class="search-form" role="search">
             <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
@@ -220,22 +244,44 @@
             </ul>
         </div>
         <div class="content">
+            
+            <div class="auto-translation-banner" role="status">
+                <strong>Automated translation.</strong>
+                
+                This page was machine translated from EN and may contain mistakes.
+                
+            </div>
+            
             <h1 id="hoare-logikprufer">Hoare Logikprüfer</h1>
 <blockquote>
 <p>Dies war vibe codiert und verwendet React.</p>
 </blockquote>
 <ol>
 <li>Erstellen Sie ein Programm mit Drag und Drop mit den angegebenen Elementen.</li>
-<li>Klicken Sie<code>Create Root</code>3. Fügen Sie die entsprechenden Regeln hinzu, bis es sagt<code>Valid Proof: Yes</code>Die Regeln der Hoare-Inferenz</li>
+<li>Klicken Sie auf <code>Create Root</code></li>
+<li>Fügen Sie die entsprechenden Regeln hinzu, bis es heißt <code>Valid Proof: Yes</code></li>
 </ol>
+<h2 id="hoare-inference-rules">Hoare inference rules</h2>
 <p>
 <script type="math/tex; mode=display">\frac{}{\{p[e/x]\} \; x := e \; \{p\}}\text{[ass]}</script>
+</p>
+<p>
 <script type="math/tex; mode=display">\frac{}{\{p\} \; \text{skip} \; \{p\}}\text{[skip]}</script>
+</p>
+<p>
 <script type="math/tex; mode=display">\frac{ \{p\} \; P \; \{r\} \; \; \;  \{r\} \; Q \; \{q\}}{ \{p\} \; P; Q \; \{q\}}\text{[comp]}</script>
+</p>
+<p>
 <script type="math/tex; mode=display">\frac{\{p \land b\} \; P \; \{p\}}{\{p\} \; \text{while } b \; \text{ do } P \; \{\neg b \land p\}}\text{[while]}</script>
+</p>
+<p>
 <script type="math/tex; mode=display">\frac{\{p \land b\} \; P \; \{q\} \; \; \; \{p \land \lnot b\} \; Q \; \{q\}}{\{p\} \; \text{if } b \; \text{ then } P \; \text{else } Q \text { end }\{q\}}\text{[if]}</script>
-<script type="math/tex; mode=display">\frac{p' \implies p \; \; \; \{p\} \; P \; \{q\} \; \; \; q \implies q'}{\{p'\} \; P \; \{q'\}}\text{[cons]}</script>Dieses Tool ist nicht anspruchsvoll, sondern nur String-Ersatz und String-Vergleich.</p>
-<p>~ Hoare logic prover ~</p>
+</p>
+<p>
+<script type="math/tex; mode=display">\frac{p' \implies p \; \; \; \{p\} \; P \; \{q\} \; \; \; q \implies q'}{\{p'\} \; P \; \{q'\}}\text{[cons]}</script>
+</p>
+<p>Dieses Tool ist nicht anspruchsvoll, sondern nur String-Ersatz und String-Vergleich.</p>
+<h2 id="hoare-logikprofi">Hoare Logikprofi</h2>
 <div id="root"></div>
         </div>
     </div>
@@ -330,7 +376,6 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../../assets/rss-feed.js"></script>
-    <script src="../../../assets/language-switcher.js"></script>
     <script src="../../../search/main.js"></script>
     <!-- 100% privacy-first analytics -->
     <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

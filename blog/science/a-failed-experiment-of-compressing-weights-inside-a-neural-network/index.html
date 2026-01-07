@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-page-lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -58,7 +58,6 @@
     <title>A failed experiment of compressing weights inside a neural network - Reto Weber</title>
     
     <link href="../../../assets/rss-feed.css" rel="stylesheet">
-    <link href="../../../assets/language-switcher.css" rel="stylesheet">
 
     </noscript>
 
@@ -97,7 +96,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body data-page-lang="en">
+<body>
     <header class="site-header">
         <div class="site-title">
             <h1 class="">
@@ -115,7 +114,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../research/buchfaltstudio.md">Buchfaltstudio</a>
+                        <a href="../../../research/buchfaltstudio/">Buchfaltstudio</a>
                     </li>
                     
                 </ul>
@@ -204,6 +203,31 @@
             
         </ul>
         
+        
+        
+        
+        
+        
+        <nav class="language-switcher" aria-label="Language selector">
+            
+            
+            
+            
+            
+            
+            <a href="./" class="active">English</a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="../../../de/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/" class="">Deutsch</a>
+            
+            
+        </nav>
+        
         <form class="search-form" role="search">
             <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
         </form>
@@ -218,6 +242,7 @@
             </ul>
         </div>
         <div class="content">
+            
             <h1 id="a-failed-experiment-of-compressing-weights-inside-a-neural-network"><a href="/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/">A failed experiment of compressing weights inside a neural network</a></h1>
 <p>In neural networks there seem to be a lot of weights to express what we want. So I thought of implementing the most basic feature, namely matrix multiplication, in a compressed version. So instead of just multiply two matrixes we compress the weight matrix and multiply this. I used wavelet decomposition with a threshold. My approach was successful in making the weight matrix 75% zeros during training.</p>
 <p>I used something like:</p>
@@ -339,7 +364,6 @@ w_compressed = ptwt.waverec(coeffs_thresh, &quot;haar&quot;)
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../../assets/rss-feed.js"></script>
-    <script src="../../../assets/language-switcher.js"></script>
     <script src="../../../search/main.js"></script>
     <!-- 100% privacy-first analytics -->
     <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" data-page-lang="de">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -58,7 +58,6 @@
     <title>PyTorch ist langsam und schnell unter Windows - Reto Weber</title>
     
     <link href="../../../../assets/rss-feed.css" rel="stylesheet">
-    <link href="../../../../assets/language-switcher.css" rel="stylesheet">
 
     </noscript>
 
@@ -97,7 +96,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body data-page-lang="de">
+<body>
     <header class="site-header">
         <div class="site-title">
             <h1 class="">
@@ -115,7 +114,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../research/buchfaltstudio.md">Buchfaltstudio</a>
+                        <a href="../../../research/buchfaltstudio/">Buchfaltstudio</a>
                     </li>
                     
                 </ul>
@@ -130,7 +129,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../research/hoare-logic/">Hoare Logic</a>
+                        <a href="../../../research/hoare-logic/">Hoare Logic</a>
                     </li>
                     
                 </ul>
@@ -145,7 +144,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../politik/finanzen-beringen/">Finanzen Beringen</a>
+                        <a href="../../../politik/finanzen-beringen/">Finanzen Beringen</a>
                     </li>
                     
                 </ul>
@@ -160,17 +159,17 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../blog/thoughts/">Thoughts</a>
+                        <a href="../../thoughts/">Thoughts</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../blog/philosophy/">Philosophy</a>
+                        <a href="../../philosophy/">Philosophy</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../blog/science/">Science</a>
+                        <a href="../">Science</a>
                     </li>
                     
                 </ul>
@@ -185,17 +184,17 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../book/the-book/">The Book</a>
+                        <a href="../../../book/the-book/">The Book</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../book/influential-books/">Influential Books</a>
+                        <a href="../../../book/influential-books/">Influential Books</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../book/lessons-from-my-book/">Lessons from My Book</a>
+                        <a href="../../../book/lessons-from-my-book/">Lessons from My Book</a>
                     </li>
                     
                 </ul>
@@ -203,6 +202,31 @@
             
             
         </ul>
+        
+        
+        
+        
+        
+        
+        <nav class="language-switcher" aria-label="Language selector">
+            
+            
+            
+            
+            
+            
+            <a href="../../../../blog/science/pytorch-is-slow-and-fast-on-windows/" class="">English</a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="./" class="active">Deutsch</a>
+            
+            
+        </nav>
         
         <form class="search-form" role="search">
             <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
@@ -218,22 +242,63 @@
             </ul>
         </div>
         <div class="content">
+            
+            <div class="auto-translation-banner" role="status">
+                <strong>Automated translation.</strong>
+                
+                This page was machine translated from EN and may contain mistakes.
+                
+            </div>
+            
             <h1 id="pytorch-ist-langsam-und-schnell-unter-windows"><a href="/blog/science/pytorch-is-slow-and-fast-on-windows/">PyTorch ist langsam und schnell unter Windows</a></h1>
-<p>Für ein Projekt bei der Arbeit musste ich ein neuronales Netzwerk trainieren. Ich habe einen Windows-Laptop mit einer schönen GPU. Bei Windows entwickelt sich mein erster Ansatz innerhalb der <a href="https://learn.microsoft.com/de-de/windows/wsl/">WSL</a> (Windows Subsystem für Linux). Und es funktionierte auch. Ich bemerkte jedoch, dass meine GPU-Nutzung nicht optimal war. Deshalb habe ich es auch unter nativen Windows ausgeführt.</p>
-<p>| Metric | Nativ Windows | WSL |
-|----------
-| Training | 2.2 it/s | 1.3 it/s |
-| Eval | ~5 it/s | 1.5it/s |
-| Thread create | 46s | ~5s |
-| Thread create | 54s | ~5s |
-| GPU-Nutzungszug | | <img alt="Bild" src="/Assets/Bilder/GPU 1 1.png" /> | | <img alt="Bild" src="/Assets/Bilder/GPU 2 1.png" /> |
-| GPU-Nutzung val | <img alt="Bild" src="/Attenten/Bilder/GPU 1 2.png" /> | | <img alt="Bild" src="/Attenten/Bilder/GPU 2 2.png" />|</p>
+<p>Für ein Projekt bei der Arbeit musste ich ein neuronales Netzwerk trainieren. Ich habe einen Windows-Laptop mit einer schönen GPU. Bei Windows entwickelt sich mein erster Ansatz innerhalb des <a href="https://learn.microsoft.com/de-de/windows/wsl/">WSL</a> (Windows Subsystem für Linux). Und es funktionierte auch. Ich bemerkte jedoch, dass meine GPU-Nutzung nicht optimal war. Deshalb habe ich es auch unter nativen Windows ausgeführt.</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Nativ Windows</th>
+<th>WSL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ausbildung</td>
+<td>2.2 es/s</td>
+<td>1.3 it/s</td>
+</tr>
+<tr>
+<td>Eval</td>
+<td>~5 it/s</td>
+<td>1,5it/s</td>
+</tr>
+<tr>
+<td>Thread-Erstellung</td>
+<td>46</td>
+<td>~5s of</td>
+</tr>
+<tr>
+<td>Thread-Erstellung</td>
+<td>54</td>
+<td>~5s of</td>
+</tr>
+<tr>
+<td>GPU Nutzungszug</td>
+<td><img alt="Bild" src="/assets/images/GPU_1_1.png" /></td>
+<td><img alt="Bild" src="/assets/images/GPU_2_1.png" /></td>
+</tr>
+<tr>
+<td>GPU Nutzung val</td>
+<td><img alt="Bild" src="/assets/images/GPU_1_2.png" /></td>
+<td><img alt="Bild" src="/assets/images/GPU_2_2.png" /></td>
+</tr>
+</tbody>
+</table>
 <p>Ich habe dieses Wissen benutzt, indem ich jetzt unter nativen Windows läuft, aber mit hartnäckigen Arbeitern, so dass die Fäden nicht in jeder Epoche wiederhergestellt werden müssen.</p>
 <p>Natürlich ist dies nur ein Beispiel. Mit einer anderen Pytorch-Version könnte dies ändern. Vielleicht verhält es sich mit einer anderen GPU anders.</p>
 <p>Die langsame Thread-Erstellung ist ein bekanntes Problem bei der Betrachtung von Foren, aber die signifikante Leistungssteigerung bei der Verwendung von nativen Fenstern war unerwartet.</p>
 <blockquote>
-<p><a href="https://podman.io">Podman</a> ist so schnell wie native WSL.</p>
-<p><a href="https://anaconda.com">Anaconda</a> ist auch nicht schneller als normaler Python in diesem Setup.</p>
+<p><a href="https://podman.io">Podman</a> ist genauso schnell wie native WSL.</p>
+<p><a href="https://anaconda.com">Anaconda</a> ist auch nicht schneller als normal python in diesem Setup.</p>
 </blockquote>
         </div>
     </div>
@@ -326,7 +391,6 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../../../assets/rss-feed.js"></script>
-    <script src="../../../../assets/language-switcher.js"></script>
     <script src="../../../../search/main.js"></script>
     <!-- 100% privacy-first analytics -->
     <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

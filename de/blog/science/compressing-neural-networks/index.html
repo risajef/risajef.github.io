@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" data-page-lang="de">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph (for rich previews on social platforms) -->
-    <meta property="og:title" content="Compressing Neural Networks">
+    <meta property="og:title" content="Neue Netzwerke komprimieren">
     <meta property="og:description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [sciencemachine-learningneural-networkscompressionpytorchmnist]">
     <meta property="og:type"
@@ -24,7 +24,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Compressing Neural Networks">
+    <meta name="twitter:title" content="Neue Netzwerke komprimieren">
     <meta name="twitter:description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [sciencemachine-learningneural-networkscompressionpytorchmnist]">
     <meta name="twitter:image" content="/output.png">
@@ -38,7 +38,7 @@
         "@type": "WebPage",
         "@id": "/de/blog/science/compressing-neural-networks/"
       },
-      "headline": "Compressing Neural Networks",
+      "headline": "Neue Netzwerke komprimieren",
       "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. [sciencemachine-learningneural-networkscompressionpytorchmnist]",
       "author": {
         "@type": "Person",
@@ -55,10 +55,9 @@
     }
     </script>
 
-    <title>Compressing Neural Networks - Reto Weber</title>
+    <title>Neue Netzwerke komprimieren - Reto Weber</title>
     
     <link href="../../../../assets/rss-feed.css" rel="stylesheet">
-    <link href="../../../../assets/language-switcher.css" rel="stylesheet">
 
     </noscript>
 
@@ -97,7 +96,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body data-page-lang="de">
+<body>
     <header class="site-header">
         <div class="site-title">
             <h1 class="">
@@ -115,7 +114,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../research/buchfaltstudio.md">Buchfaltstudio</a>
+                        <a href="../../../research/buchfaltstudio/">Buchfaltstudio</a>
                     </li>
                     
                 </ul>
@@ -130,7 +129,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../research/hoare-logic/">Hoare Logic</a>
+                        <a href="../../../research/hoare-logic/">Hoare Logic</a>
                     </li>
                     
                 </ul>
@@ -145,7 +144,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../politik/finanzen-beringen/">Finanzen Beringen</a>
+                        <a href="../../../politik/finanzen-beringen/">Finanzen Beringen</a>
                     </li>
                     
                 </ul>
@@ -160,17 +159,17 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../blog/thoughts/">Thoughts</a>
+                        <a href="../../thoughts/">Thoughts</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../blog/philosophy/">Philosophy</a>
+                        <a href="../../philosophy/">Philosophy</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../blog/science/">Science</a>
+                        <a href="../">Science</a>
                     </li>
                     
                 </ul>
@@ -185,17 +184,17 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../book/the-book/">The Book</a>
+                        <a href="../../../book/the-book/">The Book</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../book/influential-books/">Influential Books</a>
+                        <a href="../../../book/influential-books/">Influential Books</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../book/lessons-from-my-book/">Lessons from My Book</a>
+                        <a href="../../../book/lessons-from-my-book/">Lessons from My Book</a>
                     </li>
                     
                 </ul>
@@ -203,6 +202,31 @@
             
             
         </ul>
+        
+        
+        
+        
+        
+        
+        <nav class="language-switcher" aria-label="Language selector">
+            
+            
+            
+            
+            
+            
+            <a href="../../../../blog/science/compressing-neural-networks/" class="">English</a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="./" class="active">Deutsch</a>
+            
+            
+        </nav>
         
         <form class="search-form" role="search">
             <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
@@ -218,7 +242,15 @@
             </ul>
         </div>
         <div class="content">
-            <h1 id="compressing-neural-networks"><a href="/blog/science/compressing-neural-networks/">Compressing Neural Networks</a></h1>
+            
+            <div class="auto-translation-banner" role="status">
+                <strong>Automated translation.</strong>
+                
+                This page was machine translated from EN and may contain mistakes.
+                
+            </div>
+            
+            <h1 id="neue-netzwerke-komprimieren"><a href="/blog/science/compressing-neural-networks/">Neue Netzwerke komprimieren</a></h1>
 <p>Als ich mich um eine PhD-Position beworben habe, wollte ich dem Professor einen Grund geben, mich anzuheuern, also habe ich eine meiner Ideen umgesetzt. Ich vermute, dass die Gewichte neuronaler Netze zu dicht sind. Es gibt viel Redundanz. Das herkömmliche Verfahren zur Reduzierung der Komplexität ist die Einführung eines Engpasses in die Architektur des neuronalen Netzes. Dies ist jedoch ein ressourcenintensiver Weg, um das Problem zu lösen. Anstatt die Anzahl der Gewichte zu reduzieren, erhöhen wir sie. Eine weitere Möglichkeit, die Komplexität eines Modells zu reduzieren, besteht darin, die Genauigkeit der Gewichte, z.B. von 32-Bit auf 8-Bit, zu senken. Dies ist ein legitimer Ansatz, aber nicht inspiriert. Und es ist schwer zu glauben, dass dies der einzige und richtige Weg für alle Situationen ist.</p>
 <p>Meine Hypothese war, die Gewichtsmatrix mit einem gemeinsamen Algorithmus wie JPEG zu komprimieren. Ich nahm MNIST und trainierte ein kleines CNN:</p>
 <pre><code class="language-python">hidden_layer_size = 512
@@ -232,16 +264,16 @@ model = torch.nn.Sequential(linear1, relu, linear2)
 <p>Die 784 stammt aus der Eingangsgröße, die 28 × 28 beträgt.</p>
 <p>Die versteckte Schicht ist somit eine Liste von 512 verschiedenen 28 × 28 Matrizen.</p>
 <p>Ich nahm jede Matrix und komprimierte sie mit JPEG auf eine Qualität von nur 20%, verlieren eine Menge Informationen, wie hier gesehen:</p>
-<p><img alt="Unkomprimiert" src="/Bewertungen/Bilder/weight uncompressed.png" />
+<p><img alt="Unkomprimiert" src="/assets/images/weight_uncompressed.png" />
 <em>Random unkomprimierte Gewichtsschicht</em></p>
-<p><img alt="JPEG komprimiert 20% Qualität" src="/Bewertungen/Bilder/weight compressed.png" />
+<p><img alt="JPEG komprimiert 20% Qualität" src="/assets/images/weight_compressed.png" />
 <em>Same-Gewichtsschicht aber mit jpeg komprimiert</em></p>
 <p>Die Prüfgenauigkeit sank nur von 97 % auf 96 %, was angesichts der geringeren Auflösung im latenten Raum bemerkenswert ist.</p>
 <p>Die Gewichte in einem CNN sind sehr redundant. Mit einem naiven Algorithmus wie JPEG können wir die Dimensionalität deutlich reduzieren. Für die Weiterverbreitung im Netzwerk brauche ich jedoch die Matrixversion von JPEG, die keinen Speicher speichert. Die komprimierten Gewichte könnten verwendet werden, um sie über ein Low-Bandbreite-Netzwerk wie das Internet zu übertragen. Wir können jedoch einige fundierte Annahmen machen:</p>
 <ul>
-<li>Die Wahl einer anderen Grundlage für die Gewichte, wie die Fourier-Basis, statt ein unabhängiges Gewicht an jeder Position, könnte die Schaffung von großen Netzwerken mit einer begrenzten Anzahl von Gewichten ermöglichen.</li>
+<li>Die Wahl einer anderen Grundlage für die Gewichte, wie die Fourier-Basis, anstatt ein unabhängiges Gewicht an jeder Position, könnte die Schaffung von großen Netzwerken mit einer begrenzten Anzahl von Gewichten ermöglichen.</li>
 <li>Diese Methode könnte auch in tiefen neuronalen Netzwerken arbeiten.</li>
-<li>Die Entwicklung einer differenzierbaren Methode, die erhebliche Komplexität mit wenigen Parametern erzeugt, könnte die Rechenfähigkeit der vorhandenen Hardware verbessern.</li>
+<li>Die Entwicklung einer differenzierbaren Methode, die mit wenigen Parametern eine erhebliche Komplexität erzeugt, könnte die Rechenfähigkeit bestehender Hardware verbessern.</li>
 </ul>
         </div>
     </div>
@@ -334,7 +366,6 @@ model = torch.nn.Sequential(linear1, relu, linear2)
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../../../assets/rss-feed.js"></script>
-    <script src="../../../../assets/language-switcher.js"></script>
     <script src="../../../../search/main.js"></script>
     <!-- 100% privacy-first analytics -->
     <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

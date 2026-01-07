@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="de" data-page-lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="content-language" content="de">
-    <meta name="language" content="de">
+    <meta http-equiv="content-language" content="en">
+    <meta name="language" content="en">
     <meta name="description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
     <meta name="author" content="Reto Weber">
@@ -58,7 +58,6 @@
     <title>E-ID - Reto Weber</title>
     
     <link href="../../assets/rss-feed.css" rel="stylesheet">
-    <link href="../../assets/language-switcher.css" rel="stylesheet">
 
     </noscript>
 
@@ -97,7 +96,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body data-page-lang="de">
+<body>
     <header class="site-header">
         <div class="site-title">
             <h1 class="">
@@ -115,7 +114,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../research/buchfaltstudio.md">Buchfaltstudio</a>
+                        <a href="../../research/buchfaltstudio/">Buchfaltstudio</a>
                     </li>
                     
                 </ul>
@@ -204,6 +203,31 @@
             
         </ul>
         
+        
+        
+        
+        
+        
+        <nav class="language-switcher" aria-label="Language selector">
+            
+            
+            
+            
+            
+            
+            <a href="./" class="active">English</a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="../../de/politik/e-id/" class="">Deutsch</a>
+            
+            
+        </nav>
+        
         <form class="search-form" role="search">
             <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
         </form>
@@ -222,29 +246,29 @@
                 </li>
                 
                 <li>
-                    <a href="#e-id-innovation-oder-uberwachung">E-ID: Innovation oder Überwachung?</a>
+                    <a href="#e-id-innovation-or-monitoring">E-ID: Innovation or monitoring?</a>
                     
                 </li>
                 
                 <li>
-                    <a href="#eine-odyssee-durch-die-gewasser-von-ssi">Eine Odyssee durch die Gewässer von SSI</a>
+                    <a href="#an-odyssey-through-the-waters-of-ssi">An odyssey through the waters of SSI</a>
                     
                     <ul>
                         
                         <li class="toc-sub">
-                            <a href="#anker-lichten">Anker lichten!</a>
+                            <a href="#anchor-light">Anchor light!</a>
                         </li>
                         
                         <li class="toc-sub">
-                            <a href="#erster-proof-of-concept-eperso">Erster Proof of Concept: ePerso</a>
+                            <a href="#first-proof-of-concept-eperso">First Proof of Concept: ePerso</a>
                         </li>
                         
                         <li class="toc-sub">
-                            <a href="#an-die-offentlichkeit-public-sandbox">An die Öffentlichkeit: Public Sandbox</a>
+                            <a href="#to-the-public-public-sandbox">To the public: Public Sandbox</a>
                         </li>
                         
                         <li class="toc-sub">
-                            <a href="#die-fahrt-geht-weiter">Die Fahrt geht weiter</a>
+                            <a href="#the-journey-continues">The journey continues</a>
                         </li>
                         
                     </ul>
@@ -255,135 +279,143 @@
             </ul>
         </div>
         <div class="content">
+            
+            <div class="auto-translation-banner" role="status">
+                <strong>Automated translation.</strong>
+                
+                This page was machine translated from DE and may contain mistakes.
+                
+            </div>
+            
             <h1 id="e-id">E-ID</h1>
-<p><img alt="E-ID Whatsapp Status Werbung" class="float-right" src="/assets/images/eid_vortrag.jpg" />
-Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich der nationalen 
-Abstimmung. Ich entwickelte die E-ID mit und erzählte über die technische Funktionsweise und stand 
-für Fragen zur Verfügung. (<a href="/politik/e-id">mehr Infos</a>)</p>
-<p>Zusätzlich schrieb ich folgenden Artikel im Klettgauer Bote</p>
-<h1 id="e-id-innovation-oder-uberwachung">E-ID: Innovation oder Überwachung?</h1>
-<p><strong>Abstimmung 28. September</strong></p>
-<p>Im Hinblick auf die eidgenössische Abstimmung vom 28. Sepember über die E-ID organisiert
-die EVP Schaffhausen einen Fachvortrag mit dem Thema «Innovation oder Überwachung».
-Reto Weber aus Beringen hat sich bereits intensiv mit der E-ID auseinandergesetzt.</p>
-<p><strong>Schaffhausen</strong> Etwas mehr als ein Jahr lang durfte ich als Softwareentwickler an der neuen E-
-ID mitarbeiten. Schon damals war uns bewusst, dass dieses Projekt mutig war. Kann man es
-rechtfertigen, so viele Entwickler einzustellen, ohne dass eine gesetzliche Grundlage existiert?
-Vielleicht war es hoch gepokert - oder weise Voraussicht. Wie dem auch sei: Inzwischen
-wurde die gesetzliche Grundlage erarbeitet, vom Schweizer Parlament verabschiedet und liegt
-nun via Referendum in unseren Briefkästen. Wir sollen entscheiden, ob wir sie gutheissen
-oder nicht.</p>
-<p>Die Gegner der E-ID bringen zahlreiche Argumente vor. Leider sind viele davon faktisch
-falsch oder haben gar nichts mit der E-ID zu tun. So wird beispielsweise behauptet, der
-Quellcode sei intransparent und nicht einsehbar - dabei ist er offen zugänglich. Oder es wird
-gesagt, die E-ID könne nicht ohne private Firmen herausgegeben werden - auch das stimmt
-nicht. Alle systemrelevanten Teile der Infrastruktur werden vom Bund betrieben. Ich könnte
-hier noch viele weitere Fehlinformationen aufzählen, doch es soll nicht um falsche, sondern
-um stichhaltige Argumente gehen.</p>
-<p>Technologisch hat man sich für eine einfache und sichere Lösung entschieden, die sich bereits
-seit Jahren bei den grossen Tech-Unternehmen bewährt. Sie ist etabliert, gut verstanden und
-ihre Funktionsweise ist erprobt. Aber die entscheidende Frage lautet: Wozu brauchen wir
-überhaupt eine E-ID? Für mich als Informatiker ist Digitalisierung spannend und sichert
-meinen Lebensunterhalt, aber ich möchte nur Projekte umsetzen, die echten Mehrwert
-bringen. Digital ist nicht automatisch besser - und auch nicht automatisch schlechter.</p>
-<p>Der grosse Vorteil der digitalen Welt liegt in ihrer Skalierbarkeit und Dezentralität. Wenn ein
-Prozess vollständig digitalisiert werden kann, lässt er sich unabhängig von Öffnungszeiten, oft
-gebührenfrei und an jedem beliebigen Ort durchführen. Eine digitale ID schafft so die
-Grundlage, um Altersnachweise zu erbringen, Bankkonten zu eröffnen, elektronische
-Signaturen zu beziehen, sich ins Organ- und Gewebespenderegister einzutragen oder
-Mobilfunkverträge abzuschliessen - alles online und unkompliziert.</p>
-<p>Darüber hinaus baut der Bund nicht nur die E-ID, sondern eine ganze Vertrauensinfrastruktur.
-Damit sollen Schweizer Vereine und Unternehmen eigene digitale Ausweise ausstellen und
-ihre Prozesse digitalisieren können. Das im Detail zu erklären, würde hier den Rahmen
-sprengen. Wer mehr erfahren möchte, ist herzlich eingeladen: Am 4. September, um 19 Uhr
-im Hotel Promenade werde ich über die technische Seite der E-ID sprechen und stehe offen
-für Fragen zur Verfügung.</p>
+<p><img alt="E-ID Whatsapp Status Advertising" class="float-right" src="/assets/images/eid_vortrag.jpg" />
+On 4 September I gave a public lecture on the E-ID on the occasion of the national 
+Vote. I developed the E-ID and told about the technical function and stood 
+available for questions. (<a href="/politik/e-id">more info</a>)</p>
+<p>In addition, I wrote the following articles in the Klettgauer Bote</p>
+<h1 id="e-id-innovation-or-monitoring">E-ID: Innovation or monitoring?</h1>
+<p><strong>Determination 28. September</strong></p>
+<p>Organized for the Federal E-ID vote of 28 September
+the PPE Schaffhausen a presentation on "Innovation or Monitoring".
+Reto Weber from Beringen has already dealt intensively with the E-ID.</p>
+<p><strong>Schaffhausen</strong> For a little more than a year, as a software developer, I was able to
+Edit ID. Even then we were aware that this project was courageous. Can you
+justify setting so many developers without any legal basis?
+Maybe it was a big pok - or wise foresight. In the meantime,
+the legal basis was developed, passed by the Swiss Parliament and lies
+now via referendum in our mailboxes. We're supposed to decide whether we're good at them.
+or not.</p>
+<p>The opponents of the E-ID present numerous arguments. Unfortunately, many of them are in fact
+wrong or have nothing to do with the E-ID. For example, the
+Source code is transparent and not visible - it is openly accessible. Or it will be
+said the E-ID could not be published without private companies - that is true too
+not. All system-relevant parts of the infrastructure are operated by the federal government. I could
+there are many other misinformation, but it should not be wrong, but rather
+to proceed with sound arguments.</p>
+<p>Technologically, a simple and safe solution has been decided to
+has been proven for years with the large tech companies. It is established, well understood and
+their functioning is tested. But the crucial question is: what do we need
+an E-ID? For me as a computer scientist, digitalization is exciting and secure
+my livelihood, but I just want to implement projects that are real added value
+to bring. Digital is not automatically better - and not automatically worse.</p>
+<p>The great advantage of the digital world is its scalability and decentralization. When
+process can be fully digitized, it can be independently of opening hours, often
+free of charge and in any place. A digital ID creates
+the basis for providing evidence of age, opening bank accounts, electronic
+to obtain signatures, to enter the organ and tissue donation register, or
+Complete mobile contracts - all online and uncomplicated.</p>
+<p>In addition, the federal government not only builds the E-ID, but an entire trust infrastructure.
+Swiss clubs and companies are to issue their own digital identity cards and
+can digitize their processes. To explain this in detail, the framework would be
+blow. Who wants to know more is cordially invited: September 4th, at 7 pm
+in the Hotel Promenade I will talk about the technical side of the E-ID and stand open
+available for questions.</p>
 <p>Reto Weber, Beringen</p>
-<h1 id="eine-odyssee-durch-die-gewasser-von-ssi">Eine Odyssee durch die Gewässer von SSI</h1>
-<p><em>Diesen Artikel schrieb ich für einen internen Newsletter. Da es etwas kritisch formuliert wurde, wurde es nicht für die öffentliche Kommunikation aufbereitet. Ich darf es aber jetzt auf dieser Webseite publizieren.</em></p>
+<h1 id="an-odyssey-through-the-waters-of-ssi">An odyssey through the waters of SSI</h1>
+<p>*I wrote this article for an internal newsletter. Since it was formulated somewhat critically, it was not prepared for public communication. But I can now publish it on this website. *</p>
 <blockquote>
-<p>Eidgenössische E-ID // Die elektronische ID wurde am 7. März 2021 klar abgelehnt. Und doch
-entwickelt das Bundesamt für Informatik und Telekommunikation (BIT) genau diese. Mit dabei: einige
-Mitarbeitende von ti&amp;m. Verhält sich das BIT ungesetzlich? Was genau ist die Strategie beim
-Digitalisierungsmotor der Schweizer Bundesverwaltung? Ein persönlicher Reisebericht.</p>
+<p>E-ID // The electronic ID was added to the 7. March 2021 clearly rejected. And yet
+the Federal Office for Informatics and Telecommunications (BIT) develops precisely these. With it: some
+Staff of ti&amp;m. Is the BIT illegal? What exactly is the strategy
+Digitalization engine of the Swiss federal administration? A personal travel report.</p>
 </blockquote>
-<p>Seit genau einem Jahr bin ich in diesem Projekt involviert und sah das Team von einem einzelnen
-Entwickler zu zwei Scrum-Teams mit zehn Entwicklerinnen und Entwickler anwachsen. Und es
-werden mit Sicherheit noch mehr. Ich durfte mich in die vielschichtigste Thematik meiner
-professionellen Laufbahn einarbeiten. Interessant auch zu sehen, wie die Perspektive auf eine
-eidgenössische E-ID divergieren. Immer wieder hörten wir Stimmen die meinten, dass wir sofort
-damit aufhören sollten, während andere nicht verstanden, warum die E-ID nicht schon längst Realität
-ist. So gibt es Ämter, die ihren eigenen digitalen Ausweis wollen und diesen bereits gestern. Und
-obwohl ich als Entwickler weder ausgebildet noch sonst eine Einzelperson fähig wäre, alle Ansprüche
-zu koordinieren, durfte ich einen Einblick in die Entscheidungsfindung auf allen Ebenen bekommen.
-Zumindest auf fast allen Ebenen.</p>
-<h2 id="anker-lichten">Anker lichten!</h2>
-<p>Ich möchte Sie mitnehmen auf meine Odyssee. Und wie Odysseus, so sehe auch ich immer wieder
-das Ziel vor Augen, zumindest vor dem inneren Auge. Und wie er, versuchen auch wir ein Riese, eine
-Sirene oder eine Göttin nach der anderen zu bezwingen. Wie verwirklicht man also eine E-ID ohne
-Gesetzesgrundlage? Die Antwort ist: gar nicht. Wir entwickeln PoCs, Piloten oder Sandboxen, die
-Probleme lösen, für die bereits eine gesetzliche Grundlage existiert. Diese Fahrt erlaubt uns,
-hochseeerprobte Segler und manchmal auch Ruderer zu werden. Erscheint dann die E-ID am
-Horizont, sind wir, so hoffe ich, gerüstet, um die letzte Meile in Angriff zu nehmen.
-Die Fahrt beginnt mit Inspiration und einem gelichteten Anker. Self-Sovereign Identity (SSI) soll die
-Grundlage für die neue E-ID sein. Die Bürgerinnen und Bürger sollen die Hoheit über ihre Daten
-haben. Ein edles Ziel. Es beginnen Workshops, Brainstormings und Recherchen über existierende
-Lösungen. Unsere Projektleitung meint, man verstehe Dinge erst, wenn man etwas damit erschaffe.
-So sticht unser vierköpfiges Entwicklungsteam in See. Wir entdecken Hyperledger Indy; eine fertige
-Open-Source-Lösung für SSI. Es wird sich später herausstellen, dass die Technologie nicht so reif ist,
-wie wir zuerst gemeint oder zumindest gehofft hatten. Trotzdem konnten wir alle benötigten
-Komponenten bauen. Wir errichteten, basierend auf der Blockchain-Technologie, ein Basisregister, in
-das sowohl eingetragen ist, wer digitale Ausweise, sogenannte Verifiable Credentials (VCs) ausstellen
-darf, als auch welche Daten zu einer solchen VC gehören. Wir bauten eine Angular-App, auf der neue
-VCs definiert und ausgestellt werden können. Wir bauten eine App für Android und iPhone auf der
-Basis von React-Native, um die VCs zu halten, eine sogenannte Wallet. Wir kamen gut voran und
-freuten uns über die guten Windverhältnisse, die stille See und den Fortschritt.</p>
-<h2 id="erster-proof-of-concept-eperso">Erster Proof of Concept: ePerso</h2>
-<p>Auf dem Weg zur ersten Insel organisierte unsere Projektleitung den ersten Ausweis, den es zu
-digitalisieren gilt. Der Perso ist ein Dokument, das Bundesmitarbeitende ausweist und unter anderem
-Gebäudezugangsrechte regelt. Zusammen mit einem externen Dienstleister erarbeiteten wir einen
-Ausstellungsprozess für diesen Ausweis. Wir entwickelten die Übersetzung der Neuen Welt auf die
-Alte Welt, damit man sich mit diesem neuen ePerso VC in die bestehenden Systeme einloggen kann.
-Dank den vorherigen ersten Gehversuchen in der Welt von SSI war die Umsetzung nur ein kleiner
-zusätzlicher Schritt, der Aufwand dadurch überschaubar. Wir rollten die Wallet als Testversion aus
-und liessen Entscheidungsträger einen ePerso beantragen. Wir begegneten kaum Problemen bei
-diesem Unterfangen. Vor kurzem durften wir sogar der neuen Bundesrätin Elisabeth Baume-
-Schneider einen ePerso ausstellen. Damit hatten wir nicht nur den Durchbruch auf technischer
-Ebene, sondern wurden auch öffentlichkeitswirksam.</p>
-<h2 id="an-die-offentlichkeit-public-sandbox">An die Öffentlichkeit: Public Sandbox</h2>
-<p>Genug herumgespielt. Um einen Schritt näher an die E-ID zu kommen, muss die Technologie
-sturmerprobt sein. Wir veranstalteten regelmässige Partizipationsmeetings, um uns mit der
-technisch interessierten Bevölkerung auszutauschen. Zwei Rückmeldungen wurden mehrfach an uns
-herangetragen: «Super macht ihr etwas und seid proaktiv, wenn der Zeitplan auch eher optimistisch
-klingt» und «Wir möchten mitarbeiten». Und genau dazu riefen wir die Public Sandbox ins Leben. Wir
-wollen unsere entwickelte Infrastruktur an die Öffentlichkeit bringen. Wir veröffentlichten ein
-sogenanntes Genesis-File, was den Integratoren erlaubt, sich mit uns zu verbinden. Wir entwickelten
-einen Policy Enforcement Point, der regelt, was in das Basisregister geschrieben werden darf. Und
-wir definierten den Prozess, wie Teilnehmende mitmachen können, um so der Privatwirtschaft zu
-ermöglichen, ihre eigenen Business Cases auf der Sandbox testen. Ob Ticket oder ein
-Mitgliederausweis als VC: Wir möchten diese Tests mit einer vom Bund bereitgestellten Infrastruktur
-ermöglichen.</p>
-<h2 id="die-fahrt-geht-weiter">Die Fahrt geht weiter</h2>
-<p>Der Weg ist noch weit zur E-ID. Wir nehmen gerade richtig an Fahrt auf. Wir entwickeln eine Bundes-
-Wallet mit nativen Technologien. Wir evaluieren alternative Technologien für die E-ID und andere
-Ausweise. Wir wollen dieses Jahr noch einen digitalen Lernfahrausweis verwirklichen.
-Referenzimplementationen für alle Komponenten bereitstellen, die wir nicht explizit betreiben
-werden. Das alles soll auf GitHub publiziert werden. Alle unsere Teams, ob Infrastruktur, Mobile-,
-Backend- und Frontend-Entwicklerinnen und -Entwickler, Architektinnen und Architekten oder
-Designerinnen und Designer, wünschen sich mehr Personal. Wenn ich also vorhin von «wir»
-gesprochen habe, so meinte ich natürlich diese Teams. Ich selbst darf Teil des Infrastrukturteams
-sein, das die grundlegenden technischen Themen vorantreibt. Noch ist die konkrete Umsetzung der
-E-ID, sprich die gesetzlichen Grundlagen, nicht als Festland am Horizont erkennbar. Aber das
-Parlament und die Bundesverwaltung kennen den Kurs, und so navigieren externe Dienstleister wie
-ti&amp;m mithilfe der Kartografen der Projektleitung an Hindernissen vorbei uns segeln beständig weiter
-Richtung Ithaka.</p>
+<p>For exactly one year I have been involved in this project and saw the team from a single
+Developers grow into two Scrum teams with ten developers. And
+will surely become even more. I was admitted to the most complex subject of my
+professional career. Also interesting to see how the perspective on a
+E-ID diverge. Again and again we heard voices that thought that we immediately
+to stop it while others don't understand why the E-ID hasn't been reality long ago
+is. So there are offices that want their own digital identity and that already yesterday. And
+although I would not be trained as a developer or otherwise an individual would be able to claim all
+to coordinate, I was allowed to get an insight into decision making at all levels.
+At least on almost all levels.</p>
+<h2 id="anchor-light">Anchor light!</h2>
+<p>I'd like to take you to my Odyssey. And like Odysseus, I see again and again
+the target in front of the eye, at least in front of the inner eye. And like him, we also try a giant, a
+to force Sirene or a goddess to the other. How to achieve an E-ID without
+Legal basis? The answer is: not at all. We develop PoCs, pilots or sandboxes that
+solve problems for which a legal basis already exists. This ride allows us to
+high sea tested sailors and sometimes also rowers. Then the E-ID appears
+Horizon, we are, so I hope, ready to tackle the last mile.
+The journey begins with inspiration and an illuminated anchor. Self-Sovereign Identity (SSI)
+Be the basis for the new E-ID. The citizens are supposed to have the sovereignty over their data
+have. A noble goal. Workshops, brainstormings and research on existing
+Solutions. Our project management means that you understand things only when you create something with it.
+This is how our four-headed development team stands in the lake. We discover Hyperledger Indy; a finished
+Open source solution for SSI. It will later prove that the technology is not so mature,
+as we first thought or at least hoped. Nevertheless we all needed
+Building components. We built a base register based on blockchain technology, in
+which is both registered, who exhibits digital IDs, so-called Verifiable Credentials (VCs)
+as well as which data belong to such a VC. We built an Angular app on which new
+VCs can be defined and displayed. We built an app for Android and iPhone on
+Based on react natives to keep the VCs, a so-called wallet. We were well ahead and
+we were pleased about the good wind conditions, the quiet lake and the progress.</p>
+<h2 id="first-proof-of-concept-eperso">First Proof of Concept: ePerso</h2>
+<p>On the way to the first island, our project management organized the first ID it had to
+digitization is valid. The Perso is a document that shows federal employees and among others
+Building access rights. Together with an external service provider, we developed a
+Exhibition process for this ID. We developed the translation of the New World to the
+Old world so that you can log into the existing systems with this new ePerso VC.
+Thanks to the previous first attempts in the world of SSI, the implementation was only a small
+additional step, the effort can thereby be overlooked. We rolled out the Wallet as a trial version
+and read decision-makers to apply for an ePerso. We hardly encountered problems with
+this undertaking. Recently we were even allowed to the new Federal Councilwoman Elisabeth Baume-
+Exhibit a ePerso. We had not only the breakthrough on technical
+Level, but also became public.</p>
+<h2 id="to-the-public-public-sandbox">To the public: Public Sandbox</h2>
+<p>Enough play around. To get a step closer to the E-ID, the technology must
+tormented. We organized regular participation meetings to help us with the
+exchange of technically interested people. Two feedback has been sent to us several times
+added: «Super you do something and are proactive if the schedule is more optimistic
+sounds» and «We want to work». And that's exactly what we called the Public Sandbox into life. We
+want to bring our developed infrastructure to the public. We published a
+Genesis file, which allows the integrators to connect to us. We developed
+a policy enforcement point that regulates what can be written in the base register. And
+we defined the process of how participants can participate in the private sector
+allow to test their own business cases on the sandbox. Whether a ticket or a
+VC membership card: We want these tests with a federal infrastructure
+to allow.</p>
+<h2 id="the-journey-continues">The journey continues</h2>
+<p>The path is still far to the E-ID. We're taking a ride right now. We develop a federal
+Wallet with native technologies. We evaluate alternative technologies for E-ID and others
+ID. We want to achieve a digital learning pass this year.
+Provide reference implementations for all components that we do not explicitly operate
+to be. All this is to be published on GitHub. All our teams, whether infrastructure, mobile,
+Backend and Frontend developers, architects and architects
+Designers, want more staff. So, when I was about "we"
+I mean, of course, these teams. I myself may be part of the infrastructure team
+to promote fundamental technical issues. The concrete implementation of the
+E-ID, i.e. the legal basis, not recognizable as mainland on the horizon. But
+Parliament and the federal administration know the course and navigate external service providers such as
+ti&amp;m with the help of the mapping of the project management past obstacles
+Direction Ithaka.</p>
 <p><strong>Reto Weber</strong>
 <em>Machine Learning Engineer, ti&amp;m</em><br />
-Reto Weber, interessiert unter anderem an griechischer Mythologie und neuen Technologien,
-forschte in seinem Studium an der ETH sowohl über die Schwachstellen von ML-Modellen als auch
-über Fragestellungen der Neurologie. Bei ti&amp;m arbeitete er bereits in den Bereichen Visual
-Computing, künstliche Intelligenz und Robotic Process Automation, ehe er sich im Rahmen des E-ID-
-Projekts mit SSI und Blockchain-Technologien beschäftigt.</p>
+Reto Weber, interested in Greek mythology and new technologies,
+researched the weaknesses of ML models in his studies at ETH
+on questions of neurology. At ti&amp;m he already worked in the areas of Visual
+computing, artificial intelligence and robotic process automation, before being within the E-ID-
+Projects dealing with SSI and blockchain technologies.</p>
         </div>
     </div>
     <div id="mkdocs-search-popup">
@@ -475,7 +507,6 @@ Projekts mit SSI und Blockchain-Technologien beschäftigt.</p>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../assets/rss-feed.js"></script>
-    <script src="../../assets/language-switcher.js"></script>
     <script src="../../search/main.js"></script>
     <!-- 100% privacy-first analytics -->
     <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -51,6 +51,23 @@ body {
     color: var(--text-main);
 }
 
+.auto-translation-banner {
+    border: 1px solid var(--warning);
+    background: #fff5e6;
+    color: var(--text-main);
+    padding: 0.85rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.auto-translation-banner strong {
+    display: inline-block;
+    margin-right: 0.35rem;
+    color: var(--warning);
+}
+
 h1,
 h2,
 h3,
@@ -142,6 +159,37 @@ ul {
     font-weight: bold;
     border-radius: 0;
     border-bottom: 1px solid;
+}
+
+.language-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    margin: 0 1em;
+    padding: 0.15em 0.3em;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.language-switcher a {
+    color: var(--color-on-dark);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.2em 0.85em;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.language-switcher a.active {
+    background-color: var(--bg-main);
+    color: var(--primary);
+    border-color: var(--bg-main);
+}
+
+.language-switcher a:not(.active):hover,
+.language-switcher a:not(.active):focus {
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 /* GitHub Badge (floating bottom left) */
@@ -360,6 +408,13 @@ a code {
     .site-header h1 {
         font-size: 1.6em;
         text-align: center;
+    }
+
+    .language-switcher {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0.5em 0 0 0;
     }
 }
 
