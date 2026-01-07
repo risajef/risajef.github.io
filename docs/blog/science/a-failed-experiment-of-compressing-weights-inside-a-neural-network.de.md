@@ -15,7 +15,8 @@ source_lang: en
 
 In neuronalen Netzen scheinen viele Gewichte zu geben, um auszudrücken, was wir wollen. Also dachte ich an die Implementierung der grundlegendsten Funktion, nämlich Matrix Multiplikation, in einer komprimierten Version. Statt nur zwei Matrixn zu multiplizieren, komprimieren wir die Gewichtsmatrix und multiplizieren das. Ich benutzte Wavelet Zersetzung mit einer Schwelle. Mein Ansatz war erfolgreich bei der Herstellung der Gewichtsmatrix 75% Nullen während des Trainings.
 
-Ich habe so etwas benutzt:```python
+Ich habe so etwas benutzt:
+```python
 coeffs = ptwt.wavedec(w_flat, "haar", mode="zero")
 coeffs_thresh = tuple(
                 torch.where(torch.abs(c) < threshold, torch.zeros_like(c), c)
@@ -23,7 +24,9 @@ coeffs_thresh = tuple(
             )
 w_compressed = ptwt.waverec(coeffs_thresh, "haar")
 ```
-Während das Netzwerk das folgende war:```python
+
+Während das Netzwerk das folgende war:
+```python
 class NetFC(nn.Module):
     def __init__(self):
         super(NetFC2, self).__init__()
@@ -45,4 +48,3 @@ Dieses Netzwerk hat rund 100k Parameter, aus denen 75k Null sein wird.
 Aber der Leistungsabfall war zu hoch. Ich konnte nur meinen MNIST-Verlust auf 0,55 bekommen, während ein Netzwerk ohne Kompression, aber nur weniger (25k) Parameter leicht 0,15 erreicht.
 
 Es war also ein interessanter Ansatz, aber nicht erfolgreich.
-

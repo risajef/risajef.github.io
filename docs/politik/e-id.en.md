@@ -14,21 +14,21 @@ source_lang: de
 
 # E-ID
 
-![E-ID Whatsapp Status Advertising](/assets/images/eid vortrag.jpg){:.float-right}
-On 4 September I gave a public lecture on the E-ID on the occasion of the national
-Vote. I developed the E-ID and told about the technical function and stood
+![E-ID Whatsapp Status Advertising](/assets/images/eid_vortrag.jpg){:.float-right}
+On 4 September I gave a public lecture on the E-ID on the occasion of the national 
+Vote. I developed the E-ID and told about the technical function and stood 
 available for questions. ([more info](/politik/e-id))
 
 In addition, I wrote the following articles in the Klettgauer Bote
 
 # E-ID: Innovation or monitoring?
-**Determination 28. September * *
+**Determination 28. September**
 
 Organized for the Federal E-ID vote of 28 September
 the PPE Schaffhausen a presentation on "Innovation or Monitoring".
 Reto Weber from Beringen has already dealt intensively with the E-ID.
 
-**Schaffhausen** For a little more than a year, I was allowed to use the new e-
+**Schaffhausen** For a little more than a year, as a software developer, I was able to
 Edit ID. Even then we were aware that this project was courageous. Can you
 justify setting so many developers without any legal basis?
 Maybe it was a big pok - or wise foresight. In the meantime,
@@ -67,16 +67,14 @@ available for questions.
 
 Reto Weber, Beringen
 
-♪ An odyssey through the waters of SSI
+# An odyssey through the waters of SSI
 
-*I wrote this article for an internal newsletter. Since it was formulated somewhat critically,
-it was not prepared for public communication. But now I have to
-publish website. *
+*I wrote this article for an internal newsletter. Since it was formulated somewhat critically, it was not prepared for public communication. But I can now publish it on this website. *
 
-> Federal E-ID // The electronic ID was on 7. March 2021 clearly rejected. And yet
+> E-ID // The electronic ID was added to the 7. March 2021 clearly rejected. And yet
 > the Federal Office for Informatics and Telecommunications (BIT) develops precisely these. With it: some
-> Employees of ti&amp;m Is the BIT illegal? What exactly is the strategy
-> Digitization motor of the Swiss Federal Administration? A personal travel report.
+> Staff of ti&amp;m. Is the BIT illegal? What exactly is the strategy
+> Digitalization engine of the Swiss federal administration? A personal travel report.
 
 For exactly one year I have been involved in this project and saw the team from a single
 Developers grow into two Scrum teams with ten developers. And
@@ -89,7 +87,7 @@ although I would not be trained as a developer or otherwise an individual would 
 to coordinate, I was allowed to get an insight into decision making at all levels.
 At least on almost all levels.
 
-## Anchor lights!
+## Anchor light!
 
 I'd like to take you to my Odyssey. And like Odysseus, I see again and again
 the target in front of the eye, at least in front of the inner eye. And like him, we also try a giant, a
@@ -157,8 +155,8 @@ Parliament and the federal administration know the course and navigate external 
 ti&amp;m with the help of the mapping of the project management past obstacles
 Direction Ithaka.
 
-**Reto Weber * *
-*Machine Learning Engineer, ti&amp;m*
+**Reto Weber**
+*Machine Learning Engineer, ti&amp;m*  
 Reto Weber, interested in Greek mythology and new technologies,
 researched the weaknesses of ML models in his studies at ETH
 on questions of neurology. At ti&amp;m he already worked in the areas of Visual

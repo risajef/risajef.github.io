@@ -14,7 +14,7 @@ source_lang: en
 
 # Einflussreiche Bücher
 
-Iliad und Odyssey von Homer
+## Iliad und Odyssey von Homer
 
 Als einer der, wenn nicht die ältesten, Texte eines Autors. Vorher war das Konzept der Autorschaft unbekannt, und Texte wurden im Laufe der Zeit von einer Gruppe geschrieben. Der Iliad zeigte mir, was Helden sind. Diese stilistische Wahl ermöglicht tiefe Tauchgänge in psychologische Phänomene ohne eine etablierte wissenschaftliche Disziplin. Odysseus ist der clevere Mann. Achilles, der stolze und ehrenvolle Krieger. Agamemnon, der große König. Das Buch stellt künstlerisch und präzise die Konflikte dieser Figuren dar. Der König fühlt sich berechtigt, alles zu nehmen, einschließlich Achilles Sklave. Aber der ehrenvolle Krieger ist nicht bereit, für einen solchen König zu kämpfen. So verlieren die Griechen den Krieg, bis der König den Sklaven zurückkehrt, und Achilles und Agamemnon arbeiten schließlich zusammen, um Troy zu verleumden.
 
@@ -24,7 +24,7 @@ Es erinnerte mich auch an die Bibel. Der Text will die Gegenwart durch eine umfa
 
 Darüber hinaus inspiriert das Odyssey bis heute weiter. Diese Geschichte wird immer erzählt. Der Erfolg von Marvel und DC beweist unsere Notwendigkeit für Geschichten größer als die Realität.
 
-Die Brüder Karamazov von Fyodor Dostoevsky
+## Die Brüder Karamazov von Fyodor Dostoevsky
 
 Dieses Buch ist unerträglich lang. Die Namen sind kompliziert. Es gibt Kapitel, die nicht in die Geschichte passen. So viel ist falsch. Und doch könnte es das beste Buch genannt werden, das jemals geschrieben wurde. Wie kann das sein?
 
@@ -32,13 +32,13 @@ Es ist die Geschichte von drei Brüdern eines abscheulichen Mannes. Und ähnlich
 
 Wenn Sie dies zulassen, sind Sie eifrig, die überflüssigen Kapitel zu lesen. Die unaufgelöste Spannung stört dich nicht. Ihr hofft nur, dass der Atheist nicht die Hoffnung verliert, der Bon vivant nicht selbstzerstört, und der Christ verliert keinen Kontakt mit der Realität.
 
-20.000 Ligen unter dem Meer von Jules Verne
+## 20.000 Leagues Under the Sea by Jules Verne
 
 Diese Geschichte ist weder fesselnd noch interessant. Aber immer noch eine Offenbarung. Es zeigte mir, dass man eine Geschichte nur erfinden kann, um eine Halluzination über zukünftige Technologie zu erkunden. Ein echtes Science-Fiction-Buch mit einem starken Schwerpunkt auf Wissenschaft. Und anstatt das U-Boot zu revidieren, das er in seinem Kopf in der realen Welt gebaut hat, was ihn Millionen von Francs kosten würde, schrieb er einfach darüber und inspirierte eine ganze Generation von Schriftstellern, Ingenieuren und Wissenschaftlern. Dies zeigt, dass man mit einer kreativen Idee aus der Box herausbrechen kann, in der man sich als Autor, aber auch allgemeiner findet.
 
-"Alles" von C.G. Jung
+## "Alles" von C.G. Jung
 
-Es gibt keinen Autor wie Jung. Obwohl er nicht wissenschaftlich ist, zumindest nicht nach modernen Standards, ist er der gut lesbarste Mensch, den ich je erlebt habe. Ich kann nicht genau bestimmen, was ihn lesenswert macht. Ich könnte sagen, dass er mir die Realität des Unbewussten zeigte, was es bedeutet, introvertiert zu werden, oder den Wert der Intuition. Aber das kratzt nur die Oberfläche. Er zeigt Ihnen Orte, die Sie noch nie erkannt haben. Sie werden über sich, Religion, Gesellschaft, Psychologie, Träume und die Zukunft auf eine neue Weise nachdenken. Reading Jung ist ein Abenteuer, und wenn Sie das wollen, sind Sie garantiert, es zu bekommen.
+Es gibt keinen Autor wie Jung. Obwohl er nicht wissenschaftlich ist, zumindest nicht durch moderne Standards, ist er der gut lesbarste Mensch, den ich je begegnet. Ich kann nicht genau bestimmen, was ihn lesenswert macht. Ich könnte sagen, dass er mir die Realität des Unbewussten zeigte, was es bedeutet, introvertiert zu werden, oder den Wert der Intuition. Aber das kratzt nur die Oberfläche. Er zeigt Ihnen Orte, die Sie noch nie erkannt haben. Sie werden über sich, Religion, Gesellschaft, Psychologie, Träume und die Zukunft auf eine neue Weise nachdenken. Reading Jung ist ein Abenteuer, und wenn Sie das wollen, sind Sie garantiert, es zu bekommen.
 
 Es wird kein einfaches Abenteuer sein. Mit seinen Argumenten und Assoziationen sollte jeder Wissenschaftler verärgern. Er präsentiert seine Trauminterpretationen als Fakten und beweist das Argument mit einem verrückten Verein, den er in einem anderen Traum sah. Lass dir das nicht abschrecken. Weil es einen großen Schatz gibt, entdeckt zu werden.
 
@@ -56,11 +56,11 @@ Sie können es absagen, wie der Mann, für den es geschrieben wurde. Aber wenn S
 
 Wie viel Zeit wollen Sie in die Schaffung Ihrer Fantasie-Welt investieren? Ja! Ist J.R.R. Tolkiens Antwort. Lavish mit Ihrer Zeit, er zeigt Ihnen die Geschichte und Wissenschaft der Hobbits. Das Grundstück der Bücher ist wichtig, obwohl es nicht der Fokus ist. Eine Welt, die unermesslich ist, reich an Geschichte. Es zeigt Ihnen, wie jede große Geschichte die Menschheit aus einer neuen und tiefen Perspektive betrachtet.
 
-Alyosha von den Brüdern Karamazov sind die Hobbits hier. Gute Menschen mit einem reinen Herzen, aber nicht stark im konventionellen Sinne. Sie werden nicht leicht dem Bösen versucht, zumindest nicht ohne Anstrengung. Sie streben nach Harmonie, aber auch die nötigen Abenteuer, die das Leben ihnen auferlegt. Mutig gehen sie in die Hölle, um die Alte Welt zu retten.
+Alyosha von Die Brüder Karamazov sind die Hobbits hier. Gute Menschen mit einem reinen Herzen, aber nicht stark im konventionellen Sinne. Sie werden nicht leicht dem Bösen versucht, zumindest nicht ohne Anstrengung. Sie streben nach Harmonie, aber auch die nötigen Abenteuer, die das Leben ihnen auferlegt. Mutig gehen sie in die Hölle, um die Alte Welt zu retten.
 
 Wenn Sie von dem, was im Weltbau möglich ist, inspiriert werden wollen, ist dies ein Muss.
 
-### Werther by Goethe
+### Werther von Goethe
 
 Eine berührende und tiefgreifende Geschichte über einen Mann, der den Wert der Erfahrungen entdeckt. Was ist der Wert der Dinge? Warum können Sie nicht verstehen, dass ich lieber in Liebe ertrinken würde, als ein langes Leben mit nur einer guten Frau zu leben?
 

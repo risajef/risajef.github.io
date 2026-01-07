@@ -11,6 +11,41 @@
       "python": "${workspaceFolder}/.venv/bin/python",
       "console": "integratedTerminal",
       "justMyCode": true
+    },
+    {
+      "name": "Translations: Missing Only",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/auto_translate.py",
+      "args": [
+        "--docs-dir",
+        "docs",
+        "--mkdocs-config",
+        "mkdocs.yml",
+        "--verbose"
+      ],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Translations: Force Regenerate",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/auto_translate.py",
+      "args": [
+        "--docs-dir",
+        "docs",
+        "--mkdocs-config",
+        "mkdocs.yml",
+        "--force",
+        "--verbose"
+      ],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "console": "integratedTerminal",
+      "justMyCode": true
     }
   ]
 }

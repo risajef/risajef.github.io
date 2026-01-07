@@ -1,5 +1,4 @@
 ---
-lang: en
 extra_css:
 - assets/buchfalten/styles.css
 extra_javascript:
@@ -14,8 +13,12 @@ tags:
 - research
 - orimoto
 github: https://github.com/risajef/buchfalten
+lang: en
 auto_translated: true
 source_lang: de
 ---
 
-<div id="buchfaltstudio-root" class="buchfaltstudio-root"><p>Loading book folding studio...</p><noscript>Please activate JavaScript to use Book Folding Studio.</noscript></div>
+<div id="buchfaltstudio-root" class="buchfaltstudio-root">
+  <p>Lade Buchfaltstudio...</p>
+  <noscript>Bitte aktiviere JavaScript, um Buchfaltstudio zu verwenden.</noscript>
+</div>
