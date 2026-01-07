@@ -162,6 +162,16 @@
             </ul>
         </div>
         <div class="content">
+            {% if page.meta and page.meta.auto_translated %}
+            <div class="auto-translation-banner" role="status">
+                <strong>Automated translation.</strong>
+                {% if page.meta.source_lang %}
+                This page was machine translated from {{ page.meta.source_lang | upper }} and may contain mistakes.
+                {% else %}
+                This page was machine translated and may contain mistakes.
+                {% endif %}
+            </div>
+            {% endif %}
             {{ page.content }}
         </div>
     </div>

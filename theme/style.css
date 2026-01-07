@@ -51,6 +51,23 @@ body {
     color: var(--text-main);
 }
 
+.auto-translation-banner {
+    border: 1px solid var(--warning);
+    background: #fff5e6;
+    color: var(--text-main);
+    padding: 0.85rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.auto-translation-banner strong {
+    display: inline-block;
+    margin-right: 0.35rem;
+    color: var(--warning);
+}
+
 h1,
 h2,
 h3,
