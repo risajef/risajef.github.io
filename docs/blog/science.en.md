@@ -6,6 +6,7 @@ tags:
 - computer-science
 - machine-learning
 auto_translated: false
+auto_snippets: blog/science
 ---
 
 <!-- _Each science note now has its own permalink; this page keeps the long-form reading experience intact.
@@ -16,12 +17,4 @@ auto_translated: false
 	<p><em>Loading science feed...</em></p>
 </div> -->
 
---8<-- "blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network.en.md"
-
---8<-- "blog/science/pytorch-is-slow-and-fast-on-windows.en.md"
-
---8<-- "blog/science/compressing-neural-networks.en.md"
-
---8<-- "blog/science/what-have-we-learned-and-some-educated-guesses.en.md"
-
---8<-- "blog/science/simulating-evolution.en.md"
+<!-- AUTO_SNIPPETS -->
