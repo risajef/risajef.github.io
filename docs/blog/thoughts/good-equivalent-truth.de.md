@@ -37,7 +37,7 @@ Aber vergessen wir nicht: Wir besitzen auch nicht die Wahrheit. Wir etablieren e
 
 Es scheint, dass für die Evolution – oder für Gott – die Wahrheit sekundär ist. Diese Analyse geht tiefer. Wir haben keine Wahrheit und sollten diese Tatsache umarmen. Wir sollten erkennen, dass das etwas Gutes ist. Manchmal sind wahre Dinge nicht die, die uns helfen. Ich glaube, es kann sogar gut sein, Dinge zu glauben, die falsch sind. Falsch, aber gut. Gut im Sinne von hilfreich.
 
-Falsche aber nützliche Dinge umfassen solche Domänen wie “Glaube” und “hope”. Der Glaube ist die Überzeugung in etwas Ungesehenen (etwas nicht messbar). Hoffnung ist die gleiche, in die Zukunft projiziert. Glauben und Hoffnung sind zutiefst religiöse Konzepte und vielleicht eine der großen Errungenschaften der Religion.
+Falsche aber nützliche Dinge umfassen solche Domänen wie “Glaube” und “hope”. Der Glaube ist die Überzeugung in etwas Ungesehenen (etwas nicht messbar). Hoffnung ist die gleiche, in die Zukunft projiziert. Glauben und Hoffnung sind zutiefst religiöse Konzepte und vielleicht eine der grossen Errungenschaften der Religion.
 
 Ich glaube, wir brauchen wieder ähnliche Prozesse, die sagen können, was in „Glaube“ und „Hoffe“ wahr ist. Die Religion hat dies einmal gegeben, aber heute haben wir weder Glauben noch Hoffnung. Ich glaube, das ist ein persönlicher, gesellschaftlicher und evolutionärer Mangel – und es muss dringend behandelt werden.
 

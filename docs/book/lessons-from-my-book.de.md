@@ -23,7 +23,7 @@ Der erste Punkt ist nicht einzuschüchtern, wenn man ein Buch schreibt. Ich wuss
 
 ## Weisheit
 
-Einer der wichtigsten Erkenntnisse aus meinem Buch ist die Verwirklichung der Grenzen des rationalen Denkens. Dass wir nicht einmal in der Nähe sind, die relevanten Probleme zu lösen, denen wir mit Wissenschaft und Logik gegenüberstehen. Ich schätze praktische Ratschläge viel mehr als zuvor. Ich habe seine Nützlichkeit tief erkannt. Deshalb habe ich angefangen, mehr auf dem Gebiet der Weisheit als der Philosophie zu arbeiten. Diese Gedanken finden Sie alle auf diesem Blog (Kategorie: Weisheit). Vielleicht wird daraus ein kleines Buch entstehen, oder vielleicht nicht, wer weiß.
+Einer der wichtigsten Erkenntnisse aus meinem Buch ist die Verwirklichung der Grenzen des rationalen Denkens. Dass wir nicht einmal in der Nähe sind, die relevanten Probleme zu lösen, denen wir mit Wissenschaft und Logik gegenüberstehen. Ich schätze praktische Ratschläge viel mehr als zuvor. Ich habe seine Nützlichkeit tief erkannt. Deshalb habe ich angefangen, mehr auf dem Gebiet der Weisheit als der Philosophie zu arbeiten. Diese Gedanken finden Sie alle auf diesem Blog (Kategorie: Weisheit). Vielleicht wird daraus ein kleines Buch entstehen, oder vielleicht nicht, wer weiss.
 
 ## Anerkennung anderer Religionen
 
@@ -35,7 +35,7 @@ Machiavellian Denken ist immer noch synonym für die Ausbeutung von Menschen, um
 
 ## Gegenseitigkeit
 
-Ein weiterer Meilenstein war zu erkennen, dass das Böse begrenzt ist. Es mag für einige Generationen schrecklich sein, aber man muss erkennen, dass reine böse Kämpfe und tötet sich. Das bedeutet nicht, dass es nicht passieren kann. Aber es bedeutet, dass Hoffnung nie völlig verloren geht. Ein wahrer Machiavellian weiß das und kümmert sich um die Menschen.
+Ein weiterer Meilenstein war zu erkennen, dass das Böse begrenzt ist. Es mag für einige Generationen schrecklich sein, aber man muss erkennen, dass reine böse Kämpfe und tötet sich. Das bedeutet nicht, dass es nicht passieren kann. Aber es bedeutet, dass Hoffnung nie völlig verloren geht. Ein wahrer Machiavellian weiss das und kümmert sich um die Menschen.
 
 ## Variabilität
 
