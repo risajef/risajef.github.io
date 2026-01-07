@@ -7,7 +7,7 @@ theme:
   custom_dir: theme
 nav:
   - Programming:
-    - Buchfaltstudio: research/buchfaltstudio.md
+    - Buchfaltstudio: programming/buchfaltstudio.md
   - Research:
     - Hoare Logic: research/hoare-logic.md
   - Politik:
@@ -43,7 +43,7 @@ plugins:
         'politics/finanzen-beringen.md': 'politik/finanzen-beringen.de.md'
         'politics/e-id.md': 'politik/e-id.de.md'
         'programming/hoare-logic.md': 'research/hoare-logic.de.md'
-        'research/buchfaltstudio.md': 'research/buchfaltstudio.de.md'
+        'research/buchfaltstudio.md': 'programming/buchfaltstudio.en.md'
   - mermaid-to-svg:
       mmdc_path: "mmdc"
       cleanup_generated_images: false
@@ -80,3 +80,43 @@ extra_css:
   - assets/rss-feed.css
 hooks:
   - hooks/auto_snippets.py
+extra:
+  translations:
+    en:
+      auto_translation_title: "Automated translation."
+      auto_translation_from_lang: "This page was machine translated from {lang} and may contain mistakes."
+      auto_translation_generic: "This page was machine translated and may contain mistakes."
+      nav:
+        Programming: Programming
+        Buchfaltstudio: "Book folding studio"
+        Research: Research
+        "Hoare Logic": "Hoare Logic"
+        Politik: Politics
+        "Finanzen Beringen": "Finances Beringen"
+        Blog: Blog
+        Thoughts: Thoughts
+        Philosophy: Philosophy
+        Science: Science
+        Book: Book
+        "The Book": "The Book"
+        "Influential Books": "Influential Books"
+        "Lessons from My Book": "Lessons from My Book"
+    de:
+      auto_translation_title: "Automatische Übersetzung."
+      auto_translation_from_lang: "Diese Seite wurde maschinell aus {lang} übersetzt und kann Fehler enthalten."
+      auto_translation_generic: "Diese Seite wurde maschinell übersetzt und kann Fehler enthalten."
+      nav:
+        Programming: Programmierung
+        Buchfaltstudio: Buchfaltstudio
+        Research: Forschung
+        "Hoare Logic": Hoare-Logik
+        Politik: Politik
+        "Finanzen Beringen": "Finanzen Beringen"
+        Blog: Blog
+        Thoughts: Gedanken
+        Philosophy: Philosophie
+        Science: Wissenschaft
+        Book: Buch
+        "The Book": "Das Buch"
+        "Influential Books": "Einflussreiche Bücher"
+        "Lessons from My Book": "Lektionen aus meinem Buch"

@@ -668,6 +668,7 @@ a[href^="http"]::after {
 
     .content {
         margin-left: 260px;
+        padding-top: 1.5rem;
     }
 
     body {
