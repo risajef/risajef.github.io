@@ -12,7 +12,7 @@ source_lang: en
 
 # [Willpower ist eine begrenzte Ressource](/blog/thoughts/willpower-is-a-limited-resource/)
 
-Unsere Online-Welt wird von Menschen mit großer Willenskraft dominiert. Sie initiieren Projekte und implementieren sie. Zumindest scheint es so, weil Sie nur die Projekte sehen, in denen sie genug Willenskraft hatten, sie durchzutragen. Dies schafft den Eindruck, dass sie starke Willenskraft haben. Das ist jedoch ein Falltum.
+Unsere Online-Welt wird von Menschen mit grosser Willenskraft dominiert. Sie initiieren Projekte und implementieren sie. Zumindest scheint es so, weil Sie nur die Projekte sehen, in denen sie genug Willenskraft hatten, sie durchzutragen. Dies schafft den Eindruck, dass sie starke Willenskraft haben. Das ist jedoch ein Falltum.
 
 Andererseits gibt es Philosophen, die behaupten, dass wir freien Willen haben. Sie behaupten, dass wir uns dafür entscheiden können. Dieser Anspruch kann korrekt sein (ich werde hier nicht hineingehen), aber er ist praktisch irrelevant. Das ist gut, weil sie Philosophen sind und sich mit grundlegenden Dingen beschäftigen. Aber die Botschaft, dass wir alles theoretisch in unserer Macht tun können, ist optimistisch oder vielleicht sogar falsch.
 

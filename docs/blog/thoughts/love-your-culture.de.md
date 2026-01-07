@@ -12,7 +12,7 @@ source_lang: en
 
 # [Ihre Kultur lieben](/blog/thoughts/love-your-culture/)
 
-Unser moderner Geist wird von hubris geplagt. Sie glaubt, sie kennt viel und kann die Folgen politischer Maßnahmen beurteilen. Aber die Beurteilung der Folgen ist in der Regel eher wie das Lesen von Teeblättern als Wissenschaft. Weil wir unsere Ignoranz kaum beurteilen können.
+Unser moderner Geist wird von hubris geplagt. Sie glaubt, sie kennt viel und kann die Folgen politischer Massnahmen beurteilen. Aber die Beurteilung der Folgen ist in der Regel eher wie das Lesen von Teeblättern als Wissenschaft. Weil wir unsere Ignoranz kaum beurteilen können.
 
 So argumentieren einige für oder gegen CO2-Steuern. Für oder gegen Religion. Für oder gegen das allgemeine Grundeinkommen. Und all diese Dinge sind eine massive Intervention in die Struktur unserer Gesellschaft. Und zu glauben, man kann die Konsequenzen beurteilen, ist naiv.
 

@@ -26,9 +26,9 @@ relu = torch.nn.ReLU()
 model = torch.nn.Sequential(linear1, relu, linear2)
 ```
 
-Die Größe von 512 für die versteckten Schichten war die erste Leistung von zwei, die gute Ergebnisse lieferte.
+Die Grösse von 512 für die versteckten Schichten war die erste Leistung von zwei, die gute Ergebnisse lieferte.
 
-Die 784 stammt aus der Eingangsgröße, die 28 × 28 beträgt.
+Die 784 stammt aus der Eingangsgrösse, die 28 × 28 beträgt.
 
 Die versteckte Schicht ist somit eine Liste von 512 verschiedenen 28 × 28 Matrizen.
 
@@ -44,6 +44,6 @@ Die Prüfgenauigkeit sank nur von 97 % auf 96 %, was angesichts der geringeren A
 
 Die Gewichte in einem CNN sind sehr redundant. Mit einem naiven Algorithmus wie JPEG können wir die Dimensionalität deutlich reduzieren. Für die Weiterverbreitung im Netzwerk brauche ich jedoch die Matrixversion von JPEG, die keinen Speicher speichert. Die komprimierten Gewichte könnten verwendet werden, um sie über ein Low-Bandbreite-Netzwerk wie das Internet zu übertragen. Wir können jedoch einige fundierte Annahmen machen:
 
-- Die Wahl einer anderen Grundlage für die Gewichte, wie die Fourier-Basis, anstatt ein unabhängiges Gewicht an jeder Position, könnte die Schaffung von großen Netzwerken mit einer begrenzten Anzahl von Gewichten ermöglichen.
+- Die Wahl einer anderen Grundlage für die Gewichte, wie die Fourier-Basis, anstatt ein unabhängiges Gewicht an jeder Position, könnte die Schaffung von grossen Netzwerken mit einer begrenzten Anzahl von Gewichten ermöglichen.
 - Diese Methode könnte auch in tiefen neuronalen Netzwerken arbeiten.
 - Die Entwicklung einer differenzierbaren Methode, die mit wenigen Parametern eine erhebliche Komplexität erzeugt, könnte die Rechenfähigkeit bestehender Hardware verbessern.

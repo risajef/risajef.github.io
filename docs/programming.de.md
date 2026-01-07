@@ -27,7 +27,7 @@ Dez 2023 – Sep 2025
 *Formal Verification, Eiffel, Automated Proofs (Isabelle HOL), LLMs, AI*
 
 - **Mathematical Proof Engine:** Entwicklung eines Motors zur Validierung mathematischer Beweise in einer objektorientierten Programmiersprache. Entwickelte einen ersten Konzeptnachweis für einen einfachen Beweis.
-- **Formalisierung der Programmierung:** Erstellen einer Formalisierung der Programmierung, einschließlich vieler Definitionen und Theorems, alle separat überprüft in Isabelle HOL. ([Link](https://arxiv.org/abs/2502.17149v1))
+- **Formalisierung der Programmierung:** Erstellen einer Formalisierung der Programmierung, einschliesslich vieler Definitionen und Theorems, alle separat überprüft in Isabelle HOL. ([Link](https://arxiv.org/abs/2502.17149v1))
 - **AI für formale Verifikation:** Planung, Durchführung und Analyse einer Studie über die Wirksamkeit von LLMs bei der Fehlerbehebung. ([Link](https://arxiv.org/abs/2507.15822))
 - ** Konzeptnachweis:** Entwickelt *CodeForge*, ein Tool zum Erstellen, Ausführen und Verifizieren von Programmen online ohne die lokale Installation. Auch entwickelt *AI-Proof*, ein Werkzeug mit LLMs, Sledgehammer und Isabelle HOL, um automatisch Beweise zu erzeugen. ([Link](https://github.com/reto-weber/CodeForge))
 - **Teaching Assistant:** In den Kursen unterstützt *Advances in Software Engineering* und *Software Construction, Architecture and Engineering*. Zu den Aufgaben gehörten Unterrichtsübungen, schriftliche und gradierende Prüfungen und Mentoring-Studierende.
@@ -42,7 +42,7 @@ Aug 2020 – November 2023
 
 - **eID:** Bewertete mehrere SSI-Technologien für die Schweizer elektronische ID. Sie wurden in einer Public Cloud mit Blockchain-Technologie eingesetzt. Konstruiert eine Frontend, Backend und mobile App. ([Link](https://eid.admin.ch))
 - **Fit&Proper:** Erweitern Sie eine bestehende Lösung zur automatischen Überprüfung des Hintergrunds von Menschen für den Finanzmarkt-Supervisor mit NLP und maschinellem Lernen. ([Link](https://www.ti8m.com/de/success-stories/digital-banking-and-finance/fma))
-- **Nachhaltigkeitsbewertung:** Entwickelte einen MVP, um einem Team von Nachhaltigkeitsexperten zu helfen, Antworten auf ihre Fragen in ihren Daten, insbesondere PDFs, zu finden. Das Tool optimiert den Prozess der Extraktion und Analyse von Informationen aus großen Dokumentensammlungen. ([Link](https://www.ti8m.com/en/success-stories/life-science-and-industry/sp-global))
+- **Nachhaltigkeitsbewertung:** Entwickelte einen MVP, um einem Team von Nachhaltigkeitsexperten zu helfen, Antworten auf ihre Fragen in ihren Daten, insbesondere PDFs, zu finden. Das Tool optimiert den Prozess der Extraktion und Analyse von Informationen aus grossen Dokumentensammlungen. ([Link](https://www.ti8m.com/en/success-stories/life-science-and-industry/sp-global))
 - **Construction Standard Management:** Geplant, entwickelt und implementiert eine Lösung zur Steuerung der am häufigsten verwendeten Baustandards in der Schweiz (eBKP/NPK). Dieses System verbesserte Effizienz und Zugänglichkeit für Profis. ([Link](https://www.ti8m.com/en/success-stories/life-science-and-industry/crb))
 - ** Konzeptnachweis:** Bebaute Prototypen für ein Reiseempfehlungssystem sowie Ausweis- und Passerkennungs- und Parsing-Tools zeigen die Anwendung von AI in verschiedenen Bereichen.
 

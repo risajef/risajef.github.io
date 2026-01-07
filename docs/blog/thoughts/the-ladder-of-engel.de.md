@@ -14,7 +14,7 @@ source_lang: en
 
 Dieses Konzept stammt definitiv nicht von mir, sondern vom modernen christlichen Denken. Allerdings habe ich diese Idee erweitert.
 
-Das ursprüngliche Konzept: Der Ladder von Engel beschreibt das Modell, dass jede Person auf einem Schritt in ihrer Entwicklung ist. Die Skala beginnt bei minus 5 oder so und geht bis zu 5. Bei 0 sind die Menschen, die den christlichen Gott als ihren Retter angenommen haben und ihm vertrauen. Das Modell soll nicht nur die Menschen dazu ermutigen, sich in das Christentum umzuwandeln, sondern auch von einem -5 auf -4 zu verbessern. Das heißt, dass es feindlich zu Gott ist, Gott abzulehnen.
+Das ursprüngliche Konzept: Der Ladder von Engel beschreibt das Modell, dass jede Person auf einem Schritt in ihrer Entwicklung ist. Die Skala beginnt bei minus 5 oder so und geht bis zu 5. Bei 0 sind die Menschen, die den christlichen Gott als ihren Retter angenommen haben und ihm vertrauen. Das Modell soll nicht nur die Menschen dazu ermutigen, sich in das Christentum umzuwandeln, sondern auch von einem -5 auf -4 zu verbessern. Das heisst, dass es feindlich zu Gott ist, Gott abzulehnen.
 
 Ich hoffe, ich verliere nicht jeden, der kein Christ ist. Weil das Konzept auch in anderen Bereichen unbewusst angewandt wird. Das gilt auch für das Umweltdenken. In diesem Fall könnte 0 eher sein: Ich bin bereit, persönliche Opfer für das Wohl des Planeten zu machen. Und auch hier wird bereits Fortschritte erzielt, wenn jemand von "Umweltschutz ist nur politische Propaganda, um Steuern zu erheben" auf "Umweltschutz wäre wichtig, aber wir können es nicht tun."
 
