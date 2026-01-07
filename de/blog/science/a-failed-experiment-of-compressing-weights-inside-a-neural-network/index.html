@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" data-page-lang="de">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -58,7 +58,6 @@
     <title>Ein gescheiterter Versuch, Gewichte innerhalb eines neuronalen Netzes zu komprimieren - Reto Weber</title>
     
     <link href="../../../../assets/rss-feed.css" rel="stylesheet">
-    <link href="../../../../assets/language-switcher.css" rel="stylesheet">
 
     </noscript>
 
@@ -97,7 +96,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body data-page-lang="de">
+<body>
     <header class="site-header">
         <div class="site-title">
             <h1 class="">
@@ -115,7 +114,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../research/buchfaltstudio.md">Buchfaltstudio</a>
+                        <a href="../../../research/buchfaltstudio/">Buchfaltstudio</a>
                     </li>
                     
                 </ul>
@@ -130,7 +129,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../research/hoare-logic/">Hoare Logic</a>
+                        <a href="../../../research/hoare-logic/">Hoare Logic</a>
                     </li>
                     
                 </ul>
@@ -145,7 +144,7 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../politik/finanzen-beringen/">Finanzen Beringen</a>
+                        <a href="../../../politik/finanzen-beringen/">Finanzen Beringen</a>
                     </li>
                     
                 </ul>
@@ -160,17 +159,17 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../blog/thoughts/">Thoughts</a>
+                        <a href="../../thoughts/">Thoughts</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../blog/philosophy/">Philosophy</a>
+                        <a href="../../philosophy/">Philosophy</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../blog/science/">Science</a>
+                        <a href="../">Science</a>
                     </li>
                     
                 </ul>
@@ -185,17 +184,17 @@
                     
                     <li
                         class=" ">
-                        <a href="../../../../book/the-book/">The Book</a>
+                        <a href="../../../book/the-book/">The Book</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../book/influential-books/">Influential Books</a>
+                        <a href="../../../book/influential-books/">Influential Books</a>
                     </li>
                     
                     <li
                         class=" ">
-                        <a href="../../../../book/lessons-from-my-book/">Lessons from My Book</a>
+                        <a href="../../../book/lessons-from-my-book/">Lessons from My Book</a>
                     </li>
                     
                 </ul>
@@ -203,6 +202,31 @@
             
             
         </ul>
+        
+        
+        
+        
+        
+        
+        <nav class="language-switcher" aria-label="Language selector">
+            
+            
+            
+            
+            
+            
+            <a href="../../../../blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/" class="">English</a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="./" class="active">Deutsch</a>
+            
+            
+        </nav>
         
         <form class="search-form" role="search">
             <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
@@ -218,17 +242,26 @@
             </ul>
         </div>
         <div class="content">
+            
+            <div class="auto-translation-banner" role="status">
+                <strong>Automated translation.</strong>
+                
+                This page was machine translated from EN and may contain mistakes.
+                
+            </div>
+            
             <h1 id="ein-gescheiterter-versuch-gewichte-innerhalb-eines-neuronalen-netzes-zu-komprimieren"><a href="/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/">Ein gescheiterter Versuch, Gewichte innerhalb eines neuronalen Netzes zu komprimieren</a></h1>
 <p>In neuronalen Netzen scheinen viele Gewichte zu geben, um auszudrücken, was wir wollen. Also dachte ich an die Implementierung der grundlegendsten Funktion, nämlich Matrix Multiplikation, in einer komprimierten Version. Statt nur zwei Matrixn zu multiplizieren, komprimieren wir die Gewichtsmatrix und multiplizieren das. Ich benutzte Wavelet Zersetzung mit einer Schwelle. Mein Ansatz war erfolgreich bei der Herstellung der Gewichtsmatrix 75% Nullen während des Trainings.</p>
-<p>Ich habe so etwas benutzt:```python
-coeffs = ptwt.wavedec(w_flat, "haar", mode="zero")
+<p>Ich habe so etwas benutzt:</p>
+<pre><code class="language-python">coeffs = ptwt.wavedec(w_flat, &quot;haar&quot;, mode=&quot;zero&quot;)
 coeffs_thresh = tuple(
                 torch.where(torch.abs(c) &lt; threshold, torch.zeros_like(c), c)
                 for c in coeffs
             )
-w_compressed = ptwt.waverec(coeffs_thresh, "haar")</p>
-<pre><code>Während das Netzwerk das folgende war:```python
-class NetFC(nn.Module):
+w_compressed = ptwt.waverec(coeffs_thresh, &quot;haar&quot;)
+</code></pre>
+<p>Während das Netzwerk das folgende war:</p>
+<pre><code class="language-python">class NetFC(nn.Module):
     def __init__(self):
         super(NetFC2, self).__init__()
         self.fc1 = CompressedLinear(784, 128, zero_fraction=0.75)
@@ -338,7 +371,6 @@ class NetFC(nn.Module):
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../../../assets/rss-feed.js"></script>
-    <script src="../../../../assets/language-switcher.js"></script>
     <script src="../../../../search/main.js"></script>
     <!-- 100% privacy-first analytics -->
     <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
