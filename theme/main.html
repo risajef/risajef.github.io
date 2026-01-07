@@ -133,6 +133,29 @@
             {% endfor %}
         </ul>
         {% endif %}
+        {% if i18n_config is defined and i18n_config.languages %}
+        {% set current_locale = i18n_current_language %}
+        {% if page.meta and page.meta.lang %}
+        {% set current_locale = page.meta.lang %}
+        {% elif page.file and page.file.locale %}
+        {% set current_locale = page.file.locale %}
+        {% endif %}
+        <nav class="language-switcher" aria-label="Language selector">
+            {% for lang in i18n_config.languages %}
+            {% if lang.build %}
+            {% set target_url = None %}
+            {% if page.file and page.file.alternates is defined and lang.locale in page.file.alternates %}
+            {% set target_url = page.file.alternates[lang.locale].url %}
+            {% elif lang.link %}
+            {% set target_url = lang.link %}
+            {% else %}
+            {% set target_url = '/' ~ lang.locale ~ '/' %}
+            {% endif %}
+            <a href="{{ target_url | url }}" class="{% if lang.locale == current_locale %}active{% endif %}">{{ lang.name }}</a>
+            {% endif %}
+            {% endfor %}
+        </nav>
+        {% endif %}
         <form class="search-form" role="search">
             <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
         </form>

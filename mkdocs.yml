@@ -47,6 +47,7 @@ plugins:
   - mermaid-to-svg:
       mmdc_path: "mmdc"
       cleanup_generated_images: false
+      process_in_serve: true
   - inline-select-svg
   - bibtex:
       bib_file: references.bib
@@ -77,3 +78,5 @@ extra_javascript:
   - assets/rss-feed.js
 extra_css:
   - assets/rss-feed.css
+hooks:
+  - hooks/auto_snippets.py

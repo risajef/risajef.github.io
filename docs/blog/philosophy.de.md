@@ -7,6 +7,7 @@ tags:
 - religion
 auto_translated: true
 source_lang: en
+auto_snippets: blog/philosophy
 ---
 
 <!-- _All philosophy pieces remain collected here while every heading links to its standalone article for easy sharing._
@@ -16,12 +17,4 @@ source_lang: en
 	<p><em>Loading philosophy feed...</em></p>
 </div> -->
 
---8<-- "blog/philosophy/a-comment-on-the-kalam-cosmological-argument.de.md:11:"
-
---8<-- "blog/philosophy/what-is-god.de.md:11:"
-
---8<-- "blog/philosophy/metaphysics-is-psychology.de.md:11:"
-
---8<-- "blog/philosophy/beliefs-are-relevant.de.md:11:"
-
---8<-- "blog/philosophy/truth-is-not-everything.de.md:11:"
+<!-- AUTO_SNIPPETS -->
