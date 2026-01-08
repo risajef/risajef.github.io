@@ -32,7 +32,7 @@ Es ist die Geschichte von drei Brüdern eines abscheulichen Mannes. Und ähnlich
 
 Wenn Sie dies zulassen, sind Sie eifrig, die überflüssigen Kapitel zu lesen. Die unaufgelöste Spannung stört dich nicht. Ihr hofft nur, dass der Atheist nicht die Hoffnung verliert, der Bon vivant nicht selbstzerstört, und der Christ verliert keinen Kontakt mit der Realität.
 
-## 20.000 Leagues Under the Sea by Jules Verne
+## 20.000 Meilen unter dem Meer by Jules Verne
 
 Diese Geschichte ist weder fesselnd noch interessant. Aber immer noch eine Offenbarung. Es zeigte mir, dass man eine Geschichte nur erfinden kann, um eine Halluzination über zukünftige Technologie zu erkunden. Ein echtes Science-Fiction-Buch mit einem starken Schwerpunkt auf Wissenschaft. Und anstatt das U-Boot zu revidieren, das er in seinem Kopf in der realen Welt gebaut hat, was ihn Millionen von Francs kosten würde, schrieb er einfach darüber und inspirierte eine ganze Generation von Schriftstellern, Ingenieuren und Wissenschaftlern. Dies zeigt, dass man mit einer kreativen Idee aus der Box herausbrechen kann, in der man sich als Autor, aber auch allgemeiner findet.
 
@@ -60,11 +60,11 @@ Alyosha von Die Brüder Karamazov sind die Hobbits hier. Gute Menschen mit einem
 
 Wenn Sie von dem, was im Weltbau möglich ist, inspiriert werden wollen, ist dies ein Muss.
 
-### Werther von Goethe
+### Werther von Göthe
 
 Eine berührende und tiefgreifende Geschichte über einen Mann, der den Wert der Erfahrungen entdeckt. Was ist der Wert der Dinge? Warum können Sie nicht verstehen, dass ich lieber in Liebe ertrinken würde, als ein langes Leben mit nur einer guten Frau zu leben?
 
-Ein romantischer Blick auf die Welt. Nahe am Herzen eines Teenagers. Er verschlingt die Welt mit seiner Selbstliebe. Bringt Chaos und Leiden in seine Umgebung. Aber auch Werte so stark, tief und wahr, dass sie nicht verleugnet werden können. Es war eine revolutionäre Geschichte in ihrer Zeit. Liebe ist wahrscheinlich der wichtigste Wert in einer romantischen Beziehung. Wir haben nicht einmal ein Wort für Partner, die zusammen leben und schlafen, ohne einander zu lieben. Aber damals war die Liebe in der Ehe ein Luxus. Deshalb verschwanden Romantiker wie Goethe die Welt, weil sie für diese Botschaft hungrig waren. Das Buch ist heute jedoch nicht mehr revolutionär. Es gibt ein endloses Angebot von Geschichten, wo eine Frau ihren Mann für die eine wahre Liebe verlässt. Heute wäre die revolutionäre Geschichte wieder das Gegenteil. Wo Grund triumphiert über die Seele. Wo wahres Glück von dem Seinen Schicksal kommt. Verantwortung übernehmen. Die Welt hungert immer nach dem Aspekt des Lebens, den es fehlt. Der Autor und die Künstler sind hier, um diesen Durst zu löschen und von ihm selbst profitieren.
+Ein romantischer Blick auf die Welt. Nahe am Herzen eines Teenagers. Er verschlingt die Welt mit seiner Selbstliebe. Bringt Chaos und Leiden in seine Umgebung. Aber auch Werte so stark, tief und wahr, dass sie nicht verleugnet werden können. Es war eine revolutionäre Geschichte in ihrer Zeit. Liebe ist wahrscheinlich der wichtigste Wert in einer romantischen Beziehung. Wir haben nicht einmal ein Wort für Partner, die zusammen leben und schlafen, ohne einander zu lieben. Aber damals war die Liebe in der Ehe ein Luxus. Deshalb verschwanden Romantiker wie Göthe die Welt, weil sie für diese Botschaft hungrig waren. Das Buch ist heute jedoch nicht mehr revolutionär. Es gibt ein endloses Angebot von Geschichten, wo eine Frau ihren Mann für die eine wahre Liebe verlässt. Heute wäre die revolutionäre Geschichte wieder das Gegenteil. Wo Grund triumphiert über die Seele. Wo wahres Glück von dem Seinen Schicksal kommt. Verantwortung übernehmen. Die Welt hungert immer nach dem Aspekt des Lebens, den es fehlt. Der Autor und die Künstler sind hier, um diesen Durst zu löschen und von ihm selbst profitieren.
 
 ### Die Bibel
 

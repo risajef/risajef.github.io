@@ -14,9 +14,9 @@ source_lang: de
 
 # Finances of the municipality of Beringen
 
-I created some graphs from the bills and the budgets of the municipality of Beringen. Maybe I made some mistakes. If you notice, let me know.
+I created a few charts based on the municipality of Beringen’s financial statements and budgets. I may have made mistakes — if you spot one, please let me know.
 
-## Expenditure per inhabitant:in Beringen
+## Per-capita spending in Beringen
 
 &nbsp;
 {:#mermaid}
@@ -34,7 +34,7 @@ pie showData
     "Volkswirtschaft":17
 ```
 
-Per inhabitant:in CHF 3010 per year and spends about as much (CHF 3133). These data are not meaningful. But we can compare this with a neighboring community:
+Beringen takes in CHF 3,010 per resident per year and spends roughly the same amount (CHF 3,133). On their own, these numbers don’t say much — but we can compare them with a neighboring municipality:
 
 ## Comparison with Neunkirch
 
@@ -53,11 +53,11 @@ pie showData
     "Umwelt & Raumplanung": 99
     "Volkswirtschaft": 36
 ```
-With CHF 3213, Neunkirch even takes a little more one per person. It shows that more than three times more money is spent on traffic in Neunkirch. However, they are much cheaper on the go. For public safety, environment & spatial planning and the economy, Neunkrich has twice as much as Beringen. Such comparisons allow (for example as a business audit committee member) to assess where more detailed investigations should be carried out.
+With CHF 3,213, Neunkirch takes in slightly more per person. It’s striking that Neunkirch spends more than three times as much on transport. On the other hand, it spends far less on health. For public safety, environment & spatial planning, and the local economy, Neunkirch spends about twice as much as Beringen. Comparisons like this can help (for example, as a member of an audit committee) identify where it might be worth taking a closer look.
 
 # Development
 
-The development of these figures is also important. Are the numbers rising or falling? For example, it is claimed again and again that the debt of perpetrators is too high, but the figures do not prove that. Debts are stable between 34 and 39 million or approx. CHF 7000 per inhabitant:in.
+The trend over time matters as well: are the figures rising or falling? For example, it is repeatedly claimed that Beringen’s debt is too high, but the numbers don’t support that. Debt has been stable between CHF 34 and 39 million — about CHF 7,000 per resident.
 
 &nbsp;
 {:#mermaid}
@@ -72,7 +72,7 @@ line [38.010, 38.342, 35.781, 34.232, 37.158]
 
 ## Negative developments
 
-Some significant developments are expenditure per person, based on the categories. The following are increasing and it may be useful to keep an eye on them.
+Some notable developments show up in per-capita spending by category. The following are increasing, so it may be worth monitoring them more closely.
 
 &nbsp;
 {:#mermaid}
@@ -106,7 +106,7 @@ x-axis [2020, 2021, 2022, 2023, 2024]
 y-axis "CHF pro Person" 0 --> 250
 line [165, 178, 158, 174, 237]
 ```
-I chose the start here at 2020 because there was a system change and the costs are not comparable.
+I start this chart in 2020 because there was a system change, so earlier numbers aren’t comparable.
 
 ## Positive developments
 
@@ -134,14 +134,14 @@ y-axis "CHF pro Person" 0 --> 100
 line [76, 90, 95, 92, 92, 93, 80, 98, 70, 55, 54, 53, 47]
 ```
 
-# Is the budget right?
+# Is the budget realistic?
 
-The budget must be created every year. It should provide guidance on how spending and revenue will be in the coming year. But this actually analytical instrument is always a tool to exercise political power, and is used to tell a story instead of taking a realistic look into the future. This is how we look at the discrepancy between budget and bill. It should be noted that in 2021 an unexpectedly large tax payment came from the economy. There are a few things each year that were not calculated. On average, however, they are equal.
+The budget is prepared every year. In principle, it should be an analytical tool: a best-effort estimate of spending and revenue for the coming year. In practice, budgets are also used politically — to justify austerity measures or to frame a narrative. Here I look at the gap between the budget and the actual result. Note that in 2021 there was an unexpectedly large one-off tax payment from the business sector. Every year has a few items that aren’t anticipated, but over time they tend to average out.
 
-I was able to compare the budgets and invoices by 2020. The budget was not available to me for the previous years.
+I was able to compare budgets and actuals back to 2020. I didn’t have budget data for earlier years.
 {:#budget}
 
-| Year | Account (CHF) | Budget (CHF) | Difference (CHF) |
+| Year | Actual (CHF) | Budget (CHF) | Difference (CHF) |
 |------|----------------|--------------|-----------------|
 | 2020 | -230,101       | -328,630     | -98,529         |
 | 2021 | 1,066,430      | -205,694     | -1,272,124      |
@@ -149,4 +149,4 @@ I was able to compare the budgets and invoices by 2020. The budget was not avail
 | 2023 | 151,917        | -197,471     | -349,388        |
 | 2024 | -647,740       | -784,180     | -136,440        |
 
-The bill has never been worse than the budget. On average, the budget is CHF 409'000 too pessimistic and in the Median CHF 193'000. This deviation seems to be systematic. This is a pessimistic budget to justify austerity measures or at least to have arguments against new expenditure. The municipal council itself can also bind a wreath again and again, as it has better concluded than budgeted. Just last year (2024) would have been much more positive, this unexpected tax repayment would not have happened. I don't want to complain about a good bill, but I think it's something eyewitness and abuse of this instrument. I just condemn it because budgets are abused everywhere for the purposes mentioned. But I still want to hold it here.
+The actual result has never been worse than the budget. On average, the budget is CHF 409,000 too pessimistic, and the median gap is CHF 193,000. That looks systematic. A conservative budget can be used to justify cuts, or at least to argue against new spending. It can also make it easier for the municipal council to claim success (“we did better than budgeted”). In 2024, the result would have been even more positive if an unexpected tax repayment hadn’t occurred. I’m not complaining about a good result — but in my view this can amount to spin, and to misusing the budget as an instrument.

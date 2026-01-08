@@ -23,6 +23,9 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## January 8th 2025
+Make the website bilingual (English and German). All pages were translated using [Argos Translate](https://www.argosopentech.com) and then improved with GPT 5.2. The site also detects whether a manually created translation exists or not. If you see an automatically translated version, a notice appears at the top of the webpage indicating that it was auto-translated.
+
 ## Dezember 15th 2025
 
 Neuer Blog-Artikel: [Nichts zu verbergen](/blog/toughts/nichts-zu-verbergen.md)

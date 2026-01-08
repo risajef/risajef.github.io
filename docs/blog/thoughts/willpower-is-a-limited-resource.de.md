@@ -10,12 +10,18 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Willpower ist eine begrenzte Ressource](/blog/thoughts/willpower-is-a-limited-resource/)
+# [Willenskraft ist eine begrenzte Ressource](/blog/thoughts/willpower-is-a-limited-resource/)
 
-Unsere Online-Welt wird von Menschen mit grosser Willenskraft dominiert. Sie initiieren Projekte und implementieren sie. Zumindest scheint es so, weil Sie nur die Projekte sehen, in denen sie genug Willenskraft hatten, sie durchzutragen. Dies schafft den Eindruck, dass sie starke Willenskraft haben. Das ist jedoch ein Falltum.
+Unsere Online-Welt wirkt, als würde sie von Menschen mit grosser Willenskraft dominiert. Sie starten Projekte und setzen sie um. Zumindest scheint es so – denn du siehst nur die Projekte, bei denen sie genug Willenskraft hatten, sie auch durchzuziehen. Das erzeugt den Eindruck, sie hätten „unendlich“ Willenskraft. Das ist ein Trugschluss.
 
-Andererseits gibt es Philosophen, die behaupten, dass wir freien Willen haben. Sie behaupten, dass wir uns dafür entscheiden können. Dieser Anspruch kann korrekt sein (ich werde hier nicht hineingehen), aber er ist praktisch irrelevant. Das ist gut, weil sie Philosophen sind und sich mit grundlegenden Dingen beschäftigen. Aber die Botschaft, dass wir alles theoretisch in unserer Macht tun können, ist optimistisch oder vielleicht sogar falsch.
+Auf der anderen Seite gibt es Philosoph:innen, die behaupten, wir hätten freien Willen. Wir könnten uns jederzeit so oder so entscheiden. Diese Behauptung mag stimmen (darauf will ich hier nicht eingehen), aber sie ist praktisch oft irrelevant. Das ist okay – Philosophie beschäftigt sich mit Grundfragen. Aber die Botschaft „Du kannst alles, wenn du nur willst“ ist entweder optimistisch oder vielleicht sogar falsch.
 
-Freier Wille, oder ich sage lieber nur Willenskraft, ist begrenzt. Die Nutzung von willpower erfordert Energie. Wir können uns nur auf das konzentrieren, was wir entscheiden und den Rest aus den Augen verlieren wollen. Willpower ist eindeutig eine zu verwaltende Ressource. Wenn Sie dies erkennen, können Sie Ihr Leben auf einer tieferen Ebene verstehen. Anstatt sich morgen zusammenzuziehen, werden Sie feststellen, dass dies kein nachhaltiges Verhalten ist. Sie werden nach Möglichkeiten suchen, Entscheidungen von Ihrer Willenskraft so oft wie möglich zu entfernen. Das erreichen Sie mit Gewohnheiten. Wenn Sie jeden Morgen fünf Push-ups machen, braucht es nicht viel Willenskraft. Später wird es eine Gewohnheit, und Sie können die Push-ups erhöhen. Sie nutzen die Ressource der Willenskraft weise.
+Freier Wille – oder sagen wir einfacher: Willenskraft – ist begrenzt. Willenskraft zu nutzen kostet Energie. Wir können uns nur auf das fokussieren, was wir aktiv entscheiden – und verlieren dabei anderes leicht aus den Augen. Willenskraft ist eine Ressource, die man managen muss.
 
-Aber es geht nicht darum, Willkür abzuschaffen. Nein, du solltest stärken und trainieren. Aber Sie tun dies nicht mit konstanter Belastung, sondern mit ausgewählten Herausforderungen im Leben. Zum Beispiel kalte Duschen. Dies ist eine Aktivität, die Willenskraft erfordert, aber auch schnell getan wird. Hier entlang trainieren Sie Ihre Willenskraft. Wenn kalte Duschen zu einfach werden, brauchen Sie eine neue Herausforderung.
+Wenn du das erkennst, verstehst du dein Leben auf einer tieferen Ebene. Statt dir für „morgen“ vorzunehmen, dich endlich zusammenzureissen, merkst du: Das ist kein nachhaltiges Muster. Du suchst nach Wegen, Entscheidungen so oft wie möglich aus der Willenskraft herauszunehmen.
+
+Das erreichst du mit Gewohnheiten. Wenn du jeden Morgen fünf Liegestütze machst, braucht das am Anfang etwas Willenskraft – aber nicht viel. Später wird es zur Gewohnheit, und du kannst die Anzahl steigern. So nutzt du die Ressource Willenskraft klug.
+
+Aber es geht nicht darum, Willenskraft abzuschaffen. Im Gegenteil: Du solltest sie stärken und trainieren. Nur nicht durch Dauerstress, sondern durch bewusst gewählte Herausforderungen im Leben.
+
+Kalte Duschen zum Beispiel. Das ist eine Aktivität, die Willenskraft verlangt – aber schnell erledigt ist. So trainierst du Willenskraft. Und wenn kalte Duschen zu leicht werden, brauchst du eine neue Herausforderung.

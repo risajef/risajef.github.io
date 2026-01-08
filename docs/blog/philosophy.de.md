@@ -10,12 +10,12 @@ auto_snippets: blog/philosophy
 source_lang: en
 ---
 
-<!-- _All philosophy pieces remain collected here while every heading links to its standalone article for easy sharing._
+<!-- _Alle Philosophie-Texte sind hier gesammelt; jede Überschrift verlinkt zusätzlich auf den jeweiligen Einzelartikel zum einfachen Teilen._
 
 ## Recent Philosophy Posts -->
 
 <!-- <div class="rss-feed" data-rss-feed data-rss-prefix="/blog/philosophy/" data-rss-limit="10">
-	<p><em>Loading philosophy feed...</em></p>
+	<p><em>Lade den Philosophie-Feed...</em></p>
 </div> -->
 
 <!-- AUTO_SNIPPETS -->

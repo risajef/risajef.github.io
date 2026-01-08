@@ -12,78 +12,78 @@ source_lang: en
 
 # Erfahrung
 
-## 3d Vision Engineer
-**[Brütschtechnik](https://brel.ch)*
-Beringen, Schweiz
-Okt 2025 – heute
+## 3D Vision Engineer
+**[Brütsch Technology](https://brel.ch)**  
+Beringen, Schweiz  
+Okt 2025 – heute  
 *Deep Learning, Python, Computer Vision*
 
-> Ich arbeite an einem Intraoral-Scanner (IOS), um Zähne zu scannen, um ein 3d-Modell zu erhalten. Ich entwickle und verbessere tiefe Lernmodelle. Bewerten Sie, welche Probleme durch tiefes Lernen gelöst werden können und entwickeln Sie Strategien, wie Sie dies realisieren können. Ich verbessere auch die Kodierungsrichtlinien.
+> Ich arbeite an einem Intraoral-Scanner (IOS), um Zähne zu scannen und daraus ein 3D-Modell zu erzeugen. Ich entwickle und verbessere Deep-Learning-Modelle, bewerte, welche Probleme sich sinnvoll mit Deep Learning lösen lassen, und erarbeite Strategien zur Umsetzung. Zusätzlich helfe ich dabei, Coding-Guidelines zu verbessern.
 
-## Doktorandin  
-**[Konstrukteur Institut für Technologie (Academia)](https://se.constructor.ch/)**  
+## Doktorand (PhD)  
+**[Constructor Institute of Technology (Academia)](https://se.constructor.ch/)**  
 Schaffhausen, Schweiz  
-Dez 2023 – Sep 2025
+Dez 2023 – Sep 2025  
 *Formal Verification, Eiffel, Automated Proofs (Isabelle HOL), LLMs, AI*
 
-- **Mathematical Proof Engine:** Entwicklung eines Motors zur Validierung mathematischer Beweise in einer objektorientierten Programmiersprache. Entwickelte einen ersten Konzeptnachweis für einen einfachen Beweis.
-- **Formalisierung der Programmierung:** Erstellen einer Formalisierung der Programmierung, einschliesslich vieler Definitionen und Theorems, alle separat überprüft in Isabelle HOL. ([Link](https://arxiv.org/abs/2502.17149v1))
-- **AI für formale Verifikation:** Planung, Durchführung und Analyse einer Studie über die Wirksamkeit von LLMs bei der Fehlerbehebung. ([Link](https://arxiv.org/abs/2507.15822))
-- ** Konzeptnachweis:** Entwickelt *CodeForge*, ein Tool zum Erstellen, Ausführen und Verifizieren von Programmen online ohne die lokale Installation. Auch entwickelt *AI-Proof*, ein Werkzeug mit LLMs, Sledgehammer und Isabelle HOL, um automatisch Beweise zu erzeugen. ([Link](https://github.com/reto-weber/CodeForge))
-- **Teaching Assistant:** In den Kursen unterstützt *Advances in Software Engineering* und *Software Construction, Architecture and Engineering*. Zu den Aufgaben gehörten Unterrichtsübungen, schriftliche und gradierende Prüfungen und Mentoring-Studierende.
+- **Mathematical Proof Engine:** Entwicklung eines Engines zur Validierung mathematischer Beweise in einer objektorientierten Programmiersprache. Erste Machbarkeitsstudie (Proof of Concept) für einen einfachen Beweis.
+- **Formalisierung der Programmierung:** Aufbau einer Formalisierung von Programmierung (Definitionen und Theoreme), einzeln verifiziert in Isabelle/HOL. ([Link](https://arxiv.org/abs/2502.17149v1))
+- **AI für formale Verifikation:** Planung, Durchführung und Analyse einer Studie zur Wirksamkeit von LLMs beim Bugfixing. ([Link](https://arxiv.org/abs/2507.15822))
+- **Proof of Concepts:** Entwicklung von *CodeForge*, einem Tool zum Kompilieren, Ausführen und Verifizieren von Programmen online (ohne lokale Installation). Zusätzlich Entwicklung von *AI-Proof*, das LLMs, Sledgehammer und Isabelle/HOL nutzt, um automatisch Beweise zu erzeugen. ([Link](https://github.com/reto-weber/CodeForge))
+- **Teaching Assistant:** Unterstützung in den Kursen *Advances in Software Engineering* und *Software Construction, Architecture and Engineering* (Übungslektionen, Prüfungen verfassen und korrigieren, Mentoring).
 
---
+---
 
-## Datenwissenschaftler  
+## Data Scientist  
 **[ti&m (Banking, Government, FinTech)](https://www.ti8m.com)**  
 Zürich, Schweiz  
-Aug 2020 – November 2023  
-*Machine Learning, Python, JavaScript, Docker, Data Science, AI, Computer Vision, Blockchain, Fragestellersysteme*
+Aug 2020 – Nov 2023  
+*Machine Learning, Python, JavaScript, Docker, Data Science, AI, Computer Vision, Blockchain, Recommender Systems*
 
-- **eID:** Bewertete mehrere SSI-Technologien für die Schweizer elektronische ID. Sie wurden in einer Public Cloud mit Blockchain-Technologie eingesetzt. Konstruiert eine Frontend, Backend und mobile App. ([Link](https://eid.admin.ch))
-- **Fit&Proper:** Erweitern Sie eine bestehende Lösung zur automatischen Überprüfung des Hintergrunds von Menschen für den Finanzmarkt-Supervisor mit NLP und maschinellem Lernen. ([Link](https://www.ti8m.com/de/success-stories/digital-banking-and-finance/fma))
-- **Nachhaltigkeitsbewertung:** Entwickelte einen MVP, um einem Team von Nachhaltigkeitsexperten zu helfen, Antworten auf ihre Fragen in ihren Daten, insbesondere PDFs, zu finden. Das Tool optimiert den Prozess der Extraktion und Analyse von Informationen aus grossen Dokumentensammlungen. ([Link](https://www.ti8m.com/en/success-stories/life-science-and-industry/sp-global))
-- **Construction Standard Management:** Geplant, entwickelt und implementiert eine Lösung zur Steuerung der am häufigsten verwendeten Baustandards in der Schweiz (eBKP/NPK). Dieses System verbesserte Effizienz und Zugänglichkeit für Profis. ([Link](https://www.ti8m.com/en/success-stories/life-science-and-industry/crb))
-- ** Konzeptnachweis:** Bebaute Prototypen für ein Reiseempfehlungssystem sowie Ausweis- und Passerkennungs- und Parsing-Tools zeigen die Anwendung von AI in verschiedenen Bereichen.
+- **eID:** Evaluation mehrerer SSI-Technologien für die Schweizer E-ID. Deployment in einer Public Cloud mit Blockchain-Technologie. Umsetzung von Frontend, Backend und Mobile App. ([Link](https://eid.admin.ch))
+- **Fit&Proper:** Erweiterung einer bestehenden Lösung zur automatischen Background-Check-Unterstützung für eine Finanzmarktaufsicht mittels NLP und Machine Learning. ([Link](https://www.ti8m.com/de/success-stories/digital-banking-and-finance/fma))
+- **Sustainability Assessment:** Entwicklung eines MVP, um einem Team von Nachhaltigkeitsexpert:innen zu helfen, Antworten in ihren Daten (insbesondere PDFs) zu finden. Das Tool vereinfacht das Extrahieren und Analysieren von Informationen aus grossen Dokumentensammlungen. ([Link](https://www.ti8m.com/en/success-stories/life-science-and-industry/sp-global))
+- **Construction Standard Management:** Planung, Entwicklung und Deployment einer Lösung zur Verwaltung der wichtigsten Baustandards in der Schweiz (eBKP/NPK). Das System verbesserte Effizienz und Zugänglichkeit für Fachpersonen. ([Link](https://www.ti8m.com/en/success-stories/life-science-and-industry/crb))
+- **Proof of Concepts:** Prototypen für ein Reise-Empfehlungssystem sowie Tools zur Erkennung und zum Parsing von IDs und Pässen.
 
---
+---
 
-## Softwareingenieur (Machine Learning, Computer Vision)  
-**[Kitris GmbH (Sports)](https://www.kitris-sports.com/)*  
+## Software Engineer (Machine Learning, Computer Vision)  
+**[Kitris GmbH (Sports)](https://www.kitris-sports.com/)**  
 Zürich, Schweiz  
-Jan 2020 – Juli 2020  
+Jan 2020 – Jul 2020  
 *Python, Docker, R&D, Computer Vision, Visual Computing*
 
-- **Videoverfolgung:** Ergänzte ein Konzept für ein Video-Tracking-System, um Spielerbewegungen und Aktionen in Sportvideos zu analysieren. Verwendete Computer-Vision-Techniken, um relevante Features zu extrahieren und hilfreiche Einblicke für Coaches und Analytiker zu bieten.
+- **Video Tracking:** Proof of Concept für ein Video-Tracking-System zur Analyse von Bewegungen und Aktionen in Sportvideos. Einsatz von Computer-Vision-Methoden, um relevante Features zu extrahieren und verwertbare Insights für Coaches und Analyst:innen zu liefern.
 
---
+---
 
 ## Junior Security Researcher &amp; Software Engineer  
-**[Exeon Analytics (Cybersecurity)](https://exeon.com/)*  
+**[Exeon Analytics (Cybersecurity)](https://exeon.com/)**  
 Zürich, Schweiz  
-Apr 2018 – Juni 2019  
+Apr 2018 – Jun 2019  
 *Python, Docker, Scala, React*
 
-- **Exeon Trace:** Verbesserte das Hauptprodukt durch die Implementierung einer neuen Funktion zur Verfolgung und Visualisierung des Netzwerkverkehrs, wodurch die Sicherheitsüberwachung der Plattform verbessert wird.
-- **Tridyo:** Erstellte ein MVP für ein neues Produkt, das die zukünftige Rentabilität von Unternehmen anhand von Sentimentanalysen und passenden Techniken analysierte. Dieses Projekt kombinierte Datenwissenschaft und Software-Engineering, um handlungsfähige Business Intelligence zu liefern.
+- **Exeon Trace:** Verbesserung des Hauptprodukts durch eine neue Funktion zur Nachverfolgung und Visualisierung von Netzwerkverkehr, was die Sicherheitsüberwachung der Plattform stärkte.
+- **Tridyo:** Entwicklung eines MVPs für ein neues Produkt zur Analyse der zukünftigen Rentabilität von Unternehmen mittels Sentimentanalyse und Fit-&-Proper-Ansatz.
 
---
+---
 
 # Projekte
 ## Hoare-Logic Proof Verifier
 [**GitHub**](https://github.com/risajef/hoare-logic)[**Web Demo**](https://retoweber.info/research/hoare-logic/)  
-Dies ist ein web-technologiebasierter Hoare-Logik-Verifier. Der Benutzer kann Programme und deren Beweise mit Drag und Drop erstellen. Die Beweise der Hoare-Logik müssen bis zum Ende explizit sein. Die logischen und arithmetischen Beweispflichten werden dem SMT-Löser [Z3](https://github.com/Z3Prover/z3). Das Werkzeug ist komplett frontend basiert. Es wird kein Server benötigt. Deshalb funktioniert die Anwendung auch auf dieser statischen Website.
+Dies ist ein Hoare-Logik-Verifier, der vollständig im Browser läuft. Man kann Programme und Beweise per Drag & Drop erstellen. Die Beweise müssen bis zum Ende explizit geführt werden. Logische und arithmetische Beweispflichten werden an den SMT-Solver [Z3](https://github.com/Z3Prover/z3) übergeben. Das Tool ist komplett frontend-basiert; es braucht keinen Server und funktioniert daher auch auf dieser statischen Website.
 
-## CodeFortsetzung
+## CodeForge
 [**CodeForge on GitHub**](https://github.com/reto-weber/CodeForge)  
-CodeForge ist eine Plattform, die entwickelt wurde, um Code über mehrere Programmiersprachen zu erstellen, auszuführen und zu überprüfen. Verwenden von Docker-Containern, um sicherzustellen, dass die Codeausführung sicher ist. Die Plattform ist nützlich für Bildungsumgebungen, Kodierung von Demos. Seine containerizzato Architektur ermöglicht eine einfache Integration neuer Sprachen und Verifikationstools. Es war völlig vibe codiert. Es ist manchmal online unter [eiffel.org](https://autoproof.eiffel.org/).
+CodeForge ist eine Plattform, um Code in mehreren Programmiersprachen zu kompilieren, auszuführen und zu verifizieren. Dafür werden Docker-Container genutzt, damit die Codeausführung sicher bleibt. Die Plattform eignet sich für Bildungsumgebungen und Coding-Demos. Die containerisierte Architektur erleichtert die Integration neuer Sprachen und Verifikationstools. Es wurde komplett „vibe coded“. Es ist teilweise unter [eiffel.org](https://autoproof.eiffel.org/) online.
 
 ## PDF Scannen
 [**PDF Scan Automation auf GitHub**](https://github.com/risajef/pdf_scan_automation)  
-PDF Scan ist ein Projekt, das die Organisation der physischen Post und Dokumente rationalisiert. Es verarbeitet Chargen von gescannten Dokumenten, automatisch zu erkennen, wo sie in einzelne Dateien aufgeteilt werden, Seiten aufrichten und OCR durchführen, um Text zu extrahieren. Dieses Tool reduziert den manuellen Aufwand bei der Digitalisierung und Archivierung von Papieren. Es ist besonders hilfreich für den persönlichen und kleinen Bürogebrauch. Es war teilweise vibe codiert.
+PDF Scan ist ein Projekt, das die Organisation von physischer Post und Dokumenten vereinfacht. Es verarbeitet Stapel gescannter Dokumente, erkennt automatisch, wo sie in einzelne Dateien getrennt werden müssen, richtet Seiten aus und führt OCR durch, um Text zu extrahieren. Das reduziert den manuellen Aufwand bei Digitalisierung und Archivierung. Es ist besonders hilfreich für den privaten und kleinen Bürogebrauch. Es wurde teilweise „vibe coded“.
 
-## Automatischer Docker
-[** Autoproof Docker auf GitHub**](https://github.com/reto-weber/autoproof_docker)  
+## AutoProof Docker
+[**Autoproof Docker auf GitHub**](https://github.com/reto-weber/autoproof_docker)  
 Dieses Projekt bietet eine [Docker Bild](https://hub.docker.com/repository/docker/risajef/autoproof/general) für den Betrieb [AutoProof](https://se.constructor.ch/reif-site/), einen statischen Prüfer für Eiffelprogramme. Durch die Containerisierung von AutoProof wird der Setup-Prozess unkompliziert und plattformunabhängig. Benutzer können Eiffel-Programme schnell überprüfen, ohne sich um komplexe Abhängigkeiten kümmern. Das Docker-Bild ist ideal für Forscher und Pädagogen, die mit formaler Verifikation arbeiten.
 
 ## Evolution Showcase
@@ -96,4 +96,4 @@ Dieses Projekt verfügt über ein anpassbares 3D-Modell eines Telefonstands, das
 
 ## Diese Website
 [**Diese Website auf GitHub**](https://github.com/risajef/risajef.github.io)
-Diese Website wurde mit [Mkdocs](https://www.mkdocs.org/) mit einer benutzerdefinierten Vorlage und Styling durchgeführt. Es wird automatisch an [Pressemitteilungen](https://retoweber.info) eingesetzt.
+Diese Website wurde mit [MkDocs](https://www.mkdocs.org/) mit einer benutzerdefinierten Vorlage und eigenem Styling gebaut. Sie wird automatisch unter [retoweber.info](https://retoweber.info) veröffentlicht.

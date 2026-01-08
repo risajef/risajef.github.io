@@ -13,62 +13,64 @@ source_lang: de
 
 # You have nothing to hide
 
-> **If you don't have to close, you're in a safe country. If you can't close, you're in a surveillance state. **
+> **If you don't need to lock your door, you live in a safe country. If you are not allowed to lock your door—or cannot—you live in a surveillance state.**
 
-> "What is your problem with insight into your data from the state (or anyone else) if you have nothing to hide."
+> "What is your problem with the state (or anyone else) being able to look into your data, if you have nothing to hide?"
 
-With this often repeated quotation, I run cold down my back. How much damage has been done with it. Often it is said by people who represent my view: "Nobody knows when a state is going through, and then you are happy if they don't have your data." And although that is true, I think we do not have to think of these extremes.
+Whenever I hear this well-worn line, I get a chill down my spine. It has already caused so much damage. People who share my view often respond with: “Nobody knows when a state will go off the rails—then you’ll be glad they don’t have your data.” That is true, but I don’t think we even need to go to such extremes.
 
-So that "you have nothing to hide" applies some conditions.
+For “you have nothing to hide” to be true, several conditions have to hold:
 
-1. **Intellectuality** The law is enforced correctly for everyone.
-2. **Moral laws**: The laws are acceptable.
-3. **Stability**: Points 1 and 2 are also given in the future.
+1. **Rule of law**: the law is enforced properly and equally for everyone.
+2. **Moral laws**: the laws themselves are acceptable.
+3. **Stability**: (1) and (2) will still be true in the future.
 
+I claim that none of these three conditions really holds. Point two may sound subjective, but I believe one can show that no legal system is fully acceptable to everyone (perhaps it can never be).
 
-I now state that none of these three points is given. Point two may seem subjective, so that not all of them see that, but I believe they are completely acceptable to no one. (Maybe never be acceptable.)
+## Rule of law
 
-## State of account
+Formally, many states claim to be governed by the rule of law. But “rule of law” is not a binary property.
 
-Many states claim to be a rule of law. But the rule of law is not a yes/no property of a state.
+I am a young Swiss citizen with legal expenses insurance—and yet I feel intimidated when my employer pressures me to sign a contract that, read literally, appropriates the rights to all of my past work.
 
-I myself am a young Swiss with legal protection insurance and I am still intimidated when my employer urges me to sign a contract that, when you read it literally, gives him the rights to all my past works.
+If I were wealthy enough, I would approach this differently, because I would know I could afford to fight. The rule of law is not just about laws and courts. Some people are intimidated—consciously (as in my case) or unconsciously—into not taking the legal route.
 
-If I were rich enough, I would have a different mentality because I knew I could enforce myself. The rule of law has little to do with law and court. For certain persons are deliberately intimidated (as with me) or unconsciously (I can add) to walk the legal path. 
+There is also a cost–benefit calculation: is it worth the effort? If I suspect that what ChatGPT or Google does with my data is an illegal intrusion into my privacy, I ask myself: should I really go to court? Whom do I sue? On what legal basis? Or should I just go to work, then come home and change diapers? I choose the latter every time. The law is therefore rarely enforced—and that is not necessarily a problem. The secret of a functioning society is not relentless enforcement; it is people behaving decently without needing courts and police (more on that later).
 
-In addition, there is a cost-benefit calculation. Is it worth running the effort to deal with it? If I believe it is an illegal intervention in my privacy, what Chat-GPT or Google does with my data, then I wonder: Should I be in court? Who do I call? On what basis? Or do I go to work better and then go home, change diapers? I choose each time for the latter. So the law is barely enforced and that's okay. The secret lies not in consistent implementation, but in the fact that people behave correctly, without court and law (later more about it).
+Others are intimidated because they are not “at home” here. Over the last years I have worked with many foreigners. One of them is a somewhat anxious Italian. He does speak a national language, but that does not help him much in Schaffhausen. When he receives a letter from the migration office, he does not understand it. He translates it with DeepL or Google Translate. Some nuances remain unclear. He comes from a country where “going to the counter” or “calling” does not help. So he writes an email—and gets a short reply. To him it sounds threatening. In fact, even a perfectly normal email can be threatening: if he does not follow a process he cannot fully understand linguistically, he may have to leave the country. Keep in mind: this friend is highly educated; we did our PhD together. For less educated people, this is even more frightening.
 
-Others are intimidated because they are not home here. I've been working with many foreigners for the last few years. One of them is a somewhat anxious Italian. He speaks a national language, but that doesn't help him in Schaffhausen. If he gets a letter from the Migration Office, he doesn't understand. He translates him with DeepL or Google Translate. With a few nuances, he's not sure what it means. He comes from a country where "go to the switch" or "telephone" does nothing. So he writes an email. This will be answered in close detail: This answer sounds threatening for him. And indeed, an email that has been formulated quite normally is threatening. For if he does not follow the process (which he cannot understand linguistically), he must leave the country. Bear in mind: This friend is educated, we made our doctorate together. For less educated people, this must be much more scary.
+The law is not applied equally to everyone. The psychological, social, economic, and cultural mechanisms are far too complex for the claim: “Anyone can go to court, therefore everyone has the same chance.”
 
-The right is not the same for all. The psychological, social, economic and social mechanisms are far too complex to say: "Everyone can go to court. So everyone has the same chance. »
+## Moral law
 
-## Moral Law
+In Switzerland, an efficient strategy is often: “Just do it and don’t ask.” “Where there is no plaintiff, there is no judge.” (So much for the rule of law.) Knowing where you can be a little relaxed about boundaries—and where you cannot—mostly works only if you have lived here for a long time.
 
-The efficient way in Switzerland is often «simple and not ask» «Where no plaintiff, since no judge.» (So much to the rule of law). Guessing where you can easily see these boundaries and where not, of course, only those who have long lived in Switzerland can. Here are a few of these "swiss" solutions: "Without Velo lamp on the Trottoir, and then descend when someone comes" or "Leere spray cans occasionally dispose of black garbage" or "subscribe the ballot for the partner" or "overtake over unnecessarily left driving cars to the right" or "share a Netflix account with not only the family" or "Simply drive to Germany without ID". I could extend the list as you wish. And Switzerland is only so efficient because such solutions exist. Because we can decide with common sense when the laws are too strict.
+Here are a few of these “Swiss” solutions: cycling on the sidewalk without lights and getting off when someone comes; puncturing empty spray cans and disposing of them as residual waste; signing your partner’s ballot; overtaking cars that needlessly block the left lane on the right; sharing a Netflix account beyond just your household; or occasionally crossing into Germany without ID. The list could go on forever.
 
-We always value ourselves independently whether we want to comply with the law. For example, we ask: "How bad is it really to drive without a helmet?" or "Will another person be at risk?" or "How likely is it that I will be caught?" This self-responsibility is central and must be strengthened and trained and not abolished.
+Switzerland is efficient in part because such informal practices exist—because we can use common sense to decide when rules are too strict. We repeatedly make our own judgment: “How bad is it really to ride without a helmet?” “Is anyone else put at risk?” “How likely is it that I’ll get caught?” This personal responsibility is central; it should be strengthened and taught, not abolished.
 
-All in all. It is deeply burned in Swiss society, to believe that we are a state of law, and at the same time to behave unlawfully, because it is convenient. One is a useful belief. Because if we believe that we act legally in Switzerland, we trust the state and the fellow human beings. Only this trust makes our society efficient and secure. Not the laws and the police. 
+Overall, Swiss society is deeply shaped by two things at once: believing that we are a state governed by the rule of law, and regularly breaking rules because it is convenient. The belief is useful: if we believe we behave lawfully, we trust the state and one another. It is that trust that makes our society efficient and safe—not the laws and the police alone.
 
-I believe we must both believe the good and act pragmatically.
+I think we need both: believing in the good and acting pragmatically.
 
-## Intermediate Conclusion
+## Interim conclusion
 
-Fortunately, the Swiss law was not often changed retroactively. (What would be completely contrary to the rule of law) But laws change. And what is legal today may not be any more tomorrow and vice versa. The law reflects the contemporary spirit of the older population (as it is in positions of power and also more agrees).
+Fortunately, Swiss law has not often been changed retroactively (which would contradict the rule of law). But laws do change. What is legal today may be illegal tomorrow, and vice versa. Law reflects the spirit of the times—often shaped by older voters, who both hold more power and participate more.
 
-We cannot anticipate which of our "pragmatic" solutions are planned in the future. So who has something to hide? Everyone and everyone! Because it can't be imagined what will be bad and what laws one doesn't touch an eye at once.
+We cannot foresee which of our “pragmatic” solutions will be condemned in the future. So who has something to hide? Everyone. Because nobody can predict what will later be judged as unacceptable—or which laws will suddenly be enforced without mercy.
 
+## Quality of a society
 
-## Quality of society
+The key property that gives Switzerland prosperity is that people follow rules **without** constant monitoring.
 
-The property that gives Switzerland prosperity is that laws are complied with **without control. **If you don't have to close, you're in a safe country. If you are not allowed to close (bank secret, backdoor at encryption, data crawls, etc.) you are in a surveillance state. **
+**If you don't need to lock your door, you live in a safe country. If you are not allowed to lock your door (bank secrecy, encryption backdoors, data hoarding, etc.), you live in a surveillance state.**
 
 ---
 
-## What about the scams?
+## What about the fraudsters?
 
-But why is the bank secrecy ever attacked? Or also questioned end-to-end encryption? There are actors in our society who use this flexible and trust-based system. They do not enter the grey area, but commit tax evasion, organized crime or distribute illegal content such as child pornography digitally.
+Why is bank secrecy attacked again and again? Why is end-to-end encryption questioned? Because there are actors in our society who abuse a flexible system built on trust. They do not merely operate in a grey area; they commit tax evasion, organised crime, or distribute illegal content such as child sexual abuse material.
 
-They all want to prevent that. And, as a means of doing so, solutions are proposed that bring about a potential misuse that may be as great, if not greater, than the evil one wanted to prevent.
+Everyone wants to prevent that. But the proposed countermeasures often carry a potential for abuse that may be as large as—if not larger than—the harm they are meant to prevent.
 
-There would be possibilities like: The police can issue a digital search warrant and if this is not complied with, there is a punishment. This command must be requested individually. No backdoor in encryption is required for such a control.
+For example, one could imagine a system where police can obtain a digital search warrant and where refusing to comply is punishable. Such warrants would have to be requested individually. Measures like that do not require a backdoor in encryption.

@@ -12,14 +12,15 @@ auto_translated: true
 source_lang: de
 ---
 
-# Population
+# Residents' Council
 
-Since the beginning of 2025, I have been elected member of [Population](https://www.beringen.ch/de/mitglieder) in Beringen. I represent the interests of the population on behalf of [EPP](https://evp-sh.ch).
+Since early 2025, I have been an elected member of the [Residents' Council](https://www.beringen.ch/de/mitglieder) in Beringen. I represent the interests of the population on behalf of the [EVP](https://evp-sh.ch).
 
-In addition, I am a member of the [Civil engineering](https://www.beringen.ch/de/tiefbau), [Swimming pool](https://www.beringen.ch/de/schwimmbad) and [Chief Party](https://www.evp-sh-2024.ch/parteivorstand) of our cantonal party.
+In addition, I am a member of the [Civil Engineering Commission](https://www.beringen.ch/de/tiefbau), the [Swimming Pool Commission](https://www.beringen.ch/de/schwimmbad), and the [party executive board](https://www.evp-sh-2024.ch/parteivorstand) of our cantonal party.
 
 # Smartvote
-My political stances are determined via [smatvote](https://smartvote.ch): 
+
+My political positions as measured by [smartvote](https://smartvote.ch):
 
 <!-- Roman Schlatter: https://www.smartvote.ch/de/group/527/election/23_ch_nr/smartmap -->
 <!-- https://www.smartvote.ch/de/group/540/election/24_sh_leg/smartmap -->
@@ -29,8 +30,8 @@ My political stances are determined via [smatvote](https://smartvote.ch):
 
 ```mermaid
 quadrantChart
-    x-axis Links --> Rechts
-    y-axis Konservativ --> Liberal
+    x-axis Left --> Right
+    y-axis Conservative --> Liberal
     Roman Schlatter: [0.800409330263502375, 0.4328962225969133]
     Roger Paillard: [0.5113362502622038, 0.7985022470855946]
     Christian Naef: [0.2596961249794414, 0.7111089139861781]
@@ -39,7 +40,7 @@ quadrantChart
     Reto Weber: [0.46269562242327017, 0.6992911299287804]
 ```
 
-The [Data](https://www.smartvote.ch/de/group/540/election/24_sh_leg/smartmap) of the other participants. I did not find the non-listed local councils and municipal councils online.
+The [data](https://www.smartvote.ch/de/group/540/election/24_sh_leg/smartmap) for the other participants. I could not find the remaining members of the Residents' Council or the municipal council online.
 
 &nbsp;
 {:#mermaid}
@@ -51,116 +52,121 @@ config:
         curveTension: 0
 ---
 radar-beta
-    title Mein smart spider
-    axis offAP["Offene Aussenpolitik"], lwP["Liberale Wirtschaftspolitik"], rfP["Restriktive Finanzpolitik"], law["Law & Order"], rmP["Restriktive Migrationspolitik"], euS["Ausgebauter Umweltschutz"], esS["Ausgebauter Sozialstaat"], lgS["Liberale Gesellschaft"]
+    title My smart spider
+    axis offAP["Open foreign policy"], lwP["Liberal economic policy"], rfP["Restrictive fiscal policy"], law["Law & Order"], rmP["Restrictive migration policy"], euS["Stronger environmental protection"], esS["Stronger welfare state"], lgS["Liberal society"]
     curve a["Reto Weber"]{125.125, 128.55, 113.875, 68.875, 14.5, 72.769, 79, 106.277}
     max 192
     min 0
 ```
-# referendums
 
-I'm just treating business to which I have a reference. These are, above all, municipal votes and elections, but also cantonal or federal, when I see myself as expertly competent.
+# Public votes
+
+I only cover proposals where I have a personal connection. That is mainly local (municipal) ballots and elections, but occasionally also cantonal or federal ones if I feel competent to comment.
 
 ## 30. November 2025
 
-### Construction loan to the new building of the Beringen plant at the Werkstrasse
+### Construction credit for the new Werkhof building (Werkstrasse, Beringen)
 
-This is the vote because the construction project costs more than CHF 600'000 (see: [Constitution Beringen](https://www.beringen.ch/uploads/files/pdf/Beringen%20Online/Rechtsbuch/100.000%20Verfassung%20der%20Einwohnergemeinde%20Beringen.pdf) Art. 16d). I know the new building. It corresponded to the popular will, because this has agreed to the planning loan and the planned workshop corresponds to what was defined at that time. There will be many who say, "This is a good project for the Beringer population." or others who will say, "This is too expensive." But for me this is both irrelevant. The factory staff urgently needs a new stay. An alternative construction will not be cheaper, as it creates a new planning and the workshop needs an intermediate solution that will not be free. The project also corresponds to what has already been described in the planning loan and this has been well done by the people. Although we have the political means to prevent this new building, I do not see any reason to do so. A no would probably come more expensive than a yes. And a yes gives the workshop a good new building.
+This is being put to a vote because the construction project costs more than CHF 600'000 (see [Constitution of Beringen](https://www.beringen.ch/uploads/files/pdf/Beringen%20Online/Rechtsbuch/100.000%20Verfassung%20der%20Einwohnergemeinde%20Beringen.pdf), Art. 16d).
 
-I created an [Page](/politik/werkhof-baukredit/) with neutral facts for the vote.
+I support the new building. It corresponds to the popular will: voters approved the planning credit, and the planned Werkhof matches what was defined back then.
 
-> The people approved the construction loan ([Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/2025/2025%2011%2030%20Gemeinde.pdf)). It amazes me little, because the factory farm is one of the most visible services of the municipality and has a broad support in the community.
+Some will say, “This is a good project for the people of Beringen.” Others will say, “It is too expensive.” For me, neither point changes the conclusion: the Werkhof staff urgently needs a new home, and an alternative project would not be cheaper. It would trigger new planning work and require an interim solution, which also costs money.
+
+Since the project matches what was already described in the planning credit—and that credit was approved by the voters—I see no good reason to block it now. A “no” would likely end up costing more than a “yes”. A “yes” gives the Werkhof a solid new building.
+
+I created a [page](/politik/werkhof-baukredit/) with neutral facts about the ballot.
+
+> Voters approved the construction credit ([link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/2025/2025%2011%2030%20Gemeinde.pdf)). That does not surprise me much: the Werkhof is one of the most visible services the municipality provides and it has broad support.
 
 ## 28. September 2025
 
-### E-ID Lecture
+### E-ID talk
 
-![E-ID Whatsapp Status Advertising](assets/images/eid_vortrag.jpg){:.float-right}
-On 4 September I gave a public lecture on the E-ID on the occasion of the national vote. I developed the E-ID and told about the technical function and was available for questions. ([more info](/politik/e-id))
+![E-ID WhatsApp status advertisement](assets/images/eid_vortrag.jpg){:.float-right}
+On 4 September I gave a public talk on the E-ID in the run-up to the national vote. I helped develop the E-ID and explained how it works technically, and I stayed for questions. ([more info](/politik/e-id))
 
-> The people took the submission very close to [Link](https://www.bk.admin.ch/ch/d/pore/va/20250928/index.html). In Schaffhausen the approval was significantly smaller [Link](https://sh.ch/CMS/get/file/f821997c-7d41-43d0-b24c-89d342385f0d).
+> The proposal passed by a very small margin ([link](https://www.bk.admin.ch/ch/d/pore/va/20250928/index.html)). In Schaffhausen, approval was significantly lower ([link](https://sh.ch/CMS/get/file/f821997c-7d41-43d0-b24c-89d342385f0d)).
 
-### Referendum for partial revision of usage planning
+### Referendum on the partial revision of land-use planning
 
-The referendum was taken. I supported the presentation of the municipal council and rejected the referendum. I made myself available to be printed on flyers. This attitude agrees with my voice at [6. May 2025](#6-mai-2025).
+The referendum was launched. I supported the municipal council’s proposal and opposed the referendum. I also made myself available for campaign flyers. This stance is consistent with my vote on [6 May 2025](#6-mai-2025).
 
-I am somewhat disappointed by the vote.
+The campaign disappointed me a bit on both sides:
 
-- On the **"Pro" page to which I belong, my face and argument were printed. But I am the least influential politician in the whole of Beringen. I just had 212 voices only Thomas Widmer had only 237 voices and all others had over twice as many voices; but no one has agreed to speak publicly for the presentation. Maybe because of any suspicion? But why didn't they quit the council meeting?
-- On the ** "Contra" page**, it is now advertised that the country is zoomed too cheaply. But there was a suggestion on the table that wanted to get more money out for the community, but this was not good-heeled by the present opponents.
+- On the **pro side** (where I stand), my face and my argument were printed. But I am one of the least influential politicians in Beringen: I received 212 votes; only Thomas Widmer received a similarly low number (237). Everyone else had more than double that. Yet nobody with a larger base was willing to publicly support the proposal.
+- On the **contra side**, the claim was promoted that the land was being rezoned too cheaply. There was in fact a proposal on the table that would have secured more money for the municipality, but it was rejected by those who later became the opponents.
 
-I created an [Page](/politik/zonenplanaenderung/) with neutral facts about the vote. More this information was missing in the past for municipal business. I'm trying to create this in the future.
+I created a [page](/politik/zonenplanaenderung/) with neutral facts about the ballot. For local issues, this kind of information has often been missing in the past; I want to keep producing it.
 
-> The people refused to change the zone plan ([Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/2025/2025%2009%2028%20Bund%20und%20Gemeinde.pdf)), which I find a pity. It's also a real check for us in the council. Almost all parties were for it. Very many councils were for it. But the people are opposed.
+> Voters rejected the zoning change ([link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/2025/2025%2009%2028%20Bund%20und%20Gemeinde.pdf)), which I find unfortunate. It is also a reality check for us in the Residents' Council: almost all parties supported it; many council members supported it. But voters did not.
 
-# Voting and elections in the Council of Inhabitants {: .vote}
+# Votes and elections in the Residents' Council {: .vote}
 
-This is where I am accountable for what I have voted or elected in the Council of Inhabitants. The templates can be found on the [Website](https://www.beringen.ch/de/einwohnerrat-vorlagen) of the municipality of Beringen.
+Here I give an account of how I voted or whom I elected in the Residents' Council. The proposals can be found on the municipality’s [website](https://www.beringen.ch/de/einwohnerrat-vorlagen).
 
 ## 9. December 2025
 
-[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%205.%20Sitzung%20vom%209.%20Dezember%202025.pdf)
+[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschluesse%205.%20Sitzung%20vom%209.%20Dezember%202025.pdf)
 
-| My voice | Council of Inhabitants | Name of the template |
+| My vote | Council decision | Proposal |
 | --- | --- | --- |
-| ✓ | ✓ | Lukas Rüedlinger (SP list) is elected as the new President of the Council of Residents. Beatrix Delafontainer (FDP) is elected as the new Vice President of the Council of Residents and Thomas Widmer (SVP) is elected to represent the Aktuarin. |
-| ✓ | ✓ | Budget was adopted and the tax base was left to 91%. |
-| - | ✗ | 3 % increase was rejected. |
+| ✓ | ✓ | Lukas Rüedlinger (SP list) is elected as the new president of the Residents' Council. Beatrix Delafontainer (FDP) is elected vice president, and Thomas Widmer (SVP) is elected deputy clerk. |
+| ✓ | ✓ | The budget is adopted and the municipal tax rate remains at 91%. |
+| - | ✗ | A motion to increase the tax rate by 3% is narrowly rejected. |
 
-> The budget gave a lot to discuss. The debt is higher and, for example, Roman Schlatter demanded a savings rate from the municipal council, or criticised a lack of readiness to save. Lukas Rüedlinger requested that the tax fund be increased to counter the debt. Arguments for this were: The canton reduced the tax by 3%, so that the tax rate would remain net; we have the responsibility for the community and should take measures. Counter arguments are: The debts are not so bad. And tax increases without savings are also the wrong way. I couldn't get through to a clear opinion and contained myself.
+> The budget sparked a lot of debate. Debt is rising, and Roman Schlatter for example demanded a stronger saving effort from the municipal council (or criticised a lack of willingness to save). Lukas Rüedlinger proposed raising the tax rate to counteract the debt. His arguments included: the canton reduced taxes by 3%, so the net burden would remain roughly stable; and we have a responsibility for the municipality and should take measures. Counterarguments were: the debt is not that bad; and raising taxes without a credible saving plan is the wrong approach. I could not form a clear opinion and abstained.
 
 ## 23. September 2025
 
-[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%204.%20Sitzung%20vom%2023.%20September%202025.pdf)
+[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschluesse%204.%20Sitzung%20vom%2023.%20September%202025.pdf)
 
-| My voice | Council of Inhabitants | Name of the template |
+| My vote | Council decision | Proposal |
 |---|---|---|
-| ✓ | ✓ | Baukredit Neubau Werkhof an der Werkstrasse |
-| ✓ | ✓ | Total loan for implementation lighting concept (public lighting) |
-| ✗ | ✗ | Disappeared: Request to postpone the council meeting from 20:00 to 19:30 |
+| ✓ | ✓ | Construction credit for the new Werkhof building on Werkstrasse |
+| ✓ | ✓ | Total credit for implementing the lighting concept (public lighting) |
+| ✗ | ✗ | Miscellaneous: motion to move the meeting start from 20:00 to 19:30 |
 
-> The new building of the Werkhof caused long discussions. Above all, it was complained that the construction was too expensive and many vehicles could remain out of it. My attitude was from the start that this was too late. We are not in the planning phase. It was said that it will cost 5.3 million (± 30%). Now it costs 4.9 million (± 10%). From my point of view, the municipal council has implemented everything as announced and plotted. In addition, the people said "yes" to the planning loan and I would like to say it in a "no" project that is exactly the same as the specifications. The template is subject to compulsory referendum because it is too expensive.
-
+> The new Werkhof building led to a long debate. The main criticism was that the project was too expensive and that too many vehicles might have to remain outside. My view from the start was: this is too late for a fundamental change. We are no longer in the planning phase. The cost had been stated as 5.3 million (± 30%); it is now 4.9 million (± 10%). From my perspective, the municipal council has implemented what it announced and was mandated to do. In addition, voters approved the planning credit; saying “no” to a project that matches those specifications feels paternalistic to me. The proposal is subject to a mandatory referendum because it is expensive.
 
 ## 1. July 2025
 
-[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%203.%20Sitzung%20vom%201.%20Juli%202025.pdf)
+[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschluesse%203.%20Sitzung%20vom%201.%20Juli%202025.pdf)
 
-| My voice | Council of Inhabitants | Name of the template |
+| My vote | Council decision | Proposal |
 |---|---|---|
 | ✓ | ✓ | Annual accounts 2024 of the municipality of Beringen |
-| ✓ | ✓ | Land sale of parcel GB No. 1848 in Beringen. Parcel GB No 1848 along Schaffhauserstrasse is sold to the Migros-Genossenschafts-Bund for total CHF 305'760.00. Should a multi-purpose strip be planned along the Schaffhauserstrasse and part of the parcel GB No. In 1848, the parcel to be sold to the Migros-Genossenschafts-Bund must be correspondingly reduced. The purchase price is also CHF 490.00 per m2 in this case. The costs incurred by the Land Registry Office shall in any case be borne by the buyer. |
+| ✓ | ✓ | Sale of parcel no. 1848 in Beringen. The parcel along Schaffhauserstrasse is sold to the Migros Cooperative Federation for a total of CHF 305'760.00. If a multi-purpose strip along Schaffhauserstrasse is planned and part of the parcel is transferred to the canton of Schaffhausen, the portion sold to Migros will be reduced accordingly. In that case as well, the purchase price is CHF 490.00 per m². Land Registry Office costs are borne by the buyer in all cases. |
 
-> I found it nice that a proposal from the Council of Inhabitants became a template within half a year. The new traffic management at the Migros was introduced in December and now in the way.
+> I liked that a proposal from the Residents' Council turned into a concrete proposal within half a year. The new traffic routing near Migros had been raised in the December meeting and has now been set in motion.
 
 ---
 
 ## 6. May 2025
 
-[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%202.%20Sitzung%20vom%206.%20Mai%202025.pdf)
+[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschluesse%202.%20Sitzung%20vom%206.%20Mai%202025.pdf)
 
-| My voice | Council of Inhabitants | Name of the template |
+| My vote | Council decision | Proposal |
 |---|---|---|
-| ✓ | ✗ | Request from [Michael Bizic](https://www.garbatec.ch/garbatec/team) to submit a partial revision of the user plan: to reject the submission to the municipal council, on the grounds that it will renegotiate point 5. This is about compensation to the municipality of Beringen. The new proposal or specification would be 40 rugs per cubic meter of gravel, which leaves the pit, and 30 rugs per cubic meter of filling material which comes back in. |
-| ✓ | ✓ | Submission of the partial revision of the user planning regarding the change in the zone plan in the Hooloo/Hinderi Laufferstaag area and the change in the construction and usage regulations. |
+| ✓ | ✗ | Motion by [Michael Bizic](https://www.garbatec.ch/garbatec/team) on the partial revision of land-use planning: to refer the proposal back to the municipal council, arguing that point 5 should be renegotiated (compensation to the municipality of Beringen). The suggested new terms were 40 rappen per cubic metre of gravel leaving the pit, and 30 rappen per cubic metre of fill material brought back in. |
+| ✓ | ✓ | Partial revision of land-use planning regarding the zoning change in the Hooloo/Hinderi Laufferstaag area, and the related change to the building and land-use regulations. |
 
-> I found the application of [Michael Bizic](https://www.garbatec.ch/garbatec/team) and I would have preferred it. But he was rejected with 5 to 4 for 1 abstention. But I was more for the original template than nothing.
+> I considered Michael Bizic’s motion worth supporting and would have preferred it, but it was rejected 5 to 4 with 1 abstention. Still, I preferred the original proposal over having nothing at all.
 
 ---
 
 ## 14. January 2025
 
-[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%201.%20Sitzung%20vom%2014.%20Januar%202025.pdf)
+[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschluesse%201.%20Sitzung%20vom%2014.%20Januar%202025.pdf)
 
-| My voice | Council of Inhabitants | Name of the template |
+| My vote | Council decision | Proposal |
 |---|---|---|
-| - | ✓ | Selected as a voice counter. |
-| ✓ | ✓ | In different elections, I chose the proposed candidates. |
-| ✓ | ✓ | Preliminary draft for the adaptation of the school-leaving allowance as a result of the requirements for the comprehensive introduction of guided schools in the canton of Schaffhausen |
-| ✓ | ✓ | Conversion of the crossroads Trasadingerstrasse H13 – Haardaublick (Bömmliacker Ost) Beringen über brutto CHF 295'472.95 |
-| ✓ | ✓ | Billing for the acquisition of a new municipal vehicle for building maintenance via gross CHF 114’393.80 |
+| - | ✓ | Elected as a vote counter. |
+| ✓ | ✓ | In various elections I voted for the proposed candidates. |
+| ✓ | ✓ | Proposal to adjust the school leadership workload as a consequence of the requirements for the canton-wide introduction of managed schools in the canton of Schaffhausen |
+| ✓ | ✓ | Final accounts for the redesign of the Trasadingerstrasse H13 – Haardaublick intersection (Bömmliacker Ost), gross CHF 295'472.95 |
+| ✓ | ✓ | Final accounts for the purchase of a new municipal vehicle for building maintenance, gross CHF 114'393.80 |
 
-
-> I was nervous at this first session. Even if voices don't count hard, it was a small challenge with nervousness. When billing for "creating a new municipal vehicle" I asked why the old one was sold so cheaply. Hugo Bosshart (deep grower) answered the question at the moment satisfactorily. In retrospect, I should have looked after more, the price was really too low.
+> I was nervous in this first meeting. Even though counting votes is not difficult, doing it while nervous was a small challenge. During the discussion of the “purchase of a new municipal vehicle”, I asked why the old vehicle had been sold so cheaply. Hugo Bosshart (head of civil engineering) answered the question satisfactorily in the moment. In hindsight, I should have followed up more; the price really was too low.
 
 ---

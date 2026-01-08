@@ -19,6 +19,6 @@ source_lang: de
 ---
 
 <div id="buchfaltstudio-root" class="buchfaltstudio-root">
-  <p>Lade Buchfaltstudio...</p>
-  <noscript>Bitte aktiviere JavaScript, um Buchfaltstudio zu verwenden.</noscript>
+  <p>Loading Buchfaltstudio...</p>
+  <noscript>Please enable JavaScript to use Buchfaltstudio.</noscript>
 </div>

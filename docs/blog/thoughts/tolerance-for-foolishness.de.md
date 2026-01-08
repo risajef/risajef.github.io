@@ -10,16 +10,22 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Toleranz für Folishness](/blog/thoughts/tolerance-for-foolishness/)
+# [Toleranz für Torheit](/blog/thoughts/tolerance-for-foolishness/)
 
 > Die Qualität einer Gesellschaft zeigt sich, wie viel Dummheit sie tolerieren kann.
 
-Es ist eine neue Seite der Toleranz und ein Gegenpunkt zu den Botschaften der Vernunft. Die übliche Toleranz vermittelt die Botschaft, dass alle Lebensentwürfe und Werte gerechtfertigt sind. Das mag oft der Fall sein, aber ich sehe den Wert in vielen Lebensentwürfen nicht. Ich halte sie für unmenschlich, kurzsichtig, naiv und töricht.
+Das ist eine andere Seite von Toleranz – und ein Gegenpunkt zu den Botschaften der Vernunft. Übliche Toleranz vermittelt oft: Alle Lebensentwürfe und Werte seien gleichermassen gerechtfertigt. Das mag häufig stimmen, aber ich sehe den Wert vieler Lebensentwürfe nicht. Ich halte manche für unmenschlich, kurzsichtig, naiv und töricht.
 
-Aber was ist zu tun? Muss ich diese Einstellungen ablehnen? Vielleicht auf einer individuellen Ebene. Aber ein Blick auf die COVID-Krise und andere Länder hat gezeigt: Je mehr Dummheit toleriert wird, desto besser sind die Menschen. Das ist die Botschaft der Freiheit.
+Aber was folgt daraus? Muss ich diese Haltungen bekämpfen? Vielleicht im persönlichen Gespräch, individuell. Doch ein Blick auf die COVID-Krise und auf andere Länder hat gezeigt: Je mehr „Torheit“ toleriert wird, desto besser geht es den Menschen. Das ist – paradoxerweise – die Botschaft der Freiheit.
 
-Was ist mit der Wahrheit? Das ist ein zweischneidiges Schwert. Wir als Mensch können unsere Unwissenheit schlecht beurteilen. Ein Blick auf die COVID-Krise macht das wieder deutlich. Wissenschaft gepaart mit Politik führt nicht zu Weisheit, sondern zu einer unerträglichen, absolutistischen, unwissenschaftlichen Lehre. Schliesslich arbeiten die Massnahmen nur, wenn alle teilnehmen. Widerstand ist also etwas feindliches. Daher können die Massnahmen nicht in Frage gestellt werden. Dies umgeht Wissenschaft und Demokratie. Dies soll keine Kritik an der Bewältigung der COVID-Krise sein. Es ist nur ein Hinweis auf die Konsequenzen des Glaubens, dass man die Wahrheit kennt. Dieses Pseudowissen blockiert den Weg zu weiteren Erkenntnissen.
+Und was ist mit der Wahrheit? Das ist ein zweischneidiges Schwert. Wir als Menschen können unsere eigene Unwissenheit schlecht einschätzen. Ein Blick auf die COVID-Krise macht das erneut klar.
 
-Daher müssen wir üben, tolerant für diejenigen zu sein, die uns täuschen. Bist du religiös? Je mehr Religionen und Ungläubige man tolerieren kann, desto besser. Bist du Atheist? Je mehr Religiosität Sie ertragen können, desto besser. Sind Sie links? Je mehr richtige Ideen Sie tolerieren können, desto besser (und umgekehrt). Bist du Kommunist? Je mehr Kapitalismus du tolerierst, desto besser.
+Wissenschaft gepaart mit Politik führt nicht automatisch zu Weisheit, sondern kann in eine intolerante, absolutistische, unwissenschaftliche Doktrin kippen. Denn Massnahmen wirken oft nur, wenn alle mitmachen. Widerstand wird dann als feindlich betrachtet. Also dürfen Massnahmen nicht mehr hinterfragt werden. Das umgeht Wissenschaftlichkeit und Demokratie.
 
-Neben der Erklärung der Selbstzerstörung von Wissen von oben, gibt es andere Argumente für Toleranz für Torheit. Und das ist Anpassungsfähigkeit. Je mehr Menschen wir zulassen, desto wahrscheinlicher werden wir die rettenden Helden in einer zukünftigen Krise beherbergen. Wenn wir nur Gleichgesinnte haben, sind wir nicht flexibel genug, um auf neue Dinge zu reagieren.
+Das ist nicht als Kritik an der Bewältigung der COVID-Krise gemeint. Es ist nur ein Hinweis auf die Konsequenzen des Glaubens, man kenne „die Wahrheit“. Dieses Pseudowissen blockiert den Weg zu weiterem Wissen.
+
+Darum müssen wir üben, tolerant zu sein gegenüber Menschen, die uns töricht erscheinen. Bist du religiös? Je mehr Religionen und Nichtgläubige du tolerieren kannst, desto besser. Bist du Atheist? Je mehr Religiosität du ertragen kannst, desto besser. Bist du links? Je mehr rechte Ideen du tolerieren kannst, desto besser (und umgekehrt). Bist du Kommunist? Je mehr Kapitalismus du tolerierst, desto besser.
+
+Neben dieser Erklärung – wie „Wissen von oben“ sich selbst zerstören kann – gibt es ein weiteres Argument für Toleranz gegenüber Torheit: Anpassungsfähigkeit.
+
+Je mehr unterschiedliche Menschen wir zulassen, desto wahrscheinlicher ist es, dass wir in einer zukünftigen Krise auch die „rettenden Held:innen“ bei uns haben. Wenn wir nur Gleichgesinnte dulden, sind wir nicht flexibel genug, um auf Neues zu reagieren.

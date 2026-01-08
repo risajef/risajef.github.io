@@ -10,12 +10,12 @@ auto_snippets: blog/thoughts
 source_lang: en
 ---
 
-<!-- _Browse every thought piece in one scroll, or jump to a standalone permalink via the list below._
+<!-- _Stöbere durch alle Gedanken in einem Rutsch – oder springe über die Liste unten direkt zum jeweiligen Permalink._
 
 ## Recent Thoughts -->
 
 <!-- <div class="rss-feed" data-rss-feed data-rss-prefix="/blog/thoughts/" data-rss-limit="15">
-	<p><em>Loading recent thoughts...</em></p>
+	<p><em>Lade die neuesten Gedanken...</em></p>
 </div> -->
 
 <!-- AUTO_SNIPPETS -->

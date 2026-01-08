@@ -11,18 +11,18 @@ auto_translated: true
 source_lang: de
 ---
 
-# Construction loan to the new building of the Beringen plant at the Werkstrasse
+# Construction loan for a new Werkhof building in Beringen (Werkstrasse)
 
-> This information is designed as neutral as possible. I myself support the proposal, but I hope my opinion did not influence the design of this page. But transparency is mentioned here.
+> This information is written to be as neutral as possible. I personally support the proposal, but I hope my opinion did not influence how this page is structured. For transparency, I’m mentioning it here.
 
-This is a collection of official contributions to the municipal vote on 28. September 2025 in Beringen. I'm getting rid of my personal opinion of objectivity.
+This is a collection of official contributions regarding the municipal vote on 28 September 2025 in Beringen. To stay objective, I’m not adding my personal opinion here.
 
-The basic information is
+The basic information can be found in the
 [Voting brochure](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/Kommunale%20Abstimmungen%20Broschuren/Abstimmungsbroschure%20Werkhof%20Baukredit.pdf)
-to be taken.
+.
 {:.header-column}
 
-| | For the new building (JA) | Against the new building (NO) | abstention / vote release
+| | For the new building (YES) | Against the new building (NO) | Abstain / no recommendation
 |---|---|---|---|
-| Council of Ministers | 6 votes | 3 votes against | 2 abstentions |
-| Recommendation of the parties| [EPP](https://evp-sh.ch/)[SPECIAL](https://spsh.ch/) [GLP](https://sh.grunliberale.ch/) | | [SVP](https://www.svp-sh.ch/)[FDP](https://www.fdp-sh.ch) |
+| Residents' Council decision | 6 votes in favor | 3 votes against | 2 abstentions |
+| Recommendation by parties | [EVP](https://evp-sh.ch/), [SP](https://spsh.ch/), [GLP](https://sh.grunliberale.ch/) | | [SVP](https://www.svp-sh.ch/), [FDP](https://www.fdp-sh.ch) |

@@ -10,8 +10,14 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Menschen, die Kinder unähnlich sind](/blog/thoughts/people-who-dislike-children-are-creepy/)
+# [Menschen, die Kinder nicht mögen, sind unheimlich](/blog/thoughts/people-who-dislike-children-are-creepy/)
 
-Das Internet ist ein Ort mit vielen Nischen. Es fragmentiert die Gesellschaft. Einer von ihnen ist die Katze oder Hunde. Hundemenschen verstehen nicht, warum man eine Kreatur lieben kann, die keine Zuneigung widerspricht. Es ist mit Kindern vergleichbar. Kinder bringen Chaos in dein Leben. Sie lügen, schreien und stinken. Aber sie sind auch sehr neugierig und einfach zu motivieren. Sie glauben viel und hoffen auf die Zukunft. Sie sind die extreme Form des Lebens selbst. Wenn Sie sie nicht mögen, zeigt es eine mangelnde Toleranz für das Leben. Man kann das Leben nicht gelegentlich annehmen.
+Das Internet ist ein Ort voller Nischen. Es fragmentiert die Gesellschaft. Eine davon: Katzenmenschen und Hundemenschen. Hundemenschen verstehen nicht, wie man ein Wesen lieben kann, das Zuneigung nicht „zurückgibt“.
 
-Das Wunder des Lebens liegt oft genau in der stinkenden Windel. Die Weigerung, sich mit Unwohlsein zu beschäftigen, beraubt eine der grundlegendsten Erfahrungen des Lebens, nämlich Gold zu finden, wo man es am wenigsten erwartet. Wenn Sie nicht auf diesen Pfad einsteigen, finden Sie nur, was Sie bereits wissen. Und wenn das der Fall ist, was ist der Punkt der lebenslangen Selbstabsorption?
+Bei Kindern ist es ähnlich. Kinder bringen Chaos in dein Leben. Sie lügen, schreien und stinken. Aber sie sind auch unglaublich neugierig und leicht zu motivieren. Sie glauben viel und hoffen auf die Zukunft. Sie sind die extremste Form des Lebens selbst.
+
+Wenn du Kinder nicht magst, zeigt das eine mangelnde Toleranz für das Leben. Denn das Leben stinkt eben manchmal – und man kann es nicht nur dann annehmen, wenn es angenehm ist.
+
+Das Wunder des Lebens liegt oft genau in der stinkenden Windel. Wer sich konsequent weigert, sich mit Unangenehmem auseinanderzusetzen, beraubt sich einer der grundlegendsten Erfahrungen: Gold dort zu finden, wo man es am wenigsten erwartet.
+
+Wenn du diesen Weg nicht gehst, findest du nur, was du ohnehin schon kennst. Und wenn das so ist: Wozu dann lebenslange Selbstabsorption?
