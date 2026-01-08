@@ -12,6 +12,12 @@ source_lang: en
 
 # [Für dich ist Fürsprache](/blog/thoughts/intercession-is-for-you/)
 
-"Ich bete für alle in der Türkei!" So etwas wurde nach den Erdbeben in der Türkei und Syrien auf sozialen Medien gelesen. Gläubige und Nichtgläubige kommentierten gleichermassen, dass sie helfen sollten, statt zu beten. Tun Sie etwas, was einen Unterschied macht. Und genau wie dieser Einwand ist, ist er auch naiv. Ja, es ist wahr, aber man vergisst, was mit der Person geschieht, die betet. Es bringt es zum Bewusstsein. Man greift bewusst in Mitgefühl ein und leidet damit. Man lässt Emotionen entstehen und wird traurig oder wütend über eine Situation. Zu glauben, dass diese Aktion nicht grundlegend ist, um zu helfen, zeigt einen Mangel an Wissen, wie Menschen funktionieren.
+„Ich bete für alle in der Türkei!“ So etwas las man nach den Erdbeben in der Türkei und in Syrien in sozialen Medien. Gläubige und Nichtgläubige kommentierten gleichermassen: Man solle helfen statt beten. Tu etwas, das einen Unterschied macht.
 
-Wenn man statt "Gebet" sagen würde: "Geh in dein Zimmer und lege dich in die Schuhe dieser Menschen und werde von ihrem Schicksal betroffen." Niemand würde daran denken, das zu kritisieren und zu sagen: "Bessere tun etwas, was einen Unterschied macht." Meiner Meinung nach hilft das Gebet nicht direkt, aber es verändert den, der betet. Ein betender Mensch ist eher zu handeln. Lasst uns also für die Opfer und Täter der nächsten Katastrophe beten. Sowohl für unser eigenes Wohl als auch für das der Opfer.
+So richtig dieser Einwand ist, so naiv ist er auch. Ja – aber man vergisst, was beim Betenden passiert. Beten bringt etwas ins Bewusstsein. Man entscheidet sich bewusst für Mitgefühl und leidet ein Stück weit mit. Man lässt Emotionen zu und wird traurig oder wütend über eine Situation. Zu glauben, diese innere Bewegung sei nicht grundlegend fürs Helfen, zeigt, dass man nicht versteht, wie Menschen funktionieren.
+
+Wenn man statt „Gebet“ sagen würde: „Geh in dein Zimmer, versetz dich in die Lage dieser Menschen und lass dich von ihrem Schicksal berühren“, würde kaum jemand das kritisieren und sagen: „Mach lieber etwas, das einen Unterschied macht.“
+
+Meiner Meinung nach hilft Gebet nicht direkt – aber es verändert den, der betet. Und wer betet, handelt eher.
+
+Darum: Lasst uns für die Opfer und die Täter der nächsten Katastrophe beten. Für unser eigenes Wohl – und für das der Opfer.

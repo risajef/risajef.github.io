@@ -10,8 +10,12 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Seien Sie Content, aber nicht Complacent](/blog/thoughts/be-content-but-not-complacent/)
+# [Sei zufrieden, aber nicht selbstzufrieden](/blog/thoughts/be-content-but-not-complacent/)
 
-Diese Aussage ist tief in mir verwurzelt, und ich habe sie seit vielen Jahren mit mir getragen. Es ist die Grundlage für alles, was ich erreicht habe und auf das ich stolz bin. Es gibt Menschen, die Wut ernähren, die ihnen als Quelle der Kreativität dienen. Für mich sind Ruhe und Gleichgewicht grundlegend. Serenity erlaubt mir einen Schritt zurück zu nehmen, aus meiner begrenzten Perspektive zu brechen. Diese Gelassenheit schärft meine Wahrnehmung. Anstatt eine Eckkatze zu sein, bin ich ein Schamane. Ich sehe Wert an Orten, die ich zuvor ignoriert habe. Diese Vision treibt mich dann an. Ich bin eifrig, die Welt zu entdecken, aber noch mehr so bin ich eifrig, mich zu entdecken. Ich entdecke den Drang zu schreiben, zu sprechen, zu beten, zu lesen, zu schaffen.
+Dieser Satz sitzt tief in mir, und ich trage ihn seit vielen Jahren mit mir. Er ist die Grundlage für vieles, was ich erreicht habe und worauf ich stolz bin. Es gibt Menschen, die sich von Wut antreiben lassen – sie nutzen sie als Quelle von Kreativität. Für mich sind Ruhe und Gleichgewicht zentral.
 
-Ein Schamane sieht immer noch, was getan werden muss. Er erforscht die Tiefe seiner Seele und bringt den Schatz zur Oberfläche. Ein Schamane weiss kein Ende der Arbeit, kein Ruhestand. Also, seien Sie nicht zufrieden mit Ihrer Ausgabe. Aber seien Sie ein zufriedener Mensch.
+Gelassenheit erlaubt mir, einen Schritt zurückzutreten und aus meiner begrenzten Perspektive auszubrechen. Sie schärft meine Wahrnehmung. Statt wie eine in die Ecke gedrängte Katze zu reagieren, versuche ich, wie ein Schamane zu sein: Ich sehe Wert an Orten, die ich früher übersehen habe. Diese Sicht treibt mich dann an. Ich will die Welt entdecken – aber noch mehr will ich mich selbst entdecken. Ich spüre den Drang zu schreiben, zu sprechen, zu beten, zu lesen, zu schaffen.
+
+Ein Schamane sieht trotzdem, was getan werden muss. Er erforscht die Tiefe seiner Seele und bringt den Schatz an die Oberfläche. Ein Schamane kennt kein Ende der Arbeit, keine Pension.
+
+Also: Sei nicht zufrieden mit deinem Output. Aber sei ein zufriedener Mensch.

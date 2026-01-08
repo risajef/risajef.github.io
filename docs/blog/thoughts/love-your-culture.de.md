@@ -10,10 +10,16 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Ihre Kultur lieben](/blog/thoughts/love-your-culture/)
+# [Liebe deine Kultur](/blog/thoughts/love-your-culture/)
 
-Unser moderner Geist wird von hubris geplagt. Sie glaubt, sie kennt viel und kann die Folgen politischer Massnahmen beurteilen. Aber die Beurteilung der Folgen ist in der Regel eher wie das Lesen von Teeblättern als Wissenschaft. Weil wir unsere Ignoranz kaum beurteilen können.
+Unser moderner Geist ist von Hybris geplagt. Er glaubt, viel zu wissen – und die Folgen politischer Massnahmen beurteilen zu können. Doch diese Beurteilung ist meist eher Teeblätterlesen als Wissenschaft. Denn wir können unsere eigene Ignoranz kaum abschätzen.
 
-So argumentieren einige für oder gegen CO2-Steuern. Für oder gegen Religion. Für oder gegen das allgemeine Grundeinkommen. Und all diese Dinge sind eine massive Intervention in die Struktur unserer Gesellschaft. Und zu glauben, man kann die Konsequenzen beurteilen, ist naiv.
+So argumentieren manche für oder gegen CO₂-Steuern. Für oder gegen Religion. Für oder gegen ein bedingungsloses Grundeinkommen. Und all das sind massive Eingriffe in die Struktur unserer Gesellschaft. Zu glauben, man könne die Konsequenzen zuverlässig beurteilen, ist naiv.
 
-Deshalb befürworte ich, Ihre Kultur und Ihr System zu befreunden und es als Teil Ihres eigenen Wesens zu betrachten. So wie Sie Teil des Systems sind. Versuchen Sie, die Dinge allmählich und lokal zu ändern. Mit einem Horizont, wo Sie glauben, können Sie die Konsequenzen beurteilen. Aber selbst das kannst du nicht. Ihr Leben wird grundlegend verbessert werden, wenn Sie sich als Teil Ihrer Nachbarschaft, Ihrer Stadt, Ihrem Land sehen. Weil wir überwiegend objektive Dinge bewerten. Wir denken, wenn wir unserem Nachbarn helfen, wird sich ihr Leben verbessern. Aber man unterschätzt die psychologische Wirkung auf sich selbst. Denn es gibt genug toxisches Verhalten, das nur kämpft, um das eigene System zu zerstören, genauer gesagt, Dinge einzuführen, die das Potenzial haben.
+Darum plädiere ich dafür, dich mit deiner Kultur und deinem System zu befreunden und sie als Teil deines eigenen Wesens zu betrachten – so wie du selbst Teil des Systems bist.
+
+Versuche, Dinge langsam und lokal zu verändern. Mit einem Zeithorizont, bei dem du glaubst, die Folgen noch beurteilen zu können. Aber selbst das kannst du nicht vollständig.
+
+Dein Leben verbessert sich grundlegend, wenn du dich als Teil deiner Nachbarschaft, deiner Stadt, deines Landes siehst. Wir bewerten vor allem objektive Dinge: Wir denken, wenn wir dem Nachbarn helfen, verbessert sich sein Leben. Dabei unterschätzen wir die psychologische Wirkung auf uns selbst.
+
+Und es gibt genug toxisches Verhalten, das nur kämpft, um das eigene System zu zerstören – genauer: um Dinge einzuführen, die dieses Potenzial haben.

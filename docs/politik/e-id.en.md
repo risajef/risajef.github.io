@@ -14,146 +14,63 @@ source_lang: de
 
 # E-ID
 
-![E-ID Whatsapp Status Advertising](/assets/images/eid_vortrag.jpg){:.float-right}
-On 4 September I gave a public lecture on the E-ID on the occasion of the national 
-Vote. I developed the E-ID and told about the technical function and stood 
-available for questions. ([more info](/politik/e-id))
+![E-ID WhatsApp status ad](/assets/images/eid_vortrag.jpg){:.float-right}
+On 4 September I gave a public talk about the E-ID ahead of the national vote. I worked on the E-ID project and explained the technical design, and I was available for questions. ([more info](/politik/e-id))
 
-In addition, I wrote the following articles in the Klettgauer Bote
+I also wrote the following article for the Klettgauer Bote.
 
-# E-ID: Innovation or monitoring?
-**Determination 28. September**
+# E-ID: Innovation or surveillance?
+**Vote: 28 September**
 
-Organized for the Federal E-ID vote of 28 September
-the PPE Schaffhausen a presentation on "Innovation or Monitoring".
-Reto Weber from Beringen has already dealt intensively with the E-ID.
+Ahead of the federal vote on 28 September on the E-ID, EVP Schaffhausen is organizing a technical talk titled “Innovation or Surveillance?”. Reto Weber from Beringen has already looked into the E-ID in depth.
 
-**Schaffhausen** For a little more than a year, as a software developer, I was able to
-Edit ID. Even then we were aware that this project was courageous. Can you
-justify setting so many developers without any legal basis?
-Maybe it was a big pok - or wise foresight. In the meantime,
-the legal basis was developed, passed by the Swiss Parliament and lies
-now via referendum in our mailboxes. We're supposed to decide whether we're good at them.
-or not.
+**Schaffhausen** For a little over a year I worked as a software developer on the new E-ID. Even back then we knew the project was bold. Can you justify hiring so many developers before a legal basis exists? Maybe it was a gamble — or wise foresight. In the meantime, the legal basis has been drafted, passed by the Swiss Parliament, and is now in our mailboxes via referendum. We are being asked to decide whether to approve it.
 
-The opponents of the E-ID present numerous arguments. Unfortunately, many of them are in fact
-wrong or have nothing to do with the E-ID. For example, the
-Source code is transparent and not visible - it is openly accessible. Or it will be
-said the E-ID could not be published without private companies - that is true too
-not. All system-relevant parts of the infrastructure are operated by the federal government. I could
-there are many other misinformation, but it should not be wrong, but rather
-to proceed with sound arguments.
+Opponents of the E-ID raise many arguments. Unfortunately, many of them are factually wrong or not actually about the E-ID. For example, people claim the source code is opaque and cannot be inspected — but it is publicly accessible. Or they claim the E-ID cannot be issued without private companies — that is also not true. All system-relevant parts of the infrastructure are operated by the federal government. I could list many more misunderstandings, but the point here is not to debate false claims; it’s to discuss the substantive arguments.
 
-Technologically, a simple and safe solution has been decided to
-has been proven for years with the large tech companies. It is established, well understood and
-their functioning is tested. But the crucial question is: what do we need
-an E-ID? For me as a computer scientist, digitalization is exciting and secure
-my livelihood, but I just want to implement projects that are real added value
-to bring. Digital is not automatically better - and not automatically worse.
+Technologically, the project chose a simple and secure approach that has been used for years by large tech companies. It is established, well understood, and battle-tested. But the key question remains: what do we need an E-ID for? As an IT professional, I find digitalization exciting and it pays my bills — but I only want to work on projects that deliver real value. Digital isn’t automatically better, and it isn’t automatically worse.
 
-The great advantage of the digital world is its scalability and decentralization. When
-process can be fully digitized, it can be independently of opening hours, often
-free of charge and in any place. A digital ID creates
-the basis for providing evidence of age, opening bank accounts, electronic
-to obtain signatures, to enter the organ and tissue donation register, or
-Complete mobile contracts - all online and uncomplicated.
+The big advantage of the digital world is scalability and decentralization. If a process can be fully digitized, it can often be done regardless of opening hours, often without fees, and from anywhere. A digital ID can provide the foundation for proving your age, opening bank accounts, obtaining electronic signatures, registering in the organ and tissue donation register, or signing mobile contracts — all online and straightforward.
 
-In addition, the federal government not only builds the E-ID, but an entire trust infrastructure.
-Swiss clubs and companies are to issue their own digital identity cards and
-can digitize their processes. To explain this in detail, the framework would be
-blow. Who wants to know more is cordially invited: September 4th, at 7 pm
-in the Hotel Promenade I will talk about the technical side of the E-ID and stand open
-available for questions.
+In addition to the E-ID itself, the federal government is building a broader trust infrastructure. This should allow Swiss associations and companies to issue their own digital credentials and digitize their processes. Explaining that in detail would go beyond the scope of this article. If you’d like to learn more: on 4 September at 19:00 at Hotel Promenade, I will talk about the technical side of the E-ID and will be available for questions.
 
 Reto Weber, Beringen
 
 # An odyssey through the waters of SSI
 
-*I wrote this article for an internal newsletter. Since it was formulated somewhat critically, it was not prepared for public communication. But I can now publish it on this website. *
+*I wrote this article for an internal newsletter. Since it was phrased somewhat critically, it wasn’t prepared for external communication. I can now publish it on this website.*
 
-> E-ID // The electronic ID was added to the 7. March 2021 clearly rejected. And yet
-> the Federal Office for Informatics and Telecommunications (BIT) develops precisely these. With it: some
-> Staff of ti&amp;m. Is the BIT illegal? What exactly is the strategy
-> Digitalization engine of the Swiss federal administration? A personal travel report.
+> Federal E-ID // The electronic ID was clearly rejected on 7 March 2021. And yet the Federal Office for Informatics and Telecommunications (BIT) is developing exactly that — with support from some ti&amp;m employees. Is the BIT acting unlawfully? What is the strategy behind this “digitalization engine” of the Swiss federal administration? A personal travel report.
 
-For exactly one year I have been involved in this project and saw the team from a single
-Developers grow into two Scrum teams with ten developers. And
-will surely become even more. I was admitted to the most complex subject of my
-professional career. Also interesting to see how the perspective on a
-E-ID diverge. Again and again we heard voices that thought that we immediately
-to stop it while others don't understand why the E-ID hasn't been reality long ago
-is. So there are offices that want their own digital identity and that already yesterday. And
-although I would not be trained as a developer or otherwise an individual would be able to claim all
-to coordinate, I was allowed to get an insight into decision making at all levels.
-At least on almost all levels.
+I have been involved in this project for exactly one year and watched the team grow from a single developer into two Scrum teams with ten developers — and there will certainly be more. I got to work on the most multifaceted topic of my professional career. It was also interesting to see how perspectives on a federal E-ID diverge. Time and again we heard voices saying we should stop immediately, while others couldn’t understand why the E-ID isn’t already reality. Some offices want their own digital credential — yesterday, if possible. And although, as a developer, I’m neither trained nor otherwise capable of coordinating all these demands, I did get an insight into decision-making at many levels.
 
 ## Anchor light!
 
-I'd like to take you to my Odyssey. And like Odysseus, I see again and again
-the target in front of the eye, at least in front of the inner eye. And like him, we also try a giant, a
-to force Sirene or a goddess to the other. How to achieve an E-ID without
-Legal basis? The answer is: not at all. We develop PoCs, pilots or sandboxes that
-solve problems for which a legal basis already exists. This ride allows us to
-high sea tested sailors and sometimes also rowers. Then the E-ID appears
-Horizon, we are, so I hope, ready to tackle the last mile.
-The journey begins with inspiration and an illuminated anchor. Self-Sovereign Identity (SSI)
-Be the basis for the new E-ID. The citizens are supposed to have the sovereignty over their data
-have. A noble goal. Workshops, brainstormings and research on existing
-Solutions. Our project management means that you understand things only when you create something with it.
-This is how our four-headed development team stands in the lake. We discover Hyperledger Indy; a finished
-Open source solution for SSI. It will later prove that the technology is not so mature,
-as we first thought or at least hoped. Nevertheless we all needed
-Building components. We built a base register based on blockchain technology, in
-which is both registered, who exhibits digital IDs, so-called Verifiable Credentials (VCs)
-as well as which data belong to such a VC. We built an Angular app on which new
-VCs can be defined and displayed. We built an app for Android and iPhone on
-Based on react natives to keep the VCs, a so-called wallet. We were well ahead and
-we were pleased about the good wind conditions, the quiet lake and the progress.
+I’d like to take you on my odyssey. And like Odysseus, I keep the goal in sight — if only with my inner eye. And like him, we try to overcome one giant, siren, or goddess after another. So how do you build an E-ID without a legal basis? The answer is: you don’t — not directly. Instead, we build PoCs, pilots, or sandboxes that solve problems where a legal basis already exists. This journey makes us “blue-water sailors” (and sometimes rowers). When the E-ID finally appears on the horizon, we will — I hope — be ready to tackle the last mile.
+
+The journey begins with inspiration and weighing anchor. Self-Sovereign Identity (SSI) is meant to be the foundation for the new E-ID: citizens should have sovereignty over their data. A noble goal. Then come workshops, brainstorming sessions, and research into existing solutions. Our project management believes you only truly understand something once you build with it.
+
+So our four-person development team set sail. We discovered Hyperledger Indy, an open-source SSI solution. Later it would become clear that the technology was not as mature as we first thought — or at least hoped. Still, we managed to build the required components. Based on blockchain technology, we built a base register that stores both who is allowed to issue digital credentials (so-called Verifiable Credentials, VCs) and which data belongs to a given VC. We built an Angular app to define and issue new VCs. We built a React Native app for Android and iPhone to hold the VCs — a so-called wallet. We made good progress and enjoyed fair winds, calm waters, and visible momentum.
 
 ## First Proof of Concept: ePerso
 
-On the way to the first island, our project management organized the first ID it had to
-digitization is valid. The Perso is a document that shows federal employees and among others
-Building access rights. Together with an external service provider, we developed a
-Exhibition process for this ID. We developed the translation of the New World to the
-Old world so that you can log into the existing systems with this new ePerso VC.
-Thanks to the previous first attempts in the world of SSI, the implementation was only a small
-additional step, the effort can thereby be overlooked. We rolled out the Wallet as a trial version
-and read decision-makers to apply for an ePerso. We hardly encountered problems with
-this undertaking. Recently we were even allowed to the new Federal Councilwoman Elisabeth Baume-
-Exhibit a ePerso. We had not only the breakthrough on technical
-Level, but also became public.
+On the way to the first island, our project management picked the first credential to digitize: the Perso — a document that identifies federal employees and, among other things, governs building access rights. Together with an external service provider, we designed an issuance process for this credential. We built the “translation layer” from the new world to the old world, so that you can log into existing systems using this new ePerso VC.
+
+Thanks to our earlier steps in the SSI world, this was only a relatively small additional effort. We rolled out the wallet as a test version and let decision-makers apply for an ePerso. We ran into hardly any problems. Recently, we were even able to issue an ePerso to the new Federal Councillor Elisabeth Baume-Schneider. That was not only a breakthrough technically — it also had a positive public impact.
 
 ## To the public: Public Sandbox
 
-Enough play around. To get a step closer to the E-ID, the technology must
-tormented. We organized regular participation meetings to help us with the
-exchange of technically interested people. Two feedback has been sent to us several times
-added: «Super you do something and are proactive if the schedule is more optimistic
-sounds» and «We want to work». And that's exactly what we called the Public Sandbox into life. We
-want to bring our developed infrastructure to the public. We published a
-Genesis file, which allows the integrators to connect to us. We developed
-a policy enforcement point that regulates what can be written in the base register. And
-we defined the process of how participants can participate in the private sector
-allow to test their own business cases on the sandbox. Whether a ticket or a
-VC membership card: We want these tests with a federal infrastructure
-to allow.
+Enough playing around: to move closer to the E-ID, the technology has to be tested in rougher conditions. We organized regular participation meetings to exchange with the technically interested public. Two pieces of feedback came up repeatedly: “Great that you’re doing something and being proactive, even if the timeline sounds optimistic” and “We want to contribute.”
+
+That’s what led to the Public Sandbox. We wanted to bring our infrastructure to the public. We published a so-called genesis file that allows integrators to connect to us. We built a Policy Enforcement Point that governs what may be written into the base register. And we defined the onboarding process so that the private sector can test their own use cases on the sandbox — whether it’s a ticket or a membership card as a VC. We want to enable those experiments using infrastructure provided by the federal government.
 
 ## The journey continues
 
-The path is still far to the E-ID. We're taking a ride right now. We develop a federal
-Wallet with native technologies. We evaluate alternative technologies for E-ID and others
-ID. We want to achieve a digital learning pass this year.
-Provide reference implementations for all components that we do not explicitly operate
-to be. All this is to be published on GitHub. All our teams, whether infrastructure, mobile,
-Backend and Frontend developers, architects and architects
-Designers, want more staff. So, when I was about "we"
-I mean, of course, these teams. I myself may be part of the infrastructure team
-to promote fundamental technical issues. The concrete implementation of the
-E-ID, i.e. the legal basis, not recognizable as mainland on the horizon. But
-Parliament and the federal administration know the course and navigate external service providers such as
-ti&amp;m with the help of the mapping of the project management past obstacles
-Direction Ithaka.
+The journey is still a long one. We are only now gaining real momentum. We are building a federal wallet using native technologies. We are evaluating alternative technologies for the E-ID and other credentials. We want to implement a digital learner’s permit this year. We plan to provide reference implementations for all components that we will not operate ourselves. All of that is intended to be published on GitHub.
+
+All our teams — infrastructure, mobile, backend and frontend developers, architects, designers — want more staff. So when I say “we”, I’m referring to those teams. I’m part of the infrastructure team, pushing forward the core technical topics.
+
+The concrete implementation of the E-ID — i.e., the legal basis — is not yet clearly visible as land on the horizon. But Parliament and the federal administration know the course, and external providers like ti&amp;m are navigating past obstacles with the help of the project management’s cartographers, steadily sailing on toward Ithaca.
 
 **Reto Weber**
 *Machine Learning Engineer, ti&amp;m*  

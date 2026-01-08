@@ -23,7 +23,7 @@ source_lang: en
 
 1. Erstellen Sie ein Programm mit Drag und Drop mit den angegebenen Elementen.
 2. Klicken Sie auf `Create Root`
-3. Fügen Sie die entsprechenden Regeln hinzu, bis es heißt `Valid Proof: Yes`
+3. Fügen Sie die entsprechenden Regeln hinzu, bis es heisst `Valid Proof: Yes`
 
 ## Hoare inference rules
 

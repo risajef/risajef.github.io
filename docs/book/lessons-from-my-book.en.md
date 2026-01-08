@@ -38,7 +38,7 @@ Another milestone was realizing that evil is limited. It may be terrible and las
 
 ## Variability
 
-I realized that a system, an idea, or a society is much more stable when it includes diversity. And so much diversity that it hurts a little. This means that the ideas you consider dangerous are present in the public space. You can fight them, but if you want the best for your society, you fight them with good intentions. The more stupidity we can tolerate, the better. Because that stupid person could be the saving hero of the next crisis. All empires that lasted more than a century had this variability. Roman citizens could pray to any god they liked as long as Caesar was the highest god. The same applies to today's capitalism. So, the truly dangerous ideas are those that want to silence the stupid.
+I realized that a system, an idea, or a society is much more stable when it includes diversity. And so much diversity that it hurts a little. This means that the ideas you consider dangerous are present in the public space. You can fight them, but if you want the best for your society, you fight them with good intentions. The more stupidity we can tolerate, the better. Because that stupid person could be the saving hero of the next crisis. All empires that lasted more than a century had this variability. Roman citizens could pray to any god they liked as long as Cäsar was the highest god. The same applies to today's capitalism. So, the truly dangerous ideas are those that want to silence the stupid.
 
 ## Artificial Intelligence
 

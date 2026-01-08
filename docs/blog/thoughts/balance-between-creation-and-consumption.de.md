@@ -9,6 +9,10 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Balance zwischen Schöpfung und Verbrauch](/blog/thoughts/balance-between-creation-and-consumption/)
+# [Balance zwischen Schaffen und Konsumieren](/blog/thoughts/balance-between-creation-and-consumption/)
 
-Wenn ich eine intensive Diskussion mit einem Freund habe, ist das Einzige, was ich ihnen oft sage: "Tu etwas." Wir tauschen unsere Obsessions mit bestimmten Content-Autoren aus, teilen Bücher und Filme. Wir diskutieren, was in der Welt richtig oder falsch ist. Aber wenn das alles ist, was Sie tun – Reddit zu lesen und Kommentare zu schreiben, ohne etwas zu produzieren – Sie werden ein überflüssiger und wertloser Kritiker. Die Magie des Lebens ist ein Beitrag. Enthüllen Sie sich der Welt und warten Sie eifrig auf ihre Antwort. Sind sie interessiert? Verstehen sie es? Ist es nützlich?
+Wenn ich mit einem Freund eine intensive Diskussion habe, ist das Einzige, was ich ihm am Ende oft sage: „Tu etwas.“ Wir tauschen unsere Obsessionen mit bestimmten Content-Creators aus, empfehlen Bücher und Filme, diskutieren, was in der Welt richtig oder falsch ist.
+
+Aber wenn das alles ist, was du tust – Reddit lesen und Kommentare schreiben, ohne selbst etwas beizutragen –, wirst du zu einem überflüssigen und wertlosen Kritiker.
+
+Die Magie des Lebens liegt im Beitrag: dich der Welt zu zeigen und neugierig auf ihre Antwort zu warten. Sind sie interessiert? Verstehen sie es? Ist es nützlich?
