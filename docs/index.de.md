@@ -9,8 +9,7 @@ tags:
 - politics
 - blog
 - book
-auto_translated: true
-source_lang: en
+auto_translated: false
 ---
 
 # Willkommen
@@ -18,14 +17,14 @@ source_lang: en
 ![Portrait](assets/images/Portrait_bg.jpg){:.float-right}
 Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar sind vor allem meine beiden beruflichen Laufbahnen als [Programmierer](programming.md) und [Forscher](research.md) sowie mein politisches Engagement ([Politik](politik.md)). Und vielleicht zuletzt noch meine [persönlichen Texte](blog.md) über Philosophie, Wissenschaft, Literatur und Religion.
 
-> Ich entschied mich, die Seite auf Englisch zu gestalten. Gewisse Inhalte sind jedoch deutsch, da die Interessenten ausschliesslich deutschsprechend sind ([Politik](/politik/)), oder ich nicht die Zeit hatte, sie zu übersetzen ([Buch](/book/the-book/)). Wenn du des Englischen nicht mächtig bist, nutze getrost [Google Translate](https://retoweber-info.translate.goog/?_x_tr_sl=en&_x_tr_tl=de&_x_tr_hl=de&_x_tr_pto=wapp).
+> Die Seite ist komplett zweisprachig (Englisch und Deutsch). Die meisten Seiten wurden von [Argos Translate](https://www.argosopentech.com) übersetzt und danach von GPT5.2 verbessert. Wurde die Seite so übersetzt, ist es mit einem Hinweis oben gekennzeichnet.
 
 # Neuigkeiten
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
 ## 8. Januar 2025
-Mache die Seite zweisprachig (Englisch und Deutsch). Alle Seiten wurden übersetzt via [Argos Translate](https://www.argosopentech.com) und danach mit GPT 5.2 verbessert. Die Seite stellt auch fest ob eine von mir manuell erstellte Übersetzung existiert oder nicht. Wenn du eine automatisch übersetzte Version siehst erscheint oben auf der Webseite ein Hinweis, dass es automatisch übersetzt wurde.
+Mache die Seite zweisprachig (Englisch und Deutsch). Alle Seiten wurden übersetzt via [Argos Translate](https://www.argosopentech.com) und danach mit GPT 5.2 verbessert. Die Seite stellt auch fest, ob eine von mir manuell erstellte Übersetzung existiert oder nicht. Wenn du eine automatisch übersetzte Version siehst, erscheint oben auf der Webseite ein Hinweis, dass es automatisch übersetzt wurde.
 
 ## 15. Dezember 2025
 

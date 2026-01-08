@@ -17,7 +17,7 @@ auto_translated: false
 ![Protrait](assets/images/Portrait_bg.jpg){:.float-right}
 I am grateful to have such a wide diversity of roles. For public interest are probably my two professional careers as a [programmer](programming.md) and [researcher](research.md) as well as my [political career](politik.md). And maybe at last my [personal content](blog.md) about philosophy, science, literature and religion.
 
-> Ich entschied mich, die Seite auf Englisch zu gestalten. Gewisse Inhalte sind jedoch deutsch, da die Interessenten ausschliesslich deutschsprechend sind ([Politik](/politik/)), oder ich nicht die Zeit hatte, sie zu übersetzen ([Buch](/book/the-book/)). Wenn du nicht des Englischen nicht mächtig bist, nutze getrost [Google Translate](https://retoweber-info.translate.goog/?_x_tr_sl=en&_x_tr_tl=de&_x_tr_hl=de&_x_tr_pto=wapp).
+> The site is fully bilingual (English and German). Most pages were translated using [Argos Translate](https://www.argosopentech.com) and then improved with GPT 5.2. If a page was translated this way, it is marked with a notice at the top.
 
 # News
 
@@ -28,13 +28,13 @@ Make the website bilingual (English and German). All pages were translated using
 
 ## Dezember 15th 2025
 
-Neuer Blog-Artikel: [Nichts zu verbergen](/blog/toughts/nichts-zu-verbergen.md)
+New blog post: [Nothing to Hide](/blog/toughts/nichts-zu-verbergen.md)
 
-Füge [Generator für Buchfaltkunst](/research/buchfaltstudio) hinzu. Das [original repo](https://github.com/risajef/buchfalten) habe ich ausgelagert und wird hier nur synchronisiert.
+Add [Generator for Book Folding Art](/research/buchfaltstudio). I moved the [original repository](https://github.com/risajef/buchfalten) out and it is only synced here.
 
 ## November 12th 2025
 
-Füge meine [persönliche Meinung](/politik/#baukredit-zum-neubau-des-werkhofs-beringen-an-der-werkstrasse) zur kommunalen Abstimmung über den Baukredit für den Werkhof hinzu. Sowie eine [Neutrale Sammelstelle für Informationen](/politik/werkhof-baukredit) zu demselben Thema.
+Add my [personal opinion](/politik/#baukredit-zum-neubau-des-werkhofs-beringen-an-der-werkstrasse) on the local referendum about the construction loan for the Werkhof. Also add a [neutral collection point for information](/politik/werkhof-baukredit) on the same topic.
 
 ## October 31st 2025
 
@@ -46,7 +46,7 @@ Add [observation](/blog/science/#pytorch-is-slow-and-fast-on-windows) about pyto
 
 ## October 3rd 2025
 
-Füge einen [Beitrag](/politik/e-id/#eine-odyssee-durch-die-gewasser-von-ssi) über die E-ID hinzu.
+Add an [article](/politik/e-id/#eine-odyssee-durch-die-gewasser-von-ssi) about the E-ID.
 
 ## October 1st 2025
 
@@ -58,25 +58,25 @@ Add [Hoare logic proof verifier](/research/hoare-logic/).
 
 ## September 18th 2025
 
-Füge Seite hinzu: [Zonenplanänderung](/politik/zonenplanaenderung/)
+Add page: [Zoning plan amendment](/politik/zonenplanaenderung/)
 
 ## September 9th 2025
 
-Füge Seite hinzu: [E-ID](/politik/e-id/)
+Add page: [E-ID](/politik/e-id/)
 
 Added this news section to the website.
 
 ## September 8th 2025
 
-Füge Seite hinzu: [Finanzen Beringen](/politik/finanzen-beringen/)
+Add page: [Beringen finances](/politik/finanzen-beringen/)
 
 ## August 22nd 2025
 
-Füge E-ID infos ein: [Politik](/politik/)
+Add E-ID information: [Politics](/politik/)
 
-Füge Tabelle mit hinzu, die aufzeichnet, wofür ich wo gestimmt habe: [Politik](/politik/)
+Add a table that records what I voted for and where: [Politics](/politik/)
 
-Add blog article about the difference between good and truth: [Thoughts](/blog/toughts/)
+Add blog post about the difference between good and truth: [Thoughts](/blog/toughts/)
 
 ## August 13th 2025
 
