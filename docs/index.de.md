@@ -1,14 +1,14 @@
 ---
 lang: de
 tags:
-- home
-- about
-- portfolio
-- programming
-- research
-- politics
-- blog
-- book
+  - home
+  - about
+  - portfolio
+  - programming
+  - research
+  - politics
+  - blog
+  - book
 auto_translated: false
 ---
 
@@ -23,7 +23,12 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
-## 8. Januar 2025
+## January 14th 2026
+
+Füge [automatischen Hintergrundgenerator](/programming/background-generator) hinzu.
+
+## 8. Januar 2026
+
 Mache die Seite zweisprachig (Englisch und Deutsch). Alle Seiten wurden übersetzt via [Argos Translate](https://www.argosopentech.com) und danach mit GPT 5.2 verbessert. Die Seite stellt auch fest, ob eine von mir manuell erstellte Übersetzung existiert oder nicht. Wenn du eine automatisch übersetzte Version siehst, erscheint oben auf der Webseite ein Hinweis, dass es automatisch übersetzt wurde.
 
 ## 15. Dezember 2025
@@ -81,4 +86,3 @@ Blog-Artikel über den Unterschied zwischen Gut und Wahrheit hinzugefügt: [Geda
 ## 13. August 2025
 
 Erste Version der Website. Von [Risajef.ch](https://risajef.ch).
-
