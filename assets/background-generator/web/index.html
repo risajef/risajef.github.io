@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Background Generator Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <main>
+        <section>
+            <h1>Generator Controls</h1>
+            <form id="generator-form">
+                <label>
+                    Generator
+                    <select id="generator-select"></select>
+                </label>
+                <div id="dynamic-fields"></div>
+                <button type="submit">Generate</button>
+            </form>
+        </section>
+        <section class="preview-panel">
+            <header>
+                <strong>Preview</strong>
+                <div id="meta"></div>
+            </header>
+            <div class="preview-area" id="preview">Fill out the form and generate a scene.</div>
+            <label>
+                SVG Markup
+                <textarea id="svg-output" readonly></textarea>
+            </label>
+        </section>
+    </main>
+    <script type="module" src="./dist/app.js"></script>
+</body>
+</html>

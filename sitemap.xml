@@ -2,658 +2,1274 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://retoweber.info/blog/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/"/>
     </url>
     <url>
         <loc>https://retoweber.info/book/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/"/>
     </url>
     <url>
         <loc>https://retoweber.info/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/"/>
     </url>
     <url>
         <loc>https://retoweber.info/politik/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/"/>
     </url>
     <url>
         <loc>https://retoweber.info/programming/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/programming/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/programming/"/>
     </url>
     <url>
         <loc>https://retoweber.info/research/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/research/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/research/"/>
     </url>
     <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40cspotcode/source-map-support/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40cspotcode/source-map-support/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40cspotcode/source-map-support/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40cspotcode/source-map-support/LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40cspotcode/source-map-support/LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40cspotcode/source-map-support/LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40esbuild/linux-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40esbuild/linux-x64/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40esbuild/linux-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40img/colour/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/colour/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/colour/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40img/colour/LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/colour/LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/colour/LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-libvips-linux-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-libvips-linux-x64/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-libvips-linux-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-libvips-linuxmusl-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-libvips-linuxmusl-x64/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-libvips-linuxmusl-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-linux-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-linux-x64/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-linux-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-linuxmusl-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-linuxmusl-x64/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-linuxmusl-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40jridgewell/resolve-uri/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40jridgewell/resolve-uri/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40jridgewell/resolve-uri/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40jridgewell/sourcemap-codec/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40jridgewell/sourcemap-codec/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40jridgewell/sourcemap-codec/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40jridgewell/trace-mapping/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40jridgewell/trace-mapping/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40jridgewell/trace-mapping/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node10/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node10/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node10/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node12/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node12/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node12/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node14/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node14/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node14/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node16/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node16/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node16/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/%40types/node/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40types/node/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40types/node/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/acorn/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/acorn/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/acorn/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/acorn/CHANGELOG/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/acorn/CHANGELOG/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/acorn/CHANGELOG/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/acorn-walk/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/acorn-walk/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/acorn-walk/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/acorn-walk/CHANGELOG/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/acorn-walk/CHANGELOG/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/acorn-walk/CHANGELOG/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/arg/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/arg/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/arg/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/arg/LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/arg/LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/arg/LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/create-require/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/create-require/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/create-require/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/create-require/CHANGELOG/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/create-require/CHANGELOG/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/create-require/CHANGELOG/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/detect-libc/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/detect-libc/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/detect-libc/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/diff/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/diff/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/diff/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/diff/CONTRIBUTING/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/diff/CONTRIBUTING/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/diff/CONTRIBUTING/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/diff/release-notes/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/diff/release-notes/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/diff/release-notes/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/esbuild/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/esbuild/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/esbuild/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/esbuild/LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/esbuild/LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/esbuild/LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/make-error/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/make-error/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/make-error/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/semver/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/semver/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/semver/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/sharp/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/sharp/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/sharp/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/ts-node/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/ts-node/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/ts-node/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/ts-node/dist-raw/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/ts-node/dist-raw/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/ts-node/dist-raw/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/ts-node/dist-raw/NODE-LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/ts-node/dist-raw/NODE-LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/ts-node/dist-raw/NODE-LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/typescript/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/typescript/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/typescript/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/typescript/SECURITY/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/typescript/SECURITY/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/typescript/SECURITY/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/undici-types/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/undici-types/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/undici-types/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/v8-compile-cache-lib/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/v8-compile-cache-lib/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/v8-compile-cache-lib/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/v8-compile-cache-lib/CHANGELOG/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/v8-compile-cache-lib/CHANGELOG/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/v8-compile-cache-lib/CHANGELOG/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/assets/background-generator/node_modules/yn/readme/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/yn/readme/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/yn/readme/"/>
+    </url>
+    <url>
         <loc>https://retoweber.info/blog/philosophy/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/science/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/philosophy/beliefs-are-relevant/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/beliefs-are-relevant/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/beliefs-are-relevant/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/philosophy/metaphysics-is-psychology/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/metaphysics-is-psychology/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/metaphysics-is-psychology/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/philosophy/truth-is-not-everything/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/truth-is-not-everything/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/truth-is-not-everything/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/philosophy/what-is-god/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/what-is-god/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/what-is-god/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/science/compressing-neural-networks/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/compressing-neural-networks/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/compressing-neural-networks/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/science/pytorch-is-slow-and-fast-on-windows/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/pytorch-is-slow-and-fast-on-windows/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/pytorch-is-slow-and-fast-on-windows/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/science/simulating-evolution/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/simulating-evolution/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/simulating-evolution/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/science/what-have-we-learned-and-some-educated-guesses/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/what-have-we-learned-and-some-educated-guesses/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/what-have-we-learned-and-some-educated-guesses/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/balance-between-creation-and-consumption/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/balance-between-creation-and-consumption/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/balance-between-creation-and-consumption/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/be-content-but-not-complacent/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/be-content-but-not-complacent/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/be-content-but-not-complacent/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/cleanliness-is-inhuman/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/cleanliness-is-inhuman/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/cleanliness-is-inhuman/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/good-equivalent-truth/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/good-equivalent-truth/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/good-equivalent-truth/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/intercession-is-for-you/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/intercession-is-for-you/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/intercession-is-for-you/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/learn-from-hypocrites/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/learn-from-hypocrites/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/learn-from-hypocrites/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/life-is-a-game/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/life-is-a-game/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/life-is-a-game/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/love-your-culture/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/love-your-culture/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/love-your-culture/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/meaning-is-perceivable/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/meaning-is-perceivable/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/meaning-is-perceivable/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/nichts-zu-verbergen/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/nichts-zu-verbergen/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/nichts-zu-verbergen/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/people-who-dislike-children-are-creepy/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/people-who-dislike-children-are-creepy/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/people-who-dislike-children-are-creepy/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/produce-instead-of-consume/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/produce-instead-of-consume/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/produce-instead-of-consume/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/soft-skills-in-hard-skill-jobs/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/soft-skills-in-hard-skill-jobs/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/soft-skills-in-hard-skill-jobs/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/the-ladder-of-engel/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/the-ladder-of-engel/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/the-ladder-of-engel/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/tolerance-for-foolishness/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/tolerance-for-foolishness/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/tolerance-for-foolishness/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/true-forgotten-ideas-are-worthless/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/true-forgotten-ideas-are-worthless/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/true-forgotten-ideas-are-worthless/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/truly-understand/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/truly-understand/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/truly-understand/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/willpower-is-a-limited-resource/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/willpower-is-a-limited-resource/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/willpower-is-a-limited-resource/"/>
     </url>
     <url>
         <loc>https://retoweber.info/blog/thoughts/wisdom-is-philosophy-that-works/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/wisdom-is-philosophy-that-works/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/wisdom-is-philosophy-that-works/"/>
     </url>
     <url>
         <loc>https://retoweber.info/book/influential-books/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/influential-books/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/influential-books/"/>
     </url>
     <url>
         <loc>https://retoweber.info/book/lessons-from-my-book/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/lessons-from-my-book/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/lessons-from-my-book/"/>
     </url>
     <url>
         <loc>https://retoweber.info/book/the-book/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/the-book/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/the-book/"/>
     </url>
     <url>
         <loc>https://retoweber.info/politik/e-id/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/e-id/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/e-id/"/>
     </url>
     <url>
         <loc>https://retoweber.info/politik/finanzen-beringen/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/finanzen-beringen/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/finanzen-beringen/"/>
     </url>
     <url>
         <loc>https://retoweber.info/politik/werkhof-baukredit/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/werkhof-baukredit/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/werkhof-baukredit/"/>
     </url>
     <url>
         <loc>https://retoweber.info/politik/zonenplanaenderung/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/zonenplanaenderung/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/zonenplanaenderung/"/>
     </url>
     <url>
+        <loc>https://retoweber.info/programming/background-generator/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/programming/background-generator/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/programming/background-generator/"/>
+    </url>
+    <url>
         <loc>https://retoweber.info/programming/buchfaltstudio/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/programming/buchfaltstudio/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/programming/buchfaltstudio/"/>
     </url>
     <url>
         <loc>https://retoweber.info/research/hoare-logic/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/research/hoare-logic/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/research/hoare-logic/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/book/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/politik/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/programming/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/programming/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/programming/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/research/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/research/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/research/"/>
     </url>
     <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40cspotcode/source-map-support/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40cspotcode/source-map-support/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40cspotcode/source-map-support/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40cspotcode/source-map-support/LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40cspotcode/source-map-support/LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40cspotcode/source-map-support/LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40esbuild/linux-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40esbuild/linux-x64/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40esbuild/linux-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40img/colour/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/colour/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/colour/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40img/colour/LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/colour/LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/colour/LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-libvips-linux-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-libvips-linux-x64/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-libvips-linux-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-libvips-linuxmusl-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-libvips-linuxmusl-x64/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-libvips-linuxmusl-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-linux-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-linux-x64/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-linux-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-linuxmusl-x64/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40img/sharp-linuxmusl-x64/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40img/sharp-linuxmusl-x64/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40jridgewell/resolve-uri/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40jridgewell/resolve-uri/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40jridgewell/resolve-uri/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40jridgewell/sourcemap-codec/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40jridgewell/sourcemap-codec/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40jridgewell/sourcemap-codec/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40jridgewell/trace-mapping/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40jridgewell/trace-mapping/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40jridgewell/trace-mapping/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node10/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node10/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node10/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node12/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node12/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node12/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node14/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node14/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node14/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node16/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40tsconfig/node16/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40tsconfig/node16/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/%40types/node/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/%40types/node/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/%40types/node/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/acorn/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/acorn/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/acorn/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/acorn/CHANGELOG/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/acorn/CHANGELOG/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/acorn/CHANGELOG/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/acorn-walk/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/acorn-walk/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/acorn-walk/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/acorn-walk/CHANGELOG/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/acorn-walk/CHANGELOG/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/acorn-walk/CHANGELOG/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/arg/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/arg/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/arg/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/arg/LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/arg/LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/arg/LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/create-require/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/create-require/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/create-require/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/create-require/CHANGELOG/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/create-require/CHANGELOG/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/create-require/CHANGELOG/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/detect-libc/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/detect-libc/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/detect-libc/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/diff/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/diff/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/diff/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/diff/CONTRIBUTING/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/diff/CONTRIBUTING/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/diff/CONTRIBUTING/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/diff/release-notes/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/diff/release-notes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/diff/release-notes/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/esbuild/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/esbuild/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/esbuild/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/esbuild/LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/esbuild/LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/esbuild/LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/make-error/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/make-error/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/make-error/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/semver/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/semver/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/semver/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/sharp/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/sharp/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/sharp/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/ts-node/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/ts-node/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/ts-node/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/ts-node/dist-raw/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/ts-node/dist-raw/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/ts-node/dist-raw/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/ts-node/dist-raw/NODE-LICENSE/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/ts-node/dist-raw/NODE-LICENSE/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/ts-node/dist-raw/NODE-LICENSE/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/typescript/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/typescript/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/typescript/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/typescript/SECURITY/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/typescript/SECURITY/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/typescript/SECURITY/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/undici-types/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/undici-types/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/undici-types/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/v8-compile-cache-lib/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/v8-compile-cache-lib/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/v8-compile-cache-lib/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/v8-compile-cache-lib/CHANGELOG/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/v8-compile-cache-lib/CHANGELOG/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/v8-compile-cache-lib/CHANGELOG/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/assets/background-generator/node_modules/yn/readme/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/assets/background-generator/node_modules/yn/readme/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/assets/background-generator/node_modules/yn/readme/"/>
+    </url>
+    <url>
         <loc>https://retoweber.info/de/blog/philosophy/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/science/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/philosophy/beliefs-are-relevant/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/beliefs-are-relevant/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/beliefs-are-relevant/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/philosophy/metaphysics-is-psychology/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/metaphysics-is-psychology/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/metaphysics-is-psychology/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/philosophy/truth-is-not-everything/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/truth-is-not-everything/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/truth-is-not-everything/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/philosophy/what-is-god/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/philosophy/what-is-god/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/philosophy/what-is-god/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/science/compressing-neural-networks/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/compressing-neural-networks/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/compressing-neural-networks/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/science/pytorch-is-slow-and-fast-on-windows/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/pytorch-is-slow-and-fast-on-windows/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/pytorch-is-slow-and-fast-on-windows/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/science/simulating-evolution/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/simulating-evolution/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/simulating-evolution/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/science/what-have-we-learned-and-some-educated-guesses/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/science/what-have-we-learned-and-some-educated-guesses/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/science/what-have-we-learned-and-some-educated-guesses/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/balance-between-creation-and-consumption/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/balance-between-creation-and-consumption/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/balance-between-creation-and-consumption/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/be-content-but-not-complacent/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/be-content-but-not-complacent/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/be-content-but-not-complacent/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/cleanliness-is-inhuman/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/cleanliness-is-inhuman/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/cleanliness-is-inhuman/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/good-equivalent-truth/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/good-equivalent-truth/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/good-equivalent-truth/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/intercession-is-for-you/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/intercession-is-for-you/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/intercession-is-for-you/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/learn-from-hypocrites/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/learn-from-hypocrites/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/learn-from-hypocrites/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/life-is-a-game/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/life-is-a-game/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/life-is-a-game/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/love-your-culture/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/love-your-culture/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/love-your-culture/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/meaning-is-perceivable/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/meaning-is-perceivable/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/meaning-is-perceivable/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/nichts-zu-verbergen/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/nichts-zu-verbergen/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/nichts-zu-verbergen/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/people-who-dislike-children-are-creepy/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/people-who-dislike-children-are-creepy/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/people-who-dislike-children-are-creepy/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/produce-instead-of-consume/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/produce-instead-of-consume/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/produce-instead-of-consume/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/soft-skills-in-hard-skill-jobs/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/soft-skills-in-hard-skill-jobs/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/soft-skills-in-hard-skill-jobs/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/the-ladder-of-engel/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/the-ladder-of-engel/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/the-ladder-of-engel/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/tolerance-for-foolishness/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/tolerance-for-foolishness/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/tolerance-for-foolishness/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/true-forgotten-ideas-are-worthless/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/true-forgotten-ideas-are-worthless/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/true-forgotten-ideas-are-worthless/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/truly-understand/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/truly-understand/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/truly-understand/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/willpower-is-a-limited-resource/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/willpower-is-a-limited-resource/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/willpower-is-a-limited-resource/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/blog/thoughts/wisdom-is-philosophy-that-works/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/blog/thoughts/wisdom-is-philosophy-that-works/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/blog/thoughts/wisdom-is-philosophy-that-works/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/book/influential-books/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/influential-books/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/influential-books/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/book/lessons-from-my-book/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/lessons-from-my-book/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/lessons-from-my-book/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/book/the-book/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/the-book/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/the-book/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/politik/e-id/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/e-id/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/e-id/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/politik/finanzen-beringen/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/finanzen-beringen/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/finanzen-beringen/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/politik/werkhof-baukredit/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/werkhof-baukredit/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/werkhof-baukredit/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/politik/zonenplanaenderung/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/zonenplanaenderung/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/zonenplanaenderung/"/>
     </url>
     <url>
+        <loc>https://retoweber.info/de/programming/background-generator/</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/programming/background-generator/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/programming/background-generator/"/>
+    </url>
+    <url>
         <loc>https://retoweber.info/de/programming/buchfaltstudio/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/programming/buchfaltstudio/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/programming/buchfaltstudio/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/research/hoare-logic/</loc>
-        <lastmod>2026-01-08</lastmod>
+        <lastmod>2026-01-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/research/hoare-logic/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/research/hoare-logic/"/>

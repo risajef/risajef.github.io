@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build:web": "tsc -p tsconfig.web.json && esbuild web/app.ts --bundle --format=esm --platform=browser --outfile=web/dist/app.js --sourcemap"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "typescript": "^5.4.3"
+  }
+}
