@@ -1,0 +1,75 @@
+:root {
+    font-family: system-ui, sans-serif;
+    line-height: 1.4;
+}
+
+body {
+    margin: 1rem;
+    color: #111;
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: start;
+}
+
+form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+fieldset {
+    border: 1px solid #bbb;
+    padding: 0.75rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.95rem;
+}
+
+input,
+select,
+button,
+textarea {
+    font: inherit;
+    padding: 0.35rem 0.5rem;
+    border: 1px solid #999;
+}
+
+button {
+    cursor: pointer;
+}
+
+.preview-panel {
+    border: 1px solid #bbb;
+    padding: 0.5rem;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.preview-area {
+    border: 1px dashed #aaa;
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+
+.preview-area svg {
+    width: 100%;
+    height: auto;
+}
+
+textarea {
+    width: 100%;
+    min-height: 160px;
+    resize: vertical;
+}
