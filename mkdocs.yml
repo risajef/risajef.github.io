@@ -7,22 +7,23 @@ theme:
   custom_dir: theme
 nav:
   - Programming:
-    - Buchfaltstudio: programming/buchfaltstudio.md
+      - Buchfaltstudio: programming/buchfaltstudio.md
+      - Background Generator: programming/background-generator.md
   - Research:
-    - Hoare Logic: research/hoare-logic.md
+      - Hoare Logic: research/hoare-logic.md
   - Politik:
-    # - Zonenplanänderung: politik/zonenplanaenderung.md
-    # - Werkhof Baukredit: politik/werkhof-baukredit.md
-    - Finanzen Beringen: politik/finanzen-beringen.md
+      # - Zonenplanänderung: politik/zonenplanaenderung.md
+      # - Werkhof Baukredit: politik/werkhof-baukredit.md
+      - Finanzen Beringen: politik/finanzen-beringen.md
     # - E-ID: politik/e-id.md
   - Blog:
-    - Thoughts: blog/thoughts.md
-    - Philosophy: blog/philosophy.md
-    - Science: blog/science.md
+      - Thoughts: blog/thoughts.md
+      - Philosophy: blog/philosophy.md
+      - Science: blog/science.md
   - Book:
-    - The Book: book/the-book.md
-    - Influential Books: book/influential-books.md
-    - Lessons from My Book: book/lessons-from-my-book.md
+      - The Book: book/the-book.md
+      - Influential Books: book/influential-books.md
+      - Lessons from My Book: book/lessons-from-my-book.md
 
 plugins:
   - i18n:
@@ -45,7 +46,7 @@ plugins:
         'programming/hoare-logic.md': 'research/hoare-logic.de.md'
         'research/buchfaltstudio.md': 'programming/buchfaltstudio.en.md'
   - mermaid-to-svg:
-      mmdc_path: "mmdc"
+      mmdc_path: 'mmdc'
       cleanup_generated_images: false
       process_in_serve: true
   - inline-select-svg
@@ -54,8 +55,8 @@ plugins:
       bib_by_default: false
   - exclude:
       glob:
-        - "private/*"
-        - "private/**/*"
+        - 'private/*'
+        - 'private/**/*'
   - rss:
       match_path: '^blog/(thoughts|philosophy|science)/'
       length: 20
@@ -83,40 +84,42 @@ hooks:
 extra:
   translations:
     en:
-      auto_translation_title: "Automated translation."
-      auto_translation_from_lang: "This page was machine translated from {lang} and may contain mistakes."
-      auto_translation_generic: "This page was machine translated and may contain mistakes."
+      auto_translation_title: 'Automated translation.'
+      auto_translation_from_lang: 'This page was machine translated from {lang} and may contain mistakes.'
+      auto_translation_generic: 'This page was machine translated and may contain mistakes.'
       nav:
         Programming: Programming
-        Buchfaltstudio: "Book folding studio"
+        Buchfaltstudio: 'Book folding studio'
+        'Background Generator': 'Background Generator'
         Research: Research
-        "Hoare Logic": "Hoare Logic"
+        'Hoare Logic': 'Hoare Logic'
         Politik: Politics
-        "Finanzen Beringen": "Finances Beringen"
+        'Finanzen Beringen': 'Finances Beringen'
         Blog: Blog
         Thoughts: Thoughts
         Philosophy: Philosophy
         Science: Science
         Book: Book
-        "The Book": "The Book"
-        "Influential Books": "Influential Books"
-        "Lessons from My Book": "Lessons from My Book"
+        'The Book': 'The Book'
+        'Influential Books': 'Influential Books'
+        'Lessons from My Book': 'Lessons from My Book'
     de:
-      auto_translation_title: "Automatische Übersetzung."
-      auto_translation_from_lang: "Diese Seite wurde maschinell aus {lang} übersetzt und kann Fehler enthalten."
-      auto_translation_generic: "Diese Seite wurde maschinell übersetzt und kann Fehler enthalten."
+      auto_translation_title: 'Automatische Übersetzung.'
+      auto_translation_from_lang: 'Diese Seite wurde maschinell aus {lang} übersetzt und kann Fehler enthalten.'
+      auto_translation_generic: 'Diese Seite wurde maschinell übersetzt und kann Fehler enthalten.'
       nav:
         Programming: Programmierung
         Buchfaltstudio: Buchfaltstudio
+        'Background Generator': 'Hintergrund Generator'
         Research: Forschung
-        "Hoare Logic": Hoare-Logik
+        'Hoare Logic': Hoare-Logik
         Politik: Politik
-        "Finanzen Beringen": "Finanzen Beringen"
+        'Finanzen Beringen': 'Finanzen Beringen'
         Blog: Blog
         Thoughts: Gedanken
         Philosophy: Philosophie
         Science: Wissenschaft
         Book: Buch
-        "The Book": "Das Buch"
-        "Influential Books": "Einflussreiche Bücher"
-        "Lessons from My Book": "Lektionen aus meinem Buch"
+        'The Book': 'Das Buch'
+        'Influential Books': 'Einflussreiche Bücher'
+        'Lessons from My Book': 'Lektionen aus meinem Buch'

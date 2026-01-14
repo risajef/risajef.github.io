@@ -1,14 +1,14 @@
 ---
 lang: en
 tags:
-- home
-- about
-- portfolio
-- programming
-- research
-- politics
-- blog
-- book
+  - home
+  - about
+  - portfolio
+  - programming
+  - research
+  - politics
+  - blog
+  - book
 auto_translated: false
 ---
 
@@ -23,14 +23,19 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
-## January 8th 2025
+## January 14th 2026
+
+Add [automatic background generator](/programming/background-generator).
+
+## January 8th 2026
+
 Make the website bilingual (English and German). All pages were translated using [Argos Translate](https://www.argosopentech.com) and then improved with GPT 5.2. The site also detects whether a manually created translation exists or not. If you see an automatically translated version, a notice appears at the top of the webpage indicating that it was auto-translated.
 
 ## Dezember 15th 2025
 
 New blog post: [Nothing to Hide](/blog/toughts/nichts-zu-verbergen.md)
 
-Add [Generator for Book Folding Art](/research/buchfaltstudio). I moved the [original repository](https://github.com/risajef/buchfalten) out and it is only synced here.
+Add [Generator for Book Folding Art](/programming/buchfaltstudio). I moved the [original repository](https://github.com/risajef/buchfalten) out and it is only synced here.
 
 ## November 12th 2025
 

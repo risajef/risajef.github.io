@@ -1,3 +1,9 @@
 [submodule "docs/assets/buchfalten"]
 	path = docs/assets/buchfalten
 	url = https://github.com/risajef/buchfalten.git
+[submodule "docs/programming/background-generator"]
+	path = docs/programming/background-generator
+	url = https://github.com/risajef/background-generator
+[submodule "docs/assets/background-generator"]
+	path = docs/assets/background-generator
+	url = https://github.com/risajef/background-generator
