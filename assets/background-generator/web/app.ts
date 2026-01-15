@@ -1,6 +1,7 @@
 import { generateBackgroundSvg, BACKGROUND_DEFAULTS, BackgroundOptions } from "../ts/lib/background";
 import { generatePolygalaxySvg, POLYGALAXY_THEMES, POLYGALAXY_STYLES, PolygalaxyOptions } from "../ts/lib/polygalaxy";
 import { generateTerrainSvg, TERRAIN_THEMES, TerrainOptions } from "../ts/lib/terrain";
+import { generateSkylineSvg, SKYLINE_THEMES, SkylineOptions } from "../ts/lib/skyline";
 
 type FieldType = "number" | "text" | "select" | "checkbox";
 
@@ -96,6 +97,31 @@ const terrainFields: FieldConfig[] = [
     { key: "moon", label: "Moon", type: "checkbox", defaultValue: false },
 ];
 
+const skylineFields: FieldConfig[] = [
+    { key: "width", label: "Width", type: "number", defaultValue: 5120, min: 320 },
+    { key: "height", label: "Height", type: "number", defaultValue: 1440, min: 200 },
+    { key: "seed", label: "Seed", type: "number", placeholder: "auto" },
+    {
+        key: "theme",
+        label: "Theme",
+        type: "select",
+        options: [
+            { label: "Random", value: "random" },
+            ...Object.entries(SKYLINE_THEMES).map(([key, theme]) => ({ label: theme.name, value: key })),
+        ],
+        defaultValue: "random",
+    },
+    { key: "layers", label: "Layers", type: "number", defaultValue: 3, min: 1, max: 5 },
+    { key: "buildingMin", label: "Buildings Min", type: "number", defaultValue: 8, min: 1 },
+    { key: "buildingMax", label: "Buildings Max", type: "number", defaultValue: 18, min: 1 },
+    { key: "windowDensity", label: "Window Density", type: "number", defaultValue: 0.55, min: 0, max: 1, step: 0.05 },
+    { key: "stars", label: "Stars", type: "checkbox", defaultValue: true },
+    { key: "haze", label: "Haze", type: "checkbox", defaultValue: true },
+    { key: "rooftops", label: "Rooftop Details", type: "checkbox", defaultValue: true },
+    { key: "water", label: "Water", type: "checkbox", defaultValue: true },
+    { key: "traffic", label: "Traffic", type: "checkbox", defaultValue: true },
+];
+
 const GENERATORS: Record<string, GeneratorConfig> = {
     background: {
         label: "Gradient Background",
@@ -122,6 +148,18 @@ const GENERATORS: Record<string, GeneratorConfig> = {
             const options: TerrainOptions = buildTerrainOptions(values);
             const result = generateTerrainSvg(options);
             return { svg: result.svg, meta: `${result.theme.name} • Seed ${result.seed}` };
+        },
+    },
+    skyline: {
+        label: "Urban Skyline",
+        fields: skylineFields,
+        run(values) {
+            const options: SkylineOptions = buildSkylineOptions(values);
+            const result = generateSkylineSvg(options);
+            return {
+                svg: result.svg,
+                meta: `${result.theme.name} • Seed ${result.seed} • ${result.buildingCount} buildings`,
+            };
         },
     },
 };
@@ -287,6 +325,29 @@ function buildTerrainOptions(values: ValueMap): TerrainOptions {
         fog: (values.fog as boolean | undefined) ?? false,
         noise: (values.noise as boolean | undefined) ?? false,
         moon: (values.moon as boolean | undefined) ?? false,
+    };
+}
+
+function buildSkylineOptions(values: ValueMap): SkylineOptions {
+    const minValue = typeof values.buildingMin === "number" ? values.buildingMin : 8;
+    const maxValue = typeof values.buildingMax === "number" ? values.buildingMax : 18;
+    const minBuildings = Math.min(minValue, maxValue);
+    const maxBuildings = Math.max(minValue, maxValue);
+    const rawDensity = typeof values.windowDensity === "number" ? values.windowDensity : 0.55;
+    const windowDensity = Math.max(0, Math.min(1, rawDensity));
+    return {
+        width: (values.width as number) ?? 5120,
+        height: (values.height as number) ?? 1440,
+        seed: values.seed as number | undefined,
+        theme: (values.theme as string | undefined) as SkylineOptions["theme"],
+        layers: (values.layers as number | undefined) ?? 3,
+        buildingsPerLayer: [minBuildings, maxBuildings],
+        windowDensity,
+        stars: values.stars as boolean | undefined,
+        haze: values.haze as boolean | undefined,
+        rooftopDetails: values.rooftops as boolean | undefined,
+        water: values.water as boolean | undefined,
+        traffic: values.traffic as boolean | undefined,
     };
 }
 
