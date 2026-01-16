@@ -2,6 +2,7 @@ import { generateBackgroundSvg, BACKGROUND_DEFAULTS, BackgroundOptions } from ".
 import { generatePolygalaxySvg, POLYGALAXY_THEMES, POLYGALAXY_STYLES, PolygalaxyOptions } from "../ts/lib/polygalaxy";
 import { generateTerrainSvg, TERRAIN_THEMES, TerrainOptions } from "../ts/lib/terrain";
 import { generateSkylineSvg, SKYLINE_THEMES, SkylineOptions } from "../ts/lib/skyline";
+import { generateBotanicalSvg, BOTANICAL_THEMES, BotanicalOptions } from "../ts/lib/botanical";
 
 type FieldType = "number" | "text" | "select" | "checkbox";
 
@@ -72,6 +73,9 @@ const polygalaxyFields: FieldConfig[] = [
     { key: "threads", label: "Threads", type: "number", placeholder: "style default", min: 0 },
     { key: "glows", label: "Glows", type: "number", placeholder: "style default", min: 0 },
     { key: "constellations", label: "Constellations", type: "number", placeholder: "style default", min: 0 },
+    { key: "systems", label: "Solar Systems", type: "number", placeholder: "style default", min: 0 },
+    { key: "arms", label: "Spiral Arms", type: "number", placeholder: "style default", min: 0 },
+    { key: "planets", label: "Planets", type: "number", placeholder: "style default", min: 0 },
     { key: "scanlines", label: "Scanlines", type: "checkbox", defaultValue: false },
 ];
 
@@ -122,6 +126,30 @@ const skylineFields: FieldConfig[] = [
     { key: "traffic", label: "Traffic", type: "checkbox", defaultValue: true },
 ];
 
+const botanicalFields: FieldConfig[] = [
+    { key: "width", label: "Width", type: "number", defaultValue: 5120, min: 320 },
+    { key: "height", label: "Height", type: "number", defaultValue: 1440, min: 200 },
+    { key: "seed", label: "Seed", type: "number", placeholder: "auto" },
+    {
+        key: "theme",
+        label: "Theme",
+        type: "select",
+        options: [
+            { label: "Random", value: "random" },
+            ...Object.entries(BOTANICAL_THEMES).map(([key, theme]) => ({ label: theme.name, value: key })),
+        ],
+        defaultValue: "random",
+    },
+    { key: "leaves", label: "Leaves", type: "number", placeholder: "auto", min: 0 },
+    { key: "fronds", label: "Fronds", type: "number", placeholder: "auto", min: 0 },
+    { key: "vines", label: "Vines", type: "number", placeholder: "auto", min: 0 },
+    { key: "blooms", label: "Blooms", type: "number", placeholder: "auto", min: 0 },
+    { key: "dew", label: "Dew Drops", type: "number", placeholder: "auto", min: 0 },
+    { key: "groundLayers", label: "Ground Layers", type: "number", placeholder: "auto", min: 1 },
+    { key: "veil", label: "Veil", type: "checkbox", defaultValue: true },
+    { key: "noise", label: "Noise", type: "checkbox", defaultValue: false },
+];
+
 const GENERATORS: Record<string, GeneratorConfig> = {
     background: {
         label: "Gradient Background",
@@ -159,6 +187,18 @@ const GENERATORS: Record<string, GeneratorConfig> = {
             return {
                 svg: result.svg,
                 meta: `${result.theme.name} • Seed ${result.seed} • ${result.buildingCount} buildings`,
+            };
+        },
+    },
+    botanical: {
+        label: "Botanical Garden",
+        fields: botanicalFields,
+        run(values) {
+            const options: BotanicalOptions = buildBotanicalOptions(values);
+            const result = generateBotanicalSvg(options);
+            return {
+                svg: result.svg,
+                meta: `${result.theme.name} • Seed ${result.seed} • ${result.counts.leaves} leaves`,
             };
         },
     },
@@ -309,6 +349,9 @@ function buildPolygalaxyOptions(values: ValueMap): PolygalaxyOptions {
         threads: values.threads as number | undefined,
         glows: values.glows as number | undefined,
         constellations: values.constellations as number | undefined,
+        systems: values.systems as number | undefined,
+        arms: values.arms as number | undefined,
+        planets: values.planets as number | undefined,
         scanlines: (values.scanlines as boolean | undefined) ?? false,
     };
 }
@@ -348,6 +391,23 @@ function buildSkylineOptions(values: ValueMap): SkylineOptions {
         rooftopDetails: values.rooftops as boolean | undefined,
         water: values.water as boolean | undefined,
         traffic: values.traffic as boolean | undefined,
+    };
+}
+
+function buildBotanicalOptions(values: ValueMap): BotanicalOptions {
+    return {
+        width: (values.width as number) ?? 5120,
+        height: (values.height as number) ?? 1440,
+        seed: values.seed as number | undefined,
+        theme: (values.theme as string | undefined) as BotanicalOptions["theme"],
+        leaves: values.leaves as number | undefined,
+        fronds: values.fronds as number | undefined,
+        vines: values.vines as number | undefined,
+        blooms: values.blooms as number | undefined,
+        dewDrops: values.dew as number | undefined,
+        groundLayers: values.groundLayers as number | undefined,
+        veil: values.veil as boolean | undefined,
+        noise: values.noise as boolean | undefined,
     };
 }
 

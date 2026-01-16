@@ -22,6 +22,9 @@ interface CliArgs {
     threads: number | null;
     glows: number | null;
     constellations: number | null;
+    systems: number | null;
+    arms: number | null;
+    planets: number | null;
     pngScale: number;
     scanlines: boolean;
     listThemes: boolean;
@@ -44,6 +47,9 @@ function parseArgs(): CliArgs {
         threads: null,
         glows: null,
         constellations: null,
+        systems: null,
+        arms: null,
+        planets: null,
         pngScale: 1,
         scanlines: false,
         listThemes: false,
@@ -106,6 +112,15 @@ function parseArgs(): CliArgs {
             case "--constellations":
                 defaults.constellations = parseInt(next() ?? "0", 10);
                 break;
+            case "--systems":
+                defaults.systems = parseInt(next() ?? "0", 10);
+                break;
+            case "--arms":
+                defaults.arms = parseInt(next() ?? "0", 10);
+                break;
+            case "--planets":
+                defaults.planets = parseInt(next() ?? "0", 10);
+                break;
             case "--png-scale":
                 defaults.pngScale = parseFloat(next() ?? "1");
                 break;
@@ -154,6 +169,9 @@ function buildGeneratorOptions(args: CliArgs, seed: number): PolygalaxyOptions {
         threads: args.threads,
         glows: args.glows,
         constellations: args.constellations,
+        systems: args.systems,
+        arms: args.arms,
+        planets: args.planets,
         scanlines: args.scanlines,
     };
 }

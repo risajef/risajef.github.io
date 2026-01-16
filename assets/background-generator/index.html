@@ -251,7 +251,7 @@
         <div class="content">
             
             <h1 id="background-generator-suite">Background Generator Suite</h1>
-<p>Procedural art playground written in TypeScript. It includes multiple SVG generators (gradient abstractions, galaxy shards, painted terrains, and now neon skylines), lightweight CLIs for batch rendering, optional PNG export via <code>sharp</code>, and a minimal browser UI for live previews.</p>
+<p>Procedural art playground written in TypeScript. It includes multiple SVG generators (gradient abstractions, polygalaxy shards, painted terrains, neon skylines, and lush botanical gardens), lightweight CLIs for batch rendering, optional PNG export via <code>sharp</code>, and a minimal browser UI for live previews.</p>
 <h2 id="requirements">Requirements</h2>
 <ul>
 <li>Node.js 18+</li>
@@ -267,7 +267,12 @@
 <h3 id="polygalaxy">Polygalaxy</h3>
 <pre><code>npx ts-node ts/generatePolygalaxy.ts --theme aurora --style loom --stars 600 --scanlines
 </code></pre>
-<p>List available styles and themes by inspecting <code>POLYGALAXY_THEMES</code>/<code>POLYGALAXY_STYLES</code> in <code>ts/lib/polygalaxy.ts</code>.</p>
+<p>Highlights:</p>
+<ul>
+<li><code>--systems</code>, <code>--arms</code>, and <code>--planets</code> steer the new orbital clusters and spiral arms if you want denser solar system layouts.</li>
+<li>The classic knobs (<code>--stars</code>, <code>--rings</code>, <code>--threads</code>, etc.) still override the style ranges.</li>
+<li>List available styles and themes by inspecting <code>POLYGALAXY_THEMES</code>/<code>POLYGALAXY_STYLES</code> in <code>ts/lib/polygalaxy.ts</code>.</li>
+</ul>
 <h3 id="terrain-landscapes">Terrain Landscapes</h3>
 <pre><code>npx ts-node ts/generateTerrain.ts --theme dusk --mountains 4 --fog --noise
 </code></pre>
@@ -285,6 +290,16 @@
 <li><code>--no-png</code> skips the heavyweight PNG conversions when you're just exploring SVGs.</li>
 <li><code>--list-themes</code> enumerates the available skyline palettes from <code>SKYLINE_THEMES</code>.</li>
 </ul>
+<h3 id="botanical-gardens-new">Botanical Gardens (new)</h3>
+<pre><code>npx ts-node ts/generateBotanical.ts --theme canopy --leaves 40 --fronds 18 --blooms 10 --noise
+</code></pre>
+<p>Highlights:</p>
+<ul>
+<li><code>--theme</code> accepts explicit palette keys or <code>random</code> (see <code>BOTANICAL_THEMES</code>).</li>
+<li>Abundance knobs (<code>--leaves</code>, <code>--fronds</code>, <code>--vines</code>, <code>--blooms</code>, <code>--dew</code>, <code>--ground-layers</code>) override the curated ranges.</li>
+<li><code>--veil</code> / <code>--no-veil</code> toggles the atmospheric overlay, while <code>--noise</code> sprinkles film grain.</li>
+<li><code>--list-themes</code> prints the available greenhouse palettes.</li>
+</ul>
 <h3 id="batch-all-generators">Batch All Generators</h3>
 <p>Want a quick sampler set? The helper script renders every generator <code>n</code> times (defaults to three) and converts the SVGs to PNGs.</p>
 <pre><code>npx ts-node ts/generateAll.ts --count 3
@@ -292,7 +307,7 @@
 <p>Flags:</p>
 <ul>
 <li><code>--width/--height</code> override the default 5120×1440 canvas for every generator.</li>
-<li><code>--seed</code> ensures repeatable runs across all four generators.</li>
+<li><code>--seed</code> ensures repeatable runs across all five generators.</li>
 <li><code>--no-png</code> limits the job to SVGs if you do not have <code>sharp</code> installed or just want faster output.</li>
 </ul>
 <h2 id="web-preview">Web Preview</h2>

@@ -3,6 +3,7 @@ import fs from "node:fs";
 import { promises as fsp } from "node:fs";
 import path from "node:path";
 import { generateBackgroundSvg } from "./lib/background";
+import { generateBotanicalSvg } from "./lib/botanical";
 import { generatePolygalaxySvg } from "./lib/polygalaxy";
 import { generateTerrainSvg } from "./lib/terrain";
 import { generateSkylineSvg } from "./lib/skyline";
@@ -132,6 +133,22 @@ async function main(): Promise<void> {
                     svg: result.svg,
                     detail: `seed-${seed}`,
                     note: `Palette ${result.palette.gradient.join(" / ")}`,
+                };
+            },
+        },
+        {
+            key: "botanical",
+            label: "Botanical Garden",
+            run(seed: number) {
+                const result = generateBotanicalSvg({
+                    width: args.width,
+                    height: args.height,
+                    seed,
+                });
+                return {
+                    svg: result.svg,
+                    detail: result.theme.name,
+                    note: `Flora ${result.theme.name} • ${result.counts.leaves} leaves`,
                 };
             },
         },
