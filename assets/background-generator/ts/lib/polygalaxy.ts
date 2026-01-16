@@ -19,6 +19,9 @@ export interface StylePreset {
     glows: [number, number];
     constellations: [number, number];
     stars: [number, number];
+    systems: [number, number];
+    arms: [number, number];
+    planets: [number, number];
 }
 
 export interface PolygalaxyOptions {
@@ -33,6 +36,9 @@ export interface PolygalaxyOptions {
     threads?: number | null;
     glows?: number | null;
     constellations?: number | null;
+    systems?: number | null;
+    arms?: number | null;
+    planets?: number | null;
     scanlines?: boolean;
 }
 
@@ -98,6 +104,9 @@ const STYLE_PRESETS: Record<string, StylePreset> = {
         glows: [4, 6],
         constellations: [2, 3],
         stars: [380, 520],
+        systems: [2, 3],
+        arms: [2, 3],
+        planets: [8, 14],
     },
     loom: {
         facets: [4, 6],
@@ -106,6 +115,9 @@ const STYLE_PRESETS: Record<string, StylePreset> = {
         glows: [2, 3],
         constellations: [3, 4],
         stars: [420, 620],
+        systems: [3, 4],
+        arms: [3, 4],
+        planets: [12, 18],
     },
     rift: {
         facets: [3, 5],
@@ -114,6 +126,9 @@ const STYLE_PRESETS: Record<string, StylePreset> = {
         glows: [5, 7],
         constellations: [1, 2],
         stars: [260, 360],
+        systems: [1, 2],
+        arms: [2, 3],
+        planets: [5, 9],
     },
 };
 
@@ -163,7 +178,9 @@ export function generatePolygalaxySvg(options: PolygalaxyOptions = {}): Polygala
     addBackground(builder, theme);
     addFacets(builder, theme, counts.facets, rng);
     addGlowPortals(builder, theme, counts.glows, rng);
+    addSpiralArms(builder, theme, counts.arms ?? 0, rng);
     addArcRings(builder, theme, counts.rings, rng);
+    addOrbitalSystems(builder, theme, counts.systems ?? 0, counts.planets ?? 0, rng);
     addSignalThreads(builder, theme, counts.threads, rng);
     addStarfield(builder, theme, counts.stars, rng);
     addConstellations(builder, theme, counts.constellations, rng);
@@ -198,7 +215,7 @@ function resolveStyle(
         const range = preset[key];
         resolved[key] = rng.int(range[0], range[1]);
     }
-    for (const key of ["stars", "facets", "rings", "threads", "glows", "constellations"] as const) {
+    for (const key of ["stars", "facets", "rings", "threads", "glows", "constellations", "systems", "arms", "planets"] as const) {
         const override = overrides[key];
         if (typeof override === "number" && !Number.isNaN(override)) {
             resolved[key] = Math.max(0, override);
@@ -308,6 +325,73 @@ function addSignalThreads(builder: SvgBuilder, theme: Theme, count: number, rng:
     }
 }
 
+function addOrbitalSystems(
+    builder: SvgBuilder,
+    theme: Theme,
+    systems: number,
+    planetBudget: number,
+    rng: RNG,
+): void {
+    if (!systems) {
+        return;
+    }
+    const minDim = Math.min(builder.width, builder.height);
+    const totalPlanets = planetBudget && planetBudget > 0 ? planetBudget : rng.int(systems * 3, systems * 6);
+    let remainingPlanets = Math.max(totalPlanets, systems);
+    for (let index = 0; index < systems; index += 1) {
+        const cx = rng.float(0.2, 0.8) * builder.width;
+        const cy = rng.float(0.2, 0.8) * builder.height;
+        const orbitCount = rng.int(2, 4);
+        const outerRadius = minDim * rng.float(0.08, 0.16);
+        const perSystemBase = Math.max(1, Math.floor(remainingPlanets / Math.max(1, systems - index)));
+        let planetsForSystem = Math.min(remainingPlanets, perSystemBase + rng.int(0, 2));
+        remainingPlanets -= planetsForSystem;
+        const sunGrad = builder.uid("sun-core");
+        builder.addDef(`
+            <radialGradient id="${sunGrad}">
+                <stop offset="0%" stop-color="${theme.glows[0]}" stop-opacity="0.95" />
+                <stop offset="70%" stop-color="${theme.glows[1]}" stop-opacity="0.35" />
+                <stop offset="100%" stop-color="${theme.glows[1]}" stop-opacity="0" />
+            </radialGradient>
+        `);
+        builder.addLayer(
+            `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(minDim * 0.015).toFixed(2)}" fill="url(#${sunGrad})" opacity="0.9" />`,
+        );
+        for (let orbit = 1; orbit <= orbitCount; orbit += 1) {
+            const radius = (outerRadius / orbitCount) * orbit * rng.float(0.92, 1.08);
+            builder.addLayer(
+                `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${radius.toFixed(2)}" fill="none" stroke="${theme.grid}" stroke-opacity="0.35" stroke-width="${(minDim * 0.0015).toFixed(3)}" stroke-dasharray="${rng.float(18, 32).toFixed(1)} ${rng.float(30, 55).toFixed(1)}" />`,
+            );
+            if (planetsForSystem <= 0) {
+                continue;
+            }
+            const planetsOnOrbit = Math.min(planetsForSystem, rng.int(1, 3));
+            planetsForSystem -= planetsOnOrbit;
+            for (let p = 0; p < planetsOnOrbit; p += 1) {
+                const angle = rng.float(0, Math.PI * 2);
+                const px = cx + Math.cos(angle) * radius;
+                const py = cy + Math.sin(angle) * radius;
+                const pr = minDim * rng.float(0.004, 0.011);
+                const highlight = pr * rng.float(0.35, 0.6);
+                builder.addLayer(
+                    `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${pr.toFixed(3)}" fill="${theme.star}" opacity="0.85" />`,
+                );
+                builder.addLayer(
+                    `<circle cx="${(px - highlight / 2).toFixed(1)}" cy="${(py - highlight / 2).toFixed(1)}" r="${(highlight / 2.2).toFixed(3)}" fill="${theme.accent}" opacity="0.5" />`,
+                );
+                const tailAngle = angle + Math.PI / 2;
+                const tailLength = pr * rng.float(2.5, 4.5);
+                builder.addLayer(
+                    `<path d="M ${px.toFixed(1)},${py.toFixed(1)} L ${(px + Math.cos(tailAngle) * tailLength).toFixed(1)},${(py + Math.sin(tailAngle) * tailLength).toFixed(1)}" stroke="${theme.accent}" stroke-width="${(pr * 0.4).toFixed(3)}" stroke-opacity="0.35" stroke-linecap="round" />`,
+                );
+            }
+        }
+        if (planetsForSystem > 0 && index < systems - 1) {
+            remainingPlanets += planetsForSystem;
+        }
+    }
+}
+
 function addGlowPortals(builder: SvgBuilder, theme: Theme, count: number, rng: RNG): void {
     for (let i = 0; i < count; i += 1) {
         const gradId = builder.uid("portal");
@@ -325,6 +409,55 @@ function addGlowPortals(builder: SvgBuilder, theme: Theme, count: number, rng: R
         builder.addLayer(
             `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${radius.toFixed(1)}" fill="url(#${gradId})" opacity="0.85" />`,
         );
+    }
+}
+
+function addSpiralArms(builder: SvgBuilder, theme: Theme, armCount: number, rng: RNG): void {
+    if (!armCount) {
+        return;
+    }
+    const centerX = builder.width * rng.float(0.35, 0.65);
+    const centerY = builder.height * rng.float(0.35, 0.65);
+    const maxRadius = Math.min(builder.width, builder.height) * rng.float(0.42, 0.58);
+    const blurId = builder.uid("arm-blur");
+    builder.addDef(`
+        <filter id="${blurId}" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="4" />
+        </filter>
+    `);
+    for (let arm = 0; arm < armCount; arm += 1) {
+        const baseAngle = (arm / armCount) * Math.PI * 2 + rng.float(-0.4, 0.4);
+        const sweep = Math.PI * rng.float(1.6, 2.4);
+        const steps = 48;
+        const points: Array<[number, number]> = [];
+        for (let step = 0; step <= steps; step += 1) {
+            const t = step / steps;
+            const angle = baseAngle + sweep * t;
+            const radius = maxRadius * Math.pow(t, 0.85) * (1 + rng.float(-0.05, 0.08));
+            const x = centerX + Math.cos(angle) * radius;
+            const y = centerY + Math.sin(angle) * radius * rng.float(0.92, 1.12);
+            points.push([x, y]);
+        }
+        if (!points.length) {
+            continue;
+        }
+        const path = points
+            .map(([x, y], idx) => `${idx === 0 ? "M" : "L"} ${x.toFixed(1)},${y.toFixed(1)}`)
+            .join(" ");
+        const strokeWidth = (builder.height * rng.float(0.006, 0.012)).toFixed(3);
+        const opacity = (0.28 + (1 - arm / Math.max(1, armCount - 1)) * 0.25).toFixed(2);
+        builder.addLayer(
+            `<path d="${path}" fill="none" stroke="${theme.accent}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="${opacity}" filter="url(#${blurId})" stroke-dasharray="${rng.float(60, 120).toFixed(1)} ${rng.float(18, 36).toFixed(1)}" />`,
+        );
+        const clusters: string[] = [];
+        for (let step = 0; step < points.length; step += rng.int(3, 6)) {
+            const [x, y] = points[step];
+            const r = rng.float(2.2, 5.1);
+            clusters.push(
+                `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(2)}" fill="${theme.star}" opacity="${rng.float(0.35, 0.8).toFixed(2)}" />`,
+            );
+        }
+        builder.addLayer(`<g style="mix-blend-mode:screen;">${clusters.join(" ")}</g>`);
     }
 }
 
