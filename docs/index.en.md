@@ -1,20 +1,22 @@
 ---
 lang: en
 tags:
-  - home
-  - about
-  - portfolio
-  - programming
-  - research
-  - politics
-  - blog
-  - book
+  + home
+  + about
+  + portfolio
+  + programming
+  + research
+  + politics
+  + blog
+  + book
 auto_translated: false
 ---
 
 # Welcome
 
-![Protrait](assets/images/Portrait_bg.jpg){:.float-right}
+![Protrait](assets/images/Portrait_bg.jpg)
+
+{:.float-right}
 I am grateful to have such a wide diversity of roles. For public interest are probably my two professional careers as a [programmer](programming.md) and [researcher](research.md) as well as my [political career](politik.md). And maybe at last my [personal content](blog.md) about philosophy, science, literature and religion.
 
 > The site is fully bilingual (English and German). Most pages were translated using [Argos Translate](https://www.argosopentech.com) and then improved with GPT 5.2. If a page was translated this way, it is marked with a notice at the top.
@@ -22,6 +24,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 # News
 
 You see there what I changed most recently on the website.
+
+## Februar 11th 2026
+
+Add [vibe coding](/blog/science/vibe-coding) blog article.
 
 ## January 14th 2026
 

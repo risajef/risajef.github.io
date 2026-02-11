@@ -1,20 +1,22 @@
 ---
 lang: de
 tags:
-  - home
-  - about
-  - portfolio
-  - programming
-  - research
-  - politics
-  - blog
-  - book
+  + home
+  + about
+  + portfolio
+  + programming
+  + research
+  + politics
+  + blog
+  + book
 auto_translated: false
 ---
 
 # Willkommen
 
-![Portrait](assets/images/Portrait_bg.jpg){:.float-right}
+![Portrait](assets/images/Portrait_bg.jpg)
+
+{:.float-right}
 Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar sind vor allem meine beiden beruflichen Laufbahnen als [Programmierer](programming.md) und [Forscher](research.md) sowie mein politisches Engagement ([Politik](politik.md)). Und vielleicht zuletzt noch meine [persönlichen Texte](blog.md) über Philosophie, Wissenschaft, Literatur und Religion.
 
 > Die Seite ist komplett zweisprachig (Englisch und Deutsch). Die meisten Seiten wurden von [Argos Translate](https://www.argosopentech.com) übersetzt und danach von GPT5.2 verbessert. Wurde die Seite so übersetzt, ist es mit einem Hinweis oben gekennzeichnet.
@@ -22,6 +24,10 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 # Neuigkeiten
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
+
+## Februar 11th 2026
+
+Füge [vibe coding](/blog/science/vibe-coding) Blog Artikel hinzu.
 
 ## January 14th 2026
 
