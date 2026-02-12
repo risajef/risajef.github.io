@@ -10,3 +10,4 @@ assets/piper-tts/audio/*.mp3 filter=lfs diff=lfs merge=lfs -text
 /assets/background-generator/node_modules/typescript/lib/_tsc.js filter=lfs diff=lfs merge=lfs -text
 /assets/background-generator/node_modules/typescript/lib/typescript.js filter=lfs diff=lfs merge=lfs -text
 /assets/parallelismus/dist/data/bible.json filter=lfs diff=lfs merge=lfs -text
+/assets/parallelismus/dist/data/bible-index.json filter=lfs diff=lfs merge=lfs -text
