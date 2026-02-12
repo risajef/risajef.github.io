@@ -2088,6 +2088,8 @@ var fieldsContainer = document.getElementById("dynamic-fields");
 var preview = document.getElementById("preview");
 var meta = document.getElementById("meta");
 var output = document.getElementById("svg-output");
+var heroHeader = document.getElementById("hero-header");
+var heroMeta = document.getElementById("hero-meta");
 function init() {
   Object.entries(GENERATORS).forEach(([key, config]) => {
     const option = document.createElement("option");
@@ -2098,6 +2100,7 @@ function init() {
   generatorSelect.addEventListener("change", () => renderFields(generatorSelect.value));
   renderFields(generatorSelect.value);
   form.addEventListener("submit", handleSubmit);
+  applyHeroBackground();
 }
 function renderFields(generatorKey) {
   const config = GENERATORS[generatorKey];
@@ -2278,6 +2281,29 @@ function buildBotanicalOptions(values) {
     veil: values.veil,
     noise: values.noise
   };
+}
+function svgToDataUrl(svg) {
+  return `url("data:image/svg+xml,${encodeURIComponent(svg).replace(/'/g, "%27").replace(/"/g, "%22")}")`;
+}
+function applyHeroBackground() {
+  if (!heroHeader) {
+    return;
+  }
+  const { svg, seed, palette } = generateBackgroundSvg({
+    width: 2400,
+    height: 640,
+    blobCount: void 0,
+    ribbonCount: void 0,
+    orbCount: void 0,
+    lightCount: void 0,
+    lineCount: void 0,
+    triangleCount: void 0,
+    waveCount: void 0
+  });
+  heroHeader.style.backgroundImage = svgToDataUrl(svg);
+  if (heroMeta) {
+    heroMeta.textContent = `Header seed ${seed} \u2022 Palette ${palette.gradient.join(" / ")}`;
+  }
 }
 init();
 //# sourceMappingURL=app.js.map
