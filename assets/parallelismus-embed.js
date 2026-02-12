@@ -22,6 +22,16 @@
         });
     }
 
+    function fixRelativeLinks(root, baseUrl) {
+        // Fix all relative links and make them absolute
+        root.querySelectorAll("a[href]").forEach((link) => {
+            const href = link.getAttribute("href");
+            if (href && !href.startsWith("http://") && !href.startsWith("https://") && !href.startsWith("#")) {
+                link.setAttribute("href", new URL(href, baseUrl).href);
+            }
+        });
+    }
+
     function loadScript(src, type = null) {
         return new Promise((resolve, reject) => {
             const script = document.createElement("script");
@@ -65,6 +75,7 @@
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, "text/html");
             stripEmbeddedScripts(doc.body);
+            fixRelativeLinks(doc.body, parallelismusBase);
             container.removeAttribute("data-state");
             container.innerHTML = doc.body.innerHTML;
             await Promise.all([
