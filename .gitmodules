@@ -7,3 +7,6 @@
 [submodule "docs/assets/background-generator"]
 	path = docs/assets/background-generator
 	url = https://github.com/risajef/background-generator
+[submodule "docs/assets/parallelismus"]
+	path = docs/assets/parallelismus
+	url = https://github.com/risajef/parallelismus.git
