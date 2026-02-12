@@ -25,6 +25,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## February 12th 2026
+
+Add [Parallelismus](/programming/parallelismus) - a web application for studying biblical parallelism in Hebrew and Greek texts with Strong's concordance integration.
+
 ## Februar 11th 2026
 
 Add [vibe coding](/blog/science/vibe-coding) blog article.

@@ -25,6 +25,10 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
+## 12. Februar 2026
+
+Füge [Parallelismus](/programming/parallelismus) hinzu - eine Webanwendung zum Studium biblischer Parallelismen in hebräischen und griechischen Texten mit Strong-Konkordanz-Integration.
+
 ## Februar 11th 2026
 
 Füge [vibe coding](/blog/science/vibe-coding) Blog Artikel hinzu.
