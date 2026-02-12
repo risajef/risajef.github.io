@@ -78,6 +78,20 @@
             fixRelativeLinks(doc.body, parallelismusBase);
             container.removeAttribute("data-state");
             container.innerHTML = doc.body.innerHTML;
+            
+            // Add import map to resolve relative module imports
+            const importMap = document.createElement("script");
+            importMap.type = "importmap";
+            importMap.textContent = JSON.stringify({
+                imports: {
+                    "./app.js": new URL("app.js", parallelismusBase).href,
+                    "./dom-utils.js": new URL("dom-utils.js", parallelismusBase).href,
+                    "./tooltip.js": new URL("tooltip.js", parallelismusBase).href,
+                    "./keyboard.js": new URL("keyboard.js", parallelismusBase).href
+                }
+            });
+            document.head.appendChild(importMap);
+            
             await Promise.all([
                 loadStylesheet(stylesUrl),
                 loadScript(mainJsUrl, "module"),
