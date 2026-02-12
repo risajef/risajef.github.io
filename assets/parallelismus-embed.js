@@ -75,6 +75,9 @@
             container.removeAttribute("data-state");
             container.innerHTML = doc.body.innerHTML;
 
+            // Expose the base URL so the bundled code can resolve data paths
+            window.__PARALLELISMUS_BASE__ = parallelismusBase;
+
             await Promise.all([
                 loadStylesheet(stylesUrl),
                 loadScript(mainJsUrl),
