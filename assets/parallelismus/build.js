@@ -177,7 +177,7 @@ function compileScss() {
 // ── 4. Bundle JavaScript files ───────────────────────────────────────────────
 async function bundleJs() {
     console.log('Bundling JavaScript…');
-    
+
     // Bundle main index.js
     await esbuild.build({
         entryPoints: [path.join(FRONTEND_DIR, 'index.static.js')],
@@ -188,7 +188,7 @@ async function bundleJs() {
         sourcemap: false,
     });
     console.log('  index.js bundled');
-    
+
     // Bundle other pages if they exist
     const pagesToBundle = ['strong_search.static.js', 'graph.static.js'];
     for (const page of pagesToBundle) {
