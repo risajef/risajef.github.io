@@ -1,14 +1,14 @@
 ---
 extra_css: []
 extra_javascript:
-  + assets/parallelismus-embed.js
+  - assets/parallelismus-embed.js
 tags:
-  + parallelismus
-  + bibel
-  + forschung
-  + tool
-  + hebräisch
-  + griechisch
+  - parallelismus
+  - bibel
+  - forschung
+  - tool
+  - hebräisch
+  - griechisch
 github: https://github.com/risajef/parallelismus
 lang: de
 auto_translated: false
