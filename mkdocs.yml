@@ -57,6 +57,9 @@ plugins:
       glob:
         - 'private/*'
         - 'private/**/*'
+        - 'assets/*/node_modules/**'
+        - 'assets/*/README.md'
+        - 'assets/*/Description.md'
   - rss:
       match_path: '^blog/(thoughts|philosophy|science)/'
       length: 20
