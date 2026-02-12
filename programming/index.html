@@ -9,13 +9,13 @@
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science.">
     <meta name="author" content="Reto Weber">
     <meta name="keywords"
-        content="Reto Weber, programming, research, politics, blog, books, religion, philosophy, science, programming, cv, projects, machine-learning, formal-verification">
+        content="Reto Weber, programming, research, politics, blog, books, religion, philosophy, science">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph (for rich previews on social platforms) -->
-    <meta property="og:title" content="Experience">
+    <meta property="og:title" content="Programming">
     <meta property="og:description"
-        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [programmingcvprojectsmachine-learningformal-verification]">
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
     <meta property="og:type"
         content="website">
     <meta property="og:url" content="/programming/">
@@ -24,9 +24,9 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Experience">
+    <meta name="twitter:title" content="Programming">
     <meta name="twitter:description"
-        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [programmingcvprojectsmachine-learningformal-verification]">
+        content="Reto Weber - programming, research, politics, books, religion, philosophy and science. []">
     <meta name="twitter:image" content="/output.png">
 
     <!-- JSON-LD Structured Data for rich results -->
@@ -38,8 +38,8 @@
         "@type": "WebPage",
         "@id": "/programming/"
       },
-      "headline": "Experience",
-      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. [programmingcvprojectsmachine-learningformal-verification]",
+      "headline": "Programming",
+      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. []",
       "author": {
         "@type": "Person",
         "name": "Reto Weber"
@@ -55,7 +55,7 @@
     }
     </script>
 
-    <title>Experience - Reto Weber</title>
+    <title>Programming - Reto Weber</title>
     
     <link href="../assets/rss-feed.css" rel="stylesheet">
 
@@ -282,6 +282,18 @@
                     <ul>
                         
                         <li class="toc-sub">
+                            <a href="#parallelismus">Parallelismus</a>
+                        </li>
+                        
+                        <li class="toc-sub">
+                            <a href="#background-generator">Background Generator</a>
+                        </li>
+                        
+                        <li class="toc-sub">
+                            <a href="#buchfaltstudio">Buchfaltstudio</a>
+                        </li>
+                        
+                        <li class="toc-sub">
                             <a href="#hoare-logic-proof-verifier">Hoare-Logic proof verifier</a>
                         </li>
                         
@@ -318,7 +330,17 @@
         </div>
         <div class="content">
             
-            <h1 id="experience">Experience</h1>
+            <hr />
+<p>lang: en
+tags:
+* programming
+* cv
+* projects
+* machine-learning
+* formal-verification
+auto_translated: false</p>
+<hr />
+<h1 id="experience">Experience</h1>
 <h2 id="3d-vision-engineer">3d Vision Engineer</h2>
 <p><strong><a href="https://brel.ch">Brütsch Technology</a></strong>
 Beringen, Switzerland
@@ -373,6 +395,15 @@ Apr 2018 – Jun 2019<br />
 </ul>
 <hr />
 <h1 id="projects">Projects</h1>
+<h2 id="parallelismus">Parallelismus</h2>
+<p><a href="https://github.com/risajef/parallelismus"><strong>GitHub</strong></a>, <a href="https://retoweber.info/programming/parallelismus/"><strong>Web Demo</strong></a><br />
+Parallelismus is a web application for studying biblical parallelism in Hebrew and Greek texts. It allows users to navigate through biblical books, chapters, and verses, viewing words with their Strong's concordance numbers, original language texts, and translations. Users can create and manage semantic relationships between words (such as similar meaning, opposite meaning, subcategories, and composition). The tool uses IndexedDB for local storage and includes visualization features for exploring word relationships through interactive graphs. All data processing happens client-side, making it a fully functional static web application.</p>
+<h2 id="background-generator">Background Generator</h2>
+<p><a href="https://github.com/risajef/background-generator"><strong>GitHub</strong></a>, <a href="https://retoweber.info/programming/background-generator/"><strong>Web Demo</strong></a><br />
+Background Generator is a procedural art suite that creates stunning SVG backgrounds using TypeScript. It includes five distinct generators: gradient abstractions with blobs and ribbons, polygalaxy scenes with geometric shards and orbital systems, terrain landscapes with mountains and fog, urban skylines with parallax layers, and botanical gardens with leaves and vines. The tool offers both a web playground for real-time experimentation and CLI tools for batch rendering. All generators support customizable themes, seeded randomization for reproducibility, and optional PNG export.</p>
+<h2 id="buchfaltstudio">Buchfaltstudio</h2>
+<p><a href="https://github.com/risajef/buchfalten"><strong>GitHub</strong></a>, <a href="https://retoweber.info/programming/buchfaltstudio/"><strong>Web Demo</strong></a><br />
+Buchfaltstudio is a book folding pattern generator that creates precision folding instructions for book art (Orimoto). Users can either enter text (which is automatically rendered using Google Fonts) or upload images (SVG, PNG, JPEG, GIF, WebP). The tool analyzes the artwork, scales it to physical book dimensions, detects dark regions, and generates detailed PDF instructions with millimeter-precise fold positions. Features include automatic book preview rendering, customizable page count and book height, and fully client-side processing for instant results.</p>
 <h2 id="hoare-logic-proof-verifier">Hoare-Logic proof verifier</h2>
 <p><a href="https://github.com/risajef/hoare-logic"><strong>GitHub</strong></a>, <a href="https://retoweber.info/research/hoare-logic/"><strong>Web Demo</strong></a><br />
 This is a web technology based hoare logic verifier. The user can create programs and their proofs using drag and drop. The proofs of the hoare logic have to be explicit to the end. The logical and arithmetical proof obligations are fed to the SMT solver <a href="https://github.com/Z3Prover/z3">Z3</a>. The tool is fully frontend based. No server is needed. That is why the application also works on this static website.</p>
