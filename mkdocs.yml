@@ -9,6 +9,7 @@ nav:
   - Programming:
       - Buchfaltstudio: programming/buchfaltstudio.md
       - Background Generator: programming/background-generator.md
+      - Parallelismus: programming/parallelismus.md
   - Research:
       - Hoare Logic: research/hoare-logic.md
   - Politik:
@@ -94,6 +95,7 @@ extra:
         Programming: Programming
         Buchfaltstudio: 'Book folding studio'
         'Background Generator': 'Background Generator'
+        Parallelismus: 'Parallelismus'
         Research: Research
         'Hoare Logic': 'Hoare Logic'
         Politik: Politics
@@ -114,6 +116,7 @@ extra:
         Programming: Programmierung
         Buchfaltstudio: Buchfaltstudio
         'Background Generator': 'Hintergrund Generator'
+        Parallelismus: Parallelismus
         Research: Forschung
         'Hoare Logic': Hoare-Logik
         Politik: Politik
