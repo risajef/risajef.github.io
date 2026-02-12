@@ -74,7 +74,7 @@
             fixRelativeLinks(doc.body, parallelismusBase);
             container.removeAttribute("data-state");
             container.innerHTML = doc.body.innerHTML;
-            
+
             await Promise.all([
                 loadStylesheet(stylesUrl),
                 loadScript(mainJsUrl),

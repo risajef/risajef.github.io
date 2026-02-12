@@ -1,14 +1,14 @@
 ---
 lang: en
 tags:
-  + home
-  + about
-  + portfolio
-  + programming
-  + research
-  + politics
-  + blog
-  + book
+  - home
+  - about
+  - portfolio
+  - programming
+  - research
+  - politics
+  - blog
+  - book
 auto_translated: false
 ---
 
