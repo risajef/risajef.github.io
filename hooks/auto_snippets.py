@@ -199,3 +199,13 @@ def _render_entries(entries: List[SnippetEntry]) -> str:
         lines.append(directive)
         lines.append("")
     return "\n".join(lines).strip() + "\n"
+
+
+def on_post_build(config, **_):
+    """Copy sitemap.xml to sitemap2.xml in the site directory."""
+    site_dir = Path(config["site_dir"])
+    src = site_dir / "sitemap.xml"
+    dst = site_dir / "sitemap2.xml"
+    if src.exists():
+        shutil.copy2(src, dst)
+        log.info("Copied sitemap.xml → sitemap2.xml")
