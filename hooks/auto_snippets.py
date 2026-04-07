@@ -1,4 +1,5 @@
 """MkDocs hook to auto-generate --8<-- snippet lists for category pages."""
+
 from __future__ import annotations
 
 import shutil
@@ -15,6 +16,8 @@ PLACEHOLDER = "<!-- AUTO_SNIPPETS -->"
 PROJECT_DIR = Path.cwd()
 DOCS_DIR = PROJECT_DIR / "docs"
 GIT_AVAILABLE = shutil.which("git") is not None
+PYTHON_BLOCKS_SUBMODULE_DIR = Path("assets/python-blocks")
+PYTHON_BLOCKS_OUTPUT_DIR = Path("assets/python-blocks-dist")
 
 
 @dataclass
@@ -41,6 +44,11 @@ def on_config(config, **_):
     return config
 
 
+def on_pre_build(config, **_):
+    """Build third-party static apps before MkDocs copies docs/ assets."""
+    _ensure_python_blocks_bundle()
+
+
 def on_page_markdown(markdown, *, page, config, files):
     """Replace placeholder blocks with auto-generated snippet directives."""
     meta = getattr(page, "meta", {}) or {}
@@ -54,7 +62,9 @@ def on_page_markdown(markdown, *, page, config, files):
 
     lang = meta.get("lang") or getattr(page.file, "locale", None)
     if not lang:
-        log.warning("auto_snippets requires a 'lang' metadata entry on %s", page.file.src_path)
+        log.warning(
+            "auto_snippets requires a 'lang' metadata entry on %s", page.file.src_path
+        )
         return markdown
 
     entries = _collect_snippet_entries(directory, lang)
@@ -96,7 +106,9 @@ def _parse_auto_config(auto_cfg, page):
 
 
 def _infer_directory_from_page(page) -> Optional[str]:
-    lang = (getattr(page, "meta", None) or {}).get("lang") or getattr(page.file, "locale", None)
+    lang = (getattr(page, "meta", None) or {}).get("lang") or getattr(
+        page.file, "locale", None
+    )
     if not lang:
         return None
     src = Path(page.file.src_path)
@@ -190,7 +202,10 @@ def _last_modified_timestamp(path: Path) -> int:
 
 
 def _render_entries(entries: List[SnippetEntry]) -> str:
-    lines = ["<!-- AUTO-GENERATED: snippet list. Update individual posts instead. -->", ""]
+    lines = [
+        "<!-- AUTO-GENERATED: snippet list. Update individual posts instead. -->",
+        "",
+    ]
     for entry in entries:
         if entry.start_line > 1:
             directive = f'--8<-- "{entry.rel_path}:{entry.start_line}:"'
@@ -209,3 +224,131 @@ def on_post_build(config, **_):
     if src.exists():
         shutil.copy2(src, dst)
         log.info("Copied sitemap.xml → sitemap2.xml")
+
+
+def _ensure_python_blocks_bundle() -> None:
+    source_dir = (DOCS_DIR / PYTHON_BLOCKS_SUBMODULE_DIR).resolve()
+    output_dir = (DOCS_DIR / PYTHON_BLOCKS_OUTPUT_DIR).resolve()
+
+    if not source_dir.exists():
+        raise RuntimeError(
+            "python-blocks submodule is missing. Run 'git submodule update --init --recursive'."
+        )
+
+    if not _python_blocks_build_required(source_dir, output_dir):
+        log.info("Python Blocks bundle is up to date")
+        return
+
+    if shutil.which("npm") is None:
+        raise RuntimeError(
+            "npm is required to build python-blocks but was not found in PATH"
+        )
+
+    if _python_blocks_install_required(source_dir):
+        _run_external_command(
+            ["npm", "ci"],
+            cwd=source_dir,
+            description="install python-blocks dependencies",
+        )
+
+    output_dir.parent.mkdir(parents=True, exist_ok=True)
+    _run_external_command(
+        [
+            "npm",
+            "run",
+            "build",
+            "--",
+            "--base=./",
+            f"--outDir={output_dir}",
+            "--emptyOutDir",
+        ],
+        cwd=source_dir,
+        description="build python-blocks static bundle",
+    )
+    _inject_base_href(output_dir / "index.html", "/assets/python-blocks-dist/")
+
+
+def _python_blocks_install_required(source_dir: Path) -> bool:
+    node_modules_dir = source_dir / "node_modules"
+    lockfile = source_dir / "package-lock.json"
+    if not node_modules_dir.exists():
+        return True
+    if not lockfile.exists():
+        return False
+    try:
+        return node_modules_dir.stat().st_mtime < lockfile.stat().st_mtime
+    except OSError:
+        return True
+
+
+def _python_blocks_build_required(source_dir: Path, output_dir: Path) -> bool:
+    output_index = output_dir / "index.html"
+    output_assets = output_dir / "assets"
+    if not output_index.exists() or not output_assets.exists():
+        return True
+
+    source_paths = [
+        source_dir / "index.html",
+        source_dir / "package.json",
+        source_dir / "package-lock.json",
+        source_dir / "vite.config.js",
+        source_dir / "postcss.config.cjs",
+        source_dir / "tailwind.config.cjs",
+        source_dir / "src",
+        source_dir / "public",
+    ]
+    output_paths = [output_index, output_assets]
+    return _latest_mtime(source_paths) > _latest_mtime(output_paths)
+
+
+def _latest_mtime(paths: List[Path]) -> float:
+    latest = 0.0
+    for path in paths:
+        if not path.exists():
+            continue
+        if path.is_dir():
+            for candidate in path.rglob("*"):
+                if not candidate.is_file():
+                    continue
+                try:
+                    latest = max(latest, candidate.stat().st_mtime)
+                except OSError:
+                    continue
+            continue
+        try:
+            latest = max(latest, path.stat().st_mtime)
+        except OSError:
+            continue
+    return latest
+
+
+def _run_external_command(command: List[str], *, cwd: Path, description: str) -> None:
+    log.info("Starting to %s", description)
+    try:
+        subprocess.run(command, cwd=cwd, check=True)
+    except FileNotFoundError as exc:
+        raise RuntimeError(
+            f"Unable to {description}: '{command[0]}' was not found"
+        ) from exc
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError(
+            f"Unable to {description}: command exited with status {exc.returncode}"
+        ) from exc
+
+
+def _inject_base_href(index_path: Path, base_href: str) -> None:
+    try:
+        html = index_path.read_text(encoding="utf-8")
+    except OSError as exc:
+        raise RuntimeError(f"Unable to update {index_path} with a base href") from exc
+
+    base_tag = f'    <base href="{base_href}" />\n'
+    if "<base " not in html:
+        if "<head>" not in html:
+            raise RuntimeError(f"Unable to inject a base href into {index_path}")
+        html = html.replace("<head>\n", f"<head>\n{base_tag}", 1)
+
+    try:
+        index_path.write_text(html, encoding="utf-8")
+    except OSError as exc:
+        raise RuntimeError(f"Unable to write updated HTML to {index_path}") from exc

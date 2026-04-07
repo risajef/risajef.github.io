@@ -25,9 +25,13 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
+## 07. April 2026
+
+Füge [Python Blocks](/programming/python-blocks) hinzu - eine Anwendung zur Vermittlung der Python Basics. Du kannst dein Program mit drag and drop zusammenklicken und auch ausführen.
+
 ## 12. Februar 2026
 
-Füge [Parallelismus](/programming/parallelismus) hinzu - eine Webanwendung zum Studium biblischer Parallelismen in hebräischen und griechischen Texten mit Strong-Konkordanz-Integration.
+Füge [Parallelismus](/programming/parallelismus) hinzu - eine Anwendung zum Studium biblischer Parallelismen in hebräischen und griechischen Texten mit Strong-Konkordanz-Integration.
 
 ## Februar 11th 2026
 

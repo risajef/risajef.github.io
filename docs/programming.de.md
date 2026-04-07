@@ -86,6 +86,11 @@ Parallelismus ist eine Webanwendung zum Studium biblischer Parallelismen in hebr
 [**GitHub**](https://github.com/risajef/background-generator), [**Web Demo**](https://retoweber.info/programming/background-generator/)  
 Background Generator ist eine prozedurale Kunst-Suite, die SVG-Hintergründe mit TypeScript erstellt. Sie umfasst fünf verschiedene Generatoren: Farbverläufe mit Blobs und Bändern, Polygalaxy-Szenen mit geometrischen Fragmenten und Orbitalsystemen, Terrain-Landschaften mit Bergen und Nebel, urbane Skylines mit Parallax-Ebenen und botanische Gärten mit Blättern und Ranken. Das Tool bietet sowohl einen Web-Playground für Echtzeit-Experimente als auch CLI-Tools für Batch-Rendering. Alle Generatoren unterstützen anpassbare Themes, Seed-basierte Zufallsgenerierung für Reproduzierbarkeit und optionalen PNG-Export.
 
+## Python Blocks
+
+[**GitHub**](https://github.com/risajef/python-blocks), [**Web Demo**](https://retoweber.info/programming/python-blocks/)  
+Python Blocks ist ein blockbasierter Python-Editor auf Basis von Vue 3 und Pinia. Man kann Python-Programme aus visuellen Blöcken zusammensetzen, den erzeugten Python-Code live inspizieren, bestehenden Python-Code zurück in die Blockansicht importieren und das Ergebnis direkt im Browser mit PyScript ausführen.
+
 ## Buchfaltstudio
 
 [**GitHub**](https://github.com/risajef/buchfalten), [**Web Demo**](https://retoweber.info/programming/buchfaltstudio/)  
