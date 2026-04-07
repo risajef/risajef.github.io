@@ -1,10 +1,10 @@
 ---
 lang: de
 tags:
-* programming
-* ai
-* artificial intelligence
-* vibe-coding
+- programming
+- ai
+- artificial intelligence
+- vibe-coding
 auto_translated: false
 ---
 

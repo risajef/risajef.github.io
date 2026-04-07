@@ -1,8 +1,4 @@
 ---
-extra_css:
-- assets/hoare/style.css
-extra_javascript:
-- assets/hoare/script.js
 tags:
 - hoare
 - logic
@@ -41,6 +37,14 @@ $$\frac{p' \implies p \; \; \; \{p\} \; P \; \{q\} \; \; \; q \implies q'}{\{p'\
 
 Dieses Tool ist nicht anspruchsvoll, sondern nur String-Ersatz und String-Vergleich.
 
-## Hoare Logikprofi
+## Interaktiver Verifier
 
-<div id="root"></div>
+<iframe
+	src="/assets/hoare-logic-dist/"
+	title="Hoare Logic Proof Verifier"
+	loading="lazy"
+	allow="clipboard-read; clipboard-write"
+	style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
+></iframe>
+
+Falls die eingebettete Anwendung nicht lädt, öffne den [Hoare-Logik-Verifier direkt](/assets/hoare-logic-dist/).

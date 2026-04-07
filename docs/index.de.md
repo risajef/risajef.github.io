@@ -19,7 +19,7 @@ auto_translated: false
 {:.float-right}
 Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar sind vor allem meine beiden beruflichen Laufbahnen als [Programmierer](programming.md) und [Forscher](research.md) sowie mein politisches Engagement ([Politik](politik.md)). Und vielleicht zuletzt noch meine [persönlichen Texte](blog.md) über Philosophie, Wissenschaft, Literatur und Religion.
 
-> Die Seite ist komplett zweisprachig (Englisch und Deutsch). Die meisten Seiten wurden von [Argos Translate](https://www.argosopentech.com) übersetzt und danach von GPT5.2 verbessert. Wurde die Seite so übersetzt, ist es mit einem Hinweis oben gekennzeichnet.
+> Die Seite ist komplett zweisprachig (Englisch und Deutsch). Die meisten Seiten wurden einmalig von [Argos Translate](https://www.argosopentech.com) übersetzt und danach von GPT5.2 verbessert. Wurde die Seite so übersetzt, ist es mit einem Hinweis oben gekennzeichnet.
 
 # Neuigkeiten
 
@@ -27,11 +27,13 @@ Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
 ## 07. April 2026
 
-Füge [Python Blocks](/programming/python-blocks) hinzu - eine Anwendung zur Vermittlung der Python Basics. Du kannst dein Program mit drag and drop zusammenklicken und auch ausführen.
+Füge [Python Blocks](/tools/python-blocks) hinzu - eine Anwendung, um die Python-Grundlagen zu lernen. Du kannst ein Python-Programm per Drag & Drop aus Blöcken zusammensetzen und direkt im Browser ausführen.
+
+Restrukturiere Webseite: Anordnung der Elemente ist intuitiver und kompakter.
 
 ## 12. Februar 2026
 
-Füge [Parallelismus](/programming/parallelismus) hinzu - eine Anwendung zum Studium biblischer Parallelismen in hebräischen und griechischen Texten mit Strong-Konkordanz-Integration.
+Füge [Parallelismus](/tools/parallelismus) hinzu - eine Anwendung zum Studium biblischer Parallelismen in hebräischen und griechischen Texten mit Strong-Konkordanz-Integration.
 
 ## Februar 11th 2026
 
@@ -39,7 +41,7 @@ Füge [vibe coding](/blog/science/vibe-coding) Blog Artikel hinzu.
 
 ## January 14th 2026
 
-Füge [automatischen Hintergrundgenerator](/programming/background-generator) hinzu.
+Füge [automatischen Hintergrundgenerator](/tools/background-generator) hinzu.
 
 ## 8. Januar 2026
 
@@ -49,7 +51,7 @@ Mache die Seite zweisprachig (Englisch und Deutsch). Alle Seiten wurden überset
 
 Neuer Blog-Artikel: [Nichts zu verbergen](/blog/toughts/nichts-zu-verbergen.md)
 
-Neuer [Generator für Buchfaltkunst](/research/buchfaltstudio). Das [Original-Repository](https://github.com/risajef/buchfalten) ist ausgelagert; hier wird es nur synchronisiert.
+Neuer [Generator für Buchfaltkunst](/tools/buchfaltstudio). Das [Original-Repository](https://github.com/risajef/buchfalten) ist ausgelagert; hier wird es nur synchronisiert.
 
 ## 12. November 2025
 
@@ -69,11 +71,11 @@ Neuer [Beitrag](/politik/e-id/#eine-odyssee-durch-die-gewasser-von-ssi) über di
 
 ## 1. Oktober 2025
 
-Update meines [Lebenslaufs](/programming/).
+Update meines [Lebenslaufs](/cv/).
 
 ## 30. September 2025
 
-[Hoare Logikprüfer](/research/hoare-logic/)
+[Hoare Logikprüfer](/tools/hoare-logic/)
 
 ## 18. September 2025
 

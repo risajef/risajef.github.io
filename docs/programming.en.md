@@ -1,11 +1,11 @@
 ---
 lang: en
 tags:
-* programming
-* cv
-* projects
-* machine-learning
-* formal-verification
+- programming
+- cv
+- projects
+- machine-learning
+- formal-verification
 auto_translated: false
 ---
 
@@ -77,27 +77,27 @@ Apr 2018 – Jun 2019
 
 ## Parallelismus
 
-[**GitHub**](https://github.com/risajef/parallelismus), [**Web Demo**](https://retoweber.info/programming/parallelismus/)  
+[**GitHub**](https://github.com/risajef/parallelismus), [**Web Demo**](https://retoweber.info/tools/parallelismus/)  
 Parallelismus is a web application for studying biblical parallelism in Hebrew and Greek texts. It allows users to navigate through biblical books, chapters, and verses, viewing words with their Strong's concordance numbers, original language texts, and translations. Users can create and manage semantic relationships between words (such as similar meaning, opposite meaning, subcategories, and composition). The tool uses IndexedDB for local storage and includes visualization features for exploring word relationships through interactive graphs. All data processing happens client-side, making it a fully functional static web application.
 
 ## Background Generator
 
-[**GitHub**](https://github.com/risajef/background-generator), [**Web Demo**](https://retoweber.info/programming/background-generator/)  
+[**GitHub**](https://github.com/risajef/background-generator), [**Web Demo**](https://retoweber.info/tools/background-generator/)  
 Background Generator is a procedural art suite that creates stunning SVG backgrounds using TypeScript. It includes five distinct generators: gradient abstractions with blobs and ribbons, polygalaxy scenes with geometric shards and orbital systems, terrain landscapes with mountains and fog, urban skylines with parallax layers, and botanical gardens with leaves and vines. The tool offers both a web playground for real-time experimentation and CLI tools for batch rendering. All generators support customizable themes, seeded randomization for reproducibility, and optional PNG export.
 
 ## Python Blocks
 
-[**GitHub**](https://github.com/risajef/python-blocks), [**Web Demo**](https://retoweber.info/programming/python-blocks/)  
+[**GitHub**](https://github.com/risajef/python-blocks), [**Web Demo**](https://retoweber.info/tools/python-blocks/)  
 Python Blocks is a block-based Python editor built with Vue 3 and Pinia. It lets users assemble Python programs from visual blocks, inspect the generated Python live, import Python back into the canvas, and run the result directly in the browser with PyScript.
 
 ## Buchfaltstudio
 
-[**GitHub**](https://github.com/risajef/buchfalten), [**Web Demo**](https://retoweber.info/programming/buchfaltstudio/)  
+[**GitHub**](https://github.com/risajef/buchfalten), [**Web Demo**](https://retoweber.info/tools/buchfaltstudio/)  
 Buchfaltstudio is a book folding pattern generator that creates precision folding instructions for book art (Orimoto). Users can either enter text (which is automatically rendered using Google Fonts) or upload images (SVG, PNG, JPEG, GIF, WebP). The tool analyzes the artwork, scales it to physical book dimensions, detects dark regions, and generates detailed PDF instructions with millimeter-precise fold positions. Features include automatic book preview rendering, customizable page count and book height, and fully client-side processing for instant results.
 
-## Hoare-Logic proof verifier
+## Hoare Logic Proof Verifier
 
-[**GitHub**](https://github.com/risajef/hoare-logic), [**Web Demo**](https://retoweber.info/research/hoare-logic/)  
+[**GitHub**](https://github.com/risajef/hoare-logic), [**Web Demo**](https://retoweber.info/tools/hoare-logic/)  
 This is a web technology based hoare logic verifier. The user can create programs and their proofs using drag and drop. The proofs of the hoare logic have to be explicit to the end. The logical and arithmetical proof obligations are fed to the SMT solver [Z3](https://github.com/Z3Prover/z3). The tool is fully frontend based. No server is needed. That is why the application also works on this static website.
 
 ## CodeForge

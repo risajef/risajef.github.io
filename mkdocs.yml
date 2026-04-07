@@ -6,13 +6,16 @@ theme:
   name: null
   custom_dir: theme
 nav:
-  - Programming:
-      - Buchfaltstudio: programming/buchfaltstudio.md
-      - Background Generator: programming/background-generator.md
-      - Parallelismus: programming/parallelismus.md
-      - Python Blocks: programming/python-blocks.md
-  - Research:
-      - Hoare Logic: research/hoare-logic.md
+  - CV:
+      - CV: cv.md
+      - Programming: programming.md
+      - Research: research.md
+  - Tools:
+      - Buchfaltstudio: tools/buchfaltstudio.md
+      - Background Generator: tools/background-generator.md
+      - Parallelismus: tools/parallelismus.md
+      - Python Blocks: tools/python-blocks.md
+      - Hoare Logic: tools/hoare-logic.md
   - Politik:
       # - Zonenplanänderung: politik/zonenplanaenderung.md
       # - Werkhof Baukredit: politik/werkhof-baukredit.md
@@ -22,10 +25,11 @@ nav:
       - Thoughts: blog/thoughts.md
       - Philosophy: blog/philosophy.md
       - Science: blog/science.md
-  - Book:
-      - The Book: book/the-book.md
-      - Influential Books: book/influential-books.md
-      - Lessons from My Book: book/lessons-from-my-book.md
+      - Book:
+        - Book: book.md
+        - The Book: book/the-book.md
+        - Influential Books: book/influential-books.md
+        - Lessons from My Book: book/lessons-from-my-book.md
 
 plugins:
   - i18n:
@@ -38,15 +42,6 @@ plugins:
         - locale: de
           name: Deutsch
   - search
-  - redirects:
-      use_directory_urls: true
-      redirect_maps:
-        'politics.md': 'politik.de.md'
-        'politics/zonenplanaenderung.md': 'politik/zonenplanaenderung.de.md'
-        'politics/finanzen-beringen.md': 'politik/finanzen-beringen.de.md'
-        'politics/e-id.md': 'politik/e-id.de.md'
-        'programming/hoare-logic.md': 'research/hoare-logic.de.md'
-        'research/buchfaltstudio.md': 'programming/buchfaltstudio.en.md'
   - mermaid-to-svg:
       mmdc_path: 'mmdc'
       cleanup_generated_images: false
@@ -87,14 +82,33 @@ extra_css:
 hooks:
   - hooks/auto_snippets.py
 extra:
+  redirects:
+    programming/buchfaltstudio: tools/buchfaltstudio
+    de/programming/buchfaltstudio: de/tools/buchfaltstudio
+    programming/background-generator: tools/background-generator
+    de/programming/background-generator: de/tools/background-generator
+    programming/parallelismus: tools/parallelismus
+    de/programming/parallelismus: de/tools/parallelismus
+    programming/python-blocks: tools/python-blocks
+    de/programming/python-blocks: de/tools/python-blocks
+    programming/hoare-logic: tools/hoare-logic
+    de/programming/hoare-logic: de/tools/hoare-logic
+    politics: politik
+    politics/zonenplanaenderung: politik/zonenplanaenderung
+    politics/finanzen-beringen: politik/finanzen-beringen
+    politics/e-id: politik/e-id
+    research/buchfaltstudio: tools/buchfaltstudio
+    de/research/buchfaltstudio: de/tools/buchfaltstudio
   translations:
     en:
       auto_translation_title: 'Automated translation.'
       auto_translation_from_lang: 'This page was machine translated from {lang} and may contain mistakes.'
       auto_translation_generic: 'This page was machine translated and may contain mistakes.'
       nav:
+        CV: CV
         Programming: Programming
-        Buchfaltstudio: 'Book folding studio'
+        Tools: Tools
+        Research: Research
         'Background Generator': 'Background Generator'
         Parallelismus: 'Parallelismus'
         'Python Blocks': 'Python Blocks'
@@ -115,8 +129,10 @@ extra:
       auto_translation_from_lang: 'Diese Seite wurde maschinell aus {lang} übersetzt und kann Fehler enthalten.'
       auto_translation_generic: 'Diese Seite wurde maschinell übersetzt und kann Fehler enthalten.'
       nav:
+        CV: CV
         Programming: Programmierung
-        Buchfaltstudio: Buchfaltstudio
+        Tools: Werkzeuge
+        Research: Forschung
         'Background Generator': 'Hintergrund Generator'
         Parallelismus: Parallelismus
         'Python Blocks': 'Python Blocks'

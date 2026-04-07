@@ -19,7 +19,7 @@ auto_translated: false
 {:.float-right}
 I am grateful to have such a wide diversity of roles. For public interest are probably my two professional careers as a [programmer](programming.md) and [researcher](research.md) as well as my [political career](politik.md). And maybe at last my [personal content](blog.md) about philosophy, science, literature and religion.
 
-> The site is fully bilingual (English and German). Most pages were translated using [Argos Translate](https://www.argosopentech.com) and then improved with GPT 5.2. If a page was translated this way, it is marked with a notice at the top.
+> The site is fully bilingual (English and German). Most pages were satically translated using [Argos Translate](https://www.argosopentech.com) and then improved with GPT 5.2. If a page was translated this way, it is marked with a notice at the top.
 
 # News
 
@@ -27,11 +27,13 @@ You see there what I changed most recently on the website.
 
 ## April 7th 2026
 
-Add [Python Blocks](/programming/python-blocks) - an application to teach the python basics. Create a python application by drag and drop the building blocks and then execute the program.
+Add [Python Blocks](/tools/python-blocks) - an application for teaching the Python basics. Build a Python program by dragging blocks into place and then execute it directly in the browser.
+
+Restructoring website: placement of elements is now more intuitive and more compact.
 
 ## February 12th 2026
 
-Add [Parallelismus](/programming/parallelismus) - a web application for studying biblical parallelism in Hebrew and Greek texts with Strong's concordance integration.
+Add [Parallelismus](/tools/parallelismus) - a web application for studying biblical parallelism in Hebrew and Greek texts with Strong's concordance integration.
 
 ## Februar 11th 2026
 
@@ -39,7 +41,7 @@ Add [vibe coding](/blog/science/vibe-coding) blog article.
 
 ## January 14th 2026
 
-Add [automatic background generator](/programming/background-generator).
+Add [automatic background generator](/tools/background-generator).
 
 ## January 8th 2026
 
@@ -49,7 +51,7 @@ Make the website bilingual (English and German). All pages were translated using
 
 New blog post: [Nothing to Hide](/blog/toughts/nichts-zu-verbergen.md)
 
-Add [Generator for Book Folding Art](/programming/buchfaltstudio). I moved the [original repository](https://github.com/risajef/buchfalten) out and it is only synced here.
+Add [Generator for Book Folding Art](/tools/buchfaltstudio). I moved the [original repository](https://github.com/risajef/buchfalten) out and it is only synced here.
 
 ## November 12th 2025
 
@@ -69,11 +71,11 @@ Add an [article](/politik/e-id/#eine-odyssee-durch-die-gewasser-von-ssi) about t
 
 ## October 1st 2025
 
-Add new job to my [CV](/programming/).
+Add new job to my [CV](/cv/).
 
 ## September 30th 2025
 
-Add [Hoare logic proof verifier](/research/hoare-logic/).
+Add [Hoare logic proof verifier](/tools/hoare-logic/).
 
 ## September 18th 2025
 
