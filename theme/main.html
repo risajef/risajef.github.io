@@ -102,7 +102,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+{% set page_meta = page.meta if page.meta else {} %}
+{% set page_type = page_meta.get('page_type') %}
+{% set hide_toc = page_meta.get('hide_toc') or page_type == 'iframe' %}
+<body{% if hide_toc or page_type %} class="{% if hide_toc %}layout-no-toc{% endif %}{% if page_type %}{% if hide_toc %} {% endif %}page-type-{{ page_type | replace(' ', '-') }}{% endif %}"{% endif %}>
     {% set current_locale = 'en' %}
     {% if i18n_current_language is defined and i18n_current_language %}
     {% set current_locale = i18n_current_language %}
@@ -118,6 +121,25 @@
     {% endif %}
     {% set translation_strings = translations.get(current_locale, {}) %}
     {% set nav_labels = translation_strings.get('nav', {}) %}
+        {% macro render_nav_item(item, nav_labels) -%}
+        {% set first_child = item.children | first if item.children else None %}
+        {% set landing_child = None %}
+        {% if item.children and first_child and first_child.title == item.title and first_child.url %}
+        {% set landing_child = first_child %}
+        {% endif %}
+        {% set item_url = item.url if item.url else (landing_child.url if landing_child else (first_child.url if first_child and first_child.url else '#')) %}
+        {% set child_items = item.children[1:] if landing_child else item.children %}
+        <li class="{% if item.children %}nav-parent {% endif %}{% if item.active %}current{% endif %}">
+            <a href="{{ item_url | url }}">{{ nav_labels.get(item.title, item.title) }}</a>
+            {% if child_items %}
+            <ul class="nav-dropdown">
+                {% for child in child_items %}
+                {{ render_nav_item(child, nav_labels) }}
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {%- endmacro %}
     <header class="site-header">
         <div class="site-title">
             <h1 class="{% if page.abs_url | url == '/' %}current{% endif %}">
@@ -127,24 +149,7 @@
         {% if nav|length > 1 %}
         <ul class="main-nav">
             {% for item in nav %}
-            {% if item.children %}
-            {% set first_child = item.children | first %}
-            {% set parent_url = first_child.url if first_child and first_child.url else '#' %}
-            <li class="nav-parent {% if item.active %}current{% endif %}">
-                <a href="{{ parent_url | url }}">{{ nav_labels.get(item.title, item.title) }}</a>
-                <ul class="nav-dropdown">
-                    {% for child in item.children %}
-                    <li class="{% if child.active %}current{% endif %}">
-                        <a href="{{ child.url|url }}">{{ nav_labels.get(child.title, child.title) }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </li>
-            {% else %}
-            <li class="{% if item.active %}current{% endif %}">
-                <a href="{{ item.url|url }}">{{ nav_labels.get(item.title, item.title) }}</a>
-            </li>
-            {% endif %}
+                {{ render_nav_item(item, nav_labels) }}
             {% endfor %}
         </ul>
         {% endif %}
@@ -173,6 +178,7 @@
         </a>
     </header>
     <div id="main-container">
+        {% if not hide_toc %}
         <div class="toc-container">
             <ul class="toc-list {{ 'empty' if page.toc|length <= 1 else '' }}">
                 {% if page.toc|length > 1 %}
@@ -193,6 +199,7 @@
                 {% endif %}
             </ul>
         </div>
+        {% endif %}
         <div class="content">
             {% if page.meta and page.meta.auto_translated %}
             <div class="auto-translation-banner" role="status">

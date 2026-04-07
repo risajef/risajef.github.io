@@ -13,7 +13,7 @@ auto_translated: false
 
 ## Do AI models help produce verified bug fixes?
 
-[ICSE 2026. (submitted &ndash; in review)](https://arxiv.org/abs/2507.15822)  
+[ICSE 2026. (published)](https://arxiv.org/abs/2507.15822)  
 **Authors:** [Reto Weber][reto], [Li Huang][li], [Bertrand Meyer][bertrand], [Ilgiz Mustafin][ilgiz], [Marco Piccioni](https://github.com/picpaco), [Alessandro Schena](https://www.linkedin.com/in/alessandro-schena)
 
 ## PRISM: Programming Really Is Simple Mathematics
@@ -23,7 +23,7 @@ auto_translated: false
 
 ## Loop unrolling: formal definition and application to testing
 
-[ICTSS 2025. (accepted &ndash; to be published)](https://arxiv.org/abs/2502.15535)  
+[ICTSS 2025. (published)](https://arxiv.org/abs/2502.15535)  
 **Authors:** [Reto Weber][reto], [Li Huang][li], [Bertrand Meyer][bertrand]
 
 ---

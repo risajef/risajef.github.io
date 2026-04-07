@@ -1,11 +1,11 @@
 ---
 lang: de
 tags:
-* programming
-* cv
-* projects
-* machine-learning
-* formal-verification
+- programming
+- cv
+- projects
+- machine-learning
+- formal-verification
 auto_translated: true
 source_lang: en
 ---
@@ -78,27 +78,27 @@ Apr 2018 – Jun 2019
 
 ## Parallelismus
 
-[**GitHub**](https://github.com/risajef/parallelismus), [**Web Demo**](https://retoweber.info/programming/parallelismus/)  
+[**GitHub**](https://github.com/risajef/parallelismus), [**Web Demo**](https://retoweber.info/tools/parallelismus/)  
 Parallelismus ist eine Webanwendung zum Studium biblischer Parallelismen in hebräischen und griechischen Texten. Sie ermöglicht es, durch biblische Bücher, Kapitel und Verse zu navigieren und dabei Wörter mit ihren Strong-Konkordanznummern, Originaltexten und Übersetzungen zu sehen. Benutzer können semantische Beziehungen zwischen Wörtern erstellen und verwalten (wie ähnliche Bedeutung, gegensätzliche Bedeutung, Unterkategorien und Zusammensetzung). Das Tool verwendet IndexedDB für lokale Speicherung und bietet Visualisierungsfunktionen zur Erkundung von Wortbeziehungen durch interaktive Graphen. Die gesamte Datenverarbeitung erfolgt clientseitig, wodurch es eine vollständig funktionale statische Webanwendung ist.
 
 ## Background Generator
 
-[**GitHub**](https://github.com/risajef/background-generator), [**Web Demo**](https://retoweber.info/programming/background-generator/)  
+[**GitHub**](https://github.com/risajef/background-generator), [**Web Demo**](https://retoweber.info/tools/background-generator/)  
 Background Generator ist eine prozedurale Kunst-Suite, die SVG-Hintergründe mit TypeScript erstellt. Sie umfasst fünf verschiedene Generatoren: Farbverläufe mit Blobs und Bändern, Polygalaxy-Szenen mit geometrischen Fragmenten und Orbitalsystemen, Terrain-Landschaften mit Bergen und Nebel, urbane Skylines mit Parallax-Ebenen und botanische Gärten mit Blättern und Ranken. Das Tool bietet sowohl einen Web-Playground für Echtzeit-Experimente als auch CLI-Tools für Batch-Rendering. Alle Generatoren unterstützen anpassbare Themes, Seed-basierte Zufallsgenerierung für Reproduzierbarkeit und optionalen PNG-Export.
 
 ## Python Blocks
 
-[**GitHub**](https://github.com/risajef/python-blocks), [**Web Demo**](https://retoweber.info/programming/python-blocks/)  
+[**GitHub**](https://github.com/risajef/python-blocks), [**Web Demo**](https://retoweber.info/tools/python-blocks/)  
 Python Blocks ist ein blockbasierter Python-Editor auf Basis von Vue 3 und Pinia. Man kann Python-Programme aus visuellen Blöcken zusammensetzen, den erzeugten Python-Code live inspizieren, bestehenden Python-Code zurück in die Blockansicht importieren und das Ergebnis direkt im Browser mit PyScript ausführen.
 
 ## Buchfaltstudio
 
-[**GitHub**](https://github.com/risajef/buchfalten), [**Web Demo**](https://retoweber.info/programming/buchfaltstudio/)  
+[**GitHub**](https://github.com/risajef/buchfalten), [**Web Demo**](https://retoweber.info/tools/buchfaltstudio/)  
 Buchfaltstudio ist ein Generator für Buchfaltmuster, der präzise Faltanweisungen für Buchkunst (Orimoto) erstellt. Benutzer können entweder Text eingeben (der automatisch mit Google Fonts gerendert wird) oder Bilder hochladen (SVG, PNG, JPEG, GIF, WebP). Das Tool analysiert das Artwork, skaliert es auf physische Buchdimensionen, erkennt dunkle Bereiche und generiert detaillierte PDF-Anleitungen mit millimetergenauen Faltpositionen. Features umfassen automatisches Buchvorschau-Rendering, anpassbare Seitenzahl und Buchhöhe sowie vollständig clientseitige Verarbeitung für sofortige Ergebnisse.
 
-## Hoare-Logic Proof Verifier
+## Hoare Logic Proof Verifier
 
-[**GitHub**](https://github.com/risajef/hoare-logic)[**Web Demo**](https://retoweber.info/research/hoare-logic/)  
+[**GitHub**](https://github.com/risajef/hoare-logic), [**Web Demo**](https://retoweber.info/tools/hoare-logic/)  
 Dies ist ein Hoare-Logik-Verifier, der vollständig im Browser läuft. Man kann Programme und Beweise per Drag & Drop erstellen. Die Beweise müssen bis zum Ende explizit geführt werden. Logische und arithmetische Beweispflichten werden an den SMT-Solver [Z3](https://github.com/Z3Prover/z3) übergeben. Das Tool ist komplett frontend-basiert; es braucht keinen Server und funktioniert daher auch auf dieser statischen Website.
 
 ## CodeForge

@@ -2,22 +2,43 @@
 
 from __future__ import annotations
 
+import os
 import shutil
 import subprocess
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional
+from urllib.parse import urlsplit
 
 from mkdocs.plugins import get_plugin_logger
 
 log = get_plugin_logger(__name__)
 
 PLACEHOLDER = "<!-- AUTO_SNIPPETS -->"
+REDIRECT_HTML_TEMPLATE = """
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <link rel="canonical" href="{url}">
+    <script>var anchor=window.location.hash.substr(1);location.href="{url}"+(anchor?"#"+anchor:"")</script>
+    <meta http-equiv="refresh" content="0; url={url}">
+</head>
+<body>
+You're being redirected to a <a href="{url}">new destination</a>.
+</body>
+</html>
+""".lstrip()
 PROJECT_DIR = Path.cwd()
 DOCS_DIR = PROJECT_DIR / "docs"
 GIT_AVAILABLE = shutil.which("git") is not None
+STATIC_APP_BUILD_IGNORES = (".git", "node_modules", "dist", "build")
 PYTHON_BLOCKS_SUBMODULE_DIR = Path("assets/python-blocks")
 PYTHON_BLOCKS_OUTPUT_DIR = Path("assets/python-blocks-dist")
+HOARE_LOGIC_SUBMODULE_DIR = Path("assets/hoare-logic")
+HOARE_LOGIC_OUTPUT_DIR = Path("assets/hoare-logic-dist")
 
 
 @dataclass
@@ -47,6 +68,7 @@ def on_config(config, **_):
 def on_pre_build(config, **_):
     """Build third-party static apps before MkDocs copies docs/ assets."""
     _ensure_python_blocks_bundle()
+    _ensure_hoare_logic_bundle()
 
 
 def on_page_markdown(markdown, *, page, config, files):
@@ -56,8 +78,8 @@ def on_page_markdown(markdown, *, page, config, files):
     if not auto_cfg:
         return markdown
 
-    directory, placeholder = _parse_auto_config(auto_cfg, page)
-    if not directory:
+    directory, source_files, placeholder = _parse_auto_config(auto_cfg, page)
+    if not directory and not source_files:
         return markdown
 
     lang = meta.get("lang") or getattr(page.file, "locale", None)
@@ -67,13 +89,15 @@ def on_page_markdown(markdown, *, page, config, files):
         )
         return markdown
 
-    entries = _collect_snippet_entries(directory, lang)
+    entries: List[SnippetEntry] = []
+    if source_files:
+        entries.extend(_collect_source_entries(source_files, lang, page))
+    if directory:
+        entries.extend(_collect_snippet_entries(directory, lang))
+
     if not entries:
         log.warning(
-            "auto_snippets found no %s content for lang '%s' when rendering %s",
-            directory,
-            lang,
-            page.file.src_path,
+            "auto_snippets found no content when rendering %s", page.file.src_path
         )
         return markdown
 
@@ -87,11 +111,15 @@ def on_page_markdown(markdown, *, page, config, files):
 def _parse_auto_config(auto_cfg, page):
     placeholder = PLACEHOLDER
     directory: Optional[str] = None
+    source_files: List[str] = []
 
     if isinstance(auto_cfg, str):
         directory = auto_cfg.strip()
     elif isinstance(auto_cfg, dict):
         directory = (auto_cfg.get("directory") or auto_cfg.get("path") or "").strip()
+        source_files = _normalize_source_files(
+            auto_cfg.get("files") or auto_cfg.get("sources"), page
+        )
         placeholder = auto_cfg.get("placeholder", placeholder)
     else:
         log.warning(
@@ -100,9 +128,40 @@ def _parse_auto_config(auto_cfg, page):
             page.file.src_path,
         )
 
-    if not directory:
+    if not directory and not source_files:
         directory = _infer_directory_from_page(page)
-    return directory, placeholder
+    return directory, source_files, placeholder
+
+
+def _normalize_source_files(raw_value, page) -> List[str]:
+    if not raw_value:
+        return []
+
+    if isinstance(raw_value, str):
+        value = raw_value.strip()
+        return [value] if value else []
+
+    if not isinstance(raw_value, (list, tuple)):
+        log.warning(
+            "auto_snippets.files expects a string or list, got %r on %s",
+            raw_value,
+            page.file.src_path,
+        )
+        return []
+
+    files: List[str] = []
+    for item in raw_value:
+        if not isinstance(item, str):
+            log.warning(
+                "auto_snippets.files entries must be strings, got %r on %s",
+                item,
+                page.file.src_path,
+            )
+            continue
+        value = item.strip()
+        if value:
+            files.append(value)
+    return files
 
 
 def _infer_directory_from_page(page) -> Optional[str]:
@@ -146,6 +205,73 @@ def _collect_snippet_entries(directory: str, lang: str) -> List[SnippetEntry]:
 
     entries.sort(key=lambda item: (item.timestamp, item.rel_path), reverse=True)
     return entries
+
+
+def _collect_source_entries(
+    source_files: List[str], lang: str, page
+) -> List[SnippetEntry]:
+    entries: List[SnippetEntry] = []
+
+    for source in source_files:
+        file_path = _resolve_source_file_path(source, lang, page)
+        if not file_path.exists():
+            log.warning(
+                "auto_snippets source '%s' was not found when rendering %s",
+                source,
+                page.file.src_path,
+            )
+            continue
+        if file_path.is_dir():
+            log.warning(
+                "auto_snippets source '%s' resolved to a directory on %s; use 'directory' instead",
+                source,
+                page.file.src_path,
+            )
+            continue
+
+        try:
+            rel_path = file_path.relative_to(DOCS_DIR).as_posix()
+        except ValueError:
+            log.warning(
+                "auto_snippets source '%s' is outside docs_dir when rendering %s",
+                source,
+                page.file.src_path,
+            )
+            continue
+
+        entries.append(
+            SnippetEntry(
+                rel_path=rel_path,
+                start_line=_first_content_line(file_path),
+                timestamp=0,
+            )
+        )
+
+    return entries
+
+
+def _resolve_source_file_path(source: str, lang: str, page) -> Path:
+    source_path = _localize_source_path(Path(source), lang)
+    if source_path.is_absolute():
+        return source_path.resolve()
+
+    if source.startswith(("./", "../")):
+        page_dir = (DOCS_DIR / Path(page.file.src_path).parent).resolve()
+        return (page_dir / source_path).resolve()
+
+    return (DOCS_DIR / source_path).resolve()
+
+
+def _localize_source_path(path: Path, lang: str) -> Path:
+    if path.name.endswith(f".{lang}.md"):
+        return path
+
+    if path.suffix == ".md":
+        if "." in path.stem:
+            return path
+        return path.with_name(f"{path.stem}.{lang}.md")
+
+    return path.with_name(f"{path.name}.{lang}.md")
 
 
 def _first_content_line(path: Path) -> int:
@@ -217,103 +343,170 @@ def _render_entries(entries: List[SnippetEntry]) -> str:
 
 
 def on_post_build(config, **_):
-    """Copy sitemap.xml to sitemap2.xml in the site directory."""
+    """Copy sitemap.xml and generate manual redirects in the site directory."""
     site_dir = Path(config["site_dir"])
     src = site_dir / "sitemap.xml"
     dst = site_dir / "sitemap2.xml"
     if src.exists():
         shutil.copy2(src, dst)
         log.info("Copied sitemap.xml → sitemap2.xml")
+    _write_redirect_files(site_dir, config)
+
+
+def _write_redirect_files(site_dir: Path, config) -> None:
+    redirect_map = ((config.get("extra") or {}).get("redirects") or {}).items()
+    if not redirect_map:
+        return
+
+    base_path = urlsplit(config.get("site_url") or "").path.rstrip("/")
+    for old_path, new_path in redirect_map:
+        old_file = site_dir / _site_path_to_output(old_path)
+        if old_file.exists():
+            log.warning(
+                "Skipping redirect for '%s' because '%s' already exists",
+                old_path,
+                old_file.relative_to(site_dir),
+            )
+            continue
+
+        old_file.parent.mkdir(parents=True, exist_ok=True)
+        old_file.write_text(
+            REDIRECT_HTML_TEMPLATE.format(
+                url=_normalize_redirect_target(new_path, base_path)
+            ),
+            encoding="utf-8",
+        )
+        log.info("Created redirect %s → %s", old_path, new_path)
+
+
+def _site_path_to_output(path: str) -> Path:
+    normalized = path.strip().strip("/")
+    if not normalized:
+        return Path("index.html")
+    return Path(normalized) / "index.html"
+
+
+def _normalize_redirect_target(path: str, base_path: str) -> str:
+    if path.startswith(("http://", "https://", "/")):
+        return path
+
+    normalized = path.strip().strip("/")
+    if not normalized:
+        return f"{base_path}/" if base_path else "/"
+
+    if base_path:
+        return f"{base_path}/{normalized}/"
+    return f"/{normalized}/"
 
 
 def _ensure_python_blocks_bundle() -> None:
-    source_dir = (DOCS_DIR / PYTHON_BLOCKS_SUBMODULE_DIR).resolve()
-    output_dir = (DOCS_DIR / PYTHON_BLOCKS_OUTPUT_DIR).resolve()
+    _ensure_static_app_bundle(
+        slug="python-blocks",
+        label="Python Blocks",
+        submodule_dir=PYTHON_BLOCKS_SUBMODULE_DIR,
+        output_dir=PYTHON_BLOCKS_OUTPUT_DIR,
+        base_href="/assets/python-blocks-dist/",
+    )
+
+
+def _ensure_hoare_logic_bundle() -> None:
+    _ensure_static_app_bundle(
+        slug="hoare-logic",
+        label="Hoare Logic",
+        submodule_dir=HOARE_LOGIC_SUBMODULE_DIR,
+        output_dir=HOARE_LOGIC_OUTPUT_DIR,
+        base_href="/assets/hoare-logic-dist/",
+    )
+
+
+def _ensure_static_app_bundle(
+    *, slug: str, label: str, submodule_dir: Path, output_dir: Path, base_href: str
+) -> None:
+    source_dir = (DOCS_DIR / submodule_dir).resolve()
+    resolved_output_dir = (DOCS_DIR / output_dir).resolve()
 
     if not source_dir.exists():
         raise RuntimeError(
-            "python-blocks submodule is missing. Run 'git submodule update --init --recursive'."
+            f"{slug} submodule is missing. Run 'git submodule update --init --recursive'."
         )
 
-    if not _python_blocks_build_required(source_dir, output_dir):
-        log.info("Python Blocks bundle is up to date")
+    if not _static_app_build_required(source_dir, resolved_output_dir):
+        log.info("%s bundle is up to date", label)
         return
 
     if shutil.which("npm") is None:
-        raise RuntimeError(
-            "npm is required to build python-blocks but was not found in PATH"
-        )
+        raise RuntimeError(f"npm is required to build {slug} but was not found in PATH")
 
-    if _python_blocks_install_required(source_dir):
+    resolved_output_dir.parent.mkdir(parents=True, exist_ok=True)
+
+    with tempfile.TemporaryDirectory(prefix=f"{slug}-build-") as temp_dir_name:
+        staging_dir = Path(temp_dir_name) / source_dir.name
+        shutil.copytree(
+            source_dir,
+            staging_dir,
+            ignore=shutil.ignore_patterns(*STATIC_APP_BUILD_IGNORES),
+        )
         _run_external_command(
-            ["npm", "ci"],
-            cwd=source_dir,
-            description="install python-blocks dependencies",
+            _npm_install_command(staging_dir),
+            cwd=staging_dir,
+            description=f"install {slug} dependencies",
+        )
+        _run_external_command(
+            [
+                "npm",
+                "run",
+                "build",
+                "--",
+                "--base=./",
+                f"--outDir={resolved_output_dir}",
+                "--emptyOutDir",
+            ],
+            cwd=staging_dir,
+            description=f"build {slug} static bundle",
         )
 
-    output_dir.parent.mkdir(parents=True, exist_ok=True)
-    _run_external_command(
-        [
-            "npm",
-            "run",
-            "build",
-            "--",
-            "--base=./",
-            f"--outDir={output_dir}",
-            "--emptyOutDir",
-        ],
-        cwd=source_dir,
-        description="build python-blocks static bundle",
-    )
-    _inject_base_href(output_dir / "index.html", "/assets/python-blocks-dist/")
+    _inject_base_href(resolved_output_dir / "index.html", base_href)
 
 
-def _python_blocks_install_required(source_dir: Path) -> bool:
-    node_modules_dir = source_dir / "node_modules"
-    lockfile = source_dir / "package-lock.json"
-    if not node_modules_dir.exists():
+def _npm_install_command(source_dir: Path) -> List[str]:
+    if (source_dir / "package-lock.json").exists():
+        return ["npm", "ci"]
+    return ["npm", "install", "--no-package-lock"]
+
+
+def _static_app_build_required(source_dir: Path, output_dir: Path) -> bool:
+    output_index = output_dir / "index.html"
+    if not output_index.exists():
         return True
-    if not lockfile.exists():
-        return False
+
     try:
-        return node_modules_dir.stat().st_mtime < lockfile.stat().st_mtime
+        if not any(output_dir.iterdir()):
+            return True
     except OSError:
         return True
 
-
-def _python_blocks_build_required(source_dir: Path, output_dir: Path) -> bool:
-    output_index = output_dir / "index.html"
-    output_assets = output_dir / "assets"
-    if not output_index.exists() or not output_assets.exists():
-        return True
-
-    source_paths = [
-        source_dir / "index.html",
-        source_dir / "package.json",
-        source_dir / "package-lock.json",
-        source_dir / "vite.config.js",
-        source_dir / "postcss.config.cjs",
-        source_dir / "tailwind.config.cjs",
-        source_dir / "src",
-        source_dir / "public",
-    ]
-    output_paths = [output_index, output_assets]
-    return _latest_mtime(source_paths) > _latest_mtime(output_paths)
+    return _latest_mtime(
+        [source_dir], ignored_dir_names=set(STATIC_APP_BUILD_IGNORES)
+    ) > _latest_mtime([output_dir], ignored_dir_names=set(STATIC_APP_BUILD_IGNORES))
 
 
-def _latest_mtime(paths: List[Path]) -> float:
+def _latest_mtime(
+    paths: List[Path], ignored_dir_names: Optional[set[str]] = None
+) -> float:
     latest = 0.0
+    ignored = ignored_dir_names or set()
     for path in paths:
         if not path.exists():
             continue
         if path.is_dir():
-            for candidate in path.rglob("*"):
-                if not candidate.is_file():
-                    continue
-                try:
-                    latest = max(latest, candidate.stat().st_mtime)
-                except OSError:
-                    continue
+            for root, dirnames, filenames in os.walk(path):
+                dirnames[:] = [name for name in dirnames if name not in ignored]
+                for filename in filenames:
+                    candidate = Path(root) / filename
+                    try:
+                        latest = max(latest, candidate.stat().st_mtime)
+                    except OSError:
+                        continue
             continue
         try:
             latest = max(latest, path.stat().st_mtime)
