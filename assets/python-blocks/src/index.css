@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --border-color: #cacaca;
+  --background-color: #ffffff;
+  --background-box-title: #f7f7f7;
+
+  --dfBackgroundColor: rgba(254, 254, 254, 1);
+  --dfBackgroundSize: 15px;
+  --dfBackgroundImage: radial-gradient(rgb(193, 195, 217) 1px, transparent 1px);
+
+  --dfNodeBackgroundColor: #ffffff;
+  --dfNodeTextColor: rgba(15, 2, 40, 1);
+  --dfNodeBorderSize: 1px;
+  --dfNodeBorderColor: rgba(4, 55, 166, 1);
+  --dfNodeBorderRadius: 10px;
+  --dfNodeMinHeight: 40px;
+  --dfNodeMinWidth: 200px;
+  --dfNodeBoxShadowHL: 0px;
+  --dfNodeBoxShadowVL: 2px;
+  --dfNodeBoxShadowBR: 15px;
+  --dfNodeBoxShadowS: 2px;
+  --dfNodeBoxShadowColor: rgba(35, 59, 92, 1);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#drawflow {
+  width: 100%;
+  height: 100%;
+  background: var(--dfBackgroundColor);
+  background-size: var(--dfBackgroundSize) var(--dfBackgroundSize);
+  background-image: var(--dfBackgroundImage);
+}
+
+.drawflow {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.parent-drawflow {
+  display: flex;
+  overflow: hidden;
+  touch-action: none;
+  outline: 0;
+}
+
+.drawflow,
+.drawflow .parent-node {
+  position: relative;
+}
+
+/*Node Styles*/
+.drawflow .drawflow-node {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.drawflow .drawflow-node {
+  background: var(--dfNodeBackgroundColor);
+  color: var(--dfNodeTextColor);
+  border: var(--dfNodeBorderSize) solid var(--dfNodeBorderColor);
+  border-radius: var(--dfNodeBorderRadius);
+  min-height: var(--dfNodeMinHeight);
+  min-width: var(--dfNodeMinWidth);
+  -webkit-box-shadow: var(--dfNodeBoxShadowHL) var(--dfNodeBoxShadowVL)
+    var(--dfNodeBoxShadowBR) var(--dfNodeBoxShadowS) var(--dfNodeBoxShadowColor);
+  box-shadow: var(--dfNodeBoxShadowHL) var(--dfNodeBoxShadowVL)
+    var(--dfNodeBoxShadowBR) var(--dfNodeBoxShadowS) var(--dfNodeBoxShadowColor);
+}
+
+.drawflow .drawflow-node:hover {
+  cursor: move;
+}
+
+.drawflow .drawflow-node.selected {
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(27, 105, 194, 0.75);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(27, 105, 194, 0.75);
+  box-shadow: 0px 0px 20px 1px rgba(27, 105, 194, 0.75);
+}
+
+.drawflow .drawflow-node .drawflow_content_node {
+  width: 100%;
+  display: block;
+}
+
+.drawflow .dfcontrol {
+  width: 0px !important;
+  min-height: 0px !important;
+  border: 0px;
+  box-shadow: none;
+}
+
+.drawflow-delete {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border: 2px solid #4993cf;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  top: -10px;
+  left: 190px;
+  background: white;
+  color: #4993cf;
+  padding-bottom: 6px;
+  font-size: 22px;
+}
+
+.drawflow-delete:hover {
+  border: 2px solid #3a72a0;
+  background: white;
+  color: #3a72a0;
+}
+
+/* Inputs and Outputs Styles */
+.drawflow .drawflow-node .input {
+  left: -25px;
+  position: relative;
+  background: white;
+  border: 2px solid rgba(35, 59, 92, 1);
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.drawflow .math .input_1 {
+  top: -5px;
+}
+
+.drawflow .math .input_2 {
+  top: 35px;
+}
+
+.drawflow .logic .input_1 {
+  top: -7px;
+}
+
+.drawflow .logic .input_2 {
+  top: 40px;
+}
+
+.drawflow .cicle .input_1 {
+  top: 10px;
+}
+
+.drawflow .cicle .input_2 {
+  top: 20px;
+}
+
+.drawflow .print .input_1 {
+  top: 50px;
+}
+
+.drawflow .drawflow-node .output {
+  right: -5px;
+  position: relative;
+  background: white;
+  border: 2px solid rgba(35, 59, 92, 1);
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.drawflow .logic .output_1 {
+  top: -7px;
+}
+
+.drawflow .logic .output_2 {
+  top: 40px;
+}
+
+.drawflow .math .output_1 {
+  top: 17px;
+}
+
+.drawflow .cicle .outputs {
+  top: 12px;
+}
+
+.drawflow .drawflow-node .outputs {
+  width: 0;
+  position: relative;
+}
+
+.drawflow .drawflow-node .inputs {
+  width: 0;
+}
+
+.drawflow .drawflow-node .input:hover {
+  cursor: crosshair;
+  border-color: rgb(7, 7, 87);
+  background-color: rgb(193, 193, 219);
+}
+
+.drawflow .drawflow-node .output:hover {
+  cursor: crosshair;
+  border-color: rgb(7, 7, 87);
+  background-color: rgb(193, 193, 219);
+}
+
+/* Line Conecction*/
+.drawflow .connection {
+  position: absolute;
+}
+.drawflow svg {
+  z-index: 0;
+  overflow: visible !important;
+}
+
+.drawflow .connection .main-path {
+  fill: none;
+  stroke-width: 4px;
+  stroke: #4993cf;
+}
+
+.drawflow .connection .main-path:hover {
+  cursor: pointer;
+  stroke: #407fb2;
+}
+
+.drawflow .connection .main-path.selected {
+  stroke: #adab1c;
+}
+
+.drawflow .connection .point {
+  stroke: #4993cf;
+  stroke-width: 2px;
+  fill: white;
+}
+
+.drawflow .connection .point:hover {
+  fill: #84bae3;
+}
