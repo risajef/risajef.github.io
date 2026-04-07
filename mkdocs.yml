@@ -10,6 +10,7 @@ nav:
       - Buchfaltstudio: programming/buchfaltstudio.md
       - Background Generator: programming/background-generator.md
       - Parallelismus: programming/parallelismus.md
+      - Python Blocks: programming/python-blocks.md
   - Research:
       - Hoare Logic: research/hoare-logic.md
   - Politik:
@@ -96,6 +97,7 @@ extra:
         Buchfaltstudio: 'Book folding studio'
         'Background Generator': 'Background Generator'
         Parallelismus: 'Parallelismus'
+        'Python Blocks': 'Python Blocks'
         Research: Research
         'Hoare Logic': 'Hoare Logic'
         Politik: Politics
@@ -117,6 +119,7 @@ extra:
         Buchfaltstudio: Buchfaltstudio
         'Background Generator': 'Hintergrund Generator'
         Parallelismus: Parallelismus
+        'Python Blocks': 'Python Blocks'
         Research: Forschung
         'Hoare Logic': Hoare-Logik
         Politik: Politik

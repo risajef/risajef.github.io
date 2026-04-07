@@ -25,6 +25,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## April 7th 2026
+
+Add [Python Blocks](/programming/python-blocks) - an application to teach the python basics. Create a python application by drag and drop the building blocks and then execute the program.
+
 ## February 12th 2026
 
 Add [Parallelismus](/programming/parallelismus) - a web application for studying biblical parallelism in Hebrew and Greek texts with Strong's concordance integration.
