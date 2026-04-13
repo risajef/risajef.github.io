@@ -39,6 +39,8 @@ PYTHON_BLOCKS_SUBMODULE_DIR = Path("assets/python-blocks")
 PYTHON_BLOCKS_OUTPUT_DIR = Path("assets/python-blocks-dist")
 HOARE_LOGIC_SUBMODULE_DIR = Path("assets/hoare-logic")
 HOARE_LOGIC_OUTPUT_DIR = Path("assets/hoare-logic-dist")
+XML_WEAVER_SUBMODULE_DIR = Path("assets/xml-weaver")
+XML_WEAVER_OUTPUT_DIR = Path("assets/xml-weaver-dist")
 
 
 @dataclass
@@ -69,6 +71,7 @@ def on_pre_build(config, **_):
     """Build third-party static apps before MkDocs copies docs/ assets."""
     _ensure_python_blocks_bundle()
     _ensure_hoare_logic_bundle()
+    _ensure_xml_weaver_bundle()
 
 
 def on_page_markdown(markdown, *, page, config, files):
@@ -416,6 +419,16 @@ def _ensure_hoare_logic_bundle() -> None:
         submodule_dir=HOARE_LOGIC_SUBMODULE_DIR,
         output_dir=HOARE_LOGIC_OUTPUT_DIR,
         base_href="/assets/hoare-logic-dist/",
+    )
+
+
+def _ensure_xml_weaver_bundle() -> None:
+    _ensure_static_app_bundle(
+        slug="xml-weaver",
+        label="XML Weaver",
+        submodule_dir=XML_WEAVER_SUBMODULE_DIR,
+        output_dir=XML_WEAVER_OUTPUT_DIR,
+        base_href="/assets/xml-weaver-dist/",
     )
 
 

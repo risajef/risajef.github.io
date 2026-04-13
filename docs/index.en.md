@@ -25,6 +25,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## April 13th  2026
+
+Add [XML Weaver](/tools/xml-weaver) - an application for editing XML files that prevents you from creating invalid files.
+
 ## April 7th 2026
 
 Add [Python Blocks](/tools/python-blocks) - an application for teaching the Python basics. Build a Python program by dragging blocks into place and then execute it directly in the browser.

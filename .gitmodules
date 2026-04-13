@@ -13,3 +13,6 @@
 [submodule "docs/assets/hoare-logic"]
 	path = docs/assets/hoare-logic
 	url = https://github.com/risajef/hoare-logic
+[submodule "docs/assets/xml-weaver"]
+	path = docs/assets/xml-weaver
+	url = https://github.com/risajef/xml-weaver
