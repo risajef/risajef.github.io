@@ -16,6 +16,7 @@ nav:
       - Parallelismus: tools/parallelismus.md
       - Python Blocks: tools/python-blocks.md
       - Hoare Logic: tools/hoare-logic.md
+      - XML Weaver: tools/xml-weaver.md
   - Politik:
       # - Zonenplanänderung: politik/zonenplanaenderung.md
       # - Werkhof Baukredit: politik/werkhof-baukredit.md
@@ -57,6 +58,7 @@ plugins:
         - 'assets/*/node_modules/**'
         - 'assets/*/README.md'
         - 'assets/*/Description.md'
+        - 'assets/*/requirements.md'
   - rss:
       match_path: '^blog/(thoughts|philosophy|science)/'
       length: 20
@@ -93,6 +95,8 @@ extra:
     de/programming/python-blocks: de/tools/python-blocks
     programming/hoare-logic: tools/hoare-logic
     de/programming/hoare-logic: de/tools/hoare-logic
+    programming/xml-weaver: tools/xml-weaver
+    de/programming/xml-weaver: de/tools/xml-weaver
     politics: politik
     politics/zonenplanaenderung: politik/zonenplanaenderung
     politics/finanzen-beringen: politik/finanzen-beringen
@@ -114,6 +118,7 @@ extra:
         'Python Blocks': 'Python Blocks'
         Research: Research
         'Hoare Logic': 'Hoare Logic'
+        'XML Weaver': 'XML Weaver'
         Politik: Politics
         'Finanzen Beringen': 'Finances Beringen'
         Blog: Blog
@@ -138,6 +143,7 @@ extra:
         'Python Blocks': 'Python Blocks'
         Research: Forschung
         'Hoare Logic': Hoare-Logik
+        'XML Weaver': 'XML Weaver'
         Politik: Politik
         'Finanzen Beringen': 'Finanzen Beringen'
         Blog: Blog

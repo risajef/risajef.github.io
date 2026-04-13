@@ -25,7 +25,11 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
-## 07. April 2026
+## 13. April 2026
+
+Füge [XML Weaver](/tools/xml-weaver) hinzu - eine Anwendung um XML Dateien zu bearbeiten, die es nicht erlaubt ungültige Dateien zu erstellen.
+
+## 7. April 2026
 
 Füge [Python Blocks](/tools/python-blocks) hinzu - eine Anwendung, um die Python-Grundlagen zu lernen. Du kannst ein Python-Programm per Drag & Drop aus Blöcken zusammensetzen und direkt im Browser ausführen.
 
