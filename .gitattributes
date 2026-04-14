@@ -15,3 +15,5 @@ assets/piper-tts/audio/*.mp3 filter=lfs diff=lfs merge=lfs -text
 /assets/hoare-logic-dist/z3/z3.wasm/z3w.wasm filter=lfs diff=lfs merge=lfs -text
 /assets/hoare-logic/public/z3/z3.wasm/z3smt2w.wasm filter=lfs diff=lfs merge=lfs -text
 /assets/hoare-logic/public/z3/z3.wasm/z3w.wasm filter=lfs diff=lfs merge=lfs -text
+/assets/hoare-logic/dist/z3/z3.wasm/z3smt2w.wasm filter=lfs diff=lfs merge=lfs -text
+/assets/hoare-logic/dist/z3/z3.wasm/z3w.wasm filter=lfs diff=lfs merge=lfs -text
