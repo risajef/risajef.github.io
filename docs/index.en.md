@@ -25,6 +25,12 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## April 14th 2026
+
+Add [LinkedIn WYSIWYG](/tools/linkedin-wysiwyg). A web based tool to format [LinkedIn](https://linkedin.com) posts.
+
+Improve [Hoare Logic Proof Validator](/tools/hoare-logic). The UI is better (still not good). Z3 usage was made more effective. Fixed an assignment bug that prevented creating an expression on the right-hand side.
+
 ## April 13th  2026
 
 Add [XML Weaver](/tools/xml-weaver) - an application for editing XML files that prevents you from creating invalid files.

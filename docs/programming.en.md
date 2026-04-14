@@ -100,6 +100,11 @@ Buchfaltstudio is a book folding pattern generator that creates precision foldin
 [**GitHub**](https://github.com/risajef/hoare-logic), [**Web Demo**](https://retoweber.info/tools/hoare-logic/)  
 This is a web technology based hoare logic verifier. The user can create programs and their proofs using drag and drop. The proofs of the hoare logic have to be explicit to the end. The logical and arithmetical proof obligations are fed to the SMT solver [Z3](https://github.com/Z3Prover/z3). The tool is fully frontend based. No server is needed. That is why the application also works on this static website.
 
+## LinkedIn WYSIWYG
+
+[**GitHub**](https://github.com/risajef/linkedin-wysiwyg), [**Web Demo**](https://retoweber.info/tools/linkedin-wysiwyg/)  
+LinkedIn WYSIWYG is a browser-based editor for composing LinkedIn posts with Unicode formatting that survives paste. It provides bold, italic, decorative text styles, list markers, a LinkedIn-style preview, one-click copy, and a remove-formatting action. Everything runs client-side as a simple static web application.
+
 ## CodeForge
 
 [**CodeForge on GitHub**](https://github.com/reto-weber/CodeForge)  

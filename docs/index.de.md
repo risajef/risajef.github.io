@@ -25,6 +25,12 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
+## 14. April 2026
+
+Füge [LinkedIn WYSIWYG](/tools/linkedin-wysiwyg) hinzu. Ein web-basiertes Werkzeug um [LinkedIn](https://linkedin.com) posts zu formatieren.
+
+Verbessere [Hoare Logic Proof Validator](/tools/hoare-logic). UI ist besser (nicht gut). Z3 nutzung wurde effektiver gemacht. Assignment bug wurde gefixed in dem auf der rechten Seite keine Expression gemacht werden kann.
+
 ## 13. April 2026
 
 Füge [XML Weaver](/tools/xml-weaver) hinzu - eine Anwendung um XML Dateien zu bearbeiten, die es nicht erlaubt ungültige Dateien zu erstellen.
