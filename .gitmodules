@@ -16,3 +16,6 @@
 [submodule "docs/assets/xml-weaver"]
 	path = docs/assets/xml-weaver
 	url = https://github.com/risajef/xml-weaver
+[submodule "docs/assets/linkedin-wysiwyg"]
+	path = docs/assets/linkedin-wysiwyg
+	url = https://github.com/risajef/linkedin-wysiwyg

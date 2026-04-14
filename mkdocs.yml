@@ -17,6 +17,7 @@ nav:
       - Python Blocks: tools/python-blocks.md
       - Hoare Logic: tools/hoare-logic.md
       - XML Weaver: tools/xml-weaver.md
+      - LinkedIn WYSIWYG: tools/linkedin-wysiwyg.md
   - Politik:
       # - Zonenplanänderung: politik/zonenplanaenderung.md
       # - Werkhof Baukredit: politik/werkhof-baukredit.md
@@ -97,6 +98,8 @@ extra:
     de/programming/hoare-logic: de/tools/hoare-logic
     programming/xml-weaver: tools/xml-weaver
     de/programming/xml-weaver: de/tools/xml-weaver
+    programming/linkedin-wysiwyg: tools/linkedin-wysiwyg
+    de/programming/linkedin-wysiwyg: de/tools/linkedin-wysiwyg
     politics: politik
     politics/zonenplanaenderung: politik/zonenplanaenderung
     politics/finanzen-beringen: politik/finanzen-beringen
@@ -119,6 +122,7 @@ extra:
         Research: Research
         'Hoare Logic': 'Hoare Logic'
         'XML Weaver': 'XML Weaver'
+        'LinkedIn WYSIWYG': 'LinkedIn WYSIWYG'
         Politik: Politics
         'Finanzen Beringen': 'Finances Beringen'
         Blog: Blog
@@ -144,6 +148,7 @@ extra:
         Research: Forschung
         'Hoare Logic': Hoare-Logik
         'XML Weaver': 'XML Weaver'
+        'LinkedIn WYSIWYG': 'LinkedIn WYSIWYG'
         Politik: Politik
         'Finanzen Beringen': 'Finanzen Beringen'
         Blog: Blog
