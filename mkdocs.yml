@@ -32,6 +32,7 @@ nav:
         - The Book: book/the-book.md
         - Influential Books: book/influential-books.md
         - Lessons from My Book: book/lessons-from-my-book.md
+        - Wärmer als die Sonne: book/waermer-als-die-sonne.md
 
 plugins:
   - i18n:
