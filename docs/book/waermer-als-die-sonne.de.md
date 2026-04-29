@@ -7,146 +7,161 @@ auto_translated: false
 
 ## Ein Feuer brennt.  
 
-Sie streckt ihre Arme aus.  
-Hält die Hände ans Feuer.  
-Die Wärme piekst in die Handflächen.  
-Die Rückseite bleibt kalt.  
-Sie dreht sich und wärmt den Rücken.  
-Das Gesicht fühlt sich sofort kalt an.  
+Sie streckt die Arme aus.  
+Entgegen dem Feuer ihre Hände.  
+Die Wärme sticht.  
+Die Poren weiten sich.
+Der Handrücken kalt.  
+Sie dreht sich; wärmt den Rücken.  
+Das Gesicht erkaltet.  
 Sie dreht sich im Minutentakt.  
 Minute für Minute.  
 Ist das Feuer warm genug, wird der Derwisch zu einem Phönix.  
 Wärmer, höher.  
 Er legt die Kleider ab und tanzt zum Himmel.  
-Heute ist das Feuer klein.
-Sie dreht sich aus.  
+Heute ist das Feuer klein.  
+Also bleibt der Kreisel stehen.  
 Wie ein kleiner Stein im Fluss der Zeit.  
 Gemahlen und zermürbt, am Boden gekauert.  
 Das Holz zu fern.  
-Das Feuer geht aus.  
-Sie wird zu einem Engerling.  
-Gekrümmt unter der Last des Universums.  
+Das Feuer aus.  
+Gekrümmt unter der Last der Welt.  
 Still und bang.  
 Sie wartet auf das Ende.  
 Bis sie eingeht in die ewige Kälte.  
 
 Sie erinnert sich an die Hoffnung.  
-Ihre Grossmutter erzählte von der Wärme.  
-Mit ernstlich verspielter Stimme erzählte sie die Geschichte der alten Magie:  
+Ihre Omi erzählte von der Wärme.  
+Mit ernstlich verspielter Stimme  
+erzählte sie von der alten Magie:  
 
-> Kind, es gibt die Sonne die wärmt.  
-> Sie ist nicht gerecht.  
-> Die Reichen bescheint sie mehr und uns Arme verlässt sie all zu oft.  
-> Wir frieren und sehnen uns darum nach Reichtum.  
-> Ein Leben in den warmen Ebenen.  
-> Doch wir Armen haben einen Schatz in uns den die Reichen nicht haben.  
+> Kind, die Sonne wärmt.  
+> Doch nicht gerecht.  
+> Reiche bescheint sie mehr  
+> uns Arme lässt sie kalt.  
+> Wir frieren und sehnen uns nach Reichtum.  
+> Nach einem Leben auf den warmen Ebenen.  
+> Doch WIR haben einen Schatz  
+> in uns den der Reiche nicht hat.  
 > Die Wärme ist in uns.  
-> Die Reichen sind gebräunt von der Sonne doch kalt ist ihr Herz.  
+> Die Reichen sind gebräunt 
+> von der Sonne doch ihr Herz ist kalt.  
 > Auch viele unserer Herzen in den Tälern sind kalt.  
-> Doch einige von uns haben die Wärme in uns.  
-> Kaum ein Mädchen darf ihre Grossmutter kennenlernen.  
+> Aber einige von uns haben die Wärme.  
+> Kaum ein Mädchen gibt wie dich.  
+> Darf ihre Omi kennen.  
 > Wir sind zu alt, zu schwach um uns zu versorgen.  
-> Wir alten werden oft zu den Bächen geschickt um dort der Kälte Mutter in den Schoss zu gehen.  
-> Mir wurde das immer wieder gesagt:   
+> Wir alten werden zu den Bächen geschickt.
+> Stirb dort und geht der Kälte Mutter in den Schoss.  
+> Mir wurde das wieder und wieder gesagt:   
 > Alte geh weg.   
-> Siehst du nicht, dass du zu viel Wärme brauchst?  
-> Siehst du nicht, dass du eine Last bist?  
+> Siehst du nicht, du brauchst zu viel Wärme?  
+> Siehst du nicht, du bist eine Last?  
 > Sie sprachen und sprechen so zu mir.  
-> Doch sie sehen nicht woher meine Wärme kommt.  
+> Doch sehen nicht die Quelle meiner Wärme.  
 > Kind, willst du das Geheimnis wissen?  
 > Willst du hören von der wahren Quelle?  
-> Willst du erfahren wo es Wärme gibt ohne Feuer?  
+> Willst du erfahren von Wärme ohne Feuer?  
 
 Das Kind nickte mit grossen Augen und schaute in das verbrauchte Gesicht der Alten.
 
-> Die Wärme kommt von dir.
+> Die Wärme ist in dir.
 
 Sie drückt mit ihren ungepflegten Fingernägeln sanft auf die Brust des Mädchens.
 
-> Was die Reichen nicht haben, ist ein Herz der Wärme.  
+> Was die Reichen nicht haben,  
+> Ein Herz der Wärme.  
 > Du hast die Wärme.  
-> Du musst nichts mehr tun und du wirst warm haben.  
+> Du musst nichts tun.
+> Du wirst warm haben.  
 > Es braucht Glaube, doch der Glaube allein reicht nicht.  
-> Es braucht Gnade, doch Gnade allein reicht nicht.  
+> Es braucht Vertrauen, doch Vertrauen allein reicht nicht.  
 > Der Wärmer lebt in dir.  
 > Er hat alles vollbracht.  
 > Einmal wird er wiederkommen und dann wird allen ein neues Herz gegeben.  
-> Ein Herz das alle wärmt und die Sonne wird vergehen.  
-> Du. Du hast jetzt schon dieses Herz.  
+> Ein Herz das alle wärmt.  
+> Die Sonne wird vergehen.  
+> Du. Du hast schon jetzt dies Herz.  
 
 Sie lächelte das Mädchen an.  
 Drehte sich unter Ächzen um und ging wieder zum Feuer.
 
-Das Mädchen kommt zurück in die Gegenwart.  
+Das Mädchen zurück in der Gegenwart.  
 Zurück in den Körper einer Frau.  
 Noch immer ist alles kalt.  
 Noch immer liegt sie am Boden.  
 Doch in ihr breitet sich eine Wärme aus.  
-Eine Gänsehaut schauert über ihre Arme und sie sieht am Himmel, dass die Sonne aufgeht.  
+Eine Gänsehaut schauert über ihre Arme und sie sieht am Himmel, die Sonne aufgehen.  
 Sie sieht, dass dies nicht die letzte Nacht war.  
 
 ## Sinnlos
 
-
 Die letzten Monate waren schwer.  
-Da war die Erinnerung an einen Mann.  
+Sie erinnert sich an einen Mann.  
 Er nahm sie nahe.  
-In seinen Arm und wärmte Sie.  
+An seinen Arm und wärmte Sie.  
 Ihre Herzen wärmten sich.  
 Sie berührten sich.  
 Er drang ein und sie nahm auf.  
 Er verschwand und sie blieb.  
 In ihr wuchs das grösste Problem ihres Lebens.  
 So machte sie sich auf.  
-Auf in die Stadt ihrer Grossmutter.  
+Auf in die Stadt ihrer Omi.  
 Sie folgte der alten Tradition.  
 Frauen gebären mit ihrer Mutter.  
-Doch sie kennt ihre Mutter nicht und erinnert sich nur an die Grossmutter.  
+Doch sie kennt ihre Mutter nicht.  
+Erinnert sich nur an die Omi.  
 So geht sie zur Stadt ihrer Vorfahren.  
-So hofft sie auf ihre Grossmutter,   
+So hofft sie auf ihre Omi,   
 dass sie noch lebt,   
 dass sie ihr gebären hilft.  
 
 Und so wanderte sie im düsteren Tal.  
-Die Sonne scheint dort nur kurz.  
-Die Zeit reicht knapp, sich auf die nächste Nacht vorzubereiten.  
+Die Sonne scheint nur kurz.  
+Die Zeit reicht knapp,  
+sich auf die nächste Nacht vorzubereiten.  
 Holz zu sammeln.  
-Doch bist du auf Reisen, brauchst du eine Unterkunft.  
-Letzte Nacht reichte die Zeit dafür nicht und beinahe wäre sie in den Schoss der Kälte eingegangen.  
+Doch bist du auf Reisen,  
+brauchst du eine Unterkunft.  
+Letzte Nacht reichte die Zeit nicht  
+und beinahe wäre sie in den Schoss der Kälte eingegangen.  
 Diese Nacht muss sie es schaffen.  
 Die Stadt ist nicht weit entfernt.  
 Seit Tagen sieht sie sie.  
-Doch sie kommt nur wenige Kilometer vorwärts jeden Tag.  
-Sie sieht die Stadt, doch weiss gewiss, dass sie noch zu fern ist.  
-Doch sie hofft und ihr Herz ist noch immer Warm.  
+Doch nur wenige Kilometer schafft sie jeden Tag.  
+Sie sieht die Stadt, doch weiss gewiss,  
+dass sie noch allzu fern ist.  
+Doch sie hofft  
+Ihr Herz ist warm.  
 
 Sie baut in der Kunst der Hirten eine Hütte.  
-Der erste Schritt ist, Ausschau zu halten nach einer natürlichen Grube.  
-Der nächste ist, das Material der Umgebung zu nutzen.  
-Das meiste Holz ist schon verbrannt und es bleiben meist Steine und Dreckklumpen, die zu einem Schutz getürmt werden.  
+Der erste Schritt ist: Suche eine natürlichen Grube.  
+Der nächste: nutze das Material.  
+Das meiste Holz ist schon verbrannt.  
+Es bleiben Steine und Erdklumpen, die zum Schutz getürmt werden.  
 Mit Moos wird ausgekleidet.  
-Der Erfolg des Ganzen ist abhängig von der Geometrie der Bergkette.  
+Der Erfolg hängt ab von der Geometrie der Bergkette.  
 Sie sagt, wie viele Stunden Tageslicht da sind.  
-Der Erfolg ist abhängig von der Reichhaltigkeit der Umgebung.  
-Der Erfolg ist abhängig von der Fähigkeit und dem Glück, zu finden.  
+Der Erfolg hängt ab von der Reichhaltigkeit der Umgebung.  
+Der Erfolg hängt ab von der Fähigkeit und dem Glück, zu finden.  
 
 Doch dieser Tag war besser.  
-So fand sie zwar nicht viel Holz,   
-Aber genug zu essen und eine natürliche Höhle, geschützt vor Wind.  
-So wird sie fast sicher den nächsten Tag erleben.  
+So fand sie zwar nur wenig Holz,   
+Doch genug zu essen und eine Höhle, geschützt vor Wind.  
+So wird sie doch wohl den nächsten Tag erleben.  
 
-Die Sonne ging schon langsam unter.  
+Die Sonne geht schon langsam unter.  
 So bleibt den Armen viel Zeit für sich.  
 Gedanken, Gebete, Lieder und Verzweifeln.  
-Wird die Verzweiflung zu gross, ist die Kälte nicht fern.  
-Sie lädt ein.
+Ist die Verzweiflung gross, ist die Kälte nicht fern.  
+Sie lädt dich ein.
 
 > Komm zu mir.  
 > Du musst nicht mehr.  
 > Alles ist vorbei.  
 > Meine Arme werden dich ruhig in den Schlaf begleiten.  
 
-Doch alle, die dem Zweifel glauben, sind vergangen.  
+Doch alle, die dem Zweifel glaubten, sind vergangen.  
 Friedlich und Ewiglich.  
 Doch sie lebt.  
 Sie ist noch warm.  
@@ -178,10 +193,10 @@ Und wird er verbrannt, wärmt er erneut.
 
 Sie ist es leid, nichts zu riechen.  
 Die Kälte raubt die Sinne.  
-Die Finger spüren nichts mehr.  
-Die Nase riecht nichts mehr.  
-Alleine hört man nichts.  
-Alles ist grau.  
+Die Finger taub.  
+Kein Geruch.  
+Wie Taub und Tinitus zu gleich.  
+Alles grau.  
 Kein Leben. Keine Geräusche ausser dem Wind.  
 Keine Berührung, keine Verletzung, keine Narbe, kein Eindringen, kein Leben.  
 
@@ -191,12 +206,12 @@ Keine Berührung, keine Verletzung, keine Narbe, kein Eindringen, kein Leben.
 
 Angekommen in der Stadt.  
 Die Stadt der Verheissung.  
-Grossmutter erzählte, dass der Wärmebringer aus dieser Stadt kommen wird.  
+Omi erzählte, dass der Wärmebringer aus dieser Stadt kommen wird.  
 Doch die Geschichte ist alt und die Hoffnung schwach.  
 Das Buch der Lieder singt von ihm.  
 Sie singen von einem König.  
 Von einem Hirten.  
-Von einem Aufrichter.  
+Von einem Auf-Richter.  
 Sie singen, dass er geschlagen wird.  
 Dass er siegen wird.  
 Dass er sterben wird.  
@@ -204,10 +219,11 @@ Dass sein Reich ewig bleibt.
 
 Der grosse Gestank der Stadt belebte ihre Sinne.  
 Sie sucht eine Bleibe.  
-Wo ist Grossmutter?  
+Wo ist Omi?  
 Sie fragt nach alten Frauen.  
-Sie beschreibt sie, so gut sie sich erinnert, doch ausser "alte Frau" kommt bei den Hörenden nichts an.  
-Doch die Stadt ist schnell durchsucht.  
+Sie beschreibt sie, so gut sie sich erinnert,  
+doch ausser "alte Frau" kommt bei den Hörenden nichts an.  
+Die Stadt ist schnell durchsucht.  
 Alte Menschen gibt es wenige.  
 Es gibt ein Altenheim.  
 Ein Hospiz.  
@@ -218,9 +234,8 @@ Mit Pilzen beruhigt in die Kälte gelegt,
 umarmt sie die Mutter und nimmt sie zu sich.  
 
 So geht sie zum Platz der Ruhe.  
-Sucht nach der Grossmutter.  
-Alle Alten,   
-manche gar schon 50 Jahre alt,   
+Sucht nach ihrer Omi.  
+Alle Alten, wenige gar schon 50 Jahre,   
 liegen friedlich gebettet.  
 So bleiben sie und verwesen nicht.  
 In der Stadt ist Verwesung und Gestank.  
@@ -229,8 +244,8 @@ Hier draussen ist das Ewige nichts.
 Sie geht durch die Reihen gebetteter Alten.  
 Schon viele entfrorene sah sie.  
 Sie schaute in die Gesichter.  
-Meist friedlich, doch nicht immer.  
-Sie muss sich eingestehen, dass sie nicht weiss, wie ihre Grossmutter aussieht.  
+Meist friedlich.  
+Sie muss erkennen, sie weiss nicht mehr, wie ihre Omi aussieht.  
 So geht sie zurück in die Stadt.  
 
 Vielleicht lebt sie noch?
@@ -249,18 +264,22 @@ Doch eine Frau alleine auf der Strasse?
 Genau so ist ihr Kind entstanden.  
 Sie ist jung und verletzt.  
 Doch gezeichnet und gestählt.  
-So weiss sie sich zu verstecken und hält die Zeit aus.  
+So weiss sie sich zu verstecken  
+und hält auch diese Zeiten aus.  
 
 Der Tag rückt näher,   
-doch Geld für eine Unterkunft hat sie nicht.  
-Sie fragt, doch wo sollen die Hausbesitzer sie unterbringen?  
+Geld für eine Unterkunft hat sie noch immer nicht.  
+Sie fragt nach einer Bleibe,  
+doch wo sollen man sie unterbringen?  
 Sie findet keinen Platz.  
-Und die, die sie findet, sind nicht sicher.  
+Und wenn doch, dann keinen sicheren.  
 Immer langsamer.  
 Der Bauch drückt. Wird hart.  
-Das Atmen fällt schweer.  
+Der Atmen schweer.  
 Der Bauch presst und sie atmet.  
 Sie kennt Schmerz.  
+Ach tröstlicher Schmerz.  
+Danke zeigst du mir, dass ich bin.  
 Da ist nichts, das sie fürchtet.  
 Sie stiehlt sich in eine Jauchegrube.  
 Dort ist es warm und sie ist sicher.  
@@ -281,7 +300,7 @@ Sie ist erschöpft.
 Die Gedanken kreisen:  
 
 > Wo ist der Mann?  
-> Wo ist Grossmutter?  
+> Wo ist Omi?  
 > Warum bin ich allein?  
 > Ich schaffe das nicht.  
 > Das Kind wird sterben.  
@@ -314,7 +333,7 @@ Das Kind gewinnt.
 
 > Ich kann nichts.  
 > Ich bin nichts.  
-> Die Wärme ist da.
+> Die Wärme ist da.  
 
 Eine warme Geburt.  
 Was will man mehr.  
@@ -333,10 +352,10 @@ Was will man mehr.
 * *Öffnen*
 * *Schmerz*
 * *Dehnen*
-* *Akzeptanz*
+* *Annahme*
 * *Brennen*
 * *Verzweiflung*
-* *Akzeptanz*
+* *Annahme*
 * *Dröhnender, sprengender, reissender Schmerz*
 
 * Ein glitschen.
@@ -370,10 +389,10 @@ Sie sangen das Lied aus dem Buch der Lieder.
 > Das Kind des Lichts.  
 > Das Kind der Wärme.  
 
-Die Hirten erwachten und sprachen ungehemmt.  
-Sie waren verwundert über den Traum.  
-Sie spürten die Wärme im Herzen.  
-Sie wollten das Jauchekind sehen.  
+Die Hirten erwachten, sprachen ungehemmt.  
+Waren verwundert über den Traum.  
+Spürten die Wärme im Herzen.  
+Wollten das Jauchekind sehen.  
 So gingen sie zurück in die Stadt.  
 
 Das Moos war schon abgegrast.  
@@ -396,24 +415,24 @@ Reiche werden sie genannt.
 Doch "Warme" wäre richtig.  
 Die Ebene ist voll.  
 Regiert von eiserner Hand.  
-So dürfen nicht noch mehr Personen auf der Ebene leben.  
+So dürfen nicht noch mehr Personen auf die Ebene.  
 Wer nicht genug hat, muss in die Kälte.  
 Bekommt ein Reicher viele Kinder, so müssen ebenso viele Warme in die Kälte.  
 Die eiserne Hand lastet schweer.  
-Die eiserne Hand duldet keine zweite Hand.  
-Die Almend ist nur so gesund, wie die eiserne Hand stark ist.  
+Die eiserne Hand duldet keine zweite.  
+Die Almend ist so gesund, wie die eiserne Hand stark.  
 
 Da kam eine Gelehrte in der Weise der Eingeweide.  
-Sie weiss die Zukunft zu deuten in den Eingeweiden der Tiere.  
+Sie deutet die Zukunft aus den Eingeweiden.  
 Eine alte Kunst.  
 Ein alter Zauber.  
 Ohne Lichtvater oder Kältemutter.  
 So geht sie von Leiche zu Leiche.  
-Schändet und schändet.  
+Schändet und sieht.  
 Fragt sich und sieht.  
-Eine federne Hand ist geboren.  
-Ein guter Hirte, der uns weidet auf der Ebene.  
-Er bringt den Kalten Wärme und den Warmen die Kälte.  
+*"Eine federne Hand ist geboren."*  
+*"Ein guter Hirte, der uns weidet auf der Ebene."*  
+*"Er bringt den Kalten Wärme und den Warmen die Kälte."*  
 
 Ein weiterer Hund aufgeschlitzt.  
 Es ist klar.  
@@ -432,5 +451,5 @@ Er sagt:
 
 So ging sie und fand das Kind.  
 Sie beschenkte es mit königlichem Gut.  
-Sie ging zurück, nicht durch die Ebene:  
-Denn ein Bote des Lichts verbot es ihr.  
+Ging zurück, doch nicht durch die Ebene:  
+Ein Bote des Lichts verbot es ihr.  
