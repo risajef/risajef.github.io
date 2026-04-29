@@ -316,6 +316,13 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/the-book/"/>
     </url>
     <url>
+        <loc>https://retoweber.info/book/waermer-als-die-sonne/</loc>
+        <lastmod>2026-04-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/waermer-als-die-sonne/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/waermer-als-die-sonne/"/>
+    </url>
+    <url>
         <loc>https://retoweber.info/politik/e-id/</loc>
         <lastmod>2026-04-29</lastmod>
         <changefreq>daily</changefreq>
@@ -719,6 +726,7 @@
         <lastmod>2026-04-29</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/book/waermer-als-die-sonne/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/book/waermer-als-die-sonne/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/politik/e-id/</loc>
