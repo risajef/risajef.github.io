@@ -48,15 +48,15 @@ erzählte sie von der alten Magie:
 > von der Sonne doch ihr Herz ist kalt.  
 > Auch viele unserer Herzen in den Tälern sind kalt.  
 > Aber einige von uns haben die Wärme.  
-> Kaum ein Mädchen gibt wie dich.  
+> Kaum ein Mädchen gibt's wie dich.  
 > Darf ihre Omi kennen.  
-> Wir sind zu alt, zu schwach um uns zu versorgen.  
+> Wir sind zu alt, zu schwach.  
 > Wir alten werden zu den Bächen geschickt.
-> Stirb dort und geht der Kälte Mutter in den Schoss.  
-> Mir wurde das wieder und wieder gesagt:   
-> Alte geh weg.   
-> Siehst du nicht, du brauchst zu viel Wärme?  
-> Siehst du nicht, du bist eine Last?  
+> "Stirb dort und geht der Kälte Mutter in den Schoss."  
+> Wurde mir wieder und wieder gesagt:  
+> "Alte geh weg."  
+> "Siehst du nicht, du brauchst zu viel Wärme?"  
+> "Siehst du nicht, du bist eine Last?"  
 > Sie sprachen und sprechen so zu mir.  
 > Doch sehen nicht die Quelle meiner Wärme.  
 > Kind, willst du das Geheimnis wissen?  
@@ -87,11 +87,12 @@ Sie lächelte das Mädchen an.
 Drehte sich unter Ächzen um und ging wieder zum Feuer.
 
 Das Mädchen zurück in der Gegenwart.  
-Zurück in den Körper einer Frau.  
-Noch immer ist alles kalt.  
-Noch immer liegt sie am Boden.  
-Doch in ihr breitet sich eine Wärme aus.  
-Eine Gänsehaut schauert über ihre Arme und sie sieht am Himmel, die Sonne aufgehen.  
+Zurück im Körper einer Frau.  
+Noch immer alles kalt.  
+Noch immer am Boden.  
+Doch in ihr breitet sich die Wärme aus.  
+Eine Gänsehaut schauert über ihre Arme  
+und sie sieht am Himmel, die Sonne aufgehen.  
 Sie sieht, dass dies nicht die letzte Nacht war.  
 
 ## Sinnlos
@@ -104,7 +105,8 @@ Ihre Herzen wärmten sich.
 Sie berührten sich.  
 Er drang ein und sie nahm auf.  
 Er verschwand und sie blieb.  
-In ihr wuchs das grösste Problem ihres Lebens.  
+In ihr wuchs das Lebens.  
+Doch sie ist allein.  
 So machte sie sich auf.  
 Auf in die Stadt ihrer Omi.  
 Sie folgte der alten Tradition.  
@@ -112,11 +114,11 @@ Frauen gebären mit ihrer Mutter.
 Doch sie kennt ihre Mutter nicht.  
 Erinnert sich nur an die Omi.  
 So geht sie zur Stadt ihrer Vorfahren.  
-So hofft sie auf ihre Omi,   
-dass sie noch lebt,   
+So hofft sie auf ihre Omi,  
+dass sie noch lebt,  
 dass sie ihr gebären hilft.  
 
-Und so wanderte sie im düsteren Tal.  
+Und so wandert sie im düsteren Tal.  
 Die Sonne scheint nur kurz.  
 Die Zeit reicht knapp,  
 sich auf die nächste Nacht vorzubereiten.  
@@ -128,32 +130,35 @@ und beinahe wäre sie in den Schoss der Kälte eingegangen.
 Diese Nacht muss sie es schaffen.  
 Die Stadt ist nicht weit entfernt.  
 Seit Tagen sieht sie sie.  
-Doch nur wenige Kilometer schafft sie jeden Tag.  
+Doch nur wenige Kilometer schafft sie  
+Tag für Tag.  
 Sie sieht die Stadt, doch weiss gewiss,  
 dass sie noch allzu fern ist.  
 Doch sie hofft  
 Ihr Herz ist warm.  
 
-Sie baut in der Kunst der Hirten eine Hütte.  
-Der erste Schritt ist: Suche eine natürlichen Grube.  
-Der nächste: nutze das Material.  
-Das meiste Holz ist schon verbrannt.  
-Es bleiben Steine und Erdklumpen, die zum Schutz getürmt werden.  
+Sie baut Hütten wie die Hirten.  
+Der erste Schritt: Suche eine natürlichen Grube.  
+Der nächste: Nutze das Material.  
+Holz ist schon verbrannt.  
+Es bleiben Steine und Erdklumpen,  
+die zum Schutz getürmt werden.  
 Mit Moos wird ausgekleidet.  
-Der Erfolg hängt ab von der Geometrie der Bergkette.  
-Sie sagt, wie viele Stunden Tageslicht da sind.  
+Der Erfolg hängt ab von der Form des Tals.  
+Wie lange Tageslicht ist.  
 Der Erfolg hängt ab von der Reichhaltigkeit der Umgebung.  
 Der Erfolg hängt ab von der Fähigkeit und dem Glück, zu finden.  
 
 Doch dieser Tag war besser.  
-So fand sie zwar nur wenig Holz,   
-Doch genug zu essen und eine Höhle, geschützt vor Wind.  
-So wird sie doch wohl den nächsten Tag erleben.  
+So fand sie zwar nur wenig Holz,  
+Doch genug zu essen  
+und eine Höhle, geschützt vor Wind.  
+So wird sie doch den nächsten Tag sehen.  
 
 Die Sonne geht schon langsam unter.  
-So bleibt den Armen viel Zeit für sich.  
+So bleibt den Armen Zeit für sich.  
 Gedanken, Gebete, Lieder und Verzweifeln.  
-Ist die Verzweiflung gross, ist die Kälte nicht fern.  
+Ist die Verzweiflung gross, ist die Kälte nah.  
 Sie lädt dich ein.
 
 > Komm zu mir.  
@@ -176,10 +181,10 @@ So singt sie:
 Sie singt leise.  
 Leise.  
 Die Lippen bewegen sich kaum.  
-Die Melodie im Kopf und etwas im Atem.  
+Die Melodie im Kopf; im Atem.  
 Doch die Wärme der Lieder dringt tief ins Herz.  
-So singt sie wieder und wieder das Buch der Lieder.  
-So singt sie und wärmt das Herz ihres Kindes.  
+So singt sie wieder das Buch der Lieder.  
+So singt sie und wärmt das Herz des Kinds.  
 
 Am Horizont die Hoffnung.  
 Eine Stadt, in der sich Menschen wärmen.  
@@ -188,7 +193,7 @@ Nur stinkende Wärme.
 Der Gestank des Lebens.  
 Wie sehr sehnt sie sich nach dem Schweiss der anderen.  
 Nach dem warmen Kot.  
-Er wärmt zu Beginn.  
+Er wärmt.  
 Und wird er verbrannt, wärmt er erneut.  
 
 Sie ist es leid, nichts zu riechen.  
@@ -200,14 +205,13 @@ Alles grau.
 Kein Leben. Keine Geräusche ausser dem Wind.  
 Keine Berührung, keine Verletzung, keine Narbe, kein Eindringen, kein Leben.  
 
-
 ## Tod und Jauche
-
 
 Angekommen in der Stadt.  
 Die Stadt der Verheissung.  
-Omi erzählte, dass der Wärmebringer aus dieser Stadt kommen wird.  
-Doch die Geschichte ist alt und die Hoffnung schwach.  
+Omi erzählte, dass der Wärmebringer aus ihr kommt.  
+Doch die Geschichte ist alt  
+und die Hoffnung schwach.  
 Das Buch der Lieder singt von ihm.  
 Sie singen von einem König.  
 Von einem Hirten.  
@@ -222,7 +226,7 @@ Sie sucht eine Bleibe.
 Wo ist Omi?  
 Sie fragt nach alten Frauen.  
 Sie beschreibt sie, so gut sie sich erinnert,  
-doch ausser "alte Frau" kommt bei den Hörenden nichts an.  
+doch ausser "alte Frau" hören die Hörenden nichts.  
 Die Stadt ist schnell durchsucht.  
 Alte Menschen gibt es wenige.  
 Es gibt ein Altenheim.  
@@ -230,16 +234,16 @@ Ein Hospiz.
 Dort dürfen alte Menschen in Würde sterben.  
 Dort sind Kräuterkundige.  
 Die Alten werden zur Kältemutter geführt.  
-Mit Pilzen beruhigt in die Kälte gelegt,   
+Mit Pilzen beruhigt in die Kälte gelegt,  
 umarmt sie die Mutter und nimmt sie zu sich.  
 
 So geht sie zum Platz der Ruhe.  
 Sucht nach ihrer Omi.  
-Alle Alten, wenige gar schon 50 Jahre,   
+Alle Alten, wenige gar schon 50 Jahre,  
 liegen friedlich gebettet.  
 So bleiben sie und verwesen nicht.  
-In der Stadt ist Verwesung und Gestank.  
-Hier draussen ist das Ewige nichts.  
+In der Stadt: Verwesung und Gestank.  
+Hier draussen: Das Ewige nichts.  
 
 Sie geht durch die Reihen gebetteter Alten.  
 Schon viele entfrorene sah sie.  
@@ -267,7 +271,7 @@ Doch gezeichnet und gestählt.
 So weiss sie sich zu verstecken  
 und hält auch diese Zeiten aus.  
 
-Der Tag rückt näher,   
+Der Tag rückt näher,  
 Geld für eine Unterkunft hat sie noch immer nicht.  
 Sie fragt nach einer Bleibe,  
 doch wo sollen man sie unterbringen?  
