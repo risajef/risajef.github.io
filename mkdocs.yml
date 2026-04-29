@@ -134,6 +134,7 @@ extra:
         'The Book': 'The Book'
         'Influential Books': 'Influential Books'
         'Lessons from My Book': 'Lessons from My Book'
+        'Wärmer als die Sonne': 'Warmer than the Sun'
     de:
       auto_translation_title: 'Automatische Übersetzung.'
       auto_translation_from_lang: 'Diese Seite wurde maschinell aus {lang} übersetzt und kann Fehler enthalten.'
@@ -160,3 +161,4 @@ extra:
         'The Book': 'Das Buch'
         'Influential Books': 'Einflussreiche Bücher'
         'Lessons from My Book': 'Lektionen aus meinem Buch'
+        'Wärmer als die Sonne': 'Warmer than the Sun'
