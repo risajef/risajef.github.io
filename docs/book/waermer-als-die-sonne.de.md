@@ -457,3 +457,118 @@ So ging sie und fand das Kind.
 Sie beschenkte es mit königlichem Gut.  
 Ging zurück, doch nicht durch die Ebene:  
 Ein Bote des Lichts verbot es ihr.  
+
+Die eiserne Faust glüht.  
+Und zerdrückt die Schwachen.  
+Die Warmen zerflossen.  
+Die Kalten erzitterten.  
+
+Eiserne Hand:
+> Tötet jedes Kind.  
+> Ob Warm oder Kalt.
+
+> Gelehrte!  
+> Wo wird die federne Hand geboren?
+
+Berater:
+> Aber Herr: Diese ist nur eine Legende.
+
+Eiserne Hand:
+> WO!
+
+Berater:
+> In der Stadt.  
+> Sie stinkt nach Dung.
+
+Eiserne Hand:
+> In der Kälte?
+
+Berater:
+> Sie war mal warm  
+> doch jetzt ist sie kalt.
+
+Eiserne Hand:
+> Tötet jeden Knaben.  
+> Ob Warm oder Kalt.
+
+
+---
+
+## Von gutem Geschlecht
+
+Sie vernahm die Botschaft.  
+Jeder Knabe muss sterben.  
+Den Mann, die Kälte, das Kind überstanden.  
+Doch die eiserne Faust?  
+
+Zurück auf der Strasse.  
+Kleider gemacht.  
+Das Kind immer bei sich.  
+Immer die Brust.  
+Immer die Milch.  
+Viele Kleider für viel zu Essen.  
+Kümmerlich und weinerlich.  
+Doch immerzu nah.  
+
+Das Kind weinte oft.  
+Das ist gut.  
+Ein Kind das weint, hofft.  
+In stilles stribt.  
+
+Aber bitte nicht heute.  
+Heute kommen die eisernen Boten.  
+Sie haben den befehl:  
+Jeden Knaben zu töten.  
+
+* *Klopfen*  
+* *Eintreten*  
+* *Herz pocht durch den Hals*  
+> *Soll ich das Kind erwürgen, dass er es nicht bekommt?*  
+> *Soll ich es übergeben?*  
+
+Er nimmt ein Tuch vor den Mund.
+
+> Hier stinkt es.  
+> Der Alte soll mal abdanken.  
+> Als ob von einer Jauchegrube ein König kommt.  
+> Frau! Gib dein Kind.  
+> Ich hab es gehört.  
+
+Sie zittert.  
+Umklammert das Kind.  
+Er löst ihre Arme mit ruhiger Bewegung.  
+Sie kreischt und klammert.  
+Er schiebt sie sanft weg.  
+Schlägt ihr geübt in die Niere.  
+Sie zuckt und krümmt.  
+Sie stöhnt.  
+Er tritt ins Gesicht.  
+
+Gemahlen und zermürbt, am Boden gekauert.  
+Die Wärme ist fern.  
+Gekrümmt unter der Last der Welt.  
+Still und bang.  
+Sie wartet auf das Ende.  
+Bis sie eingeht in die ewige Kälte.  
+
+Er nimmt das Kind.  
+Wickelt kurz die Lappen weg.  
+Sieht die Scheide.  
+> Das dringt niemals ein.  
+
+Er wirft es auf die Mutter.  
+Tritt noch einmal nach ihr.  
+Das Kind trifft auf die magere Brust  
+und fällt zu Boden.
+
+Wäre sie eine Warme gewesen  
+wäre das Kind weich gefallen.  
+Doch ist sie eine Kalte.  
+Das Kind eine Harte.  
+
+Das Mädchen ist zu klein.  
+Keine Gefahr für die eiserne Hand.  
+Zu schwach sind Frauen.  
+Und ein Nichts sind Mädchen.  
+
+Nicht wert, getötet zu werden.
