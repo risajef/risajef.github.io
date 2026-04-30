@@ -463,7 +463,7 @@ Er sagt:
 > Ich will ihr huldigen.  
 
 So ging sie und fand das Kind.  
-Sie beschenkte es mit königlichem Gut.  
+Sie beschenkt es mit royaler Kette.  
 Ging zurück, doch nicht durch die Ebene:  
 Ein Bote des Lichts verbot es ihr.  
 
@@ -548,8 +548,8 @@ Umklammert das Kind.
 Er löst ihre Arme mit ruhiger Bewegung.  
 Sie kreischt und klammert.  
 Er schiebt sie sanft weg.  
-Schlägt ihr geübt in die Niere.  
-Sie zuckt und krümmt.  
+Tritt ihre Wade.  
+Sie verliert den Stand.  
 Sie stöhnt.  
 Er tritt ins Gesicht.  
 
@@ -567,7 +567,7 @@ Sieht die Scheide.
 
 Er wirft es auf die Mutter.  
 Tritt noch einmal nach ihr.  
-Das Kind trifft auf die magere Brust  
+Das Kind platzt auf die magere Brust  
 und fällt zu Boden.
 
 Wäre sie eine Warme gewesen  
@@ -584,5 +584,59 @@ Nicht wert, getötet zu werden.
 
 ---
 
-Geboren aus Jauche.
-Gewachsen zue Dirne.
+## Geboren zu lieben
+
+Geboren aus Jauche.  
+Gewachsen zur Dirne.  
+Sie versprühte die Nähe.  
+Die Wärme war da.  
+
+Sie lernte Vertrauen an der Brust ihrer Mutter.  
+Keinen Mann verschmähte sie.  
+Keine Frau wies sie ab.  
+Geboren zu lieben.  
+
+Die Mutter weinte.  
+Sie schämt sich sehr.  
+Keine Mutter will,  
+dass ihre Tochter eine Dirne wird.  
+
+Fern sind die Erinnerungen.  
+Die Hirten knieten.  
+Die Wahrsagerin beschenkte.  
+Ein Traum?  
+
+Nein!  
+Noch immer trägt sie die Kette auf ihrem Herzen.  
+Und behält die Worte in ihrem Herzen.  
+Doch wo ist die Hilfe?  
+
+Sie schaut auf zu den Bergen.  
+Da ist keine Hilfe.  
+
+Die Tochter vertraut.  
+Unzerbrechlich.  
+Verletzt und geschlagen.  
+Gewürgt und vernarbt.  
+
+Doch...  
+Keinen Mann verschmähte sie.  
+Keine Frau wies sie ab.  
+Geboren zu lieben.  
+
+Mit gestilltem Vertrauen  
+Geschichten der Alten  
+Lieder der Wärme  
+Einem Herzen aus Feuer  
+
+<!--
+> TODO (noch fehlt):
+> - Täufererlebnis
+> - Wunderwirkungen
+> - Jüngerberufung
+> - Verfolgung
+> - Höhle des Löwen
+> - Prozess
+> - Tod
+> - Warme Herzen
+-->
