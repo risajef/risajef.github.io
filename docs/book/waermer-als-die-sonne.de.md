@@ -629,6 +629,126 @@ Geschichten der Alten
 Lieder der Wärme  
 Einem Herzen aus Feuer  
 
+---
+
+## Das Liebesspiel
+
+Mitten im Liebesspiel.  
+Erneut gewürt doch ohne Angst.  
+Einmal wird sie gehen.  
+Das weiss sie schon lange.  
+
+Hörte sie passiv den Verrückten.  
+
+> Kommt alle her und hört.  
+> Kehrt um.
+
+Der Freier nimmt sie und dreht sie auf den Rücken.  
+Abgemagerte Hoden klatschen auf einen abgemagerten Arsch.  
+
+*klatsch*
+
+> Die Sonne scheint warm für alle.
+
+*klatsch*
+
+> Der Vater sieht auf die Eben und ins Tal und sieht nur kalte Herzen.
+
+*klatsch*
+
+> Kehrt um, denn ein warmes Herz gefällt ihm.
+
+*klatsch*
+Er spuckt ihr ins Gesicht.
+
+> Ein kaltes spuckt er aus.  
+
+Er packen ihr Brust.
+
+> Ob warm oder kalt, der Vater schaut nur aufs Herz.
+
+*klatsch*
+
+> Schaut nicht auf die anderen.
+> "Die warmen sollen uns etwas abgeben."
+
+*klatsch*
+
+> "Gäben sie einwenig von ihrem Reichtum, uns Leben wäre einfach."
+
+*klatsch*
+Er packt sie erneut.
+Stellt sie auf an die Wand.
+
+> Ihr schreit nach Gerechtigkeit  
+
+Er würgt sie an die Wand.
+
+> Eine Gerechtigkeit die euch aufrichtet.
+
+*klatsch*
+
+> Doch was bringt ihr?
+
+*klatsch*
+
+> Was ist in eurem Herzen?
+
+*klatsch*
+
+> Überlasst das Gericht dem Wärme Vater.  
+
+*klatsch*
+Er kommt bald.
+
+> Er übersieht kein Unrecht.
+
+*klatsch, klatsch, klatsch*
+
+> Nichts bleibt ihm verborgen.  
+
+*klatsch, klatsch, klatsch*
+
+> Doch ihr vertraut ihm nicht.
+
+*klatsch, klatsch, klatsch*
+
+> Und eure Herzen sind dunkel.
+
+*Grölendes Stöhnen*
+
+> Kehrt um. Rufe ich. Kehrt um.
+
+Er wirft sie zu Boden.
+
+> Alles worum ihr euch kümmern müsst, ist euer Herz.
+
+Sie liegt  
+erneut geschändet  
+auf kaltem Boden  
+doch warmen Herz  
+
+> Ein Herz aus Stein, kalt wie Eis.  
+> Doch kommt mit mir und erneuert euer Herz.  
+> Die Wärme ist in euch.  
+> Die Wärme ist nicht bei den Warmen.  
+> Die Wärme ist nicht bei der Sonne.  
+> Die Sonne wird vergehen, aber die Wärme des Vaters überdauert.  
+> Was kalt ist, wird verglühen in seinem Angesicht.  
+> Nur was warm ist tanzt im ewigen Reigen.  
+
+Sie steht auf.  
+Zieht sich an.  
+Richtet ihre Kleider.  
+
+> Kommt und folgt mir.  
+
+Sie folgt ihm nach.
+
+> Kehrt um.
+
+
+
 <!--
 > TODO (noch fehlt):
 > - Täufererlebnis
