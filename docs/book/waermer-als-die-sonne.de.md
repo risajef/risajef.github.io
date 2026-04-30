@@ -669,18 +669,19 @@ Er packen ihr Brust.
 
 *klatsch*
 
-> Schaut nicht auf die anderen.
-> "Die warmen sollen uns etwas abgeben."
+> Schaut nicht auf die anderen.  
+> "Die Warmen sollen uns etwas abgeben."
 
 *klatsch*
 
-> "Gäben sie einwenig von ihrem Reichtum, uns Leben wäre einfach."
+> "Gäben sie einwenig von ihrem Reichtum,  
+> unser Leben wäre einfach."
 
-*klatsch*
-Er packt sie erneut.
-Stellt sie auf an die Wand.
+*klatsch*  
+Er packt sie erneut.  
+Stellt sie auf an die Wand.  
 
-> Ihr schreit nach Gerechtigkeit  
+> Ihr schreit nach Gerechtigkeit
 
 Er würgt sie an die Wand.
 
@@ -688,7 +689,7 @@ Er würgt sie an die Wand.
 
 *klatsch*
 
-> Doch was bringt ihr?
+> Doch was bringt ihr mit?
 
 *klatsch*
 
@@ -726,13 +727,13 @@ Er wirft sie zu Boden.
 Sie liegt  
 erneut geschändet  
 auf kaltem Boden  
-doch warmen Herz  
+doch warmes Herz  
 
 > Ein Herz aus Stein, kalt wie Eis.  
 > Doch kommt mit mir und erneuert euer Herz.  
 > Die Wärme ist in euch.  
-> Die Wärme ist nicht bei den Warmen.  
-> Die Wärme ist nicht bei der Sonne.  
+> Die Warmen haben die Wärme nicht.  
+> Die Sonne hat die Wärme nicht.  
 > Die Sonne wird vergehen, aber die Wärme des Vaters überdauert.  
 > Was kalt ist, wird verglühen in seinem Angesicht.  
 > Nur was warm ist tanzt im ewigen Reigen.  
@@ -740,6 +741,7 @@ doch warmen Herz
 Sie steht auf.  
 Zieht sich an.  
 Richtet ihre Kleider.  
+Dreht sich zum Verrückten.
 
 > Kommt und folgt mir.  
 
