@@ -7,6 +7,7 @@ auto_translated: false
 
 ## Ein Feuer brennt.  
 
+Alleine, draussen, kalt und dunkel.
 Sie streckt die Arme aus.  
 Entgegen dem Feuer ihre Hände.  
 Die Wärme sticht.  
@@ -98,6 +99,8 @@ Sie sieht, dass dies nicht die letzte Nacht war.
 ## Sinnlos
 
 Die letzten Monate waren schwer.  
+Alleine in der Gasse.
+Kalt.
 Sie erinnert sich an einen Mann.  
 Er nahm sie nahe.  
 An seinen Arm und wärmte Sie.  
@@ -107,6 +110,12 @@ Er drang ein und sie nahm auf.
 Er verschwand und sie blieb.  
 In ihr wuchs das Lebens.  
 Doch sie ist allein.  
+Die Erinnerung der Nähe
+Wurde zur Hader.
+Die Nähe zu Schmerz.
+Das Spiel zu Ernst.
+Der Ernst zur Scham.
+Die Scham verletzt.
 So machte sie sich auf.  
 Auf in die Stadt ihrer Omi.  
 Sie folgte der alten Tradition.  
@@ -572,3 +581,8 @@ Zu schwach sind Frauen.
 Und ein Nichts sind Mädchen.  
 
 Nicht wert, getötet zu werden.
+
+---
+
+Geboren aus Jauche.
+Gewachsen zue Dirne.
