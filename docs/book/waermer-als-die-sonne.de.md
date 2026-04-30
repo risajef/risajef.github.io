@@ -727,7 +727,7 @@ Er wirft sie zu Boden.
 Sie liegt  
 erneut geschändet  
 auf kaltem Boden  
-doch warmes Herz  
+mit warmem Herz.  
 
 > Ein Herz aus Stein, kalt wie Eis.  
 > Doch kommt mit mir und erneuert euer Herz.  
