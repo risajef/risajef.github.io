@@ -7,23 +7,27 @@ auto_translated: false
 
 ## Ein Feuer brennt.  
 
-Alleine, draussen, kalt und dunkel.
+*Alleine, draussen, kalt und dunkel.*
+
 Sie streckt die Arme aus.  
 Entgegen dem Feuer ihre Hände.  
 Die Wärme sticht.  
-Die Poren weiten sich.
+Die Poren weiten sich.  
 Der Handrücken kalt.  
 Sie dreht sich; wärmt den Rücken.  
 Das Gesicht erkaltet.  
 Sie dreht sich im Minutentakt.  
 Minute für Minute.  
-Ist das Feuer warm genug, wird der Derwisch zu einem Phönix.  
+Ist das Feuer warm genug,  
+wird der Derwisch zu einem Phönix.  
 Wärmer, höher.  
-Er legt die Kleider ab und tanzt zum Himmel.  
+Er legt die Kleider ab  
+und tanzt zum Himmel.  
 Heute ist das Feuer klein.  
 Also bleibt der Kreisel stehen.  
 Wie ein kleiner Stein im Fluss der Zeit.  
-Gemahlen und zermürbt, am Boden gekauert.  
+Gemahlen und zermürbt,  
+am Boden gekauert.  
 Das Holz zu fern.  
 Das Feuer aus.  
 Gekrümmt unter der Last der Welt.  
@@ -40,10 +44,10 @@ erzählte sie von der alten Magie:
 > Doch nicht gerecht.  
 > Reiche bescheint sie mehr  
 > uns Arme lässt sie kalt.  
-> Wir frieren und sehnen uns nach Reichtum.  
+> Wir frieren; sehnen uns nach Reichtum.  
 > Nach einem Leben auf den warmen Ebenen.  
-> Doch WIR haben einen Schatz  
-> in uns den der Reiche nicht hat.  
+> Doch WIR haben einen in uns  
+> den der Reiche nicht hat.  
 > Die Wärme ist in uns.  
 > Die Reichen sind gebräunt 
 > von der Sonne doch ihr Herz ist kalt.  
@@ -82,7 +86,7 @@ Sie drückt mit ihren ungepflegten Fingernägeln sanft auf die Brust des Mädche
 > Einmal wird er wiederkommen und dann wird allen ein neues Herz gegeben.  
 > Ein Herz das alle wärmt.  
 > Die Sonne wird vergehen.  
-> Du. Du hast schon jetzt dies Herz.  
+> Doch du. Du hast schon jetzt dies Herz.  
 
 Sie lächelte das Mädchen an.  
 Drehte sich unter Ächzen um und ging wieder zum Feuer.
