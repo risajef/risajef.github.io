@@ -53,7 +53,7 @@ erzählte sie von der alten Magie:
 > Darf ihre Omi kennen.  
 > Wir sind zu alt, zu schwach.  
 > Wir alten werden zu den Bächen geschickt.
-> "Stirb dort und geht der Kälte Mutter in den Schoss."  
+> "Stirb dort und geh der Kälte Mutter in den Schoss."  
 > Wurde mir wieder und wieder gesagt:  
 > "Alte geh weg."  
 > "Siehst du nicht, du brauchst zu viel Wärme?"  
@@ -111,11 +111,11 @@ Er verschwand und sie blieb.
 In ihr wuchs das Lebens.  
 Doch sie ist allein.  
 Die Erinnerung der Nähe
-Wurde zur Hader.
-Die Nähe zu Schmerz.
-Das Spiel zu Ernst.
-Der Ernst zur Scham.
-Die Scham verletzt.
+Wurde zur Hader.  
+Die Nähe zu Schmerz.  
+Das Spiel zu Ernst.  
+Der Ernst zur Scham.  
+Die Scham verletzt.  
 So machte sie sich auf.  
 Auf in die Stadt ihrer Omi.  
 Sie folgte der alten Tradition.  
@@ -283,16 +283,16 @@ und hält auch diese Zeiten aus.
 Der Tag rückt näher,  
 Geld für eine Unterkunft hat sie noch immer nicht.  
 Sie fragt nach einer Bleibe,  
-doch wo sollen man sie unterbringen?  
+doch wer sollen sie unterbringen?  
 Sie findet keinen Platz.  
-Und wenn doch, dann keinen sicheren.  
+Und wenn, dann keinen sicheren.  
 Immer langsamer.  
 Der Bauch drückt. Wird hart.  
 Der Atmen schweer.  
 Der Bauch presst und sie atmet.  
 Sie kennt Schmerz.  
 Ach tröstlicher Schmerz.  
-Danke zeigst du mir, dass ich bin.  
+Du zeigst mir, dass ich bin.  
 Da ist nichts, das sie fürchtet.  
 Sie stiehlt sich in eine Jauchegrube.  
 Dort ist es warm und sie ist sicher.  
@@ -743,15 +743,31 @@ Zieht sich an.
 Richtet ihre Kleider.  
 Dreht sich zum Verrückten.
 
+> Kehrt um.  
 > Kommt und folgt mir.  
 
 Sie folgt ihm nach.
 
-> Kehrt um.
 
-
+---
 
 <!--
+Eine Gruppe von 5 Personen geht mit ihm.
+Er schaut sie an.
+Traurig und voller Wärme.
+Alle gehen in einer Gruppe.
+
+Sie gehen aus der Stadt.
+In die Kälte.
+
+> Wir werden über Kohle gehen.  
+> Kohle brennt weg, was nicht sein darf.
+
+> Woher nimmt er Kohle?  
+> Ist er so reich?
+
+
+
 > TODO (noch fehlt):
 > - Täufererlebnis
 > - Wunderwirkungen
