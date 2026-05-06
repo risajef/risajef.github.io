@@ -105,6 +105,20 @@ I created a [page](/politik/zonenplanaenderung/) with neutral facts about the ba
 
 Here I give an account of how I voted or whom I elected in the Residents' Council. The proposals can be found on the municipality’s [website](https://www.beringen.ch/de/einwohnerrat-vorlagen).
 
+
+## 5. May 2026
+
+| My vote | Council decision | Proposal |
+| --- | --- | --- |
+| ✓ | ✓ | Proposal for the complete renovation of the Gwaagge public swimming pool (including biological rapid filters) |
+| ✓ | ✓ | Proposal to join the waste management association "Recycling and Disposal Schaffhausen and Surroundings - RESU" |
+| ✓ | ✓ | Proposal to approve the park contract and thus extend the first operational phase of the Regional Nature Park Schaffhausen into the second operational phase 2028 - 2037 as well as approval of the annual membership fee to the association "Regional Nature Park Schaffhausen" during the operational phase 2028 - 2037 |
+| ✓ | ✓ | Final accounting for the purchase of the Clientis BS Bank Schaffhausen share in the condominium property administration building Zelg and its conversion into a medical practice |
+
+> The swimming pool proposal sparked considerable discussion. A motion to return the proposal by Jörg Schwaninger was also rejected. This wanted to have the chlorine variant also developed and then brought to the public as a variant vote. I rejected this return motion because chlorine is more expensive and less ecological, developing this variant would also cost money, and the public had already decided in favor of the bio variant. It was noted by the SVP that at the time of the public vote, Guntmadingen was not yet part of Beringen.
+
+
+
 ## 9. December 2025
 
 [Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschluesse%205.%20Sitzung%20vom%209.%20Dezember%202025.pdf)
