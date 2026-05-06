@@ -96,6 +96,18 @@ Ich erstellte eine [Seite](/politik/zonenplanaenderung/) mit neutralen Fakten zu
 
 Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Einwohnerrat. Die Vorlagen können auf der [Webseite](https://www.beringen.ch/de/einwohnerrat-vorlagen) der Gemeinde Beringen gefunden werden.
 
+## 5. Mai 2026
+
+| Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
+| --- | --- | --- |
+| ✓ | ✓ | Vorlage über die Komplettsanierung der Gwaagge-Badi (inkl. biologische Schnellfilter) |
+| ✓ | ✓ | Vorlage über den Beitritt zum Abfallverband «Recycling und Entsorgung Schaffhausen und Umgebung - RESU» |
+| ✓ | ✓ | Vorlage zur Genehmigung des Parkvertrages und damit der Verlängerung der ersten Betriebsphase des Regionalen Naturparks Schaffhausen in die zweite Betriebsphase 2028 - 2037 sowie die Genehmigung des jährlichen Mitgliederbeitrages an den Verein "Regionaler Naturpark Schaffhausen" während der Betriebsphase 2028 - 2037 |
+| ✓ | ✓ | Abrechnung des Kaufs des Anteils der Clientis BS Bank Schaffhausen am Stockwerkeigentum Verwaltungsgebäude Zelg und den Umbau in eine Arztpraxis |
+
+> Die Badi-Vorlage hat viel Diskussion ausgelöst. Es wurde auch ein Rückweisungsantrag von Jörg Schwaninger abgelehnt. Diese wollte die Chlor-Variante ebenfalls ausgearbeitet haben und dann als Variantenabstimmung vors Volk gebracht haben. Ich lehnte diese Rückweisung ab, da Chlor teurer und unökologischer ist, die Ausarbeitung dieser Variante ebenfalls Geld kosten würde und das Volk schon sich für die Bio-Variante entschieden hat. Es wurde von der SVP angebracht, dass zum Zeitpunkt des Volksentscheids Guntmadingen noch nicht Teil von Beringen war.
+
+
 ## 9. Dezember 2025
 
 [Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2025/Einwohnerrat%20Beschlusse%205.%20Sitzung%20vom%209.%20Dezember%202025.pdf)
