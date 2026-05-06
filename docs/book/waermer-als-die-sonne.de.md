@@ -9,14 +9,14 @@ auto_translated: false
 
 *Alleine, draussen, kalt und dunkel.*
 
-Sie streckt die Arme aus.  
+Sie streckt die Arme aus.  https://calendar.google.com/calendar/u/0/r/month/2026/5/1
 Entgegen dem Feuer ihre Hände.  
 Die Wärme sticht.  
 Die Poren weiten sich.  
 Der Handrücken kalt.  
 Sie dreht sich; wärmt den Rücken.  
-Das Gesicht erkaltet.  
-Sie dreht sich im Minutentakt.  
+Das Gesicht kalt.  
+Sie dreht sich wieder und wieder.  
 Minute für Minute.  
 Ist das Feuer warm genug,  
 wird der Derwisch zu einem Phönix.  
@@ -36,7 +36,7 @@ Sie wartet auf das Ende.
 Bis sie eingeht in die ewige Kälte.  
 
 Sie erinnert sich an die Hoffnung.  
-Ihre Omi erzählte von der Wärme.  
+Ihre Oma erzählte von der Wärme.  
 Mit ernstlich verspielter Stimme  
 erzählte sie von der alten Magie:  
 
@@ -46,15 +46,15 @@ erzählte sie von der alten Magie:
 > uns Arme lässt sie kalt.  
 > Wir frieren; sehnen uns nach Reichtum.  
 > Nach einem Leben auf den warmen Ebenen.  
-> Doch WIR haben einen in uns  
-> den der Reiche nicht hat.  
-> Die Wärme ist in uns.  
-> Die Reichen sind gebräunt 
-> von der Sonne doch ihr Herz ist kalt.  
+> Doch WIR haben in uns  
+> was der Reiche nicht hat.  
+> Die Wärme.  
+> Die Reichen sind gebräunt von der Sonne  
+> doch ihr Herz ist kalt.  
 > Auch viele unserer Herzen in den Tälern sind kalt.  
 > Aber einige von uns haben die Wärme.  
 > Kaum ein Mädchen gibt's wie dich.  
-> Darf ihre Omi kennen.  
+> Darf ihre Oma kennen.  
 > Wir sind zu alt, zu schwach.  
 > Wir alten werden zu den Bächen geschickt.
 > "Stirb dort und geh der Kälte Mutter in den Schoss."  
@@ -121,13 +121,13 @@ Das Spiel zu Ernst.
 Der Ernst zur Scham.  
 Die Scham verletzt.  
 So machte sie sich auf.  
-Auf in die Stadt ihrer Omi.  
+Auf in die Stadt ihrer Oma.  
 Sie folgte der alten Tradition.  
 Frauen gebären mit ihrer Mutter.  
 Doch sie kennt ihre Mutter nicht.  
-Erinnert sich nur an die Omi.  
+Erinnert sich nur an die Oma.  
 So geht sie zur Stadt ihrer Vorfahren.  
-So hofft sie auf ihre Omi,  
+So hofft sie auf ihre Oma,  
 dass sie noch lebt,  
 dass sie ihr gebären hilft.  
 
@@ -222,7 +222,7 @@ Keine Berührung, keine Verletzung, keine Narbe, kein Eindringen, kein Leben.
 
 Angekommen in der Stadt.  
 Die Stadt der Verheissung.  
-Omi erzählte, dass der Wärmebringer aus ihr kommt.  
+Oma erzählte, dass der Wärmebringer aus ihr kommt.  
 Doch die Geschichte ist alt  
 und die Hoffnung schwach.  
 Das Buch der Lieder singt von ihm.  
@@ -236,7 +236,7 @@ Dass sein Reich ewig bleibt.
 
 Der grosse Gestank der Stadt belebte ihre Sinne.  
 Sie sucht eine Bleibe.  
-Wo ist Omi?  
+Wo ist Oma?  
 Sie fragt nach alten Frauen.  
 Sie beschreibt sie, so gut sie sich erinnert,  
 doch ausser "alte Frau" hören die Hörenden nichts.  
@@ -251,7 +251,7 @@ Mit Pilzen beruhigt in die Kälte gelegt,
 umarmt sie die Mutter und nimmt sie zu sich.  
 
 So geht sie zum Platz der Ruhe.  
-Sucht nach ihrer Omi.  
+Sucht nach ihrer Oma.  
 Alle Alten, wenige gar schon 50 Jahre,  
 liegen friedlich gebettet.  
 So bleiben sie und verwesen nicht.  
@@ -262,7 +262,7 @@ Sie geht durch die Reihen gebetteter Alten.
 Schon viele entfrorene sah sie.  
 Sie schaute in die Gesichter.  
 Meist friedlich.  
-Sie muss erkennen, sie weiss nicht mehr, wie ihre Omi aussieht.  
+Sie muss erkennen, sie weiss nicht mehr, wie ihre Oma aussieht.  
 So geht sie zurück in die Stadt.  
 
 Vielleicht lebt sie noch?
@@ -317,7 +317,7 @@ Sie ist erschöpft.
 Die Gedanken kreisen:  
 
 > Wo ist der Mann?  
-> Wo ist Omi?  
+> Wo ist Oma?  
 > Warum bin ich allein?  
 > Ich schaffe das nicht.  
 > Das Kind wird sterben.  
@@ -755,7 +755,9 @@ Sie folgt ihm nach.
 
 ---
 
-<!--
+## Eis so heiss wie Feuer
+
+
 Eine Gruppe von 5 Personen geht mit ihm.
 Er schaut sie an.
 Traurig und voller Wärme.
@@ -764,21 +766,159 @@ Alle gehen in einer Gruppe.
 Sie gehen aus der Stadt.
 In die Kälte.
 
+Er sagt:  
 > Wir werden über Kohle gehen.  
 > Kohle brennt weg, was nicht sein darf.
 
+Sie denkt:  
 > Woher nimmt er Kohle?  
 > Ist er so reich?
+
+Er sagt:  
+> Die Vergangenheit liegt hinter euch.  
+> Seid bereit das nichtmehr zu tun.
+
+Sie denkt:  
+> War es denn meine Wahl?  
+
+Er sagt:  
+> Die Vergebung und Umkehr gehören zusammen.
+
+Sie denkt:  
+> Na zumindest jetzt vergreift sich niemand an mir.  
+> Zumindes noch nicht.
+
+Er sagt:  
+> Ihr wart vielleicht angesehen.  
+> Oder ungesehen.  
+> Doch einzig die Umkehr zählt.  
+> Vor dem Lichtvater sind alle gleich.
+
+Sie denkt:
+> Ich hoffe nicht.  
+> Ich bin Opfer. Er war Täter.
+
+Er sagt:  
+> Kehrt mit mir um.  
+> Früher wurdet ihr nicht gesehen.  
+> Doch ich sehe euch.  
+
+Er dreht bleibt stehen.  
+Dreht sich zu ihr.  
+
+> Du bist die, welche mich läutern sollte.  
+> Doch du kamst zu mir.
+
+Sie (erstaunt über sich selbst):
+> So soll es sein.  
+> Du wurdest zu mir gesandt.  
+> Und ich zu dir.  
+> Du setzt mich frei.  
+> Und ich gehe davon.  
+> So tue deinen Auftrag.  
+
+Er schockiert, versteinert.  
+> Ja.  
+
+Sie kommen zu einem kalten Bach  
+> Du Tochter der Auserwählten.  
+> Jauchetochter und Dirnengut.  
+> Willst du umkehren und vondir brennen?  
+> So geht über diesen Pfad mit Steinen.  
+
+Sie nickt.
+
+> Du und du.  
+> Nehmt sie an den Händen und führt sie über die Steine.  
+
+Die Steine: spitz und eiskalt.  
+Die Kälte: intensiv  
+Erfrierender Schmerz.  
+Sie schlitzen die Fusssohlen auf.  
+
+Sie schliesst die Augen.  
+Eine Feuergestalt erscheint.  
+> Dies ist meine geliebte Tochter an der ich wohlgefallen habe.  
+> Auf sie sollt ihr hören.  
+
+Sie öffnet die Augen.  
+Alle sind schockiert.  
+Sie dreht sich und geht nochmals über die Steine.  
+Der Schmerz egal.  
+
+Sie geht zum Verrückten.  
+Legt ihre Hand auf seine Schulter.  
+> Nächstes mal: Schau deinen Zuhörern in die Augen.  
+> Du sagst du siehst sie?  
+> Doch du hörst nur ihn.  
+> Der Lichtvater ist dir nahe.  
+> Doch die Menschen fern.
+
+> Du wärmst den Boden damit ich pflanzen kann.  
+
+---
+
+## Das grosse Ja
+
+So treibt sie nun der Wind  
+Peitscht sie auf die Berge.  
+Ohne Essen und ohne Feuer.  
+Zwei Nächte.  
+
+Nahe dem Tod zitternd und schauernd.  
+Ihr Geist entflieht ihr.  
+Da tritt die Kältemutter heran.  
+> Bist du die Tochter des höchsten,  
+> so befiehl diesem Stein er soll zu Holz werden.
+
+Sie aber antwortete.  
+Und aus ihr spricht die Oma:  
+> Die Wärme ist in uns und nicht im Holz.
+
+Da nahm die Kältemutter sie an einen See.  
+> Stürz dich hinein.  
+> Wurde dir nicht gesagt:  
+> Er versorgt und wärmt?  
+Sie erwiderte:  
+> Er tut es oder nicht.  
+> Dafür stürze ich mich nicht in den See.
+
+Schliesslich führte sie sie auf die Krete.  
+> Schau: Du siehst die Ebenen.  
+> Du siehst die Täler.  
+> Ich gebe dir alles wenn du in meine Arme kommst.
+
+Sie:  
+> Geh weg von mir du Hexe.  
+> Deine Arme führen zum Nichts.  
+> Doch ich friere noch immer!  
+> Mein Schmerz bleibt.  
+
+So verschwand die Kältemutter  
+und in ihr entstand eine Wärme,  
+die sie trug durch bis zu einem kleinen Dorf.
+
+---
+
+<!--
+
+## Die Wanderhure
+
+Die Wanderhure erreicht das Dorf.  
+
+
 
 
 
 > TODO (noch fehlt):
-> - Täufererlebnis
 > - Wunderwirkungen
 > - Jüngerberufung
 > - Verfolgung
 > - Höhle des Löwen
 > - Prozess
 > - Tod
+>   - Berserker Szene
+>   - Grifith zerbricht liegt kümmerlich da
+>   - Sie hat das grosse Ja und stribt
 > - Warme Herzen
 -->
