@@ -2088,8 +2088,9 @@ var fieldsContainer = document.getElementById("dynamic-fields");
 var preview = document.getElementById("preview");
 var meta = document.getElementById("meta");
 var output = document.getElementById("svg-output");
-var heroHeader = document.getElementById("hero-header");
-var heroMeta = document.getElementById("hero-meta");
+var downloadSvgButton = document.getElementById("download-svg");
+var downloadPngButton = document.getElementById("download-png");
+var lastGeneratedAsset = null;
 function init() {
   Object.entries(GENERATORS).forEach(([key, config]) => {
     const option = document.createElement("option");
@@ -2100,7 +2101,11 @@ function init() {
   generatorSelect.addEventListener("change", () => renderFields(generatorSelect.value));
   renderFields(generatorSelect.value);
   form.addEventListener("submit", handleSubmit);
-  applyHeroBackground();
+  downloadSvgButton.addEventListener("click", handleSvgDownload);
+  downloadPngButton.addEventListener("click", () => {
+    void handlePngDownload();
+  });
+  setDownloadState(false);
 }
 function renderFields(generatorKey) {
   const config = GENERATORS[generatorKey];
@@ -2166,10 +2171,118 @@ function handleSubmit(event) {
     preview.innerHTML = result.svg;
     meta.textContent = result.meta;
     output.value = result.svg;
+    lastGeneratedAsset = { generatorKey, svg: result.svg };
+    setDownloadState(true);
   } catch (error) {
+    lastGeneratedAsset = null;
+    setDownloadState(false);
     meta.textContent = "Generation failed. Check console for details.";
     console.error(error);
   }
+}
+function handleSvgDownload() {
+  if (!lastGeneratedAsset) {
+    return;
+  }
+  const blob = new Blob([lastGeneratedAsset.svg], { type: "image/svg+xml;charset=utf-8" });
+  triggerDownload(blob, buildDownloadFilename("svg"));
+}
+async function handlePngDownload() {
+  if (!lastGeneratedAsset) {
+    return;
+  }
+  downloadPngButton.disabled = true;
+  try {
+    const blob = await renderSvgAsPng(lastGeneratedAsset.svg);
+    triggerDownload(blob, buildDownloadFilename("png"));
+  } catch (error) {
+    meta.textContent = "PNG export failed. Check console for details.";
+    console.error(error);
+  } finally {
+    downloadPngButton.disabled = lastGeneratedAsset === null;
+  }
+}
+function setDownloadState(enabled) {
+  downloadSvgButton.disabled = !enabled;
+  downloadPngButton.disabled = !enabled;
+}
+function buildDownloadFilename(format) {
+  const generatorKey = lastGeneratedAsset?.generatorKey ?? "generator";
+  const timestamp = (/* @__PURE__ */ new Date()).toISOString().replace(/[:.]/g, "-");
+  return `${generatorKey}-${timestamp}.${format}`;
+}
+function triggerDownload(blob, filename) {
+  const objectUrl = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = objectUrl;
+  anchor.download = filename;
+  document.body.append(anchor);
+  anchor.click();
+  anchor.remove();
+  window.setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
+}
+async function renderSvgAsPng(svg) {
+  const { width, height } = parseSvgDimensions(svg);
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.max(1, Math.round(width));
+  canvas.height = Math.max(1, Math.round(height));
+  const context = canvas.getContext("2d");
+  if (!context) {
+    throw new Error("Canvas 2D context is unavailable.");
+  }
+  const svgBlob = new Blob([svg], { type: "image/svg+xml;charset=utf-8" });
+  const objectUrl = URL.createObjectURL(svgBlob);
+  try {
+    const image = await loadSvgImage(objectUrl);
+    context.drawImage(image, 0, 0, canvas.width, canvas.height);
+  } finally {
+    URL.revokeObjectURL(objectUrl);
+  }
+  return new Promise((resolve, reject) => {
+    canvas.toBlob((blob) => {
+      if (blob) {
+        resolve(blob);
+        return;
+      }
+      reject(new Error("Canvas could not encode the generated PNG."));
+    }, "image/png");
+  });
+}
+function loadSvgImage(url) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error("Generated SVG could not be decoded for PNG export."));
+    image.src = url;
+  });
+}
+function parseSvgDimensions(svg) {
+  const svgDocument = new DOMParser().parseFromString(svg, "image/svg+xml");
+  if (svgDocument.querySelector("parsererror")) {
+    throw new Error("Generated SVG markup is invalid.");
+  }
+  const svgElement = svgDocument.documentElement;
+  const width = parseSvgLength(svgElement.getAttribute("width"));
+  const height = parseSvgLength(svgElement.getAttribute("height"));
+  if (width !== null && height !== null) {
+    return { width, height };
+  }
+  const viewBox = svgElement.getAttribute("viewBox");
+  if (!viewBox) {
+    throw new Error("Generated SVG is missing width and height metadata.");
+  }
+  const values = viewBox.split(/[\s,]+/).map((value) => Number.parseFloat(value)).filter((value) => Number.isFinite(value));
+  if (values.length !== 4 || values[2] <= 0 || values[3] <= 0) {
+    throw new Error("Generated SVG has an invalid viewBox.");
+  }
+  return { width: values[2], height: values[3] };
+}
+function parseSvgLength(value) {
+  if (!value) {
+    return null;
+  }
+  const parsed = Number.parseFloat(value);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : null;
 }
 function collectValues(fields) {
   const values = {};
@@ -2281,29 +2394,6 @@ function buildBotanicalOptions(values) {
     veil: values.veil,
     noise: values.noise
   };
-}
-function svgToDataUrl(svg) {
-  return `url("data:image/svg+xml,${encodeURIComponent(svg).replace(/'/g, "%27").replace(/"/g, "%22")}")`;
-}
-function applyHeroBackground() {
-  if (!heroHeader) {
-    return;
-  }
-  const { svg, seed, palette } = generateBackgroundSvg({
-    width: 2400,
-    height: 640,
-    blobCount: void 0,
-    ribbonCount: void 0,
-    orbCount: void 0,
-    lightCount: void 0,
-    lineCount: void 0,
-    triangleCount: void 0,
-    waveCount: void 0
-  });
-  heroHeader.style.backgroundImage = svgToDataUrl(svg);
-  if (heroMeta) {
-    heroMeta.textContent = `Header seed ${seed} \u2022 Palette ${palette.gradient.join(" / ")}`;
-  }
 }
 init();
 //# sourceMappingURL=app.js.map
