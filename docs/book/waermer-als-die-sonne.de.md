@@ -9,7 +9,7 @@ auto_translated: false
 
 *Alleine, draussen, kalt und dunkel.*
 
-Sie streckt die Arme aus.  https://calendar.google.com/calendar/u/0/r/month/2026/5/1
+Sie streckt die Arme aus. 
 Entgegen dem Feuer ihre Hände.  
 Die Wärme sticht.  
 Die Poren weiten sich.  
@@ -222,7 +222,7 @@ Keine Berührung, keine Verletzung, keine Narbe, kein Eindringen, kein Leben.
 
 Angekommen in der Stadt.  
 Die Stadt der Verheissung.  
-Oma erzählte, dass der Wärmebringer aus ihr kommt.  
+Oma erzählte, der Wärmebringer komme aus ihr.  
 Doch die Geschichte ist alt  
 und die Hoffnung schwach.  
 Das Buch der Lieder singt von ihm.  
@@ -234,14 +234,14 @@ Dass er siegen wird.
 Dass er sterben wird.  
 Dass sein Reich ewig bleibt.  
 
-Der grosse Gestank der Stadt belebte ihre Sinne.  
+Der Gestank der Stadt belebte ihre Sinne.  
 Sie sucht eine Bleibe.  
 Wo ist Oma?  
 Sie fragt nach alten Frauen.  
 Sie beschreibt sie, so gut sie sich erinnert,  
-doch ausser "alte Frau" hören die Hörenden nichts.  
+doch ausser "alte Frau" hören die Gefragten nichts.  
 Die Stadt ist schnell durchsucht.  
-Alte Menschen gibt es wenige.  
+Alte gibt es wenige.  
 Es gibt ein Altenheim.  
 Ein Hospiz.  
 Dort dürfen alte Menschen in Würde sterben.  
@@ -252,22 +252,20 @@ umarmt sie die Mutter und nimmt sie zu sich.
 
 So geht sie zum Platz der Ruhe.  
 Sucht nach ihrer Oma.  
-Alle Alten, wenige gar schon 50 Jahre,  
-liegen friedlich gebettet.  
+Alle Alten liegen friedlich gebettet,  
+wenige erreichten die 50 Jahre.  
 So bleiben sie und verwesen nicht.  
 In der Stadt: Verwesung und Gestank.  
 Hier draussen: Das Ewige nichts.  
 
 Sie geht durch die Reihen gebetteter Alten.  
-Schon viele entfrorene sah sie.  
-Sie schaute in die Gesichter.  
+Entfrorene sehen kennt sie.  
+Sie schaut in die Gesichter.  
 Meist friedlich.  
-Sie muss erkennen, sie weiss nicht mehr, wie ihre Oma aussieht.  
-So geht sie zurück in die Stadt.  
-
+Sie muss einsehen, sie weiss nicht mehr, wie ihre Oma aussieht.  
+Sie geht zurück in die Stadt.  
 Vielleicht lebt sie noch?
 
-Sie geht in die Stadt.  
 Draussen in der Natur gab es Essen, aber kein Feuer.  
 Hier gibt es Feuer, dafür kaum Essen.  
 So braucht sie Geld.  
@@ -282,7 +280,7 @@ Genau so ist ihr Kind entstanden.
 Sie ist jung und verletzt.  
 Doch gezeichnet und gestählt.  
 So weiss sie sich zu verstecken  
-und hält auch diese Zeiten aus.  
+und auch diese Zeiten erdulden.  
 
 Der Tag rückt näher,  
 Geld für eine Unterkunft hat sie noch immer nicht.  
