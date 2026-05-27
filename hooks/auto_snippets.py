@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import re
 import shutil
 import subprocess
 import tempfile
@@ -41,6 +42,9 @@ HOARE_LOGIC_SUBMODULE_DIR = Path("assets/hoare-logic")
 HOARE_LOGIC_OUTPUT_DIR = Path("assets/hoare-logic-dist")
 XML_WEAVER_SUBMODULE_DIR = Path("assets/xml-weaver")
 XML_WEAVER_OUTPUT_DIR = Path("assets/xml-weaver-dist")
+BLOG_ARTICLE_HEADING_PATTERN = re.compile(r"^(#\s+)(.+?)\s*$")
+MARKDOWN_LINK_PATTERN = re.compile(r"^\[(?P<label>.+)\]\((?P<url>[^)]+)\)$")
+INLINE_SVG_PLUGIN_PATCHED = False
 
 
 @dataclass
@@ -64,7 +68,89 @@ def on_config(config, **_):
     if not docs_dir.is_absolute():
         docs_dir = PROJECT_DIR / docs_dir
     DOCS_DIR = docs_dir.resolve()
+
+    _patch_inline_select_svg_plugin()
     return config
+
+
+def _patch_inline_select_svg_plugin() -> None:
+    """Patch upstream inline SVG plugin path handling and logging bug."""
+    global INLINE_SVG_PLUGIN_PATCHED
+    if INLINE_SVG_PLUGIN_PATCHED:
+        return
+
+    try:
+        from bs4 import BeautifulSoup
+        from mkdocs_inline_select_svg_plugin.plugin import MkdocsInlineSelectSvgPlugin
+        from urllib.parse import unquote_plus, urljoin, urlparse
+    except Exception:
+        return
+
+    def _patched_on_page_content(self, html, page, config, files, **kwargs):
+        pattern = re.compile(self.config.pattern)
+        page_url = urlparse(page.url)
+
+        soup = BeautifulSoup(html, features="html.parser")
+        imgs = soup.find_all("img")
+        changed_soup = False
+
+        for img in imgs:
+            img_src = img.get("src")
+            if not img_src:
+                continue
+
+            try:
+                img_url = urlparse(img_src)
+            except Exception:
+                continue
+
+            if img_url.scheme or img_url.netloc or not img_url.path:
+                continue
+            if not img_url.path.endswith(".svg"):
+                continue
+
+            if img_url.path.startswith("/"):
+                resolved_url_path = img_url.path
+            elif img_url.path.startswith("assets/"):
+                # Mermaid plugin emits paths rooted at docs/assets.
+                resolved_url_path = f"/{img_url.path}"
+            else:
+                resolved_url_path = urljoin(page_url.path, img_url.path)
+
+            if not pattern.search(resolved_url_path):
+                continue
+
+            mkdocs.utils.log.info(
+                "%s: processing img src=%s", self.log_prefix(), img_src
+            )
+
+            fs_path_parts = [
+                unquote_plus(x) for x in resolved_url_path.lstrip("/").split("/") if x
+            ]
+            abs_fs_path = os.path.join(config.docs_dir, *fs_path_parts)
+
+            try:
+                with open(abs_fs_path, "r", encoding="utf-8") as handle:
+                    svg_content = handle.read()
+                svg_soup = BeautifulSoup(svg_content, "xml")
+            except Exception:
+                mkdocs.utils.log.error(
+                    "%s: could not read SVG content from %s",
+                    self.log_prefix(),
+                    abs_fs_path,
+                )
+                continue
+
+            for to_remove in svg_soup.find_all(class_="do-not-inline"):
+                to_remove.replace_with()
+
+            img.replace_with(svg_soup)
+            changed_soup = True
+
+        return str(soup) if changed_soup else html
+
+    MkdocsInlineSelectSvgPlugin.on_page_content = _patched_on_page_content
+    INLINE_SVG_PLUGIN_PATCHED = True
 
 
 def on_pre_build(config, **_):
@@ -76,6 +162,8 @@ def on_pre_build(config, **_):
 
 def on_page_markdown(markdown, *, page, config, files):
     """Replace placeholder blocks with auto-generated snippet directives."""
+    markdown = _ensure_blog_self_reference(markdown, page)
+
     meta = getattr(page, "meta", {}) or {}
     auto_cfg = meta.get("auto_snippets")
     if not auto_cfg:
@@ -109,6 +197,54 @@ def on_page_markdown(markdown, *, page, config, files):
     if marker in markdown:
         return markdown.replace(marker, block, 1)
     return f"{markdown.rstrip()}\n\n{block}\n"
+
+
+def _ensure_blog_self_reference(markdown: str, page) -> str:
+    if not _is_blog_article_page(page):
+        return markdown
+
+    lines = markdown.splitlines()
+    for idx, line in enumerate(lines):
+        match = BLOG_ARTICLE_HEADING_PATTERN.match(line)
+        if not match:
+            continue
+
+        heading_text = _strip_markdown_link(match.group(2).strip())
+        if not heading_text:
+            return markdown
+
+        self_url = _blog_article_url(page)
+        lines[idx] = f"# [{heading_text}]({self_url})"
+        return "\n".join(lines)
+
+    return markdown
+
+
+def _is_blog_article_page(page) -> bool:
+    src = Path(page.file.src_path).as_posix()
+    return bool(
+        re.match(r"^blog/(thoughts|philosophy|science)/[^/]+\.[a-z]{2}\.md$", src)
+    )
+
+
+def _blog_article_url(page) -> str:
+    src = Path(page.file.src_path)
+    lang = (getattr(page, "meta", None) or {}).get("lang") or getattr(
+        page.file, "locale", None
+    )
+    stem = src.stem
+    if lang:
+        suffix = f".{lang}"
+        if stem.endswith(suffix):
+            stem = stem[: -len(suffix)]
+    return f"/{src.parent.as_posix()}/{stem}/"
+
+
+def _strip_markdown_link(text: str) -> str:
+    link_match = MARKDOWN_LINK_PATTERN.match(text)
+    if link_match:
+        return link_match.group("label")
+    return text
 
 
 def _parse_auto_config(auto_cfg, page):

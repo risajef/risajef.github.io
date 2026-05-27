@@ -2,9 +2,8 @@
 
 - `npm install`
 - `apt-get install libasound2`
-- `python3 -m venv .venv`
-- `source .venv/bin/activate`
-- `pip install -r requirements.txt`
+- `uv sync`
+- `uv sync --group translate` (optional, only if you use `scripts/auto_translate.py`)
 - `mkdocs serve`
 
 # Components and Features

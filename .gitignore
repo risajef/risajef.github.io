@@ -12,3 +12,5 @@ __pycache__/
 *mermaid_[0-9]*_*.svg
 .translation_cache/
 .vscode/settings.json
+package-lock.json
+uv.lock
