@@ -154,7 +154,8 @@ def _patch_inline_select_svg_plugin() -> None:
 
 
 def on_pre_build(config, **_):
-    """Build third-party static apps before MkDocs copies docs/ assets."""
+    """Build third-party static apps and normalize markdown before MkDocs build."""
+    _ensure_blog_self_reference_files()
     _ensure_python_blocks_bundle()
     _ensure_hoare_logic_bundle()
     _ensure_xml_weaver_bundle()
@@ -245,6 +246,55 @@ def _strip_markdown_link(text: str) -> str:
     if link_match:
         return link_match.group("label")
     return text
+
+
+def _ensure_blog_self_reference_files() -> None:
+    """Persist self-referencing H1 links in blog article source files."""
+    for folder in ("thoughts", "philosophy", "science"):
+        for file_path in sorted((DOCS_DIR / "blog" / folder).glob("*.md")):
+            if not file_path.is_file():
+                continue
+            _rewrite_blog_self_reference_file(file_path)
+
+
+def _rewrite_blog_self_reference_file(file_path: Path) -> None:
+    src_rel = file_path.relative_to(DOCS_DIR).as_posix()
+    if not re.match(r"^blog/(thoughts|philosophy|science)/[^/]+\.[a-z]{2}\.md$", src_rel):
+        return
+
+    text = file_path.read_text(encoding="utf-8")
+    lines = text.splitlines()
+
+    stem = file_path.stem
+    locale_suffix = file_path.suffixes[-2] if len(file_path.suffixes) >= 2 else ""
+    locale = locale_suffix.lstrip(".") if locale_suffix else ""
+    if locale and stem.endswith(f".{locale}"):
+        slug = stem[: -(len(locale) + 1)]
+    else:
+        slug = stem
+
+    self_url = f"/{file_path.parent.relative_to(DOCS_DIR).as_posix()}/{slug}/"
+
+    for idx, line in enumerate(lines):
+        match = BLOG_ARTICLE_HEADING_PATTERN.match(line)
+        if not match:
+            continue
+
+        heading_text = _strip_markdown_link(match.group(2).strip())
+        if not heading_text:
+            return
+
+        desired = f"# [{heading_text}]({self_url})"
+        if line == desired:
+            return
+
+        lines[idx] = desired
+        updated = "\n".join(lines)
+        if text.endswith("\n"):
+            updated += "\n"
+        file_path.write_text(updated, encoding="utf-8")
+        log.info("Updated self-reference heading in %s", src_rel)
+        return
 
 
 def _parse_auto_config(auto_cfg, page):

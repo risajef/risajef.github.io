@@ -11,7 +11,7 @@ auto_translated: true
 source_lang: de
 ---
 
-# You have nothing to hide
+# [You have nothing to hide](/blog/thoughts/nichts-zu-verbergen/)
 
 > **If you don't need to lock your door, you live in a safe country. If you are not allowed to lock your door—or cannot—you live in a surveillance state.**
 

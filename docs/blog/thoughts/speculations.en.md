@@ -14,13 +14,13 @@ auto_translated: true
 source_lang: de
 ---
 
-# Metaphysical Speculations
+# [Metaphysical Speculations](/blog/thoughts/speculations/)
 
 This is a collection of speculations I cannot get out of my head. They are too interesting to ignore, but too unformed to believe. If you read them, think about them. I will not lay out all the consequences. I will just share a few thoughts.
 
 ## We Live All Lives
 
-What if, after death, we experience the life of another person? We would live through everything. Right now I am a young, white father from Switzerland. Next time, a seamstress from Asia.
+What if, after death, we experience the life of another person? We would live through everything. Right now I am a young, white father from Switzerland. Next time, perhaps a seamstress from Asia at the beginning of the 20th century.
 
 ### Consequences
 
@@ -56,7 +56,7 @@ I have not yet seen a simulation that can simulate itself. Simulation always has
 
 I find the argument in favor weak, and I believe a simulation must always be fundamentally different from the original. Our current example shows this too. AIs live without time. They live from token to token. They do not live in space, nor in time. And I believe this will always be so. The fundamental dimensions of the reality of simulations will be completely different (AIs with tokens and hidden weights) from ours (forces of nature, space, and time). But we will create such different realities, and perhaps ours was created that way too. One could also call the simulator God.
 
-Maybe the simulators care about how their creatures are doing. Maybe they transfer consciousnesses into their world. Compare this to AI: say we invent truly artificial intelligence. We could build robots and materialize AIs into our world. Of course they would still be programs, but they could interact with the "real" world. Maybe our simulation-creators do the same. In that way we would receive, in heaven, a new body that functions according to God's laws and no longer according to ours.
+Maybe the simulators care about how their creatures are doing. Maybe they transfer consciousnesses into their world. Compare this to AI: say we invent truly artificial intelligence. We could build robots and materialize AIs into our world. In this way they could become part of our world and experience, even though they still have no real sense of space and time. Of course they would still be programs, but they could interact with the "real" world. Maybe our simulation-creators do the same. In that way we would receive, in heaven, a new body that functions according to God's laws and no longer according to ours.
 
 ## We Live in a Zoo
 
@@ -91,3 +91,17 @@ Our task is to remain faithful to God and thus believe in his love, because othe
 ### Consequences
 
 In this version, hell is quite conceivable, because perhaps after death we are drawn toward our poles. Whoever is in a downward spiral will fall into the deepest depths, and others will fly to the highest heights.
+
+## The Mystery of Entropy
+
+According to thermodynamics, entropy can only increase over time. Local anomalies (both spatial and temporal) are tolerable if the law still holds when you zoom out far enough. One consequence is that useful energy eventually decays into useless energy (heat). That is why reservoirs of useful energy exist. The largest relevant reservoir of this kind for us is the sun. It contains so much useful energy (that is, non-heat energy) that our planet and we live from it.
+
+The great mystery in science is: why is there such a low-entropy reservoir? With a "God of the Gaps" argument, one could use this to construct a "proof" of God. But that does not interest me. What occupies me is the philosophical consequence of such a universe.
+
+Every order we create causes more chaos than order is created. We create order and thereby potential energy (an energy store, or low entropy), but to do so we need more energy (produce more entropy/chaos) than the amount of potential energy created afterward.
+
+One asks why living beings emerge at all. They are highly structured and ordered. But they achieve this through an increase in entropy (draining energy) in their surroundings. I believe living beings can only emerge because they can consume energy even more efficiently than a dead planet. Our justification for existence might therefore be that we can increase entropy better than anything else. And in fact, we release the potential energy of oil. That energy would have remained bound for millions of years, but we transform it into heat.
+
+### Consequences
+
+Seen this way, the meaning of life is to convert usable energy into unusable energy as efficiently as possible. In a sense: to intensify global warming. What should limit us, however, is our own survival. If we wipe out humanity, no one burns oil anymore and entropy then rises much more slowly. So we should handle our resources sustainably, so that we can consume them as completely as possible without endangering our existence. We should also settle other planets. This would protect humanity from extinction by a planetary catastrophe and allow it to increase entropy on multiple planets. From this perspective, humans are not a virus that kills Earth; Earth kills itself anyway, it just does so inefficiently, and we accelerate it. It is even conceivable that with enough technology, humans could become entropy-increasers on the scale of a star, but we are still far from that.
