@@ -918,5 +918,5 @@ Die Wanderhure erreicht das Dorf.
 >   - Berserker Szene
 >   - Grifith zerbricht liegt kümmerlich da
 >   - Sie hat das grosse Ja und stribt
-> - Warme Herzen
+> - Warme Herzen (Hl. Geist)
 -->
