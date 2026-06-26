@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glukose Monatsdashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-layer"></div>
+
+    <header class="topbar shell">
+      <div>
+        <p class="eyebrow">Diabetes Export Analyse</p>
+        <h1>Glukose Dashboard</h1>
+        <p id="datasetMeta" class="meta">Bitte CSV laden.</p>
+      </div>
+      <div class="file-controls">
+        <label class="btn btn-secondary" for="csvInput">CSV auswählen</label>
+        <input id="csvInput" type="file" accept=".csv,text/csv" />
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="card month-nav">
+        <button id="prevMonthBtn" class="btn btn-secondary" type="button">Vorheriger Monat</button>
+        <label class="select-wrap" for="monthSelect">
+          <span>Monat</span>
+          <select id="monthSelect"></select>
+        </label>
+        <button id="nextMonthBtn" class="btn btn-secondary" type="button">Nächster Monat</button>
+        <p id="monthCoverage" class="coverage"></p>
+      </section>
+
+      <section class="stats-grid">
+        <article class="card stat-card">
+          <h2>Min</h2>
+          <p id="monthMin">-</p>
+          <small>mmol/L</small>
+        </article>
+        <article class="card stat-card">
+          <h2>Max</h2>
+          <p id="monthMax">-</p>
+          <small>mmol/L</small>
+        </article>
+        <article class="card stat-card">
+          <h2>Durchschnitt</h2>
+          <p id="monthAvg">-</p>
+          <small>mmol/L</small>
+        </article>
+        <article class="card stat-card">
+          <h2>Schnellwirkend</h2>
+          <p id="monthFastInsulin">-</p>
+          <small>Einheiten</small>
+        </article>
+        <article class="card stat-card">
+          <h2>Depot</h2>
+          <p id="monthDepotInsulin">-</p>
+          <small>Einheiten</small>
+        </article>
+        <article class="card stat-card">
+          <h2>Gesamt Insulin</h2>
+          <p id="monthTotalInsulin">-</p>
+          <small>Einheiten</small>
+        </article>
+        <article class="card stat-card">
+          <h2>In Range</h2>
+          <p id="monthInRange">-</p>
+          <small>3.9 - 10.0 mmol/L</small>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="card">
+          <div class="section-head">
+            <h2>Tagesübersicht</h2>
+            <p>Tag anklicken für Notizen und Verlaufskurve</p>
+          </div>
+          <div class="table-wrap">
+            <table id="dailyTable">
+              <thead>
+                <tr>
+                  <th>Tag</th>
+                  <th>Tief</th>
+                  <th>Hoch</th>
+                  <th>Morgen</th>
+                  <th>Mittag</th>
+                  <th>Abend</th>
+                  <th>Nacht</th>
+                  <th>In Range %</th>
+                  <th>Insulin</th>
+                  <th>Zeiten</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="card detail-panel">
+        <div class="section-head detail-head">
+          <h2 id="detailTitle">Tag wählen</h2>
+          <p id="detailSummary">Nach Klick auf einen Tag erscheinen hier Notizen, Insulin und die Kurve.</p>
+        </div>
+
+        <div class="detail-grid">
+          <div>
+            <h3>Glukoseverlauf mit Insulin- und Notiz-Markern</h3>
+            <div id="chartContainer" class="chart-box"></div>
+            <div class="chart-legend">
+              <span><i class="legend-swatch legend-line"></i>Glukosewerte</span>
+              <span><i class="legend-swatch legend-scan"></i>Scan-Wert</span>
+              <span><i class="legend-swatch legend-fast"></i>Schnellwirkend</span>
+              <span><i class="legend-swatch legend-depot"></i>Depot</span>
+              <span><i class="legend-swatch legend-insulin-line"></i>Insulin-Linie</span>
+              <span><i class="legend-swatch legend-note-line"></i>Notiz-Linie</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-bottom-grid">
+          <div>
+            <h3>Notizen</h3>
+            <ul id="notesList" class="stack-list"></ul>
+          </div>
+          <div>
+            <h3>Insulin-Ereignisse</h3>
+            <ul id="dayInsulinList" class="stack-list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
