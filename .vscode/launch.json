@@ -13,6 +13,17 @@
       "justMyCode": true
     },
     {
+      "name": "MkDocs: Github deploy",
+      "type": "python",
+      "request": "launch",
+      "module": "mkdocs",
+      "args": ["gh-deploy"],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
       "name": "Translations: Missing Only",
       "type": "python",
       "request": "launch",
