@@ -11,9 +11,13 @@
 
     <header class="topbar shell">
       <div>
-        <p class="eyebrow">Diabetes Export Analyse</p>
+        <p class="eyebrow">Persönlicher FreeStyle LibreLink CSV-Viewer</p>
         <h1>Glukose Dashboard</h1>
         <p id="datasetMeta" class="meta">Bitte CSV laden.</p>
+        <p class="disclaimer">
+          CSV-Viewer für FreeStyle LibreLink Exporte. Unoffizielles persönliches Projekt; kein offizieller FreeStyle LibreLink Viewer
+          und nicht vom Hersteller bereitgestellt, geprüft oder unterstützt.
+        </p>
       </div>
       <div class="file-controls">
         <label class="btn btn-secondary" for="csvInput">CSV auswählen</label>
@@ -29,6 +33,8 @@
           <select id="monthSelect"></select>
         </label>
         <button id="nextMonthBtn" class="btn btn-secondary" type="button">Nächster Monat</button>
+        <button id="exportExcelBtn" class="btn btn-primary" type="button" disabled>Excel exportieren</button>
+        <button id="exportPdfBtn" class="btn btn-secondary" type="button" disabled>PDF exportieren</button>
         <p id="monthCoverage" class="coverage"></p>
       </section>
 
@@ -64,7 +70,7 @@
           <small>Einheiten</small>
         </article>
         <article class="card stat-card">
-          <h2>In Range</h2>
+          <h2>Im Bereich</h2>
           <p id="monthInRange">-</p>
           <small>3.9 - 10.0 mmol/L</small>
         </article>
@@ -87,7 +93,7 @@
                   <th>Mittag</th>
                   <th>Abend</th>
                   <th>Nacht</th>
-                  <th>In Range %</th>
+                  <th>Im Bereich %</th>
                   <th>Insulin</th>
                   <th>Zeiten</th>
                 </tr>
@@ -132,6 +138,37 @@
       </section>
     </main>
 
-    <script src="app.js"></script>
+    <dialog id="pdfExportDialog" class="export-dialog">
+      <form id="pdfExportForm" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">PDF Export</p>
+            <h2>Monate auswählen</h2>
+          </div>
+          <button id="pdfExportCloseBtn" class="dialog-icon-btn" type="button" aria-label="Schliessen">×</button>
+        </div>
+
+        <div class="dialog-actions">
+          <button id="pdfSelectAllBtn" class="btn btn-secondary" type="button">Alle auswählen</button>
+          <button id="pdfSelectCurrentBtn" class="btn btn-secondary" type="button">Aktueller Monat</button>
+          <button id="pdfSelectNoneBtn" class="btn btn-secondary" type="button">Keine auswählen</button>
+        </div>
+
+        <div id="pdfMonthList" class="month-check-list"></div>
+
+        <div class="dialog-footer">
+          <p id="pdfExportSelectionSummary"></p>
+          <div>
+            <button id="pdfCancelBtn" class="btn btn-secondary" type="button">Abbrechen</button>
+            <button id="pdfConfirmBtn" class="btn btn-primary" type="submit">PDF exportieren</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+    <script src="app.js?v=20260629-12"></script>
   </body>
 </html>
