@@ -4,6 +4,9 @@ tags:
   - glukose
   - gesundheit
   - tool
+  - FreeStyle
+  - LibreLink
+  - csv
 github: https://github.com/risajef/diabetes_gui
 page_type: iframe
 lang: de
@@ -18,4 +21,4 @@ auto_translated: false
   style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
 ></iframe>
 
-Falls die eingebettete Anwendung nicht laedt, oeffne [Diabetes GUI direkt](/assets/diabetes_gui/).
+Falls die eingebettete Anwendung nicht lädt, öffne [Diabetes GUI direkt](/assets/diabetes_gui/).

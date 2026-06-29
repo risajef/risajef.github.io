@@ -4,6 +4,9 @@ tags:
   - glucose
   - health
   - tool
+  - FreeStyle
+  - LibreLink
+  - csv
 github: https://github.com/risajef/diabetes_gui
 page_type: iframe
 lang: en
