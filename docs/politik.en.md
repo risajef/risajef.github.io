@@ -106,6 +106,18 @@ I created a [page](/politik/zonenplanaenderung/) with neutral facts about the ba
 Here I give an account of how I voted or whom I elected in the Residents' Council. The proposals can be found on the municipality’s [website](https://www.beringen.ch/de/einwohnerrat-vorlagen).
 
 
+## 30. June 2026
+
+| My vote | Council decision | Proposal |
+| --- | --- | --- |
+| ✓ | ✓ | Proposal for adjustment of the staffing ceiling |
+| ✓ | ✓ | Proposal for renovation and expansion of Kindergarten Gellerstrasse |
+| ✓ | ✓ | Acceptance of the annual accounts |
+
+> Additionally, I was elected as a replacement for the retiring GPK member Beatrix Delafontainer (FDP). The municipal council's priorities for 2026 were noted. The meeting finished very quickly. Roger Paillard also addressed my question from the last meeting. They had neither provided data to real estate companies nor had they been asked to do so, and he sees no municipal action needed.
+
+
+
 ## 5. May 2026
 
 | My vote | Council decision | Proposal |

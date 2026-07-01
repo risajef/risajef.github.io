@@ -96,6 +96,17 @@ Ich erstellte eine [Seite](/politik/zonenplanaenderung/) mit neutralen Fakten zu
 
 Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Einwohnerrat. Die Vorlagen können auf der [Webseite](https://www.beringen.ch/de/einwohnerrat-vorlagen) der Gemeinde Beringen gefunden werden.
 
+## 30. Juni 2026
+
+| Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
+| --- | --- | --- |
+| ✓ | ✓ | Vorlage über die Anpassung des Stellenplafond |
+| ✓ | ✓ | Vorlage über Sanierung und Aufstockung Kindergarten Gellerstrasse |
+| ✓ | ✓ | Abnahme der Rechnung |
+
+> Zusätzlich wurde ich als Ersatz für das zurücktretende GPK-Mitglied Beatrix Delafontainer (FDP) gewählt. Die Schwerpunkte 2026 des Gemeinderates Beringen werden zur Kenntnis genommen. Die Sitzung war sehr schnell fertig. Auch wurde von Roger Paillard Bezug genommen auf meine Frage der letzten Sitzung. Weder hätten sie Daten an Immobilienfirmen rausgegeben noch wurde danach gefragt und er sieht so keinen kommunalen Handlungsbedarf.
+
+
 ## 5. Mai 2026
 
 | Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
