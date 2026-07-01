@@ -1,8 +1,8 @@
 const PERIODS = [
-  { key: "morning", label: "Morgen", start: 4 * 60, end: 10 * 60 + 59, target: 8 * 60, wraps: false },
-  { key: "midday", label: "Mittag", start: 11 * 60, end: 15 * 60 + 59, target: 13 * 60, wraps: false },
-  { key: "evening", label: "Abend", start: 16 * 60, end: 21 * 60 + 59, target: 19 * 60, wraps: false },
-  { key: "night", label: "Nacht", start: 22 * 60, end: 3 * 60 + 59, target: 23 * 60, wraps: true },
+  { key: "morning", label: "Morgen", start: 4 * 60, end: 10 * 60 + 59, target: 7 * 60 + 30, wraps: false, insulinKind: "fast" },
+  { key: "midday", label: "Mittag", start: 10 * 60, end: 15 * 60 + 59, target: 12 * 60, wraps: false, insulinKind: "fast" },
+  { key: "evening", label: "Abend", start: 15 * 60, end: 21 * 60 + 59, target: 18 * 60, wraps: false, insulinKind: "fast" },
+  { key: "night", label: "Nacht", start: 18 * 60, end: 3 * 60 + 59, target: 22 * 60, wraps: true, insulinKind: "depot" },
 ];
 
 const monthFormatter = new Intl.DateTimeFormat("de-CH", { month: "long", year: "numeric" });
@@ -993,6 +993,10 @@ function buildMonthWorksheetForExport(month) {
     "Max\n(mmol/L)",
     "Durchschnitt\n(mmol/L)",
     "Im Bereich\n(%)",
+    "Morgen\nScan vor Injektion\n(mmol/L)",
+    "Mittag\nScan vor Injektion\n(mmol/L)",
+    "Abend\nScan vor Injektion\n(mmol/L)",
+    "Nacht\nScan vor Depot\n(mmol/L)",
     ...injectionHeaders,
     ...noteHeaders,
   ];
@@ -1013,6 +1017,10 @@ function buildMonthWorksheetForExport(month) {
       round1OrNull(day.high),
       round1OrNull(mean),
       round1OrNull(day.inRangePercent),
+      round1OrNull(periodValue(day, "morning")),
+      round1OrNull(periodValue(day, "midday")),
+      round1OrNull(periodValue(day, "evening")),
+      round1OrNull(periodValue(day, "night")),
       ...injectionCells,
       ...noteColumns,
     ];
@@ -1945,10 +1953,7 @@ function finalizeMonth(month) {
 
     day.inRangePercent = computeInRangePercent(day.glucoseReadings);
 
-    for (const period of PERIODS) {
-      const chosen = choosePeriodValue(day.glucoseReadings, period);
-      day.periodValues[period.key] = chosen ? chosen.value : null;
-    }
+    day.periodValues = buildInjectionScanValues(day);
   }
 
   const values = month.glucoseReadings.map((point) => point.value);
@@ -1972,29 +1977,54 @@ function finalizeMonth(month) {
   return month;
 }
 
-function choosePeriodValue(points, period) {
+function buildInjectionScanValues(day) {
+  const scanReadings = day.glucoseReadings.filter((point) => point.source === "scan").sort((a, b) => a.time - b.time);
+  const values = {};
+
+  for (const period of PERIODS) {
+    const injection = chooseInjectionForPeriod(day.insulinEvents, period);
+    const scan = injection ? findLastScanBeforeInjection(scanReadings, injection.time) : null;
+    values[period.key] = scan ? scan.value : null;
+  }
+
+  return values;
+}
+
+function chooseInjectionForPeriod(events, period) {
   let best = null;
   let bestDistance = Infinity;
 
-  for (const point of points) {
-    const minute = minutesOfDay(point.time);
+  for (const event of events) {
+    if (event.kind !== period.insulinKind) {
+      continue;
+    }
+
+    const minute = minutesOfDay(event.time);
     if (!minuteInPeriod(minute, period)) {
       continue;
     }
 
     const distance = distanceToTarget(minute, period);
-    if (distance < bestDistance || (distance === bestDistance && best && point.time > best.time)) {
-      best = point;
-      bestDistance = distance;
-    }
-
-    if (!best) {
-      best = point;
+    if (distance < bestDistance || (distance === bestDistance && best && event.time > best.time)) {
+      best = event;
       bestDistance = distance;
     }
   }
 
   return best;
+}
+
+function findLastScanBeforeInjection(scanReadings, injectionTime) {
+  let lastScan = null;
+
+  for (const scan of scanReadings) {
+    if (scan.time > injectionTime) {
+      break;
+    }
+    lastScan = scan;
+  }
+
+  return lastScan;
 }
 
 function minuteInPeriod(minute, period) {
@@ -2008,8 +2038,9 @@ function distanceToTarget(minute, period) {
   if (!period.wraps) {
     return Math.abs(minute - period.target);
   }
-  const normalized = minute < period.start ? minute + 1440 : minute;
-  return Math.abs(normalized - period.target);
+  const normalizedMinute = minute < period.start ? minute + 1440 : minute;
+  const normalizedTarget = period.target < period.start ? period.target + 1440 : period.target;
+  return Math.abs(normalizedMinute - normalizedTarget);
 }
 
 function parseDateTime(value) {
