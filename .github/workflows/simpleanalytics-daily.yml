@@ -1,0 +1,27 @@
+name: Simple Analytics daily export
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  export:
+    name: Download analytics JSON
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download previous day analytics
+        run: |
+          curl --fail --silent --show-error --location \
+            "https://simpleanalytics.com/retoweber.info.json?version=6&fields=histogram,pages,pageviews,visitors,countries,referrers,utm_sources,utm_mediums,utm_campaigns,utm_contents,utm_terms,browser_names,os_names,device_types,seconds_on_page&start=today-1d&end=today&interval=hour" \
+            --output simpleanalytics-retoweber-info.json
+
+          jq empty simpleanalytics-retoweber-info.json
+
+      - name: Upload analytics artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: simpleanalytics-retoweber-info-${{ github.run_id }}
+          path: simpleanalytics-retoweber-info.json
+          if-no-files-found: error
