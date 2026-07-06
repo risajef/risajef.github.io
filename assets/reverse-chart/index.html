@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reverse Chart</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <aside class="sidebar" aria-label="Chart controls">
+        <header class="brand">
+          <h1>Reverse Chart</h1>
+          <p>Calibrate chart pixels to real values, then read points from the image.</p>
+        </header>
+
+        <section class="panel">
+          <h2>Image</h2>
+          <label class="file-picker">
+            <input id="imageInput" type="file" accept="image/*">
+            <span>Upload chart image</span>
+          </label>
+          <button id="loadExample" class="secondary" type="button">Load example</button>
+        </section>
+
+        <section class="panel">
+          <h2>Mode</h2>
+          <div class="segmented" role="group" aria-label="Mode">
+            <button id="calibrateMode" class="active" type="button">Calibrate</button>
+            <button id="measureMode" type="button">Measure</button>
+          </div>
+
+          <div class="axis-grid scale-controls">
+            <label>
+              X scale
+              <select id="xScaleInput">
+                <option value="linear">Linear</option>
+                <option value="log">Logarithmic</option>
+              </select>
+            </label>
+            <label>
+              Y scale
+              <select id="yScaleInput">
+                <option value="linear">Linear</option>
+                <option value="log">Logarithmic</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="calibrationControls" class="stack">
+            <label>
+              Axis
+              <select id="axisInput">
+                <option value="y">Y value</option>
+                <option value="x">X value</option>
+              </select>
+            </label>
+            <label>
+              Value at clicked point
+              <input id="valueInput" type="number" step="any" placeholder="e.g. 0, 200, 2026">
+            </label>
+            <p class="hint">Click the uploaded chart where that axis value appears. Log axes need positive values.</p>
+          </div>
+
+          <div id="measureControls" class="stack hidden">
+            <button id="exportMeasurements" class="secondary" type="button">Export measured CSV</button>
+            <button id="clearMeasurements" class="secondary" type="button">Clear measured points</button>
+            <p class="hint">Hover for live values. Click to pin a measured point.</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Status</h2>
+          <div id="readout" class="readout">Upload or load a chart to begin.</div>
+          <div id="fitStatus" class="fit-status"></div>
+        </section>
+
+        <section class="panel list-panel">
+          <div class="list-header">
+            <h2>Calibration</h2>
+            <button id="clearCalibration" class="icon-button" type="button" aria-label="Clear calibration points" title="Clear calibration points">x</button>
+          </div>
+          <ol id="calibrationList" class="point-list"></ol>
+        </section>
+
+        <section class="panel list-panel">
+          <div class="list-header">
+            <h2>Measured</h2>
+            <span id="measureCount" class="count">0</span>
+          </div>
+          <ol id="measurementList" class="point-list"></ol>
+        </section>
+      </aside>
+
+      <section class="workspace" aria-label="Chart workspace">
+        <div id="chartFrame" class="chart-frame">
+          <canvas id="chartCanvas"></canvas>
+          <div id="emptyState" class="empty-state">
+            <strong>No chart loaded</strong>
+            <span>Drop an image here, use the upload button, or load the included example.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
