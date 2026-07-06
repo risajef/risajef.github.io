@@ -27,7 +27,7 @@ Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
 ## 6. Juli 2026
 
-Füge [Reverse Chart](/assets/reverse-chart/) hinzu - ein Web-Werkzeug, um Diagrammbilder zu kalibrieren und Datenpunkte daraus abzulesen.
+Füge [Reverse Chart](/tools/reverse-chart/) hinzu - ein Web-Werkzeug, um Diagrammbilder zu kalibrieren und Datenpunkte daraus abzulesen.
 
 ## 14. April 2026
 

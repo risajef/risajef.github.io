@@ -27,7 +27,7 @@ You see there what I changed most recently on the website.
 
 ## July 6th 2026
 
-Add [Reverse Chart](/assets/reverse-chart/) - a web tool to calibrate chart images and read data points from them.
+Add [Reverse Chart](/tools/reverse-chart/) - a web tool to calibrate chart images and read data points from them.
 
 ## April 14th 2026
 

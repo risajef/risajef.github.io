@@ -19,6 +19,7 @@ nav:
       - XML Weaver: tools/xml-weaver.md
       - LinkedIn WYSIWYG: tools/linkedin-wysiwyg.md
       - Diabetes GUI: tools/diabetes-gui.md
+      - Reverse Chart: tools/reverse-chart.md
   - Politik:
       # - Zonenplanänderung: politik/zonenplanaenderung.md
       # - Werkhof Baukredit: politik/werkhof-baukredit.md
@@ -104,6 +105,8 @@ extra:
     de/programming/linkedin-wysiwyg: de/tools/linkedin-wysiwyg
     programming/diabetes-gui: tools/diabetes-gui
     de/programming/diabetes-gui: de/tools/diabetes-gui
+    programming/reverse-chart: tools/reverse-chart
+    de/programming/reverse-chart: de/tools/reverse-chart
     politics: politik
     politics/zonenplanaenderung: politik/zonenplanaenderung
     politics/finanzen-beringen: politik/finanzen-beringen
@@ -128,6 +131,7 @@ extra:
         'XML Weaver': 'XML Weaver'
         'LinkedIn WYSIWYG': 'LinkedIn WYSIWYG'
         'Diabetes GUI': 'Diabetes GUI'
+        'Reverse Chart': 'Reverse Chart'
         Politik: Politics
         'Finanzen Beringen': 'Finances Beringen'
         Blog: Blog
@@ -156,6 +160,7 @@ extra:
         'XML Weaver': 'XML Weaver'
         'LinkedIn WYSIWYG': 'LinkedIn WYSIWYG'
         'Diabetes GUI': 'Diabetes GUI'
+        'Reverse Chart': 'Reverse Chart'
         Politik: Politik
         'Finanzen Beringen': 'Finanzen Beringen'
         Blog: Blog
