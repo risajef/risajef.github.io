@@ -414,6 +414,13 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/python-blocks/"/>
     </url>
     <url>
+        <loc>https://retoweber.info/tools/reverse-chart/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/tools/reverse-chart/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/reverse-chart/"/>
+    </url>
+    <url>
         <loc>https://retoweber.info/tools/xml-weaver/</loc>
         <lastmod>2026-07-06</lastmod>
         <changefreq>daily</changefreq>
@@ -832,6 +839,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/python-blocks/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/tools/python-blocks/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/tools/reverse-chart/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/reverse-chart/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/tools/reverse-chart/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/tools/xml-weaver/</loc>
