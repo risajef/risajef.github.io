@@ -22,3 +22,6 @@
 [submodule "docs/assets/diabetes_gui"]
 	path = docs/assets/diabetes_gui
 	url = https://github.com/risajef/diabetes_gui.git
+[submodule "docs/assets/reverse-chart"]
+	path = docs/assets/reverse-chart
+	url = https://github.com/risajef/reverse-chart

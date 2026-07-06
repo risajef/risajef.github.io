@@ -25,6 +25,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## July 6th 2026
+
+Add [Reverse Chart](/assets/reverse-chart/) - a web tool to calibrate chart images and read data points from them.
+
 ## April 14th 2026
 
 Add [LinkedIn WYSIWYG](/tools/linkedin-wysiwyg). A web based tool to format [LinkedIn](https://linkedin.com) posts.
