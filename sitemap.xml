@@ -379,6 +379,13 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/buchfaltstudio/"/>
     </url>
     <url>
+        <loc>https://retoweber.info/tools/csv-editor/</loc>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/tools/csv-editor/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/csv-editor/"/>
+    </url>
+    <url>
         <loc>https://retoweber.info/tools/diabetes-gui/</loc>
         <lastmod>2026-07-08</lastmod>
         <changefreq>daily</changefreq>
@@ -804,6 +811,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/buchfaltstudio/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/tools/buchfaltstudio/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/tools/csv-editor/</loc>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/csv-editor/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/tools/csv-editor/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/tools/diabetes-gui/</loc>
