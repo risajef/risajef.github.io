@@ -13,20 +13,22 @@ nav:
   - Tools:
       - Buchfaltstudio: tools/buchfaltstudio.md
       - Background Generator: tools/background-generator.md
+      - CSV Editor: tools/csv-editor.md
+      - Diabetes GUI: tools/diabetes-gui.md
+      - Hoare Logic: tools/hoare-logic.md
+      - LinkedIn WYSIWYG: tools/linkedin-wysiwyg.md
       - Parallelismus: tools/parallelismus.md
       - Python Blocks: tools/python-blocks.md
-      - Hoare Logic: tools/hoare-logic.md
-      - XML Weaver: tools/xml-weaver.md
-      - LinkedIn WYSIWYG: tools/linkedin-wysiwyg.md
-      - Diabetes GUI: tools/diabetes-gui.md
       - Reverse Chart: tools/reverse-chart.md
-      - CSV Editor: tools/csv-editor.md
+      - XML Weaver: tools/xml-weaver.md
   - Politik:
+      - Politik: politik.md
       # - Zonenplanänderung: politik/zonenplanaenderung.md
       # - Werkhof Baukredit: politik/werkhof-baukredit.md
       - Finanzen Beringen: politik/finanzen-beringen.md
       # - E-ID: politik/e-id.md
   - Blog:
+      - Blog: blog.md
       - Thoughts: blog/thoughts.md
       - Philosophy: blog/philosophy.md
       - Science: blog/science.md
