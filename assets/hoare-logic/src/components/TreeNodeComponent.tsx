@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { Expression, TreeNode } from '../types';
 import { exprToSmt, exprToString, inferVariableSorts, stmtToString, isValidProof } from '../utils';
 import { tryZ3 } from '../z3';
@@ -6,14 +6,50 @@ import { tryZ3 } from '../z3';
 interface TreeNodeComponentProps {
   node: TreeNode;
   path?: number[];
-  onApplyRule: (path: number[], node: TreeNode, rule: string) => void;
+  onApplyRule: (path: number[], node: TreeNode, rule: string) => string | null;
+  onRemoveRule: (path: number[]) => void;
   onUpdateNode: (path: number[], updater: (node: TreeNode) => TreeNode) => void;
 }
 
-function TreeNodeComponent({ node, path = [], onApplyRule, onUpdateNode }: TreeNodeComponentProps) {
+const ruleLabel: Record<string, string> = {
+  skip: 'Skip',
+  assign: 'Assign',
+  sequence: 'Sequence',
+  conditional: 'Conditional',
+  consequence: 'Consequence',
+  while: 'While',
+};
+
+const getPrimaryRuleForStatement = (type: TreeNode['stmt']['type']): string => {
+  if (type === 'skip') return 'skip';
+  if (type === 'assign') return 'assign';
+  if (type === 'sequence') return 'sequence';
+  if (type === 'conditional') return 'conditional';
+  return 'while';
+};
+
+function TreeNodeComponent({ node, path = [], onApplyRule, onRemoveRule, onUpdateNode }: TreeNodeComponentProps) {
   const isValid = isValidProof(node);
   const [proveStatus, setProveStatus] = useState<string | null>(null);
   const [proving, setProving] = useState(false);
+  const [ruleStatus, setRuleStatus] = useState<string | null>(null);
+  const relevantRules = [getPrimaryRuleForStatement(node.stmt.type), 'consequence'];
+  const showProveButton = node.rule === 'consequence' && node.children.length === 1;
+  const showRuleButtons = !node.rule || showProveButton;
+
+  useEffect(() => {
+    setProveStatus(null);
+    setProving(false);
+  }, [node.rule, node.children.length]);
+
+  useEffect(() => {
+    setRuleStatus(null);
+  }, [node.rule, node.children.length]);
+
+  const handleApplyRule = (rule: string) => {
+    const error = onApplyRule(path, node, rule);
+    setRuleStatus(error);
+  };
 
   const buildObligationQuery = (name: string, left: Expression, right: Expression): string[] => {
     const varSorts = new Map<string, 'Int' | 'Bool'>();
@@ -98,28 +134,56 @@ function TreeNodeComponent({ node, path = [], onApplyRule, onUpdateNode }: TreeN
 
   return (
     <div className={`tree-node ${isValid ? '' : 'invalid-node'}`}>
-      <p>{`{${exprToString(node.pre)}} ${stmtToString(node.stmt)} {${exprToString(node.post)}}`}</p>
-      {node.rule && <p>Rule: {node.rule}</p>}
+      <div className="tree-node-header">
+        <p className="node-judgement">{`{${exprToString(node.pre)}} ${stmtToString(node.stmt)} {${exprToString(node.post)}}`}</p>
+        <div className="rule-badge-row">
+          {node.rule ? (
+            <span className="rule-badge">Rule: {ruleLabel[node.rule] ?? node.rule}</span>
+          ) : (
+            <span className="rule-badge pending">Select a rule</span>
+          )}
+          {node.rule && (
+            <button
+              type="button"
+              className="rule-remove-x"
+              aria-label="Remove rule"
+              title="Remove rule"
+              onClick={() => { setRuleStatus(null); onRemoveRule(path); }}
+            >
+              ×
+            </button>
+          )}
+        </div>
+      </div>
       {node.rule === 'consequence' && node.children.length === 1 && (
-        <p>Obligations: {exprToString(node.pre)} ⇒ {exprToString(node.children[0].pre)} and {exprToString(node.children[0].post)} ⇒ {exprToString(node.post)}</p>
+        <p className="obligation-summary">Obligations: {exprToString(node.pre)} ⇒ {exprToString(node.children[0].pre)} and {exprToString(node.children[0].post)} ⇒ {exprToString(node.post)}</p>
       )}
-      <div className="rule-buttons">
-        <button className="btn-small" onClick={() => onApplyRule(path, node, 'skip')}>Skip</button>
-        <button className="btn-small" onClick={() => onApplyRule(path, node, 'assign')}>Assign</button>
-        <button className="btn-small" onClick={() => onApplyRule(path, node, 'sequence')}>Sequence</button>
-        <button className="btn-small" onClick={() => onApplyRule(path, node, 'conditional')}>Conditional</button>
-        <button className="btn-small" onClick={() => onApplyRule(path, node, 'consequence')}>Consequence</button>
-        <button className="btn-small" onClick={() => onApplyRule(path, node, 'while')}>While</button>
-        {node.rule === 'consequence' && node.children.length === 1 && (
-          <button className="btn-small" onClick={handleProve} disabled={proving} style={{ marginLeft: 8 }}>{proving ? 'Proving...' : 'Prove obligations'}</button>
-        )}
-      </div>
-      {proveStatus && <p style={{ marginTop: 8 }}>{proveStatus}</p>}
-      <div className="children">
-        {node.children.map((child, i) => (
-          <TreeNodeComponent key={i} node={child} path={[...path, i]} onApplyRule={onApplyRule} onUpdateNode={onUpdateNode} />
-        ))}
-      </div>
+      {showRuleButtons && (
+        <div className="rule-buttons">
+          {!node.rule && relevantRules.map((rule) => (
+            <button key={rule} className="btn-small" onClick={() => handleApplyRule(rule)}>{ruleLabel[rule] ?? rule}</button>
+          ))}
+          {showProveButton && (
+            <button className="btn-small" onClick={handleProve} disabled={proving}>{proving ? 'Proving...' : 'Prove obligations'}</button>
+          )}
+        </div>
+      )}
+      {ruleStatus && <p className="rule-apply-status">{ruleStatus}</p>}
+      {proveStatus && <p className="prove-status">{proveStatus}</p>}
+      {node.children.length > 0 && (
+        <div className="children">
+          {node.children.map((child, i) => (
+            <TreeNodeComponent
+              key={i}
+              node={child}
+              path={[...path, i]}
+              onApplyRule={onApplyRule}
+              onRemoveRule={onRemoveRule}
+              onUpdateNode={onUpdateNode}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
