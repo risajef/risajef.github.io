@@ -68,7 +68,7 @@ Dies steht zur Abstimmung, weil das Bauprojekt mehr als CHF 600'000 kostet (Sieh
 
 Ich erstellte wieder eine [Seite](/politik/werkhof-baukredit/) mit neutralen Fakten zur Abstimmung.
 
-> Das Volk bewilligte den Baukredit ([Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/2025/2025%2011%2030%20Gemeinde.pdf)). Es erstaunt mich wenig, denn der Werkhof ist einer der sichtbarsten Leistungen der Gemeinde und hat eine breite Unterstützung in derGemeinde.
+> Das Volk bewilligte den Baukredit ([Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/2025/2025%2011%2030%20Gemeinde.pdf)). Es erstaunt mich wenig, denn der Werkhof ist einer der sichtbarsten Leistungen der Gemeinde und hat eine breite Unterstützung in der Gemeinde.
 
 ## 28. September 2025
 
@@ -94,7 +94,7 @@ Ich erstellte eine [Seite](/politik/zonenplanaenderung/) mit neutralen Fakten zu
 
 # Abstimmungen und Wahlen im Einwohnerrat {: .vote}
 
-Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Einwohnerrat. Die Vorlagen können auf der [Webseite](https://www.beringen.ch/de/einwohnerrat-vorlagen) der Gemeinde Beringen gefunden werden.
+Hier lege ich Rechenschaft ab über was ich abgestimmt oder wen ich gewählt habe im Einwohnerrat. Die Vorlagen können auf der [Webseite](https://www.beringen.ch/de/einwohnerrat-vorlagen) der Gemeinde Beringen gefunden werden.
 
 ## 30. Juni 2026
 [Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2026/Einwohnerrat%20Beschlusse%202.%20Sitzung%20vom%2030.%20Juni%202026.pdf)
