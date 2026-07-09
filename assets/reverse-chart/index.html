@@ -94,7 +94,8 @@
 
       <section class="workspace" aria-label="Chart workspace">
         <div id="chartFrame" class="chart-frame">
-          <canvas id="chartCanvas"></canvas>
+          <canvas id="chartCanvas" tabindex="0" aria-label="Chart canvas"></canvas>
+          <div id="fakeCursor" class="fake-cursor hidden" aria-hidden="true"></div>
           <div id="emptyState" class="empty-state">
             <strong>No chart loaded</strong>
             <span>Drop an image here, use the upload button, or load the included example.</span>

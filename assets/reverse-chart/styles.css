@@ -273,7 +273,44 @@ canvas {
   display: block;
   max-width: 100%;
   max-height: calc(100vh - 80px);
-  cursor: crosshair;
+  cursor: none;
+}
+
+canvas:focus-visible {
+  outline: 3px solid rgba(15, 118, 110, 0.34);
+  outline-offset: 4px;
+}
+
+.fake-cursor {
+  position: absolute;
+  z-index: 2;
+  inline-size: 18px;
+  block-size: 18px;
+  border: 0.5px solid white;
+  border-radius: 50%;
+  background: rgba(220, 38, 38, 0.5);
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.6), 0 6px 18px rgba(15, 23, 42, 0.22);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.fake-cursor::before,
+.fake-cursor::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  background: rgba(15, 23, 42, 0.88);
+  transform: translate(-50%, -50%);
+}
+
+.fake-cursor::before {
+  inline-size: 28px;
+  block-size: 1px;
+}
+
+.fake-cursor::after {
+  inline-size: 1px;
+  block-size: 28px;
 }
 
 .empty-state {

@@ -19,7 +19,20 @@ const exportMeasurements = document.querySelector("#exportMeasurements");
 const emptyState = document.querySelector("#emptyState");
 const chartFrame = document.querySelector("#chartFrame");
 const canvas = document.querySelector("#chartCanvas");
+let fakeCursor = document.querySelector("#fakeCursor");
 const ctx = canvas.getContext("2d");
+
+if (!fakeCursor) {
+  fakeCursor = document.createElement("div");
+  fakeCursor.id = "fakeCursor";
+  fakeCursor.className = "fake-cursor hidden";
+  fakeCursor.setAttribute("aria-hidden", "true");
+  chartFrame.insertBefore(fakeCursor, emptyState);
+}
+const magnifier = {
+  radiusCss: 74,
+  zoom: 3,
+};
 
 const state = {
   mode: "calibrate",
@@ -52,11 +65,13 @@ function loadImage(src, name) {
     state.imageName = name;
     state.calibration = [];
     state.measurements = [];
+    state.hover = null;
     sizeCanvas();
     emptyState.style.display = "none";
     updateLists();
     updateFitStatus();
     updateReadout(null);
+    updateFakeCursor(null);
     draw();
   };
   image.src = src;
@@ -95,6 +110,53 @@ function getPointerPoint(event) {
   return { x, y };
 }
 
+function clampPoint(point) {
+  return {
+    x: Math.min(Math.max(point.x, 0), canvas.width),
+    y: Math.min(Math.max(point.y, 0), canvas.height),
+  };
+}
+
+function getCenteredPoint() {
+  return {
+    x: canvas.width / 2,
+    y: canvas.height / 2,
+  };
+}
+
+function createPointId() {
+  if (globalThis.crypto?.randomUUID) return globalThis.crypto.randomUUID();
+  return `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
+
+function updateFakeCursor(point) {
+  if (!point || !state.image) {
+    fakeCursor.classList.add("hidden");
+    return;
+  }
+
+  const canvasRect = canvas.getBoundingClientRect();
+  const frameRect = chartFrame.getBoundingClientRect();
+  const cssX = canvasRect.left - frameRect.left + point.x * (canvasRect.width / canvas.width);
+  const cssY = canvasRect.top - frameRect.top + point.y * (canvasRect.height / canvas.height);
+  fakeCursor.style.left = `${cssX}px`;
+  fakeCursor.style.top = `${cssY}px`;
+  fakeCursor.classList.remove("hidden");
+}
+
+function setCursorPoint(point) {
+  state.hover = point ? clampPoint(point) : null;
+  updateReadout(state.hover);
+  updateFakeCursor(state.hover);
+  draw();
+}
+
+function commitCursorPoint() {
+  if (!state.hover) return;
+  if (state.mode === "calibrate") addCalibration(state.hover);
+  if (state.mode === "measure") addMeasurement(state.hover);
+}
+
 function addCalibration(point) {
   const value = Number(valueInput.value);
   if (!Number.isFinite(value)) {
@@ -111,7 +173,7 @@ function addCalibration(point) {
   }
 
   state.calibration.push({
-    id: crypto.randomUUID(),
+    id: createPointId(),
     axis,
     value,
     x: point.x,
@@ -126,7 +188,7 @@ function addCalibration(point) {
 function addMeasurement(point) {
   const values = computeValues(point);
   state.measurements.push({
-    id: crypto.randomUUID(),
+    id: createPointId(),
     x: point.x,
     y: point.y,
   });
@@ -341,6 +403,86 @@ function drawHover(point) {
   ctx.restore();
 }
 
+function drawMagnifier(point) {
+  if (!point || !state.image) return;
+
+  const rect = canvas.getBoundingClientRect();
+  if (!rect.width || !rect.height) return;
+
+  const canvasPerCssPixel = (canvas.width / rect.width + canvas.height / rect.height) / 2;
+  const radius = magnifier.radiusCss * canvasPerCssPixel;
+  const sourceRadius = radius / magnifier.zoom;
+  const sourceLeft = point.x - sourceRadius;
+  const sourceTop = point.y - sourceRadius;
+  const clippedLeft = Math.max(0, sourceLeft);
+  const clippedTop = Math.max(0, sourceTop);
+  const clippedRight = Math.min(canvas.width, point.x + sourceRadius);
+  const clippedBottom = Math.min(canvas.height, point.y + sourceRadius);
+  const sourceWidth = clippedRight - clippedLeft;
+  const sourceHeight = clippedBottom - clippedTop;
+
+  if (sourceWidth <= 0 || sourceHeight <= 0) return;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
+  ctx.clip();
+  ctx.fillStyle = "white";
+  ctx.fillRect(point.x - radius, point.y - radius, radius * 2, radius * 2);
+  ctx.imageSmoothingEnabled = false;
+  ctx.drawImage(
+    state.image,
+    clippedLeft,
+    clippedTop,
+    sourceWidth,
+    sourceHeight,
+    point.x - radius + (clippedLeft - sourceLeft) * magnifier.zoom,
+    point.y - radius + (clippedTop - sourceTop) * magnifier.zoom,
+    sourceWidth * magnifier.zoom,
+    sourceHeight * magnifier.zoom,
+  );
+  ctx.restore();
+
+  const lineWidth = 2 * canvasPerCssPixel;
+  const reticleOuter = 18 * canvasPerCssPixel;
+  const reticleGap = 4 * canvasPerCssPixel;
+  const reticleDot = 2.6 * canvasPerCssPixel;
+
+  ctx.save();
+  ctx.shadowColor = "rgba(15, 23, 42, 0.28)";
+  ctx.shadowBlur = 10 * canvasPerCssPixel;
+  ctx.shadowOffsetY = 3 * canvasPerCssPixel;
+  ctx.strokeStyle = "white";
+  ctx.lineWidth = 5 * canvasPerCssPixel;
+  ctx.beginPath();
+  ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.shadowColor = "transparent";
+  ctx.strokeStyle = getCssVar("--accent");
+  ctx.lineWidth = lineWidth;
+  ctx.stroke();
+
+  ctx.lineCap = "round";
+  ctx.strokeStyle = "rgba(15, 23, 42, 0.86)";
+  ctx.lineWidth = lineWidth;
+  ctx.beginPath();
+  ctx.moveTo(point.x - reticleOuter, point.y);
+  ctx.lineTo(point.x - reticleGap, point.y);
+  ctx.moveTo(point.x + reticleGap, point.y);
+  ctx.lineTo(point.x + reticleOuter, point.y);
+  ctx.moveTo(point.x, point.y - reticleOuter);
+  ctx.lineTo(point.x, point.y - reticleGap);
+  ctx.moveTo(point.x, point.y + reticleGap);
+  ctx.lineTo(point.x, point.y + reticleOuter);
+  ctx.stroke();
+
+  ctx.fillStyle = "rgba(220, 38, 38, 0.9)";
+  ctx.beginPath();
+  ctx.arc(point.x, point.y, reticleDot, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+}
+
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   if (!state.image) return;
@@ -356,6 +498,7 @@ function draw() {
     });
   }
   drawHover(state.hover);
+  drawMagnifier(state.hover);
 }
 
 function getCssVar(name) {
@@ -412,20 +555,54 @@ yScaleInput.addEventListener("change", () => {
 canvas.addEventListener("click", (event) => {
   const point = getPointerPoint(event);
   if (!point) return;
-  if (state.mode === "calibrate") addCalibration(point);
-  if (state.mode === "measure") addMeasurement(point);
+  setCursorPoint(point);
+  commitCursorPoint();
 });
 
 canvas.addEventListener("mousemove", (event) => {
-  state.hover = getPointerPoint(event);
-  updateReadout(state.hover);
-  draw();
+  setCursorPoint(getPointerPoint(event));
 });
 
 canvas.addEventListener("mouseleave", () => {
-  state.hover = null;
-  updateReadout(null);
-  draw();
+  if (document.activeElement === canvas) return;
+  setCursorPoint(null);
+});
+
+canvas.addEventListener("focus", () => {
+  if (state.image && !state.hover) setCursorPoint(getCenteredPoint());
+});
+
+canvas.addEventListener("blur", () => {
+  setCursorPoint(null);
+});
+
+canvas.addEventListener("keydown", (event) => {
+  if (!state.image) return;
+
+  const movement = {
+    ArrowLeft: [-1, 0],
+    ArrowRight: [1, 0],
+    ArrowUp: [0, -1],
+    ArrowDown: [0, 1],
+  };
+  const vector = movement[event.key];
+
+  if (vector) {
+    event.preventDefault();
+    const step = event.altKey ? 0.1 : event.shiftKey ? 10 : 1;
+    const current = state.hover || getCenteredPoint();
+    setCursorPoint({
+      x: current.x + vector[0] * step,
+      y: current.y + vector[1] * step,
+    });
+    return;
+  }
+
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    if (!state.hover) setCursorPoint(getCenteredPoint());
+    commitCursorPoint();
+  }
 });
 
 clearCalibration.addEventListener("click", () => {
@@ -446,6 +623,7 @@ exportMeasurements.addEventListener("click", exportMeasuredCsv);
 
 window.addEventListener("resize", () => {
   sizeCanvas();
+  updateFakeCursor(state.hover);
   draw();
 });
 
