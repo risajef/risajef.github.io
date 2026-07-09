@@ -11,6 +11,7 @@ nav:
       - Programming: programming.md
       - Research: research.md
   - Tools:
+      - Tools: tools.md
       - Buchfaltstudio: tools/buchfaltstudio.md
       - Background Generator: tools/background-generator.md
       - CSV Editor: tools/csv-editor.md

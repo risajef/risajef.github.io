@@ -97,6 +97,7 @@ Ich erstellte eine [Seite](/politik/zonenplanaenderung/) mit neutralen Fakten zu
 Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Einwohnerrat. Die Vorlagen können auf der [Webseite](https://www.beringen.ch/de/einwohnerrat-vorlagen) der Gemeinde Beringen gefunden werden.
 
 ## 30. Juni 2026
+[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2026/Einwohnerrat%20Beschlusse%202.%20Sitzung%20vom%2030.%20Juni%202026.pdf)
 
 | Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
 | --- | --- | --- |
@@ -108,6 +109,7 @@ Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Ein
 
 
 ## 5. Mai 2026
+[Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Einwohnerrat/Beschluesse/2026/Einwohnerrat%20Beschlusse%201.%20Sitzung%20vom%205.%20Mai%202026.pdf)
 
 | Meine Stimme | Einwohnerrats- beschluss | Name der Vorlage |
 | --- | --- | --- |
@@ -140,7 +142,7 @@ Hier lege ich Rechenschaft ab über was ich abgestimmt oder gewählt habe im Ein
 |---|---|---|
 | ✓ | ✓ | Baukredit Neubau Werkhof an der Werkstrasse |
 | ✓ | ✓ | Gesamtkredit für Umsetzung Beleuchtungskonzept (öffentliche Beleuchtung) |
-| ✗ | ✗ | Verschidenes: Antrag die Einwohnerratssitzung von 20:00 auf 19:30 zu verschieben |
+| ✗ | ✗ | Verschiedenes: Antrag die Einwohnerratssitzung von 20:00 auf 19:30 zu verschieben |
 
 > Der Neubau des Werkhofs verursachte lange Diskussionen. Es wurde vor allem bemängelt, dass der Bau zu teuer sei und viele Fahrzeuge draussen stehen bleiben könnten. Meine Haltung war von Beginn, dass dies zu spät sei. Wir sind nicht in der Planungsphase. Es wurde gesagt, es werde 5.3 Mio kosten (± 30%). Jetzt kostet es 4.9 Mio (± 10%). Aus meiner Sicht hat der Gemeinderat alles genauso umgesetzt wie angekündigt und aufgetragen. Zusätzlich hat das Volk "Ja" zum Planungskredit gesagt und ich fände es bevormundend zu einem Projekt "Nein" zu sagen, das genau den Spezifikationen entspricht. Die Vorlage unterliegt dem obligatorischen Referendum, weil sie zu teuer ist.
 

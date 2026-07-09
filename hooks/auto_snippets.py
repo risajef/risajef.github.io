@@ -17,6 +17,7 @@ from mkdocs.plugins import get_plugin_logger
 log = get_plugin_logger(__name__)
 
 PLACEHOLDER = "<!-- AUTO_SNIPPETS -->"
+TOOLS_PLACEHOLDER = "<!-- AUTO_TOOLS -->"
 REDIRECT_HTML_TEMPLATE = """
 <!doctype html>
 <html lang="en">
@@ -162,8 +163,9 @@ def on_pre_build(config, **_):
 
 
 def on_page_markdown(markdown, *, page, config, files):
-    """Replace placeholder blocks with auto-generated snippet directives."""
+    """Replace placeholder blocks with auto-generated Markdown."""
     markdown = _ensure_blog_self_reference(markdown, page)
+    markdown = _ensure_tools_index(markdown, page, config)
 
     meta = getattr(page, "meta", {}) or {}
     auto_cfg = meta.get("auto_snippets")
@@ -198,6 +200,89 @@ def on_page_markdown(markdown, *, page, config, files):
     if marker in markdown:
         return markdown.replace(marker, block, 1)
     return f"{markdown.rstrip()}\n\n{block}\n"
+
+
+def _ensure_tools_index(markdown: str, page, config) -> str:
+    meta = getattr(page, "meta", {}) or {}
+    auto_cfg = meta.get("auto_tools")
+    if not auto_cfg:
+        return markdown
+
+    lang = meta.get("lang") or getattr(page.file, "locale", None)
+    if not lang:
+        log.warning(
+            "auto_tools requires a 'lang' metadata entry on %s", page.file.src_path
+        )
+        return markdown
+
+    entries = _collect_tool_entries(lang, config)
+    if not entries:
+        log.warning("auto_tools found no tools when rendering %s", page.file.src_path)
+        return markdown
+
+    block = _render_tool_entries(entries, lang)
+    placeholder = TOOLS_PLACEHOLDER
+    if isinstance(auto_cfg, dict):
+        placeholder = auto_cfg.get("placeholder", placeholder)
+
+    if placeholder in markdown:
+        return markdown.replace(placeholder, block, 1)
+    return f"{markdown.rstrip()}\n\n{block}\n"
+
+
+def _collect_tool_entries(lang: str, config) -> List[tuple[str, str]]:
+    labels = _tool_nav_labels(config, lang)
+    tool_dir = DOCS_DIR / "tools"
+    entries: List[tuple[str, str]] = []
+
+    for file_path in sorted(tool_dir.glob(f"*.{lang}.md")):
+        if not file_path.is_file():
+            continue
+        slug = file_path.name[: -len(f".{lang}.md")]
+        title = labels.get(slug) or _title_from_slug(slug)
+        entries.append((title, slug))
+
+    return sorted(entries, key=lambda item: item[0].casefold())
+
+
+def _tool_nav_labels(config, lang: str) -> dict[str, str]:
+    labels: dict[str, str] = {}
+    translations = (
+        (config.get("extra") or {})
+        .get("translations", {})
+        .get(lang, {})
+        .get("nav", {})
+    )
+
+    def visit(items, in_tools: bool = False) -> None:
+        for item in items or []:
+            if not isinstance(item, dict):
+                continue
+            for label, value in item.items():
+                if label == "Tools" and isinstance(value, list):
+                    visit(value, True)
+                    continue
+                if in_tools and isinstance(value, str) and value.startswith("tools/"):
+                    path = Path(value)
+                    if path.suffix == ".md":
+                        display = translations.get(label, label)
+                        labels[path.stem] = display
+                elif isinstance(value, list):
+                    visit(value, False)
+
+    visit(config.get("nav"))
+    return labels
+
+
+def _title_from_slug(slug: str) -> str:
+    return " ".join(
+        part.upper() if part in {"csv", "xml"} else part.capitalize()
+        for part in slug.split("-")
+    )
+
+
+def _render_tool_entries(entries: List[tuple[str, str]], lang: str) -> str:
+    return "\n".join(f"- [{title}](tools/{slug}.md)" for title, slug in entries)
 
 
 def _ensure_blog_self_reference(markdown: str, page) -> str:
