@@ -50,6 +50,13 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/research/"/>
     </url>
     <url>
+        <loc>https://retoweber.info/tools/</loc>
+        <lastmod>2026-07-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/tools/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/"/>
+    </url>
+    <url>
         <loc>https://retoweber.info/assets/xml-weaver/readme/</loc>
         <lastmod>2026-07-09</lastmod>
         <changefreq>daily</changefreq>
@@ -358,13 +365,6 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/zonenplanaenderung/"/>
     </url>
     <url>
-        <loc>https://retoweber.info/research/hoare-logic/</loc>
-        <lastmod>2026-07-09</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/research/hoare-logic/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/research/hoare-logic/"/>
-    </url>
-    <url>
         <loc>https://retoweber.info/tools/background-generator/</loc>
         <lastmod>2026-07-09</lastmod>
         <changefreq>daily</changefreq>
@@ -482,6 +482,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/research/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/research/"/>
+    </url>
+    <url>
+        <loc>https://retoweber.info/de/tools/</loc>
+        <lastmod>2026-07-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/tools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/tools/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/assets/xml-weaver/readme/</loc>
@@ -790,13 +797,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/politik/zonenplanaenderung/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/politik/zonenplanaenderung/"/>
-    </url>
-    <url>
-        <loc>https://retoweber.info/de/research/hoare-logic/</loc>
-        <lastmod>2026-07-09</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="https://retoweber.info/de/research/hoare-logic/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://retoweber.info/research/hoare-logic/"/>
     </url>
     <url>
         <loc>https://retoweber.info/de/tools/background-generator/</loc>
