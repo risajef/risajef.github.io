@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import os
+import hashlib
+import json
 import re
 import shutil
 import subprocess
@@ -46,6 +48,7 @@ XML_WEAVER_OUTPUT_DIR = Path("assets/xml-weaver-dist")
 BLOG_ARTICLE_HEADING_PATTERN = re.compile(r"^(#\s+)(.+?)\s*$")
 MARKDOWN_LINK_PATTERN = re.compile(r"^\[(?P<label>.+)\]\((?P<url>[^)]+)\)$")
 INLINE_SVG_PLUGIN_PATCHED = False
+MERMAID_SVG_CACHE_PATCHED = False
 
 
 @dataclass
@@ -71,6 +74,7 @@ def on_config(config, **_):
     DOCS_DIR = docs_dir.resolve()
 
     _patch_inline_select_svg_plugin()
+    _patch_mermaid_svg_cache()
     return config
 
 
@@ -152,6 +156,56 @@ def _patch_inline_select_svg_plugin() -> None:
 
     MkdocsInlineSelectSvgPlugin.on_page_content = _patched_on_page_content
     INLINE_SVG_PLUGIN_PATCHED = True
+
+
+def _patch_mermaid_svg_cache() -> None:
+    """Skip Mermaid CLI when the source diagram and settings are unchanged."""
+    global MERMAID_SVG_CACHE_PATCHED
+    if MERMAID_SVG_CACHE_PATCHED:
+        return
+
+    try:
+        from mkdocs_mermaid_to_svg.image_generator import MermaidImageGenerator
+    except Exception:
+        return
+
+    original_generate = MermaidImageGenerator.generate
+
+    def _cached_generate(self, mermaid_code, output_path, config, page_file=None):
+        output = Path(output_path)
+        fingerprint = hashlib.sha256(
+            json.dumps(
+                {
+                    "version": 1,
+                    "mermaid_code": mermaid_code,
+                    "config": config,
+                },
+                default=str,
+                sort_keys=True,
+            ).encode("utf-8")
+        ).hexdigest()
+        marker_key = hashlib.sha256(str(output.resolve()).encode("utf-8")).hexdigest()
+        marker = PROJECT_DIR / ".cache" / "mkdocs-mermaid" / f"{marker_key}.json"
+
+        try:
+            cached = json.loads(marker.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            cached = None
+        if output.is_file() and cached and cached.get("fingerprint") == fingerprint:
+            log.debug("Reusing cached Mermaid SVG %s", output)
+            return True
+
+        generated = original_generate(self, mermaid_code, output_path, config, page_file)
+        if generated and output.is_file():
+            marker.parent.mkdir(parents=True, exist_ok=True)
+            marker.write_text(
+                json.dumps({"fingerprint": fingerprint}, sort_keys=True) + "\n",
+                encoding="utf-8",
+            )
+        return generated
+
+    MermaidImageGenerator.generate = _cached_generate
+    MERMAID_SVG_CACHE_PATCHED = True
 
 
 def on_pre_build(config, **_):

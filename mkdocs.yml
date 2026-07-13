@@ -51,10 +51,22 @@ plugins:
         - locale: de
           name: Deutsch
   - search
+  - piper-tts:
+      model_dir: models/piper-tts
+      languages:
+        de:
+          model: de_DE-thorsten-medium.onnx
+          label: Vorlesen
+        en:
+          model: en_US-amy-medium.onnx
+          label: Listen
+        # en:
+        #   model: en_US-libritts-high.onnx
+        #   speaker: p501
+        #   label: Listen
   - mermaid-to-svg:
       mmdc_path: 'mmdc'
       cleanup_generated_images: false
-      process_in_serve: true
   - inline-select-svg
   - bibtex:
       bib_file: references.bib

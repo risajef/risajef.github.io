@@ -21,7 +21,7 @@ Minute für Minute.
 Ist das Feuer warm genug,  
 wird der Derwisch zu einem Phönix.  
 Wärmer, höher.  
-Er legt die Kleider ab  
+Sie legt die Kleider ab  
 und tanzt zum Himmel.  
 Heute ist das Feuer klein.  
 Also bleibt der Kreisel stehen.  
@@ -112,7 +112,7 @@ Ihre Herzen wärmten sich.
 Sie berührten sich.  
 Er drang ein und sie nahm auf.  
 Er verschwand und sie blieb.  
-In ihr wuchs das Lebens.  
+In ihr wuchs das Leben.  
 Doch sie ist allein.  
 Die Erinnerung der Nähe
 Wurde zur Hader.  
@@ -147,7 +147,7 @@ Doch nur wenige Kilometer schafft sie
 Tag für Tag.  
 Sie sieht die Stadt, doch weiss gewiss,  
 dass sie noch allzu fern ist.  
-Doch sie hofft  
+Doch sie hofft.  
 Ihr Herz ist warm.  
 
 Sie baut Hütten wie die Hirten.  
@@ -336,7 +336,7 @@ Sie wacht auf: *Schmerz*
 
 Alles schliesst sich.  
 Alles verengt sich.  
-Das Kind dehnt sich.  
+Das Kind dehnt sie.  
 Der Kampf beginnt.  
 Das Kind gewinnt.  
 
@@ -533,7 +533,7 @@ Jeden Knaben zu töten.
 
 * *Klopfen*  
 * *Eintreten*  
-* *Herz pocht durch den Hals*  
+* *Herz pocht durch den Hals.*  
 > *Soll ich das Kind erwürgen, dass er es nicht bekommt?*  
 > *Soll ich es übergeben?*  
 
@@ -626,10 +626,10 @@ Keinen Mann verschmähte sie.
 Keine Frau wies sie ab.  
 Geboren zu lieben.  
 
-Mit gestilltem Vertrauen  
-Geschichten der Alten  
-Lieder der Wärme  
-Einem Herzen aus Feuer  
+Mit gestilltem Vertrauen,  
+Geschichten der Alten,  
+Lieder der Wärme,  
+Einem Herzen aus Feuer.  
 
 ---
 
@@ -756,12 +756,12 @@ Sie folgt ihm nach.
 ## Eis so heiss wie Feuer
 
 
-Eine Gruppe von 5 Personen geht mit ihm.
-Er schaut sie an.
-Traurig und voller Wärme.
+Eine Gruppe von 5 Personen geht mit ihm.  
+Er schaut sie an.  
+Traurig und voller Wärme.  
 Alle gehen in einer Gruppe.
 
-Sie gehen aus der Stadt.
+Sie gehen aus der Stadt.  
 In die Kälte.
 
 Er sagt:  
@@ -807,7 +807,7 @@ Dreht sich zu ihr.
 > Du bist die, welche mich läutern sollte.  
 > Doch du kamst zu mir.
 
-Sie (erstaunt über sich selbst):
+Sie (erstaunt über sich selbst):  
 > So soll es sein.  
 > Du wurdest zu mir gesandt.  
 > Und ich zu dir.  
@@ -818,7 +818,7 @@ Sie (erstaunt über sich selbst):
 Er schockiert, versteinert.  
 > Ja.  
 
-Sie kommen zu einem kalten Bach  
+Sie kommen zu einem kalten Bach.  
 > Du Tochter der Auserwählten.  
 > Jauchetochter und Dirnengut.  
 > Willst du umkehren und vondir brennen?  
@@ -858,7 +858,7 @@ Legt ihre Hand auf seine Schulter.
 
 ## Das grosse Ja
 
-So treibt sie nun der Wind  
+So treibt sie nun der Wind,  
 Peitscht sie auf die Berge.  
 Ohne Essen und ohne Feuer.  
 Zwei Nächte.  
@@ -866,7 +866,7 @@ Zwei Nächte.
 Nahe dem Tod zitternd und schauernd.  
 Ihr Geist entflieht ihr.  
 Da tritt die Kältemutter heran.  
-> Bist du die Tochter des höchsten,  
+> Bist du die Tochter des Höchsten,  
 > so befiehl diesem Stein er soll zu Holz werden.
 
 Sie aber antwortete.  

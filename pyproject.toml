@@ -16,7 +16,18 @@ dependencies = [
   "python-markdown-math==0.9",
   "mkdocs-rss-plugin==1.17.7",
   "pymdown-extensions==10.8.1",
+  "piper-tts>=1.4.2",
 ]
+
+[project.entry-points."mkdocs.plugins"]
+piper-tts = "mkdocs_piper_tts.plugin:PiperTTSPlugin"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["mkdocs_piper_tts*"]
 
 [dependency-groups]
 translate = [
@@ -24,4 +35,4 @@ translate = [
 ]
 
 [tool.uv]
-package = false
+package = true

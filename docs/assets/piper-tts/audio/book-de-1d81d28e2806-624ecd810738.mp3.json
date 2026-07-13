@@ -1,0 +1,9 @@
+{
+  "config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "content_hash": "05ea434e983d3fc728a6341e4421deac66441f2f588330192c02bb1e839d46ce",
+  "generator_version": "2",
+  "language": "de",
+  "model": "/home/wer/Code/risajef.github.io/models/piper-tts/de_DE-thorsten-medium.onnx",
+  "model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "source_hash": "624ecd8107389549382a617271be12c217652b7fd4b1ab6ca65ed85ca8839502"
+}

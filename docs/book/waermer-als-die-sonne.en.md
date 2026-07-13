@@ -18,7 +18,7 @@ She turns minute by minute.
 Minute after minute.  
 If the fire is warm enough, the dervish becomes a phoenix.  
 Warmer, higher.  
-He sheds his clothes and dances toward the sky.  
+She sheds her clothes and dances toward the sky.  
 Today the fire is small.  
 So the spinning top stands still.  
 Like a small stone in the river of time.  

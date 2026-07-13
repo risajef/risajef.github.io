@@ -1,3 +1,7 @@
+docs/assets/piper-tts/models/*.onnx filter=lfs diff=lfs merge=lfs -text
+models/piper-tts/*.onnx filter=lfs diff=lfs merge=lfs -text
+docs/assets/piper-tts/audio/*.mp3 filter=lfs diff=lfs merge=lfs -text
+docs/assets/piper-tts/audio/*.mp3.json -filter -diff -merge text
 /docs/z3/z3.wasm/z3smt2w.wasm filter=lfs diff=lfs merge=lfs -text
 /docs/z3/z3.wasm/z3w.wasm filter=lfs diff=lfs merge=lfs -text
 /z3/z3.wasm/z3smt2w.wasm filter=lfs diff=lfs merge=lfs -text
@@ -36,3 +40,4 @@
 /assets/piper-tts/audio/politik-de-963fb9261bf3-eabb97b3cd85.mp3 filter=lfs diff=lfs merge=lfs -text
 /assets/piper-tts/audio/politik-en-06f590f5fa00-076571305ed2.mp3 filter=lfs diff=lfs merge=lfs -text
 /assets/piper-tts/audio/programming-en-d723c8033cc9-43689a6c7b8d.mp3 filter=lfs diff=lfs merge=lfs -text
+/docs/assets/piper-tts/audio/tmpol4a2kyk/speech.wav filter=lfs diff=lfs merge=lfs -text
