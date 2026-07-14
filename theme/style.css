@@ -187,6 +187,11 @@ ul {
     margin-block-end: 0;
 }
 
+.nav-toggle,
+.visually-hidden {
+    display: none;
+}
+
 .main-nav .nav-parent:hover>.nav-dropdown,
 .main-nav .nav-parent:focus-within>.nav-dropdown {
     display: block;
@@ -265,31 +270,6 @@ ul {
 
 #github-badge span {
     color: white;
-}
-
-/* Feedback Button */
-.feedback-button {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    z-index: 1001;
-    background-color: var(--bg-main);
-    color: var(--primary) !important;
-    padding: 0.45em 0.65em !important;
-    border: 1px solid var(--primary);
-    border-radius: 0;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s, transform 0.2s;
-    white-space: nowrap;
-    margin: 0;
-    transform-origin: bottom right;
-    transform: rotate(-90deg) translateX(50%) translateY(-1px);
-}
-
-.feedback-button:hover {
-    color: var(--primary-hover);
-    transform: rotate(-90deg) translateX(50%) translateY(-1px);
 }
 
 .piper-tts-button {
@@ -451,23 +431,60 @@ a code {
 
 @media (max-width: 700px) {
     .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1em 1em 0.5em 1em;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75em 1em;
     }
 
     .site-title {
+        width: auto;
+        margin: 0;
+    }
+
+    .nav-toggle {
+        display: grid;
+        width: 2.25rem;
+        height: 2.25rem;
+        padding: 0.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 0;
+        background: transparent;
+        cursor: pointer;
+        gap: 0.25rem;
+    }
+
+    .nav-toggle-bar {
+        display: block;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0.5em;
+        height: 2px;
+        background: var(--color-on-dark);
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
     }
 
     .main-nav {
+        display: none;
+        grid-column: 1 / -1;
         width: 100%;
         flex-direction: column;
         align-items: stretch;
         margin: 0;
+    }
+
+    .site-header.nav-open .main-nav {
+        display: flex;
     }
 
     .main-nav>li {
@@ -477,14 +494,25 @@ a code {
 
     .site-header h1 {
         font-size: 1.6em;
-        text-align: center;
     }
 
     .language-switcher {
-        width: 100%;
-        justify-content: center;
+        width: max-content;
+        justify-content: flex-start;
         flex-wrap: wrap;
-        margin: 0.5em 0 0 0;
+        margin: 0;
+    }
+
+    .main-nav .nav-dropdown,
+    .main-nav .nav-dropdown .nav-dropdown {
+        position: static;
+        display: block;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .main-nav .nav-dropdown a {
+        color: var(--color-on-dark);
     }
 }
 
@@ -789,21 +817,21 @@ h1.vote~table td:nth-child(2) {
 
 @media (max-width: 700px) {
     body {
-        padding-bottom: 6.75rem;
+        padding-bottom: 2.25rem;
     }
 
     .bottom-controls {
-        grid-template-columns: max-content minmax(0, 1fr);
-        height: 5.75rem;
+        grid-template-columns: minmax(0, 1fr);
+        height: 2.25rem;
     }
 
     .piper-tts-button {
-        grid-column: 1 / -1;
+        grid-column: 1;
         grid-row: 1;
     }
 
     #github-badge,
     #simple-analytics-badge {
-        grid-row: 2;
+        display: none;
     }
 }
