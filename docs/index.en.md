@@ -25,6 +25,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## 17. Juli 2026
+
+Add text to speech using [Piper](https://github.com/OHF-Voice/piper1-gpl). The pages have a recording in English and German. In order to do this I had to replace `gh-deploy` by my own to support [git-lfs](https://git-lfs.com).
+
 ## July 6th 2026
 
 Add [Reverse Chart](/tools/reverse-chart/) - a web tool to calibrate chart images and read data points from them.

@@ -25,6 +25,10 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
+## 17. Juli 2026
+
+Füge Text to Speech hinzu mittels [Piper](https://github.com/OHF-Voice/piper1-gpl). Die Seiten wurden in Englisch und Deutsch vertont. Zu diesem Zweck ersetzte ich die `gh-deploy` Action mit einer eigenen um [git-lfs](https://git-lfs.com) zu unterstützen.
+
 ## 6. Juli 2026
 
 Füge [Reverse Chart](/tools/reverse-chart/) hinzu - ein Web-Werkzeug, um Diagrammbilder zu kalibrieren und Datenpunkte daraus abzulesen.
