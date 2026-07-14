@@ -141,10 +141,29 @@
         </li>
         {%- endmacro %}
     <header class="site-header">
-        <div class="site-title">
-            <h1 class="{% if page.abs_url | url == '/' %}current{% endif %}">
-                <a href="/index.html">Reto Weber</a>
-            </h1>
+        <div class="header-identity">
+            <div class="site-title">
+                <h1 class="{% if page.abs_url | url == '/' %}current{% endif %}">
+                    <a href="/index.html">Reto Weber</a>
+                </h1>
+            </div>
+            {% if i18n_config is defined and i18n_config.languages %}
+            <nav class="language-switcher" aria-label="Language selector">
+                {% for lang in i18n_config.languages %}
+                {% if lang.build %}
+                {% set target_url = None %}
+                {% if page.file and page.file.alternates is defined and lang.locale in page.file.alternates %}
+                {% set target_url = page.file.alternates[lang.locale].url %}
+                {% elif lang.link %}
+                {% set target_url = lang.link %}
+                {% else %}
+                {% set target_url = '/' ~ lang.locale ~ '/' %}
+                {% endif %}
+                <a href="{{ target_url | url }}" class="{% if lang.locale == current_locale %}active{% endif %}">{{ lang.locale | capitalize }}</a>
+                {% endif %}
+                {% endfor %}
+            </nav>
+            {% endif %}
         </div>
         {% if nav|length > 1 %}
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
@@ -160,23 +179,6 @@
             {% endfor %}
         </ul>
         {% endif %}
-        {% endif %}
-        {% if i18n_config is defined and i18n_config.languages %}
-        <nav class="language-switcher" aria-label="Language selector">
-            {% for lang in i18n_config.languages %}
-            {% if lang.build %}
-            {% set target_url = None %}
-            {% if page.file and page.file.alternates is defined and lang.locale in page.file.alternates %}
-            {% set target_url = page.file.alternates[lang.locale].url %}
-            {% elif lang.link %}
-            {% set target_url = lang.link %}
-            {% else %}
-            {% set target_url = '/' ~ lang.locale ~ '/' %}
-            {% endif %}
-            <a href="{{ target_url | url }}" class="{% if lang.locale == current_locale %}active{% endif %}">{{ lang.locale | capitalize }}</a>
-            {% endif %}
-            {% endfor %}
-        </nav>
         {% endif %}
         <form class="search-form" role="search">
             <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
