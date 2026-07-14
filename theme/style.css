@@ -50,6 +50,22 @@ body {
     background: var(--bg-main);
     color: var(--text-main);
     margin: 0px;
+    padding-bottom: 4rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--bg-main);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border: 3px solid var(--bg-main);
 }
 
 iframe {
@@ -192,19 +208,18 @@ ul {
 .language-switcher {
     display: inline-flex;
     align-items: center;
-    gap: 0.4em;
+    gap: 0.15em;
     margin: 0 1em;
-    padding: 0.15em 0.3em;
-    border-radius: 999px;
-    background-color: rgba(255, 255, 255, 0.18);
+    padding: 0.1em;
+    border: 1px solid rgba(255, 255, 255, 0.55);
 }
 
 .language-switcher a {
     color: var(--color-on-dark);
     text-decoration: none;
     font-weight: 600;
-    padding: 0.2em 0.85em;
-    border-radius: 999px;
+    padding: 0.15em 0.4em;
+    border-radius: 0;
     border: 1px solid transparent;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -222,14 +237,13 @@ ul {
 
 /* GitHub Badge (floating bottom left) */
 #github-badge {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    z-index: 10000;
+    box-sizing: border-box;
+    width: max-content;
+    height: 2.25rem;
     background-color: #24292e;
     color: white;
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 0 12px;
+    border-radius: 0;
     text-decoration: none;
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -241,7 +255,6 @@ ul {
 }
 
 #github-badge:hover {
-    transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     background-color: #2f363d;
 }
@@ -256,20 +269,49 @@ ul {
 
 /* Feedback Button */
 .feedback-button {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 1001;
     background-color: var(--bg-main);
     color: var(--primary) !important;
-    padding: 0em 0.4em 0.2em 0.4em !important;
-    border-radius: 4px;
+    padding: 0.45em 0.65em !important;
+    border: 1px solid var(--primary);
+    border-radius: 0;
     text-decoration: none;
     font-weight: 600;
     transition: background-color 0.3s, transform 0.2s;
     white-space: nowrap;
-    margin: 0 1em;
+    margin: 0;
+    transform-origin: bottom right;
+    transform: rotate(-90deg) translateX(50%) translateY(-1px);
 }
 
 .feedback-button:hover {
     color: var(--primary-hover);
-    transform: translateY(-2px);
+    transform: rotate(-90deg) translateX(50%) translateY(-1px);
+}
+
+.piper-tts-button {
+    display: block;
+    width: 100%;
+    height: 2.25rem;
+    border-radius: 0;
+    background: var(--primary);
+    border: 0;
+    color-scheme: dark;
+    accent-color: var(--bg-main);
+}
+
+.piper-tts-button::-webkit-media-controls-panel {
+    background-color: var(--primary);
+}
+
+.piper-tts-button::-webkit-media-controls-play-button,
+.piper-tts-button::-webkit-media-controls-current-time-display,
+.piper-tts-button::-webkit-media-controls-time-remaining-display,
+.piper-tts-button::-webkit-media-controls-mute-button {
+    color: var(--bg-main);
 }
 
 /* TOC Sidebar Layout */
@@ -613,13 +655,6 @@ h1.vote~table td:nth-child(2) {
     line-height: 0;
 }
 
-a[href^="http"]::after {
-    content: '↗';
-    vertical-align: super;
-    font-size: small;
-    color: var(--text-muted);
-}
-
 #mermaid+p svg {
     font-family: inherit;
     inline-size: calc-size(max-content, size + 100px);
@@ -718,18 +753,57 @@ a[href^="http"]::after {
     }
 }
 
-#simple-analytics-badge {
+.bottom-controls {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 10000;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr) max-content;
+    height: 2.25rem;
+}
+
+#simple-analytics-badge {
+    box-sizing: border-box;
+    width: max-content;
+    height: 2.25rem;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
     background: var(--bg-main);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #simple-analytics-badge::after {
     content: '';
+}
+
+#simple-analytics-badge img {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding-bottom: 6.75rem;
+    }
+
+    .bottom-controls {
+        grid-template-columns: max-content minmax(0, 1fr);
+        height: 5.75rem;
+    }
+
+    .piper-tts-button {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    #github-badge,
+    #simple-analytics-badge {
+        grid-row: 2;
+    }
 }

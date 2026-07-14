@@ -3,7 +3,7 @@ name = "risajef-github-io"
 version = "0.0.1"
 description = "Personal MkDocs site for retoweber.info"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11,<3.14"
 dependencies = [
   "mkdocs==1.6.1",
   "mkdocs-mermaid2-plugin==1.2.1",
@@ -17,6 +17,9 @@ dependencies = [
   "mkdocs-rss-plugin==1.17.7",
   "pymdown-extensions==10.8.1",
   "piper-tts>=1.4.2",
+  "onnx>=1.16,<2",
+  "onnxruntime-gpu[cuda,cudnn]==1.25.0; python_version >= '3.11'",
+  "tensorrt-cu12>=10.9,<11; python_version >= '3.11'",
 ]
 
 [project.entry-points."mkdocs.plugins"]
@@ -36,3 +39,9 @@ translate = [
 
 [tool.uv]
 package = true
+dependency-metadata = [
+  { name = "piper-tts", version = "1.4.2", requires-dist = [
+    "onnxruntime-gpu[cuda,cudnn]==1.25.0",
+    "pathvalidate>=3",
+  ] },
+]

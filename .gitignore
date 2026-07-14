@@ -16,3 +16,5 @@ package-lock.json
 uv.lock
 *.egg-info
 .cache
+models/piper-tts/tensorrt-cache/
+.agents

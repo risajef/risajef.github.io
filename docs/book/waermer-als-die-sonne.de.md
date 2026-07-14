@@ -9,7 +9,7 @@ auto_translated: false
 
 *Alleine, draussen, kalt und dunkel.*
 
-Sie streckt die Arme aus. 
+Sie streckt die Arme aus.  
 Entgegen dem Feuer ihre Hände.  
 Die Wärme sticht.  
 Die Poren weiten sich.  
@@ -56,7 +56,7 @@ erzählte sie von der alten Magie:
 > Kaum ein Mädchen gibt's wie dich.  
 > Darf ihre Oma kennen.  
 > Wir sind zu alt, zu schwach.  
-> Wir alten werden zu den Bächen geschickt.
+> Wir alten werden zu den Bächen geschickt.  
 > "Stirb dort und geh der Kälte Mutter in den Schoss."  
 > Wurde mir wieder und wieder gesagt:  
 > "Alte geh weg."  

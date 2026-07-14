@@ -3,12 +3,15 @@ from __future__ import annotations
 import hashlib
 import html
 import json
+import os
 import posixpath
 import re
 import shutil
 import subprocess
 import tempfile
+import time
 import wave
+from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -20,11 +23,400 @@ from mkdocs.plugins import BasePlugin, get_plugin_logger
 
 log = get_plugin_logger(__name__)
 
-GENERATOR_VERSION = "2"
 DEFAULT_LANGUAGES = {
     "de": {"model": "de_DE-thorsten-medium.onnx", "label": "Vorlesen"},
     "en": {"model": "en_US-lessac-medium.onnx", "label": "Listen"},
 }
+
+
+def _log_timing(label, started, *, plugin_started=None, level="info"):
+    """Log wall-clock and monotonic timing so build phases can be correlated."""
+    elapsed = time.perf_counter() - started
+    since_plugin = ""
+    if plugin_started is not None:
+        since_plugin = f", since_plugin={time.perf_counter() - plugin_started:.3f}s"
+    message = (
+        "Piper TTS timing: %s at=%s duration=%.3fs%s"
+        % (label, datetime.now().isoformat(timespec="milliseconds"), elapsed, since_plugin)
+    )
+    getattr(log, level)(message)
+
+
+def _log_duration(label, duration, *, plugin_started=None):
+    """Log an already accumulated duration with the same timing format."""
+    since_plugin = ""
+    if plugin_started is not None:
+        since_plugin = f", since_plugin={time.perf_counter() - plugin_started:.3f}s"
+    log.info(
+        "Piper TTS timing: %s at=%s duration=%.3fs%s",
+        label,
+        datetime.now().isoformat(timespec="milliseconds"),
+        duration,
+        since_plugin,
+    )
+
+
+def _shape_inferred_model(model_path, cache_dir):
+    """Prepare the Piper graph for TensorRT's shape-analysis pass."""
+    import onnx
+
+    cache_dir = Path(cache_dir)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    inferred_path = cache_dir / f"{Path(model_path).stem}.shape-inferred.onnx"
+    if (
+        inferred_path.is_file()
+        and inferred_path.stat().st_mtime_ns >= Path(model_path).stat().st_mtime_ns
+    ):
+        return inferred_path
+
+    log.info("Running ONNX shape inference for %s", model_path)
+    model = onnx.load(str(model_path))
+    inferred = onnx.shape_inference.infer_shapes(model, check_type=False)
+    temporary_path = inferred_path.with_suffix(".tmp.onnx")
+    onnx.save(inferred, str(temporary_path))
+    temporary_path.replace(inferred_path)
+    return inferred_path
+
+
+def _load_voice(
+    model_path,
+    config_path,
+    *,
+    use_cuda,
+    use_tensorrt,
+    cache_dir,
+    batch_size,
+    fp16,
+    plugin_started=None,
+):
+    """Load Piper with either CUDA EP or TensorRT EP.
+
+    PiperVoice.load hard-codes the CUDA/CPU provider list, so TensorRT needs a
+    session constructed here and passed to PiperVoice directly.
+    """
+    started = time.perf_counter()
+    import onnxruntime
+    from piper import PiperVoice
+    from piper.config import PiperConfig
+    _log_timing(
+        "voice import",
+        started,
+        plugin_started=plugin_started,
+    )
+
+    started = time.perf_counter()
+    os.environ.setdefault("OMP_NUM_THREADS", "1")
+    os.environ.setdefault("ORT_INTRA_OP_NUM_THREADS", "1")
+    onnxruntime.preload_dlls(cuda=use_cuda, cudnn=use_cuda, msvc=False)
+    _log_timing(
+        "CUDA DLL preload",
+        started,
+        plugin_started=plugin_started,
+    )
+    if use_tensorrt:
+        started = time.perf_counter()
+        try:
+            # The NVIDIA wheel keeps libnvinfer beside its Python bindings.
+            # Importing it first makes those native libraries visible to ORT's
+            # TensorRT provider loader.
+            import tensorrt  # noqa: F401
+        except ImportError as error:
+            raise RuntimeError(
+                "TensorRT Python/runtime libraries are not installed; "
+                "run `uv sync` or install `tensorrt-cu12`"
+            ) from error
+        _log_timing(
+            "TensorRT import",
+            started,
+            plugin_started=plugin_started,
+        )
+
+    started = time.perf_counter()
+    config = PiperConfig.from_dict(
+        json.loads(Path(config_path).read_text(encoding="utf-8"))
+    )
+    session_options = onnxruntime.SessionOptions()
+    _log_timing(
+        "Piper config/session options",
+        started,
+        plugin_started=plugin_started,
+    )
+    session_model_path = model_path
+    if use_tensorrt:
+        if "TensorrtExecutionProvider" not in onnxruntime.get_available_providers():
+            raise RuntimeError(
+                "This onnxruntime installation has no TensorRTExecutionProvider"
+            )
+        cache_dir = Path(cache_dir)
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        precision = "fp16" if fp16 else "fp32"
+        started = time.perf_counter()
+        session_model_path = _shape_inferred_model(model_path, cache_dir)
+        _log_timing(
+            "ONNX shape inference/cache lookup",
+            started,
+            plugin_started=plugin_started,
+        )
+        profile = {
+            "trt_engine_cache_enable": True,
+            "trt_engine_cache_path": str(cache_dir),
+            "trt_engine_cache_prefix": (
+                f"{Path(model_path).stem}-range-cuda-v3-{precision}-b{batch_size}"
+            ),
+            "trt_timing_cache_enable": True,
+            "trt_timing_cache_path": str(cache_dir),
+            "trt_fp16_enable": fp16,
+            # Piper uses dynamic shape construction with float scale inputs.
+            # Keep Range on CUDA/CPU instead of making TensorRT parse it as an
+            # integer shape tensor; the surrounding compatible subgraphs can
+            # still be delegated to TensorRT.
+            "trt_op_types_to_exclude": "Range",
+        }
+        providers = [
+            ("TensorrtExecutionProvider", profile),
+            "CUDAExecutionProvider",
+            "CPUExecutionProvider",
+        ]
+    elif use_cuda:
+        providers = ["CUDAExecutionProvider", "CPUExecutionProvider"]
+    else:
+        providers = ["CPUExecutionProvider"]
+
+    started = time.perf_counter()
+    try:
+        session = onnxruntime.InferenceSession(
+            str(session_model_path),
+            sess_options=session_options,
+            providers=providers,
+        )
+    except Exception as error:
+        if use_tensorrt and "libnvinfer" in str(error):
+            raise RuntimeError(
+                "TensorRT libraries are missing; install a TensorRT 10.x "
+                "runtime compatible with this ONNX Runtime/CUDA installation"
+            ) from error
+        raise
+    _log_timing(
+        "ONNX Runtime session creation",
+        started,
+        plugin_started=plugin_started,
+    )
+
+    started = time.perf_counter()
+    voice = PiperVoice(session=session, config=config)
+    expected_provider = (
+        "TensorrtExecutionProvider" if use_tensorrt else "CUDAExecutionProvider"
+    )
+    if (use_cuda or use_tensorrt) and expected_provider not in voice.session.get_providers():
+        raise RuntimeError(
+            f"Piper TTS could not initialize {expected_provider}; "
+            f"providers={voice.session.get_providers()}"
+        )
+    _log_timing(
+        "Piper voice initialization",
+        started,
+        plugin_started=plugin_started,
+    )
+    return voice
+
+
+def _audio_from_batch(voice, phoneme_ids, speaker_id, timing=None):
+    """Run one padded batch and return one trimmed float waveform per item."""
+    import numpy as np
+
+    from piper.config import SynthesisConfig
+
+    max_length = max(len(ids) for ids in phoneme_ids)
+    input_ids = np.zeros((len(phoneme_ids), max_length), dtype=np.int64)
+    input_lengths = np.empty(len(phoneme_ids), dtype=np.int64)
+    for index, ids in enumerate(phoneme_ids):
+        input_ids[index, : len(ids)] = ids
+        input_lengths[index] = len(ids)
+
+    synthesis_config = SynthesisConfig(speaker_id=speaker_id)
+    length_scale = synthesis_config.length_scale or voice.config.length_scale
+    noise_scale = synthesis_config.noise_scale or voice.config.noise_scale
+    noise_w_scale = synthesis_config.noise_w_scale or voice.config.noise_w_scale
+    inputs = {
+        "input": input_ids,
+        "input_lengths": input_lengths,
+        "scales": np.asarray(
+            [noise_scale, length_scale, noise_w_scale], dtype=np.float32
+        ),
+    }
+    if voice.config.num_speakers > 1:
+        inputs["sid"] = np.full(
+            len(phoneme_ids), 0 if speaker_id is None else speaker_id, dtype=np.int64
+        )
+
+    session_started = time.perf_counter()
+    output = voice.session.run(None, inputs)[0][:, 0, 0, :]
+    if timing is not None:
+        timing["session"] += time.perf_counter() - session_started
+
+    postprocess_started = time.perf_counter()
+    waveforms = []
+    for audio in output:
+        # Batched Piper output is padded to the longest item. Remove the
+        # generated tail noise before writing the individual WAV files.
+        window = max(1, voice.config.sample_rate // 20)
+        if len(audio) < window:
+            energy = np.sqrt(np.mean(audio * audio))[None]
+        else:
+            # Moving RMS via cumulative sum. O(n), unlike np.convolve here.
+            squared = audio * audio
+            cumulative = np.cumsum(squared, dtype=np.float64)
+            window_energy = cumulative[window - 1 :].copy()
+            if window > 1:
+                window_energy[1:] -= cumulative[:-window]
+            energy = np.sqrt(window_energy / window)
+        active = np.flatnonzero(energy > 0.005)
+        end = min(len(audio), (int(active[-1]) + window) if len(active) else 0)
+        audio = audio[:end]
+        if synthesis_config.normalize_audio:
+            maximum = np.max(np.abs(audio)) if len(audio) else 0
+            if maximum < 1e-8:
+                audio = np.zeros_like(audio)
+            else:
+                audio = audio / maximum
+        if synthesis_config.volume != 1.0:
+            audio = audio * synthesis_config.volume
+        waveforms.append(np.clip(audio, -1.0, 1.0).astype(np.float32))
+    if timing is not None:
+        timing["postprocess"] += time.perf_counter() - postprocess_started
+    return waveforms
+
+
+def _generate_audio_batch(
+    tasks,
+    voice,
+    batch_size,
+    ffmpeg_path,
+    progress_callback=None,
+    plugin_started=None,
+    inference_progress_callback=None,
+):
+    """Generate and encode a group of pages sharing one Piper model/voice."""
+    import numpy as np
+
+    started = time.perf_counter()
+    with tempfile.TemporaryDirectory() as temporary_dir:
+        temporary_dir = Path(temporary_dir)
+        wav_paths = [temporary_dir / f"{index}.wav" for index in range(len(tasks))]
+        wav_files = []
+        segments = []
+        phonemize_started = time.perf_counter()
+        for index, (_, _, _, text, speaker_id, _) in enumerate(tasks):
+            wav_file = wave.open(str(wav_paths[index]), "wb")
+            wav_file.setnchannels(1)
+            wav_file.setsampwidth(2)
+            wav_file.setframerate(voice.config.sample_rate)
+            wav_files.append(wav_file)
+            for phonemes in voice.phonemize(text):
+                if phonemes:
+                    ids = voice.phonemes_to_ids(phonemes)
+                    segments.append(
+                        (index, ids, speaker_id)
+                    )
+        _log_timing(
+            f"phonemization ({len(tasks)} files, {len(segments)} segments)",
+            phonemize_started,
+            plugin_started=plugin_started,
+        )
+
+        inference_started = time.perf_counter()
+        inference_batches = 0
+        total_batches = (len(segments) + batch_size - 1) // batch_size
+        inference_timing = {"session": 0.0, "postprocess": 0.0}
+        if inference_progress_callback is not None:
+            inference_progress_callback(0, total_batches, 0, 0.0)
+        try:
+            for offset in range(0, len(segments), batch_size):
+                inference_batches += 1
+                current = segments[offset : offset + batch_size]
+                waveforms = _audio_from_batch(
+                    voice,
+                    [segment[1] for segment in current],
+                    current[0][2],
+                    timing=inference_timing,
+                )
+                for segment, waveform in zip(current, waveforms):
+                    wav_files[segment[0]].writeframes(
+                        np.clip(waveform * 32767, -32767, 32767)
+                        .astype(np.int16)
+                        .tobytes()
+                    )
+                if inference_progress_callback is not None:
+                    inference_progress_callback(
+                        inference_batches,
+                        total_batches,
+                        min(offset + len(current), len(segments)),
+                        time.perf_counter() - inference_started,
+                    )
+        finally:
+            for wav_file in wav_files:
+                wav_file.close()
+        _log_timing(
+            f"inference loop ({inference_batches} batches)",
+            inference_started,
+            plugin_started=plugin_started,
+        )
+        _log_duration(
+            "CUDA session.run",
+            inference_timing["session"],
+            plugin_started=plugin_started,
+        )
+        _log_duration(
+            "CPU waveform postprocessing",
+            inference_timing["postprocess"],
+            plugin_started=plugin_started,
+        )
+
+        encoding_started = time.perf_counter()
+        for index, (audio_path, _, _, _, _, _) in enumerate(tasks):
+            audio_path = Path(audio_path)
+            audio_path.parent.mkdir(parents=True, exist_ok=True)
+            mp3_path = temporary_dir / f"{index}.mp3"
+            result = subprocess.run(
+                [
+                    ffmpeg_path,
+                    "-hide_banner",
+                    "-loglevel",
+                    "error",
+                    "-i",
+                    str(wav_paths[index]),
+                    "-codec:a",
+                    "libmp3lame",
+                    "-q:a",
+                    "3",
+                    "-y",
+                    str(mp3_path),
+                ],
+                capture_output=True,
+                check=False,
+                text=True,
+            )
+            if result.returncode != 0:
+                error = result.stderr.strip() or f"ffmpeg exited with code {result.returncode}"
+                raise RuntimeError(f"Piper TTS MP3 conversion failed: {error}")
+            # The temporary directory may be on a different filesystem
+            # (e.g. /tmp versus the project volume), so Path.replace() can
+            # fail with EXDEV. shutil.move() falls back to copy-and-unlink.
+            shutil.move(str(mp3_path), str(audio_path))
+            if progress_callback is not None:
+                progress_callback(audio_path)
+        _log_timing(
+            f"FFmpeg encoding and MP3 copies ({len(tasks)} files)",
+            encoding_started,
+            plugin_started=plugin_started,
+        )
+
+    _log_timing(
+        f"audio batch ({len(tasks)} files)",
+        started,
+        plugin_started=plugin_started,
+    )
+    return time.perf_counter() - started
 
 
 class _PageTextExtractor(HTMLParser):
@@ -44,6 +436,8 @@ class _PageTextExtractor(HTMLParser):
     def handle_endtag(self, tag):
         if tag in {"script", "style", "noscript"} and self.ignored_depth:
             self.ignored_depth -= 1
+        elif not self.ignored_depth and tag in {"h1", "h2", "h3", "h4", "h5", "h6", "li"}:
+            self.parts.append(".\n")
         elif not self.ignored_depth and tag in {"div", "li", "p", "pre"}:
             self.parts.append("\n")
 
@@ -61,9 +455,27 @@ class PiperTTSPlugin(BasePlugin):
         ("button_class", config_options.Type(str, default="piper-tts-button")),
         ("ffmpeg_path", config_options.Type(str, default="ffmpeg")),
         ("use_cuda", config_options.Type(bool, default=False)),
+        ("use_tensorrt", config_options.Type(bool, default=False)),
+        ("batch_size", config_options.Type(int, default=1)),
+        (
+            "tensorrt_cache_dir",
+            config_options.Type(str, default="models/piper-tts/tensorrt-cache"),
+        ),
+        # Piper's decoder contains FP16 TensorRT tactics that can fail during
+        # engine building (notably around dec.conv_post). FP32 is the safer
+        # default; projects can still opt into FP16 explicitly.
+        ("tensorrt_fp16", config_options.Type(bool, default=False)),
     )
 
     def on_config(self, config):
+        self._timing_started = time.perf_counter()
+        self._page_scan_elapsed = 0.0
+        self._eligible_pages = 0
+        self._cache_hits = 0
+        self._cache_misses = 0
+        self._hash_elapsed = 0.0
+        self._text_elapsed = 0.0
+        self._cache_check_elapsed = 0.0
         config_path = getattr(config, "config_file_path", None)
         self._project_dir = (
             Path(config_path).parent.resolve() if config_path else Path.cwd().resolve()
@@ -76,11 +488,39 @@ class PiperTTSPlugin(BasePlugin):
         self._model_dir = Path(self.config["model_dir"])
         if not self._model_dir.is_absolute():
             self._model_dir = self._project_dir / self._model_dir
+        self._tensorrt_cache_dir = Path(self.config["tensorrt_cache_dir"])
+        if not self._tensorrt_cache_dir.is_absolute():
+            self._tensorrt_cache_dir = self._project_dir / self._tensorrt_cache_dir
         self._languages = self._configured_languages()
         self._audio_cache_dir = self._docs_dir / self._asset_dir / self._audio_dir
         self._audio_by_page = {}
+        self._pending_audio = {}
         self._file_hashes = {}
-        self._voices = {}
+        self._plugin_hash = self._hash_file(Path(__file__))
+        self._cache_index = {}
+        cache_index_started = time.perf_counter()
+        for metadata_path in self._audio_cache_dir.glob("*.mp3.json"):
+            try:
+                metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                continue
+            if not isinstance(metadata, dict):
+                continue
+            audio_path = metadata_path.with_suffix("")
+            if audio_path.is_file() and audio_path.stat().st_size:
+                self._cache_index[self._metadata_key(metadata)] = (
+                    audio_path,
+                    metadata_path,
+                )
+        log.info(
+            "Piper TTS timing: plugin configured at=%s",
+            datetime.now().isoformat(timespec="milliseconds"),
+        )
+        _log_timing(
+            f"audio cache index ({len(self._cache_index)} files)",
+            cache_index_started,
+            plugin_started=self._timing_started,
+        )
         return config
 
     def on_env(self, env, config, files):
@@ -88,11 +528,14 @@ class PiperTTSPlugin(BasePlugin):
         return env
 
     def on_page_content(self, html_content, *, page, config, files):
+        page_started = time.perf_counter()
         metadata = getattr(page, "meta", {}) or {}
         language = str(metadata.get("lang") or "").lower().split("-")[0]
         voice = self._languages.get(language)
         if voice is None or not getattr(page, "file", None):
             return html_content
+
+        self._eligible_pages += 1
 
         source_path = Path(getattr(page.file, "abs_src_path", ""))
         if not source_path.is_file():
@@ -102,54 +545,293 @@ class PiperTTSPlugin(BasePlugin):
 
         model_path, config_path = self._voice_files(voice, language)
         speaker_id = self._resolve_speaker_id(voice, config_path, language)
+        hash_started = time.perf_counter()
         source_hash = self._hash_file(source_path)
-        model_hash = self._hash_file(model_path)
-        config_hash = self._hash_file(config_path)
+        self._hash_elapsed += time.perf_counter() - hash_started
+        text_started = time.perf_counter()
         text = self._extract_text(html_content)
-        content_hash = hashlib.sha256(text.encode("utf-8")).hexdigest()
+        self._text_elapsed += time.perf_counter() - text_started
         audio_path, metadata_path = self._cache_paths(page.file.src_path, source_hash)
         expected_metadata = {
-            "generator_version": GENERATOR_VERSION,
+            "plugin_hash": self._plugin_hash,
             "source_hash": source_hash,
-            "content_hash": content_hash,
-            "model": str(model_path),
-            "model_hash": model_hash,
-            "config_hash": config_hash,
-            "language": language,
         }
-        if "speaker" in voice:
-            expected_metadata["speaker"] = str(voice["speaker"])
-            expected_metadata["speaker_id"] = speaker_id
 
-        if not self._cache_is_valid(audio_path, metadata_path, expected_metadata):
-            self._generate_audio(
-                audio_path,
+        cache_started = time.perf_counter()
+        cache_valid, cache_reason = self._cache_status(
+            audio_path,
+            metadata_path,
+            expected_metadata,
+        )
+        if not cache_valid and cache_reason == "audio missing or empty":
+            cached_paths = self._cache_index.get(self._metadata_key(expected_metadata))
+            if cached_paths is not None:
+                cached_audio_path, cached_metadata_path = cached_paths
+                cache_valid, cache_reason = self._cache_status(
+                    cached_audio_path,
+                    cached_metadata_path,
+                    expected_metadata,
+                )
+                if cache_valid:
+                    log.info(
+                        "Piper TTS cache reuse: %s -> %s",
+                        page.file.src_path,
+                        cached_audio_path.name,
+                    )
+                    audio_path = cached_audio_path
+                    metadata_path = cached_metadata_path
+        self._cache_check_elapsed += time.perf_counter() - cache_started
+        if not cache_valid:
+            self._cache_misses += 1
+            self._pending_audio[audio_path] = (
                 model_path,
                 config_path,
                 text,
                 speaker_id,
+                expected_metadata,
+                page.file.src_path,
             )
-            metadata_path.write_text(
-                json.dumps(expected_metadata, indent=2, sort_keys=True) + "\n",
-                encoding="utf-8",
-            )
-            log.info("Generated Piper TTS MP3 for %s", page.file.src_path)
         else:
+            self._cache_hits += 1
             log.debug("Reusing cached Piper TTS MP3 for %s", page.file.src_path)
 
         self._audio_by_page[page.file.src_path] = audio_path
+        self._page_scan_elapsed += time.perf_counter() - page_started
+        if not cache_valid:
+            log.info(
+                "Piper TTS cache miss: %s reason=%s",
+                page.file.src_path,
+                cache_reason,
+            )
+            _log_timing(
+                f"cache miss evaluation for {page.file.src_path}",
+                page_started,
+                plugin_started=self._timing_started,
+            )
         return html_content
 
     def on_post_build(self, config):
+        post_build_started = time.perf_counter()
+        log.info(
+            "Piper TTS cache summary: eligible_pages=%d cache_hits=%d "
+            "cache_misses=%d pending=%d scan_time=%.3fs",
+            self._eligible_pages,
+            self._cache_hits,
+            self._cache_misses,
+            len(self._pending_audio),
+            self._page_scan_elapsed,
+        )
+        log.info(
+            "Piper TTS cache timing: file_hashes=%.3fs text_extraction=%.3fs "
+            "cache_validation=%.3fs",
+            self._hash_elapsed,
+            self._text_elapsed,
+            self._cache_check_elapsed,
+        )
+        if self._pending_audio:
+            self._generate_pending_audio()
+        else:
+            log.info(
+                "Piper TTS: all %d audio files are cached; skipping "
+                "Piper/ONNX Runtime initialization",
+                self._cache_hits,
+            )
+        _log_timing(
+            "post-build audio generation decision",
+            post_build_started,
+            plugin_started=self._timing_started,
+        )
+
+        copy_started = time.perf_counter()
         site_audio_dir = Path(config.site_dir) / self._asset_dir / self._audio_dir
         site_audio_dir.mkdir(parents=True, exist_ok=True)
         copied = 0
-        for audio_path in set(self._audio_by_page.values()):
-            if audio_path.is_file():
+        for audio_path in self._audio_cache_dir.glob("*.mp3"):
+            if audio_path.stat().st_size:
                 shutil.copy2(audio_path, site_audio_dir / audio_path.name)
                 copied += 1
-        self._remove_stale_audio(site_audio_dir)
         log.info("Copied %d Piper TTS MP3 files to %s", copied, site_audio_dir)
+        _log_timing(
+            f"copy audio to site ({copied} files)",
+            copy_started,
+            plugin_started=self._timing_started,
+        )
+
+    def _generate_pending_audio(self):
+        if not self._pending_audio:
+            return
+
+        generation_started = time.perf_counter()
+        batch_size = self._batch_size()
+        use_tensorrt = self.config["use_tensorrt"]
+        use_cuda = self.config["use_cuda"]
+        if use_tensorrt and not use_cuda:
+            raise PluginError("Piper TTS use_tensorrt requires use_cuda")
+        total = len(self._pending_audio)
+        precision = "FP16" if self.config["tensorrt_fp16"] else "FP32"
+        log.info(
+            "Generating %d Piper TTS MP3 files with batch size %d%s%s",
+            total,
+            batch_size,
+            " using TensorRT" if use_tensorrt else "",
+            f" ({precision})" if use_tensorrt else "",
+        )
+        grouped = {}
+        for audio_path, (
+            model_path,
+            config_path,
+            text,
+            speaker_id,
+            metadata,
+            source_path,
+        ) in self._pending_audio.items():
+            key = (str(model_path), str(config_path), speaker_id)
+            grouped.setdefault(key, []).append(
+                (
+                    str(audio_path),
+                    model_path,
+                    config_path,
+                    text,
+                    speaker_id,
+                    source_path,
+                    metadata,
+                )
+            )
+        _log_timing(
+            f"group pending audio ({total} files, {len(grouped)} voices)",
+            generation_started,
+            plugin_started=self._timing_started,
+        )
+
+        completed = 0
+        started = time.monotonic()
+
+        def report_progress(audio_path):
+            nonlocal completed
+            source_path = next(
+                task[5] for task in group if str(audio_path) == task[0]
+            )
+            completed += 1
+            elapsed = time.monotonic() - started
+            rate = completed / elapsed if elapsed else 0.0
+            eta = (total - completed) / rate if rate else 0.0
+            log.info(
+                "Piper TTS progress: %d/%d (%.1f%%), %.2f files/s, "
+                "ETA %s: %s",
+                completed,
+                total,
+                completed * 100 / total,
+                rate,
+                self._format_duration(eta),
+                source_path,
+            )
+
+        for (model_path, config_path, speaker_id), group in grouped.items():
+            try:
+                inference_reported = -1
+
+                def report_inference(done, total_batches, segments_done, elapsed):
+                    nonlocal inference_reported
+                    if not total_batches:
+                        return
+                    step = max(1, total_batches // 100)
+                    if (
+                        done not in {0, total_batches}
+                        and done < inference_reported + step
+                    ):
+                        return
+                    inference_reported = done
+                    percent = done * 100 / total_batches
+                    filled = round(30 * done / total_batches)
+                    bar = "#" * filled + "-" * (30 - filled)
+                    rate = done / elapsed if elapsed else 0.0
+                    eta = (total_batches - done) / rate if rate else 0.0
+                    log.info(
+                        "Piper TTS inference: [%s] %d/%d batches "
+                        "(%.1f%%), %d segments, %.2f batches/s, ETA %s",
+                        bar,
+                        done,
+                        total_batches,
+                        percent,
+                        segments_done,
+                        rate,
+                        self._format_duration(eta),
+                    )
+
+                if use_tensorrt:
+                    log.info(
+                        "Loading/building TensorRT engine for %s "
+                        "(batch=%d; precision=%s; cache=%s)",
+                        model_path,
+                        batch_size,
+                        precision,
+                        self._tensorrt_cache_dir,
+                    )
+                voice = _load_voice(
+                    model_path,
+                    config_path,
+                    use_cuda=use_cuda,
+                    use_tensorrt=use_tensorrt,
+                    cache_dir=self._tensorrt_cache_dir,
+                    batch_size=batch_size,
+                    fp16=self.config["tensorrt_fp16"],
+                    plugin_started=self._timing_started,
+                )
+                log.info(
+                    "Piper execution providers for %s: %s",
+                    model_path,
+                    ", ".join(voice.session.get_providers()),
+                )
+                # The batch worker only needs the first six fields; metadata is
+                # written by the parent after the MP3 has been created.
+                worker_tasks = [task[:6] for task in group]
+                worker_elapsed = _generate_audio_batch(
+                    worker_tasks,
+                    voice,
+                    batch_size,
+                    self.config["ffmpeg_path"],
+                    progress_callback=report_progress,
+                    plugin_started=self._timing_started,
+                    inference_progress_callback=report_inference,
+                )
+            except Exception as error:
+                source_path = group[0][5]
+                raise PluginError(
+                    f"Piper TTS synthesis failed for {source_path}: {error}"
+                ) from error
+
+            for audio_path, _, _, _, _, source_path, metadata in group:
+                Path(audio_path).with_suffix(".mp3.json").write_text(
+                    json.dumps(metadata, indent=2, sort_keys=True) + "\n",
+                    encoding="utf-8",
+                )
+            log.info(
+                "Finished Piper TTS batch for %s in %.1fs",
+                model_path,
+                worker_elapsed,
+            )
+        _log_timing(
+            f"all pending audio generation ({total} files)",
+            generation_started,
+            plugin_started=self._timing_started,
+        )
+
+    def _batch_size(self):
+        batch_size = self.config["batch_size"]
+        if batch_size < 1:
+            raise PluginError("Piper TTS batch_size must be one or greater")
+        return batch_size
+
+    @staticmethod
+    def _format_duration(seconds):
+        seconds = max(0, int(seconds))
+        minutes, seconds = divmod(seconds, 60)
+        hours, minutes = divmod(minutes, 60)
+        if hours:
+            return f"{hours}h{minutes:02d}m"
+        if minutes:
+            return f"{minutes}m{seconds:02d}s"
+        return f"{seconds}s"
 
     def render_button(self, page=None, label=None):
         if page is None:
@@ -261,94 +943,32 @@ class PiperTTSPlugin(BasePlugin):
         audio_path = self._audio_cache_dir / filename
         return audio_path, audio_path.with_suffix(".mp3.json")
 
-    def _cache_is_valid(self, audio_path, metadata_path, expected):
+    @staticmethod
+    def _metadata_key(metadata):
+        return json.dumps(metadata, sort_keys=True, separators=(",", ":"))
+
+    def _cache_status(self, audio_path, metadata_path, expected):
         if not audio_path.is_file() or audio_path.stat().st_size == 0:
-            return False
+            return False, "audio missing or empty"
         try:
             actual = json.loads(metadata_path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
-            return False
-        return actual == expected
-
-    def _generate_audio(self, audio_path, model_path, config_path, text, speaker_id):
-        try:
-            voice = self._load_voice(model_path, config_path)
-        except Exception as error:
-            raise PluginError(f"Could not load Piper TTS voice: {error}") from error
-
-        audio_path.parent.mkdir(parents=True, exist_ok=True)
-        with tempfile.TemporaryDirectory(dir=audio_path.parent) as temporary_dir:
-            wav_path = Path(temporary_dir) / "speech.wav"
-            mp3_path = Path(temporary_dir) / "speech.mp3"
-            try:
-                from piper.config import SynthesisConfig
-
-                synthesis_config = (
-                    SynthesisConfig(speaker_id=speaker_id)
-                    if speaker_id is not None
-                    else None
-                )
-                with wave.open(str(wav_path), "wb") as wav_file:
-                    voice.synthesize_wav(
-                        text,
-                        wav_file,
-                        syn_config=synthesis_config,
-                    )
-            except Exception as error:
-                raise PluginError(f"Piper TTS synthesis failed: {error}") from error
-
-            result = subprocess.run(
-                [
-                    self.config["ffmpeg_path"],
-                    "-hide_banner",
-                    "-loglevel",
-                    "error",
-                    "-i",
-                    str(wav_path),
-                    "-codec:a",
-                    "libmp3lame",
-                    "-q:a",
-                    "3",
-                    "-y",
-                    str(mp3_path),
-                ],
-                capture_output=True,
-                text=True,
-            )
-            if result.returncode != 0:
-                error = result.stderr.strip() or f"ffmpeg exited with code {result.returncode}"
-                raise PluginError(f"Piper TTS MP3 conversion failed: {error}")
-
-            mp3_path.replace(audio_path)
-
-    def _load_voice(self, model_path, config_path):
-        key = (model_path, config_path)
-        if key in self._voices:
-            return self._voices[key]
-
-        try:
-            from piper import PiperVoice
-        except ImportError as error:
-            raise PluginError(
-                "The piper-tts Python package is required for Piper TTS"
-            ) from error
-
-        voice = PiperVoice.load(
-            model_path,
-            config_path=config_path,
-            use_cuda=self.config["use_cuda"],
+            return False, "metadata missing or invalid"
+        if not isinstance(actual, dict):
+            return False, "metadata is not an object"
+        if actual.get("source_hash") == expected["source_hash"]:
+            return True, "valid"
+        changed = sorted(
+            key for key in set(actual) | set(expected) if actual.get(key) != expected.get(key)
         )
-        self._voices[key] = voice
-        return voice
+        return False, f"metadata mismatch ({', '.join(changed)})"
 
     def _remove_stale_audio(self, site_audio_dir):
         current_paths = set(self._audio_by_page.values())
-        for stale_path in self._audio_cache_dir.glob("*.mp3"):
-            if stale_path in current_paths:
+        for published_path in site_audio_dir.glob("*.mp3"):
+            if published_path.name in {path.name for path in current_paths}:
                 continue
-            stale_path.unlink(missing_ok=True)
-            stale_path.with_suffix(".mp3.json").unlink(missing_ok=True)
-            (site_audio_dir / stale_path.name).unlink(missing_ok=True)
+            published_path.unlink(missing_ok=True)
 
     def _hash_file(self, path):
         cache_key = str(path)

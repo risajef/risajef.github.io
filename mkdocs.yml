@@ -53,6 +53,9 @@ plugins:
   - search
   - piper-tts:
       model_dir: models/piper-tts
+      use_cuda: true
+      use_tensorrt: false
+      batch_size: 2
       languages:
         de:
           model: de_DE-thorsten-medium.onnx
@@ -191,4 +194,4 @@ extra:
         'The Book': 'Das Buch'
         'Influential Books': 'Einflussreiche Bücher'
         'Lessons from My Book': 'Lektionen aus meinem Buch'
-        'Wärmer als die Sonne': 'Warmer than the Sun'
+        'Warmer than the Sun': 'Wärmer als die Sonne'
