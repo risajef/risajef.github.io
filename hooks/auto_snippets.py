@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import List, Optional
 from urllib.parse import urlsplit
 
+import mkdocs
 from mkdocs.plugins import get_plugin_logger
 
 log = get_plugin_logger(__name__)
@@ -73,12 +74,12 @@ def on_config(config, **_):
         docs_dir = PROJECT_DIR / docs_dir
     DOCS_DIR = docs_dir.resolve()
 
-    _patch_inline_select_svg_plugin()
+    _patch_inline_select_svg_plugin(config)
     _patch_mermaid_svg_cache()
     return config
 
 
-def _patch_inline_select_svg_plugin() -> None:
+def _patch_inline_select_svg_plugin(config) -> None:
     """Patch upstream inline SVG plugin path handling and logging bug."""
     global INLINE_SVG_PLUGIN_PATCHED
     if INLINE_SVG_PLUGIN_PATCHED:
@@ -155,6 +156,17 @@ def _patch_inline_select_svg_plugin() -> None:
         return str(soup) if changed_soup else html
 
     MkdocsInlineSelectSvgPlugin.on_page_content = _patched_on_page_content
+    plugin = config.plugins.get("inline-select-svg")
+    if plugin is not None:
+        events = config.plugins.events["page_content"]
+        replacement = plugin.on_page_content
+        for index, handler in enumerate(events):
+            if getattr(handler, "__self__", None) is plugin:
+                events[index] = replacement
+                origin = config.plugins._event_origins.pop(handler, None)
+                if origin is not None:
+                    config.plugins._event_origins[replacement] = origin
+                break
     INLINE_SVG_PLUGIN_PATCHED = True
 
 
