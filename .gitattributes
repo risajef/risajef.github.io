@@ -1,4 +1,9 @@
+docs/assets/piper-tts/models/*.onnx filter=lfs diff=lfs merge=lfs -text
+models/piper-tts/*.onnx filter=lfs diff=lfs merge=lfs -text
+docs/assets/piper-tts/audio/*.mp3 filter=lfs diff=lfs merge=lfs -text
+docs/assets/piper-tts/audio/*.mp3.json -filter -diff -merge text
 assets/piper-tts/audio/*.mp3 filter=lfs diff=lfs merge=lfs -text
+assets/piper-tts/audio/*.mp3.json -filter -diff -merge text
 /docs/z3/z3.wasm/z3smt2w.wasm filter=lfs diff=lfs merge=lfs -text
 /docs/z3/z3.wasm/z3w.wasm filter=lfs diff=lfs merge=lfs -text
 /z3/z3.wasm/z3smt2w.wasm filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,9 @@
+{
+  "config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
+  "content_hash": "b41d03ab8847ba2b1ed039e52345f4733ff6e5f0c2ec8b64d90357f131c128a9",
+  "generator_version": "2",
+  "language": "en",
+  "model": "/home/wer/Code/risajef.github.io/models/piper-tts/en_US-amy-medium.onnx",
+  "model_hash": "b3a6e47b57b8c7fbe6a0ce2518161a50f59a9cdd8a50835c02cb02bdd6206c18",
+  "source_hash": "ec61387125b7a327b0fb37faa1fd07585802207cd01ce342aa5d3813769043d5"
+}

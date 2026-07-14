@@ -449,6 +449,7 @@
                 
             </div>
             
+            <audio class="piper-tts-button" controls preload="none" aria-label="Vorlesen" title="Vorlesen"><source src="../../../../assets/piper-tts/audio/blog-science-compressing-neural-networks-de-6c0eb3330705-870f0eb34217.mp3" type="audio/mpeg">Vorlesen</audio>
             <h1 id="neuronale-netzwerke-komprimieren"><a href="/blog/science/compressing-neural-networks/">Neuronale Netzwerke komprimieren</a></h1>
 <p>Als ich mich um eine PhD-Position beworben habe, wollte ich dem Professor einen Grund geben, mich anzuheuern – also habe ich eine meiner Ideen umgesetzt. Ich vermutete, dass die Gewichte neuronaler Netzwerke zu dicht sind. Es gibt viel Redundanz. Die konventionelle Methode zur Reduktion der Komplexität besteht darin, einen Engpass in die Architektur des neuronalen Netzwerks einzuführen. Das ist jedoch eine ressourcenintensive Lösung. Anstatt die Anzahl der Gewichte zu reduzieren, erhöhen wir sie. Eine weitere Möglichkeit, die Komplexität eines Modells zu reduzieren, besteht darin, die Präzision der Gewichte zu senken, z.B. von 32-Bit auf 8-Bit. Das ist ein legitimer Ansatz, aber wenig inspirierend. Und es ist schwer zu glauben, dass das der einzige und richtige Weg für alle Situationen ist.</p>
 <p>Meine Hypothese war, die Gewichtsmatrix mit einem gängigen Algorithmus wie JPEG zu komprimieren. Ich nahm MNIST und trainierte ein kleines CNN:</p>
