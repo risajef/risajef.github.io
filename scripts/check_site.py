@@ -16,6 +16,11 @@ SITE_DIR = PROJECT_DIR / "site"
 CONFIG_PATH = PROJECT_DIR / "mkdocs.yml"
 SITE_URL = "https://retoweber.info"
 DEFAULT_SOCIAL_IMAGE = f"{SITE_URL}/output.png"
+UNLISTED_PUBLIC_PAGES = (
+    "zonenplanaenderung",
+    "werkhof-baukredit",
+    "e-id",
+)
 PAGES = {
     "index.html": {
         "language": "en",
@@ -45,9 +50,10 @@ def main() -> None:
     for relative_path, expected in PAGES.items():
         failures.extend(check_page(relative_path, expected))
     failures.extend(check_redirects())
+    failures.extend(check_unlisted_public_pages())
     if failures:
         raise SystemExit("\n".join(failures))
-    print(f"Validated {len(PAGES)} rendered pages and redirects")
+    print(f"Validated {len(PAGES)} rendered pages, redirects, and unlisted public pages")
 
 
 def check_page(relative_path: str, expected: dict[str, object]) -> list[str]:
@@ -138,6 +144,29 @@ def normalize_redirect_target(path: str, base_path: str) -> str:
     if not normalized:
         return f"{base_path}/" if base_path else "/"
     return f"{base_path}/{normalized}/" if base_path else f"/{normalized}/"
+
+
+def check_unlisted_public_pages() -> list[str]:
+    failures: list[str] = []
+    for locale_prefix in ("", "de/"):
+        index_path = f"{locale_prefix}politik/index.html"
+        index_file = SITE_DIR / index_path
+        if not index_file.is_file():
+            failures.append(f"Missing politics index: {index_path}")
+            continue
+
+        soup = BeautifulSoup(index_file.read_text(encoding="utf-8"), "html.parser")
+        navigation_urls = [
+            link.get("href", "") for link in soup.select("#main-navigation a")
+        ]
+        for slug in UNLISTED_PUBLIC_PAGES:
+            page_path = f"{locale_prefix}politik/{slug}/index.html"
+            if not (SITE_DIR / page_path).is_file():
+                failures.append(f"Missing unlisted public page: {page_path}")
+            if any(slug in url for url in navigation_urls):
+                failures.append(f"{index_path}: unlisted page appears in navigation: {slug}")
+
+    return failures
 
 
 if __name__ == "__main__":
