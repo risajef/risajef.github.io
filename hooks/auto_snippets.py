@@ -12,7 +12,6 @@ from pathlib import Path
 from typing import List, Optional
 from urllib.parse import unquote_plus, urljoin, urlparse
 
-import mkdocs
 from bs4 import BeautifulSoup
 from mkdocs.plugins import get_plugin_logger
 
@@ -25,7 +24,9 @@ DOCS_DIR = PROJECT_DIR / "docs"
 GIT_AVAILABLE = shutil.which("git") is not None
 BLOG_ARTICLE_HEADING_PATTERN = re.compile(r"^(#\s+)(.+?)\s*$")
 MARKDOWN_LINK_PATTERN = re.compile(r"^\[(?P<label>.+)\]\((?P<url>[^)]+)\)$")
-MERMAID_SVG_URLS_PATCHED = False
+MERMAID_IMAGE_PATTERN = re.compile(
+    r"(?P<prefix>!\[[^\]]*\]\()(?:(?:\.\./)*)?(?P<path>assets/images/[^)\s]*_mermaid_[^)\s]*\.svg)"
+)
 MERMAID_SVG_CACHE_PATCHED = False
 
 
@@ -57,7 +58,6 @@ def on_config(config, **_):
     if rss_plugin is not None:
         rss_plugin.config.date_from_meta.default_time = "00:00"
 
-    _patch_mermaid_svg_urls(config)
     _patch_mermaid_svg_cache()
     return config
 
@@ -100,43 +100,6 @@ def on_page_content(html, *, page, config, files):
         changed = True
 
     return str(soup) if changed else html
-
-
-def _patch_mermaid_svg_urls(config) -> None:
-    """Make Mermaid image URLs relative to the documentation root."""
-    global MERMAID_SVG_URLS_PATCHED
-    if MERMAID_SVG_URLS_PATCHED:
-        return
-
-    try:
-        from mkdocs_mermaid_to_svg.plugin import MermaidSvgConverterPlugin
-    except Exception:
-        return
-
-    original_on_page_markdown = MermaidSvgConverterPlugin.on_page_markdown
-    mermaid_image_pattern = re.compile(
-        r"(?P<prefix>!\[[^\]]*\]\()(?:(?:\.\./)*)?(?P<path>assets/images/[^)\s]*_mermaid_[^)\s]*\.svg)"
-    )
-
-    def _patched_on_page_markdown(self, markdown, *, page, config, files):
-        processed = original_on_page_markdown(self, markdown, page=page, config=config, files=files)
-        if processed is None:
-            return None
-        return mermaid_image_pattern.sub(lambda match: f"{match.group('prefix')}/{match.group('path')}", processed)
-
-    MermaidSvgConverterPlugin.on_page_markdown = _patched_on_page_markdown
-    plugin = config.plugins.get("mermaid-to-svg")
-    if plugin is not None:
-        events = config.plugins.events["page_markdown"]
-        replacement = plugin.on_page_markdown
-        for index, handler in enumerate(events):
-            if getattr(handler, "__self__", None) is plugin:
-                events[index] = replacement
-                origin = config.plugins._event_origins.pop(handler, None)
-                if origin is not None:
-                    config.plugins._event_origins[replacement] = origin
-                break
-    MERMAID_SVG_URLS_PATCHED = True
 
 
 def _patch_mermaid_svg_cache() -> None:
@@ -191,6 +154,9 @@ def _patch_mermaid_svg_cache() -> None:
 
 def on_page_markdown(markdown, *, page, config, files):
     """Replace placeholder blocks with auto-generated Markdown."""
+    markdown = MERMAID_IMAGE_PATTERN.sub(
+        lambda match: f"{match.group('prefix')}/{match.group('path')}", markdown
+    )
     markdown = _ensure_blog_self_reference(markdown, page)
     markdown = _ensure_tools_index(markdown, page, config)
 
