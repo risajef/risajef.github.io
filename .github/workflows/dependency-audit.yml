@@ -1,0 +1,36 @@
+name: Monthly dependency audit
+
+on:
+  schedule:
+    - cron: "17 3 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Audit Python production dependencies
+        run: |
+          uv export --frozen --no-dev --no-emit-project --output-file "$RUNNER_TEMP/requirements.txt"
+          uvx pip-audit --disable-pip -r "$RUNNER_TEMP/requirements.txt"
+
+      - name: Audit Node production dependencies
+        run: |
+          npm audit --omit=dev --audit-level=moderate
+          for app in python-blocks hoare-logic xml-weaver background-generator parallelismus; do
+            npm --prefix "docs/assets/$app" audit --omit=dev --audit-level=moderate
+          done

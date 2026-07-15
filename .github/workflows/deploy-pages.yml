@@ -19,11 +19,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out site and LFS assets
+      - name: Check out site sources
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          lfs: true
           submodules: recursive
 
       - name: Set up Python
@@ -48,6 +47,16 @@ jobs:
 
       - name: Install locked site dependencies
         run: uv sync --frozen
+
+      - name: Restore runtime assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download runtime-assets-v1 \
+            --repo "$GITHUB_REPOSITORY" \
+            --pattern runtime-assets-v1.tar.gz \
+            --dir "$RUNNER_TEMP"
+          npm run install-runtime-assets -- --archive "$RUNNER_TEMP/runtime-assets-v1.tar.gz"
 
       - name: Build embedded tools
         run: npm run build-tools

@@ -8,6 +8,9 @@ docs/assets/python-blocks-dist
 docs/assets/hoare-logic-dist
 docs/assets/xml-weaver-dist
 docs/private
+models/piper-tts/
+docs/assets/piper-tts/audio/
+docs/z3/
 __pycache__/
 *mermaid_[0-9]*_*.svg
 .translation_cache/

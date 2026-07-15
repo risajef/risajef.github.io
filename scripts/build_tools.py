@@ -25,6 +25,7 @@ class EmbeddedApp:
     publish_dir: Path
     entry_path: Path
     build_kind: str = "copy"
+    obsolete_publish_paths: tuple[Path, ...] = ()
 
 
 EMBEDDED_APPS = (
@@ -43,6 +44,7 @@ EMBEDDED_APPS = (
         publish_dir=PUBLISH_ROOT / "hoare-logic",
         entry_path=Path("index.html"),
         build_kind="vite",
+        obsolete_publish_paths=(Path("z3"),),
     ),
     EmbeddedApp(
         slug="xml-weaver",
@@ -96,7 +98,7 @@ def main() -> None:
 def stage_embedded_app(app: EmbeddedApp) -> None:
     if not app.source_dir.exists():
         raise RuntimeError(f"{app.slug} submodule is missing. Run 'git submodule update --init --recursive'.")
-    if not build_required(app.source_dir, app.publish_dir):
+    if not build_required(app):
         validate_entry_point(app)
         print(f"{app.label} deployment is up to date")
         return
@@ -156,10 +158,12 @@ def validate_entry_point(app: EmbeddedApp) -> None:
         raise RuntimeError(f"{app.slug} did not produce {entry_point}")
 
 
-def build_required(source_dir: Path, publish_dir: Path) -> bool:
-    if not publish_dir.is_dir():
+def build_required(app: EmbeddedApp) -> bool:
+    if not app.publish_dir.is_dir():
         return True
-    return latest_mtime(source_dir) > latest_mtime(publish_dir)
+    if any((app.publish_dir / path).exists() for path in app.obsolete_publish_paths):
+        return True
+    return latest_mtime(app.source_dir) > latest_mtime(app.publish_dir)
 
 
 def latest_mtime(path: Path) -> float:
