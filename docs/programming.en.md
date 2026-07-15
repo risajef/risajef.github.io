@@ -105,6 +105,31 @@ This is a web technology based hoare logic verifier. The user can create program
 [**GitHub**](https://github.com/risajef/linkedin-wysiwyg), [**Web Demo**](https://retoweber.info/tools/linkedin-wysiwyg/)  
 LinkedIn WYSIWYG is a browser-based editor for composing LinkedIn posts with Unicode formatting that survives paste. It provides bold, italic, decorative text styles, list markers, a LinkedIn-style preview, one-click copy, and a remove-formatting action. Everything runs client-side as a simple static web application.
 
+## CSV Editor
+
+[**GitHub**](https://github.com/risajef/csv-editor), [**Web Demo**](https://retoweber.info/tools/csv-editor/)
+CSV Editor is a browser-based editor for viewing and editing tabular CSV data. It runs entirely client-side, making it useful for quick edits and checks without sending data to a server.
+
+## Diabetes GUI
+
+[**GitHub**](https://github.com/risajef/diabetes_gui), [**Web Demo**](https://retoweber.info/tools/diabetes-gui/)
+Diabetes GUI is a client-side application for exploring glucose and diabetes data from CSV exports from FreeStyle Libre and LibreLink. It supports local analysis of personal measurement data in the browser.
+
+## XML Weaver
+
+[**GitHub**](https://github.com/risajef/xml-weaver), [**Web Demo**](https://retoweber.info/tools/xml-weaver/)
+XML Weaver is a browser-based XML and schema editor. It supports structuring, editing, and understanding XML documents directly in the browser.
+
+## Reverse Chart
+
+[**GitHub**](https://github.com/risajef/reverse-chart), [**Web Demo**](https://retoweber.info/tools/reverse-chart/)
+Reverse Chart is a client-side tool for charts, data analysis of diagrams. It helps capture values from existing charts and investigate relationships between data points.
+
+## mkdocs-piper-tts
+
+[**GitHub**](https://github.com/risajef/mkdocs-piper-tts), [**PyPI**](https://pypi.org/project/mkdocs-piper-tts/)
+mkdocs-piper-tts is an MIT-licensed MkDocs plugin that caches Piper-generated speech for documentation pages and provides audio controls for templates. It is available as a standalone Python package through `pip install mkdocs-piper-tts`.
+
 ## CodeForge
 
 [**CodeForge on GitHub**](https://github.com/reto-weber/CodeForge)  

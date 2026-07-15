@@ -25,7 +25,11 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
-## July 17th 2026
+## July 15th 2026
+
+Major refactoring. Piper now uses GitHub Release assets instead of [Git LFS](https://git-lfs.com). I also published [mkdocs-piper-tts](https://github.com/risajef/mkdocs-piper-tts) on [PyPI](https://pypi.org/project/mkdocs-piper-tts/). The entire build pipeline was revised, all npm vulnerabilities were removed, and many outdated remnants were identified and replaced.
+
+## July 14th 2026
 
 Add text to speech using [Piper](https://github.com/OHF-Voice/piper1-gpl). The pages have a recording in English and German. In order to do this I had to replace `gh-deploy` by my own to support [git-lfs](https://git-lfs.com).
 

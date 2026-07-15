@@ -106,6 +106,31 @@ Dies ist ein Hoare-Logik-Verifier, der vollständig im Browser läuft. Man kann 
 [**GitHub**](https://github.com/risajef/linkedin-wysiwyg), [**Web Demo**](https://retoweber.info/tools/linkedin-wysiwyg/)  
 LinkedIn WYSIWYG ist ein browserbasierter Editor zum Verfassen von LinkedIn-Posts mit Unicode-Formatierungen, die auch nach dem Einfügen erhalten bleiben. Das Tool bietet fette, kursive und dekorative Schriftstile, Listenmarker, eine LinkedIn-ähnliche Vorschau, Kopieren per Knopfdruck und eine Funktion zum Entfernen der Formatierung. Alles läuft clientseitig als einfache statische Webanwendung.
 
+## CSV Editor
+
+[**GitHub**](https://github.com/risajef/csv-editor), [**Web Demo**](https://retoweber.info/tools/csv-editor/)
+CSV Editor ist ein browserbasierter Editor zum Anzeigen und Bearbeiten tabellarischer CSV-Daten. Er läuft vollständig clientseitig und eignet sich für schnelle Änderungen und Kontrollen, ohne Daten an einen Server zu übertragen.
+
+## Diabetes GUI
+
+[**GitHub**](https://github.com/risajef/diabetes_gui), [**Web Demo**](https://retoweber.info/tools/diabetes-gui/)
+Diabetes GUI ist eine clientseitige Anwendung zur Untersuchung von Glukose- und Diabetesdaten aus CSV-Exporten von FreeStyle Libre beziehungsweise LibreLink. Sie erleichtert die lokale Auswertung persönlicher Messdaten im Browser.
+
+## XML Weaver
+
+[**GitHub**](https://github.com/risajef/xml-weaver), [**Web Demo**](https://retoweber.info/tools/xml-weaver/)
+XML Weaver ist ein browserbasierter XML- und Schema-Editor. Das Tool unterstützt beim Strukturieren, Bearbeiten und Nachvollziehen von XML-Dokumenten direkt im Browser.
+
+## Reverse Chart
+
+[**GitHub**](https://github.com/risajef/reverse-chart), [**Web Demo**](https://retoweber.info/tools/reverse-chart/)
+Reverse Chart ist ein clientseitiges Werkzeug für das Analysieren von Diagrammen. Es hilft dabei, Werte aus vorhandenen Diagrammen zu erfassen und Beziehungen zwischen Datenpunkten zu untersuchen.
+
+## mkdocs-piper-tts
+
+[**GitHub**](https://github.com/risajef/mkdocs-piper-tts), [**PyPI**](https://pypi.org/project/mkdocs-piper-tts/)
+mkdocs-piper-tts ist ein MIT-lizenziertes MkDocs-Plugin, das mit Piper erzeugte Sprachdateien für Dokumentationsseiten zwischenspeichert und Audiosteuerungen in Vorlagen bereitstellt. Es ist als eigenständiges Python-Paket mit `pip install mkdocs-piper-tts` verfügbar.
+
 ## CodeForge
 
 [**CodeForge on GitHub**](https://github.com/reto-weber/CodeForge)  
