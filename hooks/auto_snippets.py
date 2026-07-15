@@ -10,7 +10,6 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional
-from urllib.parse import urlsplit
 
 import mkdocs
 from mkdocs.plugins import get_plugin_logger
@@ -19,21 +18,6 @@ log = get_plugin_logger(__name__)
 
 PLACEHOLDER = "<!-- AUTO_SNIPPETS -->"
 TOOLS_PLACEHOLDER = "<!-- AUTO_TOOLS -->"
-REDIRECT_HTML_TEMPLATE = """
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <link rel="canonical" href="{url}">
-    <script>var anchor=window.location.hash.substr(1);location.href="{url}"+(anchor?"#"+anchor:"")</script>
-    <meta http-equiv="refresh" content="0; url={url}">
-</head>
-<body>
-You're being redirected to a <a href="{url}">new destination</a>.
-</body>
-</html>
-""".lstrip()
 PROJECT_DIR = Path.cwd()
 DOCS_DIR = PROJECT_DIR / "docs"
 GIT_AVAILABLE = shutil.which("git") is not None
@@ -42,7 +26,6 @@ MARKDOWN_LINK_PATTERN = re.compile(r"^\[(?P<label>.+)\]\((?P<url>[^)]+)\)$")
 INLINE_SVG_PLUGIN_PATCHED = False
 MERMAID_SVG_URLS_PATCHED = False
 MERMAID_SVG_CACHE_PATCHED = False
-REDIRECTS_WRITTEN = False
 
 
 @dataclass
@@ -668,65 +651,3 @@ def _render_entries(entries: List[SnippetEntry]) -> str:
         lines.append(directive)
         lines.append("")
     return "\n".join(lines).strip() + "\n"
-
-
-def on_post_build(config, **_):
-    """Copy sitemap.xml and generate manual redirects in the site directory."""
-    global REDIRECTS_WRITTEN
-
-    if REDIRECTS_WRITTEN:
-        return
-
-    site_dir = Path(config["site_dir"])
-    src = site_dir / "sitemap.xml"
-    dst = site_dir / "sitemap2.xml"
-    if src.exists():
-        shutil.copy2(src, dst)
-        log.info("Copied sitemap.xml → sitemap2.xml")
-    _write_redirect_files(site_dir, config)
-    REDIRECTS_WRITTEN = True
-
-def _write_redirect_files(site_dir: Path, config) -> None:
-    redirect_map = ((config.get("extra") or {}).get("redirects") or {}).items()
-    if not redirect_map:
-        return
-
-    base_path = urlsplit(config.get("site_url") or "").path.rstrip("/")
-    for old_path, new_path in redirect_map:
-        old_file = site_dir / _site_path_to_output(old_path)
-        if old_file.exists():
-            log.warning(
-                "Skipping redirect for '%s' because '%s' already exists",
-                old_path,
-                old_file.relative_to(site_dir),
-            )
-            continue
-
-        old_file.parent.mkdir(parents=True, exist_ok=True)
-        old_file.write_text(
-            REDIRECT_HTML_TEMPLATE.format(
-                url=_normalize_redirect_target(new_path, base_path)
-            ),
-            encoding="utf-8",
-        )
-        log.info("Created redirect %s → %s", old_path, new_path)
-
-
-def _site_path_to_output(path: str) -> Path:
-    normalized = path.strip().strip("/")
-    if not normalized:
-        return Path("index.html")
-    return Path(normalized) / "index.html"
-
-
-def _normalize_redirect_target(path: str, base_path: str) -> str:
-    if path.startswith(("http://", "https://", "/")):
-        return path
-
-    normalized = path.strip().strip("/")
-    if not normalized:
-        return f"{base_path}/" if base_path else "/"
-
-    if base_path:
-        return f"{base_path}/{normalized}/"
-    return f"/{normalized}/"

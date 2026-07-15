@@ -14,7 +14,9 @@ the Piper voice models, generated audio, and standalone Z3 WASM binaries.
 `npm run build-tools` stages every embedded application under
 `docs/assets/apps`. Applications with a committed Node lockfile build in an
 isolated temporary copy; source-static applications are copied as deployment
-artifacts. `npm run build-site` performs a normal MkDocs build, while
+artifacts. `npm run finalize-site` writes redirects and the compatibility
+sitemap after MkDocs has rendered the site. `npm run build-site` performs a
+normal MkDocs build followed by finalization, while
 `npm run check-site` applies the strict CI checks and validates rendered
 language, canonical URL, JSON-LD, and redirect contracts.
 
