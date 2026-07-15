@@ -10,8 +10,10 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional
+from urllib.parse import unquote_plus, urljoin, urlparse
 
 import mkdocs
+from bs4 import BeautifulSoup
 from mkdocs.plugins import get_plugin_logger
 
 log = get_plugin_logger(__name__)
@@ -23,7 +25,6 @@ DOCS_DIR = PROJECT_DIR / "docs"
 GIT_AVAILABLE = shutil.which("git") is not None
 BLOG_ARTICLE_HEADING_PATTERN = re.compile(r"^(#\s+)(.+?)\s*$")
 MARKDOWN_LINK_PATTERN = re.compile(r"^\[(?P<label>.+)\]\((?P<url>[^)]+)\)$")
-INLINE_SVG_PLUGIN_PATCHED = False
 MERMAID_SVG_URLS_PATCHED = False
 MERMAID_SVG_CACHE_PATCHED = False
 
@@ -56,101 +57,49 @@ def on_config(config, **_):
     if rss_plugin is not None:
         rss_plugin.config.date_from_meta.default_time = "00:00"
 
-    _patch_inline_select_svg_plugin(config)
     _patch_mermaid_svg_urls(config)
     _patch_mermaid_svg_cache()
     return config
 
 
-def _patch_inline_select_svg_plugin(config) -> None:
-    """Patch upstream inline SVG plugin path handling and logging bug."""
-    global INLINE_SVG_PLUGIN_PATCHED
-    if INLINE_SVG_PLUGIN_PATCHED:
-        return
+def on_page_content(html, *, page, config, files):
+    """Inline local SVG images emitted by the Mermaid renderer."""
+    soup = BeautifulSoup(html, features="html.parser")
+    page_url = urlparse(page.url)
+    changed = False
 
-    try:
-        from bs4 import BeautifulSoup
-        from mkdocs_inline_select_svg_plugin.plugin import MkdocsInlineSelectSvgPlugin
-        from urllib.parse import unquote_plus, urljoin, urlparse
-    except Exception:
-        return
+    for image in soup.find_all("img"):
+        image_source = image.get("src")
+        if not isinstance(image_source, str):
+            continue
+        image_url = urlparse(image_source)
+        if image_url.scheme or image_url.netloc or not image_url.path.endswith(".svg"):
+            continue
 
-    def _patched_on_page_content(self, html, page, config, files, **kwargs):
-        pattern = re.compile(self.config.pattern)
-        page_url = urlparse(page.url)
+        asset_path = image_url.path.lstrip("./")
+        while asset_path.startswith("../"):
+            asset_path = asset_path[3:]
+        resolved_path = (
+            image_url.path
+            if image_url.path.startswith("/")
+            else f"/{asset_path}"
+            if asset_path.startswith("assets/")
+            else urljoin(page_url.path, image_url.path)
+        )
+        svg_path = Path(config.docs_dir, *[unquote_plus(part) for part in resolved_path.lstrip("/").split("/")])
 
-        soup = BeautifulSoup(html, features="html.parser")
-        imgs = soup.find_all("img")
-        changed_soup = False
+        try:
+            svg = BeautifulSoup(svg_path.read_text(encoding="utf-8"), "xml")
+        except OSError:
+            log.warning("Could not inline SVG %s", svg_path)
+            continue
 
-        for img in imgs:
-            img_src = img.get("src")
-            if not img_src:
-                continue
+        for element in svg.find_all(class_="do-not-inline"):
+            element.decompose()
+        image.replace_with(svg)
+        changed = True
 
-            try:
-                img_url = urlparse(img_src)
-            except Exception:
-                continue
-
-            if img_url.scheme or img_url.netloc or not img_url.path:
-                continue
-            if not img_url.path.endswith(".svg"):
-                continue
-
-            asset_path = img_url.path.lstrip("./")
-            while asset_path.startswith("../"):
-                asset_path = asset_path[3:]
-
-            if img_url.path.startswith("/"):
-                resolved_url_path = img_url.path
-            elif asset_path.startswith("assets/"):
-                # Mermaid plugin emits paths rooted at docs/assets.
-                resolved_url_path = f"/{asset_path}"
-            else:
-                resolved_url_path = urljoin(page_url.path, img_url.path)
-
-            if not pattern.search(resolved_url_path):
-                continue
-
-            mkdocs.utils.log.info("%s: processing img src=%s", self.log_prefix(), img_src)
-
-            fs_path_parts = [unquote_plus(x) for x in resolved_url_path.lstrip("/").split("/") if x]
-            abs_fs_path = str(Path(config.docs_dir, *fs_path_parts))
-
-            try:
-                with open(abs_fs_path, "r", encoding="utf-8") as handle:
-                    svg_content = handle.read()
-                svg_soup = BeautifulSoup(svg_content, "xml")
-            except Exception:
-                mkdocs.utils.log.error(
-                    "%s: could not read SVG content from %s",
-                    self.log_prefix(),
-                    abs_fs_path,
-                )
-                continue
-
-            for to_remove in svg_soup.find_all(class_="do-not-inline"):
-                to_remove.replace_with()
-
-            img.replace_with(svg_soup)
-            changed_soup = True
-
-        return str(soup) if changed_soup else html
-
-    MkdocsInlineSelectSvgPlugin.on_page_content = _patched_on_page_content
-    plugin = config.plugins.get("inline-select-svg")
-    if plugin is not None:
-        events = config.plugins.events["page_content"]
-        replacement = plugin.on_page_content
-        for index, handler in enumerate(events):
-            if getattr(handler, "__self__", None) is plugin:
-                events[index] = replacement
-                origin = config.plugins._event_origins.pop(handler, None)
-                if origin is not None:
-                    config.plugins._event_origins[replacement] = origin
-                break
-    INLINE_SVG_PLUGIN_PATCHED = True
+    return str(soup) if changed else html
 
 
 def _patch_mermaid_svg_urls(config) -> None:

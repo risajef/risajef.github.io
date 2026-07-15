@@ -442,20 +442,6 @@ wheels = [
 ]
 
 [[package]]
-name = "mkdocs-inline-select-svg-plugin"
-version = "0.1.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "beautifulsoup4" },
-    { name = "lxml" },
-    { name = "mkdocs" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/d9/d4/ba1f0fba644e541701fa40e24124a983126e6b205afb7b2ab6e53f246f83/mkdocs_inline_select_svg_plugin-0.1.0.tar.gz", hash = "sha256:b2cfa3c79f6809fd86c778adfb7b8da9c6c101c98acf50b3de7169fcbc8d3daf", size = 8473, upload-time = "2023-11-08T21:23:05.585Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/83/cc/a3cb392357c65563a5208b3b430a6569bd400aff7a1683451ab96eed3249/mkdocs_inline_select_svg_plugin-0.1.0-py3-none-any.whl", hash = "sha256:e35e242a0d51c844576b75258e15a29f05b8aaeaf871b209368df2e880fcaf5b", size = 8303, upload-time = "2023-11-08T21:23:04.106Z" },
-]
-
-[[package]]
 name = "mkdocs-material"
 version = "9.7.6"
 source = { registry = "https://pypi.org/simple" }
@@ -1053,10 +1039,11 @@ name = "risajef-github-io"
 version = "1.0.0"
 source = { editable = "." }
 dependencies = [
+    { name = "beautifulsoup4" },
+    { name = "lxml" },
     { name = "mkdocs" },
     { name = "mkdocs-bibtex" },
     { name = "mkdocs-exclude" },
-    { name = "mkdocs-inline-select-svg-plugin" },
     { name = "mkdocs-mermaid-to-svg" },
     { name = "mkdocs-rss-plugin" },
     { name = "mkdocs-static-i18n" },
@@ -1079,10 +1066,11 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "beautifulsoup4", specifier = "==4.15.0" },
+    { name = "lxml", specifier = "==6.1.1" },
     { name = "mkdocs", specifier = "==1.6.1" },
     { name = "mkdocs-bibtex", specifier = "==4.4.0" },
     { name = "mkdocs-exclude", specifier = "==1.0.2" },
-    { name = "mkdocs-inline-select-svg-plugin", specifier = "==0.1.0" },
     { name = "mkdocs-mermaid-to-svg", specifier = "==1.0.3" },
     { name = "mkdocs-rss-plugin", specifier = "==1.17.7" },
     { name = "mkdocs-static-i18n", specifier = "==1.3.0" },

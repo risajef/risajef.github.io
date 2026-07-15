@@ -51,6 +51,7 @@ def main() -> None:
         failures.extend(check_page(relative_path, expected))
     failures.extend(check_redirects())
     failures.extend(check_unlisted_public_pages())
+    failures.extend(check_inline_mermaid_svg())
     if failures:
         raise SystemExit("\n".join(failures))
     print(f"Validated {len(PAGES)} rendered pages, redirects, and unlisted public pages")
@@ -152,6 +153,20 @@ def check_unlisted_public_pages() -> list[str]:
                 failures.append(f"{index_path}: unlisted page appears in navigation: {slug}")
 
     return failures
+
+
+def check_inline_mermaid_svg() -> list[str]:
+    relative_path = "de/politik/finanzen-beringen/index.html"
+    page_path = SITE_DIR / relative_path
+    if not page_path.is_file():
+        return [f"Missing Mermaid page: {relative_path}"]
+
+    soup = BeautifulSoup(page_path.read_text(encoding="utf-8"), "html.parser")
+    if soup.select('img[src*="_mermaid_"]'):
+        return [f"{relative_path}: Mermaid SVGs were not inlined"]
+    if not soup.select("svg"):
+        return [f"{relative_path}: expected inline Mermaid SVGs"]
+    return []
 
 
 if __name__ == "__main__":

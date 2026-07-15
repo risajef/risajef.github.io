@@ -85,7 +85,6 @@ plugins:
   - mermaid-to-svg:
       mmdc_path: 'mmdc'
       cleanup_generated_images: false
-  - inline-select-svg
   - bibtex:
       bib_file: references.bib
       bib_by_default: false
