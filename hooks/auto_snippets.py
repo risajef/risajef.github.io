@@ -50,6 +50,7 @@ BLOG_ARTICLE_HEADING_PATTERN = re.compile(r"^(#\s+)(.+?)\s*$")
 MARKDOWN_LINK_PATTERN = re.compile(r"^\[(?P<label>.+)\]\((?P<url>[^)]+)\)$")
 INLINE_SVG_PLUGIN_PATCHED = False
 MERMAID_SVG_CACHE_PATCHED = False
+REDIRECTS_WRITTEN = False
 
 
 @dataclass
@@ -73,6 +74,12 @@ def on_config(config, **_):
     if not docs_dir.is_absolute():
         docs_dir = PROJECT_DIR / docs_dir
     DOCS_DIR = docs_dir.resolve()
+
+    # mkdocs-rss-plugin converts this to datetime on the first locale build.
+    # mkdocs-static-i18n reuses the plugin instance for the next locale.
+    rss_plugin = config.plugins.get("rss")
+    if rss_plugin is not None:
+        rss_plugin.config.date_from_meta.default_time = "00:00"
 
     _patch_inline_select_svg_plugin(config)
     _patch_mermaid_svg_cache()
@@ -684,6 +691,11 @@ def _render_entries(entries: List[SnippetEntry]) -> str:
 
 def on_post_build(config, **_):
     """Copy sitemap.xml and generate manual redirects in the site directory."""
+    global REDIRECTS_WRITTEN
+
+    if REDIRECTS_WRITTEN:
+        return
+
     site_dir = Path(config["site_dir"])
     src = site_dir / "sitemap.xml"
     dst = site_dir / "sitemap2.xml"
@@ -691,6 +703,7 @@ def on_post_build(config, **_):
         shutil.copy2(src, dst)
         log.info("Copied sitemap.xml → sitemap2.xml")
     _write_redirect_files(site_dir, config)
+    REDIRECTS_WRITTEN = True
 
 
 def _write_redirect_files(site_dir: Path, config) -> None:

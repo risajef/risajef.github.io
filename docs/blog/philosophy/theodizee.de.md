@@ -68,7 +68,7 @@ Gott hätte uns tief in unsere Empfindung und Gedanken die Gewissheit geben kön
 #### Variation 3:
 > Gott begeht sich mit uns auf ein Abenteuer in diese Welt und Leidet mit uns mit. Er ist offen dafür, dass es nicht so läuft wie er will.
 
-Das ist der sogenannte offene Theismus. Also ein Glaube an Gott, der sagt: Gott weiss nicht, wie sich Menschen entscheiden. Er trägt sie jedoch durch. Ich sehe keinerlei Unterschied zu [Variation 1](variation-1) und darum gelten diese Gegenargumente auch hier.
+Das ist der sogenannte offene Theismus. Also ein Glaube an Gott, der sagt: Gott weiss nicht, wie sich Menschen entscheiden. Er trägt sie jedoch durch. Ich sehe keinerlei Unterschied zum [freien Willen](#freier-wille) und darum gelten diese Gegenargumente auch hier.
 
 Der offene Theismus wurde auch mehr als pastorale Antwort denn als dogmatische verstanden. Sie soll also die Gemeindemitglieder zufriedenstellen oder beruhigen und nicht unbedingt in erster Linie logisch konsistent sein.
  
@@ -116,7 +116,7 @@ Auf dieses Argument gibt es auch Gegenargumente:
  
 **Antwort 2:** In der Gegenwart Gottes können wir nicht mehr sündigen. (Wir kommen gar nicht auf die Idee. Wir könnten, wollen aber nicht.)
 
-**Problem:** Warum schenkt uns Gott nicht hier diese Gegenwart? (Siehe Problem 2 bei [Gefallene Schöpfung](#variation-2-gefallene-schöpfung))
+**Problem:** Warum schenkt uns Gott nicht hier diese Gegenwart? (Siehe Problem 2 bei [Gefallene Schöpfung](#variation-2-gefallene-schopfung))
  
  
 ## Meine Position:

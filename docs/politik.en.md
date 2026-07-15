@@ -90,7 +90,7 @@ On 4 September I gave a public talk on the E-ID in the run-up to the national vo
 
 ### Referendum on the partial revision of land-use planning
 
-The referendum was launched. I supported the municipal council’s proposal and opposed the referendum. I also made myself available for campaign flyers. This stance is consistent with my vote on [6 May 2025](#6-mai-2025).
+The referendum was launched. I supported the municipal council’s proposal and opposed the referendum. I also made myself available for campaign flyers. This stance is consistent with my recorded [votes and elections](#votes-and-elections-in-the-residents-council).
 
 The campaign disappointed me a bit on both sides:
 

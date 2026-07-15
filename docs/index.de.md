@@ -67,7 +67,7 @@ Mache die Seite zweisprachig (Englisch und Deutsch). Alle Seiten wurden überset
 
 ## 15. Dezember 2025
 
-Neuer Blog-Artikel: [Nichts zu verbergen](/blog/toughts/nichts-zu-verbergen.md)
+Neuer Blog-Artikel: [Nichts zu verbergen](/blog/thoughts/nichts-zu-verbergen/)
 
 Neuer [Generator für Buchfaltkunst](/tools/buchfaltstudio). Das [Original-Repository](https://github.com/risajef/buchfalten) ist ausgelagert; hier wird es nur synchronisiert.
 
@@ -115,7 +115,7 @@ E-ID Infos ergänzt: [Politik](/politik/)
 
 Tabelle ergänzt, die aufzeichnet, wie ich abgestimmt habe: [Politik](/politik/)
 
-Blog-Artikel über den Unterschied zwischen Gut und Wahrheit hinzugefügt: [Gedanken](/blog/toughts/)
+Blog-Artikel über den Unterschied zwischen Gut und Wahrheit hinzugefügt: [Gedanken](/blog/thoughts/)
 
 ## 13. August 2025
 

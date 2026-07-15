@@ -1,22 +1,18 @@
 {
-  "name": "paged",
+  "name": "risajef-github-io-build-tools",
   "version": "1.0.0",
-  "description": "- Activate virtual environment - `mkdocs serve`",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Build tools for retoweber.info",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": ".venv/bin/mkdocs build --strict",
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/risajef/risajef.github.io.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "author": "Reto Weber",
   "bugs": {
     "url": "https://github.com/risajef/risajef.github.io/issues"
   },

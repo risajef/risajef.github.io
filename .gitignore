@@ -13,7 +13,6 @@ __pycache__/
 .translation_cache/
 .vscode/settings.json
 package-lock.json
-uv.lock
 *.egg-info
 .cache
 models/piper-tts/tensorrt-cache/

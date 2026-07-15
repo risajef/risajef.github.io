@@ -20,26 +20,26 @@
         content="{% if page.file and page.file.src_path and page.file.src_path.startswith('blog/') %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ page.abs_url | url }}">
     <meta property="og:site_name" content="{{ config.site_name }}">
-    <meta property="og:image" content="{{ (page.meta.image | default(config.theme_dir ~ '/output.png')) | url }}">
+    <meta property="og:image" content="{{ page.meta.image | default('output.png') | url }}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page.title | default(config.site_name) | e }}">
     <meta name="twitter:description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [{% for tag in (page.meta and page.meta.tags) or [] %}{{ tag }}{% endfor %}]">
-    <meta name="twitter:image" content="{{ (page.meta.image | default(config.theme_dir ~ '/output.png')) | url }}">
+    <meta name="twitter:image" content="{{ page.meta.image | default('output.png') | url }}">
 
     <!-- JSON-LD Structured Data for rich results -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "{% if page.file and page.file.src_path and page.file.src_path.startswith('blog/') %}Article{% else %}WebPage{% endif %}",
+            "@type": {{ ('Article' if page.file and page.file.src_path and page.file.src_path.startswith('blog/') else 'WebPage') | tojson }},
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ page.abs_url | url }}"
+                "@id": {{ page.abs_url | url | tojson }}
       },
-      "headline": "{{ page.title | default(config.site_name) | e }}",
-      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. [{% for tag in (page.meta and page.meta.tags) or [] %}{{ tag }}{% endfor %}]",
+            "headline": {{ page.title | default(config.site_name) | tojson }},
+            "description": {{ ('Reto Weber - programming, research, politics, books, religion, philosophy and science. [' ~ ((page.meta and page.meta.tags) or [] | join(', ')) ~ ']') | tojson }},
       "author": {
         "@type": "Person",
         "name": "Reto Weber"
@@ -49,10 +49,10 @@
         "name": "Reto Weber",
         "logo": {
           "@type": "ImageObject",
-          "url": "{{ config.theme_dir | url }}/favicon.ico"
+                    "url": {{ 'favicon.ico' | url | tojson }}
         }
-      }{% if page.meta and page.meta.date %},
-      "datePublished": "{{ page.meta.date }}"
+            }{% if page.meta and page.meta.date %},
+            "datePublished": {{ page.meta.date | string | tojson }}
       {% endif %}
     }
     </script>
@@ -65,16 +65,13 @@
     <link href="{{ path | url }}" rel="stylesheet">
     {%- endfor %}
 
-    </noscript>
-
-
-    <link rel="stylesheet" href="{{ config.theme_dir | url }}/style.css">
-    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
-    <link rel="preload" href="/fonts/gidole.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="stylesheet" href="{{ 'style.css' | url }}">
+    <link rel="preload" href="{{ 'fonts/inter.woff2' | url }}" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="preload" href="{{ 'fonts/gidole.woff2' | url }}" as="font" type="font/woff2" crossorigin fetchpriority="high">
     <style type="text/css">
         @font-face {
             font-family: 'Gidole';
-            src: url('/fonts/gidole.woff2') format('woff2');
+            src: url('{{ 'fonts/gidole.woff2' | url }}') format('woff2');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
@@ -82,7 +79,7 @@
 
         @font-face {
             font-family: 'Inter';
-            src: url('/fonts/inter.woff2') format('woff2');
+            src: url('{{ 'fonts/inter.woff2' | url }}') format('woff2');
             font-weight: 400;
             font-style: normal;
             font-display: swap;
@@ -90,7 +87,7 @@
 
         @font-face {
             font-family: 'Inter';
-            src: url('/fonts/inter.woff2') format('woff2');
+            src: url('{{ 'fonts/inter.woff2' | url }}') format('woff2');
             font-weight: 700;
             font-style: normal;
             font-display: swap;
@@ -98,7 +95,7 @@
     </style>
 
 
-    <link rel="icon" type="image/svg+xml" href="{{ config.theme_dir | url }}/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | url }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -144,7 +141,7 @@
         <div class="header-identity">
             <div class="site-title">
                 <h1 class="{% if page.abs_url | url == '/' %}current{% endif %}">
-                    <a href="/index.html">Reto Weber</a>
+                    <a href="{{ 'index.html' | url }}">Reto Weber</a>
                 </h1>
             </div>
             {% if i18n_config is defined and i18n_config.languages %}

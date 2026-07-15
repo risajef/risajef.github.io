@@ -81,7 +81,7 @@ Am 4. September gab ich einen öffentlichen Vortrag über die E-ID anlässlich d
 
 ### Referendum wegen Teilrevision der Nutzungsplanung
 
-Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats und lehne das Referendum ab. Ich stellte mich zur Verfügung, auf Flyer abgedruckt zu werden. Diese Haltung stimmt mit meiner Stimme am [6. Mai 2025](#6-mai-2025) überein.
+Das Referendum wurde ergriffen. Ich befürwortete die Vorlage des Gemeinderats und lehne das Referendum ab. Ich stellte mich zur Verfügung, auf Flyer abgedruckt zu werden. Diese Haltung stimmt mit meinen dokumentierten [Abstimmungen und Wahlen](#abstimmungen-und-wahlen-im-einwohnerrat) überein.
 
 Ich bin vom Abstimmungskampf etwas enttäuscht von beiden Seiten.
 

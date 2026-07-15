@@ -67,7 +67,7 @@ Make the website bilingual (English and German). All pages were translated using
 
 ## Dezember 15th 2025
 
-New blog post: [Nothing to Hide](/blog/toughts/nichts-zu-verbergen.md)
+New blog post: [Nothing to Hide](/blog/thoughts/nichts-zu-verbergen/)
 
 Add [Generator for Book Folding Art](/tools/buchfaltstudio). I moved the [original repository](https://github.com/risajef/buchfalten) out and it is only synced here.
 
@@ -115,7 +115,7 @@ Add E-ID information: [Politics](/politik/)
 
 Add a table that records what I voted for and where: [Politics](/politik/)
 
-Add blog post about the difference between good and truth: [Thoughts](/blog/toughts/)
+Add blog post about the difference between good and truth: [Thoughts](/blog/thoughts/)
 
 ## August 13th 2025
 

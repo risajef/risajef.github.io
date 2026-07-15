@@ -1,10 +1,14 @@
 # Usage
 
-- `npm install`
+- `npm ci`
 - `apt-get install libasound2`
 - `uv sync`
 - `uv sync --group translate` (optional, only if you use `scripts/auto_translate.py`)
+- `npm run build`
 - `mkdocs serve`
+
+`uv.lock` is the authoritative Python dependency lock. Git LFS is required for
+the Piper voice models, generated audio, and standalone Z3 WASM binaries.
 
 # Components and Features
 - Framework: [MkDocs](https://www.mkdocs.org)
