@@ -14,6 +14,7 @@ from urllib.parse import unquote_plus, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 from mkdocs.plugins import get_plugin_logger
+from mkdocs_mermaid_to_svg.image_generator import MermaidImageGenerator
 
 log = get_plugin_logger(__name__)
 
@@ -27,7 +28,6 @@ MARKDOWN_LINK_PATTERN = re.compile(r"^\[(?P<label>.+)\]\((?P<url>[^)]+)\)$")
 MERMAID_IMAGE_PATTERN = re.compile(
     r"(?P<prefix>!\[[^\]]*\]\()(?:(?:\.\./)*)?(?P<path>assets/images/[^)\s]*_mermaid_[^)\s]*\.svg)"
 )
-MERMAID_SVG_CACHE_PATCHED = False
 
 
 @dataclass
@@ -58,7 +58,7 @@ def on_config(config, **_):
     if rss_plugin is not None:
         rss_plugin.config.date_from_meta.default_time = "00:00"
 
-    _patch_mermaid_svg_cache()
+    _install_mermaid_cache(config)
     return config
 
 
@@ -102,20 +102,10 @@ def on_page_content(html, *, page, config, files):
     return str(soup) if changed else html
 
 
-def _patch_mermaid_svg_cache() -> None:
-    """Skip Mermaid CLI when the source diagram and settings are unchanged."""
-    global MERMAID_SVG_CACHE_PATCHED
-    if MERMAID_SVG_CACHE_PATCHED:
-        return
+class CachingMermaidImageGenerator(MermaidImageGenerator):
+    """Reuse Mermaid SVGs when their diagram source and settings are unchanged."""
 
-    try:
-        from mkdocs_mermaid_to_svg.image_generator import MermaidImageGenerator
-    except Exception:
-        return
-
-    original_generate = MermaidImageGenerator.generate
-
-    def _cached_generate(self, mermaid_code, output_path, config, page_file=None):
+    def generate(self, mermaid_code, output_path, config, page_file=None):
         output = Path(output_path)
         fingerprint = hashlib.sha256(
             json.dumps(
@@ -139,7 +129,7 @@ def _patch_mermaid_svg_cache() -> None:
             log.debug("Reusing cached Mermaid SVG %s", output)
             return True
 
-        generated = original_generate(self, mermaid_code, output_path, config, page_file)
+        generated = super().generate(mermaid_code, output_path, config, page_file)
         if generated and output.is_file():
             marker.parent.mkdir(parents=True, exist_ok=True)
             marker.write_text(
@@ -148,8 +138,17 @@ def _patch_mermaid_svg_cache() -> None:
             )
         return generated
 
-    MermaidImageGenerator.generate = _cached_generate
-    MERMAID_SVG_CACHE_PATCHED = True
+
+def _install_mermaid_cache(config) -> None:
+    """Install the owned cache adapter after the Mermaid plugin initializes."""
+    plugin = config.plugins.get("mermaid-to-svg")
+    processor = getattr(plugin, "processor", None)
+    if processor is None:
+        log.warning("Mermaid plugin did not initialize a processor; SVG caching is disabled")
+        return
+    if isinstance(processor.image_generator, CachingMermaidImageGenerator):
+        return
+    processor.image_generator = CachingMermaidImageGenerator(processor.config)
 
 
 def on_page_markdown(markdown, *, page, config, files):
