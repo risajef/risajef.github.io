@@ -224,8 +224,6 @@ def _audio_from_batch(voice, phoneme_ids, speaker_id, timing=None):
     """Run one padded batch and return one trimmed float waveform per item."""
     import numpy as np
 
-    from piper.config import SynthesisConfig
-
     max_length = max(len(ids) for ids in phoneme_ids)
     input_ids = np.zeros((len(phoneme_ids), max_length), dtype=np.int64)
     input_lengths = np.empty(len(phoneme_ids), dtype=np.int64)
@@ -233,10 +231,16 @@ def _audio_from_batch(voice, phoneme_ids, speaker_id, timing=None):
         input_ids[index, : len(ids)] = ids
         input_lengths[index] = len(ids)
 
-    synthesis_config = SynthesisConfig(speaker_id=speaker_id)
-    length_scale = synthesis_config.length_scale or voice.config.length_scale
-    noise_scale = synthesis_config.noise_scale or voice.config.noise_scale
-    noise_w_scale = synthesis_config.noise_w_scale or voice.config.noise_w_scale
+    # Piper 1.2 exposes the model defaults directly on PiperConfig. Newer
+    # releases renamed ``noise_w`` to ``noise_w_scale`` and added
+    # SynthesisConfig, but this plugin does not override those values.
+    length_scale = voice.config.length_scale
+    noise_scale = voice.config.noise_scale
+    noise_w_scale = getattr(
+        voice.config,
+        "noise_w_scale",
+        getattr(voice.config, "noise_w", 0.8),
+    )
     inputs = {
         "input": input_ids,
         "input_lengths": input_lengths,
@@ -273,14 +277,12 @@ def _audio_from_batch(voice, phoneme_ids, speaker_id, timing=None):
         active = np.flatnonzero(energy > 0.005)
         end = min(len(audio), (int(active[-1]) + window) if len(active) else 0)
         audio = audio[:end]
-        if synthesis_config.normalize_audio:
+        if len(audio):
             maximum = np.max(np.abs(audio)) if len(audio) else 0
             if maximum < 1e-8:
                 audio = np.zeros_like(audio)
             else:
                 audio = audio / maximum
-        if synthesis_config.volume != 1.0:
-            audio = audio * synthesis_config.volume
         waveforms.append(np.clip(audio, -1.0, 1.0).astype(np.float32))
     if timing is not None:
         timing["postprocess"] += time.perf_counter() - postprocess_started
