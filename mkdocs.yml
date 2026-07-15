@@ -43,6 +43,7 @@ nav:
       - XML Weaver: tools/xml-weaver.md
   - Politik:
       - Politik: politik.md
+      # Historical pages remain public at their direct URLs but are intentionally unlisted.
       # - Zonenplanänderung: politik/zonenplanaenderung.md
       # - Werkhof Baukredit: politik/werkhof-baukredit.md
       - Finanzen Beringen: politik/finanzen-beringen.md
