@@ -105,6 +105,19 @@ def on_page_content(html, *, page, config, files):
 class CachingMermaidImageGenerator(MermaidImageGenerator):
     """Reuse Mermaid SVGs when their diagram source and settings are unchanged."""
 
+    CLI_TIMEOUT_SECONDS = 120
+
+    def _execute_mermaid_command(self, cmd):
+        """Allow cold Chromium renders in CI more time than the plugin default."""
+        self.logger.debug("Executing Mermaid CLI command: %s", " ".join(cmd))
+        return subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=self.CLI_TIMEOUT_SECONDS,
+            check=False,
+        )
+
     def generate(self, mermaid_code, output_path, config, page_file=None):
         output = Path(output_path)
         fingerprint = hashlib.sha256(
