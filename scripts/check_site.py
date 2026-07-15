@@ -70,26 +70,17 @@ def check_page(relative_path: str, expected: dict[str, object]) -> list[str]:
     canonical = soup.select_one('link[rel="canonical"]')
     canonical_url = canonical.get("href") if canonical else None
     if canonical_url != expected["canonical"]:
-        failures.append(
-            f"{relative_path}: expected canonical {expected['canonical']!r}, got {canonical_url!r}"
-        )
+        failures.append(f"{relative_path}: expected canonical {expected['canonical']!r}, got {canonical_url!r}")
 
     for selector in ('meta[property="og:image"]', 'meta[name="twitter:image"]'):
         image = soup.select_one(selector)
         image_url = image.get("content") if image else None
         if image_url != DEFAULT_SOCIAL_IMAGE:
-            failures.append(
-                f"{relative_path}: expected {selector} to be {DEFAULT_SOCIAL_IMAGE!r}, got {image_url!r}"
-            )
+            failures.append(f"{relative_path}: expected {selector} to be {DEFAULT_SOCIAL_IMAGE!r}, got {image_url!r}")
 
-    switches = {
-        link.get_text(strip=True): link.get("href")
-        for link in soup.select(".language-switcher a")
-    }
+    switches = {link.get_text(strip=True): link.get("href") for link in soup.select(".language-switcher a")}
     if switches != expected["switches"]:
-        failures.append(
-            f"{relative_path}: expected language switches {expected['switches']!r}, got {switches!r}"
-        )
+        failures.append(f"{relative_path}: expected language switches {expected['switches']!r}, got {switches!r}")
 
     script = soup.select_one('script[type="application/ld+json"]')
     if script is None or not script.string:
@@ -125,13 +116,9 @@ def check_redirects() -> list[str]:
         refresh = soup.select_one('meta[http-equiv="refresh"]')
         refresh_target = refresh.get("content") if refresh else None
         if canonical_url != expected_url:
-            failures.append(
-                f"{old_path}: expected redirect canonical {expected_url!r}, got {canonical_url!r}"
-            )
+            failures.append(f"{old_path}: expected redirect canonical {expected_url!r}, got {canonical_url!r}")
         if refresh_target != f"0; url={expected_url}":
-            failures.append(
-                f"{old_path}: expected redirect refresh target {expected_url!r}, got {refresh_target!r}"
-            )
+            failures.append(f"{old_path}: expected redirect refresh target {expected_url!r}, got {refresh_target!r}")
 
     return failures
 
@@ -156,9 +143,7 @@ def check_unlisted_public_pages() -> list[str]:
             continue
 
         soup = BeautifulSoup(index_file.read_text(encoding="utf-8"), "html.parser")
-        navigation_urls = [
-            link.get("href", "") for link in soup.select("#main-navigation a")
-        ]
+        navigation_urls = [link.get("href", "") for link in soup.select("#main-navigation a")]
         for slug in UNLISTED_PUBLIC_PAGES:
             page_path = f"{locale_prefix}politik/{slug}/index.html"
             if not (SITE_DIR / page_path).is_file():

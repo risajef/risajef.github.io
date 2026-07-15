@@ -68,11 +68,23 @@ EMBEDDED_APPS = (
         entry_path=Path("dist/index.html"),
         build_kind="parallelismus",
     ),
-    EmbeddedApp("buchfalten", "Buchfaltstudio", DOCS_DIR / "assets/buchfalten", PUBLISH_ROOT / "buchfalten", Path("index.html")),
+    EmbeddedApp(
+        "buchfalten", "Buchfaltstudio", DOCS_DIR / "assets/buchfalten", PUBLISH_ROOT / "buchfalten", Path("index.html")
+    ),
     EmbeddedApp("csv-editor", "CSV Editor", DOCS_DIR / "assets/csv-editor", PUBLISH_ROOT / "csv-editor", Path("index.html")),
-    EmbeddedApp("diabetes-gui", "Diabetes GUI", DOCS_DIR / "assets/diabetes_gui", PUBLISH_ROOT / "diabetes-gui", Path("index.html")),
-    EmbeddedApp("linkedin-wysiwyg", "LinkedIn WYSIWYG", DOCS_DIR / "assets/linkedin-wysiwyg", PUBLISH_ROOT / "linkedin-wysiwyg", Path("index.html")),
-    EmbeddedApp("reverse-chart", "Reverse Chart", DOCS_DIR / "assets/reverse-chart", PUBLISH_ROOT / "reverse-chart", Path("index.html")),
+    EmbeddedApp(
+        "diabetes-gui", "Diabetes GUI", DOCS_DIR / "assets/diabetes_gui", PUBLISH_ROOT / "diabetes-gui", Path("index.html")
+    ),
+    EmbeddedApp(
+        "linkedin-wysiwyg",
+        "LinkedIn WYSIWYG",
+        DOCS_DIR / "assets/linkedin-wysiwyg",
+        PUBLISH_ROOT / "linkedin-wysiwyg",
+        Path("index.html"),
+    ),
+    EmbeddedApp(
+        "reverse-chart", "Reverse Chart", DOCS_DIR / "assets/reverse-chart", PUBLISH_ROOT / "reverse-chart", Path("index.html")
+    ),
 )
 
 
@@ -83,9 +95,7 @@ def main() -> None:
 
 def stage_embedded_app(app: EmbeddedApp) -> None:
     if not app.source_dir.exists():
-        raise RuntimeError(
-            f"{app.slug} submodule is missing. Run 'git submodule update --init --recursive'."
-        )
+        raise RuntimeError(f"{app.slug} submodule is missing. Run 'git submodule update --init --recursive'.")
     if not build_required(app.source_dir, app.publish_dir):
         validate_entry_point(app)
         print(f"{app.label} deployment is up to date")
@@ -155,9 +165,7 @@ def build_required(source_dir: Path, publish_dir: Path) -> bool:
 def latest_mtime(path: Path) -> float:
     latest = 0.0
     for root, directory_names, file_names in os.walk(path):
-        directory_names[:] = [
-            name for name in directory_names if name not in IGNORED_SOURCE_DIRECTORIES
-        ]
+        directory_names[:] = [name for name in directory_names if name not in IGNORED_SOURCE_DIRECTORIES]
         for file_name in file_names:
             try:
                 latest = max(latest, (Path(root) / file_name).stat().st_mtime)
@@ -173,9 +181,7 @@ def run_command(command: list[str], cwd: Path, description: str) -> None:
     except FileNotFoundError as exc:
         raise RuntimeError(f"Unable to {description}: '{command[0]}' was not found") from exc
     except subprocess.CalledProcessError as exc:
-        raise RuntimeError(
-            f"Unable to {description}: command exited with status {exc.returncode}"
-        ) from exc
+        raise RuntimeError(f"Unable to {description}: command exited with status {exc.returncode}") from exc
 
 
 def inject_base_href(index_path: Path, base_href: str) -> None:

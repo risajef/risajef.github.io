@@ -113,13 +113,9 @@ def _patch_inline_select_svg_plugin(config) -> None:
             if not pattern.search(resolved_url_path):
                 continue
 
-            mkdocs.utils.log.info(
-                "%s: processing img src=%s", self.log_prefix(), img_src
-            )
+            mkdocs.utils.log.info("%s: processing img src=%s", self.log_prefix(), img_src)
 
-            fs_path_parts = [
-                unquote_plus(x) for x in resolved_url_path.lstrip("/").split("/") if x
-            ]
+            fs_path_parts = [unquote_plus(x) for x in resolved_url_path.lstrip("/").split("/") if x]
             abs_fs_path = str(Path(config.docs_dir, *fs_path_parts))
 
             try:
@@ -174,14 +170,10 @@ def _patch_mermaid_svg_urls(config) -> None:
     )
 
     def _patched_on_page_markdown(self, markdown, *, page, config, files):
-        processed = original_on_page_markdown(
-            self, markdown, page=page, config=config, files=files
-        )
+        processed = original_on_page_markdown(self, markdown, page=page, config=config, files=files)
         if processed is None:
             return None
-        return mermaid_image_pattern.sub(
-            lambda match: f"{match.group('prefix')}/{match.group('path')}", processed
-        )
+        return mermaid_image_pattern.sub(lambda match: f"{match.group('prefix')}/{match.group('path')}", processed)
 
     MermaidSvgConverterPlugin.on_page_markdown = _patched_on_page_markdown
     plugin = config.plugins.get("mermaid-to-svg")
@@ -264,9 +256,7 @@ def on_page_markdown(markdown, *, page, config, files):
 
     lang = meta.get("lang") or getattr(page.file, "locale", None)
     if not lang:
-        log.warning(
-            "auto_snippets requires a 'lang' metadata entry on %s", page.file.src_path
-        )
+        log.warning("auto_snippets requires a 'lang' metadata entry on %s", page.file.src_path)
         return markdown
 
     entries: List[SnippetEntry] = []
@@ -276,9 +266,7 @@ def on_page_markdown(markdown, *, page, config, files):
         entries.extend(_collect_snippet_entries(directory, lang))
 
     if not entries:
-        log.warning(
-            "auto_snippets found no content when rendering %s", page.file.src_path
-        )
+        log.warning("auto_snippets found no content when rendering %s", page.file.src_path)
         return markdown
 
     block = _render_entries(entries)
@@ -296,9 +284,7 @@ def _ensure_tools_index(markdown: str, page, config) -> str:
 
     lang = meta.get("lang") or getattr(page.file, "locale", None)
     if not lang:
-        log.warning(
-            "auto_tools requires a 'lang' metadata entry on %s", page.file.src_path
-        )
+        log.warning("auto_tools requires a 'lang' metadata entry on %s", page.file.src_path)
         return markdown
 
     entries = _collect_tool_entries(lang, config)
@@ -333,12 +319,7 @@ def _collect_tool_entries(lang: str, config) -> List[tuple[str, str]]:
 
 def _tool_nav_labels(config, lang: str) -> dict[str, str]:
     labels: dict[str, str] = {}
-    translations = (
-        (config.get("extra") or {})
-        .get("translations", {})
-        .get(lang, {})
-        .get("nav", {})
-    )
+    translations = (config.get("extra") or {}).get("translations", {}).get(lang, {}).get("nav", {})
 
     def visit(items, in_tools: bool = False) -> None:
         for item in items or []:
@@ -361,10 +342,7 @@ def _tool_nav_labels(config, lang: str) -> dict[str, str]:
 
 
 def _title_from_slug(slug: str) -> str:
-    return " ".join(
-        part.upper() if part in {"csv", "xml"} else part.capitalize()
-        for part in slug.split("-")
-    )
+    return " ".join(part.upper() if part in {"csv", "xml"} else part.capitalize() for part in slug.split("-"))
 
 
 def _render_tool_entries(entries: List[tuple[str, str]], lang: str) -> str:
@@ -394,16 +372,12 @@ def _ensure_blog_self_reference(markdown: str, page) -> str:
 
 def _is_blog_article_page(page) -> bool:
     src = Path(page.file.src_path).as_posix()
-    return bool(
-        re.match(r"^blog/(thoughts|philosophy|science)/[^/]+\.[a-z]{2}\.md$", src)
-    )
+    return bool(re.match(r"^blog/(thoughts|philosophy|science)/[^/]+\.[a-z]{2}\.md$", src))
 
 
 def _blog_article_url(page) -> str:
     src = Path(page.file.src_path)
-    lang = (getattr(page, "meta", None) or {}).get("lang") or getattr(
-        page.file, "locale", None
-    )
+    lang = (getattr(page, "meta", None) or {}).get("lang") or getattr(page.file, "locale", None)
     stem = src.stem
     if lang:
         suffix = f".{lang}"
@@ -428,9 +402,7 @@ def _parse_auto_config(auto_cfg, page):
         directory = auto_cfg.strip()
     elif isinstance(auto_cfg, dict):
         directory = (auto_cfg.get("directory") or auto_cfg.get("path") or "").strip()
-        source_files = _normalize_source_files(
-            auto_cfg.get("files") or auto_cfg.get("sources"), page
-        )
+        source_files = _normalize_source_files(auto_cfg.get("files") or auto_cfg.get("sources"), page)
         placeholder = auto_cfg.get("placeholder", placeholder)
     else:
         log.warning(
@@ -476,9 +448,7 @@ def _normalize_source_files(raw_value, page) -> List[str]:
 
 
 def _infer_directory_from_page(page) -> Optional[str]:
-    lang = (getattr(page, "meta", None) or {}).get("lang") or getattr(
-        page.file, "locale", None
-    )
+    lang = (getattr(page, "meta", None) or {}).get("lang") or getattr(page.file, "locale", None)
     if not lang:
         return None
     src = Path(page.file.src_path)
@@ -518,9 +488,7 @@ def _collect_snippet_entries(directory: str, lang: str) -> List[SnippetEntry]:
     return entries
 
 
-def _collect_source_entries(
-    source_files: List[str], lang: str, page
-) -> List[SnippetEntry]:
+def _collect_source_entries(source_files: List[str], lang: str, page) -> List[SnippetEntry]:
     entries: List[SnippetEntry] = []
 
     for source in source_files:

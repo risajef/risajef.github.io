@@ -53,9 +53,7 @@ def write_redirects(site_dir: Path, config: dict) -> None:
 
         redirect_file.parent.mkdir(parents=True, exist_ok=True)
         redirect_file.write_text(
-            REDIRECT_HTML_TEMPLATE.format(
-                url=normalize_redirect_target(new_path, base_path)
-            ),
+            REDIRECT_HTML_TEMPLATE.format(url=normalize_redirect_target(new_path, base_path)),
             encoding="utf-8",
         )
 

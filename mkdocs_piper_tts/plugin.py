@@ -35,9 +35,11 @@ def _log_timing(label, started, *, plugin_started=None, level="info"):
     since_plugin = ""
     if plugin_started is not None:
         since_plugin = f", since_plugin={time.perf_counter() - plugin_started:.3f}s"
-    message = (
-        "Piper TTS timing: %s at=%s duration=%.3fs%s"
-        % (label, datetime.now().isoformat(timespec="milliseconds"), elapsed, since_plugin)
+    message = "Piper TTS timing: %s at=%s duration=%.3fs%s" % (
+        label,
+        datetime.now().isoformat(timespec="milliseconds"),
+        elapsed,
+        since_plugin,
     )
     getattr(log, level)(message)
 
@@ -63,10 +65,7 @@ def _shape_inferred_model(model_path, cache_dir):
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
     inferred_path = cache_dir / f"{Path(model_path).stem}.shape-inferred.onnx"
-    if (
-        inferred_path.is_file()
-        and inferred_path.stat().st_mtime_ns >= Path(model_path).stat().st_mtime_ns
-    ):
+    if inferred_path.is_file() and inferred_path.stat().st_mtime_ns >= Path(model_path).stat().st_mtime_ns:
         return inferred_path
 
     log.info("Running ONNX shape inference for %s", model_path)
@@ -98,6 +97,7 @@ def _load_voice(
     import onnxruntime
     from piper import PiperVoice
     from piper.config import PiperConfig
+
     _log_timing(
         "voice import",
         started,
@@ -122,8 +122,7 @@ def _load_voice(
             import tensorrt  # noqa: F401
         except ImportError as error:
             raise RuntimeError(
-                "TensorRT Python/runtime libraries are not installed; "
-                "run `uv sync` or install `tensorrt-cu12`"
+                "TensorRT Python/runtime libraries are not installed; " "run `uv sync` or install `tensorrt-cu12`"
             ) from error
         _log_timing(
             "TensorRT import",
@@ -132,9 +131,7 @@ def _load_voice(
         )
 
     started = time.perf_counter()
-    config = PiperConfig.from_dict(
-        json.loads(Path(config_path).read_text(encoding="utf-8"))
-    )
+    config = PiperConfig.from_dict(json.loads(Path(config_path).read_text(encoding="utf-8")))
     session_options = onnxruntime.SessionOptions()
     _log_timing(
         "Piper config/session options",
@@ -144,9 +141,7 @@ def _load_voice(
     session_model_path = model_path
     if use_tensorrt:
         if "TensorrtExecutionProvider" not in onnxruntime.get_available_providers():
-            raise RuntimeError(
-                "This onnxruntime installation has no TensorRTExecutionProvider"
-            )
+            raise RuntimeError("This onnxruntime installation has no TensorRTExecutionProvider")
         cache_dir = Path(cache_dir)
         cache_dir.mkdir(parents=True, exist_ok=True)
         precision = "fp16" if fp16 else "fp32"
@@ -160,9 +155,7 @@ def _load_voice(
         profile = {
             "trt_engine_cache_enable": True,
             "trt_engine_cache_path": str(cache_dir),
-            "trt_engine_cache_prefix": (
-                f"{Path(model_path).stem}-range-cuda-v3-{precision}-b{batch_size}"
-            ),
+            "trt_engine_cache_prefix": (f"{Path(model_path).stem}-range-cuda-v3-{precision}-b{batch_size}"),
             "trt_timing_cache_enable": True,
             "trt_timing_cache_path": str(cache_dir),
             "trt_fp16_enable": fp16,
@@ -204,14 +197,9 @@ def _load_voice(
 
     started = time.perf_counter()
     voice = PiperVoice(session=session, config=config)
-    expected_provider = (
-        "TensorrtExecutionProvider" if use_tensorrt else "CUDAExecutionProvider"
-    )
+    expected_provider = "TensorrtExecutionProvider" if use_tensorrt else "CUDAExecutionProvider"
     if (use_cuda or use_tensorrt) and expected_provider not in voice.session.get_providers():
-        raise RuntimeError(
-            f"Piper TTS could not initialize {expected_provider}; "
-            f"providers={voice.session.get_providers()}"
-        )
+        raise RuntimeError(f"Piper TTS could not initialize {expected_provider}; " f"providers={voice.session.get_providers()}")
     _log_timing(
         "Piper voice initialization",
         started,
@@ -244,14 +232,10 @@ def _audio_from_batch(voice, phoneme_ids, speaker_id, timing=None):
     inputs = {
         "input": input_ids,
         "input_lengths": input_lengths,
-        "scales": np.asarray(
-            [noise_scale, length_scale, noise_w_scale], dtype=np.float32
-        ),
+        "scales": np.asarray([noise_scale, length_scale, noise_w_scale], dtype=np.float32),
     }
     if voice.config.num_speakers > 1:
-        inputs["sid"] = np.full(
-            len(phoneme_ids), 0 if speaker_id is None else speaker_id, dtype=np.int64
-        )
+        inputs["sid"] = np.full(len(phoneme_ids), 0 if speaker_id is None else speaker_id, dtype=np.int64)
 
     session_started = time.perf_counter()
     output = voice.session.run(None, inputs)[0][:, 0, 0, :]
@@ -317,9 +301,7 @@ def _generate_audio_batch(
             for phonemes in voice.phonemize(text):
                 if phonemes:
                     ids = voice.phonemes_to_ids(phonemes)
-                    segments.append(
-                        (index, ids, speaker_id)
-                    )
+                    segments.append((index, ids, speaker_id))
         _log_timing(
             f"phonemization ({len(tasks)} files, {len(segments)} segments)",
             phonemize_started,
@@ -343,11 +325,7 @@ def _generate_audio_batch(
                     timing=inference_timing,
                 )
                 for segment, waveform in zip(current, waveforms):
-                    wav_files[segment[0]].writeframes(
-                        np.clip(waveform * 32767, -32767, 32767)
-                        .astype(np.int16)
-                        .tobytes()
-                    )
+                    wav_files[segment[0]].writeframes(np.clip(waveform * 32767, -32767, 32767).astype(np.int16).tobytes())
                 if inference_progress_callback is not None:
                     inference_progress_callback(
                         inference_batches,
@@ -422,6 +400,7 @@ def _generate_audio_batch(
 
 
 class _PageTextExtractor(HTMLParser):
+
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.parts = []
@@ -430,9 +409,7 @@ class _PageTextExtractor(HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag in {"script", "style", "noscript"}:
             self.ignored_depth += 1
-        elif not self.ignored_depth and tag in {
-            "br", "div", "h1", "h2", "h3", "h4", "h5", "h6", "li", "p", "pre"
-        }:
+        elif not self.ignored_depth and tag in {"br", "div", "h1", "h2", "h3", "h4", "h5", "h6", "li", "p", "pre"}:
             self.parts.append("\n")
 
     def handle_endtag(self, tag):
@@ -479,9 +456,7 @@ class PiperTTSPlugin(BasePlugin):
         self._text_elapsed = 0.0
         self._cache_check_elapsed = 0.0
         config_path = getattr(config, "config_file_path", None)
-        self._project_dir = (
-            Path(config_path).parent.resolve() if config_path else Path.cwd().resolve()
-        )
+        self._project_dir = Path(config_path).parent.resolve() if config_path else Path.cwd().resolve()
         self._docs_dir = Path(config["docs_dir"])
         if not self._docs_dir.is_absolute():
             self._docs_dir = self._project_dir / self._docs_dir
@@ -615,8 +590,7 @@ class PiperTTSPlugin(BasePlugin):
     def on_post_build(self, config):
         post_build_started = time.perf_counter()
         log.info(
-            "Piper TTS cache summary: eligible_pages=%d cache_hits=%d "
-            "cache_misses=%d pending=%d scan_time=%.3fs",
+            "Piper TTS cache summary: eligible_pages=%d cache_hits=%d " "cache_misses=%d pending=%d scan_time=%.3fs",
             self._eligible_pages,
             self._cache_hits,
             self._cache_misses,
@@ -624,8 +598,7 @@ class PiperTTSPlugin(BasePlugin):
             self._page_scan_elapsed,
         )
         log.info(
-            "Piper TTS cache timing: file_hashes=%.3fs text_extraction=%.3fs "
-            "cache_validation=%.3fs",
+            "Piper TTS cache timing: file_hashes=%.3fs text_extraction=%.3fs " "cache_validation=%.3fs",
             self._hash_elapsed,
             self._text_elapsed,
             self._cache_check_elapsed,
@@ -634,8 +607,7 @@ class PiperTTSPlugin(BasePlugin):
             self._generate_pending_audio()
         else:
             log.info(
-                "Piper TTS: all %d audio files are cached; skipping "
-                "Piper/ONNX Runtime initialization",
+                "Piper TTS: all %d audio files are cached; skipping " "Piper/ONNX Runtime initialization",
                 self._cache_hits,
             )
         _log_timing(
@@ -710,16 +682,13 @@ class PiperTTSPlugin(BasePlugin):
 
         def report_progress(audio_path):
             nonlocal completed
-            source_path = next(
-                task[5] for task in group if str(audio_path) == task[0]
-            )
+            source_path = next(task[5] for task in group if str(audio_path) == task[0])
             completed += 1
             elapsed = time.monotonic() - started
             rate = completed / elapsed if elapsed else 0.0
             eta = (total - completed) / rate if rate else 0.0
             log.info(
-                "Piper TTS progress: %d/%d (%.1f%%), %.2f files/s, "
-                "ETA %s: %s",
+                "Piper TTS progress: %d/%d (%.1f%%), %.2f files/s, " "ETA %s: %s",
                 completed,
                 total,
                 completed * 100 / total,
@@ -737,10 +706,7 @@ class PiperTTSPlugin(BasePlugin):
                     if not total_batches:
                         return
                     step = max(1, total_batches // 100)
-                    if (
-                        done not in {0, total_batches}
-                        and done < inference_reported + step
-                    ):
+                    if done not in {0, total_batches} and done < inference_reported + step:
                         return
                     inference_reported = done
                     percent = done * 100 / total_batches
@@ -749,8 +715,7 @@ class PiperTTSPlugin(BasePlugin):
                     rate = done / elapsed if elapsed else 0.0
                     eta = (total_batches - done) / rate if rate else 0.0
                     log.info(
-                        "Piper TTS inference: [%s] %d/%d batches "
-                        "(%.1f%%), %d segments, %.2f batches/s, ETA %s",
+                        "Piper TTS inference: [%s] %d/%d batches " "(%.1f%%), %d segments, %.2f batches/s, ETA %s",
                         bar,
                         done,
                         total_batches,
@@ -762,8 +727,7 @@ class PiperTTSPlugin(BasePlugin):
 
                 if use_tensorrt:
                     log.info(
-                        "Loading/building TensorRT engine for %s "
-                        "(batch=%d; precision=%s; cache=%s)",
+                        "Loading/building TensorRT engine for %s " "(batch=%d; precision=%s; cache=%s)",
                         model_path,
                         batch_size,
                         precision,
@@ -798,9 +762,7 @@ class PiperTTSPlugin(BasePlugin):
                 )
             except Exception as error:
                 source_path = group[0][5]
-                raise PluginError(
-                    f"Piper TTS synthesis failed for {source_path}: {error}"
-                ) from error
+                raise PluginError(f"Piper TTS synthesis failed for {source_path}: {error}") from error
 
             for audio_path, _, _, _, _, source_path, metadata in group:
                 Path(audio_path).with_suffix(".mp3.json").write_text(
@@ -847,9 +809,7 @@ class PiperTTSPlugin(BasePlugin):
         language = str(metadata.get("lang") or "").lower().split("-")[0]
         voice = self._languages.get(language, {})
         audio_label = label or voice.get("label") or language
-        audio_rel_path = posixpath.join(
-            self._asset_dir, self._audio_dir, audio_path.name
-        )
+        audio_rel_path = posixpath.join(self._asset_dir, self._audio_dir, audio_path.name)
         audio_url = self._relative_url(page, audio_rel_path)
         audio_class = self.config["button_class"].strip() or "piper-tts-button"
         attributes = {
@@ -860,28 +820,21 @@ class PiperTTSPlugin(BasePlugin):
             "title": audio_label,
         }
         rendered_attributes = " ".join(
-            f'{name}="{html.escape(str(value), quote=True)}"'
-            if value
-            else name
-            for name, value in attributes.items()
+            f'{name}="{html.escape(str(value), quote=True)}"' if value else name for name, value in attributes.items()
         )
         return Markup(
-            f'<audio {rendered_attributes}>'
+            f"<audio {rendered_attributes}>"
             f'<source src="{html.escape(audio_url, quote=True)}" type="audio/mpeg">'
             f"{html.escape(str(audio_label))}</audio>"
         )
 
     def _configured_languages(self):
-        languages = {
-            language: dict(voice) for language, voice in DEFAULT_LANGUAGES.items()
-        }
+        languages = {language: dict(voice) for language, voice in DEFAULT_LANGUAGES.items()}
         for language, configured_voice in (self.config["languages"] or {}).items():
             normalized_language = str(language).lower().split("-")[0]
             voice = dict(configured_voice or {})
             if "model" not in voice:
-                raise PluginError(
-                    f"Piper TTS language {language!r} must define a model"
-                )
+                raise PluginError(f"Piper TTS language {language!r} must define a model")
             languages[normalized_language] = voice
 
         for voice in languages.values():
@@ -895,10 +848,7 @@ class PiperTTSPlugin(BasePlugin):
         config_value = Path(str(voice["config"]))
         config_path = config_value if config_value.is_absolute() else self._model_dir / config_value
         if not model_path.is_file() or not config_path.is_file():
-            raise PluginError(
-                f"Piper TTS model for language {language!r} is missing: "
-                f"{model_path} and {config_path}"
-            )
+            raise PluginError(f"Piper TTS model for language {language!r} is missing: " f"{model_path} and {config_path}")
         return model_path.resolve(), config_path.resolve()
 
     def _resolve_speaker_id(self, voice, config_path, language):
@@ -907,27 +857,19 @@ class PiperTTSPlugin(BasePlugin):
             return None
 
         try:
-            speaker_map = json.loads(config_path.read_text(encoding="utf-8"))[
-                "speaker_id_map"
-            ]
+            speaker_map = json.loads(config_path.read_text(encoding="utf-8"))["speaker_id_map"]
         except (OSError, json.JSONDecodeError, KeyError) as error:
-            raise PluginError(
-                f"Could not read Piper speaker map for language {language!r}"
-            ) from error
+            raise PluginError(f"Could not read Piper speaker map for language {language!r}") from error
 
         if str(speaker) in speaker_map:
             return int(speaker_map[str(speaker)])
         try:
             speaker_id = int(speaker)
         except (TypeError, ValueError) as error:
-            raise PluginError(
-                f"Unknown Piper speaker {speaker!r} for language {language!r}"
-            ) from error
+            raise PluginError(f"Unknown Piper speaker {speaker!r} for language {language!r}") from error
 
         if speaker_id not in speaker_map.values():
-            raise PluginError(
-                f"Unknown Piper speaker {speaker!r} for language {language!r}"
-            )
+            raise PluginError(f"Unknown Piper speaker {speaker!r} for language {language!r}")
         return speaker_id
 
     def _extract_text(self, html_content):
@@ -960,9 +902,7 @@ class PiperTTSPlugin(BasePlugin):
             return False, "metadata is not an object"
         if actual.get("source_hash") == expected["source_hash"]:
             return True, "valid"
-        changed = sorted(
-            key for key in set(actual) | set(expected) if actual.get(key) != expected.get(key)
-        )
+        changed = sorted(key for key in set(actual) | set(expected) if actual.get(key) != expected.get(key))
         return False, f"metadata mismatch ({', '.join(changed)})"
 
     def _remove_stale_audio(self, site_audio_dir):
