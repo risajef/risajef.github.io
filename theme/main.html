@@ -3,6 +3,12 @@
 
 <head>
     {% set metadata_url = config.site_url.rstrip('/') ~ page.abs_url %}
+    {% set metadata_image = page.meta.image | default('output.png') if page.meta else 'output.png' %}
+    {% if metadata_image.startswith(('http://', 'https://')) %}
+    {% set metadata_image_url = metadata_image %}
+    {% else %}
+    {% set metadata_image_url = config.site_url.rstrip('/') ~ '/' ~ metadata_image.lstrip('/') %}
+    {% endif %}
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
     <meta name="language" content="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
@@ -22,14 +28,14 @@
         content="{% if page.file and page.file.src_path and page.file.src_path.startswith('blog/') %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ metadata_url }}">
     <meta property="og:site_name" content="{{ config.site_name }}">
-    <meta property="og:image" content="{{ page.meta.image | default('output.png') | url }}">
+    <meta property="og:image" content="{{ metadata_image_url }}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page.title | default(config.site_name) | e }}">
     <meta name="twitter:description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [{% for tag in (page.meta and page.meta.tags) or [] %}{{ tag }}{% endfor %}]">
-    <meta name="twitter:image" content="{{ page.meta.image | default('output.png') | url }}">
+    <meta name="twitter:image" content="{{ metadata_image_url }}">
 
     <!-- JSON-LD Structured Data for rich results -->
     <script type="application/ld+json">

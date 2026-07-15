@@ -15,6 +15,7 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 SITE_DIR = PROJECT_DIR / "site"
 CONFIG_PATH = PROJECT_DIR / "mkdocs.yml"
 SITE_URL = "https://retoweber.info"
+DEFAULT_SOCIAL_IMAGE = f"{SITE_URL}/output.png"
 PAGES = {
     "index.html": {
         "language": "en",
@@ -66,6 +67,14 @@ def check_page(relative_path: str, expected: dict[str, object]) -> list[str]:
         failures.append(
             f"{relative_path}: expected canonical {expected['canonical']!r}, got {canonical_url!r}"
         )
+
+    for selector in ('meta[property="og:image"]', 'meta[name="twitter:image"]'):
+        image = soup.select_one(selector)
+        image_url = image.get("content") if image else None
+        if image_url != DEFAULT_SOCIAL_IMAGE:
+            failures.append(
+                f"{relative_path}: expected {selector} to be {DEFAULT_SOCIAL_IMAGE!r}, got {image_url!r}"
+            )
 
     switches = {
         link.get_text(strip=True): link.get("href")
