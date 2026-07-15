@@ -2,13 +2,11 @@
 
 from __future__ import annotations
 
-import os
 import hashlib
 import json
 import re
 import shutil
 import subprocess
-import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional
@@ -39,13 +37,6 @@ You're being redirected to a <a href="{url}">new destination</a>.
 PROJECT_DIR = Path.cwd()
 DOCS_DIR = PROJECT_DIR / "docs"
 GIT_AVAILABLE = shutil.which("git") is not None
-STATIC_APP_BUILD_IGNORES = (".git", "node_modules", "dist", "build")
-PYTHON_BLOCKS_SUBMODULE_DIR = Path("assets/python-blocks")
-PYTHON_BLOCKS_OUTPUT_DIR = Path("assets/python-blocks-dist")
-HOARE_LOGIC_SUBMODULE_DIR = Path("assets/hoare-logic")
-HOARE_LOGIC_OUTPUT_DIR = Path("assets/hoare-logic-dist")
-XML_WEAVER_SUBMODULE_DIR = Path("assets/xml-weaver")
-XML_WEAVER_OUTPUT_DIR = Path("assets/xml-weaver-dist")
 BLOG_ARTICLE_HEADING_PATTERN = re.compile(r"^(#\s+)(.+?)\s*$")
 MARKDOWN_LINK_PATTERN = re.compile(r"^\[(?P<label>.+)\]\((?P<url>[^)]+)\)$")
 INLINE_SVG_PLUGIN_PATCHED = False
@@ -146,7 +137,7 @@ def _patch_inline_select_svg_plugin(config) -> None:
             fs_path_parts = [
                 unquote_plus(x) for x in resolved_url_path.lstrip("/").split("/") if x
             ]
-            abs_fs_path = os.path.join(config.docs_dir, *fs_path_parts)
+            abs_fs_path = str(Path(config.docs_dir, *fs_path_parts))
 
             try:
                 with open(abs_fs_path, "r", encoding="utf-8") as handle:
@@ -272,14 +263,6 @@ def _patch_mermaid_svg_cache() -> None:
 
     MermaidImageGenerator.generate = _cached_generate
     MERMAID_SVG_CACHE_PATCHED = True
-
-
-def on_pre_build(config, **_):
-    """Build third-party static apps and normalize markdown before MkDocs build."""
-    _ensure_blog_self_reference_files()
-    _ensure_python_blocks_bundle()
-    _ensure_hoare_logic_bundle()
-    _ensure_xml_weaver_bundle()
 
 
 def on_page_markdown(markdown, *, page, config, files):
@@ -451,55 +434,6 @@ def _strip_markdown_link(text: str) -> str:
     if link_match:
         return link_match.group("label")
     return text
-
-
-def _ensure_blog_self_reference_files() -> None:
-    """Persist self-referencing H1 links in blog article source files."""
-    for folder in ("thoughts", "philosophy", "science"):
-        for file_path in sorted((DOCS_DIR / "blog" / folder).glob("*.md")):
-            if not file_path.is_file():
-                continue
-            _rewrite_blog_self_reference_file(file_path)
-
-
-def _rewrite_blog_self_reference_file(file_path: Path) -> None:
-    src_rel = file_path.relative_to(DOCS_DIR).as_posix()
-    if not re.match(r"^blog/(thoughts|philosophy|science)/[^/]+\.[a-z]{2}\.md$", src_rel):
-        return
-
-    text = file_path.read_text(encoding="utf-8")
-    lines = text.splitlines()
-
-    stem = file_path.stem
-    locale_suffix = file_path.suffixes[-2] if len(file_path.suffixes) >= 2 else ""
-    locale = locale_suffix.lstrip(".") if locale_suffix else ""
-    if locale and stem.endswith(f".{locale}"):
-        slug = stem[: -(len(locale) + 1)]
-    else:
-        slug = stem
-
-    self_url = f"/{file_path.parent.relative_to(DOCS_DIR).as_posix()}/{slug}/"
-
-    for idx, line in enumerate(lines):
-        match = BLOG_ARTICLE_HEADING_PATTERN.match(line)
-        if not match:
-            continue
-
-        heading_text = _strip_markdown_link(match.group(2).strip())
-        if not heading_text:
-            return
-
-        desired = f"# [{heading_text}]({self_url})"
-        if line == desired:
-            return
-
-        lines[idx] = desired
-        updated = "\n".join(lines)
-        if text.endswith("\n"):
-            updated += "\n"
-        file_path.write_text(updated, encoding="utf-8")
-        log.info("Updated self-reference heading in %s", src_rel)
-        return
 
 
 def _parse_auto_config(auto_cfg, page):
@@ -752,7 +686,6 @@ def on_post_build(config, **_):
     _write_redirect_files(site_dir, config)
     REDIRECTS_WRITTEN = True
 
-
 def _write_redirect_files(site_dir: Path, config) -> None:
     redirect_map = ((config.get("extra") or {}).get("redirects") or {}).items()
     if not redirect_map:
@@ -797,161 +730,3 @@ def _normalize_redirect_target(path: str, base_path: str) -> str:
     if base_path:
         return f"{base_path}/{normalized}/"
     return f"/{normalized}/"
-
-
-def _ensure_python_blocks_bundle() -> None:
-    _ensure_static_app_bundle(
-        slug="python-blocks",
-        label="Python Blocks",
-        submodule_dir=PYTHON_BLOCKS_SUBMODULE_DIR,
-        output_dir=PYTHON_BLOCKS_OUTPUT_DIR,
-        base_href="/assets/python-blocks-dist/",
-    )
-
-
-def _ensure_hoare_logic_bundle() -> None:
-    _ensure_static_app_bundle(
-        slug="hoare-logic",
-        label="Hoare Logic",
-        submodule_dir=HOARE_LOGIC_SUBMODULE_DIR,
-        output_dir=HOARE_LOGIC_OUTPUT_DIR,
-        base_href="/assets/hoare-logic-dist/",
-    )
-
-
-def _ensure_xml_weaver_bundle() -> None:
-    _ensure_static_app_bundle(
-        slug="xml-weaver",
-        label="XML Weaver",
-        submodule_dir=XML_WEAVER_SUBMODULE_DIR,
-        output_dir=XML_WEAVER_OUTPUT_DIR,
-        base_href="/assets/xml-weaver-dist/",
-    )
-
-
-def _ensure_static_app_bundle(
-    *, slug: str, label: str, submodule_dir: Path, output_dir: Path, base_href: str
-) -> None:
-    source_dir = (DOCS_DIR / submodule_dir).resolve()
-    resolved_output_dir = (DOCS_DIR / output_dir).resolve()
-
-    if not source_dir.exists():
-        raise RuntimeError(
-            f"{slug} submodule is missing. Run 'git submodule update --init --recursive'."
-        )
-
-    if not _static_app_build_required(source_dir, resolved_output_dir):
-        log.info("%s bundle is up to date", label)
-        return
-
-    if shutil.which("npm") is None:
-        raise RuntimeError(f"npm is required to build {slug} but was not found in PATH")
-
-    resolved_output_dir.parent.mkdir(parents=True, exist_ok=True)
-
-    with tempfile.TemporaryDirectory(prefix=f"{slug}-build-") as temp_dir_name:
-        staging_dir = Path(temp_dir_name) / source_dir.name
-        shutil.copytree(
-            source_dir,
-            staging_dir,
-            ignore=shutil.ignore_patterns(*STATIC_APP_BUILD_IGNORES),
-        )
-        _run_external_command(
-            _npm_install_command(staging_dir),
-            cwd=staging_dir,
-            description=f"install {slug} dependencies",
-        )
-        _run_external_command(
-            [
-                "npm",
-                "run",
-                "build",
-                "--",
-                "--base=./",
-                f"--outDir={resolved_output_dir}",
-                "--emptyOutDir",
-            ],
-            cwd=staging_dir,
-            description=f"build {slug} static bundle",
-        )
-
-    _inject_base_href(resolved_output_dir / "index.html", base_href)
-
-
-def _npm_install_command(source_dir: Path) -> List[str]:
-    if (source_dir / "package-lock.json").exists():
-        return ["npm", "ci"]
-    return ["npm", "install", "--no-package-lock"]
-
-
-def _static_app_build_required(source_dir: Path, output_dir: Path) -> bool:
-    output_index = output_dir / "index.html"
-    if not output_index.exists():
-        return True
-
-    try:
-        if not any(output_dir.iterdir()):
-            return True
-    except OSError:
-        return True
-
-    return _latest_mtime(
-        [source_dir], ignored_dir_names=set(STATIC_APP_BUILD_IGNORES)
-    ) > _latest_mtime([output_dir], ignored_dir_names=set(STATIC_APP_BUILD_IGNORES))
-
-
-def _latest_mtime(
-    paths: List[Path], ignored_dir_names: Optional[set[str]] = None
-) -> float:
-    latest = 0.0
-    ignored = ignored_dir_names or set()
-    for path in paths:
-        if not path.exists():
-            continue
-        if path.is_dir():
-            for root, dirnames, filenames in os.walk(path):
-                dirnames[:] = [name for name in dirnames if name not in ignored]
-                for filename in filenames:
-                    candidate = Path(root) / filename
-                    try:
-                        latest = max(latest, candidate.stat().st_mtime)
-                    except OSError:
-                        continue
-            continue
-        try:
-            latest = max(latest, path.stat().st_mtime)
-        except OSError:
-            continue
-    return latest
-
-
-def _run_external_command(command: List[str], *, cwd: Path, description: str) -> None:
-    log.info("Starting to %s", description)
-    try:
-        subprocess.run(command, cwd=cwd, check=True)
-    except FileNotFoundError as exc:
-        raise RuntimeError(
-            f"Unable to {description}: '{command[0]}' was not found"
-        ) from exc
-    except subprocess.CalledProcessError as exc:
-        raise RuntimeError(
-            f"Unable to {description}: command exited with status {exc.returncode}"
-        ) from exc
-
-
-def _inject_base_href(index_path: Path, base_href: str) -> None:
-    try:
-        html = index_path.read_text(encoding="utf-8")
-    except OSError as exc:
-        raise RuntimeError(f"Unable to update {index_path} with a base href") from exc
-
-    base_tag = f'    <base href="{base_href}" />\n'
-    if "<base " not in html:
-        if "<head>" not in html:
-            raise RuntimeError(f"Unable to inject a base href into {index_path}")
-        html = html.replace("<head>\n", f"<head>\n{base_tag}", 1)
-
-    try:
-        index_path.write_text(html, encoding="utf-8")
-    except OSError as exc:
-        raise RuntimeError(f"Unable to write updated HTML to {index_path}") from exc

@@ -59,8 +59,11 @@ jobs:
             pymdown-extensions==10.8.1 \
             beautifulsoup4==4.14.3
 
+      - name: Build embedded tools
+        run: npm run build-tools
+
       - name: Build site
-        run: mkdocs build --strict
+        run: npm run check-site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
