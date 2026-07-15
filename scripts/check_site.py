@@ -5,12 +5,15 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
+import yaml
 
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 SITE_DIR = PROJECT_DIR / "site"
+CONFIG_PATH = PROJECT_DIR / "mkdocs.yml"
 SITE_URL = "https://retoweber.info"
 PAGES = {
     "index.html": {
@@ -40,9 +43,10 @@ def main() -> None:
     failures: list[str] = []
     for relative_path, expected in PAGES.items():
         failures.extend(check_page(relative_path, expected))
+    failures.extend(check_redirects())
     if failures:
         raise SystemExit("\n".join(failures))
-    print(f"Validated {len(PAGES)} rendered pages")
+    print(f"Validated {len(PAGES)} rendered pages and redirects")
 
 
 def check_page(relative_path: str, expected: dict[str, object]) -> list[str]:
@@ -85,6 +89,46 @@ def check_page(relative_path: str, expected: dict[str, object]) -> list[str]:
                 failures.append(f"{relative_path}: JSON-LD canonical URL does not match")
 
     return failures
+
+
+def check_redirects() -> list[str]:
+    config = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8"))
+    redirects = ((config.get("extra") or {}).get("redirects") or {}).items()
+    base_path = urlsplit(config.get("site_url") or "").path.rstrip("/")
+    failures: list[str] = []
+
+    for old_path, new_path in redirects:
+        expected_url = normalize_redirect_target(new_path, base_path)
+        redirect_path = SITE_DIR / old_path / "index.html"
+        if not redirect_path.is_file():
+            failures.append(f"Missing redirect page: {old_path}")
+            continue
+
+        soup = BeautifulSoup(redirect_path.read_text(encoding="utf-8"), "html.parser")
+        canonical = soup.select_one('link[rel="canonical"]')
+        canonical_url = canonical.get("href") if canonical else None
+        refresh = soup.select_one('meta[http-equiv="refresh"]')
+        refresh_target = refresh.get("content") if refresh else None
+        if canonical_url != expected_url:
+            failures.append(
+                f"{old_path}: expected redirect canonical {expected_url!r}, got {canonical_url!r}"
+            )
+        if refresh_target != f"0; url={expected_url}":
+            failures.append(
+                f"{old_path}: expected redirect refresh target {expected_url!r}, got {refresh_target!r}"
+            )
+
+    return failures
+
+
+def normalize_redirect_target(path: str, base_path: str) -> str:
+    if path.startswith(("http://", "https://", "/")):
+        return path
+
+    normalized = path.strip().strip("/")
+    if not normalized:
+        return f"{base_path}/" if base_path else "/"
+    return f"{base_path}/{normalized}/" if base_path else f"/{normalized}/"
 
 
 if __name__ == "__main__":

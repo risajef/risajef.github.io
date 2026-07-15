@@ -16,7 +16,7 @@ the Piper voice models, generated audio, and standalone Z3 WASM binaries.
 isolated temporary copy; source-static applications are copied as deployment
 artifacts. `npm run build-site` performs a normal MkDocs build, while
 `npm run check-site` applies the strict CI checks and validates rendered
-language, canonical URL, and JSON-LD contracts.
+language, canonical URL, JSON-LD, and redirect contracts.
 
 # Components and Features
 - Framework: [MkDocs](https://www.mkdocs.org)
