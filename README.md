@@ -2,7 +2,7 @@
 
 - `npm ci`
 - `apt-get install libasound2`
-- `uv sync`
+- `uv sync --frozen`
 - `uv sync --group translate` (optional, only if you use `scripts/auto_translate.py`)
 - `npm run build-tools`
 - `npm run check-site`
