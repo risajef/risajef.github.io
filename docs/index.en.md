@@ -25,7 +25,7 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
-## 17. Juli 2026
+## July 17th 2026
 
 Add text to speech using [Piper](https://github.com/OHF-Voice/piper1-gpl). The pages have a recording in English and German. In order to do this I had to replace `gh-deploy` by my own to support [git-lfs](https://git-lfs.com).
 
@@ -65,7 +65,7 @@ Add [automatic background generator](/tools/background-generator).
 
 Make the website bilingual (English and German). All pages were translated using [Argos Translate](https://www.argosopentech.com) and then improved with GPT 5.2. The site also detects whether a manually created translation exists or not. If you see an automatically translated version, a notice appears at the top of the webpage indicating that it was auto-translated.
 
-## Dezember 15th 2025
+## December 15th 2025
 
 New blog post: [Nothing to Hide](/blog/thoughts/nichts-zu-verbergen/)
 
