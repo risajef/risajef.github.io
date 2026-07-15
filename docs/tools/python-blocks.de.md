@@ -11,11 +11,11 @@ auto_translated: false
 ---
 
 <iframe
-  src="/assets/python-blocks-dist/"
+  src="/assets/apps/python-blocks/"
   title="Python Blocks"
   loading="lazy"
   allow="clipboard-read; clipboard-write"
   style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
 ></iframe>
 
-Falls die eingebettete Anwendung nicht lädt, öffne [Python Blocks direkt](/assets/python-blocks-dist/).
+Falls die eingebettete Anwendung nicht lädt, öffne [Python Blocks direkt](/assets/apps/python-blocks/).

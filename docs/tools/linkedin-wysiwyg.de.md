@@ -12,11 +12,11 @@ auto_translated: false
 ---
 
 <iframe
-  src="/assets/linkedin-wysiwyg/"
+  src="/assets/apps/linkedin-wysiwyg/"
   title="LinkedIn WYSIWYG"
   loading="lazy"
   allow="clipboard-read; clipboard-write"
   style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
 ></iframe>
 
-Falls die eingebettete Anwendung nicht lädt, öffne [LinkedIn WYSIWYG direkt](/assets/linkedin-wysiwyg/).
+Falls die eingebettete Anwendung nicht lädt, öffne [LinkedIn WYSIWYG direkt](/assets/apps/linkedin-wysiwyg/).

@@ -14,11 +14,11 @@ auto_translated: false
 ---
 
 <iframe
-  src="/assets/diabetes_gui/"
+  src="/assets/apps/diabetes-gui/"
   title="Diabetes GUI"
   loading="lazy"
   allow="clipboard-read; clipboard-write"
   style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
 ></iframe>
 
-Falls die eingebettete Anwendung nicht lädt, öffne [Diabetes GUI direkt](/assets/diabetes_gui/).
+Falls die eingebettete Anwendung nicht lädt, öffne [Diabetes GUI direkt](/assets/apps/diabetes-gui/).

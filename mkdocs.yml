@@ -8,6 +8,21 @@ theme:
 exclude_docs: |
   assets/*/README.md
   assets/*/readme.md
+  assets/apps/*/README.md
+  assets/apps/*/readme.md
+  assets/background-generator/**
+  assets/buchfalten/**
+  assets/csv-editor/**
+  assets/diabetes_gui/**
+  assets/hoare-logic/**
+  assets/linkedin-wysiwyg/**
+  assets/parallelismus/**
+  assets/python-blocks/**
+  assets/reverse-chart/**
+  assets/xml-weaver/**
+  assets/python-blocks-dist/**
+  assets/hoare-logic-dist/**
+  assets/xml-weaver-dist/**
 nav:
   - Home: index.md
   - CV:

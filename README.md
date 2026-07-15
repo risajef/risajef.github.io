@@ -11,9 +11,11 @@
 `uv.lock` is the authoritative Python dependency lock. Git LFS is required for
 the Piper voice models, generated audio, and standalone Z3 WASM binaries.
 
-`npm run build-tools` stages the rebuilt Python Blocks, Hoare Logic, and XML
-Weaver applications under `docs/assets/*-dist`. `npm run build-site` performs
-a normal MkDocs build, while `npm run check-site` applies the strict CI checks.
+`npm run build-tools` stages every embedded application under
+`docs/assets/apps`. Applications with a committed Node lockfile build in an
+isolated temporary copy; source-static applications are copied as deployment
+artifacts. `npm run build-site` performs a normal MkDocs build, while
+`npm run check-site` applies the strict CI checks.
 
 # Components and Features
 - Framework: [MkDocs](https://www.mkdocs.org)

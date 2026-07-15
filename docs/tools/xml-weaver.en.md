@@ -11,11 +11,11 @@ auto_translated: false
 ---
 
 <iframe
-  src="/assets/xml-weaver-dist/"
+  src="/assets/apps/xml-weaver/"
   title="XML Weaver"
   loading="lazy"
   allow="clipboard-read; clipboard-write"
   style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
 ></iframe>
 
-If the embedded app does not load, open [XML Weaver directly](/assets/xml-weaver-dist/).
+If the embedded app does not load, open [XML Weaver directly](/assets/apps/xml-weaver/).

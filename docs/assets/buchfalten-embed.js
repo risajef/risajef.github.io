@@ -3,7 +3,7 @@
   const scriptEl = document.currentScript;
   const scriptBase = scriptEl ? new URL(scriptEl.src, window.location.href) : new URL(window.location.href);
   const assetsBase = new URL("./", scriptBase).href;
-  const buchfaltenBase = new URL("buchfalten/", assetsBase).href;
+  const buchfaltenBase = new URL("apps/buchfalten/", assetsBase).href;
   const htmlUrl = new URL("index.html", buchfaltenBase).href;
   const mainJsUrl = new URL("app.js", buchfaltenBase).href;
 

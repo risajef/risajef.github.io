@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build static embedded applications into MkDocs asset staging directories."""
+"""Stage every embedded application into the MkDocs deployment asset directory."""
 
 from __future__ import annotations
 
@@ -12,62 +12,99 @@ from pathlib import Path
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 DOCS_DIR = PROJECT_DIR / "docs"
-IGNORED_SOURCE_DIRECTORIES = {".git", "node_modules", "dist", "build"}
+PUBLISH_ROOT = DOCS_DIR / "assets/apps"
+IGNORED_SOURCE_DIRECTORIES = {".git", ".vscode", "node_modules", "dist", "build"}
+IGNORED_PUBLISH_DIRECTORIES = {".git", ".vscode", "node_modules"}
 
 
 @dataclass(frozen=True)
-class StaticApp:
+class EmbeddedApp:
     slug: str
     label: str
     source_dir: Path
-    output_dir: Path
-    base_href: str
+    publish_dir: Path
+    entry_path: Path
+    build_kind: str = "copy"
 
 
-STATIC_APPS = (
-    StaticApp(
+EMBEDDED_APPS = (
+    EmbeddedApp(
         slug="python-blocks",
         label="Python Blocks",
         source_dir=DOCS_DIR / "assets/python-blocks",
-        output_dir=DOCS_DIR / "assets/python-blocks-dist",
-        base_href="/assets/python-blocks-dist/",
+        publish_dir=PUBLISH_ROOT / "python-blocks",
+        entry_path=Path("index.html"),
+        build_kind="vite",
     ),
-    StaticApp(
+    EmbeddedApp(
         slug="hoare-logic",
         label="Hoare Logic",
         source_dir=DOCS_DIR / "assets/hoare-logic",
-        output_dir=DOCS_DIR / "assets/hoare-logic-dist",
-        base_href="/assets/hoare-logic-dist/",
+        publish_dir=PUBLISH_ROOT / "hoare-logic",
+        entry_path=Path("index.html"),
+        build_kind="vite",
     ),
-    StaticApp(
+    EmbeddedApp(
         slug="xml-weaver",
         label="XML Weaver",
         source_dir=DOCS_DIR / "assets/xml-weaver",
-        output_dir=DOCS_DIR / "assets/xml-weaver-dist",
-        base_href="/assets/xml-weaver-dist/",
+        publish_dir=PUBLISH_ROOT / "xml-weaver",
+        entry_path=Path("index.html"),
+        build_kind="vite",
     ),
+    EmbeddedApp(
+        slug="background-generator",
+        label="Background Generator",
+        source_dir=DOCS_DIR / "assets/background-generator",
+        publish_dir=PUBLISH_ROOT / "background-generator",
+        entry_path=Path("web/index.html"),
+        build_kind="background-generator",
+    ),
+    EmbeddedApp(
+        slug="parallelismus",
+        label="Parallelismus",
+        source_dir=DOCS_DIR / "assets/parallelismus",
+        publish_dir=PUBLISH_ROOT / "parallelismus",
+        entry_path=Path("dist/index.html"),
+        build_kind="parallelismus",
+    ),
+    EmbeddedApp("buchfalten", "Buchfaltstudio", DOCS_DIR / "assets/buchfalten", PUBLISH_ROOT / "buchfalten", Path("index.html")),
+    EmbeddedApp("csv-editor", "CSV Editor", DOCS_DIR / "assets/csv-editor", PUBLISH_ROOT / "csv-editor", Path("index.html")),
+    EmbeddedApp("diabetes-gui", "Diabetes GUI", DOCS_DIR / "assets/diabetes_gui", PUBLISH_ROOT / "diabetes-gui", Path("index.html")),
+    EmbeddedApp("linkedin-wysiwyg", "LinkedIn WYSIWYG", DOCS_DIR / "assets/linkedin-wysiwyg", PUBLISH_ROOT / "linkedin-wysiwyg", Path("index.html")),
+    EmbeddedApp("reverse-chart", "Reverse Chart", DOCS_DIR / "assets/reverse-chart", PUBLISH_ROOT / "reverse-chart", Path("index.html")),
 )
 
 
 def main() -> None:
-    for app in STATIC_APPS:
-        build_static_app(app)
+    for app in EMBEDDED_APPS:
+        stage_embedded_app(app)
 
 
-def build_static_app(app: StaticApp) -> None:
+def stage_embedded_app(app: EmbeddedApp) -> None:
     if not app.source_dir.exists():
         raise RuntimeError(
             f"{app.slug} submodule is missing. Run 'git submodule update --init --recursive'."
         )
-    if not (app.source_dir / "package-lock.json").is_file():
-        raise RuntimeError(f"{app.slug} requires a committed package-lock.json")
-    if not build_required(app.source_dir, app.output_dir):
-        print(f"{app.label} bundle is up to date")
+    if not build_required(app.source_dir, app.publish_dir):
+        validate_entry_point(app)
+        print(f"{app.label} deployment is up to date")
         return
-    if shutil.which("npm") is None:
-        raise RuntimeError(f"npm is required to build {app.slug} but was not found in PATH")
 
-    app.output_dir.parent.mkdir(parents=True, exist_ok=True)
+    if app.build_kind == "copy":
+        replace_with_source(app.source_dir, app.publish_dir, IGNORED_SOURCE_DIRECTORIES)
+    else:
+        if not (app.source_dir / "package-lock.json").is_file():
+            raise RuntimeError(f"{app.slug} requires a committed package-lock.json")
+        if shutil.which("npm") is None:
+            raise RuntimeError(f"npm is required to build {app.slug} but was not found in PATH")
+        build_node_app(app)
+
+    validate_entry_point(app)
+
+
+def build_node_app(app: EmbeddedApp) -> None:
+    app.publish_dir.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix=f"{app.slug}-build-") as temp_dir_name:
         staging_dir = Path(temp_dir_name) / app.source_dir.name
         shutil.copytree(
@@ -76,28 +113,43 @@ def build_static_app(app: StaticApp) -> None:
             ignore=shutil.ignore_patterns(*IGNORED_SOURCE_DIRECTORIES),
         )
         run_command(["npm", "ci"], staging_dir, f"install {app.slug} dependencies")
-        run_command(
-            [
-                "npm",
-                "run",
-                "build",
-                "--",
-                "--base=./",
-                f"--outDir={app.output_dir}",
-                "--emptyOutDir",
-            ],
-            staging_dir,
-            f"build {app.slug} static bundle",
-        )
+        if app.build_kind == "vite":
+            run_command(
+                ["npm", "run", "build", "--", "--base=./", f"--outDir={app.publish_dir}", "--emptyOutDir"],
+                staging_dir,
+                f"build {app.slug} static bundle",
+            )
+            inject_base_href(app.publish_dir / app.entry_path, f"/assets/apps/{app.slug}/")
+        elif app.build_kind == "background-generator":
+            run_command(["npm", "run", "build:web"], staging_dir, f"build {app.slug} static bundle")
+            replace_with_source(staging_dir, app.publish_dir, IGNORED_PUBLISH_DIRECTORIES)
+        elif app.build_kind == "parallelismus":
+            run_command(["npm", "run", "build"], staging_dir, f"build {app.slug} static bundle")
+            replace_with_source(staging_dir, app.publish_dir, IGNORED_PUBLISH_DIRECTORIES)
+        else:
+            raise RuntimeError(f"Unknown build kind '{app.build_kind}' for {app.slug}")
 
-    inject_base_href(app.output_dir / "index.html", app.base_href)
+
+def replace_with_source(source_dir: Path, destination_dir: Path, ignored: set[str]) -> None:
+    if destination_dir.exists():
+        shutil.rmtree(destination_dir)
+    shutil.copytree(
+        source_dir,
+        destination_dir,
+        ignore=shutil.ignore_patterns(*ignored),
+    )
 
 
-def build_required(source_dir: Path, output_dir: Path) -> bool:
-    output_index = output_dir / "index.html"
-    if not output_index.is_file():
+def validate_entry_point(app: EmbeddedApp) -> None:
+    entry_point = app.publish_dir / app.entry_path
+    if not entry_point.is_file():
+        raise RuntimeError(f"{app.slug} did not produce {entry_point}")
+
+
+def build_required(source_dir: Path, publish_dir: Path) -> bool:
+    if not publish_dir.is_dir():
         return True
-    return latest_mtime(source_dir) > latest_mtime(output_dir)
+    return latest_mtime(source_dir) > latest_mtime(publish_dir)
 
 
 def latest_mtime(path: Path) -> float:

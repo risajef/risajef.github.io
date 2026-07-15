@@ -3,6 +3,7 @@
 node_modules
 .gitignore
 site
+docs/assets/apps
 docs/assets/python-blocks-dist
 docs/assets/hoare-logic-dist
 docs/assets/xml-weaver-dist

@@ -11,11 +11,11 @@ auto_translated: false
 ---
 
 <iframe
-  src="/assets/csv-editor/"
+  src="/assets/apps/csv-editor/"
   title="CSV Editor"
   loading="lazy"
   allow="clipboard-read; clipboard-write"
   style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
 ></iframe>
 
-If the embedded app does not load, open [CSV Editor directly](/assets/csv-editor/).
+If the embedded app does not load, open [CSV Editor directly](/assets/apps/csv-editor/).
