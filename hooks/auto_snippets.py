@@ -122,11 +122,15 @@ def _patch_inline_select_svg_plugin(config) -> None:
             if not img_url.path.endswith(".svg"):
                 continue
 
+            asset_path = img_url.path.lstrip("./")
+            while asset_path.startswith("../"):
+                asset_path = asset_path[3:]
+
             if img_url.path.startswith("/"):
                 resolved_url_path = img_url.path
-            elif img_url.path.startswith("assets/"):
+            elif asset_path.startswith("assets/"):
                 # Mermaid plugin emits paths rooted at docs/assets.
-                resolved_url_path = f"/{img_url.path}"
+                resolved_url_path = f"/{asset_path}"
             else:
                 resolved_url_path = urljoin(page_url.path, img_url.path)
 
