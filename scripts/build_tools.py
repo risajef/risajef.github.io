@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Stage every embedded application into the MkDocs deployment asset directory."""
 
-from __future__ import annotations
+import enum
+import hashlib
 
 import os
 import shutil
@@ -15,7 +16,13 @@ DOCS_DIR = PROJECT_DIR / "docs"
 PUBLISH_ROOT = DOCS_DIR / "assets/apps"
 IGNORED_SOURCE_DIRECTORIES = {".git", ".vscode", "node_modules", "dist", "build"}
 IGNORED_PUBLISH_DIRECTORIES = {".git", ".vscode", "node_modules"}
+FINGERPRINT_FILE = ".build-input.sha256"
 
+class BuildTypes(enum.Enum):
+    COPY = "copy"
+    VITE = "vite"
+    BACKGROUND_GENERATOR = "background-generator"
+    PARALLELISMUS = "parallelismus"
 
 @dataclass(frozen=True)
 class EmbeddedApp:
@@ -24,7 +31,7 @@ class EmbeddedApp:
     source_dir: Path
     publish_dir: Path
     entry_path: Path
-    build_kind: str = "copy"
+    build_kind: BuildTypes = BuildTypes.COPY
     obsolete_publish_paths: tuple[Path, ...] = ()
 
 
@@ -35,7 +42,7 @@ EMBEDDED_APPS = (
         source_dir=DOCS_DIR / "assets/python-blocks",
         publish_dir=PUBLISH_ROOT / "python-blocks",
         entry_path=Path("index.html"),
-        build_kind="vite",
+        build_kind=BuildTypes.VITE,
     ),
     EmbeddedApp(
         slug="hoare-logic",
@@ -43,7 +50,7 @@ EMBEDDED_APPS = (
         source_dir=DOCS_DIR / "assets/hoare-logic",
         publish_dir=PUBLISH_ROOT / "hoare-logic",
         entry_path=Path("index.html"),
-        build_kind="vite",
+        build_kind=BuildTypes.VITE,
         obsolete_publish_paths=(Path("z3"),),
     ),
     EmbeddedApp(
@@ -52,7 +59,7 @@ EMBEDDED_APPS = (
         source_dir=DOCS_DIR / "assets/xml-weaver",
         publish_dir=PUBLISH_ROOT / "xml-weaver",
         entry_path=Path("index.html"),
-        build_kind="vite",
+        build_kind=BuildTypes.VITE,
     ),
     EmbeddedApp(
         slug="background-generator",
@@ -60,7 +67,7 @@ EMBEDDED_APPS = (
         source_dir=DOCS_DIR / "assets/background-generator",
         publish_dir=PUBLISH_ROOT / "background-generator",
         entry_path=Path("web/index.html"),
-        build_kind="background-generator",
+        build_kind=BuildTypes.BACKGROUND_GENERATOR,
     ),
     EmbeddedApp(
         slug="parallelismus",
@@ -68,7 +75,7 @@ EMBEDDED_APPS = (
         source_dir=DOCS_DIR / "assets/parallelismus",
         publish_dir=PUBLISH_ROOT / "parallelismus",
         entry_path=Path("dist/index.html"),
-        build_kind="parallelismus",
+        build_kind=BuildTypes.PARALLELISMUS,
     ),
     EmbeddedApp(
         "buchfalten", "Buchfaltstudio", DOCS_DIR / "assets/buchfalten", PUBLISH_ROOT / "buchfalten", Path("index.html")
@@ -103,7 +110,7 @@ def stage_embedded_app(app: EmbeddedApp) -> None:
         print(f"{app.label} deployment is up to date")
         return
 
-    if app.build_kind == "copy":
+    if app.build_kind == BuildTypes.COPY:
         replace_with_source(app.source_dir, app.publish_dir, IGNORED_SOURCE_DIRECTORIES)
     else:
         if not (app.source_dir / "package-lock.json").is_file():
@@ -113,6 +120,7 @@ def stage_embedded_app(app: EmbeddedApp) -> None:
         build_node_app(app)
 
     validate_entry_point(app)
+    (app.publish_dir / FINGERPRINT_FILE).write_text(input_fingerprint(app) + "\n", encoding="utf-8")
 
 
 def build_node_app(app: EmbeddedApp) -> None:
@@ -125,21 +133,23 @@ def build_node_app(app: EmbeddedApp) -> None:
             ignore=shutil.ignore_patterns(*IGNORED_SOURCE_DIRECTORIES),
         )
         run_command(["npm", "ci"], staging_dir, f"install {app.slug} dependencies")
-        if app.build_kind == "vite":
-            run_command(
-                ["npm", "run", "build", "--", "--base=./", f"--outDir={app.publish_dir}", "--emptyOutDir"],
-                staging_dir,
-                f"build {app.slug} static bundle",
-            )
-            inject_base_href(app.publish_dir / app.entry_path, f"/assets/apps/{app.slug}/")
-        elif app.build_kind == "background-generator":
-            run_command(["npm", "run", "build:web"], staging_dir, f"build {app.slug} static bundle")
-            replace_with_source(staging_dir, app.publish_dir, IGNORED_PUBLISH_DIRECTORIES)
-        elif app.build_kind == "parallelismus":
-            run_command(["npm", "run", "build"], staging_dir, f"build {app.slug} static bundle")
-            replace_with_source(staging_dir, app.publish_dir, IGNORED_PUBLISH_DIRECTORIES)
-        else:
-            raise RuntimeError(f"Unknown build kind '{app.build_kind}' for {app.slug}")
+
+        match app.build_kind:
+            case BuildTypes.VITE:
+                run_command(
+                    ["npm", "run", "build", "--", "--base=./", f"--outDir={app.publish_dir}", "--emptyOutDir"],
+                    staging_dir,
+                    f"build {app.slug} static bundle",
+                )
+                inject_base_href(app.publish_dir / app.entry_path, f"/assets/apps/{app.slug}/")
+            case BuildTypes.BACKGROUND_GENERATOR:
+                run_command(["npm", "run", "build:web"], staging_dir, f"build {app.slug} static bundle")
+                replace_with_source(staging_dir, app.publish_dir, IGNORED_PUBLISH_DIRECTORIES)
+            case BuildTypes.PARALLELISMUS:
+                run_command(["npm", "run", "build"], staging_dir, f"build {app.slug} static bundle")
+                replace_with_source(staging_dir, app.publish_dir, IGNORED_PUBLISH_DIRECTORIES)
+            case _:
+                raise RuntimeError(f"Unknown build kind '{app.build_kind}' for {app.slug}")
 
 
 def replace_with_source(source_dir: Path, destination_dir: Path, ignored: set[str]) -> None:
@@ -163,19 +173,29 @@ def build_required(app: EmbeddedApp) -> bool:
         return True
     if any((app.publish_dir / path).exists() for path in app.obsolete_publish_paths):
         return True
-    return latest_mtime(app.source_dir) > latest_mtime(app.publish_dir)
+    try:
+        stored_fingerprint = (app.publish_dir / FINGERPRINT_FILE).read_text(encoding="utf-8").strip()
+    except OSError:
+        return True
+    return stored_fingerprint != input_fingerprint(app)
 
 
-def latest_mtime(path: Path) -> float:
-    latest = 0.0
-    for root, directory_names, file_names in os.walk(path):
-        directory_names[:] = [name for name in directory_names if name not in IGNORED_SOURCE_DIRECTORIES]
-        for file_name in file_names:
+def input_fingerprint(app: EmbeddedApp) -> str:
+    digest = hashlib.sha256()
+    digest.update(f"{app.slug}\0{app.build_kind.value}\0{app.entry_path}\0".encode())
+    digest.update(Path(__file__).read_bytes())
+    for root, directory_names, file_names in os.walk(app.source_dir):
+        directory_names[:] = sorted(name for name in directory_names if name not in IGNORED_SOURCE_DIRECTORIES)
+        for file_name in sorted(file_names):
+            file_path = Path(root) / file_name
             try:
-                latest = max(latest, (Path(root) / file_name).stat().st_mtime)
+                digest.update(file_path.relative_to(app.source_dir).as_posix().encode())
+                with file_path.open("rb") as source_file:
+                    while chunk := source_file.read(1024 * 1024):
+                        digest.update(chunk)
             except OSError:
                 continue
-    return latest
+    return digest.hexdigest()
 
 
 def run_command(command: list[str], cwd: Path, description: str) -> None:

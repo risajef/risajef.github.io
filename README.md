@@ -12,6 +12,12 @@
 `uv.lock` is the authoritative Python dependency lock. Piper voice models,
 generated audio, and the standalone Z3 WASM runtime are published together as
 the `runtime-assets-v1` GitHub Release asset, not stored in Git or Git LFS.
+The release archive is a required build input and must be retained. If local
+runtime assets are missing, restore them from the release and verify the
+published SHA-256 before building. If the release itself is lost or corrupted,
+stop deployment, recreate the archive from a verified local backup, manually
+review it, upload a new versioned release, update the pinned release name in
+the build configuration, and run `npm run check-site` before deployment.
 
 `npm run build-tools` stages every embedded application under
 `docs/assets/apps`. Applications with a committed Node lockfile build in an

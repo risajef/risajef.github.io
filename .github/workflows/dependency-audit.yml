@@ -34,3 +34,21 @@ jobs:
           for app in python-blocks hoare-logic xml-weaver background-generator parallelismus; do
             npm --prefix "docs/assets/$app" audit --omit=dev --audit-level=moderate
           done
+
+      - name: Report build dependency vulnerabilities
+        run: |
+          mkdir -p audit-reports
+          uv export --frozen --all-groups --no-emit-project --output-file "$RUNNER_TEMP/all-requirements.txt"
+          uvx pip-audit --disable-pip --format json -r "$RUNNER_TEMP/all-requirements.txt" > audit-reports/python-all.json || true
+          npm audit --json > audit-reports/root.json || true
+          for app in python-blocks hoare-logic xml-weaver background-generator parallelismus; do
+            npm --prefix "docs/assets/$app" audit --json > "audit-reports/$app.json" || true
+          done
+
+      - name: Upload build dependency audit report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build-dependency-audit-${{ github.run_id }}
+          path: audit-reports
+          if-no-files-found: error
