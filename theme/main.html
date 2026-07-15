@@ -2,6 +2,7 @@
 <html lang="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
 
 <head>
+    {% set metadata_url = config.site_url.rstrip('/') ~ page.abs_url %}
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
     <meta name="language" content="{{ (page.meta.lang if page.meta and page.meta.lang else 'en') | e }}">
@@ -11,6 +12,7 @@
     <meta name="keywords"
         content="Reto Weber, programming, research, politics, blog, books, religion, philosophy, science{% for tag in (page.meta and page.meta.tags) or [] %}, {{ tag }}{% endfor %}">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ metadata_url }}">
 
     <!-- Open Graph (for rich previews on social platforms) -->
     <meta property="og:title" content="{{ page.title | default(config.site_name) | e }}">
@@ -18,7 +20,7 @@
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [{% for tag in (page.meta and page.meta.tags) or [] %}{{ tag }}{% endfor %}]">
     <meta property="og:type"
         content="{% if page.file and page.file.src_path and page.file.src_path.startswith('blog/') %}article{% else %}website{% endif %}">
-    <meta property="og:url" content="{{ page.abs_url | url }}">
+    <meta property="og:url" content="{{ metadata_url }}">
     <meta property="og:site_name" content="{{ config.site_name }}">
     <meta property="og:image" content="{{ page.meta.image | default('output.png') | url }}">
 
@@ -36,7 +38,7 @@
             "@type": {{ ('Article' if page.file and page.file.src_path and page.file.src_path.startswith('blog/') else 'WebPage') | tojson }},
       "mainEntityOfPage": {
         "@type": "WebPage",
-                "@id": {{ page.abs_url | url | tojson }}
+                "@id": {{ metadata_url | tojson }}
       },
             "headline": {{ page.title | default(config.site_name) | tojson }},
             "description": {{ ('Reto Weber - programming, research, politics, books, religion, philosophy and science. [' ~ ((page.meta and page.meta.tags) or [] | join(', ')) ~ ']') | tojson }},

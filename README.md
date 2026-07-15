@@ -15,7 +15,8 @@ the Piper voice models, generated audio, and standalone Z3 WASM binaries.
 `docs/assets/apps`. Applications with a committed Node lockfile build in an
 isolated temporary copy; source-static applications are copied as deployment
 artifacts. `npm run build-site` performs a normal MkDocs build, while
-`npm run check-site` applies the strict CI checks.
+`npm run check-site` applies the strict CI checks and validates rendered
+language, canonical URL, and JSON-LD contracts.
 
 # Components and Features
 - Framework: [MkDocs](https://www.mkdocs.org)

@@ -6,7 +6,7 @@
   "scripts": {
     "build-tools": ".venv/bin/python scripts/build_tools.py",
     "build-site": ".venv/bin/mkdocs build",
-    "check-site": ".venv/bin/mkdocs build --strict",
+    "check-site": ".venv/bin/mkdocs build --strict && .venv/bin/python scripts/check_site.py",
     "build": "npm run build-tools && npm run check-site",
     "test": "npm run build"
   },
