@@ -73,7 +73,6 @@ plugins:
   - piper-tts:
       model_dir: models/piper-tts
       use_cuda: true
-      use_tensorrt: false
       batch_size: 2
       languages:
         de:

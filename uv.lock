@@ -489,7 +489,7 @@ wheels = [
 
 [[package]]
 name = "mkdocs-piper-tts"
-version = "0.1.0"
+version = "0.2.2"
 source = { editable = "mkdocs_piper_tts" }
 dependencies = [
     { name = "markupsafe" },
@@ -506,13 +506,11 @@ cuda = [
 requires-dist = [
     { name = "markupsafe", specifier = ">=2.1" },
     { name = "mkdocs", specifier = ">=1.6,<2" },
-    { name = "onnx", marker = "extra == 'tensorrt'", specifier = ">=1.16,<2" },
     { name = "onnxruntime-gpu", extras = ["cuda", "cudnn"], marker = "extra == 'cuda'", specifier = "==1.25.0" },
-    { name = "onnxruntime-gpu", extras = ["cuda", "cudnn"], marker = "extra == 'tensorrt'", specifier = "==1.25.0" },
     { name = "piper-tts", specifier = "==1.2.0" },
-    { name = "tensorrt-cu12", marker = "extra == 'tensorrt'", specifier = ">=10.9,<11" },
+    { name = "pytest", marker = "extra == 'test'", specifier = ">=8,<9" },
 ]
-provides-extras = ["cuda", "tensorrt"]
+provides-extras = ["cuda", "test"]
 
 [[package]]
 name = "mkdocs-rss-plugin"

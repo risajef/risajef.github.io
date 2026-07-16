@@ -52,16 +52,20 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release download runtime-assets-v1 \
+          gh release download runtime-assets-v2 \
             --repo "$GITHUB_REPOSITORY" \
-            --pattern runtime-assets-v1.tar.gz \
+            --pattern 'runtime-assets-v2.tar.gz*' \
             --dir "$RUNNER_TEMP"
-          npm run install-runtime-assets -- --archive "$RUNNER_TEMP/runtime-assets-v1.tar.gz"
+          cd "$RUNNER_TEMP"
+          sha256sum --check runtime-assets-v2.tar.gz.sha256
+          npm run install-runtime-assets -- --archive "$RUNNER_TEMP/runtime-assets-v2.tar.gz"
 
       - name: Build embedded tools
         run: npm run build-tools
 
       - name: Build site
+        env:
+          PIPER_TTS_GENERATE_AUDIO: "false"
         run: npm run check-site
 
       - name: Upload Pages artifact
