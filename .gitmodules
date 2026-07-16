@@ -28,7 +28,3 @@
 [submodule "docs/assets/csv-editor"]
 	path = docs/assets/csv-editor
 	url = https://github.com/risajef/csv-editor.git
-[submodule "mkdocs_piper_tts"]
-	path = mkdocs_piper_tts
-	url = https://github.com/risajef/mkdocs-piper-tts.git
-	branch = main

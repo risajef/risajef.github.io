@@ -489,28 +489,22 @@ wheels = [
 
 [[package]]
 name = "mkdocs-piper-tts"
-version = "0.2.2"
-source = { editable = "mkdocs_piper_tts" }
+version = "0.2.3"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markupsafe" },
     { name = "mkdocs" },
     { name = "piper-tts" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/af/83/30c33f891153f8122d04d118f78e310a9341b05d0f8fb6ae7a3515be6a46/mkdocs_piper_tts-0.2.3.tar.gz", hash = "sha256:4475060078dd6c452160c82334e863de9bcc2bcfbb447c3acca40a6c58e2539e", size = 21429, upload-time = "2026-07-16T10:16:33.248Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/da/d5/2bd5bb1afb657b684a4ade93dcade38c735f5ec59742b80323aa83f628a9/mkdocs_piper_tts-0.2.3-py3-none-any.whl", hash = "sha256:1869374be0b71b86d184d4a1d561e6b3dc4f194164f2ec606616041b891484b3", size = 14291, upload-time = "2026-07-16T10:16:32.128Z" },
 ]
 
 [package.optional-dependencies]
 cuda = [
     { name = "onnxruntime-gpu", extra = ["cuda", "cudnn"] },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "markupsafe", specifier = ">=2.1" },
-    { name = "mkdocs", specifier = ">=1.6,<2" },
-    { name = "onnxruntime-gpu", extras = ["cuda", "cudnn"], marker = "extra == 'cuda'", specifier = "==1.25.0" },
-    { name = "piper-tts", specifier = "==1.2.0" },
-    { name = "pytest", marker = "extra == 'test'", specifier = ">=8,<9" },
-]
-provides-extras = ["cuda", "test"]
 
 [[package]]
 name = "mkdocs-rss-plugin"
@@ -1051,7 +1045,7 @@ requires-dist = [
     { name = "mkdocs-bibtex", specifier = "==4.4.0" },
     { name = "mkdocs-exclude", specifier = "==1.0.2" },
     { name = "mkdocs-mermaid-to-svg", specifier = "==1.0.3" },
-    { name = "mkdocs-piper-tts", extras = ["cuda"], editable = "mkdocs_piper_tts" },
+    { name = "mkdocs-piper-tts", extras = ["cuda"], specifier = "==0.2.3" },
     { name = "mkdocs-rss-plugin", specifier = "==1.17.7" },
     { name = "mkdocs-static-i18n", specifier = "==1.3.0" },
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.11,<2.0" },
