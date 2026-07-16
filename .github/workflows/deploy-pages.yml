@@ -56,8 +56,7 @@ jobs:
             --repo "$GITHUB_REPOSITORY" \
             --pattern 'runtime-assets-v2.tar.gz*' \
             --dir "$RUNNER_TEMP"
-          cd "$RUNNER_TEMP"
-          sha256sum --check runtime-assets-v2.tar.gz.sha256
+          (cd "$RUNNER_TEMP" && sha256sum --check runtime-assets-v2.tar.gz.sha256)
           npm run install-runtime-assets -- --archive "$RUNNER_TEMP/runtime-assets-v2.tar.gz"
 
       - name: Build embedded tools
