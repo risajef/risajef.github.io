@@ -3,7 +3,7 @@
     const scriptEl = document.currentScript;
     const scriptBase = scriptEl ? new URL(scriptEl.src, window.location.href) : new URL(window.location.href);
     const assetsBase = new URL("./", scriptBase).href;
-    const bgGenBase = new URL("background-generator/web/", assetsBase).href;
+    const bgGenBase = new URL("apps/background-generator/web/", assetsBase).href;
     const htmlUrl = new URL("index.html", bgGenBase).href;
     const mainJsUrl = new URL("dist/app.js", bgGenBase).href;
     const stylesUrl = new URL("styles.css", bgGenBase).href;

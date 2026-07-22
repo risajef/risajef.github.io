@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 4.828,
+  "plugin_hash": "be92b71a252d66b8b1d75c6cf786f4484bece21667e1c002747110dc7da370f1",
+  "section_count": 1,
+  "section_hash": "c910d669a44e05984d1b75de5b090280589d21a258474ee0ed91293d324936e2",
+  "section_index": 0,
+  "section_title": "Hoare Logic",
+  "source_hash": "46fe9ae53ef8acf9bb8426aab380bbdb603d04c3c5cf69499667db66713beb90",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

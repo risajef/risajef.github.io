@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 649.737,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 6,
+  "section_hash": "62ae1557b84fc27131ae7fbf9e4cabbd3b7001ea627adc3e8ef42440715447f2",
+  "section_index": 0,
+  "section_title": "Was haben wir gelernt? Und einige fundierte Vermutungen",
+  "source_hash": "fdfb9030e6a86aa912641ea85e4cd03348e2c7f0d3d883b8b6e65955dcda0833",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

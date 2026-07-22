@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 3.879,
+  "plugin_hash": "be92b71a252d66b8b1d75c6cf786f4484bece21667e1c002747110dc7da370f1",
+  "section_count": 1,
+  "section_hash": "5034bb8e60d457f561327a6989f1b57063082b97bb25417f03e63604a0d47dca",
+  "section_index": 0,
+  "section_title": "Python Blocks",
+  "source_hash": "cb53aec303a0909c1abe9720e2e862dc70580c1c1210e3b27b0815507d7898a1",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

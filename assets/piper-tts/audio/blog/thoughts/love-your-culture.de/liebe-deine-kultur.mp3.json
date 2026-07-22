@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 69.411,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "bfe75b1b73597ca90e17480ae48e1a46956d00885ae3051c22ea4763d33502a8",
+  "section_index": 0,
+  "section_title": "Liebe deine Kultur",
+  "source_hash": "87c000da2d578eb27431ffa12d2dc3ce450c42d9923c7d2f9b8cc9de742b3865",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

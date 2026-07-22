@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 104.952,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "825bd3262adb322f1ff98615d2f12049dfe5f080211ac3e63e75fba4f25cd076",
+  "section_index": 0,
+  "section_title": "Ein gescheitertes Experiment: Gewichte innerhalb eines neuronalen Netzwerks komprimieren",
+  "source_hash": "e9288223050ff67f4e867ddd0ae8779e7f723d3df977333a72f98a88b14c471e",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

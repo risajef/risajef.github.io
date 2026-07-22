@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 197.932,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "272a8d3e1975662bf4d113b056a1a9e91d6227c50a550a1fe73a5c29f3593889",
+  "section_index": 0,
+  "section_title": "Evolution simulieren",
+  "source_hash": "0be80b29de77fbcd49e1ce11356d2ff6d9b28b2ca98a597d1ce41c853beda6ad",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

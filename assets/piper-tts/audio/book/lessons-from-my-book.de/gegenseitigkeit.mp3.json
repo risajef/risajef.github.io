@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 19.796,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 8,
+  "section_hash": "a058ad9a9df2d949bff0ece798b38425454512ed444b0633e117fa80cc511670",
+  "section_index": 5,
+  "section_title": "Gegenseitigkeit",
+  "source_hash": "6e4592b0a7c3af28efb9f129ff22c58d5b8535b6bf743d7c407a0bce17f45705",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

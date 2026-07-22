@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 70.202,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 5,
+  "section_hash": "823fc4462bda5fff10837917770b1e4d071431a3128d6b90628ac1eb40a9e3ee",
+  "section_index": 0,
+  "section_title": "(Intro) Ein Gedanke zu Vibe-Coding",
+  "source_hash": "5187ad50a200b74a7ff8f4446c9f235005685873286ac4a936a035ea065f323f",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 260.287,
+  "plugin_hash": "be92b71a252d66b8b1d75c6cf786f4484bece21667e1c002747110dc7da370f1",
+  "section_count": 1,
+  "section_hash": "9fcad40ec62ef7a2ebfe057318c0b05fe7bdcf069e4559ba9f2bba9a05e8f9ce",
+  "section_index": 0,
+  "section_title": "Vibe coding",
+  "source_hash": "5487e9b7e50a6920394ef323117c10cd3c6fc4b2e9367d61e1c146ab80514743",
+  "voice_config": "en_US-amy-medium.onnx.json",
+  "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
+  "voice_language": "en",
+  "voice_model": "en_US-amy-medium.onnx",
+  "voice_model_hash": "b3a6e47b57b8c7fbe6a0ce2518161a50f59a9cdd8a50835c02cb02bdd6206c18",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 12.63,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 4,
+  "section_hash": "06f3c337817925d9592f7341a1bc529de03d00ce12e8c0cdca7e11e8e9a16e49",
+  "section_index": 2,
+  "section_title": "Science",
+  "source_hash": "e3addacc8825190341cc5b6891fd84f203875c8495648e1472ff2919ce465b26",
+  "voice_config": "en_US-amy-medium.onnx.json",
+  "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
+  "voice_language": "en",
+  "voice_model": "en_US-amy-medium.onnx",
+  "voice_model_hash": "b3a6e47b57b8c7fbe6a0ce2518161a50f59a9cdd8a50835c02cb02bdd6206c18",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

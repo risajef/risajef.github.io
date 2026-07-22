@@ -3,7 +3,7 @@
     const scriptEl = document.currentScript;
     const scriptBase = scriptEl ? new URL(scriptEl.src, window.location.href) : new URL(window.location.href);
     const assetsBase = new URL("./", scriptBase).href;
-    const parallelismusBase = new URL("parallelismus/dist/", assetsBase).href;
+    const parallelismusBase = new URL("apps/parallelismus/dist/", assetsBase).href;
     const htmlUrl = new URL("index.html", parallelismusBase).href;
     const mainJsUrl = new URL("index.js", parallelismusBase).href;
     const stylesUrl = new URL("styles.css", parallelismusBase).href;

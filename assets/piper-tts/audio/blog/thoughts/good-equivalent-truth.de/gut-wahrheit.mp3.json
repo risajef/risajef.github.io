@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 245.096,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "334a54a491a0bb6073bafdcaa4136063e1ef43dbf8429fa40706f9254f092de1",
+  "section_index": 0,
+  "section_title": "Gut \u27fa Wahrheit",
+  "source_hash": "50dea1981cdae7230e017d1e12466c9e271e8fd2857f5e492a3c4266730e9f32",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

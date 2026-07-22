@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 101.888,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "caa89bc512ea22b111613f18d8fa7c01c21d4911b6993d63cc180c7ed1d79bba",
+  "section_index": 0,
+  "section_title": "Willenskraft ist eine begrenzte Ressource",
+  "source_hash": "20b5abd9986d81c7e0185ef9869abc691081930184e2269c8e7ca970893f4b05",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

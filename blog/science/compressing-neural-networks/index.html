@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    
+    
+    
+    
+    
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="en">
     <meta name="language" content="en">
@@ -11,6 +16,7 @@
     <meta name="keywords"
         content="Reto Weber, programming, research, politics, blog, books, religion, philosophy, science, science, machine-learning, neural-networks, compression, pytorch, mnist">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://retoweber.info/blog/science/compressing-neural-networks/">
 
     <!-- Open Graph (for rich previews on social platforms) -->
     <meta property="og:title" content="Compressing Neural Networks">
@@ -18,28 +24,28 @@
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [sciencemachine-learningneural-networkscompressionpytorchmnist]">
     <meta property="og:type"
         content="article">
-    <meta property="og:url" content="/blog/science/compressing-neural-networks/">
+    <meta property="og:url" content="https://retoweber.info/blog/science/compressing-neural-networks/">
     <meta property="og:site_name" content="Reto Weber">
-    <meta property="og:image" content="/output.png">
+    <meta property="og:image" content="https://retoweber.info/output.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Compressing Neural Networks">
     <meta name="twitter:description"
         content="Reto Weber - programming, research, politics, books, religion, philosophy and science. [sciencemachine-learningneural-networkscompressionpytorchmnist]">
-    <meta name="twitter:image" content="/output.png">
+    <meta name="twitter:image" content="https://retoweber.info/output.png">
 
     <!-- JSON-LD Structured Data for rich results -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
+            "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/blog/science/compressing-neural-networks/"
+                "@id": "https://retoweber.info/blog/science/compressing-neural-networks/"
       },
-      "headline": "Compressing Neural Networks",
-      "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. [sciencemachine-learningneural-networkscompressionpytorchmnist]",
+            "headline": "Compressing Neural Networks",
+            "description": "Reto Weber - programming, research, politics, books, religion, philosophy and science. [[\u0027science\u0027, \u0027machine-learning\u0027, \u0027neural-networks\u0027, \u0027compression\u0027, \u0027pytorch\u0027, \u0027mnist\u0027]]",
       "author": {
         "@type": "Person",
         "name": "Reto Weber"
@@ -49,9 +55,9 @@
         "name": "Reto Weber",
         "logo": {
           "@type": "ImageObject",
-          "url": "../../../favicon.ico"
+                    "url": "../../../favicon.ico"
         }
-      }
+            }
     }
     </script>
 
@@ -59,16 +65,13 @@
     
     <link href="../../../assets/rss-feed.css" rel="stylesheet">
 
-    </noscript>
-
-
     <link rel="stylesheet" href="../../../style.css">
-    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
-    <link rel="preload" href="/fonts/gidole.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="preload" href="../../../fonts/inter.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+    <link rel="preload" href="../../../fonts/gidole.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
     <style type="text/css">
         @font-face {
             font-family: 'Gidole';
-            src: url('/fonts/gidole.woff2') format('woff2');
+            src: url('../../../fonts/gidole.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
@@ -76,7 +79,7 @@
 
         @font-face {
             font-family: 'Inter';
-            src: url('/fonts/inter.woff2') format('woff2');
+            src: url('../../../fonts/inter.woff2') format('woff2');
             font-weight: 400;
             font-style: normal;
             font-display: swap;
@@ -84,7 +87,7 @@
 
         @font-face {
             font-family: 'Inter';
-            src: url('/fonts/inter.woff2') format('woff2');
+            src: url('../../../fonts/inter.woff2') format('woff2');
             font-weight: 700;
             font-style: normal;
             font-display: swap;
@@ -92,7 +95,7 @@
     </style>
 
 
-    <link rel="icon" type="image/svg+xml" href="../../../favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../../favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -113,13 +116,53 @@
     
         
     <header class="site-header">
-        <div class="site-title">
-            <h1 class="">
-                <a href="/index.html">Reto Weber</a>
-            </h1>
+        <div class="header-identity">
+            <div class="site-title">
+                <h1 class="">
+                    <a href="../../../index.html">Reto Weber</a>
+                </h1>
+            </div>
+            
+            <nav class="language-switcher" aria-label="Language selector">
+                
+                
+                
+                
+                
+                
+                <a href="./" class="active">En</a>
+                
+                
+                
+                
+                
+                
+                
+                <a href="../../../de/blog/science/compressing-neural-networks/" class="">De</a>
+                
+                
+            </nav>
+            
         </div>
         
-        <ul class="main-nav">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="visually-hidden">Menu</span>
+        </button>
+        
+        <ul id="main-navigation" class="main-nav">
+            
+                
+        
+        
+        
+        
+        <li class="">
+            <a href="#">Home</a>
+            
+        </li>
             
                 
         
@@ -404,32 +447,9 @@
         </ul>
         
         
-        <nav class="language-switcher" aria-label="Language selector">
-            
-            
-            
-            
-            
-            
-            <a href="./" class="active">En</a>
-            
-            
-            
-            
-            
-            
-            
-            <a href="../../../de/blog/science/compressing-neural-networks/" class="">De</a>
-            
-            
-        </nav>
-        
         <form class="search-form" role="search">
             <input type="search" id="mkdocs-search-query" name="q" placeholder="Search..." autocomplete="off">
         </form>
-        <a href="https://forms.gle/VBaJXfvzMupony487" target="_blank" class="feedback-button">
-            Feedback
-        </a>
     </header>
     <div id="main-container">
         
@@ -441,7 +461,7 @@
         
         <div class="content">
             
-            <h1 id="compressing-neural-networks"><a href="/blog/science/compressing-neural-networks/">Compressing Neural Networks</a></h1>
+            <h1 id="compressing-neural-networks"><a href="/blog/science/compressing-neural-networks/">Compressing Neural Networks</a></h1><span class="piper-tts-reading-time">Approximate reading time: 2m48s</span>
 <p>When I applied for a PhD position, I wanted to give the professor a reason to hire me, so I implemented one of my ideas. I suspected that the weights of neural networks are too dense. There is a lot of redundancy. The conventional method to reduce complexity is to introduce a bottleneck in the architecture of the neural network. However, this is a resource-intensive way to solve the problem. Instead of reducing the number of weights, we increase them. Another way to reduce the complexity of a model is to lower the precision of the weights, e.g., from 32-bit to 8-bit. This is a legitimate approach but uninspired. And it's hard to believe that this is the only and correct way for all situations.</p>
 <p>My hypothesis was to compress the weight matrix using a common algorithm like JPEG. I took MNIST and trained a small CNN:</p>
 <pre><code class="language-python">hidden_layer_size = 512
@@ -466,6 +486,7 @@ model = torch.nn.Sequential(linear1, relu, linear2)
 <li>This method could also work in deep neural networks.</li>
 <li>Developing a differentiable method that generates significant complexity with few parameters could enhance the computational capabilities of existing hardware.</li>
 </ul>
+            
         </div>
     </div>
     <div id="mkdocs-search-popup">
@@ -480,7 +501,9 @@ model = torch.nn.Sequential(linear1, relu, linear2)
         </svg>
         <span>GitHub</span>
     </a>
-    <audio class="piper-tts-button" controls preload="none" aria-label="Listen" title="Listen"><source src="../../../assets/piper-tts/audio/blog-science-compressing-neural-networks-en-be54ca264729-ee57a815e46f.mp3" type="audio/mpeg">Listen</audio>
+    <div class="piper-tts-player" data-role="piper-tts-player">
+        <div id="piper-tts-02d8abdf1b8c-container" class="piper-tts-button-wrapper piper-tts-mode-compact"><div class="piper-tts-compact-bar"><button type="button" class="piper-tts-prev" aria-label="Previous track">⏮</button><button type="button" class="piper-tts-play-pause" aria-label="Play">▶</button><button type="button" class="piper-tts-now-playing" aria-expanded="false">Compressing Neural Networks</button><button type="button" class="piper-tts-next" aria-label="Next track">⏭</button></div><audio id="piper-tts-02d8abdf1b8c" class="piper-tts-button" preload="none" aria-label="Listen" title="Listen" src="../../../assets/piper-tts/audio/blog/science/compressing-neural-networks.en/compressing-neural-networks.mp3" data-playlist="[{&quot;title&quot;: &quot;Compressing Neural Networks&quot;, &quot;url&quot;: &quot;../../../assets/piper-tts/audio/blog/science/compressing-neural-networks.en/compressing-neural-networks.mp3&quot;}]">Listen</audio><ol class="piper-tts-button-playlist"><li><button type="button" data-track-index="0">Compressing Neural Networks</button></li></ol></div><script>(function () {var audio = document.getElementById('piper-tts-02d8abdf1b8c');var container = document.getElementById('piper-tts-02d8abdf1b8c-container');if (!audio || !container) { return; }var playlist;try { playlist = JSON.parse(audio.dataset.playlist || '[]'); } catch (_error) { return; }if (!playlist.length) { return; }var buttons = Array.prototype.slice.call(container.querySelectorAll('button[data-track-index]'));var currentIndex = 0;var onActiveChange = function () {};function markActive(index) {  currentIndex = index;  buttons.forEach(function (button, buttonIndex) {    var active = buttonIndex === index;    button.setAttribute('aria-current', active ? 'true' : 'false');  });  onActiveChange();}function loadTrack(index, autoplay) {  if (index < 0 || index >= playlist.length) { return; }  markActive(index);  if (audio.getAttribute('src') !== playlist[index].url) {    audio.setAttribute('src', playlist[index].url);    audio.load();  }  if (autoplay) {    var playPromise = audio.play();    if (playPromise && typeof playPromise.catch === 'function') {      playPromise.catch(function () {});    }  }}var playlistElement = container.querySelector('ol');var prevButton = container.querySelector('.piper-tts-prev');var nextButton = container.querySelector('.piper-tts-next');var playPauseButton = container.querySelector('.piper-tts-play-pause');var nowPlayingButton = container.querySelector('.piper-tts-now-playing');var playLabel = "Play";var pauseLabel = "Pause";function collapsePlaylist() {  if (!playlistElement) { return; }  playlistElement.classList.remove('piper-tts-playlist-expanded');  if (nowPlayingButton) { nowPlayingButton.setAttribute('aria-expanded', 'false'); }}function syncCompactState() {  if (nowPlayingButton) { nowPlayingButton.textContent = playlist[currentIndex].title; }  if (prevButton) { prevButton.disabled = currentIndex <= 0; }  if (nextButton) { nextButton.disabled = currentIndex >= playlist.length - 1; }}onActiveChange = syncCompactState;if (prevButton) {  prevButton.addEventListener('click', function () {    if (currentIndex > 0) { loadTrack(currentIndex - 1, true); }  });}if (nextButton) {  nextButton.addEventListener('click', function () {    if (currentIndex < playlist.length - 1) { loadTrack(currentIndex + 1, true); }  });}if (playPauseButton) {  playPauseButton.addEventListener('click', function () {    if (audio.paused) {      var playPromise = audio.play();      if (playPromise && typeof playPromise.catch === 'function') { playPromise.catch(function () {}); }    } else {      audio.pause();    }  });}audio.addEventListener('play', function () {  if (playPauseButton) {    playPauseButton.textContent = '\u275a\u275a';    playPauseButton.setAttribute('aria-label', pauseLabel);  }});audio.addEventListener('pause', function () {  if (playPauseButton) {    playPauseButton.textContent = '\u25b6';    playPauseButton.setAttribute('aria-label', playLabel);  }});if (nowPlayingButton) {  nowPlayingButton.addEventListener('click', function () {    if (!playlistElement) { return; }    var expanded = playlistElement.classList.toggle('piper-tts-playlist-expanded');    nowPlayingButton.setAttribute('aria-expanded', expanded ? 'true' : 'false');  });}buttons.forEach(function (button) { button.addEventListener('click', collapsePlaylist); });buttons.forEach(function (button, index) {  button.addEventListener('click', function () { loadTrack(index, true); });});audio.addEventListener('ended', function () {  if (currentIndex + 1 < playlist.length) {    loadTrack(currentIndex + 1, true);  }});markActive(0);})();</script>
+    </div>
     <a id="simple-analytics-badge"
         href="https://dashboard.simpleanalytics.com/retoweber.info?utm_source=retoweber.info&utm_content=badge&affiliate=woruk-rob"
         referrerpolicy="origin" target="_blank">
@@ -508,6 +531,16 @@ model = torch.nn.Sequential(linear1, relu, linear2)
     </script>
     <script>
         var base_url = "../../..";
+    </script>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const siteHeader = document.querySelector('.site-header');
+        if (navToggle && siteHeader) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = siteHeader.classList.toggle('nav-open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
     </script>
     <script>
         // Show popup when search input is focused or typed in

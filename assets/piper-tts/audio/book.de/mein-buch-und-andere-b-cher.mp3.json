@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 38.349,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "785f9ec4a9b4041f78d00f9e9f4f786d6d783386b459d72e7817857a6b75a6ed",
+  "section_index": 0,
+  "section_title": "Mein Buch und andere B\u00fccher",
+  "source_hash": "624ecd8107389549382a617271be12c217652b7fd4b1ab6ca65ed85ca8839502",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

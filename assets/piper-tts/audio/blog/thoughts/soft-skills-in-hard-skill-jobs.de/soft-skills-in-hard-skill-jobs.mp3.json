@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 100.05,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "efb0e806cd55176cbaf526886d936209c0499e92420408adade65beb2520779b",
+  "section_index": 0,
+  "section_title": "Soft Skills in Hard-Skill Jobs",
+  "source_hash": "195326e457ee7198385c8b4150736868d534cbe884065c9f300591457ad0a4b1",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

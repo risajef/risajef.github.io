@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 185.818,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 6,
+  "section_hash": "1fc24a751edbacaccc66e79d90d0d9ef658ef8e61dd7ab4d322202a59e148146",
+  "section_index": 5,
+  "section_title": "A Comment on the Kalam Cosmological Argument",
+  "source_hash": "8a21389a771253b06e2bdb4f863b0c5eea13cc0f454ced1fcf7dbd25fe003be8",
+  "voice_config": "en_US-amy-medium.onnx.json",
+  "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
+  "voice_language": "en",
+  "voice_model": "en_US-amy-medium.onnx",
+  "voice_model_hash": "b3a6e47b57b8c7fbe6a0ce2518161a50f59a9cdd8a50835c02cb02bdd6206c18",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

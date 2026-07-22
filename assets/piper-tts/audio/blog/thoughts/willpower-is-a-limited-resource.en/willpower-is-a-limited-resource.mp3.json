@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 112.231,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "49aab6a52832e2d847fee359121f5c8419c3bde1ff35537b5569ef6438dc25c8",
+  "section_index": 0,
+  "section_title": "Willpower Is a Limited Resource",
+  "source_hash": "b9e4dc2d433a05504ae290629a836ee4a2514de99415fd1a7754303113fe350d",
+  "voice_config": "en_US-amy-medium.onnx.json",
+  "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
+  "voice_language": "en",
+  "voice_model": "en_US-amy-medium.onnx",
+  "voice_model_hash": "b3a6e47b57b8c7fbe6a0ce2518161a50f59a9cdd8a50835c02cb02bdd6206c18",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

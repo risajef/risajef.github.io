@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 1.394,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 5,
+  "section_hash": "f08bc15fbe82932a7c9c6cb581bcaf5b9acd8c8e60e63cf81db7bf8f13ef22d8",
+  "section_index": 0,
+  "section_title": "(Intro) Einflussreiche B\u00fccher",
+  "source_hash": "907b28423d90764168590059c05391785f17b34c48e41d23e455784588c22743",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

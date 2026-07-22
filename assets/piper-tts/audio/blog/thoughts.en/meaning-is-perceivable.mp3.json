@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 81.33,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 20,
+  "section_hash": "2de2adfbf074a03c754ee6ec1ff45be196a72fdc4d9fcf34d68d86937b56b3ac",
+  "section_index": 11,
+  "section_title": "Meaning is Perceivable",
+  "source_hash": "d6a55219885d73e547fa1223d708a3b4a29abfaf75e229a27caae95c492af757",
+  "voice_config": "en_US-amy-medium.onnx.json",
+  "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
+  "voice_language": "en",
+  "voice_model": "en_US-amy-medium.onnx",
+  "voice_model_hash": "b3a6e47b57b8c7fbe6a0ce2518161a50f59a9cdd8a50835c02cb02bdd6206c18",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

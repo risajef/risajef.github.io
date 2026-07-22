@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 150.515,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "ded4fe5d7ad030f338b6a9312dd6dddb5e1a9d711ab36c856fc0a18a3b03834d",
+  "section_index": 0,
+  "section_title": "Wahrhaftig verstehen",
+  "source_hash": "7029faccfd061b09f4a696743828d60e09dd5318b9c34c550d453e7d13fe1423",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 4.521,
+  "plugin_hash": "be92b71a252d66b8b1d75c6cf786f4484bece21667e1c002747110dc7da370f1",
+  "section_count": 1,
+  "section_hash": "67d52719e6ff6ec9c3de6e311a066283b0f0656b459f58d9687ba9d25ed472be",
+  "section_index": 0,
+  "section_title": "XML Weaver",
+  "source_hash": "43d4e1d65c022312291e1e6836a8477f6862f6196692fafc0ab840ba8a8e5ccf",
+  "voice_config": "en_US-amy-medium.onnx.json",
+  "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
+  "voice_language": "en",
+  "voice_model": "en_US-amy-medium.onnx",
+  "voice_model_hash": "b3a6e47b57b8c7fbe6a0ce2518161a50f59a9cdd8a50835c02cb02bdd6206c18",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

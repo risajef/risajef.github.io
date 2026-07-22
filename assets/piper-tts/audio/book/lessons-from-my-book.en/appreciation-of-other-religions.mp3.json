@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 41.384,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 8,
+  "section_hash": "d1bc469ef76863f9002266c2f19ed4db7e74572f6809654621fdd442a38dac2b",
+  "section_index": 3,
+  "section_title": "Appreciation of Other Religions",
+  "source_hash": "13c3f67f5d4770bc0957f62a3a60b6fae2f5f435f5845a499e731a09e7d3edda",
+  "voice_config": "en_US-amy-medium.onnx.json",
+  "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
+  "voice_language": "en",
+  "voice_model": "en_US-amy-medium.onnx",
+  "voice_model_hash": "b3a6e47b57b8c7fbe6a0ce2518161a50f59a9cdd8a50835c02cb02bdd6206c18",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

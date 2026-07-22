@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 61.142,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 3,
+  "section_hash": "f7fbcbf9bcc936afc6e099fb5cb2c9420bf300e891058e3203c6e695892973d1",
+  "section_index": 1,
+  "section_title": "Situation 1: Ich will keine unangek\u00fcndigten G\u00e4ste, weil meine Wohnung nicht ordentlich oder sauber ist",
+  "source_hash": "1ce4fb435c219182b1e15b85048f0c829c81d6085054b1f4a28d66249a09da99",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

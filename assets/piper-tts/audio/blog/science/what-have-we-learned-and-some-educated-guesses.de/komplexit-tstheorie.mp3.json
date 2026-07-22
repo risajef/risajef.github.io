@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 108.817,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 7,
+  "section_hash": "1ef6b3c6f08b9bd4a9687573e0071b976c075cc545b225cfea4beb4521ad9605",
+  "section_index": 2,
+  "section_title": "Komplexit\u00e4tstheorie",
+  "source_hash": "cc1f0334a87a1b4af5db058c8a19317dee23414e01540046bafb991e51c26e8a",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

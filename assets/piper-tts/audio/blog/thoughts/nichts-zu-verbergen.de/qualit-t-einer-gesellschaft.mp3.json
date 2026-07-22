@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 16.013,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 6,
+  "section_hash": "f14351d013c89b7c0de8a4e00f6358e8cb108e104db08d156f9f4d04c7faf406",
+  "section_index": 4,
+  "section_title": "Qualit\u00e4t einer Gesellschaft",
+  "source_hash": "d2b0ed9d2a71b71cf70cd552966b40c53b2a023ba7299897e0fa0d8d1d3e0313",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

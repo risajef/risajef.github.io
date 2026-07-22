@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 60.577,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 20,
+  "section_hash": "879d9cc4bd096858b251ab8da3901fda2d02b13eba71f4c1633de78d5dee8d50",
+  "section_index": 9,
+  "section_title": "Menschen, die Kinder nicht m\u00f6gen, sind unheimlich",
+  "source_hash": "6a84938f8f807f14169966f969572472b4d6768e97b4f4393ba6409201a10642",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

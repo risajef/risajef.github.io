@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 17.121,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "213242b85cb230e8f050d1dcd812d94cf8aaeb6a94911363b1c693f6aa6579c5",
+  "section_index": 0,
+  "section_title": "Werkzeuge",
+  "source_hash": "8070e78850a745195b52035883fa39b60ec5ee899c63ba36ccfdd8e2aa0260fa",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

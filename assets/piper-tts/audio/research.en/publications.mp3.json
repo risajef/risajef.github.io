@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 36.545,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 3,
+  "section_hash": "b2cb72fbfdefb296f129c2f018668cf9660f97ef94621d1c0500b80091d01c55",
+  "section_index": 0,
+  "section_title": "Publications",
+  "source_hash": "f95e179f40467c3f78c89b68b712d10ff1e9365db474067550b34899a52914ef",
+  "voice_config": "en_US-amy-medium.onnx.json",
+  "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
+  "voice_language": "en",
+  "voice_model": "en_US-amy-medium.onnx",
+  "voice_model_hash": "b3a6e47b57b8c7fbe6a0ce2518161a50f59a9cdd8a50835c02cb02bdd6206c18",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

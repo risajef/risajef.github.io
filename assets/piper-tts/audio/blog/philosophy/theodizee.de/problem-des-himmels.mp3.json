@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 35.477,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 6,
+  "section_hash": "64605df6620421b11ea9e0b7033fb31efcd2563fbae72c9b556605be272b61da",
+  "section_index": 4,
+  "section_title": "Problem des Himmels",
+  "source_hash": "6131ffcb1ed8c11e4a24ee52daf3f7d5551305d89dcabe89036375590bacf80c",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

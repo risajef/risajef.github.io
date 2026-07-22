@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 251.998,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 1,
+  "section_hash": "60a7318b6790941c67ca992ba09ae1dd257af6e1746f1a57a88c4eb7bc55ba98",
+  "section_index": 0,
+  "section_title": "Was ist Gott?",
+  "source_hash": "641946efdbbdd3dc04f95c4ad888558a940bddbb5d4de050db54d95eacdeb02a",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

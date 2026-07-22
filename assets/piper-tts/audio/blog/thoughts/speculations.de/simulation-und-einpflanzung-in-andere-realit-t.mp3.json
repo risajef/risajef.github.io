@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 138.502,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 8,
+  "section_hash": "3c4143625fb18631f9951938149aca716e4462ab7aa063940a89e2d08760a0d5",
+  "section_index": 2,
+  "section_title": "Simulation und Einpflanzung in andere Realit\u00e4t",
+  "source_hash": "4c9ba42b3c8f69eab0c8bc1e9e6143de83ffac3b7ca0f29aae604f89b6fef65b",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

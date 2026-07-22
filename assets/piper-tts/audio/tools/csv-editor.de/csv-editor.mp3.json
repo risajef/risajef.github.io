@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 4.329,
+  "plugin_hash": "be92b71a252d66b8b1d75c6cf786f4484bece21667e1c002747110dc7da370f1",
+  "section_count": 1,
+  "section_hash": "5274aee6b2d82b3f1dc73800bd286e7507f1c9d35a060120c8bc2560781fd85d",
+  "section_index": 0,
+  "section_title": "CSV Editor",
+  "source_hash": "09a5fbd3eccc97f1fe327828f34fa371a07f92abfa5c8e227b5878968ab13a9e",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

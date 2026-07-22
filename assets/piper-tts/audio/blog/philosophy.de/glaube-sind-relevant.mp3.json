@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 130.349,
+  "plugin_hash": "be92b71a252d66b8b1d75c6cf786f4484bece21667e1c002747110dc7da370f1",
+  "section_count": 6,
+  "section_hash": "bbd023f19420e172bbe91ed71498553fc1f978a55c5cd381b6d5259bf4631360",
+  "section_index": 4,
+  "section_title": "Glaube sind relevant",
+  "source_hash": "e731803b524576b407f601583e10e721ae21f0ff211b589079a3bfbbdf8a374e",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

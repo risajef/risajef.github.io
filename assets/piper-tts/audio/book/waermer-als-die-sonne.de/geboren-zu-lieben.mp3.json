@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 42.294,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 12,
+  "section_hash": "ec9a48949f56959cef4fc589125fb7b6199c910a41853bd162222bd6fd02e339",
+  "section_index": 8,
+  "section_title": "Geboren zu lieben",
+  "source_hash": "642f5ea4cec63a931902e456cb395bfdb2fff5fa655bb23e560ba2a953e91f05",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}

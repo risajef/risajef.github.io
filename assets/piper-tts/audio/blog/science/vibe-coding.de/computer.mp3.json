@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 38.671,
+  "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
+  "section_count": 5,
+  "section_hash": "15f4714558bea7cd8dafa4bfe4b16218f9eb41dc4e52e8f48d1ebf3ab03190c6",
+  "section_index": 1,
+  "section_title": "Computer",
+  "source_hash": "5187ad50a200b74a7ff8f4446c9f235005685873286ac4a936a035ea065f323f",
+  "voice_config": "de_DE-thorsten-medium.onnx.json",
+  "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+  "voice_language": "de",
+  "voice_model": "de_DE-thorsten-medium.onnx",
+  "voice_model_hash": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+  "voice_runtime": "cuda",
+  "voice_speaker_id": null
+}
