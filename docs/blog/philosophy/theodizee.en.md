@@ -9,7 +9,7 @@ auto_translated: true
 source_lang: de
 ---
 
-# [Theodicy](/blog/philosophy/theodizee/)
+# Theodicy
 > How can human suffering be thought together with the goodness of God?
 
 ## Introduction

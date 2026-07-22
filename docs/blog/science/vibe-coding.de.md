@@ -8,7 +8,7 @@ tags:
 auto_translated: false
 ---
 
-# [Ein Gedanke zu Vibe-Coding](/blog/science/vibe-coding/)
+# Ein Gedanke zu Vibe-Coding
 
 Ich lese viele Artikel über dieses Vibe-Coding. Wobei der Begriff nicht mal genau definiert ist, aber ungefähr besagt: Programmieren mit integrierter Unterstützung durch ein LLM. Oder in anderen Worten: das durch künstliche Intelligenz unterstützte Programmieren. Ich selbst verwende es extensiv für viele unwichtige Angelegenheiten.
 

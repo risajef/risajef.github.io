@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Für dich ist Fürsprache](/blog/thoughts/intercession-is-for-you/)
+# Für dich ist Fürsprache
 
 „Ich bete für alle in der Türkei!“ So etwas las man nach den Erdbeben in der Türkei und in Syrien in sozialen Medien. Gläubige und Nichtgläubige kommentierten gleichermassen: Man solle helfen statt beten. Tu etwas, das einen Unterschied macht.
 

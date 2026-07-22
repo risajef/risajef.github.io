@@ -1,8 +1,8 @@
 ---
 extra_css:
-- assets/buchfalten/styles.css
+- assets/apps/buchfalten/styles.css
 extra_javascript:
-- assets/buchfalten/config.js
+- assets/apps/buchfalten/config.js
 - https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js
 - assets/buchfalten-embed.js
 tags:

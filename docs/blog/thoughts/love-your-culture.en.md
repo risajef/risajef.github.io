@@ -9,7 +9,7 @@ tags:
 auto_translated: false
 ---
 
-# [Love Your Culture](/blog/thoughts/love-your-culture/)
+# Love Your Culture
 
 Our modern mind is plagued by hubris. It believes it knows a lot and can assess the consequences of political actions. But assessing the consequences is usually more like reading tea leaves than science. Because we can hardly assess our ignorance.
 

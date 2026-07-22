@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Was ist Gott?](/blog/philosophy/what-is-god/)
+# Was ist Gott?
 
 Eine Diskussion über Gott führt oft zu der Frage: „Warum glaubst du an Gott?" oder „Warum glaubst du nicht an Gott?" Aber wenn man tiefer grabt, stellt man fest, dass keine Einigkeit darüber herrscht, was „Gott" ist. Nicht-Gläubige schalten an diesem Punkt oft ab. Warum sollten sie schliesslich die Existenz von etwas diskutieren, das nicht klar definiert ist? Das ist legitim. Aber wenn es um Dinge geht, die nicht zur ontologischen Kategorie des „physischen Objekts" gehören, ist es immer schwierig, sie zu definieren. (Übrigens: Es ist auch schwierig, physische Objekte zu definieren. Wir sind jedoch eher bereit, dort eine Definition zu akzeptieren.)
 

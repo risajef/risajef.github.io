@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Weisheit ist Philosophie, die funktioniert](/blog/thoughts/wisdom-is-philosophy-that-works/)
+# Weisheit ist Philosophie, die funktioniert
 
 Die Bedeutung von Philosophie ist (philia) die Liebe zur (sophia) Weisheit. Aber sie hat sich in eine andere Richtung entwickelt. Heute beschäftigt sich Philosophie mit den grundlegenden Ideen und Konzepten unserer Welt. Was sind die Axiome unseres Universums – und was bedeutet es, dass es solche Axiome gibt? Was ist Gott – und wenn ja: wie viele?
 

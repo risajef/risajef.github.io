@@ -13,7 +13,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Was haben wir gelernt? Und einige fundierte Vermutungen](/blog/science/what-have-we-learned-and-some-educated-guesses/)
+# Was haben wir gelernt? Und einige fundierte Vermutungen
 
 ## Gödels Unvollkommenheitstheorie
 Gödel ist einer der grossen Mathematiker des letzten Jahrhunderts. Unter anderem arbeitete er an den Grundlagen der

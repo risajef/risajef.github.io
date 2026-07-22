@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Willenskraft ist eine begrenzte Ressource](/blog/thoughts/willpower-is-a-limited-resource/)
+# Willenskraft ist eine begrenzte Ressource
 
 Unsere Online-Welt wirkt, als würde sie von Menschen mit grosser Willenskraft dominiert. Sie starten Projekte und setzen sie um. Zumindest scheint es so – denn du siehst nur die Projekte, bei denen sie genug Willenskraft hatten, sie auch durchzuziehen. Das erzeugt den Eindruck, sie hätten „unendlich“ Willenskraft. Das ist ein Trugschluss.
 

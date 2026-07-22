@@ -13,7 +13,7 @@ tags:
 auto_translated: false
 ---
 
-# [Metaphysische Spekulationen](/blog/thoughts/speculations/)
+# Metaphysische Spekulationen
 
 Das ist eine Ansammlung von Spekulationen, die ich nicht aus meinem Kopf bekomme.
 Sie sind zu interessant, um sie zu ignorieren, aber zu unausgereift, um an sie zu glauben.

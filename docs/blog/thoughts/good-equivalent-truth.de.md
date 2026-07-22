@@ -11,7 +11,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Gut ⟺ Wahrheit](/blog/thoughts/good-equivalent-truth/)
+# Gut ⟺ Wahrheit
 
 Der menschliche Geist ist ein faszinierender Gegenstand. Er beschäftigt die Menschheit, seit wir schreiben können – und vermutlich schon viel länger. Immer wieder heisst es, Menschen seien besonders intelligent (oder moralisch oder kreativ) und deshalb grundsätzlich anders als Tiere. Die gleiche Rhetorik wird jetzt auf künstliche Intelligenz angewendet: Menschen seien wirklich intelligent, Maschinen würden nur „imitieren“. Was auch immer das bedeuten soll. Ich bin mir sicher, dass solche Behauptungen über künstliche Intelligenz genauso schlecht altern werden wie jene, die uns einst von Tieren abgrenzen wollten.
 

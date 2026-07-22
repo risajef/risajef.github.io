@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Von Heuchlern lernen](/blog/thoughts/learn-from-hypocrites/)
+# Von Heuchlern lernen
 
 Die Heuchler dieser Welt füllen unsere Bildschirme, ermahnen uns im Radio, erlassen Gesetze und halten uns ungerechte Vorträge. Oder so wirkt es. Und doch: Wer in der Aussage eines Heuchlers Wahrheit findet, ist ein echter Goldgräber. Wenn es in deinem Leben einen Ort gibt, an dem Gold zu finden ist, dann in den Lügen und Heucheleien deiner Mitmenschen. Sie erklären, warum sie mehr verdienen, obwohl sie nichts tun. Sie schreiben der Gesellschaft vor, wie sie sich zu verhalten hat, und glauben gleichzeitig, für sich selbst Ausnahmen machen zu dürfen.
 

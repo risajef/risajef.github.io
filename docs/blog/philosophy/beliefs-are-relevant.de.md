@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Glaube sind relevant](/blog/philosophy/beliefs-are-relevant/)
+# Glaube ist relevant
 
 Glaube und Wissenschaft stehen im Widerspruch. Zumindest ist das eine verbreitete Meinung. Man scheint sich für eine Seite entscheiden zu müssen. Die Wissenschaft behauptet, es gebe keinen freien Willen, keinen Gott, keine Menschenrechte, keine Seele oder was auch immer. Ob sie das wirklich behauptet, sollte anderswo diskutiert werden. Nehmen wir aber an, sie täte es. Was wäre die Folge?
 

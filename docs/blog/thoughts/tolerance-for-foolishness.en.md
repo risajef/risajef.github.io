@@ -9,7 +9,7 @@ tags:
 auto_translated: false
 ---
 
-# [Tolerance for Foolishness](/blog/thoughts/tolerance-for-foolishness/)
+# Tolerance for Foolishness
 
 > The quality of a society is shown by how much foolishness it can tolerate.
 

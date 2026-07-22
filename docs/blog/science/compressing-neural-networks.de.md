@@ -11,7 +11,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Neuronale Netzwerke komprimieren](/blog/science/compressing-neural-networks/)
+# Neuronale Netzwerke komprimieren
 
 Als ich mich um eine PhD-Position beworben habe, wollte ich dem Professor einen Grund geben, mich anzuheuern – also habe ich eine meiner Ideen umgesetzt. Ich vermutete, dass die Gewichte neuronaler Netzwerke zu dicht sind. Es gibt viel Redundanz. Die konventionelle Methode zur Reduktion der Komplexität besteht darin, einen Engpass in die Architektur des neuronalen Netzwerks einzuführen. Das ist jedoch eine ressourcenintensive Lösung. Anstatt die Anzahl der Gewichte zu reduzieren, erhöhen wir sie. Eine weitere Möglichkeit, die Komplexität eines Modells zu reduzieren, besteht darin, die Präzision der Gewichte zu senken, z.B. von 32-Bit auf 8-Bit. Das ist ein legitimer Ansatz, aber wenig inspirierend. Und es ist schwer zu glauben, dass das der einzige und richtige Weg für alle Situationen ist.
 

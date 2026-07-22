@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import json
 import re
 import shutil
@@ -28,6 +29,15 @@ MARKDOWN_LINK_PATTERN = re.compile(r"^\[(?P<label>.+)\]\((?P<url>[^)]+)\)$")
 MERMAID_IMAGE_PATTERN = re.compile(
     r"(?P<prefix>!\[[^\]]*\]\()(?:(?:\.\./)*)?(?P<path>assets/images/[^)\s]*_mermaid_[^)\s]*\.svg)"
 )
+IFRAME_TAG_PATTERN = re.compile(r"<iframe\b[^>]*>", re.IGNORECASE | re.DOTALL)
+IFRAME_SRC_PATTERN = re.compile(r'src\s*=\s*"([^"]+)"')
+IFRAME_TITLE_PATTERN = re.compile(r'title\s*=\s*"([^"]+)"')
+IFRAME_FALLBACK_TEMPLATES = {
+    "de": 'Falls die eingebettete Anwendung nicht lädt, öffne <a href="{src}">{title} direkt</a>.',
+    "en": 'If the embedded app does not load, open the <a href="{src}">{title} directly</a>.',
+}
+HTML_COMMENT_PATTERN = re.compile(r"<!--.*?-->", re.DOTALL)
+FRONT_MATTER_FIELD_PATTERN = "^{field}:\\s*(.+)$"
 
 
 @dataclass
@@ -35,6 +45,10 @@ class SnippetEntry:
     rel_path: str
     start_line: int
     timestamp: int
+    auto_translated: bool = False
+    source_lang: Optional[str] = None
+    heading_text: Optional[str] = None
+    url: Optional[str] = None
 
 
 def on_config(config, **_):
@@ -60,6 +74,22 @@ def on_config(config, **_):
 
     _install_mermaid_cache(config)
     return config
+
+
+def on_env(env, config, files):
+    """Register template helpers used by the custom theme."""
+    env.filters["reading_time_at_least_one_minute"] = _reading_time_at_least_one_minute
+    return env
+
+
+def _reading_time_at_least_one_minute(rendered_reading_time) -> bool:
+    """Check the plugin's rendered duration text for a whole minute or more.
+
+    ``mkdocs-piper-tts`` formats durations as ``{seconds}s``, ``{minutes}m{seconds}s``,
+    or ``{hours}h{minutes}m``. Matching digits immediately followed by ``m`` avoids
+    false positives from label text (e.g. English "Approximate" contains an "m").
+    """
+    return bool(re.search(r"\d+m", str(rendered_reading_time)))
 
 
 def on_page_content(html, *, page, config, files):
@@ -166,11 +196,16 @@ def _install_mermaid_cache(config) -> None:
 
 def on_page_markdown(markdown, *, page, config, files):
     """Replace placeholder blocks with auto-generated Markdown."""
+    meta = getattr(page, "meta", None)
+    if meta is not None:
+        meta["suppress_translation_banner"] = meta.get("page_type") == "iframe" or _has_no_own_content(markdown)
+
     markdown = MERMAID_IMAGE_PATTERN.sub(
         lambda match: f"{match.group('prefix')}/{match.group('path')}", markdown
     )
     markdown = _ensure_blog_self_reference(markdown, page)
     markdown = _ensure_tools_index(markdown, page, config)
+    markdown = _ensure_iframe_fallback_note(markdown, page)
 
     meta = getattr(page, "meta", {}) or {}
     auto_cfg = meta.get("auto_snippets")
@@ -188,15 +223,15 @@ def on_page_markdown(markdown, *, page, config, files):
 
     entries: List[SnippetEntry] = []
     if source_files:
-        entries.extend(_collect_source_entries(source_files, lang, page))
+        entries.extend(_collect_source_entries(source_files, lang, page, files))
     if directory:
-        entries.extend(_collect_snippet_entries(directory, lang))
+        entries.extend(_collect_snippet_entries(directory, lang, files))
 
     if not entries:
         log.warning("auto_snippets found no content when rendering %s", page.file.src_path)
         return markdown
 
-    block = _render_entries(entries)
+    block = _render_entries(entries, lang, config)
     marker = placeholder or PLACEHOLDER
     if marker in markdown:
         return markdown.replace(marker, block, 1)
@@ -227,6 +262,46 @@ def _ensure_tools_index(markdown: str, page, config) -> str:
     if placeholder in markdown:
         return markdown.replace(placeholder, block, 1)
     return f"{markdown.rstrip()}\n\n{block}\n"
+
+
+def _ensure_iframe_fallback_note(markdown: str, page) -> str:
+    """Compute a compact fallback link for embedded-app iframes.
+
+    The note is stored on ``page.meta`` rather than appended to the Markdown so
+    the theme can place it at the bottom of the page, below the iframe and any
+    reading-time badge, instead of immediately after the iframe tag.
+    """
+    meta = getattr(page, "meta", None)
+    if meta is None or meta.get("page_type") != "iframe":
+        return markdown
+
+    iframe_match = IFRAME_TAG_PATTERN.search(markdown)
+    if not iframe_match:
+        return markdown
+
+    tag = iframe_match.group(0)
+    src_match = IFRAME_SRC_PATTERN.search(tag)
+    title_match = IFRAME_TITLE_PATTERN.search(tag)
+    if not src_match or not title_match:
+        log.warning("auto iframe fallback note requires an iframe src and title on %s", page.file.src_path)
+        return markdown
+
+    lang = str(meta.get("lang") or getattr(page.file, "locale", None) or "en").lower().split("-", maxsplit=1)[0]
+    template = IFRAME_FALLBACK_TEMPLATES.get(lang, IFRAME_FALLBACK_TEMPLATES["en"])
+    title_text = html.escape(title_match.group(1))
+    src_value = html.escape(src_match.group(1), quote=True)
+    meta["iframe_fallback_note"] = template.format(title=title_text, src=src_value)
+    return markdown
+
+
+def _has_no_own_content(markdown: str) -> bool:
+    """Detect collection pages that only hold HTML comments and a placeholder.
+
+    Category pages (e.g. blog/philosophy.de.md) exist solely to assemble other
+    articles via ``--8<--`` snippets; the "auto-translated" banner should not
+    apply to them since they have no genuine prose of their own to mistranslate.
+    """
+    return not HTML_COMMENT_PATTERN.sub("", markdown).strip()
 
 
 def _collect_tool_entries(lang: str, config) -> List[tuple[str, str]]:
@@ -303,6 +378,10 @@ def _is_blog_article_page(page) -> bool:
 
 
 def _blog_article_url(page) -> str:
+    abs_url = getattr(page, "abs_url", None)
+    if abs_url:
+        return abs_url
+
     src = Path(page.file.src_path)
     lang = (getattr(page, "meta", None) or {}).get("lang") or getattr(page.file, "locale", None)
     stem = src.stem
@@ -311,6 +390,35 @@ def _blog_article_url(page) -> str:
         if stem.endswith(suffix):
             stem = stem[: -len(suffix)]
     return f"/{src.parent.as_posix()}/{stem}/"
+
+
+def _resolve_entry_url(files, rel_path: str) -> Optional[str]:
+    """Look up a collected article's own locale-correct URL via MkDocs' Files collection.
+
+    Headings stored on disk (e.g. ``# [Title](/blog/philosophy/title/)``) are not
+    locale-prefixed, so relying on them verbatim sends German readers to the
+    English URL. ``files`` already reflects each file's final, locale-aware
+    destination, so it is the source of truth instead.
+    """
+    if files is None:
+        return None
+    entry_file = files.get_file_from_path(rel_path)
+    if entry_file is None:
+        return None
+    return "/" + entry_file.url.lstrip("/")
+
+
+def _read_heading_text(path: Path, line_number: int) -> Optional[str]:
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return None
+    if line_number < 1 or line_number > len(lines):
+        return None
+    match = BLOG_ARTICLE_HEADING_PATTERN.match(lines[line_number - 1])
+    if not match:
+        return None
+    return _strip_markdown_link(match.group(2).strip())
 
 
 def _strip_markdown_link(text: str) -> str:
@@ -387,7 +495,7 @@ def _infer_directory_from_page(page) -> Optional[str]:
     return None
 
 
-def _collect_snippet_entries(directory: str, lang: str) -> List[SnippetEntry]:
+def _collect_snippet_entries(directory: str, lang: str, files) -> List[SnippetEntry]:
     dir_path = Path(directory)
     if not dir_path.is_absolute():
         dir_path = DOCS_DIR / dir_path
@@ -403,11 +511,17 @@ def _collect_snippet_entries(directory: str, lang: str) -> List[SnippetEntry]:
         if file_path.is_dir():
             continue
         rel_path = file_path.relative_to(DOCS_DIR).as_posix()
+        auto_translated, source_lang = _entry_translation_info(file_path)
+        heading_line = _first_content_line(file_path)
         entries.append(
             SnippetEntry(
                 rel_path=rel_path,
-                start_line=_first_content_line(file_path),
+                start_line=heading_line,
                 timestamp=_last_modified_timestamp(file_path),
+                auto_translated=auto_translated,
+                source_lang=source_lang,
+                heading_text=_read_heading_text(file_path, heading_line),
+                url=_resolve_entry_url(files, rel_path),
             )
         )
 
@@ -415,7 +529,7 @@ def _collect_snippet_entries(directory: str, lang: str) -> List[SnippetEntry]:
     return entries
 
 
-def _collect_source_entries(source_files: List[str], lang: str, page) -> List[SnippetEntry]:
+def _collect_source_entries(source_files: List[str], lang: str, page, files) -> List[SnippetEntry]:
     entries: List[SnippetEntry] = []
 
     for source in source_files:
@@ -445,11 +559,17 @@ def _collect_source_entries(source_files: List[str], lang: str, page) -> List[Sn
             )
             continue
 
+        auto_translated, source_lang = _entry_translation_info(file_path)
+        heading_line = _first_content_line(file_path)
         entries.append(
             SnippetEntry(
                 rel_path=rel_path,
-                start_line=_first_content_line(file_path),
+                start_line=heading_line,
                 timestamp=0,
+                auto_translated=auto_translated,
+                source_lang=source_lang,
+                heading_text=_read_heading_text(file_path, heading_line),
+                url=_resolve_entry_url(files, rel_path),
             )
         )
 
@@ -506,6 +626,33 @@ def _first_content_line(path: Path) -> int:
     return idx + 1  # Convert zero-indexed counter to 1-indexed line number
 
 
+def _entry_translation_info(path: Path) -> tuple[bool, Optional[str]]:
+    """Read a collected article's own ``auto_translated``/``source_lang`` front matter."""
+    auto_translated_raw = _read_front_matter_field(path, "auto_translated")
+    auto_translated = (auto_translated_raw or "").strip().lower() == "true"
+    source_lang = _read_front_matter_field(path, "source_lang")
+    return auto_translated, source_lang
+
+
+def _read_front_matter_field(path: Path, field: str) -> Optional[str]:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return None
+
+    if not text.startswith("---"):
+        return None
+    end = text.find("\n---", 3)
+    if end == -1:
+        return None
+
+    front_matter = text[:end]
+    match = re.search(FRONT_MATTER_FIELD_PATTERN.format(field=re.escape(field)), front_matter, re.MULTILINE)
+    if not match:
+        return None
+    return match.group(1).strip().strip("'\"")
+
+
 def _last_modified_timestamp(path: Path) -> int:
     if GIT_AVAILABLE:
         rel_path = path
@@ -533,16 +680,46 @@ def _last_modified_timestamp(path: Path) -> int:
         return 0
 
 
-def _render_entries(entries: List[SnippetEntry]) -> str:
+def _render_entries(entries: List[SnippetEntry], lang: str, config) -> str:
+    """Render each collected article, inserting a translation notice right after its own heading."""
     lines = [
         "<!-- AUTO-GENERATED: snippet list. Update individual posts instead. -->",
         "",
     ]
     for entry in entries:
-        if entry.start_line > 1:
-            directive = f'--8<-- "{entry.rel_path}:{entry.start_line}:"'
+        if entry.start_line > 1 and entry.heading_text and entry.url:
+            heading_line = entry.start_line
+            lines.append(f"# [{entry.heading_text}]({entry.url})")
+            lines.append("")
+            if entry.auto_translated:
+                lines.append(_collected_translation_notice(config, lang, entry.source_lang))
+                lines.append("")
+            lines.append(f'--8<-- "{entry.rel_path}:{heading_line + 1}:"')
+        elif entry.start_line > 1:
+            lines.append(f'--8<-- "{entry.rel_path}:{entry.start_line}:"')
         else:
-            directive = f'--8<-- "{entry.rel_path}"'
-        lines.append(directive)
+            lines.append(f'--8<-- "{entry.rel_path}"')
         lines.append("")
     return "\n".join(lines).strip() + "\n"
+
+
+def _collected_translation_notice(config, lang: str, source_lang: Optional[str]) -> str:
+    """Render a per-article disclaimer matching the whole-page auto-translation banner."""
+    translations = (config.get("extra") or {}).get("translations", {}).get(lang, {})
+    title = translations.get("auto_translation_title", "Automated translation.")
+    if source_lang:
+        template = translations.get(
+            "collected_translation_notice",
+            "This article was machine translated from {lang} and may contain mistakes.",
+        )
+        sentence = template.replace("{lang}", source_lang.upper())
+    else:
+        sentence = translations.get(
+            "collected_translation_notice_generic",
+            "This article was machine translated and may contain mistakes.",
+        )
+    return (
+        '<div class="collected-translation-notice" role="status">'
+        f"<strong>{html.escape(title)}</strong> {html.escape(sentence)}"
+        "</div>"
+    )

@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Wahrhaftig verstehen](/blog/thoughts/truly-understand/)
+# Wahrhaftig verstehen
 
 Ich bin eine Person mit verschiedenen Schwächen. Eine der Schwächen, die mich am meisten stört, ist meine langsame Lesegeschwindigkeit. Ich lese laut genauso schnell wie still. Ich habe verschiedene Speed-Reading-Techniken ausprobiert, aber mein Leseverständnis sinkt dann immer. Aber zumindest lese ich gerne. Weil ich ein langsamer Leser bin, sind ineffiziente Bücher meine Nemesis. Am schlimmsten ist es, wenn Bücher tatsächlich etwas zu sagen haben, aber ihre Länge sie für mich undurchdringlich macht. Ich habe mich durch mehrere lange Bücher gekämpft.
 

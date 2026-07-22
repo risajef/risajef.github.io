@@ -11,7 +11,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [PyTorch ist langsam und schnell unter Windows](/blog/science/pytorch-is-slow-and-fast-on-windows/)
+# PyTorch ist langsam und schnell unter Windows
 
 Für ein Projekt bei der Arbeit musste ich ein neuronales Netzwerk trainieren. Ich habe einen Windows-Laptop mit einer guten GPU. Wenn ich unter Windows entwickle, ist mein erster Ansatz, im [WSL](https://learn.microsoft.com/de-de/windows/wsl/) (Windows Subsystem für Linux) zu arbeiten. Und es funktionierte auch. Ich bemerkte jedoch, dass meine GPU-Nutzung nicht optimal war. Deshalb habe ich es auch unter nativem Windows ausgeführt.
 

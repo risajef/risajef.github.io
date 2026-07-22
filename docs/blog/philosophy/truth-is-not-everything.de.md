@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Wahrheit ist nicht alles](/blog/philosophy/truth-is-not-everything/)
+# Wahrheit ist nicht alles
 
 Ich reflektiere ständig über mich selbst, um zu sehen, ob Unsinn in meine Gedanken geraten ist. Ich versuche, streng zu sein und mich den Axiomen der Logik zu verpflichten. Eine Aussage kann nicht wahr und zugleich nicht wahr sein. Ist sie es doch, ist die Aussage nicht präzise. Manchmal treten allerdings Widersprüche auf. Zum Beispiel glaube ich an einen allguten und allmäch­tigen Gott. Das widerspricht der Existenz von Leiden in dieser Welt. Ich bin mir dieses Widerspruchs bewusst und weiss, dass entweder die Allgüte, die Allmacht oder die Realität des Leidens in der Welt falsch sein muss. Ich bin nur noch nicht bereit zu entscheiden, welche Annahme falsch ist – obwohl ich dazu neige, die Allmacht aufzugeben.
 

@@ -18,5 +18,3 @@ auto_translated: false
   allow="clipboard-read; clipboard-write"
   style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
 ></iframe>
-
-Falls die eingebettete Anwendung nicht lädt, öffne [LinkedIn WYSIWYG direkt](/assets/apps/linkedin-wysiwyg/).

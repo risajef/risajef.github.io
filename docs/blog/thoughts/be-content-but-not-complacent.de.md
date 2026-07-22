@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Sei zufrieden, aber nicht selbstzufrieden](/blog/thoughts/be-content-but-not-complacent/)
+# Sei zufrieden, aber nicht selbstzufrieden
 
 Dieser Satz sitzt tief in mir, und ich trage ihn seit vielen Jahren mit mir. Er ist die Grundlage für vieles, was ich erreicht habe und worauf ich stolz bin. Es gibt Menschen, die sich von Wut antreiben lassen – sie nutzen sie als Quelle von Kreativität. Für mich sind Ruhe und Gleichgewicht zentral.
 

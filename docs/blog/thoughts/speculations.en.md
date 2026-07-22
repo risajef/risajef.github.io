@@ -14,7 +14,7 @@ auto_translated: true
 source_lang: de
 ---
 
-# [Metaphysical Speculations](/blog/thoughts/speculations/)
+# Metaphysical Speculations
 
 This is a collection of speculations I cannot get out of my head. They are too interesting to ignore, but too unformed to believe. If you read them, think about them. I will not lay out all the consequences. I will just share a few thoughts.
 

@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Produzieren statt konsumieren](/blog/thoughts/produce-instead-of-consume/)
+# Produzieren statt konsumieren
 
 Wenn mich eine Botschaft am meisten herausgefordert hat – und es immer noch tut –, dann ist es dieser Aufruf: „Tu etwas!“ Du beschwerst dich, dass du nicht reich bist, dass die Welt ungerecht ist. Du schaust ein Video nach dem anderen darüber, wie ungerecht alles ist, oder liest Bücher, die dir „helfen“, deinen Weg zu finden. Aber das Einzige, was die Welt verändert, sind Handlungen.
 

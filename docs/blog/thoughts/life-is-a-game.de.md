@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Das Leben ist ein Spiel](/blog/thoughts/life-is-a-game/)
+# Das Leben ist ein Spiel
 
 Diese Ansicht vertreten oft zynische Menschen, um ihr unmenschliches Verhalten zu rechtfertigen. Und doch: Auch wenn ihre Motivation fragwürdig ist, steckt in dem Satz ein Körnchen Wahrheit. Das Leben hat seine Regeln. Seine Konsequenzen. Es ist ein Spiel, das weiterläuft. Wer die Regeln erkennt und sich nicht von Ungerechtigkeit lähmen lassen will, ist im Vorteil. Das Leben ist ein brutales Spiel – und man muss an Vergebung glauben, weil das Leben nicht leicht vergibt.
 

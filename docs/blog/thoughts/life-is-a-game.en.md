@@ -9,7 +9,7 @@ tags:
 auto_translated: false
 ---
 
-# [Life is a Game](/blog/thoughts/life-is-a-game/)
+# Life is a Game
 
 This view is usually held by cynical people to justify their inhumane behavior. Yet, although their motivation is questionable, their statement has a kernel of truth. Life has its rules. Its consequences. It is a game that keeps going. Those who recognize the rules and do not want to be paralyzed by injustice do well. Life is a brutal game, and one must believe in forgiveness because life does not forgive easily.
 

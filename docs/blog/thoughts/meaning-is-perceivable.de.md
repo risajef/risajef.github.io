@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Bedeutung ist wahrnehmbar](/blog/thoughts/meaning-is-perceivable/)
+# Bedeutung ist wahrnehmbar
 
 Die vielleicht grösste Frage der Philosophie – zumindest die berühmteste – lautet: „Was ist der Sinn des Lebens?“ Und obwohl die moderne Philosophie versucht, diese Frage zu beantworten, und Religionen Antworten anbieten, die Aussenstehende entfremden können, bleibt es eine der wichtigsten Fragen überhaupt. Warum mache ich das alles? Was ist der Sinn?
 

@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Toleranz für Torheit](/blog/thoughts/tolerance-for-foolishness/)
+# Toleranz für Torheit
 
 > Die Qualität einer Gesellschaft zeigt sich, wie viel Dummheit sie tolerieren kann.
 

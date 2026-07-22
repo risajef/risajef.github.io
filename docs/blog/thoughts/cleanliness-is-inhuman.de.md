@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Sauberkeit ist unmenschlich](/blog/thoughts/cleanliness-is-inhuman/)
+# Sauberkeit ist unmenschlich
 
 Es gibt allgemeine Anzeichen dafür, dass bei einem Menschen etwas nicht stimmt. Aber es gibt eine Sache, die meiner Meinung nach kaum jemand beachtet: Wie sauber eine Wohnung ist, sagt viel über die Toleranz der Bewohner gegenüber Unvollkommenheit.
 

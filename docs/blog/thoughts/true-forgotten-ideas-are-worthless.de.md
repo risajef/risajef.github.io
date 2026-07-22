@@ -11,7 +11,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Wahre vergessene Ideen sind wertlos](/blog/thoughts/true-forgotten-ideas-are-worthless/)
+# Wahre vergessene Ideen sind wertlos
 
 Während Wissenschaft und Medien sich an der Wahrheit orientieren, verbreiten sich nebenan Verschwörungstheorien, die nicht einmal der Prüfung eines Zehnjährigen standhalten würden. Viele sehen darin den Zerfall der Medien, wenn sie die Wahrheit nicht mehr berichten, oder wenn Forschungsprojekte mit coolen Namen finanziert werden statt jene, die das Wissen der Menschheit wirklich voranbringen.
 

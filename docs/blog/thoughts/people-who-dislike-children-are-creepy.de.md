@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Menschen, die Kinder nicht mögen, sind unheimlich](/blog/thoughts/people-who-dislike-children-are-creepy/)
+# Menschen, die Kinder nicht mögen, sind unheimlich
 
 Das Internet ist ein Ort voller Nischen. Es fragmentiert die Gesellschaft. Eine davon: Katzenmenschen und Hundemenschen. Hundemenschen verstehen nicht, wie man ein Wesen lieben kann, das Zuneigung nicht „zurückgibt“.
 

@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Metaphysik ist Psychologie](/blog/philosophy/metaphysics-is-psychology/)
+# Metaphysik ist Psychologie
 
 Erstens: Was ist Metaphysik? Sie hat nichts mit Physik im modernen Sinn zu tun. Metaphysik steht ausserhalb der Physik. Naturwissenschaftler machen sie oft lächerlich, weil sie von einer Welt spricht, die diese nicht kennen. Ich versuche hier, genau diese Sicht zu brechen.
 

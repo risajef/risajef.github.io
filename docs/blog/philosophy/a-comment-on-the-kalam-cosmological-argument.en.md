@@ -9,7 +9,7 @@ tags:
 auto_translated: false
 ---
 
-# [A Comment on the Kalam Cosmological Argument](/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/)
+# A Comment on the Kalam Cosmological Argument
 
 Let's look at some philosophical arguments for the existence of God. There are several, but today we will consider the "Kalam Cosmological Argument." First, we will examine the argument. Then I will critique it. And finally, I will highlight some insights we have gained.
 

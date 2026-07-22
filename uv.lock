@@ -489,16 +489,16 @@ wheels = [
 
 [[package]]
 name = "mkdocs-piper-tts"
-version = "0.2.3"
+version = "0.2.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markupsafe" },
     { name = "mkdocs" },
     { name = "piper-tts" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/af/83/30c33f891153f8122d04d118f78e310a9341b05d0f8fb6ae7a3515be6a46/mkdocs_piper_tts-0.2.3.tar.gz", hash = "sha256:4475060078dd6c452160c82334e863de9bcc2bcfbb447c3acca40a6c58e2539e", size = 21429, upload-time = "2026-07-16T10:16:33.248Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0c/9e/c3051cba8c576e09a7279526ffcb50a7a85bee1a6a5db4a4617b94fe4113/mkdocs_piper_tts-0.2.4.tar.gz", hash = "sha256:b0d974e7a729e1a45c36b6364176edb4d3e190dbcf0e4a68959cc40c8006b3a1", size = 26319, upload-time = "2026-07-21T13:06:48.34Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/da/d5/2bd5bb1afb657b684a4ade93dcade38c735f5ec59742b80323aa83f628a9/mkdocs_piper_tts-0.2.3-py3-none-any.whl", hash = "sha256:1869374be0b71b86d184d4a1d561e6b3dc4f194164f2ec606616041b891484b3", size = 14291, upload-time = "2026-07-16T10:16:32.128Z" },
+    { url = "https://files.pythonhosted.org/packages/46/b9/8ea90151cb81cd775c5826331c4c0ef8fdaae5f4e3790230c00776f2e228/mkdocs_piper_tts-0.2.4-py3-none-any.whl", hash = "sha256:6a2e12246619ea6e1656e155c4631afc9772a3805ffae094d1ae488e0028b910", size = 17798, upload-time = "2026-07-21T13:06:47.14Z" },
 ]
 
 [package.optional-dependencies]
@@ -1045,7 +1045,7 @@ requires-dist = [
     { name = "mkdocs-bibtex", specifier = "==4.4.0" },
     { name = "mkdocs-exclude", specifier = "==1.0.2" },
     { name = "mkdocs-mermaid-to-svg", specifier = "==1.0.3" },
-    { name = "mkdocs-piper-tts", extras = ["cuda"], specifier = "==0.2.3" },
+    { name = "mkdocs-piper-tts", extras = ["cuda"], specifier = "==0.2.4" },
     { name = "mkdocs-rss-plugin", specifier = "==1.17.7" },
     { name = "mkdocs-static-i18n", specifier = "==1.3.0" },
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.11,<2.0" },

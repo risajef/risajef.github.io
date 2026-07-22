@@ -9,7 +9,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Balance zwischen Schaffen und Konsumieren](/blog/thoughts/balance-between-creation-and-consumption/)
+# Balance zwischen Schaffen und Konsumieren
 
 Wenn ich mit einem Freund eine intensive Diskussion habe, ist das Einzige, was ich ihm am Ende oft sage: „Tu etwas.“ Wir tauschen unsere Obsessionen mit bestimmten Content-Creators aus, empfehlen Bücher und Filme, diskutieren, was in der Welt richtig oder falsch ist.
 

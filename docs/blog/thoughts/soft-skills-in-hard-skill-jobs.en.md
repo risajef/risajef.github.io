@@ -9,7 +9,7 @@ tags:
 auto_translated: false
 ---
 
-# [Soft Skills in Hard-Skill Jobs](/blog/thoughts/soft-skills-in-hard-skill-jobs/)
+# Soft Skills in Hard-Skill Jobs
 
 Since I've been with my wife, I've gained insight into a world previously unknown to me. Before, I was preoccupied with skills and knowledge. But if I want to maintain a successful relationship, I need more skills. So-called soft skills. This is the reading between the lines of life.
 

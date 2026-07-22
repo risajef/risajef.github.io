@@ -9,7 +9,7 @@ tags:
 auto_translated: false
 ---
 
-# [Cleanliness is Inhuman](/blog/thoughts/cleanliness-is-inhuman/)
+# Cleanliness is Inhuman
 
 There are general signs that something is wrong when you look at a person. But there is one thing people, I believe, are not aware of. How clean an apartment is says a lot about the residents' tolerance for imperfection.
 

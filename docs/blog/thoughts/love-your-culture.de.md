@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Liebe deine Kultur](/blog/thoughts/love-your-culture/)
+# Liebe deine Kultur
 
 Unser moderner Geist ist von Hybris geplagt. Er glaubt, viel zu wissen – und die Folgen politischer Massnahmen beurteilen zu können. Doch diese Beurteilung ist meist eher Teeblätterlesen als Wissenschaft. Denn wir können unsere eigene Ignoranz kaum abschätzen.
 

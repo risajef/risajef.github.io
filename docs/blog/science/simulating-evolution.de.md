@@ -11,7 +11,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Evolution simulieren](/blog/science/simulating-evolution/)
+# Evolution simulieren
 
 Viele Menschen behaupten, dass Evolution unmöglich ist, weil nichts aus Zufall entstehen kann. Aber ist Zufall der einzige Faktor in der Evolution? Was, wenn andere Kräfte im Spiel sind, die die Vielfalt und Komplexität des Lebens lenken? Um diese Frage zu erforschen, habe ich einen Algorithmus entwickelt, der Evolution simuliert und überraschende Ergebnisse zeigt.
 

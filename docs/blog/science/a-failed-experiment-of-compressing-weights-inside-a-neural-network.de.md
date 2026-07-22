@@ -11,7 +11,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Ein gescheitertes Experiment: Gewichte innerhalb eines neuronalen Netzwerks komprimieren](/blog/science/a-failed-experiment-of-compressing-weights-inside-a-neural-network/)
+# Ein gescheitertes Experiment: Gewichte innerhalb eines neuronalen Netzwerks komprimieren
 
 In neuronalen Netzwerken scheint es viele Gewichte zu geben, um auszudrücken, was wir wollen. Also dachte ich daran, die grundlegendste Operation – nämlich die Matrixmultiplikation – in einer komprimierten Version zu implementieren. Statt einfach zwei Matrizen zu multiplizieren, komprimieren wir die Gewichtsmatrix und multiplizieren diese. Ich benutzte Wavelet-Zerlegung mit einem Schwellenwert. Mein Ansatz war erfolgreich darin, die Gewichtsmatrix während des Trainings zu 75% auf Null zu setzen.
 

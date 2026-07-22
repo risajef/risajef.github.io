@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [Ein Kommentar zum kosmologischen Argument Kalam](/blog/philosophy/a-comment-on-the-kalam-cosmological-argument/)
+# Ein Kommentar zum kosmologischen Argument Kalam
 
 Schauen wir uns einige philosophische Argumente für die Existenz Gottes an. Es gibt mehrere, aber heute werden wir das „Kalam-Kosmologische-Argument" betrachten. Zuerst untersuchen wir das Argument. Dann werde ich es kritisieren. Und schliesslich werde ich einige Erkenntnisse hervorheben, die wir gewonnen haben.
 

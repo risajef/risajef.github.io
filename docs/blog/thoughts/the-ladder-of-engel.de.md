@@ -10,7 +10,7 @@ auto_translated: true
 source_lang: en
 ---
 
-# [The Ladder of Engel](/blog/thoughts/the-ladder-of-engel/)
+# The Ladder of Engel
 
 Dieses Konzept stammt definitiv nicht von mir, sondern aus dem modernen christlichen Denken. Ich habe diese Idee allerdings erweitert.
 

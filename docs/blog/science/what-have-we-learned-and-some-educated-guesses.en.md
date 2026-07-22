@@ -12,7 +12,7 @@ tags:
 auto_translated: false
 ---
 
-# [What Have We Learned? And Some Educated Guesses](/blog/science/what-have-we-learned-and-some-educated-guesses/)
+# What Have We Learned? And Some Educated Guesses
 
 ## Gödel’s incompleteness theorem
 Gödel is one of the great mathematicians of the last century. Among other things, he worked on the foundations of mathematics. He was interested in the question whether mathematics is complete. To understand this statement, I must briefly explain the concept of axiom.

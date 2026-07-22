@@ -8,7 +8,7 @@ tags:
 auto_translated: false
 ---
 
-# [Theodizee](/blog/philosophy/theodizee/)
+# Theodizee
 > Wie kann menschliches Leid mit der Güte Gottes zusammengedacht wird.
 
 ## Einleitung
