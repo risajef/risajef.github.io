@@ -18,6 +18,35 @@
       "problemMatcher": []
     },
     {
+      "label": "Build Site & TTS Audio",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "build"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PIPER_TTS_GENERATE_AUDIO": "true"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Publish Runtime Assets to GitHub",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "publish-runtime-assets"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "MkDocs: Deploy",
       "type": "shell",
       "command": "${workspaceFolder}/.venv/bin/mkdocs",
@@ -27,6 +56,11 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
+      "dependsOn": [
+        "Build Site & TTS Audio",
+        "Publish Runtime Assets to GitHub"
+      ],
+      "dependsOrder": "sequence",
       "problemMatcher": []
     }
   ]
