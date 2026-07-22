@@ -76,22 +76,6 @@ def on_config(config, **_):
     return config
 
 
-def on_env(env, config, files):
-    """Register template helpers used by the custom theme."""
-    env.filters["reading_time_at_least_one_minute"] = _reading_time_at_least_one_minute
-    return env
-
-
-def _reading_time_at_least_one_minute(rendered_reading_time) -> bool:
-    """Check the plugin's rendered duration text for a whole minute or more.
-
-    ``mkdocs-piper-tts`` formats durations as ``{seconds}s``, ``{minutes}m{seconds}s``,
-    or ``{hours}h{minutes}m``. Matching digits immediately followed by ``m`` avoids
-    false positives from label text (e.g. English "Approximate" contains an "m").
-    """
-    return bool(re.search(r"\d+m", str(rendered_reading_time)))
-
-
 def on_page_content(html, *, page, config, files):
     """Inline local SVG images emitted by the Mermaid renderer."""
     soup = BeautifulSoup(html, features="html.parser")

@@ -224,33 +224,10 @@
                 {% endif %}
             </div>
             {% endif %}
-            {% set reading_time_label = translation_strings.get('approx_reading_time_label', 'Approximate reading time:') %}
-            {% set piper_reading_time_html = piper_tts_reading_time(page, reading_time_label) %}
             {{ page.content }}
-            {% if piper_reading_time_html | reading_time_at_least_one_minute %}
-            {{ piper_reading_time_html }}
-            {% endif %}
             {% if page.meta and page.meta.iframe_fallback_note %}
             <p class="iframe-fallback-note">{{ page.meta.iframe_fallback_note | safe }}</p>
             {% endif %}
-            <script>
-                (function () {
-                    var content = document.currentScript && document.currentScript.closest('.content');
-                    if (!content) {
-                        return;
-                    }
-                    var readingTime = content.querySelector('.piper-tts-reading-time');
-                    if (!readingTime) {
-                        return;
-                    }
-                    var firstHeading = content.querySelector('h1');
-                    if (firstHeading) {
-                        firstHeading.insertAdjacentElement('afterend', readingTime);
-                    } else {
-                        content.insertBefore(readingTime, content.firstChild);
-                    }
-                })();
-            </script>
         </div>
     </div>
     <div id="mkdocs-search-popup">
@@ -265,12 +242,8 @@
         </svg>
         <span>GitHub</span>
     </a>
-    <div class="piper-tts-player" data-role="piper-tts-player"
-        data-label-prev="{{ translation_strings.get('piper_tts_prev_label', 'Previous track') }}"
-        data-label-next="{{ translation_strings.get('piper_tts_next_label', 'Next track') }}"
-        data-label-play="{{ translation_strings.get('piper_tts_play_label', 'Play') }}"
-        data-label-pause="{{ translation_strings.get('piper_tts_pause_label', 'Pause') }}">
-        {{ piper_tts_playlist(page) }}
+    <div class="piper-tts-player" data-role="piper-tts-player">
+        {{ piper_tts_playlist(page, mode="compact") }}
     </div>
     <a id="simple-analytics-badge"
         href="https://dashboard.simpleanalytics.com/retoweber.info?utm_source=retoweber.info&utm_content=badge&affiliate=woruk-rob"
@@ -283,131 +256,6 @@
         </picture>
     </a>
     </div>
-    <script>
-        (function () {
-            var player = document.querySelector('[data-role="piper-tts-player"]');
-            if (!player) {
-                return;
-            }
-            var wrapper = player.querySelector('.piper-tts-button-wrapper');
-            if (!wrapper) {
-                return;
-            }
-            var audio = wrapper.querySelector('audio');
-            var playlist = wrapper.querySelector('.piper-tts-button-playlist');
-            if (!audio || !playlist) {
-                return;
-            }
-            var trackButtons = Array.prototype.slice.call(playlist.querySelectorAll('button[data-track-index]'));
-            if (!trackButtons.length) {
-                return;
-            }
-
-            var labels = player.dataset;
-            var bar = document.createElement('div');
-            bar.className = 'piper-tts-compact-bar';
-
-            var prevButton = document.createElement('button');
-            prevButton.type = 'button';
-            prevButton.className = 'piper-tts-prev';
-            prevButton.setAttribute('aria-label', labels.labelPrev || 'Previous track');
-            prevButton.textContent = '⏮';
-
-            var playPauseButton = document.createElement('button');
-            playPauseButton.type = 'button';
-            playPauseButton.className = 'piper-tts-play-pause';
-            playPauseButton.setAttribute('aria-label', labels.labelPlay || 'Play');
-            playPauseButton.textContent = '▶';
-
-            var titleButton = document.createElement('button');
-            titleButton.type = 'button';
-            titleButton.className = 'piper-tts-now-playing';
-            titleButton.setAttribute('aria-expanded', 'false');
-
-            var nextButton = document.createElement('button');
-            nextButton.type = 'button';
-            nextButton.className = 'piper-tts-next';
-            nextButton.setAttribute('aria-label', labels.labelNext || 'Next track');
-            nextButton.textContent = '⏭';
-
-            bar.appendChild(prevButton);
-            bar.appendChild(playPauseButton);
-            bar.appendChild(titleButton);
-            bar.appendChild(nextButton);
-            wrapper.insertBefore(bar, wrapper.firstChild);
-
-            function activeIndex() {
-                for (var i = 0; i < trackButtons.length; i += 1) {
-                    if (trackButtons[i].getAttribute('aria-current') === 'true') {
-                        return i;
-                    }
-                }
-                return 0;
-            }
-
-            function syncState() {
-                var index = activeIndex();
-                titleButton.textContent = trackButtons[index].textContent;
-                prevButton.disabled = index <= 0;
-                nextButton.disabled = index >= trackButtons.length - 1;
-            }
-
-            function collapsePlaylist() {
-                playlist.classList.remove('piper-tts-playlist-expanded');
-                titleButton.setAttribute('aria-expanded', 'false');
-            }
-
-            prevButton.addEventListener('click', function () {
-                var index = activeIndex();
-                if (index > 0) {
-                    trackButtons[index - 1].click();
-                }
-            });
-
-            nextButton.addEventListener('click', function () {
-                var index = activeIndex();
-                if (index < trackButtons.length - 1) {
-                    trackButtons[index + 1].click();
-                }
-            });
-
-            titleButton.addEventListener('click', function () {
-                var expanded = playlist.classList.toggle('piper-tts-playlist-expanded');
-                titleButton.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-            });
-
-            trackButtons.forEach(function (button) {
-                button.addEventListener('click', collapsePlaylist);
-            });
-
-            playPauseButton.addEventListener('click', function () {
-                if (audio.paused) {
-                    var playPromise = audio.play();
-                    if (playPromise && typeof playPromise.catch === 'function') {
-                        playPromise.catch(function () {});
-                    }
-                } else {
-                    audio.pause();
-                }
-            });
-
-            audio.addEventListener('play', function () {
-                playPauseButton.textContent = '❚❚';
-                playPauseButton.setAttribute('aria-label', labels.labelPause || 'Pause');
-            });
-            audio.addEventListener('pause', function () {
-                playPauseButton.textContent = '▶';
-                playPauseButton.setAttribute('aria-label', labels.labelPlay || 'Play');
-            });
-
-            var observer = new MutationObserver(syncState);
-            trackButtons.forEach(function (button) {
-                observer.observe(button, { attributes: true, attributeFilter: ['aria-current'] });
-            });
-
-            syncState();
-        })();
-    </script>
 
     <script>
         function updateTocCollapse() {

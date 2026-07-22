@@ -74,13 +74,25 @@ plugins:
       model_dir: models/piper-tts
       use_cuda: true
       batch_size: 2
+      insert_reading_time_after_heading: true
+      reading_time_min_seconds: 60.0
       languages:
         de:
           model: de_DE-thorsten-medium.onnx
           label: Vorlesen
+          reading_time_label: 'Ungefähre Lesezeit:'
+          prev_label: 'Vorheriger Titel'
+          next_label: 'Nächster Titel'
+          play_label: 'Abspielen'
+          pause_label: 'Pause'
         en:
           model: en_US-amy-medium.onnx
           label: Listen
+          reading_time_label: 'Approximate reading time:'
+          prev_label: 'Previous track'
+          next_label: 'Next track'
+          play_label: 'Play'
+          pause_label: 'Pause'
   - mermaid-to-svg:
       mmdc_path: 'mmdc'
       cleanup_generated_images: false
@@ -156,11 +168,6 @@ extra:
       auto_translation_generic: 'This page was machine translated and may contain mistakes.'
       collected_translation_notice: 'This article was machine translated from {lang} and may contain mistakes.'
       collected_translation_notice_generic: 'This article was machine translated and may contain mistakes.'
-      approx_reading_time_label: 'Approximate reading time:'
-      piper_tts_prev_label: 'Previous track'
-      piper_tts_next_label: 'Next track'
-      piper_tts_play_label: 'Play'
-      piper_tts_pause_label: 'Pause'
       nav:
         CV: CV
         Home: Home
@@ -194,11 +201,6 @@ extra:
       auto_translation_generic: 'Diese Seite wurde maschinell übersetzt und kann Fehler enthalten.'
       collected_translation_notice: 'Dieser Artikel wurde maschinell aus {lang} übersetzt und kann Fehler enthalten.'
       collected_translation_notice_generic: 'Dieser Artikel wurde maschinell übersetzt und kann Fehler enthalten.'
-      approx_reading_time_label: 'Ungefähre Lesezeit:'
-      piper_tts_prev_label: 'Vorheriger Titel'
-      piper_tts_next_label: 'Nächster Titel'
-      piper_tts_play_label: 'Abspielen'
-      piper_tts_pause_label: 'Pause'
       nav:
         CV: CV
         Home: Startseite
