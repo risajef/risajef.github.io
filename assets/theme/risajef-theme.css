@@ -1,0 +1,121 @@
+/**
+ * Risajef Design System (risajef-theme.css)
+ * Strict light theme design tokens & styles matching retoweber.info
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Gidole';
+    src: url('/fonts/gidole.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    color-scheme: light;
+    
+    /* Primary Theme Color */
+    --primary: #8B0000;
+    --primary-hover: #A11212;
+    --primary-light: #FDFDFD;
+    --accent: #D4AF37;
+    
+    /* Neutrals & Surfaces */
+    --bg-main: #FFFFFF;
+    --bg-secondary: #F7F7F7;
+    --surface-card: #FFFFFF;
+    --border-color: #888888;
+    --divider: #888888;
+
+    /* Text Colors */
+    --text-main: #1A1A1A;
+    --text-secondary: #555555;
+    --text-muted: #888888;
+    --text-on-primary: #FFFFFF;
+
+    /* Status Colors */
+    --success: #2E8B57;
+    --warning: #E68A00;
+    --error: #B22222;
+    --info: #4A90E2;
+
+    /* Elevation & Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 5px 5px 1px rgba(0, 0, 0, 0.16);
+
+    /* Radii - Sharp / Minimal (2px) matching main site */
+    --radius-sm: 2px;
+    --radius-md: 2px;
+    --radius-lg: 2px;
+
+    /* Fonts matching retoweber.info */
+    --font-sans: 'Inter', Arial, Helvetica, sans-serif;
+    --font-heading: 'Gidole', 'Inter', Arial, Helvetica, sans-serif;
+    --font-mono: 'Fira Code', 'Courier New', monospace;
+}
+
+/* Optional Signature Palette Accents (Keeping sharp 2px radii & light mode) */
+[data-theme="burgundy"] { --primary: #8B0000; --primary-hover: #A11212; --accent: #D4AF37; }
+[data-theme="sapphire"] { --primary: #1E3A8A; --primary-hover: #2563EB; --accent: #38BDF8; }
+[data-theme="emerald"]  { --primary: #064E3B; --primary-hover: #059669; --accent: #34D399; }
+[data-theme="amber"]    { --primary: #78350F; --primary-hover: #D97706; --accent: #FBBF24; }
+[data-theme="amethyst"] { --primary: #4C1D95; --primary-hover: #7C3AED; --accent: #C084FC; }
+[data-theme="slate"]    { --primary: #1F2937; --primary-hover: #4B5563; --accent: #9CA3AF; }
+
+/* Global Reset & Base Styling */
+html, body {
+    background: var(--bg-main) !important;
+    color: var(--text-main) !important;
+    font-family: var(--font-sans) !important;
+    color-scheme: light !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, .rjs-title, .rjs-subtitle {
+    font-family: var(--font-heading) !important;
+    color: var(--primary);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border: 2px solid var(--bg-main);
+}
+
+/* Standard Form Inputs */
+input, select, textarea, button {
+    font-family: var(--font-sans);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 0.4rem 0.6rem;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 1px var(--primary);
+}
+
+button {
+    border-radius: var(--radius-sm);
+}

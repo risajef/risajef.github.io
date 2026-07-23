@@ -1,40 +1,38 @@
 :root {
-  --ink: #16211f;
-  --muted: #4c5a56;
-  --paper: #f8f5ef;
-  --card: rgba(255, 252, 246, 0.88);
-  --line: rgba(29, 38, 35, 0.16);
-  --accent: #d65a2c;
-  --accent-2: #1a7f6b;
-  --accent-3: #2f5a95;
-  --ok: #2d7b48;
-  --warn: #b35223;
-  --danger: #a6352a;
-  --shadow: 0 20px 42px rgba(16, 20, 18, 0.13);
+  --ink: #1A1A1A;
+  --muted: #555555;
+  --paper: #FFFFFF;
+  --card: #FFFFFF;
+  --line: #888888;
+  --accent: #8B0000;
+  --accent-2: #A11212;
+  --accent-3: #D4AF37;
+  --ok: #2E8B57;
+  --warn: #E68A00;
+  --danger: #B22222;
+  --shadow: 5px 5px 1px rgba(0, 0, 0, 0.16);
 }
 
 * {
   box-sizing: border-box;
+  border-radius: 2px !important;
 }
 
 body {
   margin: 0;
   color: var(--ink);
-  font-family: "Avenir Next", "Gill Sans", "Segoe UI", sans-serif;
-  background: radial-gradient(1200px 500px at 0% 0%, #f6bfa8 0%, transparent 60%),
-    radial-gradient(850px 450px at 100% 0%, #9adbc5 0%, transparent 56%),
-    linear-gradient(180deg, #f8f3e8 0%, #eef4ef 100%);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: #FFFFFF;
   min-height: 100vh;
 }
 
 .bg-layer {
-  position: fixed;
-  inset: 0;
-  background-image: linear-gradient(rgba(22, 33, 31, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(22, 33, 31, 0.03) 1px, transparent 1px);
-  background-size: 24px 24px;
-  pointer-events: none;
-  z-index: -1;
+  display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gidole', 'Inter', Arial, Helvetica, sans-serif !important;
+  color: #8B0000 !important;
 }
 
 .shell {

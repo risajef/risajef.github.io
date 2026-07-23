@@ -1,4 +1,4 @@
-import{A as e,C as t,D as n,E as r,O as i,S as a,T as o,_ as s,a as c,b as l,c as u,d,f,g as p,h as m,i as h,j as g,k as _,l as v,m as y,n as b,o as x,p as S,r as C,s as w,t as T,u as E,v as D,w as O,x as k,y as ee}from"./index-ilXthb23.js";function te(e,t){return!t||!t.length?`# Empty program
+import{A as e,C as t,D as n,E as r,O as i,S as a,T as o,_ as s,a as c,b as l,c as u,d,f,g as p,h as m,i as h,j as g,k as _,l as v,m as y,n as b,o as x,p as S,r as C,s as w,t as T,u as E,v as D,w as O,x as k,y as ee}from"./index-BGuz4C_S.js";function te(e,t){return!t||!t.length?`# Empty program
 # Drag blocks onto the canvas`:t.map(t=>fe(e,t,0)).join(`
 `)}function ne(e,t){let n=`    `.repeat(t);return(e||``).split(`
 `).map(e=>e&&`${n}${e}`).join(`

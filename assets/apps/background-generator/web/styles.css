@@ -1,11 +1,17 @@
 :root {
-    font-family: system-ui, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     line-height: 1.4;
 }
 
 body {
     margin: 1rem;
-    color: #111;
+    color: #1A1A1A;
+    background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, strong {
+    font-family: 'Gidole', 'Inter', Arial, sans-serif;
+    color: #8B0000;
 }
 
 main {
@@ -21,8 +27,10 @@ form {
 }
 
 fieldset {
-    border: 1px solid #bbb;
+    border: 1px solid #888888;
+    border-radius: 2px;
     padding: 0.75rem;
+    background: #FFFFFF;
 }
 
 label {
@@ -30,24 +38,52 @@ label {
     flex-direction: column;
     gap: 0.25rem;
     font-size: 0.95rem;
+    color: #1A1A1A;
 }
 
 input,
 select,
-button,
 textarea {
-    font: inherit;
-    padding: 0.35rem 0.5rem;
-    border: 1px solid #999;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #888888;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #8B0000;
+    box-shadow: 0 0 0 1px #8B0000;
 }
 
 button {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #8B0000;
+    border-radius: 2px;
+    background-color: #8B0000;
+    color: #FFFFFF;
     cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #A11212;
+    border-color: #A11212;
 }
 
 button:disabled {
     cursor: not-allowed;
-    opacity: 0.6;
+    opacity: 0.5;
+    background-color: #888888;
+    border-color: #888888;
 }
 
 .preview-panel {

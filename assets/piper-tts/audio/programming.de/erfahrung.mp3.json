@@ -1,11 +1,11 @@
 {
-  "duration_seconds": 232.202,
+  "duration_seconds": 230.095,
   "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
   "section_count": 2,
   "section_hash": "81289d4aade91ddb4f1a650682ca8d8784b39856f24c0873c1e6600518bc30f1",
   "section_index": 0,
   "section_title": "Erfahrung",
-  "source_hash": "914990e1825f49dd10de9165223c962249627c34114e5c91f895aa22dbc7accb",
+  "source_hash": "5918750191339c57823d0369ad83b6098513424af93c5c7f7b3504dccae442e1",
   "voice_config": "de_DE-thorsten-medium.onnx.json",
   "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
   "voice_language": "de",

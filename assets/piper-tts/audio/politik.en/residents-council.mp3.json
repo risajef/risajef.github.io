@@ -1,11 +1,11 @@
 {
-  "duration_seconds": 20.751,
+  "duration_seconds": 20.799,
   "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
   "section_count": 4,
   "section_hash": "1b8cff542b6bc146ac3c0a00a9794b4fc77d7ee58620e2742b8c0eee2fa334d4",
   "section_index": 0,
   "section_title": "Residents' Council",
-  "source_hash": "fcc7d0ab20019add94e1ba5af4633d1dc189c808ff4019fbef48a7f1ed31317a",
+  "source_hash": "734c1b9d90fb496d21ba85b9a3cbd68cc178f53bae140f62afe1a38c8e6f5968",
   "voice_config": "en_US-amy-medium.onnx.json",
   "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
   "voice_language": "en",

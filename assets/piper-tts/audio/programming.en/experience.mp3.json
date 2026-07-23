@@ -1,11 +1,11 @@
 {
-  "duration_seconds": 261.539,
+  "duration_seconds": 261.576,
   "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
   "section_count": 2,
   "section_hash": "370d57e8bafd84c20b92a1775905b0455763b71dbced1986c4d36f37d72f0f79",
   "section_index": 0,
   "section_title": "Experience",
-  "source_hash": "22fb6920d89543416b583b1d737714adfd3d3ed26532e56bcbb85afe7dc0e865",
+  "source_hash": "619b46a14cdff44d6bf8ae51eb02d3d76bf02c643aebb7b17ab748d1cc453e40",
   "voice_config": "en_US-amy-medium.onnx.json",
   "voice_config_hash": "95a23eb4d42909d38df73bb9ac7f45f597dbfcde2d1bf9526fdeaf5466977d77",
   "voice_language": "en",

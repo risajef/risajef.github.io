@@ -1,11 +1,11 @@
 {
-  "duration_seconds": 443.666,
+  "duration_seconds": 440.538,
   "plugin_hash": "eedcd25e50df179a8d7f7e9308dec11a1a3280e00e6b7185a1296c6dee48c963",
   "section_count": 4,
   "section_hash": "6c6571124c98b65906a6a8eea4ae7cdc66a7e3a2f305d456223f5b471d97a249",
   "section_index": 3,
   "section_title": "Abstimmungen und Wahlen im Einwohnerrat",
-  "source_hash": "3aa1459933144513c7be01f6a8247c50a0e08d8928423cd7c41feb341f966035",
+  "source_hash": "0f649c6aa7238a54ab1faf73cb6110bf323a096c54bd061d26c5909332be939c",
   "voice_config": "de_DE-thorsten-medium.onnx.json",
   "voice_config_hash": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
   "voice_language": "de",
