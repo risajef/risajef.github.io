@@ -1,8 +1,6 @@
 name: Deploy GitHub Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -52,23 +50,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          ok=false
-          for attempt in 1 2 3 4 5; do
-            if gh release download runtime-assets-v2 \
-              --repo "$GITHUB_REPOSITORY" \
-              --pattern 'runtime-assets-v2.tar.gz*' \
-              --dir "$RUNNER_TEMP" \
-              --clobber; then
-              ok=true
-              break
-            fi
-            echo "::warning::Download attempt $attempt/5 failed, retrying in 15s..."
-            sleep 15
-          done
-          if [ "$ok" != "true" ]; then
-            echo "::error::Failed to download runtime assets after 5 attempts"
-            exit 1
-          fi
+          gh release download runtime-assets-v2 \
+            --repo "$GITHUB_REPOSITORY" \
+            --pattern 'runtime-assets-v2.tar.gz*' \
+            --dir "$RUNNER_TEMP" \
+            --clobber
           (cd "$RUNNER_TEMP" && sha256sum --check runtime-assets-v2.tar.gz.sha256)
           npm run install-runtime-assets -- --archive "$RUNNER_TEMP/runtime-assets-v2.tar.gz"
 

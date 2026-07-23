@@ -8,13 +8,11 @@ This must run after the site has been built with audio generation enabled
 under ``docs/assets/piper-tts/audio`` is current before packaging.
 """
 
-from __future__ import annotations
-
 import hashlib
+import os
 import re
 import subprocess
 import sys
-import time
 from pathlib import Path
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
@@ -27,10 +25,17 @@ def main() -> None:
     archive_path = OUTPUT_DIR / ARCHIVE_NAME
     checksum_path = archive_path.with_suffix(archive_path.suffix + ".sha256")
 
+    build_site_and_audio()
     pack(archive_path)
     write_checksum(archive_path, checksum_path)
     upload(archive_path, checksum_path)
     print(f"Published {ARCHIVE_NAME} to the '{RELEASE_TAG}' release.")
+
+
+def build_site_and_audio() -> None:
+    env = dict(os.environ)
+    env["PIPER_TTS_GENERATE_AUDIO"] = "true"
+    subprocess.run(["npm", "run", "build"], cwd=PROJECT_DIR, env=env, check=True)
 
 
 def pack(archive_path: Path) -> None:
@@ -54,29 +59,21 @@ def write_checksum(archive_path: Path, checksum_path: Path) -> None:
 
 def upload(archive_path: Path, checksum_path: Path) -> None:
     repo = resolve_repo_slug()
-    for attempt in range(1, 6):
-        try:
-            subprocess.run(
-                [
-                    "gh",
-                    "release",
-                    "upload",
-                    RELEASE_TAG,
-                    str(archive_path),
-                    str(checksum_path),
-                    "--repo",
-                    repo,
-                    "--clobber",
-                ],
-                cwd=PROJECT_DIR,
-                check=True,
-            )
-            break
-        except subprocess.CalledProcessError:
-            if attempt == 5:
-                raise
-            print(f"Upload failed (attempt {attempt}/5), retrying in 5 seconds...")
-            time.sleep(5)
+    subprocess.run(
+        [
+            "gh",
+            "release",
+            "upload",
+            RELEASE_TAG,
+            str(archive_path),
+            str(checksum_path),
+            "--repo",
+            repo,
+            "--clobber",
+        ],
+        cwd=PROJECT_DIR,
+        check=True,
+    )
 
 
 def resolve_repo_slug() -> str:

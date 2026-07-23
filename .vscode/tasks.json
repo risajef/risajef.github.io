@@ -52,16 +52,14 @@
       "command": "bash",
       "args": [
         "-c",
-        "git push origin main 2>&1 || true; gh workflow run deploy-pages.yml"
+        "git add -A && (git diff --staged --quiet || git commit -m 'deploy: update site content') && git push origin main && gh workflow run deploy-pages.yml"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
       },
       "dependsOn": [
-        "Build Site & TTS Audio",
         "Publish Runtime Assets to GitHub"
       ],
-      "dependsOrder": "sequence",
       "problemMatcher": []
     }
   ]

@@ -16,6 +16,7 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 RUNTIME_PATHS = (
     Path("models/piper-tts"),
     Path("docs/assets/piper-tts/audio"),
+    Path("docs/assets/images"),
     Path("docs/z3"),
 )
 MANIFEST_NAME = "runtime-assets.json"
