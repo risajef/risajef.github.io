@@ -63,6 +63,14 @@ radar-beta
 
 I only cover proposals where I have a personal connection. That is mainly local (municipal) ballots and elections, but occasionally also cantonal or federal ones if I feel competent to comment.
 
+## September 27th 2026
+
+### Complete Renovation of the Beringen Public Swimming Pool (Gwaagge-Badi)
+
+On September 27, 2026, the citizens of Beringen vote on the construction credit for the complete renovation of our public open-air pool. The project proposes a biological bio-fast filter system instead of conventional chlorine treatment.
+
+As a member of the swimming pool commission and the local council (Einwohnerrat), I am actively involved in the non-partisan pro-committee "Ja zur Badi" (supported by SP, GLP, FDP, and EVP Beringen). I co-authored the campaign argumentarium for flyers and posters and built the official campaign site [badi-2026.retoweber.info](https://badi-2026.retoweber.info/). The project preserves our natural swimming pool, guarantees planning security, and is more cost-effective in acquisition and operation than returning to chlorine.
+
 ## 30. November 2025
 
 ### Construction credit for the new Werkhof building (Werkstrasse, Beringen)

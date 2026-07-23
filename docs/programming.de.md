@@ -76,6 +76,11 @@ Apr 2018 – Jun 2019
 
 # Projekte
 
+## Badi Beringen Kampagnenseite
+
+[**GitHub**](https://github.com/risajef/badi), [**Webseite**](https://badi-2026.retoweber.info/)  
+Informations- und Kampagnenseite des überparteilichen Pro-Komitees «Ja zur Badi» für die Volksabstimmung vom 27. September 2026 in Beringen. Die Website präsentiert Argumente, Fakten und Hintergründe zur Komplettsanierung des Freibads (Gwaagge-Badi im Chläggi) mit einer biologischen Wasseraufbereitung (Bioschnellfilter) statt Chlor. Erstellt als schnelle, barrierefreie und suchmaschinenoptimierte statische Webanwendung.
+
 ## Parallelismus
 
 [**GitHub**](https://github.com/risajef/parallelismus), [**Web Demo**](https://retoweber.info/tools/parallelismus/)  

@@ -60,6 +60,14 @@ radar-beta
 
 Ich behandle hier nur Geschäfte, zu denen ich einen Bezug habe. Das sind vor allem kommunale Abstimmungen und Wahlen, aber auch kantonale oder eidgenössischee, wenn ich mich als fachkompetent dazu sehe.
 
+## 27. September 2026
+
+### Komplettsanierung der Badi im Chläggi (Gwaagge-Badi Beringen)
+
+Am 27. September 2026 stimmt die Beringer Stimmbevölkerung über den Baukredit zur Komplettsanierung unseres Freibads ab. Geplant ist der Einsatz eines biologischen Bioschnellfilters anstelle einer herkömmlichen Chloraufbereitung.
+
+Als Mitglied der Schwimmbadkommission und des Einwohnerrats engagiere ich mich aktiv im überparteilichen Pro-Komitee «Ja zur Badi» (getragen von SP, Grünliberalen, FDP und EVP Beringen). Ich habe am politischen Argumentarium für die Flyer- und Plakatkampagne mitgewirkt, die offizielle Informations- und Kampagnenseite [badi-2026.retoweber.info](https://badi-2026.retoweber.info/) entwickelt und bereitgestellt sowie mich in der Presse zu Wort gemeldet. Das Projekt sichert den Erhalt unserer Naturbadi, bietet langfristige Planungssicherheit und ist in der Anschaffung wie im Betrieb günstiger als eine Re-Chlorierung.
+
 ## 30. November 2025
 
 ### Baukredit zum Neubau des Werkhofs Beringen an der Werkstrasse

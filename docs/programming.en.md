@@ -75,6 +75,11 @@ Apr 2018 – Jun 2019
 
 # Projects
 
+## Badi Beringen Campaign Site
+
+[**GitHub**](https://github.com/risajef/badi), [**Website**](https://badi-2026.retoweber.info/)  
+Informational and campaign website for the non-partisan pro-committee "Ja zur Badi" for the public vote on September 27, 2026 in Beringen (Kanton Schaffhausen). The site presents arguments, facts, and background information for the complete renovation of the local open-air pool (Gwaagge-Badi) using a biological water treatment system (bio-fast filter) instead of chlorine. Built as a fast, accessible, and SEO-optimized static web application.
+
 ## Parallelismus
 
 [**GitHub**](https://github.com/risajef/parallelismus), [**Web Demo**](https://retoweber.info/tools/parallelismus/)  
