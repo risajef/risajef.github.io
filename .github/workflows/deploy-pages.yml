@@ -52,10 +52,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release download runtime-assets-v2 \
-            --repo "$GITHUB_REPOSITORY" \
-            --pattern 'runtime-assets-v2.tar.gz*' \
-            --dir "$RUNNER_TEMP"
+          for i in {1..5}; do
+            gh release download runtime-assets-v2 \
+              --repo "$GITHUB_REPOSITORY" \
+              --pattern 'runtime-assets-v2.tar.gz*' \
+              --dir "$RUNNER_TEMP" \
+              --clobber && break || sleep 5
+          done
           (cd "$RUNNER_TEMP" && sha256sum --check runtime-assets-v2.tar.gz.sha256)
           npm run install-runtime-assets -- --archive "$RUNNER_TEMP/runtime-assets-v2.tar.gz"
 

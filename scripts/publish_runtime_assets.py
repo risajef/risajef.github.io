@@ -14,6 +14,7 @@ import hashlib
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
@@ -53,21 +54,29 @@ def write_checksum(archive_path: Path, checksum_path: Path) -> None:
 
 def upload(archive_path: Path, checksum_path: Path) -> None:
     repo = resolve_repo_slug()
-    subprocess.run(
-        [
-            "gh",
-            "release",
-            "upload",
-            RELEASE_TAG,
-            str(archive_path),
-            str(checksum_path),
-            "--repo",
-            repo,
-            "--clobber",
-        ],
-        cwd=PROJECT_DIR,
-        check=True,
-    )
+    for attempt in range(1, 6):
+        try:
+            subprocess.run(
+                [
+                    "gh",
+                    "release",
+                    "upload",
+                    RELEASE_TAG,
+                    str(archive_path),
+                    str(checksum_path),
+                    "--repo",
+                    repo,
+                    "--clobber",
+                ],
+                cwd=PROJECT_DIR,
+                check=True,
+            )
+            break
+        except subprocess.CalledProcessError:
+            if attempt == 5:
+                raise
+            print(f"Upload failed (attempt {attempt}/5), retrying in 5 seconds...")
+            time.sleep(5)
 
 
 def resolve_repo_slug() -> str:
