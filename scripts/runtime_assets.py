@@ -48,16 +48,18 @@ def pack_assets(output_path: Path) -> None:
         raise SystemExit("No runtime assets found to package")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    manifest = {
-        "version": 1,
-        "files": {
-            path.relative_to(PROJECT_DIR).as_posix(): sha256(path)
-            for path in files
-        },
-    }
+    file_hashes: dict[str, str] = {}
+
     with tarfile.open(output_path, "w:gz") as archive:
         for path in files:
-            archive.add(path, arcname=path.relative_to(PROJECT_DIR).as_posix())
+            rel_path = path.relative_to(PROJECT_DIR).as_posix()
+            archive.add(path, arcname=rel_path)
+            file_hashes[rel_path] = sha256(path)
+
+        manifest = {
+            "version": 1,
+            "files": file_hashes,
+        }
         manifest_bytes = (json.dumps(manifest, indent=2, sort_keys=True) + "\n").encode()
         info = tarfile.TarInfo(MANIFEST_NAME)
         info.size = len(manifest_bytes)
