@@ -49,9 +49,11 @@
     {
       "label": "MkDocs: Deploy",
       "type": "shell",
-      "command": "${workspaceFolder}/.venv/bin/mkdocs",
+      "command": "git",
       "args": [
-        "gh-deploy"
+        "push",
+        "origin",
+        "main"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
