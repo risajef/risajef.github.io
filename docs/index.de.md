@@ -25,6 +25,10 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
+## 23. Juli 2026
+
+Ich habe das Design der Tools vereinheitlicht. Sie sollten jetzt nicht mehr wie Fremdkörper und Standard-KI-generierte Applikationen aussehen. (Obwohl sie das natürlich sind.)
+
 ## 15. Juli 2026
 
 Grosses refactoring. Piper nutzt jetzt nicht mehr [git-lfs](https://git-lfs.com) sondern GitHub Artefakte. Zusätzlich habe ich [mkdocs-piper-tts](https://github.com/risajef/mkdocs-piper-tts) auf [PyPI](https://pypi.org/project/mkdocs-piper-tts/) veröffentlicht. Die ganze Build-Pipeline wurde auch überarbeitet. Alle NPM Vulnerabilities wurden ausgemerzt. Viele alte Überbleibsel wurden erkannt und ersetzt. 

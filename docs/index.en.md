@@ -25,6 +25,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## July 23rd 2026
+
+I unified the design of the tools. They should no longer look like foreign objects or generic AI-generated applications. (Even though, of course, they are.)
+
 ## July 15th 2026
 
 Major refactoring. Piper now uses GitHub Release assets instead of [Git LFS](https://git-lfs.com). I also published [mkdocs-piper-tts](https://github.com/risajef/mkdocs-piper-tts) on [PyPI](https://pypi.org/project/mkdocs-piper-tts/). The entire build pipeline was revised, all npm vulnerabilities were removed, and many outdated remnants were identified and replaced.
