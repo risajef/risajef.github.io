@@ -49,11 +49,10 @@
     {
       "label": "MkDocs: Deploy",
       "type": "shell",
-      "command": "git",
+      "command": "bash",
       "args": [
-        "push",
-        "origin",
-        "main"
+        "-c",
+        "git push origin main 2>&1 || true; gh workflow run deploy-pages.yml"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
