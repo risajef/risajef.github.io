@@ -138,12 +138,12 @@ mkdocs-piper-tts is an MIT-licensed MkDocs plugin that caches Piper-generated sp
 ## CodeForge
 
 [**CodeForge on GitHub**](https://github.com/reto-weber/CodeForge)  
-CodeForge is a platform designed to compile, run, and verify code across multiple programming languages. Using Docker containers to ensure that code execution is both secure. The platform is useful for educational environments, coding demos. Its containerized architecture allows for easy integration of new languages and verification tools. It was completely vibe coded. It is sometimes online at [eiffel.org](https://autoproof.eiffel.org/).
+CodeForge is a platform to compile, execute, and verify code across multiple programming languages using Docker containers. It is well-suited for educational environments and coding demonstrations. The containerized architecture simplifies integrating new languages and verification tools. It was built using [vibe coding](/blog/science/vibe-coding). It is partially online at [eiffel.org](https://autoproof.eiffel.org/).
 
-## PDF Scan
+## PDF Scannen
 
 [**PDF Scan Automation on GitHub**](https://github.com/risajef/pdf_scan_automation)  
-PDF Scan is a project that streamlines the organization of physical mail and documents. It processes batches of scanned documents, automatically detecting where to split them into individual files, straightening pages, and performing OCR to extract text. This tool reduces manual effort in digitizing and archiving paperwork. It is especially helpful for personal and small office use. It was partially vibe coded.
+PDF Scan simplifies the organization of physical mail and documents. It processes batches of scanned documents, automatically splits them into individual files, aligns pages, and performs OCR to extract text. It was partially built using [vibe coding](/blog/science/vibe-coding). This tool reduces manual effort in digitizing and archiving paperwork. It is especially helpful for personal and small office use.
 
 ## Autoproof Docker
 

@@ -47,7 +47,7 @@ auto_translated: false
 ### Doctor of Philosophy (PhD), Computer Science (2023 &ndash; now)
 
 **Thesis**: Programming really is simple Mathematics and vice versa  
-**Focus**: Static verification of object oriented programming languages for example Eiffel. I formalized programming mathematically and embed mathematics into Eiffel. Which tries to narrow the gap between programming and mathematics.
+**Focus**: Static verification of object oriented programming languages for example Eiffel. I formalize programming mathematically and embed mathematics into Eiffel, narrowing the gap between programming and mathematics. Practical tools include the interactive [Hoare Logic Proof Verifier](/tools/hoare-logic/) and the [AutoProof Docker project](/programming/#autoproof-docker).
 
 ## [ETH Zurich](https://inf.ethz.ch/)
 

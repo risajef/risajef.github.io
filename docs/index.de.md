@@ -17,7 +17,7 @@ auto_translated: false
 ![Portrait](assets/images/Portrait_bg.jpg)
 
 {:.float-right}
-Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar sind vor allem meine beiden beruflichen Laufbahnen als [Programmierer](programming.md) und [Forscher](research.md) sowie mein politisches Engagement ([Politik](politik.md)). Und vielleicht zuletzt noch meine [persönlichen Texte](blog.md) über Philosophie, Wissenschaft, Literatur und Religion.
+Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar sind vor allem meine beiden beruflichen Laufbahnen als [Programmierer](programming.md) und [Forscher](research.md) sowie mein politisches Engagement ([Politik](politik.md)), meine interaktiven [Werkzeuge](/tools/) und meine [persönlichen Texte](blog.md) über Philosophie, Wissenschaft, Literatur und Religion.
 
 > Die Seite ist komplett zweisprachig (Englisch und Deutsch). Die meisten Seiten wurden einmalig von [Argos Translate](https://www.argosopentech.com) übersetzt und danach von GPT5.2 verbessert. Wurde die Seite so übersetzt, ist es mit einem Hinweis oben gekennzeichnet.
 
@@ -26,6 +26,8 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
 ## 23. Juli 2026
+
+Neue Kampagnenseite für die Volksabstimmung zur [Badi Beringen](https://badi-2026.retoweber.info/) erstellt und mein politisches Engagement ergänzt.
 
 Ich habe das Design der Tools vereinheitlicht. Sie sollten jetzt nicht mehr wie Fremdkörper und Standard-KI-generierte Applikationen aussehen. (Obwohl sie das natürlich sind.)
 
@@ -61,11 +63,11 @@ Restrukturiere Webseite: Anordnung der Elemente ist intuitiver und kompakter.
 
 Füge [Parallelismus](/tools/parallelismus) hinzu - eine Anwendung zum Studium biblischer Parallelismen in hebräischen und griechischen Texten mit Strong-Konkordanz-Integration.
 
-## Februar 11th 2026
+## 11. Februar 2026
 
 Füge [vibe coding](/blog/science/vibe-coding) Blog Artikel hinzu.
 
-## January 14th 2026
+## 14. Januar 2026
 
 Füge [automatischen Hintergrundgenerator](/tools/background-generator) hinzu.
 

@@ -139,12 +139,12 @@ mkdocs-piper-tts ist ein MIT-lizenziertes MkDocs-Plugin, das mit Piper erzeugte 
 ## CodeForge
 
 [**CodeForge on GitHub**](https://github.com/reto-weber/CodeForge)  
-CodeForge ist eine Plattform, um Code in mehreren Programmiersprachen zu kompilieren, auszuführen und zu verifizieren. Dafür werden Docker-Container genutzt, damit die Codeausführung sicher bleibt. Die Plattform eignet sich für Bildungsumgebungen und Coding-Demos. Die containerisierte Architektur erleichtert die Integration neuer Sprachen und Verifikationstools. Es wurde komplett „vibe coded“. Es ist teilweise unter [eiffel.org](https://autoproof.eiffel.org/) online.
+CodeForge ist eine Plattform, um Code in mehreren Programmiersprachen zu kompilieren, auszuführen und zu verifizieren. Dafür werden Docker-Container genutzt, damit die Codeausführung sicher bleibt. Die Plattform eignet sich für Bildungsumgebungen und Coding-Demos. Die containerisierte Architektur erleichtert die Integration neuer Sprachen und Verifikationstools. Es wurde komplett [„vibe coded“](/blog/science/vibe-coding). Es ist teilweise unter [eiffel.org](https://autoproof.eiffel.org/) online.
 
 ## PDF Scannen
 
 [**PDF Scan Automation auf GitHub**](https://github.com/risajef/pdf_scan_automation)  
-PDF Scan ist ein Projekt, das die Organisation von physischer Post und Dokumenten vereinfacht. Es verarbeitet Stapel gescannter Dokumente, erkennt automatisch, wo sie in einzelne Dateien getrennt werden müssen, richtet Seiten aus und führt OCR durch, um Text zu extrahieren. Das reduziert den manuellen Aufwand bei Digitalisierung und Archivierung. Es ist besonders hilfreich für den privaten und kleinen Bürogebrauch. Es wurde teilweise „vibe coded“.
+PDF Scan ist ein Projekt, das die Organisation von physischer Post und Dokumenten vereinfacht. Es verarbeitet Stapel gescannter Dokumente, erkennt automatisch, wo sie in einzelne Dateien getrennt werden müssen, richtet Seiten aus und führt OCR durch, um Text zu extrahieren. Das reduziert den manuellen Aufwand bei Digitalisierung und Archivierung. Es ist besonders hilfreich für den privaten und kleinen Bürogebrauch. Es wurde teilweise [„vibe coded“](/blog/science/vibe-coding).
 
 ## AutoProof Docker
 

@@ -14,10 +14,10 @@ auto_translated: false
 
 # Welcome
 
-![Protrait](assets/images/Portrait_bg.jpg)
+![Portrait](assets/images/Portrait_bg.jpg)
 
 {:.float-right}
-I am grateful to have such a wide diversity of roles. For public interest are probably my two professional careers as a [programmer](programming.md) and [researcher](research.md) as well as my [political career](politik.md). And maybe at last my [personal content](blog.md) about philosophy, science, literature and religion.
+I am grateful to have such a wide diversity of roles. For public interest are probably my two professional careers as a [programmer](programming.md) and [researcher](research.md) as well as my [political career](politik.md), my interactive [tools](/tools/), and my [personal content](blog.md) about philosophy, science, literature and religion.
 
 > The site is fully bilingual (English and German). Most pages were satically translated using [Argos Translate](https://www.argosopentech.com) and then improved with GPT 5.2. If a page was translated this way, it is marked with a notice at the top.
 
@@ -26,6 +26,8 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 You see there what I changed most recently on the website.
 
 ## July 23rd 2026
+
+Created new campaign website for the [Badi Beringen](https://badi-2026.retoweber.info/) vote and added my political engagement details.
 
 I unified the design of the tools. They should no longer look like foreign objects or generic AI-generated applications. (Even though, of course, they are.)
 

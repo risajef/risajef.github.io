@@ -18,7 +18,7 @@ Seit Anfangs 2025 bin ich gewähltes Mitglied des [Einwohnerrats](https://www.be
 Zusätzlich bin ich Mitglied der [Tiefbaukomission](https://www.beringen.ch/de/tiefbau), der [Schwimmbadkomission](https://www.beringen.ch/de/schwimmbad) und im [Parteivorstand](https://www.evp-sh-2024.ch/parteivorstand) unserer kantonalen Partei.
 
 # Smartvote
-Mein politische Haltung ermittelt via [smatvote](https://smartvote.ch): 
+Meine politische Haltung ermittelt via [smartvote](https://smartvote.ch): 
 
 <!-- Roman Schlatter: https://www.smartvote.ch/de/group/527/election/23_ch_nr/smartmap -->
 <!-- https://www.smartvote.ch/de/group/540/election/24_sh_leg/smartmap -->
@@ -58,7 +58,7 @@ radar-beta
 ```
 # Volksabstimmungen
 
-Ich behandle hier nur Geschäfte, zu denen ich einen Bezug habe. Das sind vor allem kommunale Abstimmungen und Wahlen, aber auch kantonale oder eidgenössischee, wenn ich mich als fachkompetent dazu sehe.
+Ich behandle hier nur Geschäfte, zu denen ich einen Bezug habe. Das sind vor allem kommunale Abstimmungen und Wahlen, aber auch kantonale oder eidgenössische, wenn ich mich als fachkompetent dazu sehe.
 
 ## 27. September 2026
 
@@ -66,7 +66,7 @@ Ich behandle hier nur Geschäfte, zu denen ich einen Bezug habe. Das sind vor al
 
 Am 27. September 2026 stimmt die Beringer Stimmbevölkerung über den Baukredit zur Komplettsanierung unseres Freibads ab. Geplant ist der Einsatz eines biologischen Bioschnellfilters anstelle einer herkömmlichen Chloraufbereitung.
 
-Als Mitglied der Schwimmbadkommission und des Einwohnerrats engagiere ich mich aktiv im überparteilichen Pro-Komitee «Ja zur Badi» (getragen von SP, Grünliberalen, FDP und EVP Beringen). Ich habe am politischen Argumentarium für die Flyer- und Plakatkampagne mitgewirkt, die offizielle Informations- und Kampagnenseite [badi-2026.retoweber.info](https://badi-2026.retoweber.info/) entwickelt und bereitgestellt sowie mich in der Presse zu Wort gemeldet. Das Projekt sichert den Erhalt unserer Naturbadi, bietet langfristige Planungssicherheit und ist in der Anschaffung wie im Betrieb günstiger als eine Re-Chlorierung.
+Als Mitglied der Schwimmbadkommission und des Einwohnerrats engagiere ich mich aktiv im überparteilichen Pro-Komitee «Ja zur Badi» (getragen von SP, Grünliberalen, FDP und EVP Beringen). Ich habe am politischen Argumentarium für die Flyer- und Plakatkampagne mitgewirkt, die offizielle Informations- und [Kampagnenseite](https://badi-2026.retoweber.info/) entwickelt und bereitgestellt (siehe auch [Projekte](/programming/#badi-beringen-kampagnenseite)) sowie mich in der Presse zu Wort gemeldet. Das Projekt sichert den Erhalt unserer Naturbadi, bietet langfristige Planungssicherheit und ist in der Anschaffung wie im Betrieb günstiger als eine Re-Chlorierung.
 
 ## 30. November 2025
 
@@ -96,7 +96,7 @@ Ich bin vom Abstimmungskampf etwas enttäuscht von beiden Seiten.
 - Auf der **"Pro"-Seite** zu welcher ich gehöre, wurde mein Gesicht und mein Argument abgedruckt. Ich bin jedoch der am wenigsten einflussreiche Politiker in ganz Beringen. Ich hatte gerade mal 212 Stimmen nur Thomas Widmer hatte auch nur 237 Stimmen und alle anderen hatten über doppelt so viele Stimmen; doch keiner hat sich bereit dazu erklärt, sich öffentlich für die Vorlage auszusprechen. Vielleicht wegen allfälliger Befangenheit? Doch warum sind sie dann nicht in der Einwohnerratssitzung in den Ausstand getreten?
 - Auf der **"Contra"-Seite** wird jetzt damit geworben, dass das Land zu günstig umgezont wird. Aber es stand ein Vorschlag der auf dem Tisch, der mehr Geld für die Gemeinde herausholen wollte, aber dieser wurde von den jetzigen Gegnern nicht gutgeheissen.
 
-Ich erstellte eine [Seite](/politik/zonenplanaenderung/) mit neutralen Fakten zur Abstimmung. Mehr fehlten diese Informationen in der Vergangenheit für kommunale Geschäfte. Ich versuche das auch in Zukunft zu erstellen.
+Ich erstellte eine [Seite](/politik/zonenplanaenderung/) mit neutralen Fakten zur Abstimmung. Mir fehlten diese Informationen in der Vergangenheit für kommunale Geschäfte. Ich versuche das auch in Zukunft zu erstellen.
 
 > Das Volk lehnte die Zonenplanänderung ab ([Link](https://www.beringen.ch/uploads/files/pdf/Behoerde-Politik/Abstimmungen-Wahlen/2025/2025%2009%2028%20Bund%20und%20Gemeinde.pdf)), was ich schade finde. Es ist auch ein Realitätscheck für uns im Einwohnerrat. Fast alle Parteien waren dafür. Sehr viele Einwohnerräte waren dafür. Das Volk aber dagegen.
 

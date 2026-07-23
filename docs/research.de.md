@@ -14,7 +14,7 @@ source_lang: en
 
 ## Helfen KI-Modelle dabei, verifizierte Bugfixes zu erzeugen?
 
-[ICSE 2026. (eingereicht &ndash; in review)](https://arxiv.org/abs/2507.15822)  
+[ICSE 2026. (veröffentlicht)](https://arxiv.org/abs/2507.15822)  
 **Autoren:** [Reto Weber][reto], [Li Huang][li], [Bertrand Meyer][bertrand], [Ilgiz Mustafin][ilgiz], [Marco Piccioni](https://github.com/picpaco), [Alessandro Schena](https://www.linkedin.com/in/alessandro-schena)
 
 ## PRISM: Programmierung ist wirklich einfache Mathematik
@@ -24,7 +24,7 @@ source_lang: en
 
 ## Loop unrolling: formale Definition und Anwendung fürs Testen
 
-[ICTSS 2025. (angenommen &ndash; erscheint)](https://arxiv.org/abs/2502.15535)  
+[ICTSS 2025. (veröffentlicht)](https://arxiv.org/abs/2502.15535)  
 **Autoren:** [Reto Weber][reto], [Li Huang][li], [Bertrand Meyer][bertrand]
 
 
@@ -47,7 +47,7 @@ source_lang: en
 ### Doktor der Philosophie (PhD), Informatik (2023 &ndash; heute)
 
 **Thema**: Programmieren ist wirklich einfache Mathematik – und umgekehrt  
-**Fokus**: Statische Verifikation objektorientierter Programmiersprachen, z. B. Eiffel. Ich formalisiere Programmierung mathematisch und bette Mathematik in Eiffel ein, um die Lücke zwischen Programmierung und Mathematik zu verkleinern.
+**Fokus**: Statische Verifikation objektorientierter Programmiersprachen, z. B. Eiffel. Ich formalisiere Programmierung mathematisch und bette Mathematik in Eiffel ein, um die Lücke zwischen Programmierung und Mathematik zu verkleinern. Praktische Umsetzungen umfassen unter anderem den interaktiven [Hoare Logic Proof Verifier](/tools/hoare-logic/) und das [AutoProof Docker-Projekt](/programming/#autoproof-docker).
 
 ## [ETH Zürich](https://inf.ethz.ch/)
 
