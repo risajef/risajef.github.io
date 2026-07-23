@@ -49,10 +49,9 @@
     {
       "label": "MkDocs: Deploy",
       "type": "shell",
-      "command": "bash",
+      "command": "${workspaceFolder}/.venv/bin/python",
       "args": [
-        "-c",
-        "git add -A && (git diff --staged --quiet || git commit -m 'deploy: update site content') && git push origin main && gh workflow run deploy-pages.yml"
+        "scripts/deploy.py"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
