@@ -59,21 +59,17 @@ def write_checksum(archive_path: Path, checksum_path: Path) -> None:
 
 def upload(archive_path: Path, checksum_path: Path) -> None:
     repo = resolve_repo_slug()
-    subprocess.run(
-        [
-            "gh",
-            "release",
-            "upload",
-            RELEASE_TAG,
-            str(archive_path),
-            str(checksum_path),
-            "--repo",
-            repo,
-            "--clobber",
-        ],
-        cwd=PROJECT_DIR,
-        check=True,
-    )
+    for file_path in (archive_path, checksum_path):
+        subprocess.run(
+            ["gh", "release", "delete-asset", RELEASE_TAG, file_path.name, "--repo", repo, "-y"],
+            cwd=PROJECT_DIR,
+            stderr=subprocess.DEVNULL,
+        )
+        subprocess.run(
+            ["gh", "release", "upload", RELEASE_TAG, str(file_path), "--repo", repo, "--clobber"],
+            cwd=PROJECT_DIR,
+            check=True,
+        )
 
 
 def resolve_repo_slug() -> str:

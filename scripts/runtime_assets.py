@@ -54,8 +54,17 @@ def pack_assets(output_path: Path) -> None:
     with tarfile.open(output_path, "w:gz") as archive:
         for path in files:
             rel_path = path.relative_to(PROJECT_DIR).as_posix()
-            archive.add(path, arcname=rel_path)
-            file_hashes[rel_path] = sha256(path)
+            # Read the file exactly once and archive/hash that same snapshot of
+            # bytes. Hashing a separate re-read (the previous approach) is
+            # racy: a concurrent process (e.g. `mkdocs serve` regenerating
+            # Piper TTS audio in the background) can rewrite the file between
+            # the archive read and the hash read, producing a manifest hash
+            # that doesn't match what was actually packaged.
+            data = path.read_bytes()
+            info = archive.gettarinfo(path, arcname=rel_path)
+            info.size = len(data)
+            archive.addfile(info, fileobj=BytesReader(data))
+            file_hashes[rel_path] = hashlib.sha256(data).hexdigest()
 
         manifest = {
             "version": 1,
