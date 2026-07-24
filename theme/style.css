@@ -643,7 +643,7 @@ a code {
         flex-shrink: 0;
         width: max-content;
         justify-content: flex-start;
-        margin: 0;
+        margin: 0 0.5rem;
     }
 
     .search-form {
@@ -739,6 +739,8 @@ a code {
 .content {
     max-width: 1024px;
     margin: 0 auto;
+    padding-inline: 0.5rem;
+    box-sizing: border-box;
 }
 
 .layout-no-toc .content {
