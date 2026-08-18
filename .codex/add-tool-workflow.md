@@ -23,7 +23,12 @@ Use this note for this website repository (`risajef.github.io`) when adding anot
    - Add redirects for `programming/NAME` and `de/programming/NAME`.
    - Add translation labels under both `extra.translations.en.nav` and `extra.translations.de.nav`.
 
-4. Check local status and leave the final commit/push to the user unless they explicitly ask for it.
+4. Add news entry.
+
+   - Add entry to `index.de.md` and `index.en.md` news section
+   - Sumarize what the tool does and link it
+
+5. Check local status and leave the final commit/push to the user unless they explicitly ask for it.
 
    ```bash
    git status --short

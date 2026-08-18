@@ -92,6 +92,14 @@ EMBEDDED_APPS = (
         Path("index.html"),
     ),
     EmbeddedApp(
+        "office",
+        "Office.md",
+        DOCS_DIR / "assets/office.md",
+        PUBLISH_ROOT / "office",
+        Path("index.html"),
+        build_kind=BuildTypes.VITE,
+    ),
+    EmbeddedApp(
         "reverse-chart", "Reverse Chart", DOCS_DIR / "assets/reverse-chart", PUBLISH_ROOT / "reverse-chart", Path("index.html")
     ),
 )

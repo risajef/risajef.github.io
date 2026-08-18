@@ -25,6 +25,10 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
+## 18. August 2026
+
+Füge [Office.md](/tools/office/) hinzu - ein browserbasierter Markdown-Editor auf Basis von Milkdown.
+
 ## 23. Juli 2026
 
 Neue Kampagnenseite für die Volksabstimmung zur [Badi Beringen](https://badi-2026.retoweber.info/) erstellt und mein politisches Engagement ergänzt.

@@ -19,6 +19,7 @@ exclude_docs: |
   assets/parallelismus/**
   assets/python-blocks/**
   assets/reverse-chart/**
+  assets/office.md/**
   assets/xml-weaver/**
   assets/python-blocks-dist/**
   assets/hoare-logic-dist/**
@@ -37,6 +38,7 @@ nav:
       - Diabetes GUI: tools/diabetes-gui.md
       - Hoare Logic: tools/hoare-logic.md
       - LinkedIn WYSIWYG: tools/linkedin-wysiwyg.md
+      - Office.md: tools/office.md
       - Parallelismus: tools/parallelismus.md
       - Python Blocks: tools/python-blocks.md
       - Reverse Chart: tools/reverse-chart.md
@@ -155,6 +157,8 @@ extra:
     de/programming/reverse-chart: de/tools/reverse-chart
     programming/csv-editor: tools/csv-editor
     de/programming/csv-editor: de/tools/csv-editor
+    programming/office: tools/office
+    de/programming/office: de/tools/office
     politics: politik
     politics/zonenplanaenderung: politik/zonenplanaenderung
     politics/finanzen-beringen: politik/finanzen-beringen
@@ -181,6 +185,7 @@ extra:
         'Hoare Logic': 'Hoare Logic'
         'XML Weaver': 'XML Weaver'
         'LinkedIn WYSIWYG': 'LinkedIn WYSIWYG'
+        'Office.md': 'Office.md'
         'Diabetes GUI': 'Diabetes GUI'
         'Reverse Chart': 'Reverse Chart'
         'CSV Editor': 'CSV Editor'
@@ -214,6 +219,7 @@ extra:
         'Hoare Logic': Hoare-Logik
         'XML Weaver': 'XML Weaver'
         'LinkedIn WYSIWYG': 'LinkedIn WYSIWYG'
+        'Office.md': 'Office.md'
         'Diabetes GUI': 'Diabetes GUI'
         'Reverse Chart': 'Reverse Chart'
         'CSV Editor': 'CSV Editor'

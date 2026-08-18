@@ -111,6 +111,11 @@ Dies ist ein Hoare-Logik-Verifier, der vollständig im Browser läuft. Man kann 
 [**GitHub**](https://github.com/risajef/linkedin-wysiwyg), [**Web Demo**](https://retoweber.info/tools/linkedin-wysiwyg/)  
 LinkedIn WYSIWYG ist ein browserbasierter Editor zum Verfassen von LinkedIn-Posts mit Unicode-Formatierungen, die auch nach dem Einfügen erhalten bleiben. Das Tool bietet fette, kursive und dekorative Schriftstile, Listenmarker, eine LinkedIn-ähnliche Vorschau, Kopieren per Knopfdruck und eine Funktion zum Entfernen der Formatierung. Alles läuft clientseitig als einfache statische Webanwendung.
 
+## Office.md
+
+[**GitHub**](https://github.com/risajef/office.md)
+office.md ist ein browserbasierter Markdown-Editor auf Basis von Milkdown.
+
 ## CSV Editor
 
 [**GitHub**](https://github.com/risajef/csv-editor), [**Web Demo**](https://retoweber.info/tools/csv-editor/)

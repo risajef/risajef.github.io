@@ -25,6 +25,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## August 18th 2026
+
+Add [Office.md](/tools/office/) - a browser-based Markdown editor powered by Milkdown.
+
 ## July 23rd 2026
 
 Created new campaign website for the [Badi Beringen](https://badi-2026.retoweber.info/) vote and added my political engagement details.
