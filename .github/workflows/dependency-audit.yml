@@ -31,24 +31,30 @@ jobs:
       - name: Audit Node production dependencies
         run: |
           npm audit --omit=dev --audit-level=moderate
-          for app in python-blocks hoare-logic xml-weaver background-generator parallelismus; do
-            npm --prefix "docs/assets/$app" audit --omit=dev --audit-level=moderate
+          for lockfile in docs/assets/*/package-lock.json; do
+            [[ -f "$lockfile" ]] || continue
+            app_dir=${lockfile%/package-lock.json}
+            npm --prefix "$app_dir" audit --omit=dev --audit-level=moderate
           done
 
       - name: Report build dependency vulnerabilities
+        if: always()
         run: |
           mkdir -p audit-reports
           uv export --frozen --all-groups --no-emit-project --output-file "$RUNNER_TEMP/all-requirements.txt"
           uvx pip-audit --disable-pip --format json -r "$RUNNER_TEMP/all-requirements.txt" > audit-reports/python-all.json || true
           npm audit --json > audit-reports/root.json || true
-          for app in python-blocks hoare-logic xml-weaver background-generator parallelismus; do
-            npm --prefix "docs/assets/$app" audit --json > "audit-reports/$app.json" || true
+          for lockfile in docs/assets/*/package-lock.json; do
+            [[ -f "$lockfile" ]] || continue
+            app_dir=${lockfile%/package-lock.json}
+            app_name=${app_dir##*/}
+            npm --prefix "$app_dir" audit --json > "audit-reports/$app_name.json" || true
           done
 
       - name: Upload build dependency audit report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: always()
         with:
           name: build-dependency-audit-${{ github.run_id }}
           path: audit-reports
-          if-no-files-found: error
+          if-no-files-found: warn

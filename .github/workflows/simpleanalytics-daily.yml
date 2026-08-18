@@ -20,7 +20,7 @@ jobs:
           jq empty simpleanalytics-retoweber-info.json
 
       - name: Upload analytics artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: simpleanalytics-retoweber-info-${{ github.run_id }}
           path: simpleanalytics-retoweber-info.json
