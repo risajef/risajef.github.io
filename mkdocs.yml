@@ -97,6 +97,7 @@ plugins:
           pause_label: 'Pause'
   - mermaid-to-svg:
       mmdc_path: 'mmdc'
+      puppeteer_config: 'puppeteer-config.json'
       cleanup_generated_images: false
   - bibtex:
       bib_file: references.bib
