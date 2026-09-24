@@ -116,6 +116,11 @@ LinkedIn WYSIWYG ist ein browserbasierter Editor zum Verfassen von LinkedIn-Post
 [**GitHub**](https://github.com/risajef/office.md)
 office.md ist ein browserbasierter Markdown-Editor auf Basis von Milkdown.
 
+## Stammbaum
+
+[**GitHub**](https://github.com/risajef/stammbaum), [**Web-Demo**](https://retoweber.info/tools/stammbaum/)
+Stammbaum ist ein browserbasierter Editor für Familienstammbäume zum Erstellen, Bearbeiten und Visualisieren genealogischer Beziehungen. Er unterstützt den lokalen Import und Export von YAML-Dateien, Beziehungsmetadaten, Suche und Filterung, die Erkennung von Duplikaten sowie Übersichts- und kraftgerichtete Graphansichten.
+
 ## CSV Editor
 
 [**GitHub**](https://github.com/risajef/csv-editor), [**Web Demo**](https://retoweber.info/tools/csv-editor/)

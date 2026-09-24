@@ -100,6 +100,14 @@ EMBEDDED_APPS = (
         build_kind=BuildTypes.VITE,
     ),
     EmbeddedApp(
+        "stammbaum",
+        "Stammbaum",
+        DOCS_DIR / "assets/stammbaum",
+        PUBLISH_ROOT / "stammbaum",
+        Path("index.html"),
+        build_kind=BuildTypes.VITE,
+    ),
+    EmbeddedApp(
         "reverse-chart", "Reverse Chart", DOCS_DIR / "assets/reverse-chart", PUBLISH_ROOT / "reverse-chart", Path("index.html")
     ),
 )

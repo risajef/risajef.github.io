@@ -31,3 +31,6 @@
 [submodule "docs/assets/office.md"]
 	path = docs/assets/office.md
 	url = https://github.com/risajef/office.md.git
+[submodule "docs/assets/stammbaum"]
+	path = docs/assets/stammbaum
+	url = https://github.com/risajef/stammbaum.git

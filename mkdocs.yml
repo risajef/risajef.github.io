@@ -19,6 +19,7 @@ exclude_docs: |
   assets/parallelismus/**
   assets/python-blocks/**
   assets/reverse-chart/**
+  assets/stammbaum/**
   assets/office.md/**
   assets/xml-weaver/**
   assets/python-blocks-dist/**
@@ -42,6 +43,7 @@ nav:
       - Parallelismus: tools/parallelismus.md
       - Python Blocks: tools/python-blocks.md
       - Reverse Chart: tools/reverse-chart.md
+      - Stammbaum: tools/stammbaum.md
       - XML Weaver: tools/xml-weaver.md
   - Politik:
       - Politik: politik.md
@@ -160,6 +162,8 @@ extra:
     de/programming/csv-editor: de/tools/csv-editor
     programming/office: tools/office
     de/programming/office: de/tools/office
+    programming/stammbaum: tools/stammbaum
+    de/programming/stammbaum: de/tools/stammbaum
     politics: politik
     politics/zonenplanaenderung: politik/zonenplanaenderung
     politics/finanzen-beringen: politik/finanzen-beringen
@@ -190,6 +194,7 @@ extra:
         'Diabetes GUI': 'Diabetes GUI'
         'Reverse Chart': 'Reverse Chart'
         'CSV Editor': 'CSV Editor'
+        Stammbaum: Stammbaum
         Politik: Politics
         'Finanzen Beringen': 'Finances Beringen'
         Blog: Blog
@@ -224,6 +229,7 @@ extra:
         'Diabetes GUI': 'Diabetes GUI'
         'Reverse Chart': 'Reverse Chart'
         'CSV Editor': 'CSV Editor'
+        Stammbaum: Stammbaum
         Politik: Politik
         'Finanzen Beringen': 'Finanzen Beringen'
         Blog: Blog

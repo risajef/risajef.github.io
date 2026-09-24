@@ -25,6 +25,10 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## September 24th 2026
+
+Add [Stammbaum](/tools/stammbaum/) - a browser-based family-tree editor for creating, editing, and visualizing genealogies with local YAML import and export.
+
 ## August 18th 2026
 
 Add [Office.md](/tools/office/) - a browser-based Markdown editor powered by Milkdown.
