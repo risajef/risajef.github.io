@@ -54,34 +54,59 @@ pie showData
 ```
 Neunkirch nimmt mit CHF 3213 sogar etwas mehr ein pro Person. Es zeigt sich, dass in Neunkirch mehr als dreimal mehr Geld für Verkehr ausgegeben wird. Gesundheit sind sie jedoch viel günstiger unterwegs. Für die Öffentliche Sicherheit, Umwelt & Raumplanung und die Volkswirtschaft gibt Neunkrich doppelt so viel aus wie Beringen. Solche Vergleiche erlauben (beispielsweise als Geschäftsprüfungskomissionsmitglied) zu beurteilen, wo genauer nachgeforscht werden sollte.
 
+## Ausgaben pro Einwohner:in 2025
+
+Diese aktuelle Aufteilung steht getrennt vom obigen Vergleich mit Neunkirch. Die Ausgabenbereiche ergeben zusammen rund CHF 3’261 pro Person. «Finanzen» sind in der Quelle Einnahmen (CHF 3’393 pro Person) und deshalb nicht im Kreisdiagramm enthalten; der ausgewiesene Überschuss beträgt CHF 131 pro Person.
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+pie showData
+title "Ausgaben pro Person 2025 (CHF, Preisstand 2025)"
+    "Verwaltung": 530
+    "Öffentliche Sicherheit": 81.3
+    "Bildung": 1521
+    "Kultur & Freizeit": 140
+    "Gesundheit": 248
+    "Soziale Sicherheit": 622
+    "Verkehr": 67
+    "Umwelt & Raumplanung": 45
+    "Volkswirtschaft": 7
+```
+
 # Entwicklung
 
 Ebenso ist die Entwicklung dieser Zahlen wichtig. Sind die Zahlen ansteigend oder sinkend? So wird beispielsweise wieder und wieder behauptet, die Verschuldung von Beringen sei zu hoch, aber die Zahlen belegen das nicht. Die Schulden sind stabil zwischen 34 und 39 Millionen oder ca. CHF 7000 pro Einwohner:in.
 
+## Fremdkapital
+
+Für Fremdkapital liegen Werte für 2020 bis 2025 vor.
+
 &nbsp;
 {:#mermaid}
 
 ```mermaid
 xychart
-title "Fremdkapital"
+title "Fremdkapital pro Einwohner:in (Preisstand 2025)"
 x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "Millionen CHF" 0 --> 40
-line [38.010, 38.342, 35.781, 34.232, 37.158, 37.756]
+y-axis "CHF pro Person" 0 --> 9000
+line [7974, 7986, 7255, 6659, 6909, 6993]
 ```
 
 ## Negative Entwicklungen
 
-Einige nennenswerte Entwicklungen sind die Ausgaben pro Person, bezogen auf die Kategorien. Folgende sind sich am Erhöhen und es ist vielleicht sinnvoll, sie genauer im Auge zu halten.
+Die Ausgaben pro Person unterscheiden sich je nach Aufgabenbereich. In den Rechnungsjahren liegen Verwaltung und öffentliche Sicherheit 2025 über ihren Werten von 2012; die Gesundheitsausgaben sind gegenüber 2020 gestiegen.
 
 &nbsp;
 {:#mermaid}
 
 ```mermaid
 xychart
-title "Verwaltungskosten pro Person"
-x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "CHF pro Person" 0 --> 600
-line [398, 377, 412, 517, 438, 361, 411, 371, 547, 498, 494, 539, 456, 530]
+title "Verwaltungskosten pro Person (Preisstand 2025; 2026/27 Budget)"
+x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis "CHF pro Person" 0 --> 650
+line [422, 401, 437, 552, 474, 389, 440, 395, 580, 532, 519, 548, 522, 530, 531, 568]
 ```
 
 &nbsp;
@@ -89,10 +114,10 @@ line [398, 377, 412, 517, 438, 361, 411, 371, 547, 498, 494, 539, 456, 530]
 
 ```mermaid
 xychart
-title "Öffentliche Sicherheitskosten pro Person"
-x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-y-axis  "CHF pro Person" 0 --> 80
-line [1.9, 36.3, 30.1, 6.5, 14.8, 19.4, 58.8, 45.7, 19.3, 26.9, 50.2, 39.3, 63.0, 70.8]
+title "Kosten der öffentlichen Sicherheit pro Person (Preisstand 2025; 2026/27 Budget)"
+x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis  "CHF pro Person" 0 --> 100
+line [2.0, 38.6, 34.6, 7.5, 17.1, 22.3, 67.6, 52.5, 22.1, 30.9, 57.6, 45.2, 72.1, 81.3, 84.8, 86.4]
 ```
 
 &nbsp;
@@ -100,26 +125,26 @@ line [1.9, 36.3, 30.1, 6.5, 14.8, 19.4, 58.8, 45.7, 19.3, 26.9, 50.2, 39.3, 63.0
 
 ```mermaid
 xychart
-title "Gesundheitskosten pro Person"
-x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "CHF pro Person" 0 --> 250
-line [152, 165, 145, 154, 207, 216]
+title "Gesundheitskosten pro Person (Preisstand 2025; 2026/27 Budget)"
+x-axis [2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis "CHF pro Person" 0 --> 350
+line [175, 190, 166, 176, 237, 248, 265, 319]
 ```
-Ich wählte hier den Start bei 2020, weil es dort einen Systemwechsel gab und die Kosten darum nicht vergleichbar sind.
+Die Reihe beginnt 2020, weil es dort einen Systemwechsel gab und frühere Kosten deshalb nicht vergleichbar sind.
 
 ## Positive Entwicklungen
 
-Auf der anderen Seite gibt es Trends, die erfreulich sind.
+Die Budgetwerte 2027 für Verkehr und Umwelt liegen unter ihren früheren Spitzenwerten. Sie sind Planwerte und nicht mit abgeschlossenen Rechnungen gleichzusetzen.
 
 &nbsp;
 {:#mermaid}
 
 ```mermaid
 xychart
-title "Verkehrskosten pro Person"
-x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "CHF pro Person" 0 --> 550
-line [180, 183, 201, 496, 306, 274, 366, 146, 91, 135, 64, 61, 71, 58]
+title "Verkehrskosten pro Person (Preisstand 2025; 2026/27 Budget)"
+x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis "CHF pro Person" 0 --> 650
+line [191, 195, 231, 570, 351, 314, 420, 168, 104, 155, 73, 70, 82, 67, 84, 75]
 ```
 
 &nbsp;
@@ -127,10 +152,93 @@ line [180, 183, 201, 496, 306, 274, 366, 146, 91, 135, 64, 61, 71, 58]
 
 ```mermaid
 xychart
-title "Umwelt & Raumplanungskosten pro Person"
-x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "CHF pro Person" 0 --> 100
-line [76, 90, 88, 86, 86, 87, 75, 91, 64, 51, 50, 47, 41, 39]
+title "Umwelt- und Raumplanungskosten pro Person (Preisstand 2025; 2026/27 Budget)"
+x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis "CHF pro Person" 0 --> 120
+line [81, 96, 101, 99, 99, 100, 86, 104, 74, 58, 57, 54, 47, 45, 60, 67]
+```
+
+# Bilanz pro Einwohner:in
+
+Die Bilanzwerte liegen für 2020 bis 2025 vor. Alle Werte in den folgenden Diagrammen sind CHF pro Person mit Preisstand 2025.
+
+## Nettoverschuldung
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Nettoverschuldung pro Einwohner:in (Preisstand 2025)"
+x-axis [2020, 2021, 2022, 2023, 2024, 2025]
+y-axis "CHF pro Person" 0 --> 3000
+line [2217, 2148, 1655, 1289, 1596, 2268]
+```
+
+## Aktiven pro Einwohner:in
+
+Die Linien zeigen in dieser Reihenfolge: Aktiven, Finanzvermögen und Verwaltungsvermögen.
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Aktiven pro Einwohner:in (Preisstand 2025)"
+x-axis [2020, 2021, 2022, 2023, 2024, 2025]
+y-axis "CHF pro Person" 0 --> 13000
+line [11139, 11372, 11107, 10396, 10432, 10558]
+line [5622, 5694, 5517, 5350, 5314, 5695]
+line [5518, 5678, 5590, 5046, 5118, 4864]
+```
+
+## Passiven pro Einwohner:in
+
+Die Linien zeigen in dieser Reihenfolge: Passiven, Fremdkapital und Eigenkapital.
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Passiven pro Einwohner:in (Preisstand 2025)"
+x-axis [2020, 2021, 2022, 2023, 2024, 2025]
+y-axis "CHF pro Person" 0 --> 13000
+line [11139, 11372, 11107, 10396, 10432, 10558]
+line [7974, 7986, 7255, 6659, 6909, 6993]
+line [3165, 3386, 3852, 3737, 3523, 3565]
+```
+
+Die Aktiven und Passiven stimmen in der Quelle für alle dargestellten Jahre überein. Wegen Rundungen können Aktiven und Passiven um wenige Franken von der Summe ihrer Unterpositionen abweichen.
+
+# Schulstatistik
+
+Die Kosten pro Schüler:in und pro Klasse sind in den folgenden Diagrammen in CHF mit Preisstand 2025 dargestellt.
+
+## Kosten pro Schüler:in
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Kosten pro Schüler:in (Preisstand 2025)"
+x-axis ["2018/19", "2019/20", "2020/21", "2021/22", "2022/23", "2023/24", "2024/25", "2025/26"]
+y-axis "CHF pro Schüler:in" 0 --> 13500
+line [11600, 10809, 11329, 11026, 11749, 11296, 11780, 12871]
+```
+
+## Kosten pro Klasse
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Kosten pro Klasse (Preisstand 2025)"
+x-axis ["2018/19", "2019/20", "2020/21", "2021/22", "2022/23", "2023/24", "2024/25", "2025/26"]
+y-axis "CHF pro Klasse" 0 --> 240000
+line [210395, 203884, 212697, 206149, 213553, 210302, 214403, 228105]
 ```
 
 # Stimmt das Budget?
@@ -139,6 +247,8 @@ Das Budget muss jedes Jahr erstellt werden. Es soll Orientierung liefern, wie di
 
 Ich konnte die Budgets und Rechnungen bis ins Jahr 2020 vergleichen. Für die früheren Jahre stand mir das Budget nicht zur Verfügung.
 {:#budget}
+
+Die folgende Tabelle verwendet nominale CHF des jeweiligen Jahres. Anders als die Pro-Kopf-Grafiken ist sie nicht auf Preisstand 2025 umgerechnet.
 
 | Jahr | Rechnung (CHF) | Budget (CHF) | Differenz (CHF) |
 |------|----------------|--------------|-----------------|

@@ -55,34 +55,59 @@ pie showData
 ```
 With CHF 3,213, Neunkirch takes in slightly more per person. It’s striking that Neunkirch spends more than three times as much on transport. On the other hand, it spends far less on health. For public safety, environment & spatial planning, and the local economy, Neunkirch spends about twice as much as Beringen. Comparisons like this can help (for example, as a member of an audit committee) identify where it might be worth taking a closer look.
 
+## Per-capita spending in 2025
+
+This current breakdown is separate from the comparison with Neunkirch above. The spending categories total about CHF 3,261 per person. “Finance” is revenue in the source (CHF 3,393 per person), so it is excluded from the pie chart; the reported surplus is CHF 131 per person.
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+pie showData
+title "Per-capita spending in 2025 (CHF, 2025 prices)"
+    "Administration": 530
+    "Public Safety": 81.3
+    "Education": 1521
+    "Culture & Leisure": 140
+    "Health": 248
+    "Social Security": 622
+    "Transport": 67
+    "Environment & Spatial Planning": 45
+    "Economy": 7
+```
+
 # Development
 
-The trend over time matters as well: are the figures rising or falling? For example, it is repeatedly claimed that Beringen’s debt is too high, but the numbers don’t support that. Debt has been stable between CHF 34 and 39 million — about CHF 7,000 per resident.
+The updated source gives these per-capita series in CHF at 2025 prices (inflation index 2025 = 100) and now labels the years directly. 2026 and 2027 are budget figures.
+
+## Foreign capital
+
+Foreign-capital figures are available for 2020–2025.
 
 &nbsp;
 {:#mermaid}
 
 ```mermaid
 xychart
-title "Debt (Foreign Capital)"
+title "Foreign capital per resident (2025 prices)"
 x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "Million CHF" 0 --> 40
-line [38.010, 38.342, 35.781, 34.232, 37.158, 37.756]
+y-axis "CHF per person" 0 --> 9000
+line [7974, 7986, 7255, 6659, 6909, 6993]
 ```
 
 ## Negative developments
 
-Some notable developments show up in per-capita spending by category. The following are increasing, so it may be worth monitoring them more closely.
+Per-capita spending varies by category. In the actual-account years, 2025 administration and public safety are above their 2012 values; health spending is higher than in 2020.
 
 &nbsp;
 {:#mermaid}
 
 ```mermaid
 xychart
-title "Administrative costs per person"
-x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "CHF per person" 0 --> 600
-line [398, 377, 412, 517, 438, 361, 411, 371, 547, 498, 494, 539, 456, 530]
+title "Administrative costs per person (2025 prices; 2026/27 budget)"
+x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis "CHF per person" 0 --> 650
+line [422, 401, 437, 552, 474, 389, 440, 395, 580, 532, 519, 548, 522, 530, 531, 568]
 ```
 
 &nbsp;
@@ -90,10 +115,10 @@ line [398, 377, 412, 517, 438, 361, 411, 371, 547, 498, 494, 539, 456, 530]
 
 ```mermaid
 xychart
-title "Public safety costs per person"
-x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "CHF per person" 0 --> 80
-line [1.9, 36.3, 30.1, 6.5, 14.8, 19.4, 58.8, 45.7, 19.3, 26.9, 50.2, 39.3, 63.0, 70.8]
+title "Public safety costs per person (2025 prices; 2026/27 budget)"
+x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis "CHF per person" 0 --> 100
+line [2.0, 38.6, 34.6, 7.5, 17.1, 22.3, 67.6, 52.5, 22.1, 30.9, 57.6, 45.2, 72.1, 81.3, 84.8, 86.4]
 ```
 
 &nbsp;
@@ -101,26 +126,26 @@ line [1.9, 36.3, 30.1, 6.5, 14.8, 19.4, 58.8, 45.7, 19.3, 26.9, 50.2, 39.3, 63.0
 
 ```mermaid
 xychart
-title "Healthcare costs per person"
-x-axis [2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "CHF per person" 0 --> 250
-line [152, 165, 145, 154, 207, 216]
+title "Healthcare costs per person (2025 prices; 2026/27 budget)"
+x-axis [2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis "CHF per person" 0 --> 350
+line [175, 190, 166, 176, 237, 248, 265, 319]
 ```
-I start this chart in 2020 because there was a system change, so earlier numbers aren’t comparable.
+This chart starts in 2020 because there was a system change, so earlier figures are not comparable.
 
 ## Positive developments
 
-On the other hand, there are trends that are pleasing.
+The 2027 budget values for transport and environment are below their earlier peaks. They are plans, not completed financial statements.
 
 &nbsp;
 {:#mermaid}
 
 ```mermaid
 xychart
-title "Transport costs per person"
-x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "CHF per person" 0 --> 550
-line [180, 183, 201, 496, 306, 274, 366, 146, 91, 135, 64, 61, 71, 58]
+title "Transport costs per person (2025 prices; 2026/27 budget)"
+x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis "CHF per person" 0 --> 650
+line [191, 195, 231, 570, 351, 314, 420, 168, 104, 155, 73, 70, 82, 67, 84, 75]
 ```
 
 &nbsp;
@@ -128,10 +153,93 @@ line [180, 183, 201, 496, 306, 274, 366, 146, 91, 135, 64, 61, 71, 58]
 
 ```mermaid
 xychart
-title "Environment & Spatial Planning costs per person"
-x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-y-axis "CHF per person" 0 --> 100
-line [76, 90, 88, 86, 86, 87, 75, 91, 64, 51, 50, 47, 41, 39]
+title "Environment & spatial planning costs per person (2025 prices; 2026/27 budget)"
+x-axis [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+y-axis "CHF per person" 0 --> 120
+line [81, 96, 101, 99, 99, 100, 86, 104, 74, 58, 57, 54, 47, 45, 60, 67]
+```
+
+# Balance sheet per resident
+
+Balance-sheet figures are available for 2020–2025. All values in the following charts are CHF per person at 2025 prices.
+
+## Net debt
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Net debt per resident (2025 prices)"
+x-axis [2020, 2021, 2022, 2023, 2024, 2025]
+y-axis "CHF per person" 0 --> 3000
+line [2217, 2148, 1655, 1289, 1596, 2268]
+```
+
+## Assets per resident
+
+The lines are, in order: assets, financial assets, and administrative assets.
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Assets per resident (2025 prices)"
+x-axis [2020, 2021, 2022, 2023, 2024, 2025]
+y-axis "CHF per person" 0 --> 13000
+line [11139, 11372, 11107, 10396, 10432, 10558]
+line [5622, 5694, 5517, 5350, 5314, 5695]
+line [5518, 5678, 5590, 5046, 5118, 4864]
+```
+
+## Liabilities per resident
+
+The lines are, in order: liabilities, foreign capital, and equity.
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Liabilities per resident (2025 prices)"
+x-axis [2020, 2021, 2022, 2023, 2024, 2025]
+y-axis "CHF per person" 0 --> 13000
+line [11139, 11372, 11107, 10396, 10432, 10558]
+line [7974, 7986, 7255, 6659, 6909, 6993]
+line [3165, 3386, 3852, 3737, 3523, 3565]
+```
+
+The source reports equal total assets and liabilities for every year shown. Rounding can make these totals differ by a few francs from the sums of their components.
+
+# School statistics
+
+The following charts show costs per student and per class in CHF at 2025 prices.
+
+## Cost per student
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Cost per student (2025 prices)"
+x-axis ["2018/19", "2019/20", "2020/21", "2021/22", "2022/23", "2023/24", "2024/25", "2025/26"]
+y-axis "CHF per student" 10000 --> 13500
+line [11600, 10809, 11329, 11026, 11749, 11296, 11780, 12871]
+```
+
+## Cost per class
+
+&nbsp;
+{:#mermaid}
+
+```mermaid
+xychart
+title "Cost per class (2025 prices)"
+x-axis ["2018/19", "2019/20", "2020/21", "2021/22", "2022/23", "2023/24", "2024/25", "2025/26"]
+y-axis "CHF per class" 190000 --> 240000
+line [210395, 203884, 212697, 206149, 213553, 210302, 214403, 228105]
 ```
 
 # Is the budget realistic?
@@ -140,6 +248,8 @@ The budget must be prepared every year. It is meant to provide guidance on expec
 
 I was able to compare budgets and actuals back to 2018. Budget data for earlier years was not available to me.
 {:#budget}
+
+The following table gives nominal CHF for each year. Unlike the per-capita charts, it has not been converted to 2025 prices.
 
 | Year | Financial Statement (CHF) | Budget (CHF) | Difference (CHF) |
 |------|---------------------------|--------------|------------------|
