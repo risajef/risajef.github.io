@@ -9,6 +9,10 @@ import sys
 import tempfile
 from pathlib import Path
 
+try:
+    from .runtime_release import write_lock
+except ImportError:
+    from runtime_release import write_lock
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 ARCHIVE_NAME = "runtime-assets.tar.gz"
 OUTPUT_DIR = PROJECT_DIR / ".cache" / "runtime-assets"
@@ -22,7 +26,8 @@ def main() -> None:
     pack(archive_path)
     write_checksum(archive_path, checksum_path)
     release_tag = upload(archive_path, checksum_path)
-    print(f"Published {ARCHIVE_NAME} to {release_tag}. Existing consumers are unchanged.")
+    write_lock(release_tag, archive_path)
+    print(f"Published {ARCHIVE_NAME} to {release_tag}. Review and commit runtime-assets.lock.json with its source changes.")
 
 
 def build_site_and_audio() -> None:

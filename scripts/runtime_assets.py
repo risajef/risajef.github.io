@@ -76,6 +76,7 @@ def pack_assets(output_path: Path) -> None:
         manifest = {
             "version": 1,
             "files": file_hashes,
+            "generation": generation_inputs(),
         }
         manifest_bytes = (json.dumps(manifest, indent=2, sort_keys=True) + "\n").encode()
         info = tarfile.TarInfo(MANIFEST_NAME)
@@ -124,6 +125,18 @@ def runtime_files() -> list[Path]:
             if path.is_file():
                 files.append(path)
     return sorted(files)
+
+
+def generation_inputs() -> dict:
+    revision = subprocess.run(["git", "rev-parse", "HEAD"], cwd=PROJECT_DIR,
+                              check=True, capture_output=True, text=True).stdout.strip()
+    result = subprocess.run(
+        ["git", "ls-files", "-z", "--", "docs/*.md", "mkdocs.yml", "pyproject.toml", "uv.lock"],
+        cwd=PROJECT_DIR, check=True, capture_output=True, text=True,
+    )
+    hashes = {name: sha256(PROJECT_DIR / name) for name in result.stdout.split("\0")
+              if name and (PROJECT_DIR / name).is_file()}
+    return {"source_revision": revision, "input_sha256": hashes}
 
 
 def validate_runtime_ownership() -> None:

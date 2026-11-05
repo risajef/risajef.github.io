@@ -3,9 +3,7 @@
 - `npm ci`
 - `apt-get install libasound2`
 - `uv sync --frozen`
-- `gh release download runtime-assets-v2 --pattern 'runtime-assets-v2.tar.gz*' --dir /tmp`
-- `cd /tmp && sha256sum --check runtime-assets-v2.tar.gz.sha256`
-- `npm run install-runtime-assets -- --archive /tmp/runtime-assets-v2.tar.gz`
+- `npm run restore-runtime-assets`
 - `npm run build-tools`
 - `npm run check-site`
 - `mkdocs serve`
@@ -26,7 +24,7 @@ For a change that affects a spoken page or the TTS configuration, refresh the
 runtime-assets release first using the procedure below, then run the same
 commit, push, and dispatch commands. The [Deploy GitHub Pages](.github/workflows/deploy-pages.yml) workflow then
 checks out submodules, installs the locked Node and Python dependencies,
-restores the verified `runtime-assets-v2` release archive, runs
+restores the exact release archive and SHA-256 selected in `runtime-assets.lock.json`, runs
 `npm run build-tools` and `npm run check-site`, and deploys the resulting
 `site/` directory. A successful workflow publishes
 <https://risajef.github.io/>.
@@ -39,65 +37,50 @@ the actual build and deployment result.
 You can also use **Actions → Deploy GitHub Pages → Run workflow**. Supply the
 intended commit SHA in `revision`, or leave it blank to use the selected ref.
 
-Before deploying a change that requires Piper audio, voice models, or the Z3
-runtime, ensure the required files are present in the checksummed
-`runtime-assets-v2` GitHub Release archive. The workflow deliberately fails if
-that release is missing, corrupted, or stale. Generated `site/` output and
-embedded-app bundles do not need to be committed: GitHub Actions rebuilds them
-from the committed source and lockfiles.
+## Runtime assets and recovery
 
-## Refresh runtime assets before deployment
+`runtime-assets.lock.json` pins the release name, archive filename, and exact
+SHA-256. `npm run restore-runtime-assets` downloads and verifies those bytes
+before installing only models, audio, and Z3. Tracked article images remain
+owned by Git. An old v2 archive can contain images; they are verified but ignored.
 
-Pages is a cache-only Piper build: it never generates audio. Any change to a
-spoken page (or to the TTS configuration/plugin) must therefore be handled
-locally before pushing the source commit. After restoring the current runtime
-archive and making the source changes, run:
+The initial lock retains the existing published v2 release for compatibility.
+Its downloaded archive bytes, checksum, layout, and every manifest hash were verified. Replacing that release's bytes will fail verification.
+Future publication creates a new content-addressed release, never an overwrite.
+Retain every referenced release and a verified local backup for historical builds.
+
+To restore a local backup without downloading:
 
 ```bash
-# Generate missing or stale Piper audio locally.
-PIPER_TTS_GENERATE_AUDIO=true npm run build-site
-
-# Verify the exact cache-only behaviour used by GitHub Pages.
-PIPER_TTS_GENERATE_AUDIO=false npm run check-site
-
-# Package the models, generated audio, and Z3 runtime, then create its checksum.
-npm run pack-runtime-assets -- --output /tmp/runtime-assets-v2.tar.gz
-(cd /tmp && sha256sum runtime-assets-v2.tar.gz > runtime-assets-v2.tar.gz.sha256)
-
-# Replace the two assets consumed by the deployment workflow.
-gh release upload runtime-assets-v2 \
-  /tmp/runtime-assets-v2.tar.gz \
-  /tmp/runtime-assets-v2.tar.gz.sha256 \
-  --clobber
+npm run restore-runtime-assets -- --archive /path/to/runtime-assets.tar.gz
 ```
 
-Then commit and push the source changes to `main`, and explicitly dispatch
-deployment. Ensure the required runtime assets are available before dispatch;
-pushing alone does not run the Pages workflow.
-Audio generation requires the locally configured Piper GPU/runtime; do not try
-to generate it in GitHub Actions.
+When spoken content or TTS configuration changes, generate and verify its audio
+locally, then publish a new runtime release:
 
-If a deployment has already failed with `Piper TTS cache-only build found missing or
-stale audio`, check out that exact revision locally, run the commands above,
-and use **Deploy GitHub Pages → Run workflow** from the **Actions** tab to
-retry. No additional source commit is required if the failed revision is still
-the one you want to publish.
+```bash
+PIPER_TTS_GENERATE_AUDIO=true npm run build
+PIPER_TTS_GENERATE_AUDIO=false npm run check-site
+npm run publish-runtime-assets
+```
 
-`uv.lock` is the authoritative Python dependency lock. Piper voice models,
-generated audio, and the standalone Z3 WASM runtime are published together as
-the `runtime-assets-v2` GitHub Release asset, not stored in Git or Git LFS.
-The release archive is a required build input and must be retained. If local
-runtime assets are missing, restore them from the release and verify the
-published SHA-256 before building. If the release itself is lost or corrupted,
-stop deployment, recreate the archive from a verified local backup, manually
-review it, upload a new versioned release, update the pinned release name in
-the build configuration, and run `npm run check-site` before deployment.
+The publisher builds, packages, creates a uniquely named draft release, downloads
+and verifies both uploaded assets, and only then publishes it. It updates
+`runtime-assets.lock.json` only after successful publication. Review and commit
+that lock together with the corresponding source changes, push, then dispatch
+deployment. Never edit the existing release or copy its checksum into the lock
+without verifying the archive itself. Failed publication leaves the old release
+and lock usable; inspect any leftover draft before retrying.
 
-Normal local MkDocs builds generate missing Piper audio with the configured
-GPU provider. Pages builds set `PIPER_TTS_GENERATE_AUDIO=false`: they restore
-the checksummed release archive and fail on a stale or missing audio entry
-instead of generating speech in GitHub Actions. Refresh the assets on the
-existing `runtime-assets-v2` release with the procedure above before deploying.
+The archive manifest records source revision and generation input hashes.
+Audio generation requires the locally configured Piper GPU/runtime. CI runs
+cache-only and fails for stale or absent audio. If that happens, rebuild the
+intended source revision locally, publish its runtime release, commit its new
+lock, and dispatch that new revision.
+
+If a referenced release is lost, restore its exact bytes from a verified backup.
+If exact recovery is impossible, create a new release and commit a new lock;
+do not silently substitute assets for an existing source revision.
 
 `npm run build-tools` stages every embedded application under
 `docs/assets/apps`. Applications with a committed Node lockfile build in an

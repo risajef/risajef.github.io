@@ -13,7 +13,8 @@
     "check-site": ".venv/bin/mkdocs build --strict && npm run finalize-site && .venv/bin/python scripts/check_site.py",
     "build": "npm run build-tools && npm run check-site",
     "test": ".venv/bin/python -m unittest discover -s tests -v",
-    "test:browser": "node tests/browser-smoke.cjs"
+    "test:browser": "node tests/browser-smoke.cjs",
+    "restore-runtime-assets": ".venv/bin/python scripts/runtime_release.py"
   },
   "repository": {
     "type": "git",
