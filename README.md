@@ -123,3 +123,17 @@ submodule to upgrade the app while retaining the website theme.
 - Framework: [MkDocs](https://www.mkdocs.org)
 - Custom Theme: Allows subpages for pages
 - RSS Feed: The blog entries are in a RSS feed
+
+## Embedded application trust
+
+All embedded tools are trusted components of this website, pinned by submodule
+revision and reviewed before upgrading. Each runs in an iframe to separate its
+DOM, styles, and script globals from the theme. The website never injects fetched
+application markup or scripts into its own document.
+
+These same-origin iframes deliberately retain origin storage, file selection,
+downloads, workers, and clipboard behavior. They are not a security boundary:
+a compromised tool could access this origin's storage and parent document. Do
+not host untrusted applications under this origin. Supporting untrusted tools
+requires a separate origin, a narrow messaging protocol, and a permission review.
+Changing origins would also require explicit migration of existing browser data.

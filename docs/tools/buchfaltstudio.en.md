@@ -1,10 +1,4 @@
 ---
-extra_css:
-- assets/apps/buchfalten/styles.css
-extra_javascript:
-- assets/apps/buchfalten/config.js
-- https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js
-- assets/buchfalten-embed.js
 tags:
 - buchfalten
 - folding
@@ -16,9 +10,13 @@ github: https://github.com/risajef/buchfalten
 lang: en
 auto_translated: true
 source_lang: de
+page_type: iframe
 ---
 
-<div id="buchfaltstudio-root" class="buchfaltstudio-root">
-  <p>Loading Buchfaltstudio...</p>
-  <noscript>Please enable JavaScript to use Buchfaltstudio.</noscript>
-</div>
+<iframe
+  src="/assets/apps/buchfalten/"
+  title="Buchfaltstudio"
+  loading="lazy"
+  allow="clipboard-read; clipboard-write"
+  style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
+></iframe>

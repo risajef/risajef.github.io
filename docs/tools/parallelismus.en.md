@@ -1,20 +1,21 @@
 ---
-extra_css: []
-extra_javascript:
-  - assets/parallelismus-embed.js
 tags:
-  - parallelism
-  - bible
-  - research
-  - tool
-  - hebrew
-  - greek
+- parallelism
+- bible
+- research
+- tool
+- hebrew
+- greek
 github: https://github.com/risajef/parallelismus
 lang: en
 auto_translated: false
+page_type: iframe
 ---
 
-<div id="parallelismus-root" class="parallelismus-root">
-  <p>Loading Parallelismus...</p>
-  <noscript>Please enable JavaScript to use Parallelismus.</noscript>
-</div>
+<iframe
+  src="/assets/apps/parallelismus/dist/"
+  title="Parallelismus"
+  loading="lazy"
+  allow="clipboard-read; clipboard-write"
+  style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
+></iframe>

@@ -1,18 +1,19 @@
 ---
-extra_css: []
-extra_javascript:
-  - assets/background-generator-embed.js
 tags:
-  - background-generator
-  - playground
-  - svg
-  - tool
+- background-generator
+- playground
+- svg
+- tool
 github: https://github.com/risajef/background-generator
 lang: en
 auto_translated: false
+page_type: iframe
 ---
 
-<div id="background-generator-root" class="background-generator-root">
-  <p>Loading Background Generator...</p>
-  <noscript>Please enable JavaScript to use the Background Generator.</noscript>
-</div>
+<iframe
+  src="/assets/apps/background-generator/web/"
+  title="Background Generator"
+  loading="lazy"
+  allow="clipboard-read; clipboard-write"
+  style="min-height: 82vh; border: 0; border-radius: 1rem; background: #ffffff;"
+></iframe>

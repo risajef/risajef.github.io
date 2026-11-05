@@ -13,7 +13,7 @@ Scope: findings F1–F14 in `MAIN_REPO_REVIEW.md`. One commit per finding, inclu
 | F7 | Complete | Cache checks an exact hashed output manifest; HTML dependencies are checked before publication. All app builds now prepare and validate in a temporary artifact directory before rollback-capable replacement. Fingerprints include publish rules/toolchain and fail on unreadable inputs. Missing/corrupt output and failed-build preservation tests pass. |
 | F8 | Complete | Kept the existing manual-deployment policy and corrected README procedures and retry guidance. Workflow input/checkout and manual-only trigger assertions pass; no duplicate push dispatch introduced. |
 | F9 | Complete | Added push/PR/manual parent-only CI, a lightweight Python regression entry point, browser RSS success/error checks, and emitted local-asset validation. Python tests pass. Chromium browser checks pass (localhost execution required sandbox escalation). No app builds or model downloads required for parent tests. |
-| F10 | Pending | |
+| F10 | Complete | Replaced all three DOM-injection adapters with native app iframes in both languages; removed obsolete adapters and parent-loaded app scripts/styles. Documented trusted same-origin apps and the remaining shared-storage boundary explicitly. Browser fixtures verify separate DOM/globals and relative-link behavior. No sandbox/origin migration that would break stored user data. |
 | F11 | Pending | |
 | F12 | Pending | |
 | F13 | Pending | |
