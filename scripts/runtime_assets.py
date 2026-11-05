@@ -12,6 +12,10 @@ import tarfile
 import tempfile
 from pathlib import Path
 
+try:
+    from .artifact_io import replace_directories
+except ImportError:  # Direct script execution.
+    from artifact_io import replace_directories
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 RUNTIME_PATHS = (
@@ -97,14 +101,13 @@ def install_assets(archive_path: Path) -> None:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         validate_manifest(temp_dir, manifest)
 
+        replacements = {}
         for relative_path in RUNTIME_PATHS:
             source = temp_dir / relative_path
             if not source.is_dir():
                 raise SystemExit(f"Runtime asset bundle is missing {relative_path}")
-            destination = PROJECT_DIR / relative_path
-            if destination.exists():
-                shutil.rmtree(destination)
-            shutil.copytree(source, destination)
+            replacements[PROJECT_DIR / relative_path] = source
+        replace_directories(replacements)
     print(f"Installed runtime assets from {archive_path}")
 
 

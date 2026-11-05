@@ -53,3 +53,12 @@ class RuntimeTests(unittest.TestCase):
         with self.assertRaisesRegex(SystemExit, "overlap"):
             runtime.install_assets(self.bundle())
         self.assertEqual(tracked.read_bytes(), b"source")
+
+    def test_missing_later_directory_leaves_all_destinations_unchanged(self):
+        existing = self.project / runtime.RUNTIME_PATHS[0] / "original"
+        existing.parent.mkdir(parents=True)
+        existing.write_bytes(b"original")
+        archive = self.bundle({f"{runtime.RUNTIME_PATHS[0]}/replacement": b"new"})
+        with self.assertRaisesRegex(SystemExit, "missing"):
+            runtime.install_assets(archive)
+        self.assertEqual(existing.read_bytes(), b"original")
