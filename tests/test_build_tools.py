@@ -3,6 +3,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+from bs4 import BeautifulSoup
 from scripts import build_tools as build
 
 
@@ -67,3 +68,24 @@ class BuildTests(unittest.TestCase):
 
         with patch.object(Path, "open", fail), self.assertRaises(PermissionError):
             build.input_fingerprint(self.app)
+
+    def test_base_insertion_accepts_valid_html_formats_and_is_idempotent(self):
+        for html in ('<html><head><title>App</title></head></html>',
+                     '<HTML><HEAD>\r\n</HEAD></HTML>',
+                     '<head><base href="/old/"></head>'):
+            with self.subTest(html=html):
+                path = self.source / "index.html"
+                path.write_text(html)
+                for _ in range(2):
+                    build.inject_base_href(path, "/assets/apps/fixture/")
+                bases = BeautifulSoup(path.read_text(), "html.parser").find_all("base")
+                self.assertEqual(len(bases), 1)
+                self.assertEqual(bases[0]["href"], "/assets/apps/fixture/")
+
+    def test_ambiguous_base_and_missing_head_are_rejected(self):
+        for html in ('<head><base href="/one/"><base href="/two/"></head>', '<body>App</body>'):
+            with self.subTest(html=html):
+                path = self.source / "index.html"
+                path.write_text(html)
+                with self.assertRaises(RuntimeError):
+                    build.inject_base_href(path, "/app/")

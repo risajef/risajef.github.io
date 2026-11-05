@@ -321,11 +321,20 @@ def inject_base_href(index_path: Path, base_href: str) -> None:
     except OSError as exc:
         raise RuntimeError(f"Unable to update {index_path} with a base href") from exc
 
-    base_tag = f'    <base href="{base_href}" />\n'
-    if "<base " not in html:
-        if "<head>" not in html:
-            raise RuntimeError(f"Unable to inject a base href into {index_path}")
-        html = html.replace("<head>\n", f"<head>\n{base_tag}", 1)
+    soup = BeautifulSoup(html, "html.parser")
+    head = soup.find("head")
+    bases = soup.find_all("base")
+    if head is None or len(bases) > 1:
+        raise RuntimeError(f"Unable to establish a unique base href in {index_path}")
+    if bases:
+        base = bases[0]
+        if base.parent != head:
+            raise RuntimeError(f"Base element is outside head in {index_path}")
+    else:
+        base = soup.new_tag("base")
+        head.insert(0, base)
+    base["href"] = base_href
+    html = str(soup)
 
     try:
         index_path.write_text(html, encoding="utf-8")
