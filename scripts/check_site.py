@@ -10,11 +10,17 @@ from urllib.parse import unquote, urljoin, urlsplit
 from bs4 import BeautifulSoup
 import yaml
 
+try:
+    from .routes import normalize_redirect_target
+except ImportError:
+    from routes import normalize_redirect_target
+
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
-SITE_DIR = PROJECT_DIR / "site"
 CONFIG_PATH = PROJECT_DIR / "mkdocs.yml"
-SITE_URL = "https://retoweber.info"
+CONFIG = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8"))
+SITE_DIR = PROJECT_DIR / CONFIG.get("site_dir", "site")
+SITE_URL = CONFIG["site_url"].rstrip("/")
 DEFAULT_SOCIAL_IMAGE = f"{SITE_URL}/output.png"
 UNLISTED_PUBLIC_PAGES = (
     "zonenplanaenderung",
@@ -125,14 +131,6 @@ def check_redirects() -> list[str]:
     return failures
 
 
-def normalize_redirect_target(path: str, base_path: str) -> str:
-    if path.startswith(("http://", "https://", "/")):
-        return path
-
-    normalized = path.strip().strip("/")
-    if not normalized:
-        return f"{base_path}/" if base_path else "/"
-    return f"{base_path}/{normalized}/" if base_path else f"/{normalized}/"
 
 
 def check_unlisted_public_pages() -> list[str]:

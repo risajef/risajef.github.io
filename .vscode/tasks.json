@@ -2,10 +2,11 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "MkDocs: Build",
+      "label": "Build and validate site",
       "type": "shell",
-      "command": "${workspaceFolder}/.venv/bin/mkdocs",
+      "command": "npm",
       "args": [
+        "run",
         "build"
       ],
       "options": {

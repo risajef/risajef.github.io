@@ -7,6 +7,7 @@ requires-python = ">=3.11,<3.12"
 dependencies = [
   "beautifulsoup4==4.15.0",
   "lxml==6.1.1",
+  "PyYAML==6.0.3",
   "mkdocs==1.6.1",
   "mkdocs-bibtex==4.4.0",
   "mkdocs-exclude==1.0.2",
@@ -29,13 +30,13 @@ dev = [
 
 [tool.pyink]
 line-length = 128
-target-version = ["py312"]
+target-version = ["py311"]
 
 [tool.mypy]
-python_version = "3.12"
-strict = true
-files = "src tests"
-mypy_path = "src"
+python_version = "3.11"
+# Hook/plugin APIs are dynamic; check their function bodies without claiming full annotations.
+check_untyped_defs = true
+files = ["scripts", "hooks"]
 warn_unused_configs = true
 warn_return_any = true
 warn_unused_ignores = true

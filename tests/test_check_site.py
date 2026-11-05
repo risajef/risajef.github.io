@@ -4,9 +4,23 @@ from pathlib import Path
 from unittest.mock import patch
 
 from scripts import check_site
+from scripts.routes import normalize_redirect_target
 
 
 class SiteTests(unittest.TestCase):
+    def test_redirect_contract_uses_independent_expected_examples(self):
+        examples = [
+            ("tools/app", "", "/tools/app/"),
+            ("tools/app", "/project", "/project/tools/app/"),
+            ("", "", "/"),
+            ("", "/project", "/project/"),
+            ("/existing/", "/project", "/existing/"),
+            ("https://other.example/path", "", "https://other.example/path"),
+        ]
+        for path, base, expected in examples:
+            with self.subTest(path=path, base=base):
+                self.assertEqual(normalize_redirect_target(path, base), expected)
+
     def test_local_assets_respect_base_urls_queries_and_external_origins(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

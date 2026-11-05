@@ -1026,6 +1026,7 @@ dependencies = [
     { name = "mkdocs-static-i18n" },
     { name = "pymdown-extensions" },
     { name = "python-markdown-math" },
+    { name = "pyyaml" },
 ]
 
 [package.optional-dependencies]
@@ -1055,6 +1056,7 @@ requires-dist = [
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.3,<9.0" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=5.0,<6.0" },
     { name = "python-markdown-math", specifier = "==0.9" },
+    { name = "pyyaml", specifier = "==6.0.3" },
 ]
 provides-extras = ["dev"]
 

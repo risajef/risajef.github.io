@@ -9,6 +9,11 @@ from urllib.parse import urlsplit
 
 import yaml
 
+try:
+    from .routes import normalize_redirect_target
+except ImportError:
+    from routes import normalize_redirect_target
+
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 CONFIG_PATH = PROJECT_DIR / "mkdocs.yml"
@@ -58,14 +63,6 @@ def write_redirects(site_dir: Path, config: dict) -> None:
         )
 
 
-def normalize_redirect_target(path: str, base_path: str) -> str:
-    if path.startswith(("http://", "https://", "/")):
-        return path
-
-    normalized = path.strip().strip("/")
-    if not normalized:
-        return f"{base_path}/" if base_path else "/"
-    return f"{base_path}/{normalized}/" if base_path else f"/{normalized}/"
 
 
 if __name__ == "__main__":

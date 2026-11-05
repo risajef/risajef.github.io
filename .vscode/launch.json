@@ -13,11 +13,10 @@
       "justMyCode": true
     },
     {
-      "name": "MkDocs: Github deploy",
+      "name": "Deploy committed main",
       "type": "python",
       "request": "launch",
-      "module": "mkdocs",
-      "args": ["gh-deploy"],
+      "program": "${workspaceFolder}/scripts/deploy.py",
       "cwd": "${workspaceFolder}",
       "python": "${workspaceFolder}/.venv/bin/python",
       "console": "integratedTerminal",

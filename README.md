@@ -1,12 +1,15 @@
 # Usage
 
+Use a recursive checkout so the thirteen pinned embedded applications are present.
+Python 3.11 and Node.js 22 are the deployment toolchain.
+
 - `npm ci`
 - `apt-get install libasound2`
 - `uv sync --frozen`
 - `npm run restore-runtime-assets`
 - `npm run build-tools`
 - `npm run check-site`
-- `mkdocs serve`
+- `PATH="$PWD/node_modules/.bin:$PATH" uv run mkdocs serve`
 
 # Deploying to GitHub Pages
 
@@ -120,3 +123,17 @@ a compromised tool could access this origin's storage and parent document. Do
 not host untrusted applications under this origin. Supporting untrusted tools
 requires a separate origin, a narrow messaging protocol, and a permission review.
 Changing origins would also require explicit migration of existing browser data.
+
+## Parent checks
+
+Run `npm test` for focused parent Python regressions and `npm run test:browser`
+for Chromium integration checks. These use fixtures, do not build subrepositories,
+and do not require voice models. A lightweight CI job runs both on source changes.
+For a Python-only checks environment, use `python -m pip install -r tests/requirements.txt`
+and `python -m unittest discover -s tests -v`.
+
+Run `npm run build` for the complete application staging and strict rendered-site
+validation. The parent checks and full build serve different purposes.
+
+The historical review is in `MAIN_REPO_REVIEW.md`; implemented fixes and their
+verification are tracked in `MAIN_REPO_FIX_PROGRESS.md`.

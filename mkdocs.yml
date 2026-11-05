@@ -188,7 +188,6 @@ extra:
         'Background Generator': 'Background Generator'
         Parallelismus: 'Parallelismus'
         'Python Blocks': 'Python Blocks'
-        Research: Research
         'Hoare Logic': 'Hoare Logic'
         'XML Weaver': 'XML Weaver'
         'LinkedIn WYSIWYG': 'LinkedIn WYSIWYG'
@@ -223,7 +222,6 @@ extra:
         'Background Generator': 'Hintergrund Generator'
         Parallelismus: Parallelismus
         'Python Blocks': 'Python Blocks'
-        Research: Forschung
         'Hoare Logic': Hoare-Logik
         'XML Weaver': 'XML Weaver'
         'LinkedIn WYSIWYG': 'LinkedIn WYSIWYG'
@@ -242,4 +240,4 @@ extra:
         'The Book': 'Das Buch'
         'Influential Books': 'Einflussreiche Bücher'
         'Lessons from My Book': 'Lektionen aus meinem Buch'
-        'Warmer than the Sun': 'Wärmer als die Sonne'
+        'Wärmer als die Sonne': 'Wärmer als die Sonne'
