@@ -19,4 +19,15 @@ Scope: findings F1–F14 in `MAIN_REPO_REVIEW.md`. One commit per finding, inclu
 | F13 | Complete | Thin lifecycle hook delegates to build-scoped content collection, iframe presentation and a pinned Mermaid adapter. YAML parser replaces regex metadata parsing; only generated diagrams are inlined. Tests cover metadata refresh, locale/escaping, real plugin adapter/cache behavior, and a real fixture MkDocs collection build. |
 | F14 | Complete | Aligned Python tooling with 3.11 and actual source paths, declared existing PyYAML dependency and refreshed uv.lock offline, corrected tool/IDE procedures and stale maintenance notes, derived checker identity from MkDocs configuration, and centralized redirect normalization with independent expected examples. Thirty parent tests pass. Final integration verification follows below. |
 
+| F15 (integration discovery) | Complete | TTS plugin cleanup retained only the last locale. Finalization now publishes the union of MP3s referenced by rendered players in all locales; the checker also validates later playlist tracks. Two regression fixtures pass. |
+
+## Final integration verification
+
+- 32 parent regression tests pass, including a real fixture MkDocs build.
+- Chromium RSS success/error and iframe document-separation fixtures pass.
+- All thirteen applications staged successfully using temporary source copies. The first offline attempt lacked a dependency; the complete retry installed locked dependencies and passed.
+- A complete `PIPER_TTS_GENERATE_AUDIO=false npm run build` passes: all thirteen staging caches, strict MkDocs, finalization, metadata/redirect contracts, and local runtime dependencies including every audio playlist track. All thirteen output manifests were also checked independently.
+- No runtime generation, external publication, workflow dispatch, or push performed.
+- Parent gitlinks are unchanged from `faa03e1`; the four pre-existing modified subrepositories and other untracked review reports are left alone.
+
 Commit subjects identify each finding; use `git log --oneline --grep='fix(F'` to list them.

@@ -12,8 +12,10 @@ import yaml
 
 try:
     from .routes import normalize_redirect_target
+    from .rendered_audio import audio_urls
 except ImportError:
     from routes import normalize_redirect_target
+    from rendered_audio import audio_urls
 
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
@@ -178,8 +180,11 @@ def check_local_assets() -> list[str]:
         document_url = f"{SITE_URL}/{relative}"
         base = soup.find("base", href=True)
         base_url = urljoin(document_url, str(base["href"])) if base else document_url
-        for element in soup.select("script[src], link[rel=stylesheet][href], img[src], iframe[src], audio[src], source[src]"):
-            value = str(element.get("src") or element.get("href"))
+        values = {str(element.get("src") or element.get("href")) for element in soup.select(
+            "script[src], link[rel=stylesheet][href], img[src], iframe[src], source[src]"
+        )}
+        values.update(audio_urls(soup))
+        for value in sorted(values):
             resolved = urlsplit(urljoin(base_url, value))
             if resolved.scheme not in {"http", "https"} or resolved.netloc != origin:
                 continue

@@ -5,14 +5,17 @@ from __future__ import annotations
 
 import shutil
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urljoin, urlsplit
 
 import yaml
+from bs4 import BeautifulSoup
 
 try:
     from .routes import normalize_redirect_target
+    from .rendered_audio import audio_urls
 except ImportError:
     from routes import normalize_redirect_target
+    from rendered_audio import audio_urls
 
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
@@ -39,6 +42,34 @@ def main() -> None:
     site_dir = PROJECT_DIR / config.get("site_dir", "site")
     copy_sitemap(site_dir)
     write_redirects(site_dir, config)
+    copy_referenced_audio(site_dir, PROJECT_DIR / config.get("docs_dir", "docs"))
+
+
+def copy_referenced_audio(site_dir: Path, docs_dir: Path) -> None:
+    """Preserve all locales after the TTS plugin cleans its per-locale output.
+
+    MkDocs/Piper has already validated the cache. Copy exactly the files referenced
+    by emitted players, rather than publishing the entire possibly stale cache.
+    """
+    audio_root = Path("assets/piper-tts/audio")
+    for page in site_dir.rglob("*.html"):
+        soup = BeautifulSoup(page.read_text(encoding="utf-8"), "html.parser")
+        document_url = "https://site.invalid/" + page.relative_to(site_dir).as_posix()
+        for value in audio_urls(soup):
+            url = urlsplit(urljoin(document_url, value))
+            if url.netloc != "site.invalid" or url.scheme != "https":
+                continue
+            relative = Path(unquote(url.path).lstrip("/"))
+            source = (docs_dir / relative).resolve()
+            destination = (site_dir / relative).resolve()
+            if not source.is_relative_to((docs_dir / audio_root).resolve()):
+                continue
+            if not destination.is_relative_to((site_dir / audio_root).resolve()):
+                raise ValueError(f"Audio path escapes published audio root: {value}")
+            if source.suffix != ".mp3" or not source.is_file() or source.stat().st_size == 0:
+                raise RuntimeError(f"Rendered playlist references missing or empty cached audio: {source}")
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, destination)
 
 
 def copy_sitemap(site_dir: Path) -> None:
