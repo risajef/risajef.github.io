@@ -62,3 +62,37 @@ class RuntimeTests(unittest.TestCase):
         with self.assertRaisesRegex(SystemExit, "missing"):
             runtime.install_assets(archive)
         self.assertEqual(existing.read_bytes(), b"original")
+
+    def test_manifest_rejects_unlisted_files_and_invalid_entries(self):
+        root = self.root / "payload"
+        asset = root / runtime.RUNTIME_PATHS[0] / "asset"
+        asset.parent.mkdir(parents=True)
+        asset.write_bytes(b"asset")
+        name = asset.relative_to(root).as_posix()
+        good = {name: hashlib.sha256(b"asset").hexdigest()}
+        runtime.validate_manifest(root, {"version": 1, "files": good})
+        for files in ({}, {**good, "../outside": "a" * 64}, {name: "invalid"}):
+            with self.subTest(files=files), self.assertRaises(SystemExit):
+                runtime.validate_manifest(root, {"version": 1, "files": files})
+        (asset.parent / "unlisted").write_bytes(b"unlisted")
+        with self.assertRaisesRegex(SystemExit, "exactly cover"):
+            runtime.validate_manifest(root, {"version": 1, "files": good})
+
+    def test_rejects_duplicate_members_links_and_outside_roots(self):
+        good = tarfile.TarInfo(f"{runtime.RUNTIME_PATHS[0]}/asset")
+        link = tarfile.TarInfo(f"{runtime.RUNTIME_PATHS[0]}/link")
+        link.type = tarfile.SYMTYPE
+        link.linkname = "asset"
+        for members in ([good, good], [link], [tarfile.TarInfo("unexpected/file")], [tarfile.TarInfo("../escape")]):
+            with self.subTest(members=members), self.assertRaises(SystemExit):
+                runtime.validate_archive_members(members)
+
+    def test_legacy_images_are_verified_but_never_installed(self):
+        files = {f"{path}/asset": b"runtime" for path in runtime.RUNTIME_PATHS}
+        files["docs/assets/images/legacy.png"] = b"legacy"
+        runtime.install_assets(self.bundle(files))
+        self.assertFalse((self.project / "docs/assets/images").exists())
+
+    def test_duplicate_json_keys_are_rejected(self):
+        with self.assertRaisesRegex(SystemExit, "duplicate key"):
+            json.loads('{"version":1,"files":{},"files":{}}', object_pairs_hook=runtime.unique_json_object)

@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import shutil
+import re
 import subprocess
 import tarfile
 import tempfile
@@ -24,6 +24,8 @@ RUNTIME_PATHS = (
     Path("docs/z3"),
 )
 MANIFEST_NAME = "runtime-assets.json"
+# Read-only compatibility with previously published v2 archives. Never installed.
+LEGACY_PAYLOAD_ROOTS = (Path("docs/assets/images"),)
 
 
 def parse_args() -> argparse.Namespace:
@@ -91,14 +93,13 @@ def install_assets(archive_path: Path) -> None:
         temp_dir = Path(temp_dir_name)
         with tarfile.open(archive_path, "r:gz") as archive:
             members = archive.getmembers()
-            if any(not is_safe_member(member.name) for member in members):
-                raise SystemExit("Runtime asset bundle contains an unsafe path")
+            validate_archive_members(members)
             archive.extractall(temp_dir, members, filter="data")
 
         manifest_path = temp_dir / MANIFEST_NAME
         if not manifest_path.is_file():
             raise SystemExit("Runtime asset bundle is missing its manifest")
-        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"), object_pairs_hook=unique_json_object)
         validate_manifest(temp_dir, manifest)
 
         replacements = {}
@@ -117,7 +118,11 @@ def runtime_files() -> list[Path]:
         directory = PROJECT_DIR / relative_path
         if not directory.is_dir():
             raise SystemExit(f"Runtime asset directory is missing: {directory}")
-        files.extend(path for path in directory.rglob("*") if path.is_file())
+        for path in directory.rglob("*"):
+            if path.is_symlink():
+                raise SystemExit(f"Runtime assets must not contain symlinks: {path}")
+            if path.is_file():
+                files.append(path)
     return sorted(files)
 
 
@@ -135,19 +140,57 @@ def validate_manifest(root: Path, manifest: object) -> None:
     if not isinstance(manifest, dict) or manifest.get("version") != 1:
         raise SystemExit("Runtime asset bundle has an invalid manifest")
     files = manifest.get("files")
-    if not isinstance(files, dict):
+    if not isinstance(files, dict) or not files:
         raise SystemExit("Runtime asset bundle has no file hashes")
     for relative_path, expected_hash in files.items():
         if not isinstance(relative_path, str) or not isinstance(expected_hash, str):
             raise SystemExit("Runtime asset bundle has an invalid file hash")
+        if not is_payload_path(relative_path) or not re.fullmatch(r"[0-9a-f]{64}", expected_hash):
+            raise SystemExit(f"Runtime asset bundle has an invalid manifest entry: {relative_path}")
         path = root / relative_path
-        if not path.is_file() or sha256(path) != expected_hash:
+        if path.is_symlink() or not path.is_file() or sha256(path) != expected_hash:
             raise SystemExit(f"Runtime asset checksum failed: {relative_path}")
+    actual = {path.relative_to(root).as_posix() for path in root.rglob("*")
+              if path.is_file() and path.relative_to(root).as_posix() != MANIFEST_NAME}
+    if actual != set(files):
+        raise SystemExit("Runtime manifest does not exactly cover the archive payload")
 
 
 def is_safe_member(name: str) -> bool:
     path = Path(name)
-    return not path.is_absolute() and ".." not in path.parts
+    return bool(name) and not path.is_absolute() and ".." not in path.parts and path.as_posix() == name
+
+
+def is_payload_path(name: str) -> bool:
+    return is_safe_member(name) and any(root in Path(name).parents for root in RUNTIME_PATHS + LEGACY_PAYLOAD_ROOTS)
+
+
+def validate_archive_members(members: list[tarfile.TarInfo]) -> None:
+    seen = set()
+    for member in members:
+        name = member.name
+        if not is_safe_member(name) or name in seen:
+            raise SystemExit(f"Runtime archive has an unsafe or duplicate path: {name}")
+        seen.add(name)
+        if member.isfile():
+            allowed = name == MANIFEST_NAME or is_payload_path(name)
+        elif member.isdir():
+            path = Path(name)
+            allowed = any(path == root or path in root.parents or root in path.parents
+                          for root in RUNTIME_PATHS + LEGACY_PAYLOAD_ROOTS)
+        else:
+            allowed = False
+        if not allowed:
+            raise SystemExit(f"Runtime archive has an unsupported member: {name}")
+
+
+def unique_json_object(pairs: list[tuple[str, object]]) -> dict:
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise SystemExit(f"Runtime manifest has a duplicate key: {key}")
+        result[key] = value
+    return result
 
 
 def sha256(path: Path) -> str:
