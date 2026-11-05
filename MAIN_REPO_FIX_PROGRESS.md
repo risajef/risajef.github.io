@@ -10,7 +10,7 @@ Scope: findings F1–F14 in `MAIN_REPO_REVIEW.md`. One commit per finding, inclu
 | F4 | Complete | Validates all required directories before preparing replacements; complete copies precede destination switches, with rollback and retained backups if rollback itself fails. Regression tests cover missing later roots, copy failure and mid-switch failure. |
 | F5 | Complete | Exact manifest coverage, canonical contained paths, SHA-256 format, duplicate JSON/archive keys, and regular-file-only payloads enforced. Legacy image payloads remain verified but are never installed. Malformed archive/manifest regression tests pass. |
 | F6 | Complete | Per-app runtime allowlists replace source-tree publication, including explicit Background Generator web output and Parallelismus dist/data paths. Source-only files, dotfiles and symlinks are excluded/rejected. Fixture tests verify the boundary. No subrepo files changed. |
-| F7 | Pending | |
+| F7 | Complete | Cache checks an exact hashed output manifest; HTML dependencies are checked before publication. All app builds now prepare and validate in a temporary artifact directory before rollback-capable replacement. Fingerprints include publish rules/toolchain and fail on unreadable inputs. Missing/corrupt output and failed-build preservation tests pass. |
 | F8 | Pending | |
 | F9 | Pending | |
 | F10 | Pending | |

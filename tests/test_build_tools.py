@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from scripts import build_tools as build
 
@@ -33,3 +34,36 @@ class BuildTests(unittest.TestCase):
         (self.source / "linked.js").symlink_to(outside)
         with self.assertRaisesRegex(RuntimeError, "Unsafe"):
             build.stage_embedded_app(self.app)
+
+    def test_deleted_corrupt_and_extra_outputs_invalidate_cache(self):
+        for mutation in ("delete", "corrupt", "extra"):
+            with self.subTest(mutation=mutation):
+                build.stage_embedded_app(self.app)
+                self.assertFalse(build.build_required(self.app))
+                if mutation == "delete":
+                    (self.output / "app.js").unlink()
+                elif mutation == "corrupt":
+                    (self.output / "app.js").write_text("broken")
+                else:
+                    (self.output / "extra.js").write_text("extra")
+                self.assertTrue(build.build_required(self.app))
+                build.stage_embedded_app(self.app)
+                self.assertFalse(build.build_required(self.app))
+
+    def test_invalid_new_artifact_preserves_previous_output(self):
+        build.stage_embedded_app(self.app)
+        (self.source / "app.js").unlink()
+        with self.assertRaisesRegex(RuntimeError, "missing runtime"):
+            build.stage_embedded_app(self.app)
+        self.assertEqual((self.output / "app.js").read_text(), "console.log('ok')")
+
+    def test_unreadable_source_does_not_produce_fingerprint(self):
+        original = Path.open
+
+        def fail(path, *args, **kwargs):
+            if path == self.source / "app.js":
+                raise PermissionError("synthetic unreadable file")
+            return original(path, *args, **kwargs)
+
+        with patch.object(Path, "open", fail), self.assertRaises(PermissionError):
+            build.input_fingerprint(self.app)
