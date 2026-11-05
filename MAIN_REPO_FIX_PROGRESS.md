@@ -31,3 +31,26 @@ Scope: findings F1–F14 in `MAIN_REPO_REVIEW.md`. One commit per finding, inclu
 - Parent gitlinks are unchanged from `faa03e1`; the four pre-existing modified subrepositories and other untracked review reports are left alone.
 
 Commit subjects identify each finding; use `git log --oneline --grep='fix(F'` to list them.
+
+## Publication preparation (2026-11-05)
+
+The user authorized publishing all subrepositories, updating the parent, and deploying.
+All local subrepository revisions are published. Four parent references advance:
+
+| Tool | Published revision |
+| --- | --- |
+| Buchfaltstudio | `a586e77f6618416c249f0448449614a2c3ad767d` |
+| Hoare Logic | `458d2abf3905cabb911b39ab2a8d0c622639d268` |
+| LinkedIn WYSIWYG | `4cb9d67f5c3423f16d7379ec9895f623755f7de3` |
+| Parallelismus | `be4c82ac0b923aad0160ac3d606c11ddf4272989` |
+
+The other tools keep their tested pins. Stammbaum's remote has one additional
+commit; its existing local pin is already published and was deliberately retained.
+The five subrepository review reports are included in this parent update.
+
+Predeployment verification: `npm test` passed all 32 tests. Restoring the exact
+archive selected by `runtime-assets.lock.json`, followed by
+`PIPER_TTS_GENERATE_AUDIO=false npm run build`, also passed. This matches the
+cache-only runtime input used by the Pages workflow. Deployment will use the
+explicit parent commit SHA; the GitHub Actions run is the authoritative deployment
+record. No runtime release refresh was needed.
