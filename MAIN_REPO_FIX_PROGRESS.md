@@ -16,7 +16,7 @@ Scope: findings F1–F14 in `MAIN_REPO_REVIEW.md`. One commit per finding, inclu
 | F10 | Complete | Replaced all three DOM-injection adapters with native app iframes in both languages; removed obsolete adapters and parent-loaded app scripts/styles. Documented trusted same-origin apps and the remaining shared-storage boundary explicitly. Browser fixtures verify separate DOM/globals and relative-link behavior. No sandbox/origin migration that would break stored user data. |
 | F11 | Complete | Committed release/digest lock and lock-aware restore used by CI. Downloaded the existing published v2 archive and verified its SHA-256, layout, and all 1,211 payload hashes without installation; its digest differs from the older local backup, so the lock selects the verified published bytes. Future publication uses new content-addressed releases and updates the lock only after verification. Added generation provenance and digest-replacement tests. No external release was created. |
 | F12 | Complete | Base insertion now parses HTML, supports minified/CRLF/case-varied heads, replaces an existing base deliberately, and rejects missing heads or duplicate bases. Format and idempotency fixtures pass. |
-| F13 | Pending | |
+| F13 | Complete | Thin lifecycle hook delegates to build-scoped content collection, iframe presentation and a pinned Mermaid adapter. YAML parser replaces regex metadata parsing; only generated diagrams are inlined. Tests cover metadata refresh, locale/escaping, real plugin adapter/cache behavior, and a real fixture MkDocs collection build. |
 | F14 | Pending | |
 
 Commit subjects identify each finding; use `git log --oneline --grep='fix(F'` to list them.
