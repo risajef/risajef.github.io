@@ -25,6 +25,12 @@ I am grateful to have such a wide diversity of roles. For public interest are pr
 
 You see there what I changed most recently on the website.
 
+## November 4th 2026
+
+New in Tools: [NP Studio](/tools/np-hard/), a puzzle lab for nine difficult computer science problems. Find a short round trip, color a graph with three colors, or pack a knapsack with valuable items. Other challenges include SAT, Dominating Set, Job Shop scheduling, Facility Location, Art Gallery, and covering points with squares.
+
+Puzzles are generated in the browser and checked by exact solvers for a unique optimum. Three difficulty levels, hints, and revealable solutions help you get started. Progress and personal TSP records stay in your browser; no account is needed. The app uses the website's design and currently has a German interface. Its source code is available on [GitHub](https://github.com/risajef/np-hard).
+
 ## September 24th 2026
 
 Add [Stammbaum](/tools/stammbaum/) - a browser-based family-tree editor for creating, editing, and visualizing genealogies with local YAML import and export.

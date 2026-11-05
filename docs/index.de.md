@@ -25,6 +25,12 @@ Ich bin dankbar, so viele unterschiedliche Rollen zu haben. Öffentlich sichtbar
 
 Hier siehst du, was ich zuletzt auf der Website geändert habe.
 
+## 4. November 2026
+
+Neu unter Werkzeuge: [NP Studio](/de/tools/np-hard/), ein Puzzle-Labor für neun schwierige Probleme der Informatik. Plane eine möglichst kurze Rundreise, färbe einen Graphen mit drei Farben oder packe einen Rucksack mit möglichst wertvollen Gegenständen. Auch SAT, Dominating Set, Job-Shop-Planung, Standortwahl, Galeriebewachung und Punktüberdeckung mit Quadraten sind dabei.
+
+Die Aufgaben werden direkt im Browser erzeugt und exakt auf ein eindeutiges Optimum geprüft. Drei Schwierigkeitsstufen, Hinweise und aufdeckbare Lösungen helfen beim Einstieg. Fortschritt und persönliche TSP-Bestleistungen bleiben lokal im Browser; ein Konto ist nicht nötig. Das Design ist an die Website angepasst. Der Quellcode ist auf [GitHub](https://github.com/risajef/np-hard) verfügbar.
+
 ## 24. September 2026
 
 Füge [Stammbaum](/tools/stammbaum/) hinzu – einen browserbasierten Editor für Familienstammbäume zum Erstellen, Bearbeiten und Visualisieren genealogischer Beziehungen mit lokalem YAML-Import und -Export.

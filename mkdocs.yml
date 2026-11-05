@@ -16,6 +16,7 @@ exclude_docs: |
   assets/diabetes_gui/**
   assets/hoare-logic/**
   assets/linkedin-wysiwyg/**
+  assets/np-hard/**
   assets/parallelismus/**
   assets/python-blocks/**
   assets/reverse-chart/**
@@ -39,6 +40,7 @@ nav:
       - Diabetes GUI: tools/diabetes-gui.md
       - Hoare Logic: tools/hoare-logic.md
       - LinkedIn WYSIWYG: tools/linkedin-wysiwyg.md
+      - NP Studio: tools/np-hard.md
       - Office.md: tools/office.md
       - Parallelismus: tools/parallelismus.md
       - Python Blocks: tools/python-blocks.md

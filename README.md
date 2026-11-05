@@ -109,6 +109,13 @@ redirect unless its legacy URL has an explicit replacement; `check-site`
 verifies every declared redirect after each build.
 
 # Components and Features
+
+NP Studio is pinned as the `docs/assets/np-hard` submodule and published at
+`/assets/apps/np-hard/`. Its website-specific styles live in
+`docs/assets/np-hard-theme.css`; `scripts/build_tools.py` adds them after the
+application styles and includes them in the build fingerprint. Update the
+submodule to upgrade the app while retaining the website theme.
+
 - Framework: [MkDocs](https://www.mkdocs.org)
 - Custom Theme: Allows subpages for pages
 - RSS Feed: The blog entries are in a RSS feed

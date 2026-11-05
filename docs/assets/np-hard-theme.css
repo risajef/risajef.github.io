@@ -1,0 +1,109 @@
+/* Website-specific presentation; the np-hard submodule stays upstream-compatible. */
+@import url('/assets/theme/risajef-theme.css');
+
+:root {
+  --muted: var(--text-secondary);
+  --green: #f4e8e8;
+  --line: #ddd;
+  --dark: var(--text-main);
+}
+
+body { line-height: 1.5; }
+h1, h2, h3 { letter-spacing: normal; }
+h1 span { color: var(--text-secondary); }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.sidebar {
+  background: var(--bg-secondary);
+  color: var(--text-main);
+  border-right: 1px solid var(--line);
+  overflow-y: auto;
+}
+.brand, .brand small, .nav-caption, .nav-item,
+.sidebar-bottom, .sidebar-bottom small { color: var(--text-secondary); }
+.brand { color: var(--primary); font-family: var(--font-heading); letter-spacing: normal; }
+.brand small { font-family: var(--font-sans); }
+.brand-mark { background: var(--primary); color: white; transform: none; border-radius: 2px; }
+.nav-item { border-radius: 2px; font-size: 13px; }
+.problems .nav-item { font-size: 12px; }
+.nav-item:hover { background: #eee; color: var(--primary); }
+.nav-item.active, .primary { background: var(--primary); color: white; }
+.nav-count, .active .nav-count { background: #eee; color: var(--primary); border-radius: 2px; }
+.sidebar-note { background: white; border-color: var(--line); border-radius: 2px; }
+.sidebar-note strong { color: var(--text-main); }
+.sidebar-note p { color: var(--text-secondary); }
+.spark { color: var(--primary); }
+.sidebar-bottom { border-color: var(--line); }
+.sidebar-bottom .avatar, .avatar { background: #eee; color: var(--text-secondary); }
+.topbar { background: white; }
+.breadcrumb, .breadcrumb strong, .local-label, .icon-button { color: var(--text-secondary); }
+.local-label i, .green-dot, .tiny-dot, .nav-dot, .online-dot { background: var(--primary); }
+
+.feature, .puzzle-card, .play-panel, .mission, .modal,
+.stats-row, .personal-best, .secondary, .search, .filter,
+.count-badge, .card-icon, .game-title-icon, .feature-label span,
+.cargo-item, .op, .feedback, .generation-notice { border-radius: 2px; }
+.feature, .puzzle-card, .play-panel, .mission, .modal,
+.stats-row, .personal-best, .secondary, .search { border-color: var(--line); background: white; }
+.feature, .stats-row, .personal-best { background: var(--bg-secondary); }
+.feature-art { background: none; }
+.feature-label span, .card-icon, .game-title-icon, .count-badge, .card-arrow {
+  background: #f4e8e8;
+  color: var(--primary);
+}
+.primary { border: 1px solid var(--primary); border-radius: 2px; box-shadow: var(--shadow-md); }
+.primary:hover { background: var(--primary-hover); transform: none; }
+.secondary:hover, .filter:hover { background: var(--bg-secondary); color: var(--primary); }
+.filter.selected { background: #f4e8e8; border-color: var(--primary); color: var(--primary); }
+.puzzle-card:hover { transform: none; border-color: var(--primary); box-shadow: var(--shadow-md); }
+.heading-note { transform: none; }
+.note-stars, .eyebrow, .feature-label, .art-caption, .bottom-strip .icon { color: var(--primary); }
+.page-heading p, .game-heading p, .feature p, .feature-meta,
+.section-heading p, .category, .card-number, .puzzle-card p, .card-bottom,
+.bottom-strip strong, .bottom-strip small, footer, .back-link,
+.mission p, .instructions p, .modal p, .score > span, .score small,
+.coverage, .board-explanation, .stats-row span, .personal-best > span,
+.text-button, .hint-button, .reveal-button, .timer, .difficulty,
+.canvas-caption, .palette, .board-label, .item-scale-legend, .cargo-dimensions {
+  color: var(--text-secondary);
+}
+.check-hint, .unique-note { color: var(--text-secondary) !important; }
+.feature p, .page-heading p, .game-heading p, .section-heading p,
+.puzzle-card p, .mission p, .modal p { font-size: 13px; }
+.puzzle-card h3 { font-size: 16px; }
+.category, .card-bottom, .feature-meta, .bottom-strip small,
+.board-toolbar, .canvas-caption, .board-bottom > span,
+.instructions p, .text-button, .hint-button, .reveal-button { font-size: 12px; }
+.bottom-strip strong { font-size: 13px; }
+.search input { padding: 0; border: 0; border-radius: 0; box-shadow: none; font-size: 13px; color: var(--text-main); }
+.search input::placeholder { color: var(--text-secondary); }
+.difficulty select { background: white; color: var(--text-main); border-color: #888; font-size: 12px; }
+.canvas, .palette, .canvas-caption, .knapsack-board, .job-board, .sat-graph-board {
+  background: var(--bg-secondary);
+}
+.score > strong, .stats-row strong { font-family: var(--font-heading); }
+.meter { background: #eee; }
+.meter i { background: var(--primary); }
+.generation-notice { background: var(--primary); color: white; }
+.generation-error { background: var(--error); }
+.modal-shade { background: #0009; backdrop-filter: none; }
+/* Status feedback and puzzle colors retain their meaning. */
+.feedback.success { color: #245c38; background: #e6f0e8; }
+.feedback.error { color: #8b2323; background: #f8eaea; }
+.feedback.info { color: #254c72; background: #e9eef2; }
+
+@media (max-width: 650px) {
+  .sidebar { overflow: visible; border-right: 0; border-bottom: 1px solid var(--line); }
+  .feature-copy { background: linear-gradient(90deg, #f7f7f7 30%, #f7f7f7ee 65%, #f7f7f700); }
+  .card-grid { grid-template-columns: 1fr; }
+  .puzzle-card h3 { min-height: 0; }
+  .puzzle-card p { min-height: 0; }
+  .category, .filter { font-size: 12px; }
+  .nav-item, .filter { min-height: 44px; }
+  .board-toolbar { gap: 10px; }
+  .difficulty { margin-left: 0; flex-wrap: wrap; }
+  .game-heading, .section-heading, .page-heading { min-width: 0; }
+}

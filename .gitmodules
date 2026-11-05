@@ -34,3 +34,6 @@
 [submodule "docs/assets/stammbaum"]
 	path = docs/assets/stammbaum
 	url = https://github.com/risajef/stammbaum.git
+[submodule "docs/assets/np-hard"]
+	path = docs/assets/np-hard
+	url = https://github.com/risajef/np-hard.git

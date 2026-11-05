@@ -33,9 +33,19 @@ class EmbeddedApp:
     entry_path: Path
     build_kind: BuildTypes = BuildTypes.COPY
     obsolete_publish_paths: tuple[Path, ...] = ()
+    stylesheet: Path | None = None
 
 
 EMBEDDED_APPS = (
+    EmbeddedApp(
+        slug="np-hard",
+        label="NP Studio",
+        source_dir=DOCS_DIR / "assets/np-hard",
+        publish_dir=PUBLISH_ROOT / "np-hard",
+        entry_path=Path("index.html"),
+        build_kind=BuildTypes.VITE,
+        stylesheet=DOCS_DIR / "assets/np-hard-theme.css",
+    ),
     EmbeddedApp(
         slug="python-blocks",
         label="Python Blocks",
@@ -135,6 +145,13 @@ def stage_embedded_app(app: EmbeddedApp) -> None:
             raise RuntimeError(f"npm is required to build {app.slug} but was not found in PATH")
         build_node_app(app)
 
+    if app.stylesheet:
+        shutil.copyfile(app.stylesheet, app.publish_dir / "site-theme.css")
+        index_path = app.publish_dir / app.entry_path
+        html = index_path.read_text(encoding="utf-8")
+        html = html.replace("</head>", '    <link rel="stylesheet" href="site-theme.css" />\n  </head>', 1)
+        index_path.write_text(html, encoding="utf-8")
+
     validate_entry_point(app)
     (app.publish_dir / FINGERPRINT_FILE).write_text(input_fingerprint(app) + "\n", encoding="utf-8")
 
@@ -200,6 +217,8 @@ def input_fingerprint(app: EmbeddedApp) -> str:
     digest = hashlib.sha256()
     digest.update(f"{app.slug}\0{app.build_kind.value}\0{app.entry_path}\0".encode())
     digest.update(Path(__file__).read_bytes())
+    if app.stylesheet:
+        digest.update(app.stylesheet.read_bytes())
     for root, directory_names, file_names in os.walk(app.source_dir):
         directory_names[:] = sorted(name for name in directory_names if name not in IGNORED_SOURCE_DIRECTORIES)
         for file_name in sorted(file_names):
