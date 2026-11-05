@@ -12,7 +12,8 @@
     "build-site": ".venv/bin/mkdocs build && npm run finalize-site",
     "check-site": ".venv/bin/mkdocs build --strict && npm run finalize-site && .venv/bin/python scripts/check_site.py",
     "build": "npm run build-tools && npm run check-site",
-    "test": "npm run build"
+    "test": ".venv/bin/python -m unittest discover -s tests -v",
+    "test:browser": "node tests/browser-smoke.cjs"
   },
   "repository": {
     "type": "git",

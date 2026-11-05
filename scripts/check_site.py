@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 import yaml
@@ -52,6 +52,7 @@ def main() -> None:
     failures.extend(check_redirects())
     failures.extend(check_unlisted_public_pages())
     failures.extend(check_inline_mermaid_svg())
+    failures.extend(check_local_assets())
     if failures:
         raise SystemExit("\n".join(failures))
     print(f"Validated {len(PAGES)} rendered pages, redirects, and unlisted public pages")
@@ -167,6 +168,32 @@ def check_inline_mermaid_svg() -> list[str]:
     if not soup.select("svg"):
         return [f"{relative_path}: expected inline Mermaid SVGs"]
     return []
+
+
+def check_local_assets() -> list[str]:
+    """Check emitted HTML's local runtime dependencies without executing app code."""
+    failures = []
+    origin = urlsplit(SITE_URL).netloc
+    for page in SITE_DIR.rglob("*.html"):
+        relative = page.relative_to(SITE_DIR).as_posix()
+        soup = BeautifulSoup(page.read_text(encoding="utf-8"), "html.parser")
+        document_url = f"{SITE_URL}/{relative}"
+        base = soup.find("base", href=True)
+        base_url = urljoin(document_url, str(base["href"])) if base else document_url
+        for element in soup.select("script[src], link[rel=stylesheet][href], img[src], iframe[src], audio[src], source[src]"):
+            value = str(element.get("src") or element.get("href"))
+            resolved = urlsplit(urljoin(base_url, value))
+            if resolved.scheme not in {"http", "https"} or resolved.netloc != origin:
+                continue
+            target = (SITE_DIR / unquote(resolved.path).lstrip("/")).resolve()
+            if not target.is_relative_to(SITE_DIR.resolve()):
+                failures.append(f"{relative}: asset escapes site directory: {value}")
+                continue
+            if resolved.path.endswith("/"):
+                target /= "index.html"
+            if not target.is_file():
+                failures.append(f"{relative}: missing local asset: {value}")
+    return failures
 
 
 if __name__ == "__main__":

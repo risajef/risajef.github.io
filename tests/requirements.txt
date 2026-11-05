@@ -1,0 +1,6 @@
+# Lightweight parent-only checks; no CUDA, voice models or submodule installs.
+beautifulsoup4==4.15.0
+PyYAML==6.0.3
+lxml==6.1.1
+mkdocs==1.6.1
+mkdocs-mermaid-to-svg==1.0.3
