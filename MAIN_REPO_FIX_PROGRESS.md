@@ -5,7 +5,7 @@ Scope: findings F1–F14 in `MAIN_REPO_REVIEW.md`. One commit per finding, inclu
 | Finding | Status | Change and verification |
 | --- | --- | --- |
 | F1 | Complete | Removed source images from runtime ownership; guard rejects tracked files in runtime destinations. Two isolated regression tests pass. Mermaid diagrams remain generated locally by the existing renderer. |
-| F2 | Pending | |
+| F2 | Complete | Deployment refuses dirty or non-main checkouts and unpushed revisions; dispatch pins checkout to the verified SHA. Removed automatic runtime publishing from the IDE deploy task. Mocked tests verify rejection and exact command selection. |
 | F3 | Pending | |
 | F4 | Pending | |
 | F5 | Pending | |

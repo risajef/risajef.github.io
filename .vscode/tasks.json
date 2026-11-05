@@ -56,9 +56,6 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "dependsOn": [
-        "Publish Runtime Assets to GitHub"
-      ],
       "problemMatcher": []
     }
   ]

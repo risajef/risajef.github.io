@@ -2,6 +2,11 @@ name: Deploy GitHub Pages
 
 on:
   workflow_dispatch:
+    inputs:
+      revision:
+        description: 'Exact committed revision to deploy (blank uses selected ref)'
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -20,6 +25,7 @@ jobs:
       - name: Check out site sources
         uses: actions/checkout@v4
         with:
+          ref: ${{ inputs.revision || github.sha }}
           fetch-depth: 0
           submodules: recursive
 
