@@ -15,7 +15,6 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 DOCS_DIR = PROJECT_DIR / "docs"
 PUBLISH_ROOT = DOCS_DIR / "assets/apps"
 IGNORED_SOURCE_DIRECTORIES = {".git", ".vscode", "node_modules", "dist", "build"}
-IGNORED_PUBLISH_DIRECTORIES = {".git", ".vscode", "node_modules"}
 FINGERPRINT_FILE = ".build-input.sha256"
 
 class BuildTypes(enum.Enum):
@@ -34,6 +33,7 @@ class EmbeddedApp:
     build_kind: BuildTypes = BuildTypes.COPY
     obsolete_publish_paths: tuple[Path, ...] = ()
     stylesheet: Path | None = None
+    publish_paths: tuple[str, ...] = ("index.html", "*.js", "styles.css")
 
 
 EMBEDDED_APPS = (
@@ -78,6 +78,7 @@ EMBEDDED_APPS = (
         publish_dir=PUBLISH_ROOT / "background-generator",
         entry_path=Path("web/index.html"),
         build_kind=BuildTypes.BACKGROUND_GENERATOR,
+        publish_paths=("web/index.html", "web/styles.css", "web/dist/*.js"),
     ),
     EmbeddedApp(
         slug="parallelismus",
@@ -86,9 +87,11 @@ EMBEDDED_APPS = (
         publish_dir=PUBLISH_ROOT / "parallelismus",
         entry_path=Path("dist/index.html"),
         build_kind=BuildTypes.PARALLELISMUS,
+        publish_paths=("dist/*.html", "dist/*.js", "dist/*.css", "dist/data/**/*.json", "dist/data/*.json"),
     ),
     EmbeddedApp(
-        "buchfalten", "Buchfaltstudio", DOCS_DIR / "assets/buchfalten", PUBLISH_ROOT / "buchfalten", Path("index.html")
+        "buchfalten", "Buchfaltstudio", DOCS_DIR / "assets/buchfalten", PUBLISH_ROOT / "buchfalten", Path("index.html"),
+        publish_paths=("index.html", "*.js", "styles.css", "js/*.js", "vendor/*.js", "vendor/*.LICENSE", "vendor/manifest.json"),
     ),
     EmbeddedApp("csv-editor", "CSV Editor", DOCS_DIR / "assets/csv-editor", PUBLISH_ROOT / "csv-editor", Path("index.html")),
     EmbeddedApp(
@@ -118,7 +121,8 @@ EMBEDDED_APPS = (
         build_kind=BuildTypes.VITE,
     ),
     EmbeddedApp(
-        "reverse-chart", "Reverse Chart", DOCS_DIR / "assets/reverse-chart", PUBLISH_ROOT / "reverse-chart", Path("index.html")
+        "reverse-chart", "Reverse Chart", DOCS_DIR / "assets/reverse-chart", PUBLISH_ROOT / "reverse-chart", Path("index.html"),
+        publish_paths=("index.html", "app.js", "styles.css", "*_example.png"),
     ),
 )
 
@@ -137,7 +141,7 @@ def stage_embedded_app(app: EmbeddedApp) -> None:
         return
 
     if app.build_kind == BuildTypes.COPY:
-        replace_with_source(app.source_dir, app.publish_dir, IGNORED_SOURCE_DIRECTORIES)
+        copy_runtime_files(app.source_dir, app.publish_dir, app.publish_paths)
     else:
         if not (app.source_dir / "package-lock.json").is_file():
             raise RuntimeError(f"{app.slug} requires a committed package-lock.json")
@@ -177,22 +181,34 @@ def build_node_app(app: EmbeddedApp) -> None:
                 inject_base_href(app.publish_dir / app.entry_path, f"/assets/apps/{app.slug}/")
             case BuildTypes.BACKGROUND_GENERATOR:
                 run_command(["npm", "run", "build:web"], staging_dir, f"build {app.slug} static bundle")
-                replace_with_source(staging_dir, app.publish_dir, IGNORED_PUBLISH_DIRECTORIES)
+                copy_runtime_files(staging_dir, app.publish_dir, app.publish_paths)
             case BuildTypes.PARALLELISMUS:
                 run_command(["npm", "run", "build"], staging_dir, f"build {app.slug} static bundle")
-                replace_with_source(staging_dir, app.publish_dir, IGNORED_PUBLISH_DIRECTORIES)
+                copy_runtime_files(staging_dir, app.publish_dir, app.publish_paths)
             case _:
                 raise RuntimeError(f"Unknown build kind '{app.build_kind}' for {app.slug}")
 
 
-def replace_with_source(source_dir: Path, destination_dir: Path, ignored: set[str]) -> None:
+def copy_runtime_files(source_dir: Path, destination_dir: Path, patterns: tuple[str, ...]) -> None:
+    """Publish only the app's declared runtime paths, never its source tree."""
+    selected = set()
+    for pattern in patterns:
+        if Path(pattern).is_absolute() or ".." in Path(pattern).parts:
+            raise ValueError(f"Invalid deployment path: {pattern}")
+        selected.update(path for path in source_dir.glob(pattern) if path.is_file())
+    for path in selected:
+        relative = path.relative_to(source_dir)
+        if any(part.startswith(".") for part in relative.parts) or any(
+            parent.is_symlink() for parent in (path, *path.parents) if parent != source_dir.parent
+        ):
+            raise RuntimeError(f"Unsafe runtime artifact: {path}")
     if destination_dir.exists():
         shutil.rmtree(destination_dir)
-    shutil.copytree(
-        source_dir,
-        destination_dir,
-        ignore=shutil.ignore_patterns(*ignored),
-    )
+    destination_dir.mkdir(parents=True)
+    for path in sorted(selected):
+        destination = destination_dir / path.relative_to(source_dir)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(path, destination)
 
 
 def validate_entry_point(app: EmbeddedApp) -> None:
