@@ -1,11 +1,21 @@
 import subprocess
 import unittest
+from pathlib import Path
 from unittest.mock import patch
+
+import yaml
 
 from scripts import deploy
 
 
 class DeployTests(unittest.TestCase):
+    def test_manual_workflow_uses_requested_revision(self):
+        config = yaml.load(Path(".github/workflows/deploy-pages.yml").read_text(), Loader=yaml.BaseLoader)
+        self.assertEqual(set(config["on"]), {"workflow_dispatch"})
+        self.assertIn("revision", config["on"]["workflow_dispatch"]["inputs"])
+        checkout = config["jobs"]["build"]["steps"][0]
+        self.assertEqual(checkout["with"]["ref"], "${{ inputs.revision || github.sha }}")
+
     def test_dispatches_exact_pushed_revision_without_git_mutation(self):
         revision = "a" * 40
         with patch.object(deploy, "git_output", side_effect=["main", "", revision, f"{revision}\trefs/heads/main"]), patch.object(

@@ -12,28 +12,32 @@
 
 # Deploying to GitHub Pages
 
-Deployment is automatic after a push to `main`. For changes that do **not**
-affect Piper audio, commit the source changes and their lockfiles, then push:
+Deployment is manual. For changes that do **not** affect Piper audio, commit
+the intended source changes and their lockfiles, then push:
 
 ```bash
 git add <changed-files>
 git commit -m "Describe the change"
 git push origin main
+.venv/bin/python scripts/deploy.py
 ```
 
 For a change that affects a spoken page or the TTS configuration, refresh the
 runtime-assets release first using the procedure below, then run the same
-commit-and-push commands. The [Deploy GitHub Pages](.github/workflows/deploy-pages.yml) workflow then
+commit, push, and dispatch commands. The [Deploy GitHub Pages](.github/workflows/deploy-pages.yml) workflow then
 checks out submodules, installs the locked Node and Python dependencies,
 restores the verified `runtime-assets-v2` release archive, runs
 `npm run build-tools` and `npm run check-site`, and deploys the resulting
 `site/` directory. A successful workflow publishes
 <https://risajef.github.io/>.
 
-You can also start the same workflow manually from the repository's **Actions**
-tab using **Deploy GitHub Pages → Run workflow**. Do this only after the branch
-contains the intended committed changes; the workflow deploys the selected
-branch revision, not uncommitted local files.
+The helper requires a clean `main` checkout matching the pushed remote revision
+and dispatches that exact commit. It does not stage, commit, push, or publish runtime
+assets. Its success means the workflow was requested; inspect GitHub Actions for
+the actual build and deployment result.
+
+You can also use **Actions → Deploy GitHub Pages → Run workflow**. Supply the
+intended commit SHA in `revision`, or leave it blank to use the selected ref.
 
 Before deploying a change that requires Piper audio, voice models, or the Z3
 runtime, ensure the required files are present in the checksummed
@@ -67,13 +71,13 @@ gh release upload runtime-assets-v2 \
   --clobber
 ```
 
-Then commit and push the source changes to `main`. Upload the refreshed release
-*before* pushing: a push triggers Pages immediately, and it will fail if its
-cache-only check sees audio that is absent or stale in the release archive.
+Then commit and push the source changes to `main`, and explicitly dispatch
+deployment. Ensure the required runtime assets are available before dispatch;
+pushing alone does not run the Pages workflow.
 Audio generation requires the locally configured Piper GPU/runtime; do not try
 to generate it in GitHub Actions.
 
-If a push has already failed with `Piper TTS cache-only build found missing or
+If a deployment has already failed with `Piper TTS cache-only build found missing or
 stale audio`, check out that exact revision locally, run the commands above,
 and use **Deploy GitHub Pages → Run workflow** from the **Actions** tab to
 retry. No additional source commit is required if the failed revision is still
