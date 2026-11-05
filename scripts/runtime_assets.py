@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import shutil
+import subprocess
 import tarfile
 import tempfile
 from pathlib import Path
@@ -16,7 +17,6 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 RUNTIME_PATHS = (
     Path("models/piper-tts"),
     Path("docs/assets/piper-tts/audio"),
-    Path("docs/assets/images"),
     Path("docs/z3"),
 )
 MANIFEST_NAME = "runtime-assets.json"
@@ -44,6 +44,7 @@ def main() -> None:
 
 
 def pack_assets(output_path: Path) -> None:
+    validate_runtime_ownership()
     files = list(runtime_files())
     if not files:
         raise SystemExit("No runtime assets found to package")
@@ -78,6 +79,7 @@ def pack_assets(output_path: Path) -> None:
 
 
 def install_assets(archive_path: Path) -> None:
+    validate_runtime_ownership()
     if not archive_path.is_file():
         raise SystemExit(f"Runtime asset bundle is missing: {archive_path}")
 
@@ -114,6 +116,16 @@ def runtime_files() -> list[Path]:
             raise SystemExit(f"Runtime asset directory is missing: {directory}")
         files.extend(path for path in directory.rglob("*") if path.is_file())
     return sorted(files)
+
+
+def validate_runtime_ownership() -> None:
+    """Never let a runtime restore replace version-controlled source files."""
+    result = subprocess.run(
+        ["git", "ls-files", "-z", "--", *(str(path) for path in RUNTIME_PATHS)],
+        cwd=PROJECT_DIR, check=True, capture_output=True,
+    )
+    if result.stdout:
+        raise SystemExit("Runtime directories overlap Git-tracked source files")
 
 
 def validate_manifest(root: Path, manifest: object) -> None:
