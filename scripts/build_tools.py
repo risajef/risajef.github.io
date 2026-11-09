@@ -105,7 +105,8 @@ EMBEDDED_APPS = (
     ),
     EmbeddedApp("csv-editor", "CSV Editor", DOCS_DIR / "assets/csv-editor", PUBLISH_ROOT / "csv-editor", Path("index.html")),
     EmbeddedApp(
-        "diabetes-gui", "Diabetes GUI", DOCS_DIR / "assets/diabetes_gui", PUBLISH_ROOT / "diabetes-gui", Path("index.html")
+        "diabetes-gui", "Diabetes GUI", DOCS_DIR / "assets/diabetes_gui", PUBLISH_ROOT / "diabetes-gui", Path("index.html"),
+        publish_paths=("index.html", "*.js", "styles.css", "vendor/*.js", "vendor/*.LICENSE", "vendor/manifest.json"),
     ),
     EmbeddedApp(
         "linkedin-wysiwyg",

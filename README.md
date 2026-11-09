@@ -134,6 +134,3 @@ and `python -m unittest discover -s tests -v`.
 
 Run `npm run build` for the complete application staging and strict rendered-site
 validation. The parent checks and full build serve different purposes.
-
-The historical review is in `MAIN_REPO_REVIEW.md`; implemented fixes and their
-verification are tracked in `MAIN_REPO_FIX_PROGRESS.md`.
