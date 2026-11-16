@@ -3,9 +3,10 @@ name = "risajef-github-io"
 version = "1.0.0"
 description = "Personal MkDocs site for retoweber.info"
 readme = "README.md"
-requires-python = ">=3.11,<3.12"
+requires-python = ">=3.11.5,<3.12"
 dependencies = [
   "beautifulsoup4==4.15.0",
+  "soupsieve>=4.1.1",
   "lxml==6.1.1",
   "PyYAML==6.0.3",
   "mkdocs==1.6.1",
