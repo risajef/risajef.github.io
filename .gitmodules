@@ -37,3 +37,6 @@
 [submodule "docs/assets/np-hard"]
 	path = docs/assets/np-hard
 	url = https://github.com/risajef/np-hard.git
+[submodule "docs/assets/hebr-isch"]
+	path = docs/assets/hebr-isch
+	url = https://github.com/risajef/hebr-isch.git

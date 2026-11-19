@@ -14,6 +14,7 @@ exclude_docs: |
   assets/buchfalten/**
   assets/csv-editor/**
   assets/diabetes_gui/**
+  assets/hebr-isch/**
   assets/hoare-logic/**
   assets/linkedin-wysiwyg/**
   assets/np-hard/**
@@ -39,6 +40,7 @@ nav:
       - CSV Editor: tools/csv-editor.md
       - Diabetes GUI: tools/diabetes-gui.md
       - Hoare Logic: tools/hoare-logic.md
+      - Althebräisch: tools/hebr-isch.md
       - LinkedIn WYSIWYG: tools/linkedin-wysiwyg.md
       - NP Studio: tools/np-hard.md
       - Office.md: tools/office.md
@@ -148,6 +150,8 @@ extra:
     de/programming/background-generator: de/tools/background-generator
     programming/parallelismus: tools/parallelismus
     de/programming/parallelismus: de/tools/parallelismus
+    programming/hebr-isch: tools/hebr-isch
+    de/programming/hebr-isch: de/tools/hebr-isch
     programming/python-blocks: tools/python-blocks
     de/programming/python-blocks: de/tools/python-blocks
     programming/hoare-logic: tools/hoare-logic
@@ -187,6 +191,7 @@ extra:
         Research: Research
         'Background Generator': 'Background Generator'
         Parallelismus: 'Parallelismus'
+        Althebräisch: 'Ancient Hebrew'
         'Python Blocks': 'Python Blocks'
         'Hoare Logic': 'Hoare Logic'
         'XML Weaver': 'XML Weaver'

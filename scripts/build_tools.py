@@ -100,6 +100,14 @@ EMBEDDED_APPS = (
         publish_paths=("dist/*.html", "dist/*.js", "dist/*.css", "dist/data/**/*.json", "dist/data/*.json"),
     ),
     EmbeddedApp(
+        "hebr-isch",
+        "Althebräisch",
+        DOCS_DIR / "assets/hebr-isch",
+        PUBLISH_ROOT / "hebr-isch",
+        Path("index.html"),
+        stylesheet=DOCS_DIR / "assets/hebr-isch-theme.css",
+    ),
+    EmbeddedApp(
         "buchfalten", "Buchfaltstudio", DOCS_DIR / "assets/buchfalten", PUBLISH_ROOT / "buchfalten", Path("index.html"),
         publish_paths=("index.html", "*.js", "styles.css", "js/*.js", "vendor/*.js", "vendor/*.LICENSE", "vendor/manifest.json"),
     ),

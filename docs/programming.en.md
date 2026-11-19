@@ -75,6 +75,11 @@ Apr 2018 – Jun 2019
 
 # Projects
 
+## Learn Ancient Hebrew
+
+[**GitHub**](https://github.com/risajef/hebr-isch), [**Web Demo**](https://retoweber.info/tools/hebr-isch/)
+A trainer for the ancient Hebrew alphabet with progress tracking, multiple-choice practice, and typed answers for letter sounds and names.
+
 ## Badi Beringen Campaign Site
 
 [**GitHub**](https://github.com/risajef/badi), [**Website**](https://badi-2026.retoweber.info/)  

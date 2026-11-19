@@ -76,6 +76,11 @@ Apr 2018 – Jun 2019
 
 # Projekte
 
+## Althebräisch lernen
+
+[**GitHub**](https://github.com/risajef/hebr-isch), [**Web Demo**](https://retoweber.info/tools/hebr-isch/)
+Ein Trainer für das althebräische Alphabet mit Fortschrittsanzeige sowie Auswahl- und Eingabeübungen zu Lauten und Buchstabennamen.
+
 ## Badi Beringen Kampagnenseite
 
 [**GitHub**](https://github.com/risajef/badi), [**Webseite**](https://badi-2026.retoweber.info/)  
