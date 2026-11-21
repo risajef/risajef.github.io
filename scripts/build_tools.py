@@ -108,6 +108,13 @@ EMBEDDED_APPS = (
         stylesheet=DOCS_DIR / "assets/hebr-isch-theme.css",
     ),
     EmbeddedApp(
+        "koine-griechisch",
+        "Biblisches Griechisch",
+        DOCS_DIR / "assets/koine-griechisch",
+        PUBLISH_ROOT / "koine-griechisch",
+        Path("index.html"),
+    ),
+    EmbeddedApp(
         "buchfalten", "Buchfaltstudio", DOCS_DIR / "assets/buchfalten", PUBLISH_ROOT / "buchfalten", Path("index.html"),
         publish_paths=("index.html", "*.js", "styles.css", "js/*.js", "vendor/*.js", "vendor/*.LICENSE", "vendor/manifest.json"),
     ),

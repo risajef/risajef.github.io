@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#176c5c" />
+  <title>Biblisches Griechisch lernen</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header class="site-header">
+      <a class="brand" href="#start" data-view="start"><span class="brand-mark">α</span><span><b>Biblisches Griechisch</b><small>Koine Schritt für Schritt lesen</small></span></a>
+      <div class="streak" id="progress-summary">Dein Lernfortschritt wird hier gespeichert.</div>
+    </header>
+    <div class="layout">
+      <nav class="sidebar" aria-label="Lernbereiche">
+        <button class="nav active" data-view="start">⌂ <span>Start</span></button>
+        <div class="nav-label">SCHRIFT</div>
+        <button class="nav" data-view="alphabet">Αλφάβητο <span>Alphabet lernen</span></button>
+        <button class="nav" data-view="alphabet-practice">✳ <span>Alphabet üben</span></button>
+        <button class="nav" data-view="signs">◌ <span>Vokale &amp; Zeichen</span></button>
+        <button class="nav" data-view="signs-practice">✳ <span>Zeichen üben</span></button>
+        <div class="nav-label">WÖRTER &amp; GRAMMATIK</div>
+        <button class="nav" data-view="vocabulary">Λόγοι <span>Grundwortschatz</span></button>
+        <button class="nav" data-view="vocabulary-practice">✳ <span>Wörter üben</span></button>
+        <button class="nav" data-view="grammar">Σύνταξις <span>Grammatik</span></button>
+        <button class="nav" data-view="verses">Βίβλος <span>Bibeltexte lesen</span></button>
+      </nav>
+      <main>
+        <section class="view active" id="start">
+          <p class="eyebrow">DEIN LERNWEG</p>
+          <h1>Von den Buchstaben zum Bibeltext</h1>
+          <p class="lead">Lerne das Alphabet, erkenne Akzente und Atemzeichen, baue Grundwortschatz auf und entdecke die Grammatik direkt an Texten des Neuen Testaments und der Septuaginta.</p>
+          <aside class="note"><b>Aussprache:</b> Die Lesehilfe folgt einer vereinfachten Erasmischen Schulaussprache. Sie ist eine einheitliche Lernkonvention; die Aussprache des Griechischen wandelte sich im Lauf der Koine-Zeit und unterscheidet sich von der heutigen griechischen Aussprache.</aside>
+          <div class="stats"><div><b id="stat-letters">0 / 24</b><small>Buchstaben geübt</small></div><div><b id="stat-words">0 / 50</b><small>Wörter geübt</small></div><div><b id="stat-verses">0 / 4</b><small>Textstellen gelesen</small></div></div>
+          <h2>Deine Etappen</h2>
+          <div class="path-grid">
+            <button class="path-card" data-view="alphabet"><span>01</span><b>Alphabet</b><small>24 Buchstaben und die Schlussform ς</small></button>
+            <button class="path-card" data-view="signs"><span>02</span><b>Vokale und Akzente</b><small>Atmungszeichen, Akzente und Diphthonge</small></button>
+            <button class="path-card" data-view="vocabulary"><span>03</span><b>Grundwortschatz</b><small>50 häufige Wörter im biblischen Kontext</small></button>
+            <button class="path-card" data-view="grammar"><span>04</span><b>Grammatik</b><small>Artikel, Fälle, Nomen, Verben und Präpositionen</small></button>
+            <button class="path-card" data-view="verses"><span>05</span><b>Bibeltexte</b><small>Bekannte Verse Wort für Wort erschliessen</small></button>
+          </div>
+        </section>
+        <section class="view" id="alphabet">
+          <p class="eyebrow">ETAPPE 1 · SCHRIFT</p><h1>Das griechische Alphabet</h1>
+          <p class="lead">Lerne Gross- und Kleinbuchstaben. Am Wortende verändert Sigma seine Form: σ wird zu ς. Das ist keine zusätzliche Aussprache, sondern eine Schreibregel.</p>
+          <div id="alphabet-grid" class="alphabet-grid"></div>
+          <aside class="note">Die Lautangaben sind eine praktische Lesehilfe. Besonders β, η, υ, φ, χ und θ klangen in der historischen Koine teilweise anders als in der hier verwendeten Schulaussprache.</aside>
+          <button class="primary" data-view="alphabet-practice">Alphabet üben →</button>
+        </section>
+        <section class="view" id="alphabet-practice">
+          <p class="eyebrow">ETAPPE 1 · ÜBEN</p><h1>Alphabet üben</h1>
+          <div class="practice-card"><div class="count" id="letter-count"></div><p id="letter-question" class="greek prompt" lang="el"></p><p id="letter-hint" class="hint"></p><div id="letter-answers" class="answers"></div><div id="letter-feedback" class="feedback" aria-live="polite">Wähle den passenden Buchstaben.</div><button class="quiet" id="next-letter">Weiter</button></div>
+        </section>
+        <section class="view" id="signs">
+          <p class="eyebrow">ETAPPE 2 · ZEICHEN LESEN</p><h1>Vokale, Atmungszeichen und Akzente</h1>
+          <div class="lesson-grid" id="sign-lessons"></div>
+          <aside class="note"><b>Für den Einstieg:</b> Lies den Akzent als Betonung der Silbe. Historisch markieren die Akzente Tonhöhenverläufe; die vereinfachte Betonung ist eine Lernhilfe. Der Gravis steht oft statt eines Akuts, wenn ein weiteres Wort folgt.</aside>
+          <button class="primary" data-view="signs-practice">Zeichen üben →</button>
+        </section>
+        <section class="view" id="signs-practice">
+          <p class="eyebrow">ETAPPE 2 · ÜBEN</p><h1>Zeichen üben</h1>
+          <div class="practice-card"><div class="count" id="sign-count"></div><p id="sign-question" class="greek prompt" lang="el"></p><p id="sign-hint" class="hint"></p><div id="sign-answers" class="answers"></div><div id="sign-feedback" class="feedback" aria-live="polite">Wähle die passende Erklärung.</div><button class="quiet" id="next-sign">Weiter</button></div>
+        </section>
+        <section class="view" id="vocabulary">
+          <p class="eyebrow">ETAPPE 3 · WORTSCHATZ</p><h1>50 häufige Wörter</h1><p class="lead">Die Lesehilfe zeigt eine einheitliche Aussprache. Verben stehen in ihrer Wörterbuchform; wichtige Formen aus den Beispielversen kommen zusätzlich in den Erklärungen vor.</p>
+          <div id="word-grid" class="word-grid"></div><button class="primary" data-view="vocabulary-practice">Wörter üben →</button>
+        </section>
+        <section class="view" id="vocabulary-practice">
+          <p class="eyebrow">ETAPPE 3 · ÜBEN</p><h1>Wörter üben</h1>
+          <div class="practice-card"><div class="count" id="word-count"></div><p id="word-question" class="greek prompt" lang="el"></p><p id="word-hint" class="hint"></p><div id="word-answers" class="answers"></div><div id="word-feedback" class="feedback" aria-live="polite">Wähle die passende Bedeutung.</div><button class="quiet" id="next-word">Weiter</button></div>
+        </section>
+        <section class="view" id="grammar">
+          <p class="eyebrow">ETAPPE 4 · GRAMMATIK</p><h1>Grammatik am Text entdecken</h1><p class="lead">Griechische Wörter verändern ihre Endungen. Die Form zeigt oft, welche Aufgabe ein Wort im Satz hat.</p>
+          <div id="grammar-grid" class="lesson-grid"></div>
+        </section>
+        <section class="view" id="verses">
+          <p class="eyebrow">ETAPPE 5 · LESEN</p><h1>Bibeltexte übersetzen</h1><p class="lead">Wähle eine passende Übersetzung. Danach siehst du die Wort-für-Wort-Hilfe und die Grammatik des Abschnitts.</p>
+          <div id="verse-list" class="verse-list"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
