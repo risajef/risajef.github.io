@@ -40,3 +40,7 @@
 [submodule "docs/assets/hebr-isch"]
 	path = docs/assets/hebr-isch
 	url = https://github.com/risajef/hebr-isch.git
+[submodule "docs/assets/koine-griechisch"]
+	path = docs/assets/koine-griechisch
+	url = https://github.com/risajef/griechisch.git
+	branch = main
