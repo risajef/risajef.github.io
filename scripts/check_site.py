@@ -92,6 +92,27 @@ def check_page(relative_path: str, expected: dict[str, object]) -> list[str]:
     if switches != expected["switches"]:
         failures.append(f"{relative_path}: expected language switches {expected['switches']!r}, got {switches!r}")
 
+    theme_toggle = soup.select_one("#theme-toggle")
+    expected_theme_label = "Dark mode" if language == "en" else "Dunkelmodus"
+    if theme_toggle is None:
+        failures.append(f"{relative_path}: missing site-wide theme toggle")
+    else:
+        if theme_toggle.get("aria-label") != expected_theme_label:
+            failures.append(f"{relative_path}: incorrect theme toggle label for {language}")
+        if theme_toggle.get("aria-pressed") != "false":
+            failures.append(f"{relative_path}: theme toggle should start with aria-pressed=false")
+
+    color_scheme = soup.select_one('meta[name="color-scheme"]')
+    if color_scheme is None or color_scheme.get("content") != "light dark":
+        failures.append(f"{relative_path}: missing light/dark color-scheme declaration")
+
+    theme_script = any(
+        urlsplit(str(script.get("src", ""))).path.rsplit("/", 1)[-1] == "theme.js"
+        for script in soup.select("script[src]")
+    )
+    if not theme_script:
+        failures.append(f"{relative_path}: missing site-wide theme script")
+
     script = soup.select_one('script[type="application/ld+json"]')
     if script is None or not script.string:
         failures.append(f"{relative_path}: missing JSON-LD script")

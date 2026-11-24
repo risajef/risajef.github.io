@@ -1,6 +1,6 @@
 # Usage
 
-Use a recursive checkout so the thirteen pinned embedded applications are present.
+Use a recursive checkout so all pinned embedded applications are present.
 Python 3.11 and Node.js 22 are the deployment toolchain.
 
 - `npm ci`
@@ -108,6 +108,7 @@ submodule to upgrade the app while retaining the website theme.
 
 - Framework: [MkDocs](https://www.mkdocs.org)
 - Custom Theme: Allows subpages for pages
+- Dark Mode: The main site and embedded tools follow the system preference by default and share saved manual choices
 - RSS Feed: The blog entries are in a RSS feed
 
 ## Embedded application trust
@@ -121,6 +122,12 @@ These same-origin iframes deliberately retain origin storage, file selection,
 downloads, workers, and clipboard behavior. They are not a security boundary:
 a compromised tool could access this origin's storage and parent document. Do
 not host untrusted applications under this origin. Supporting untrusted tools
+
+`npm run build-tools` adds the shared theme runtime and stylesheet to each
+published tool page. App-specific dark colors are centralized in
+`docs/assets/theme/app-theme.css`, leaving the pinned submodule sources
+unchanged. The runtime reads the site's `retoweber-theme` preference and
+updates when the parent page changes it. Supporting untrusted tools
 requires a separate origin, a narrow messaging protocol, and a permission review.
 Changing origins would also require explicit migration of existing browser data.
 

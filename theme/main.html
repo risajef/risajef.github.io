@@ -66,6 +66,9 @@
     </script>
 
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#FFFFFF">
+    <script src="{{ 'theme.js' | url }}"></script>
     {% for path in (page.meta and page.meta.extra_css) or [] %}
     <link href="{{ path | url }}" rel="stylesheet">
     {% endfor %}
@@ -169,6 +172,19 @@
                 {% endfor %}
             </nav>
             {% endif %}
+            <button class="theme-toggle" id="theme-toggle" type="button"
+                aria-label="{{ 'Dunkelmodus' if current_locale == 'de' else 'Dark mode' }}"
+                aria-pressed="false"
+                data-enable-dark="{{ 'Dunkelmodus einschalten' if current_locale == 'de' else 'Enable dark mode' }}"
+                data-enable-light="{{ 'Hellmodus einschalten' if current_locale == 'de' else 'Enable light mode' }}">
+                <svg class="theme-toggle__icon theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.4 15.5A8.5 8.5 0 0 1 8.5 3.6 8.5 8.5 0 1 0 20.4 15.5Z"></path>
+                </svg>
+                <svg class="theme-toggle__icon theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2.5v2m0 15v2m9.5-9.5h-2m-15 0h-2m15.72-6.72-1.42 1.42m-10.6 10.6-1.42 1.42m13.44 0-1.42-1.42m-10.6-10.6L4.78 4.78"></path>
+                </svg>
+            </button>
         </div>
         {% if nav|length > 1 %}
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
@@ -250,7 +266,7 @@
         referrerpolicy="origin" target="_blank">
         <picture>
             <source srcset="https://simpleanalyticsbadges.com/retoweber.info?mode=dark"
-                media="(prefers-color-scheme: dark)" /><img
+                id="simple-analytics-badge-dark" media="(prefers-color-scheme: dark)" /><img
                 src="https://simpleanalyticsbadges.com/retoweber.info?mode=light" loading="lazy"
                 referrerpolicy="no-referrer" crossorigin="anonymous" />
         </picture>

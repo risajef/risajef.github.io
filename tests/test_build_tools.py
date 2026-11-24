@@ -82,6 +82,21 @@ class BuildTests(unittest.TestCase):
                 self.assertEqual(len(bases), 1)
                 self.assertEqual(bases[0]["href"], "/assets/apps/fixture/")
 
+    def test_theme_runtime_is_injected_into_every_html_page(self):
+        nested_dir = self.output / "nested"
+        nested_dir.mkdir(parents=True)
+        (self.output / "index.html").write_text("<html><head></head><body></body></html>")
+        (nested_dir / "help.html").write_text("<html><head></head><body></body></html>")
+
+        for _ in range(2):
+            build.inject_app_theme(self.app)
+
+        for path in (self.output / "index.html", nested_dir / "help.html"):
+            soup = BeautifulSoup(path.read_text(), "html.parser")
+            self.assertEqual(soup.html["data-site-app"], "fixture")
+            self.assertEqual(len(soup.select('script[src="/assets/theme/app-theme.js"]')), 1)
+            self.assertEqual(len(soup.select('link[href="/assets/theme/app-theme.css"]')), 1)
+
     def test_ambiguous_base_and_missing_head_are_rejected(self):
         for html in ('<head><base href="/one/"><base href="/two/"></head>', '<body>App</body>'):
             with self.subTest(html=html):

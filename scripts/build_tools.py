@@ -28,6 +28,8 @@ PUBLISH_ROOT = DOCS_DIR / "assets/apps"
 IGNORED_SOURCE_DIRECTORIES = {".git", ".vscode", "node_modules", "dist", "build"}
 FINGERPRINT_FILE = ".build-input.sha256"
 OUTPUT_MANIFEST = ".build-output.json"
+APP_THEME_SCRIPT_URL = "/assets/theme/app-theme.js"
+APP_THEME_STYLESHEET_URL = "/assets/theme/app-theme.css"
 
 class BuildTypes(enum.Enum):
     COPY = "copy"
@@ -191,9 +193,40 @@ def prepare_embedded_app(app: EmbeddedApp) -> None:
         html = html.replace("</head>", '    <link rel="stylesheet" href="site-theme.css" />\n  </head>', 1)
         index_path.write_text(html, encoding="utf-8")
 
+    inject_app_theme(app)
     validate_entry_point(app)
     (app.publish_dir / OUTPUT_MANIFEST).write_text(json.dumps(output_hashes(app), sort_keys=True) + "\n", encoding="utf-8")
     (app.publish_dir / FINGERPRINT_FILE).write_text(input_fingerprint(app) + "\n", encoding="utf-8")
+
+
+def inject_app_theme(app: EmbeddedApp) -> None:
+    html_paths = sorted(app.publish_dir.rglob("*.html"))
+    if not html_paths:
+        raise RuntimeError(f"{app.slug} did not produce any HTML pages for theme integration")
+
+    for html_path in html_paths:
+        try:
+            soup = BeautifulSoup(html_path.read_text(encoding="utf-8"), "html.parser")
+        except OSError as exc:
+            raise RuntimeError(f"Unable to read {html_path} for theme integration") from exc
+
+        head = soup.find("head")
+        html = soup.find("html")
+        if head is None or html is None:
+            raise RuntimeError(f"{app.slug} produced HTML without a head or html element: {html_path}")
+
+        html["data-site-app"] = app.slug
+        if not head.find("script", src=APP_THEME_SCRIPT_URL):
+            script = soup.new_tag("script", src=APP_THEME_SCRIPT_URL)
+            head.insert(0, script)
+        if not head.find("link", rel="stylesheet", href=APP_THEME_STYLESHEET_URL):
+            stylesheet = soup.new_tag("link", rel="stylesheet", href=APP_THEME_STYLESHEET_URL)
+            head.append(stylesheet)
+
+        try:
+            html_path.write_text(str(soup), encoding="utf-8")
+        except OSError as exc:
+            raise RuntimeError(f"Unable to write theme integration to {html_path}") from exc
 
 
 def build_node_app(app: EmbeddedApp) -> None:

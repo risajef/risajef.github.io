@@ -1,8 +1,8 @@
 .rss-feed {
-  border: 1px solid #8882;
+  border: 1px solid var(--border-subtle, #8882);
   border-radius: 0.4rem;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.02);
+  background: var(--surface-subtle, rgba(0, 0, 0, 0.02));
 }
 .rss-feed__list {
   margin: 0;
@@ -21,7 +21,7 @@
 }
 .rss-feed__meta {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-secondary, #555);
 }
 .rss-feed__summary {
   margin: 0.25rem 0 0;
